@@ -13,8 +13,10 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ConventionCatCorp', // Usually your GitHub org/user name.
+  projectName: 'concat-docs', // Usually your repo name.
+  deploymentBranch: 'deployment',
+  trailingSlash: false,
 
   presets: [
     [
