@@ -23,7 +23,7 @@ export default function Attribute({
           <MaterialIcon name="link" />
         </a>
       </div>
-      <div>
+      <div className={styles['attribute-info']}>
         <strong>{name}</strong>
         <small style={{ padding: '0 0.5rem' }}>
           {type}
@@ -37,7 +37,7 @@ export default function Attribute({
           )}
         </small>
       </div>
-      <div style={{ fontSize: '13px' }}>
+      <div style={{ fontSize: '12px' }}>
         {children}
       </div>
     </div>

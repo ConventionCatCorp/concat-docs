@@ -1,0 +1,54 @@
+.endpointrequest {
+  background-color: rgb(40, 42, 54);
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px 10px 0 0;
+  height: fit-content;
+
+  header {
+    background-color: rgb(244, 244, 244);
+    border-radius: 7px 7px 0 0;
+    padding: 10px 10px 10px 15px;
+    color: black;
+    font-size: 13px;
+
+    .pull-right {
+      float: right;
+    }
+  }
+}
+
+.theme-code-block {
+  margin-bottom: 0 !important;
+  background-color: rgb(246, 248, 250);
+  border-radius: 0;
+}
+
+[data-theme='dark'] {
+  .endpointrequest {
+    border: 1px solid rgb(48, 48, 48);
+
+    header {
+      background-color: rgb(69, 69, 69);
+      color: white;
+    }
+  }
+
+  .theme-code-block {
+    background-color: rgb(40, 42, 54);
+  }
+}
+
+.rest-post {
+  color: rgb(107, 197, 116);
+  text-transform: uppercase;
+}
+
+.rest-get {
+  color: rgb(127, 150, 221);
+  text-transform: uppercase;
+}
+
+.rest-delete {
+  color: rgb(211, 117, 117);
+  text-transform: uppercase;
+}
