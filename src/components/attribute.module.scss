@@ -1,0 +1,35 @@
+.attribute {
+  padding: 0.3rem;
+  margin-left: 1.3rem;
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
+
+  &:hover {
+    .attribute-link {
+      opacity: 1;
+    }
+  }
+}
+
+.attribute-link {
+  cursor: pointer;
+  position: absolute;
+  margin-left: -1.7rem;
+  margin-top: 0.1rem;
+  opacity: 0;
+  transition: opacity var(--ifm-transition-fast);
+}
+
+.attribute-deprecated {
+  display: inline-block;
+  margin-left: 0.5rem;
+
+  span {
+    background-image: repeating-linear-gradient(
+      -70deg,
+      #00000020 0px,
+      #00000020 10px,
+      #ffb30120 10px,
+      #ffb10120 20px
+    );
+  }
+}

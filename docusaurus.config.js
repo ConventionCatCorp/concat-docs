@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Convention Cat',
+  title: 'ConCat',
   tagline: 'Manage events. Not spreadsheets.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.concat.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -17,6 +17,8 @@ const config = {
   projectName: 'concat-docs', // Usually your repo name.
   deploymentBranch: 'deployment',
   trailingSlash: false,
+
+  plugins: [require.resolve('docusaurus-plugin-sass')],
 
   presets: [
     [
@@ -28,20 +30,24 @@ const config = {
           editUrl: 'https://github.com/ConventionCatCorp/concat-docs/tree/main/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.scss')],
         },
       }),
     ],
+  ],
+
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Convention Cat',
+        title: 'ConCat',
         logo: {
           alt: 'ConCat',
-          src: 'img/logo.svg',
+          src: 'img/ConCatLogo.svg',
         },
         items: [
           {
@@ -49,6 +55,12 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Documentation',
+          },
+          {
+            type: 'doc',
+            docId: 'api/intro',
+            position: 'left',
+            label: 'API Reference',
           },
           {
             href: 'https://github.com/ConventionCatCorp/concat-docs',
@@ -82,6 +94,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Convention Cat Event Systems, Inc.`,
       },
       prism: {
+        additionalLanguages: ['http', 'csp', 'css', 'hpkp', 'hsts', 'javascript', 'json', 'markup', 'uri'],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
