@@ -86,4 +86,15 @@ displayed_sidebar: apiSidebar
 
 ### Retrieve a User
 
+### Update a User
+
+### Delete a User's PII
+
+:::danger
+Removing a user's personally identifiable information (PII) is a permanent and irreversible action. Sensitive fields (such as name, address, email, phone number, etc.) will be replaced with a generic placeholder, blank string, or `deleted`.
+:::
+
+:::caution
+Attempting to delete a banned user's PII will return a 200 OK, but will not actually delete the user's PII.
+:::
 
