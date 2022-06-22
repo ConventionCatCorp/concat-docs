@@ -10,11 +10,13 @@ interface Props {
   name: string;
   type: string;
   optional?: boolean;
+  response?: boolean;
   deprecated?: boolean;
+  permissions?: string[];
 }
 
 export default function Attribute({
-  children, name, id, type, optional = false, deprecated = false,
+  children, name, id, type, response = false, optional = false, deprecated = false, permissions = [],
 }: Props) {
   return (
     <div id={id} className={styles.attribute}>
@@ -24,7 +26,7 @@ export default function Attribute({
         </a>
       </div>
       <div className={styles['attribute-info']}>
-        <strong>{name}</strong>
+        <code>{name}</code>
         <small style={{ padding: '0 0.5rem' }}>
           {type}
           {optional && <i> (optional)</i>}
@@ -35,10 +37,25 @@ export default function Attribute({
               </Highlight>
             </div>
           )}
+          {(!optional && !response) && (
+            <div className={styles['attribute-required']}>
+              Required
+            </div>
+          )}
+          {(optional && response) && (
+            <div className={styles['attribute-optional']}>
+              nullable
+            </div>
+          )}
         </small>
       </div>
       <div style={{ fontSize: '12px' }}>
         {children}
+        {permissions.length > 0 && (
+          <div className={styles['attribute-permissions']}>
+            <strong>Required Scope</strong>: {permissions.join(', ')}
+          </div>
+        )}
       </div>
     </div>
   );

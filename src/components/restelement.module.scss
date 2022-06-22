@@ -23,6 +23,10 @@
     .rest-delete {
       color: rgb(211, 117, 117);
     }
+
+    .rest-patch {
+      color: rgb(211, 147, 117);
+    }
   }
 
   a, a:visited, a:hover, a:active {
@@ -47,4 +51,8 @@
 
 .rest-delete {
   color: rgb(163, 84, 84);
+}
+
+.rest-patch {
+  color: rgb(163, 124, 66);
 }

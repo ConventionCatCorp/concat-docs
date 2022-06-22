@@ -1,5 +1,6 @@
 .attribute {
-  padding: 0.3rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-left: 1.3rem;
   scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
 
@@ -8,6 +9,10 @@
       opacity: 1;
     }
   }
+}
+
+.attribute:not(:last-child) {
+  border-bottom: 1px solid rgb(45, 45, 45);
 }
 
 .attribute-info {
@@ -40,4 +45,16 @@
       #ffb10120 20px
     );
   }
+}
+
+.attribute-optional, .attribute-required {
+  float: right;
+}
+
+.attribute-required {
+  color: #ddac30;
+}
+
+.attribute-optional {
+  font-style: italic;
 }

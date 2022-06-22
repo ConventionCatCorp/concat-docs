@@ -3,6 +3,7 @@
   border: 1px solid rgb(220, 220, 220);
   border-radius: 10px 10px 0 0;
   height: fit-content;
+  margin-bottom: 1rem;
 
   header {
     background-color: rgb(244, 244, 244);
@@ -38,17 +39,30 @@
   }
 }
 
+.rest-post, .rest-get, .rest-patch, .rest-delete {
+  background-color: gray;
+  padding: 3px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
 .rest-post {
-  color: rgb(107, 197, 116);
+  background-color: rgb(93, 210, 104);
   text-transform: uppercase;
 }
 
 .rest-get {
-  color: rgb(127, 150, 221);
+  background-color: rgb(83, 119, 226);
+  color: white;
   text-transform: uppercase;
 }
 
 .rest-delete {
-  color: rgb(211, 117, 117);
+  background-color: rgb(211, 117, 117);
+  text-transform: uppercase;
+}
+
+.rest-patch {
+  background-color: rgb(211, 161, 117);
   text-transform: uppercase;
 }

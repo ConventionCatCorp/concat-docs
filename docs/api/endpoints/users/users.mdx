@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 displayed_sidebar: apiSidebar
+hide_table_of_contents: true
 ---
 
 # Users
@@ -11,7 +12,7 @@ displayed_sidebar: apiSidebar
   </div>
   <restList>
     <restElement method='POST' path='/api/users' anchor='create-a-user' />
-    <restElement method='GET' path='/api/users/:id' anchor='create-a-user' />
+    <restElement method='GET' path='/api/users/:id' anchor='retrieve-a-user' />
     <restElement method='PATCH' path='/api/users/:id' anchor='create-a-user' />
     <restElement method='DELETE' path='/api/users/:id/pii' anchor='create-a-user' />
   </restList>
@@ -64,9 +65,18 @@ displayed_sidebar: apiSidebar
     <attribute id="user-create-preferredName" name="preferredName" type="string" optional>
       An optional preferred name for the user. This will be displayed first on the user's profile.
     </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <attribute id="user-create-resp-underReview" name="underReview" type="boolean" response>
+      Returns true if the created user account is under review. This can happen if the user may be banned.
+    </attribute>
+    <attribute id="user-create-resp-verified" name="verified" type="boolean" response>
+      Returns true if the created user account is verified, or false if email verification is required. This state can be inferred from the <code>activationMailThreshold</code> setting.
+    </attribute>
   </div>
-  <endpointRequest method='POST' path='/api/users'>
-    {`{
+  <div>
+    <endpointRequest method='POST' path='/api/users'>
+      {`{
   "addressCity": "New York",
   "addressCountry": "US",
   "addressLine1": "123 Main St",
@@ -81,10 +91,94 @@ displayed_sidebar: apiSidebar
   "phone": "+15555555555",
   "preferredName": "Jonathan",
 }`}
-  </endpointRequest>
+    </endpointRequest>
+    <endpointResponse>
+      {`{
+  "underReview": false,
+  "verified": true,
+}`}
+    </endpointResponse>
+  </div>
 </div>
 
 ### Retrieve a User
+Returns the user object for the given ID.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gridGap: '1rem' }}>
+  <div>
+    <h4>Permissions</h4>
+    <div>
+      Requires the <code>system:login</code> permission. Other permissions are required to access additional information, such as PII and order history.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Attributes</h4>
+    <attribute id="user-retrieve-id" name="id" type="number">
+      The ID of the user to retrieve.
+    </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <attribute id="user-retrieve-resp-addressCity" name="addressCity" type="string" response permissions={['registration:read:pii']}>
+      City, town, or village of the user's address.
+    </attribute>
+    <attribute id="user-retrieve-resp-addressCountry" name="addressCountry" type="string" response permissions={['registration:read:pii']}>
+      Two-letter ISO 3166-1 alpha-2 country code.
+    </attribute>
+    <attribute id="user-retrieve-resp-addressLine1" name="addressLine1" type="string" response permissions={['registration:read:pii']}>
+      First line of the user's address. (e.g. 1234 Main St)
+    </attribute>
+    <attribute id="user-retrieve-resp-addressLine2" name="addressLine2" type="string" response permissions={['registration:read:pii']} optional>
+      Optional second line of the user's address. (e.g. Suite 100, Apt 2B)
+    </attribute>
+    <attribute id="user-retrieve-resp-addressState" name="addressState" type="string" response permissions={['registration:read:pii']}>
+      State or province of the user's address.
+    </attribute>
+    <attribute id="user-retrieve-resp-addressZipcode" name="addressZipcode" type="string" response permissions={['registration:read:pii']}>
+      ZIP or postal code of the user's address.
+    </attribute>
+    <attribute id="user-retrieve-resp-bornAt" name="bornAt" type="string" response>
+      The date the user was born, in ISO 8601 format.
+    </attribute>
+    <attribute id="user-retrieve-resp-firstName" name="firstName" type="string" response>
+      The user's legal first name, as it appears on their ID.
+    </attribute>
+  </div>
+  <div>
+    <endpointRequest method='GET' path='/api/users/:id' contentType='cURL'>
+      {`curl https://reg.cces.dev/api/users/1234 \\
+  -H "Authorization: Bearer <id>:<secret>"`}
+    </endpointRequest>
+    <endpointResponse>
+      {`{
+  "addressCity": "New York",
+  "addressCountry": "US",
+  "addressLine1": "123 Main St",
+  "addressLine2": "Suite 100",
+  "addressState": "NY",
+  "addressZipcode": "10001",
+  "bans": [],
+  "bornAt": "1990-01-01T00:00:00.000Z",
+  "email": "aperson@example.com",
+  "emailMd5": "5d54d73edc3da103d3541cd390fd0897",
+  "firstName": "John",
+  "grants": [],
+  "hasRestrictionNotice": false,
+  "hasSecondFactor": false,
+  "id": 1234,
+  "identity": null,
+  "lastName": "Doe",
+  "orders": [],
+  "organizationId": "8f6f2588-9175-4cdf-8045-ce51aa7d9e14",
+  "permissions": [],
+  "phone": "+15555555555",
+  "preferredName": "Jonathan",
+  "registration": null,
+  "reviewReason": null,
+  "roles": [],
+  "username": "aperson",
+}`}
+    </endpointResponse>
+  </div>
+</div>
 
 ### Update a User
 

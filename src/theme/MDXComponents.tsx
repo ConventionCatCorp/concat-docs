@@ -6,6 +6,7 @@ import MaterialIcon from '@site/src/components/MaterialIcon';
 import RESTElement from '@site/src/components/RESTElement';
 import RESTList from '@site/src/components/RESTList';
 import EndpointRequest from '@site/src/components/EndpointRequest';
+import EndpointResponse from '@site/src/components/EndpointResponse';
 import Link from '@docusaurus/Link';
 
 export default {
@@ -20,4 +21,5 @@ export default {
   restElement: RESTElement,
   restList: RESTList,
   endpointRequest: EndpointRequest,
+  endpointResponse: EndpointResponse,
 };

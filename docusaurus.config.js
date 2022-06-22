@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/ConCatLogo.ico',
   organizationName: 'ConventionCatCorp', // Usually your GitHub org/user name.
   projectName: 'concat-docs', // Usually your repo name.
   deploymentBranch: 'deployment',
