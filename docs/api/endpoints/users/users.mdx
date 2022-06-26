@@ -13,7 +13,7 @@ hide_table_of_contents: true
   <restList>
     <restElement method='POST' path='/api/users/manual' anchor='create-a-user' />
     <restElement method='GET' path='/api/users/:id' anchor='retrieve-a-user' />
-    <restElement method='PATCH' path='/api/users/:id' anchor='create-a-user' />
+    <restElement method='PATCH' path='/api/users/:id' anchor='update-a-user' />
     <restElement method='DELETE' path='/api/users/:id/pii' anchor='delete-a-users-pii' />
   </restList>
 </div>
@@ -252,6 +252,83 @@ Returns the user object for the given ID.
 </div>
 
 ### Update a User
+Modify the target user's attributes. Only the fields specified in the request will be updated and other fields will remain unchanged.
+
+:::note
+Attributes such as `id`, `password`, and `username` cannot be updated.
+:::
+
+:::caution
+If using the OAuth API, attempting to update any fields on the current user's account requires the user's current password.
+:::
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gridGap: '1rem' }}>
+  <div>
+    <h4>Permissions</h4>
+    <div>
+      Requires the <code>user:update</code> permission.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Attributes</h4>
+    <attribute id="user-update-addressLine1" name="addressLine1" type="string" optional>
+      First line of the user's address. (e.g. 1234 Main St)
+    </attribute>
+    <attribute id="user-update-addressLine2" name="addressLine2" type="string" optional>
+      Optional second line of the user's address. (e.g. Suite 100, Apt 2B)
+    </attribute>
+    <attribute id="user-update-addressCity" name="addressCity" type="string" optional>
+      City, town, or village of the user's address.
+    </attribute>
+    <attribute id="user-update-addressCountry" name="addressCountry" type="string" optional>
+      Two-letter ISO 3166-1 alpha-2 country code.
+    </attribute>
+    <attribute id="user-update-addressState" name="addressState" type="string" optional>
+      State or province of the user's address.
+    </attribute>
+    <attribute id="user-update-addressZipcode" name="addressZipcode" type="string" optional>
+      ZIP or postal code of the user's address.
+    </attribute>
+    <attribute id="user-update-bornAt" name="bornAt" type="string" optional>
+      Date of birth in ISO 8601 format. (e.g. 1990-01-01)
+    </attribute>
+    <attribute id="user-update-email" name="email" type="string" optional>
+      The user's email address.
+    </attribute>
+    <attribute id="user-update-firstName" name="firstName" type="string" optional>
+      The user's legal first name, as it appears on their ID.
+    </attribute>
+    <attribute id="user-update-lastName" name="lastName" type="string" optional>
+      The user's legal last name, as it appears on their ID.
+    </attribute>
+    <attribute id="user-update-phone" name="phone" type="string" optional>
+      Phone number in international format. (e.g. +15555555555)
+    </attribute>
+    <attribute id="user-update-preferredName" name="preferredName" type="string" optional>
+      An optional preferred name for the user. This will be displayed first on the user's profile.
+    </attribute>
+  </div>
+  <div>
+    <exampleBox header="/api/users/:id" method="PATCH" headerSubText="application/json">
+      {`{
+  "addressLine1": "123 Main St",
+  "addressLine2": "Suite 100",
+  "addressCity": "New York",
+  "addressCountry": "US",
+  "addressState": "NY",
+  "addressZipcode": "10001",
+  "bornAt": "1990-01-01T00:00:00.000Z",
+  "email": "test@example.com",
+  "firstName": "John",
+  "lastName": "Doe",
+  "phone": "+15555555555",
+  "preferredName": "Jonathan",
+}`}
+    </exampleBox>
+    <exampleBox header="Response">
+      204 No Content
+    </exampleBox>
+  </div>
+</div>
 
 ### Delete a User's PII
 
