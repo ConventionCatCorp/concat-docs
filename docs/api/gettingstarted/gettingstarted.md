@@ -1,11 +1,11 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 displayed_sidebar: apiSidebar
 ---
 
 # Getting Started
 
-:::info
+:::caution
 The ConCat APIs are in **early access**, are subject to change, and are available to event customers and select external partners only.
 
 If you're interested in integrating with ConCat, please reach out to **developers@concat.systems** with your use-case.

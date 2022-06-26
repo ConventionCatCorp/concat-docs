@@ -15,11 +15,29 @@
   border-bottom: 1px solid rgb(45, 45, 45);
 }
 
-.attribute-info {
+details .attribute:not(:last-child) {
+  border-bottom: 1px solid rgb(75, 100, 120);
+}
+
+.attribute-info, .attribute-info-perms {
   font-size: 14px;
 
   small {
     font-size: 12px;
+  }
+}
+
+.attribute-info-perms {
+  code {
+    margin-left: 1.5rem;
+  }
+
+  :global(.material-symbols-outlined) {
+    color: #ddac30;
+    position: absolute;
+    font-size: 18px;
+    margin-top: 4px;
+    cursor: default;
   }
 }
 
@@ -30,6 +48,10 @@
   margin-top: 0.1rem;
   opacity: 0;
   transition: opacity var(--ifm-transition-fast);
+}
+
+.attribute-permissions {
+  margin-top: 0.5rem;
 }
 
 .attribute-deprecated {

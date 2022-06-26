@@ -7,6 +7,7 @@ import RESTElement from '@site/src/components/RESTElement';
 import RESTList from '@site/src/components/RESTList';
 import EndpointRequest from '@site/src/components/EndpointRequest';
 import EndpointResponse from '@site/src/components/EndpointResponse';
+import ExampleBox from '@site/src/components/ExampleBox';
 import Link from '@docusaurus/Link';
 
 export default {
@@ -22,4 +23,5 @@ export default {
   restList: RESTList,
   endpointRequest: EndpointRequest,
   endpointResponse: EndpointResponse,
+  exampleBox: ExampleBox,
 };

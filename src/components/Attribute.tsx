@@ -18,6 +18,8 @@ interface Props {
 export default function Attribute({
   children, name, id, type, response = false, optional = false, deprecated = false, permissions = [],
 }: Props) {
+  const hasPermissions = permissions.length > 0;
+
   return (
     <div id={id} className={styles.attribute}>
       <div className={styles['attribute-link']}>
@@ -25,7 +27,10 @@ export default function Attribute({
           <MaterialIcon name="link" />
         </a>
       </div>
-      <div className={styles['attribute-info']}>
+      <div className={styles[hasPermissions ? 'attribute-info-perms' : 'attribute-info']}>
+        {hasPermissions && (
+          <MaterialIcon name="lock" title="This attribute requires one or more additional permissions." />
+        )}
         <code>{name}</code>
         <small style={{ padding: '0 0.5rem' }}>
           {type}
@@ -53,7 +58,7 @@ export default function Attribute({
         {children}
         {permissions.length > 0 && (
           <div className={styles['attribute-permissions']}>
-            <strong>Required Scope</strong>: {permissions.join(', ')}
+            <strong>Required Scope(s)</strong>: {permissions.join(', ')}
           </div>
         )}
       </div>

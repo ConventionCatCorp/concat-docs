@@ -83,3 +83,7 @@ h2, h3 {
   border-bottom: 1px solid rgb(65, 65, 65);
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading) * 2) !important;
 }
+
+details {
+  margin-top: 1.5rem !important;
+}

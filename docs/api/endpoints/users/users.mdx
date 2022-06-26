@@ -11,18 +11,28 @@ hide_table_of_contents: true
     This object represents an end-user within an event organization. Users can be attendees, vendors, performers, staff, etc.
   </div>
   <restList>
-    <restElement method='POST' path='/api/users' anchor='create-a-user' />
+    <restElement method='POST' path='/api/users/manual' anchor='create-a-user' />
     <restElement method='GET' path='/api/users/:id' anchor='retrieve-a-user' />
     <restElement method='PATCH' path='/api/users/:id' anchor='create-a-user' />
-    <restElement method='DELETE' path='/api/users/:id/pii' anchor='create-a-user' />
+    <restElement method='DELETE' path='/api/users/:id/pii' anchor='delete-a-users-pii' />
   </restList>
 </div>
 
 ### Create a User
-#### Attributes
+:::caution
+Using the `/api/users` endpoint to create a user is not recommended as captcha verification may be required. Please use the `/api/users/manual` endpoint documented below.
+:::
+
+Creates a new user with the given information, bypassing the prior ban check. *This behaviour may change in the future.*
 
 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gridGap: '1rem' }}>
   <div>
+    <h4>Permissions</h4>
+    <div>
+      Requires the <code>user:create</code> permission.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Attributes</h4>
     <attribute id="user-create-addressCity" name="addressCity" type="string">
       City, town, or village of the user's address.
     </attribute>
@@ -44,9 +54,6 @@ hide_table_of_contents: true
     <attribute id="user-create-bornAt" name="bornAt" type="string">
       The date the user was born, in ISO 8601 format.
     </attribute>
-    <attribute id="user-create-conventionId" name="conventionId" type="uuid">
-      The ID of the event organization to create the user in.
-    </attribute>
     <attribute id="user-create-email" name="email" type="string">
       The user's email address.
     </attribute>
@@ -56,26 +63,26 @@ hide_table_of_contents: true
     <attribute id="user-create-lastName" name="lastName" type="string">
       The user's legal last name, as it appears on their ID.
     </attribute>
-    <attribute id="user-create-password" name="password" type="string">
-      The chosen or generated password for the user.
-    </attribute>
     <attribute id="user-create-phone" name="phone" type="string">
       Phone number in international format. (e.g. +15555555555)
     </attribute>
     <attribute id="user-create-preferredName" name="preferredName" type="string" optional>
       An optional preferred name for the user. This will be displayed first on the user's profile.
     </attribute>
+    <attribute id="user-create-reason" name="reason" type="string, min. 10 chars">
+      A brief reason explaining why the user is being created. This will be saved to the audit log.
+    </attribute>
+    <attribute id="user-create-username" name="username" type="string">
+      The user's username.
+    </attribute>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
-    <attribute id="user-create-resp-underReview" name="underReview" type="boolean" response>
-      Returns true if the created user account is under review. This can happen if the user may be banned.
-    </attribute>
-    <attribute id="user-create-resp-verified" name="verified" type="boolean" response>
-      Returns true if the created user account is verified, or false if email verification is required. This state can be inferred from the <code>activationMailThreshold</code> setting.
+    <attribute id="user-create-resp-id" name="id" type="number" response>
+      Returns the ID of the newly created user.
     </attribute>
   </div>
   <div>
-    <endpointRequest method='POST' path='/api/users'>
+    <endpointRequest method='POST' path='/api/users/manual'>
       {`{
   "addressCity": "New York",
   "addressCountry": "US",
@@ -83,19 +90,18 @@ hide_table_of_contents: true
   "addressState": "NY",
   "addressZipcode": "10001",
   "bornAt": "1990-01-01T00:00:00.000Z",
-  "conventionId": "8f6f2588-9175-4cdf-8045-ce51aa7d9e14",
   "email": "aperson@example.com",
   "firstName": "John",
   "lastName": "Doe",
   "password": "areallysecurepassword",
-  "phone": "+15555555555",
   "preferredName": "Jonathan",
+  "reason": "Auto-generated user from external SSO",
+  "username": "jdoe",
 }`}
     </endpointRequest>
     <endpointResponse>
       {`{
-  "underReview": false,
-  "verified": true,
+  "id": 1234,
 }`}
     </endpointResponse>
   </div>
@@ -117,34 +123,93 @@ Returns the user object for the given ID.
     </attribute>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
-    <attribute id="user-retrieve-resp-addressCity" name="addressCity" type="string" response permissions={['registration:read:pii']}>
-      City, town, or village of the user's address.
-    </attribute>
-    <attribute id="user-retrieve-resp-addressCountry" name="addressCountry" type="string" response permissions={['registration:read:pii']}>
-      Two-letter ISO 3166-1 alpha-2 country code.
-    </attribute>
-    <attribute id="user-retrieve-resp-addressLine1" name="addressLine1" type="string" response permissions={['registration:read:pii']}>
-      First line of the user's address. (e.g. 1234 Main St)
-    </attribute>
-    <attribute id="user-retrieve-resp-addressLine2" name="addressLine2" type="string" response permissions={['registration:read:pii']} optional>
-      Optional second line of the user's address. (e.g. Suite 100, Apt 2B)
-    </attribute>
-    <attribute id="user-retrieve-resp-addressState" name="addressState" type="string" response permissions={['registration:read:pii']}>
-      State or province of the user's address.
-    </attribute>
-    <attribute id="user-retrieve-resp-addressZipcode" name="addressZipcode" type="string" response permissions={['registration:read:pii']}>
-      ZIP or postal code of the user's address.
+    <attribute id="user-retrieve-resp-bans" name="bans" type="array of Ban" response>
+      A list of bans applied to the user.
     </attribute>
     <attribute id="user-retrieve-resp-bornAt" name="bornAt" type="string" response>
       The date the user was born, in ISO 8601 format.
     </attribute>
+    <attribute id="user-retrieve-resp-emailMd5" name="emailMd5" type="string" response>
+      The MD5 hash of the user's email address.
+    </attribute>
     <attribute id="user-retrieve-resp-firstName" name="firstName" type="string" response>
       The user's legal first name, as it appears on their ID.
     </attribute>
+    <attribute id="user-retrieve-resp-hasRestrictionNotice" name="hasRestrictionNotice" type="boolean" response>
+      Returns true if the user has a note with type <code>restriction</code> on their account.
+    </attribute>
+    <attribute id="user-retrieve-resp-hasSecondFactor" name="hasSecondFactor" type="boolean" response>
+      Returns true if the user has a second factor enabled.
+    </attribute>
+    <attribute id="user-retrieve-resp-id" name="id" type="number" response>
+      The ID of the user.
+    </attribute>
+    <attribute id="user-retrieve-resp-identity" name="identity" type="Identity" optional response>
+      The Identity Verification information for the user.
+    </attribute>
+    <attribute id="user-retrieve-resp-lastName" name="lastName" type="string" response>
+      The user's legal last name, as it appears on their ID.
+    </attribute>
+    <attribute id="user-retrieve-resp-organizationId" name="organizationId" type="string" response>
+      The ID of the organization the user belongs to.
+    </attribute>
+    <attribute id="user-retrieve-resp-permissions" name="permissions" type="array of string" response>
+      The permissions granted to the user.
+    </attribute>
+    <attribute id="user-retrieve-resp-preferredName" name="preferredName" type="string" optional response>
+      An optional preferred name for the user. This will be displayed first on the user's profile.
+    </attribute>
+    <attribute id="user-retrieve-resp-registration" name="registration" type="Registration" optional response>
+      The attendee registration record for the user.
+    </attribute>
+    <attribute id="user-retrieve-resp-reviewReason" name="reviewReason" type="string" optional response>
+      The reason the user requires manual review.
+    </attribute>
+    <attribute id="user-retrieve-resp-roles" name="roles" type="array of string" response>
+      The roles granted to the user.
+    </attribute>
+    <attribute id="user-retrieve-resp-username" name="username" type="string" response>
+      The user's username.
+    </attribute>
+    <details>
+      <summary>Scope Restricted Attributes</summary>
+      <div>
+        <attribute id="user-retrieve-resp-addressCity" name="addressCity" type="string" response permissions={['registration:read:pii']}>
+          City, town, or village of the user's address.
+        </attribute>
+        <attribute id="user-retrieve-resp-addressCountry" name="addressCountry" type="string" response permissions={['registration:read:pii']}>
+          Two-letter ISO 3166-1 alpha-2 country code.
+        </attribute>
+        <attribute id="user-retrieve-resp-addressLine1" name="addressLine1" type="string" response permissions={['registration:read:pii']}>
+          First line of the user's address. (e.g. 1234 Main St)
+        </attribute>
+        <attribute id="user-retrieve-resp-addressLine2" name="addressLine2" type="string" response permissions={['registration:read:pii']} optional>
+          Optional second line of the user's address. (e.g. Suite 100, Apt 2B)
+        </attribute>
+        <attribute id="user-retrieve-resp-addressState" name="addressState" type="string" response permissions={['registration:read:pii']}>
+          State or province of the user's address.
+        </attribute>
+        <attribute id="user-retrieve-resp-addressZipcode" name="addressZipcode" type="string" response permissions={['registration:read:pii']}>
+          ZIP or postal code of the user's address.
+        </attribute>
+        <attribute id="user-retrieve-resp-email" name="email" type="string" response permissions={['registration:read:pii']}>
+          The user's email address.
+        </attribute>
+        <attribute id="user-retrieve-resp-grants" name="grants" type="array of Grant" response permissions={['order:view']}>
+          A list of grants applied to the user.
+        </attribute>
+        <attribute id="user-retrieve-resp-orders" name="orders" type="array of Order" response permissions={['order:view']}>
+          A list of orders the user has made.
+        </attribute>
+        <attribute id="user-retrieve-resp-phone" name="phone" type="string" response permissions={['registration:read:pii']}>
+          Phone number in international format. (e.g. +15555555555)
+        </attribute>
+      </div>
+    </details>
   </div>
   <div>
     <endpointRequest method='GET' path='/api/users/:id' contentType='cURL'>
-      {`curl https://reg.cces.dev/api/users/1234 \\
+      {`curl https://reg.cces.dev/api/users/:id \\
   -H "Authorization: Bearer <id>:<secret>"`}
     </endpointRequest>
     <endpointResponse>
@@ -164,7 +229,13 @@ Returns the user object for the given ID.
   "hasRestrictionNotice": false,
   "hasSecondFactor": false,
   "id": 1234,
-  "identity": null,
+  "identity": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "status": "verified",
+    "type": "document",
+    "bornAt": "1990-01-01T00:00:00.000Z",
+  },
   "lastName": "Doe",
   "orders": [],
   "organizationId": "8f6f2588-9175-4cdf-8045-ce51aa7d9e14",
@@ -189,6 +260,35 @@ Removing a user's personally identifiable information (PII) is a permanent and i
 :::
 
 :::caution
-Attempting to delete a banned user's PII will return a 200 OK, but will not actually delete the user's PII.
+Attempting to delete a banned user's PII will return a 204 No Content, but will not actually delete the user's PII.
 :::
+
+Removes all personally identifiable information (PII) from a user record, effectively anonymizing and disabling the user's account.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gridGap: '1rem' }}>
+  <div>
+    <h4>Permissions</h4>
+    <div>
+      Requires the <code>pii:admin:delete</code> permission.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Attributes</h4>
+    <attribute id="user-retrieve-id" name="id" type="number">
+      The ID of the user to remove PII from.
+    </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    This call will not return a payload, and will return a 204 No Content response irrespective of success or failure.
+  </div>
+  <div>
+    <endpointRequest method='DELETE' path='/api/users/:id/pii' contentType='cURL'>
+      {`curl https://reg.cces.dev/api/users/:id/pii \\
+  -X DELETE \\
+  -H "Authorization: Bearer <id>:<secret>"`}
+    </endpointRequest>
+    <endpointResponse>
+      204 No Content
+    </endpointResponse>
+  </div>
+</div>
 
