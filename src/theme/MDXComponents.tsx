@@ -8,6 +8,7 @@ import RESTList from '@site/src/components/RESTList';
 import EndpointRequest from '@site/src/components/EndpointRequest';
 import EndpointResponse from '@site/src/components/EndpointResponse';
 import ExampleBox from '@site/src/components/ExampleBox';
+import SplitColumn from '@site/src/components/SplitColumn';
 import Link from '@docusaurus/Link';
 
 export default {
@@ -24,4 +25,5 @@ export default {
   endpointRequest: EndpointRequest,
   endpointResponse: EndpointResponse,
   exampleBox: ExampleBox,
+  splitColumn: SplitColumn,
 };
