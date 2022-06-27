@@ -161,3 +161,15 @@ If your app no longer requires access to all of the scopes originally requested,
     </exampleBox>
   </div>
 </div>
+
+### Step 5. Authenticating with the Token
+
+All requests to the ConCat APIs **must** be done through a HTTPS connection, with a minimum TLS protocol of v1.2 or newer. ConCat uses a HTTP Authorization header to authenticate API requests. The Authorization header must be in the following format:
+
+```
+Authorization: Bearer <Token>
+```
+
+:::info
+The above header **should** always be included in your request, even if the request is not authenticated. This helps us prevent abuse of the APIs, and collect usage statistics to improve the service.
+:::
