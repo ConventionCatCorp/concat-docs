@@ -1,0 +1,278 @@
+---
+sidebar_position: 1
+displayed_sidebar: apiSidebar
+hide_table_of_contents: true
+---
+
+# Roles & Permissions
+
+<splitColumn>
+  <div>
+    Roles are used to define the permissions a user has. However, roles can also be used to indicate specific staff ranks within an event organization, or if a user has completed a required process or procedure (e.g. user has signed an NDA).
+  </div>
+  <restList>
+    <restElement method='GET' path='/api/permissions' anchor='get-all-permissions' />
+    <restElement method='GET' path='/api/roles' anchor='get-all-roles' />
+    <restElement method='POST' path='/api/roles' anchor='create-new-role' />
+    <restElement method='DELETE' path='/api/roles/:id' anchor='delete-a-role' />
+    <restElement method='PATCH' path='/api/users/:id/roles' anchor='manage-a-users-roles' />
+  </restList>
+</splitColumn>
+
+### Get All Permissions
+:::caution Not Yet Available
+The permission scope associated with this endpoint is not yet requestable via the API.
+:::
+
+Retrieves all available permissions, including metadata describing each permission and how it can be used.
+
+<splitColumn>
+  <div>
+    <h4>Scopes</h4>
+    <div>
+      Requires the <code>system:permission:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Attributes</h4>
+    <attribute id="permissions-retrieve-resp-default" name="default" response type="boolean">
+      Returns <code>true</code> if the permission is assigned to all users by default.
+    </attribute>
+    <attribute id="permissions-retrieve-resp-description" name="description" response type="string">
+      A description of the permission.
+    </attribute>
+    <attribute id="permissions-retrieve-resp-icon" name="icon" type="string" response optional>
+      The name of the Material Symbols icon to use for the permission on the OAuth 2.0 permission screen.
+    </attribute>
+    <attribute id="permissions-retrieve-resp-id" name="id" type="number" response>
+      The unique identifier of the permission.
+    </attribute>
+    <attribute id="permissions-retrieve-resp-name" name="name" type="string" response>
+      The name of the permission.
+    </attribute>
+    <attribute id="permissions-retrieve-resp-oAuthGrantable" name="oAuthGrantable" response type="boolean">
+      Returns <code>true</code> if the permission is grantable via OAuth 2.0.
+    </attribute>
+    <attribute id="permissions-retrieve-resp-requiredPermissionId" name="requiredPermissionId" type="number" response optional>
+      The unique identifier of the permission that the user must have in order to authorize this scope via OAuth 2.0. <i>Requires <code>oAuthGrantable</code> to be <code>true</code>.</i>
+    </attribute>
+    <attribute id="permissions-retrieve-resp-selfScoped" name="selfScoped" response type="boolean">
+      <p>
+        Returns <code>true</code> if the permission should be assigned with a self-scoped identifier when assigned by default. When this permission is manually assigned to a user or assigned via a role, the self-scoped identifier will not be used.
+      </p>
+      <p>
+        This changes the resulting permission to be <code>permission:name:&lt;id&gt;</code> instead of <code>permission:name</code>.
+      </p>
+    </attribute>
+  </div>
+  <div>
+    <exampleBox header="/api/permissions" method="GET" headerSubText="cURL">
+      {`curl https://reg.cces.dev/api/permissions \\
+  -H "Authorization: Bearer <token>"`}
+    </exampleBox>
+    <exampleBox header="Response" headerSubText="application/json">
+      {`[
+  ...,
+  {
+    "default": true,
+    "description": "Access your convention registration",
+    "icon": "how_to_reg",
+    "id": 5,
+    "name": "con:read",
+    "oAuthGrantable": true,
+    "requiredPermissionId": null,
+    "selfScoped": true,
+  },
+  ...
+]`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Get All Roles
+:::caution Not Yet Available
+The permission scope associated with this endpoint is not yet requestable via the API.
+:::
+
+Retrieves all roles that currently exist in the system and all of their associated permissions.
+
+<splitColumn>
+  <div>
+    <h4>Scopes</h4>
+    <div>
+      Requires the <code>system:permission:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Attributes</h4>
+    <attribute id="roles-retrieve-resp-id" name="id" type="number">
+      The unique ID of the role.
+    </attribute>
+    <attribute id="roles-retrieve-resp-name" name="name" type="string">
+      The name of the role.
+    </attribute>
+    <attribute id="roles-retrieve-resp-description" name="description" type="string">
+      A brief description of the role.
+    </attribute>
+    <attribute id="roles-retrieve-resp-rolePermissions" name="rolePermissions" type="array of RolePermission">
+      An array of permission assignments that are associated with the role. If <code>invert</code> is set to <code>true</code>, the permissions are explicitly denied to the role.
+    </attribute>
+  </div>
+  <div>
+    <exampleBox header="/api/roles" method="GET" headerSubText="cURL">
+      {`curl https://reg.cces.dev/api/roles \\
+  -H "Authorization: Bearer <token>"`}
+    </exampleBox>
+    <exampleBox header="Response" headerSubText="application/json">
+      {`[
+  {
+    "id": 1,
+    "name": "hr",
+    "description": "Grants access to manage staff and volunteers.",
+    "rolePermissions": [
+      {
+        "roleId": 1,
+        "permissionId": 1,
+        "invert": false,
+      },
+      ...
+    ],
+  },
+  ...
+]`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Create New Role
+:::caution Not Yet Available
+The permission scope associated with this endpoint is not yet requestable via the API.
+:::
+
+Creates a new role with the given name, description, and associated permissions. The permissions are optional to allow for the creation of functional roles, but if provided, they must be valid permission IDs.
+
+<splitColumn>
+  <div>
+    <h4>Scopes</h4>
+    <div>
+      Requires the <code>system:settings:update</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Request Attributes</h4>
+    <attribute id="roles-create-req-description" name="description" type="string">
+      A brief description of the role.
+    </attribute>
+    <attribute id="roles-create-req-name" name="name" type="string">
+      The name of the role.
+    </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <attribute id="roles-create-resp-id" name="id" type="number" response>
+      The unique ID of the newly created role.
+    </attribute>
+  </div>
+  <div>
+    <exampleBox header="/api/roles" method="POST" headerSubText="application/json">
+      {`{
+  "description": "Grants access to manage staff and volunteers.",
+  "name": "hr",
+}`}
+    </exampleBox>
+    <exampleBox header="Response" headerSubText="application/json">
+      {`{
+  "id": 1,
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Delete a Role
+:::caution Not Yet Available
+The permission scope associated with this endpoint is not yet requestable via the API.
+:::
+
+Deletes the role with the given ID.
+
+:::danger
+Deleting a role is permanent and cannot be undone. All users that have the role will immediately lose access to the permissions associated with the role.
+:::
+
+<splitColumn>
+  <div>
+    <h4>Scopes</h4>
+    <div>
+      Requires the <code>staff:roles:update</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Request Attributes</h4>
+    <attribute id="roles-delete-req-id" name="id" type="number">
+      The unique ID of the role to delete.
+    </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    This call will not return a payload, and will return a 204 No Content response on success.
+  </div>
+  <div>
+    <exampleBox header="/api/roles" method="DELETE" headerSubText="cURL">
+      {`curl https://reg.cces.dev/api/roles/:id \\
+  -X DELETE \\
+  -H "Authorization: Bearer <token>"`}
+    </exampleBox>
+    <exampleBox header="Response">
+      204 No Content
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Manage a User's Roles
+:::caution Not Yet Available
+The permission scope associated with this endpoint is not yet requestable via the API.
+:::
+
+:::note Deprecation Note
+This endpoint will be deprecated and replaced with `POST` and `DELETE` endpoints for adding and removing a user's roles in the future.
+:::
+
+:::caution
+It is not possible to add or remove roles from the currently authenticated user for security reasons when using the OAuth 2.0 flow. Using a system-level API key will not have this limitation. 
+:::
+
+Allows adding or removing a user's roles.
+
+<splitColumn>
+  <div>
+    <h4>Scopes</h4>
+    <div>
+      Requires the <code>staff:roles:update</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Path Attributes</h4>
+    <attribute id="roles-manage-user-req-id" name="id" type="number">
+      The unique ID of the user to add or remove roles from.
+    </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Request Attributes</h4>
+    <attribute id="roles-manage-user-req-action" name="action" type="string, valid values: 'add', 'remove'">
+      The action to perform on the user's roles.
+    </attribute>
+    <attribute id="roles-manage-user-req-roleId" name="roleId" type="number">
+      The unique ID of the role to add or remove.
+    </attribute>
+    <attribute id="roles-manage-user-req-scope" name="scope" type="string, valid values: 'convention', 'global'">
+      The scope for the role being added. If the scope is <code>convention</code>, the role will only apply to the current event. If the scope is <code>global</code>, the role will apply to all events under the same event organization.
+    </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    This call will not return a payload, and will return a 204 No Content response on success.
+  </div>
+  <div>
+    <exampleBox header="/api/users/:id/roles" method="PATCH" headerSubText="application/json">
+      {`{
+  "action": "add",
+  "roleId": 1,
+  "scope": "convention",
+}`}
+    </exampleBox>
+    <exampleBox header="Response">
+      204 No Content
+    </exampleBox>
+  </div>
+</splitColumn>

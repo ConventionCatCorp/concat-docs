@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Convention Cat (ConCat>">
+      description="Convention Cat (ConCat)">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

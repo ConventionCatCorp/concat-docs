@@ -1,0 +1,34 @@
+---
+sidebar_position: 2
+displayed_sidebar: apiSidebar
+---
+
+# Logic Error Codes
+
+<attribute id="le-code-1" name="RecordIsReferenced" type="(1)">
+  The record you're trying to delete has other dependent records.
+</attribute>
+
+<attribute id="le-code-2" name="CannotChangeDealerStatus" type="(2)">
+  The vendor has already paid, so cannot be changed to a different status. Refund the vendor's payment before changing the status.
+</attribute>
+
+<attribute id="le-code-3" name="UserWasAlreadyAdded" type="(3)">
+  Target user is already associated with the target record. You can't add the same user to the same record twice.
+</attribute>
+
+<attribute id="le-code-4" name="CannotDeleteApplication" type="(4)">
+  The vendor has already paid, so cannot be deleted. Refund the vendor's payment before deleting the application.
+</attribute>
+
+<attribute id="le-code-5" name="CardDeclined" type="(5)">
+  The payment was declined by the credit card processor.
+</attribute>
+
+<attribute id="le-code-6" name="EmailAlreadyInUse" type="(6)">
+  The email address is already in use.
+</attribute>
+
+<attribute id="le-code-7" name="CannotAddCompensationToOwn" type="(7)" deprecated>
+  You cannot add compensation to your own user.
+</attribute>

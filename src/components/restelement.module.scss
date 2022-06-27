@@ -1,0 +1,58 @@
+.restelement {
+  display: flex;
+  font-family: 'Consolas', monospace;
+  font-size: 14px;
+
+  a {
+    display: flex;
+    flex: 1;
+    color: rgb(175, 175, 175);
+  }
+
+  a:hover {
+    color: rgb(220, 220, 220);
+
+    .rest-post {
+      color: rgb(107, 197, 116);
+    }
+
+    .rest-get {
+      color: rgb(127, 150, 221);
+    }
+
+    .rest-delete {
+      color: rgb(211, 117, 117);
+    }
+
+    .rest-patch {
+      color: rgb(211, 147, 117);
+    }
+  }
+
+  a, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+
+  div:first-child {
+    flex: 0.1;
+    text-align: right;
+    margin-right: 1rem;
+    min-width: 4rem;
+  }
+}
+
+.rest-get {
+  color: rgb(97, 120, 181);
+}
+
+.rest-post {
+  color: rgb(84, 163, 92);
+}
+
+.rest-delete {
+  color: rgb(163, 84, 84);
+}
+
+.rest-patch {
+  color: rgb(163, 124, 66);
+}

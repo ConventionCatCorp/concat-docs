@@ -37,3 +37,53 @@
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+/*
+ * Reset the line-number counter for each .prism-code scope
+ */
+ .prism-code {
+  counter-reset: line-number;
+}
+
+/*
+ * Notice the chained .language-ts class name to .prism-code
+ * You can chain more languages in order to add line numbers
+ */
+.prism-code .token-line::before {
+  counter-increment: line-number;
+  content: counter(line-number);
+  margin-right: calc(var(--ifm-pre-padding) * 0.5);
+  text-align: right;
+  display: inline-block;
+  position: sticky;
+  min-width: 1.25rem;
+  left: 0;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(246, 248, 250);
+  height: 100%;
+  margin-left: -1rem;
+  padding-left: calc(var(--ifm-pre-padding) * 1);
+  padding-right: calc(var(--ifm-pre-padding) * 1);
+}
+
+[data-theme='dark'] .prism-code .token-line::before {
+  background-color: rgb(40, 42, 54);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+h2, h3 {
+  border-bottom: 1px solid rgb(65, 65, 65);
+  margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading) * 2) !important;
+}
+
+details {
+  margin-top: 1.5rem !important;
+}

@@ -1,0 +1,68 @@
+.endpointrequest {
+  background-color: rgb(40, 42, 54);
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px 10px 0 0;
+  height: fit-content;
+  margin-bottom: 1rem;
+
+  header {
+    background-color: rgb(244, 244, 244);
+    border-radius: 7px 7px 0 0;
+    padding: 10px 10px 10px 15px;
+    color: black;
+    font-size: 13px;
+
+    .pull-right {
+      float: right;
+    }
+  }
+}
+
+.theme-code-block {
+  margin-bottom: 0 !important;
+  background-color: rgb(246, 248, 250);
+  border-radius: 0;
+}
+
+[data-theme='dark'] {
+  .endpointrequest {
+    border: 1px solid rgb(48, 48, 48);
+
+    header {
+      background-color: rgb(69, 69, 69);
+      color: white;
+    }
+  }
+
+  .theme-code-block {
+    background-color: rgb(40, 42, 54);
+  }
+}
+
+.rest-post, .rest-get, .rest-patch, .rest-delete {
+  background-color: gray;
+  padding: 3px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.rest-post {
+  background-color: rgb(93, 210, 104);
+  text-transform: uppercase;
+}
+
+.rest-get {
+  background-color: rgb(83, 119, 226);
+  color: white;
+  text-transform: uppercase;
+}
+
+.rest-delete {
+  background-color: rgb(201, 90, 90);
+  text-transform: uppercase;
+}
+
+.rest-patch {
+  background-color: rgb(226, 126, 50);
+  text-transform: uppercase;
+}

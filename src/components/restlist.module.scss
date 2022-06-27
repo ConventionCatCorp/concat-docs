@@ -1,0 +1,29 @@
+.restlist {
+  background-color: rgb(40, 42, 54);
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+
+  header {
+    background-color: rgb(244, 244, 244);
+    border-radius: 7px 7px 0 0;
+    padding: 5px 5px 5px 10px;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  >div {
+    padding: 5px 10px 5px 10px;
+  }
+}
+
+[data-theme='dark'] {
+  .restlist {
+    border: 1px solid rgb(48, 48, 48);
+
+    header {
+      background-color: rgb(85, 85, 85);
+      color: white;
+    }
+  }
+}
