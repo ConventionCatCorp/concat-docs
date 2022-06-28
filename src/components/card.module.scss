@@ -1,0 +1,22 @@
+@import '@site/src/css/_variables.scss';
+
+.card {
+  border: 1px solid darken($brand-accent, 5%);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 25rem;
+
+  header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $brand-mid;
+    margin-bottom: 0.35rem;
+  }
+}
+
+[data-theme='dark'] {
+  .card header {
+    color: $brand-accent;
+  }
+}

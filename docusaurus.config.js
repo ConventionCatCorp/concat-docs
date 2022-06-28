@@ -63,6 +63,11 @@ const config = {
             label: 'API Reference',
           },
           {
+            label: 'Pricing',
+            position: 'left',
+            to: '/pricing',
+          },
+          {
             href: 'https://github.com/ConventionCatCorp/concat-docs',
             label: 'GitHub',
             position: 'right',
@@ -73,11 +78,23 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Using ConCat',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Getting Started',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Features',
+                to: '/docs/features',
+              },
+              {
+                label: 'Pricing',
+                to: '/pricing',
+              },
+              {
+                label: 'API Reference',
+                to: '/docs/api/intro',
               },
             ],
           },
@@ -90,6 +107,19 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Policies',
+            items: [
+              {
+                label: 'Privacy Policy',
+                to: '/policy/privacy',
+              },
+              {
+                label: 'Terms of Service',
+                to: '/policy/terms',
+              },
+            ]
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Convention Cat Event Systems, Inc.`,
       },

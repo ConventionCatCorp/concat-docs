@@ -1,0 +1,72 @@
+@import '@site/src/css/_variables.scss';
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: $brand-accent;
+
+  h1 {
+    color: $brand-dark;
+
+    span {
+      color: $brand-primary;
+    }
+  }
+
+  a:not(:first-of-type) {
+    border-color: lighten($brand-mid, 35%) !important;
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  >:global(.button) {
+    margin: 0 0.5rem;
+  }
+}
+
+:global(.footer__copyright) {
+  text-align: left;
+  font-size: 12px;
+}
+
+[data-theme='dark'] {
+  .heroBanner {
+    background-color: $brand-dark;
+
+    h1 {
+      color: $brand-accent;
+
+      span {
+        color: lighten($brand-primary, 25%);
+      }
+    }
+
+    a:first-of-type {
+      border-color: $brand-primary;
+      background-color: darken($brand-accent, 10%);
+      color: $brand-dark;
+    }
+
+    a:not(:first-of-type) {
+      border-color: $brand-accent;
+      background-color: transparent;
+      color: $brand-accent;
+
+      &:hover {
+        background-color: darken($brand-accent, 50%);
+      }
+    }
+  }
+}
