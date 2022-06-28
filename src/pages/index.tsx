@@ -20,12 +20,11 @@ function HomepageHeader() {
             to="/docs/intro">
             Learn More
           </Link>
-          <a
+          <Link
             className="button button--secondary button--lg"
-            target="_blank"
-            href="https://concat.app/pricing.html">
-            Contact Sales
-          </a>
+            to="/pricing">
+            View Pricing
+          </Link>
         </div>
       </div>
     </header>
