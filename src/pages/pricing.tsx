@@ -33,6 +33,11 @@ export default function Pricing(): JSX.Element {
               You don't like hidden costs and neither do we. That's why the only prices you'll pay are
               the ones you see here. We also don't require free badges for our engineers or support staff.
             </p>
+            <h3>Payments by Stripe</h3>
+            <p>
+              We integrate with Stripe Connect to securely accept credit cards, Apple Pay, Google Pay, and bank transfers in more
+              than 135 countries.
+            </p>
           </div>
           <Card header='Beta Plan' className={styles['price-card']}>
             <div className={styles['pricing']}>

@@ -43,9 +43,12 @@
     li {
       display: inline-flex;
       width: 100%;
+      height: 26px;
 
       :global(.material-symbols-outlined) {
         margin-right: 1rem;
+        width: 24px;
+        height: 24px;
       }
 
       &.feature-on {
