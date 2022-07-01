@@ -4,28 +4,40 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.scss';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import SplitColumn from '../components/SplitColumn';
+import FeatureList from '../components/FeatureList';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">
-          Manage your <span>event</span>, not a <span>spreadsheet</span>.
-        </h1>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--primary button--lg"
-            to="/docs/intro">
-            Learn More
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/pricing">
-            View Pricing
-          </Link>
-        </div>
+        <SplitColumn>
+          <div>
+            <h1 className="hero__title">
+              Manage your <span>event</span>, not a <span>spreadsheet</span>.
+            </h1>
+            <p>
+              Simple event management for events of all sizes. Whether you're just
+              starting out or already established, we're right there with you.
+            </p>
+            <div className={styles.buttons}>
+              <Link
+                className="button button--primary button--lg"
+                to="/pricing">
+                View Pricing
+              </Link>
+              <Link
+                className="button button--secondary button--lg"
+                to="/docs/intro">
+                Learn More
+              </Link>
+            </div>
+          </div>
+          <div>
+            [ Screenshot of ConCat pages ]
+          </div>
+        </SplitColumn>
       </div>
     </header>
   );
@@ -39,7 +51,7 @@ export default function Home(): JSX.Element {
       description="Convention Cat (ConCat)">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <FeatureList />
       </main>
     </Layout>
   );

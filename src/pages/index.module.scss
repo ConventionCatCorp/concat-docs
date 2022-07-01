@@ -14,10 +14,6 @@
       color: $brand-primary;
     }
   }
-
-  a:not(:first-of-type) {
-    border-color: lighten($brand-mid, 35%) !important;
-  }
 }
 
 @media screen and (max-width: 966px) {
@@ -60,9 +56,9 @@
     }
 
     a:not(:first-of-type) {
-      border-color: $brand-accent;
       background-color: transparent;
       color: $brand-accent;
+      border-color: transparent;
 
       &:hover {
         background-color: darken($brand-accent, 50%);
