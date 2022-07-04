@@ -16,9 +16,20 @@
   }
 }
 
+.heroImg {
+  position: absolute;
+  top: -25%;
+  width: 40%;
+  right: 0;
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+  }
+
+  .heroImg {
+    display: none;
   }
 }
 

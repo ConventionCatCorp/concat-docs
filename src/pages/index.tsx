@@ -35,7 +35,7 @@ function HomepageHeader() {
             </div>
           </div>
           <div>
-            [ Screenshot of ConCat pages ]
+            <img className={styles.heroImg} src="/img/ConCatHero.png" title="ConCat Promo Image" />
           </div>
         </SplitColumn>
       </div>
