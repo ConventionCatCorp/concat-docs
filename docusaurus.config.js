@@ -51,6 +51,11 @@ const config = {
         },
         items: [
           {
+            label: 'Pricing',
+            position: 'left',
+            to: '/pricing',
+          },
+          {
             type: 'doc',
             docId: 'intro',
             position: 'left',
@@ -61,11 +66,6 @@ const config = {
             docId: 'api/intro',
             position: 'left',
             label: 'API Reference',
-          },
-          {
-            label: 'Pricing',
-            position: 'left',
-            to: '/pricing',
           },
           {
             href: 'https://github.com/ConventionCatCorp/concat-docs',
