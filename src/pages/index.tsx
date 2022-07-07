@@ -48,7 +48,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Convention Cat (ConCat)">
+      description="Simple event management for events of all sizes.">
       <HomepageHeader />
       <main>
         <FeatureList />

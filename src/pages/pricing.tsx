@@ -10,7 +10,7 @@ export default function Pricing(): JSX.Element {
   return (
     <Layout
       title="Pricing"
-      description="Convention Cat (ConCat)">
+      description="Simple event management for events of all sizes.">
       <main className={styles.main}>
         <SplitColumn>
           <div>

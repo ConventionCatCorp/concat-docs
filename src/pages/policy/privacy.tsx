@@ -9,7 +9,7 @@ export default function Privacy(): JSX.Element {
   return (
     <Layout
       title="Privacy Policy"
-      description="Convention Cat (ConCat)">
+      description="Simple event management for events of all sizes.">
       <main className={styles.main}>
         <h1>Privacy Policy</h1>
         <div className={styles.subtitle}>

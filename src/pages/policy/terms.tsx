@@ -9,7 +9,7 @@ export default function Terms(): JSX.Element {
   return (
     <Layout
       title="Terms of Service"
-      description="Convention Cat (ConCat)">
+      description="Simple event management for events of all sizes.">
       <main className={styles.main}>
         <h1>Terms of Service</h1>
         <div className={styles.subtitle}>
