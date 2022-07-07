@@ -10,6 +10,7 @@ interface Feature {
   icon: string;
   id: string;
   description: ReactNode;
+  img?: string;
 }
 
 const features: Feature[] = [
@@ -19,6 +20,7 @@ const features: Feature[] = [
       meet your needs!`,
     icon: "badge",
     id: "attendee-reg",
+    img: "AttendeeRegistration.png",
     name: "Attendee Registration",
   },
   {
@@ -27,6 +29,7 @@ const features: Feature[] = [
     QuikTicket™.`,
     icon: "shopping_basket",
     id: "event-store",
+    img: "EventStore.png",
     name: "Event Store",
   },
   {
@@ -34,6 +37,7 @@ const features: Feature[] = [
     staff application and assignment module to make HR a breeze for you and your attendees.`,
     icon: "groups",
     id: "volunteer-mgmt",
+    img: "HR.png",
     name: "Staff and Volunteer Management",
   },
   {
@@ -43,6 +47,7 @@ const features: Feature[] = [
     of approved vendors.`,
     icon: "storefront",
     id: "vendor-mgmt",
+    img: "VendorHall.png",
     name: "Vendor Hall Management",
   },
   {
@@ -52,6 +57,7 @@ const features: Feature[] = [
     or time.`,
     icon: "redeem",
     id: "addons-vouchers-discounts",
+    img: "VouchersDiscountsAddons.png",
     name: "Add-Ons, Vouchers, and Discounts"
   },
   {
@@ -60,16 +66,18 @@ const features: Feature[] = [
     all of our customization features are entirely free!`,
     icon: "bolt",
     id: "express-mode",
+    img: "ExpressMode.png",
     name: "Express Mode"
   }
 ];
 
 export default function FeatureList(): JSX.Element {
   const [activeFeature, setActiveFeature] = useState<string>("attendee-reg");
+  const feature: Feature = features.find(({ id }) => activeFeature === id);
 
   return (
     <SplitColumn>
-      <div>
+      <div className={styles['feature-container']}>
         <ul className={styles['feature-list']}>
           {features.map(({
             description, icon, id, name,
@@ -97,9 +105,11 @@ export default function FeatureList(): JSX.Element {
           })}
         </ul>
       </div>
-      <div className={styles['feature-image']}>
-        [promo image of feature]
-      </div>
+      {feature && (
+        <div className={styles['feature-image']}>
+          <img src={`/img/promo/${feature.img}`} title={`${feature.name} Promo Image`} />
+        </div>
+      )}
     </SplitColumn>
   )
 }

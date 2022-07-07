@@ -51,6 +51,8 @@
   display: inline-flex;
 
   :global(.material-symbols-outlined) {
+    width: 35px;
+    height: 35px;
     margin-right: 1rem !important;
     padding: 0.35rem;
     border-radius: 5px;
@@ -59,12 +61,25 @@
   }
 }
 
+.feature-container {
+  margin-bottom: 5rem;
+}
+
 .feature-image {
   margin-top: 2rem;
+  margin-right: 1rem;
 }
 
 @media screen and (max-width: 966px) {
   .feature-list {
     margin-left: 0 !important;
+  }
+
+  .feature-container {
+    margin-bottom: 0;
+  }
+
+  .feature-image {
+    display: none;
   }
 }
