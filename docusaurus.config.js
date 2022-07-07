@@ -85,10 +85,6 @@ const config = {
                 to: '/docs/intro',
               },
               {
-                label: 'Features',
-                to: '/docs/features',
-              },
-              {
                 label: 'Pricing',
                 to: '/pricing',
               },
