@@ -52,6 +52,10 @@ export default function Terms(): JSX.Element {
             </p>
           </li>
         </ul>
+        <p>
+          A copy of this Designated Agent Information can be retrieved from the US Copyright Office&nbsp;
+          <a href="https://dmca.copyright.gov">DMCA Designated Agent Directory</a> website.
+        </p>
         <h3>DMCA Handling Process</h3>
         <ol>
           <li>
