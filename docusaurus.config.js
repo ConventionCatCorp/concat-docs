@@ -114,6 +114,10 @@ const config = {
                 label: 'Terms of Service',
                 to: '/policy/terms',
               },
+              {
+                label: 'DMCA Takedown Policy',
+                to: '/policy/dmca',
+              }
             ]
           }
         ],
