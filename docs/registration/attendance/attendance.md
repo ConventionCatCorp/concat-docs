@@ -10,7 +10,7 @@ they register. On other platforms, these are sometimes referred to as "tiers", "
 
 For each tier, you can customize details like the description, price, stock levels, and more.
 
-### Creating a Attendance Tier
+### Creating an Attendance Tier
 
 You can create an unlimited number of attendance tiers, using the following steps:
 
@@ -98,3 +98,41 @@ You can create an unlimited number of attendance tiers, using the following step
     </div>
   </li>
 </ol>
+
+### Modifying an Attendance Tier
+
+You can modify an attendance tier at any time by clicking the edit (<i className="material-symbols-outlined">edit</i>) icon in the <strong>Product Information</strong> section of the tier.
+
+Other sections (<strong>Product Images</strong>, <strong>Addons</strong>, <strong>Discounts</strong>, <strong>Upgrade Paths</strong>, <strong>Product Options</strong>, and <strong>Surcharges</strong>) can be modified at any time.
+
+To modify an Attendance Tier, you can use the following steps:
+
+<ol className="numbered-list">
+  <li>
+    Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.
+  </li>
+  <li>
+    Click "<strong>Products</strong>" from the left-hand sidebar, then under the Registration category click "<strong>View Products</strong>".
+  </li>
+  <li>
+    Click on "<strong>View / Edit Details</strong>" for the Attendance Tier you'd like to modify.
+  </li>
+  <li>
+    <span>
+      Click the edit (<i className="material-symbols-outlined">edit</i>) icon in
+      the <strong>Product Information</strong> section of the tier.
+    </span>
+  </li>
+  <li>
+    Updated the details you'd like to change, and click "<strong>Update Product</strong>".
+  </li>
+</ol>
+
+### Removing an Attendance Tier
+:::caution
+Deleting a product using the delete (<i className="material-symbols-outlined">delete</i>) icon will archive it and prevent any further changes. Archived products cannot be restored at this time.
+:::
+
+To remove an attendance tier from sale, follow steps 1 through 3 above, then click the delete (<i className="material-symbols-outlined">delete</i>) icon in the <strong>Product Information</strong> section of the tier.
+
+When an attendance tier is archived it will be removed from any unpaid orders, but already paid orders will not be affected. If you want to remove the archived tier from a paid order, follow the steps in the <strong>Manage Orders</strong> section.
