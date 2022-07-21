@@ -94,6 +94,13 @@ details {
   width: 32px;
 }
 
+i.material-symbols-outlined {
+  font-size: 16px;
+  margin-right: 0;
+  position: relative;
+  top: 3px;
+}
+
 .numbered-list { 
   counter-reset: item;
   list-style-type: none;
