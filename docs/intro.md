@@ -12,7 +12,7 @@ event up and running.
   <bigButton href="#" title="Getting Started with ConCat" icon="not_started">
     Onboarding checklist for working with us to get your event setup.
   </bigButton>
-  <bigButton href="#" title="Attendance Tiers" icon="badge">
+  <bigButton to="/docs/guides/registration/attendance" title="Attendance Tiers" icon="badge">
     Creating and managing registration tier products, assigning add-ons, discounts, and more.
   </bigButton>
 </splitColumn>
