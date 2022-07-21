@@ -9,6 +9,7 @@ import EndpointRequest from '@site/src/components/EndpointRequest';
 import EndpointResponse from '@site/src/components/EndpointResponse';
 import ExampleBox from '@site/src/components/ExampleBox';
 import SplitColumn from '@site/src/components/SplitColumn';
+import BigButton from '@site/src/components/BigButton';
 import Card from '@site/src/components/Card';
 import Link from '@docusaurus/Link';
 
@@ -28,4 +29,5 @@ export default {
   exampleBox: ExampleBox,
   splitColumn: SplitColumn,
   card: Card,
+  bigButton: BigButton,
 };

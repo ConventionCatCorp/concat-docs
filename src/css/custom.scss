@@ -1,3 +1,5 @@
+@import '@site/src/css/_variables.scss';
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -86,4 +88,36 @@ h2, h3 {
 
 details {
   margin-top: 1.5rem !important;
+}
+
+.navbar__logo {
+  width: 32px;
+}
+
+.numbered-list { 
+  counter-reset: item;
+  list-style-type: none;
+
+  > li {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  > li:before { 
+    content: counter(item); 
+    counter-increment: item;
+    margin-right: 1rem;
+    background-color: $brand-accent;
+    padding: 0.2rem;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  > li li {
+    margin-top: 0;
+  }
 }
