@@ -12,6 +12,22 @@ Dealer applications then need to be approved by a vendor administrator, at which
 
 After the vendor pays for their amenities, the vendor will be promoted to an “approved (paid)” status.
 
+# Dealer Areas
+
+Dealers may apply to more than one dealer area. Each dealer area have a different product category, which gives the dealer different choices of table types to pick from.
+
+# Creating a product category 
+
+Create a product category under "Product Management" > "Products", and select the "Type of Products" to be "Vendor / Dealer".
+
+Visible products will be displayed as table types that the dealer can choose.
+
+Hidden products that are set as "Addons" to the visible products will be displayed as additional optional choices for dealers to pick.
+
+# Item categories 
+
+This list is for information only. Edit the list of product choices a dealer has under the "System" > "Settings" > "Vendor" list.
+
 ## Dealer assistants 
 
 Dealers are allowed to request for assistants, which when approved, will be also given a “Dealer” status on their badge. 
