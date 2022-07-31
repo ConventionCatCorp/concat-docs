@@ -10,31 +10,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Designed for conventions',
+    title: 'Easy to Use',
     image: '/img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        ConCat was designed from the ground up to be manage themed conventions, focusing
-        not only on attendees, but also volunteer and dealer managment.
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
       </>
     ),
   },
   {
-    title: 'Get the insights that you need',
+    title: 'Focus on What Matters',
     image: '/img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        ConCat helps you keep all your information in your place. Manage vouchers, refunds,
-        badge printing, cashiers from one interface.
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'For Convention, By Conventions',
+    title: 'Powered by React',
     image: '/img/undraw_docusaurus_react.svg',
     description: (
       <>
-        ConCat was made by avid convention goers, working closely with all departments.
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
       </>
     ),
   },
