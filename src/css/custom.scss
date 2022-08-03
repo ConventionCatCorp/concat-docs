@@ -86,14 +86,6 @@ div[class^="announcementBar_"] > div {
   }
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
 h2, h3 {
   border-bottom: 1px solid rgb(65, 65, 65);
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading) * 2) !important;
@@ -112,6 +104,12 @@ i.material-symbols-outlined {
   margin-right: 0;
   position: relative;
   top: 3px;
+
+  &.medium {
+    font-size: 24px;
+    margin-top: -5px;
+    top: 7px;
+  }
 }
 
 .numbered-list { 
