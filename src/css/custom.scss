@@ -123,7 +123,7 @@ i.material-symbols-outlined {
     margin-bottom: 1rem;
   }
 
-  > li:before { 
+  > li:before {
     content: counter(item); 
     counter-increment: item;
     margin-right: 1rem;
@@ -139,5 +139,14 @@ i.material-symbols-outlined {
 
   > li li {
     margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
+}
+
+[data-theme='dark'] {
+  .numbered-list {
+    > li:before {
+      background-color: $brand-dark;
+    }
   }
 }

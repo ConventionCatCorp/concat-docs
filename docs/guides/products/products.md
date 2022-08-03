@@ -11,13 +11,17 @@ You can create an unlimited number of products, using the following steps:
 
 <ol className="numbered-list">
   <li>
-    Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.
+    <span>
+      Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.
+    </span>
   </li>
   <li>
-    Click "<strong>Products</strong>" from the left-hand sidebar, then click "<strong>View Products</strong>" next to the category you want to create the product in.
+    <span>
+      Click "<strong>Products</strong>" from the left-hand sidebar, then click "<strong>View Products</strong>" next to the category you want to create the product in.
+    </span>
   </li>
   <li>
-    Click "<strong>Create New Product</strong>".
+    <span>Click "<strong>Create New Product</strong>".</span>
   </li>
   <li>
     <div>
@@ -64,7 +68,7 @@ You can create an unlimited number of products, using the following steps:
     </div>
   </li>
   <li>
-    Click "<strong>Create Product</strong>", and your Product will be created!
+    <span>Click "<strong>Create Product</strong>", and your Product will be created!</span>
   </li>
   <li>
     <div>
@@ -101,13 +105,13 @@ To modify a Product, you can use the following steps:
 
 <ol className="numbered-list">
   <li>
-    Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.
+    <span>Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.</span>
   </li>
   <li>
     <span>Click "<strong>Products</strong>" from the left-hand sidebar, then click "<strong>View Products</strong>" next to the category that contains the product you want to edit.</span>
   </li>
   <li>
-    Click on "<strong>View / Edit Details</strong>" for the Product you'd like to modify.
+    <span>Click on "<strong>View / Edit Details</strong>" for the Product you'd like to modify.</span>
   </li>
   <li>
     <span>
@@ -116,7 +120,7 @@ To modify a Product, you can use the following steps:
     </span>
   </li>
   <li>
-    Updated the details you'd like to change, and click "<strong>Update Product</strong>".
+    <span>Updated the details you'd like to change, and click "<strong>Update Product</strong>".</span>
   </li>
 </ol>
 
