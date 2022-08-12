@@ -89,3 +89,7 @@ It is not currently possible to:
     <img src='/img/tutorial/fulfillOrder.png' />
   </div>
 </splitColumn>
+
+:::note Limitations
+  It is not currently possible to select all items in an order to be fulfilled. Additionally, the attendee will not receive a confirmation email when an order is fulfilled.
+:::
