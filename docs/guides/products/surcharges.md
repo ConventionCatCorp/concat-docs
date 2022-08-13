@@ -70,7 +70,7 @@ After a surcharge has been created, you'll need to associate it with a product u
   <ol className="numbered-list">
     <li>
       <span>
-        In <strong>Housekeeping</strong>, navigate to the product's page
+        In <strong>Housekeeping</strong>, navigate to the product's page.
       </span>
     </li>
     <li>

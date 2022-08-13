@@ -38,7 +38,7 @@ hide_table_of_contents: true
 In order to transfer a registration, the attendee transferring the registration must have already paid and the target attendee must have registered but not yet paid.
 :::
 
-### Limitations
-
-* It is not currently possible to transfer a registration through the Housekeeping interface.
-* If an attendance tier is no longer selectable, it is not currently possible to transfer that registration to another attendee.
+:::note Limitations
+  * It is not currently possible to transfer a registration through the Housekeeping interface.
+  * If an attendance tier is no longer selectable, it is not currently possible to transfer that registration to another attendee.
+:::

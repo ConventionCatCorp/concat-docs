@@ -2,12 +2,12 @@
 sidebar_position: 3
 ---
 
-# Badge Designer
+# Badge designer
 
 <splitColumn>
   <div>
     <p>
-      The Badge Designer allows you to customize the badge layout and styling, using a layer style positioning of elements, to enable compatibility with a wide array of printing hardware and design needs.
+      The badge designer allows you to customize the badge layout and styling, using a layer style positioning of elements, to enable compatibility with a wide array of printing hardware and design needs.
     </p>
     <p>
       You can select from a variety of user-generated content, such as real name, badge ID, badge name, and attendance tier.
@@ -19,10 +19,10 @@ sidebar_position: 3
 </splitColumn>
 
 :::info
-Using the Badge Designer currently requires the `system:settings:update` and `system:badgedesign:read` permission. Creating / updating badge designs additionally requires the `system:badgedesign:update` permission.
+Using the badge designer currently requires the `system:settings:update` and `system:badgedesign:read` permission. Creating / updating badge designs additionally requires the `system:badgedesign:update` permission.
 :::
 
-### Creating a New Design
+### Creating a new design
 
 To facilitate designing and testing new layouts, you can create an unlimited number of badge designs, using the following steps:
 
@@ -61,20 +61,20 @@ To facilitate designing and testing new layouts, you can create an unlimited num
     </div>
   </li>
   <li>
-    <span>Customize the design by adding additional Nodes (layer groups) and Text.</span>
+    <span>Customize the design by adding additional nodes (layer groups) and text.</span>
   </li>
   <li>
     <span>Once you've finished your design, click "<strong>Save</strong>".</span>
   </li>
 </ol>
 
-### Exporting / Importing Designs
+### Exporting / importing designs
 
-You can easily export or import a design by opening an existing design or following the instructions above to create a new design, and selecting "<strong>Export</strong>" or "<strong>Import</strong>" from the top menu bar.
+You can easily export or import a design by opening an existing design or following the instructions above to create a new design, and selecting "**Export**" or "**Import**" from the top menu bar.
 
-Badge Designs files are in JSON format and can be freely shared.
+Badge design files are stored in JSON format and can be freely shared.
 
-### Pre-Printed Canvas
+### Pre-printed canvas
 
 <splitColumn>
   <div>
@@ -96,5 +96,5 @@ Badge Designs files are in JSON format and can be freely shared.
 ### Limitations
 
 * Static content (such as fixed text and background images), rear-side / double-sided printing, and use of Product Options is not yet supported.
-* Currently only printer hardware connected through the operating system print dialog is supported. Direct print support for Zebra printers is coming soon.
+* Currently only printer hardware connected through the operating system print dialog is supported. Direct print support for Zebra printers will be supported in the future.
 * Due to browser limitations, you may need to pre-configure the print dialog to use the correct Paper Size, Scaling, and to disable Headers and Footers.

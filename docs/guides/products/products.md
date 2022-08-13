@@ -43,7 +43,7 @@ You can create an unlimited number of products, using the following steps:
           <strong>Pass Platform Fee to Customer</strong> - By default, our platform fees are absorbed into the cost of each product and are paid by the event, but as the organizer, you can choose to pass these fees to your attendees.
         </li>
         <li>
-          <strong>Make Product Publicly Visible</strong> - By default, your new product will not be shown in the Event Store, but you can make it visible by checking this box. This can be used for special products you don't want available for direct purchase, such as swag items for higher tier Attendance Types.
+          <strong>Make Product Publicly Visible</strong> - By default, your new product will not be shown in the Event Store, but you can make it visible by checking this box. This can be used for special products you don't want available for direct purchase, such as promotional items for higher tier Attendance Types.
         </li>
       </ul>
     </div>
@@ -75,19 +75,19 @@ You can create an unlimited number of products, using the following steps:
       <i>(Optional)</i> Customize your Product:
       <div style={{ marginBottom: "1rem" }} />
       <splitColumn childStyle={{ width: "100%" }}>
-        <bigButton title="Product Images" href="#">
+        <bigButton title="Product Images" to="/docs/guides/products/productimages">
           Adding a product image is a great way to show your attendees how awesome your product looks.
         </bigButton>
-        <bigButton title="Addons" href="#">
+        <bigButton title="Addons" to="/docs/guides/products/addons">
           Addons are other products that are offered alongside as an additional purchase, or are included for free, with the product.
         </bigButton>
-        <bigButton title="Discounts" href="#">
+        <bigButton title="Discounts" to="/docs/guides/products/discounts">
           Discounted pricing can be available for a set period of time, or to a specific user role (such as Staff or Volunteers).
         </bigButton>
-        <bigButton title="Product Options" href="#">
+        <bigButton title="Product Options" to="/docs/guides/products/options">
           Product Options enable you to add custom fields (required or optional) for your attendees to fill out when they purchase the product (such as "T-Shirt Size", "Company Name", or "Extra Donation").
         </bigButton>
-        <bigButton title="Surcharges" href="#">
+        <bigButton title="Surcharges" to="/docs/guides/products/surcharges">
           Surcharges are additional fees that are added to the base price of the product as either a flat fee or a percentage of the base price.
         </bigButton>
       </splitColumn>
@@ -129,6 +129,6 @@ To modify a Product, you can use the following steps:
 Deleting a product using the delete (<i className="material-symbols-outlined">delete</i>) icon will archive it and prevent any further changes. Archived products cannot be restored at this time.
 :::
 
-To remove a product from sale, follow steps 1 through 3 above, then click the delete (<i className="material-symbols-outlined">delete</i>) icon in the <strong>Product Information</strong> section of the product.
+To remove a product from sale, follow <strong>steps 1 through 3 above</strong>, then click the delete (<i className="material-symbols-outlined">delete</i>) icon in the <strong>Product Information</strong> section of the product.
 
 When a product is archived it will be removed from any unpaid orders, but already paid orders will not be affected. If you want to remove the archived product from a paid order, follow the steps in the <strong>Manage Orders</strong> section.

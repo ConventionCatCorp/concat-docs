@@ -15,6 +15,5 @@ Uploaded images are currently limited by the following constraints:
 Product Images can be uploaded or deleted from edit page of a product. See the Modifying a Product section for instructions.
 
 :::note Upcoming Change
-Product Images are not currently shown for registration products or on the cart page. We are working on a solution for
-supporting these use cases in the future.
+Product Images are not currently shown for registration products or on the cart page. This will be supported in the future.
 :::
