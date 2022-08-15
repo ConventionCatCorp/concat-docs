@@ -1,13 +1,11 @@
 .endpointrequest {
-  background-color: rgb(40, 42, 54);
+  //background-color: rgb(40, 42, 54);
   border: 1px solid rgb(220, 220, 220);
-  border-radius: 10px 10px 0 0;
   height: fit-content;
-  margin-bottom: 1rem;
+  overflow: hidden;
 
   header {
     background-color: rgb(244, 244, 244);
-    border-radius: 7px 7px 0 0;
     padding: 10px 10px 10px 15px;
     color: black;
     font-size: 13px;
@@ -15,6 +13,25 @@
     .pull-right {
       float: right;
     }
+  }
+
+  &:first-child {
+    border-radius: 10px 10px 0 0;
+
+    header {
+      border-radius: 7px 7px 0 0;
+    }
+  }
+
+  + .endpointrequest {
+    border-radius: 0;
+    border-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
 
