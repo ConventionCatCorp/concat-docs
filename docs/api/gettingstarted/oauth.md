@@ -58,7 +58,7 @@ An example authorization URL will look something like this:
     </p>
   </div>
   <div>
-    <img src="https://cdn.concat.app/docs/oauth-example-consent.png" alt="ConCat OAuth Consent Screen" />
+    <img className="bordered-img" src="https://cdn.concat.app/docs/oauth-example-consent.png" className="bordered-img" alt="ConCat OAuth Consent Screen" />
   </div>
 </div>
 
@@ -72,7 +72,7 @@ Sensitive scopes are scopes that allow access to administrative endpoints or pro
 
 When a user is presented with a consent screen, sensitive scopes will be highlighted in red along with the text: `This is an administrative permission`. The `Authorize Application` button will also be highlighted red.
 
-<img src="https://cdn.concat.app/docs/oauth-example-consent-admin.png" alt="Admin OAuth Consent Screen" style={{ maxWidth: '500px' }} />
+<img className="bordered-img" src="https://cdn.concat.app/docs/oauth-example-consent-admin.png" alt="Admin OAuth Consent Screen" style={{ maxWidth: '500px' }} />
 
 <div style={{ marginBottom: '1.5rem' }} />
 

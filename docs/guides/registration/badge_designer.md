@@ -14,7 +14,7 @@ sidebar_position: 3
     </p>
   </div>
   <div>
-    <img src="/img/tutorial/badgeDesigner.png" />
+    <img className="bordered-img" src="/img/tutorial/badgeDesigner.png" />
   </div>
 </splitColumn>
 
@@ -89,7 +89,7 @@ Badge design files are stored in JSON format and can be freely shared.
     </p>
   </div>
   <div>
-    <img src="/img/tutorial/badgeDesigner-prePrintedCanvas.png" />
+    <img className="bordered-img" src="/img/tutorial/badgeDesigner-prePrintedCanvas.png" />
   </div>
 </splitColumn>
 

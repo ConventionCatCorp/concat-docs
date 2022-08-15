@@ -141,10 +141,21 @@ i.material-symbols-outlined {
   }
 }
 
+img.bordered-img {
+  box-shadow: 0 0 5px #000;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
 [data-theme='dark'] {
   .numbered-list {
     > li:before {
       background-color: $brand-dark;
     }
+  }
+
+  .bordered-img {
+    box-shadow: 0 0 5px #fff;
+    position: relative;
   }
 }

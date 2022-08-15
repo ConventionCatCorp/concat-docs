@@ -86,7 +86,7 @@ It is not currently possible to:
     </ol>
   </div>
   <div>
-    <img src='/img/tutorial/fulfillOrder.png' />
+    <img className="bordered-img" src='/img/tutorial/fulfillOrder.png' />
   </div>
 </splitColumn>
 

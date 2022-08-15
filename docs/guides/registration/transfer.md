@@ -30,7 +30,7 @@ hide_table_of_contents: true
     </ol>
   </div>
   <div>
-    <img src="/img/gif/transfer-registration.gif" />
+    <img className="bordered-img" src="/img/gif/transfer-registration.gif" />
   </div>
 </splitColumn>
 

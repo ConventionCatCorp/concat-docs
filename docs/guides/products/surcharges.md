@@ -58,7 +58,7 @@ In some jurisdictions, charging processing fees to your customers may be prohibi
     </li>
   </ol>
   <div>
-    <img src='/img/tutorial/surchargeAddTaxRate.png' />
+    <img className="bordered-img" src='/img/tutorial/surchargeAddTaxRate.png' />
   </div>
 </splitColumn>
 
@@ -90,7 +90,7 @@ After a surcharge has been created, you'll need to associate it with a product u
     </li>
   </ol>
   <div>
-    <img src='/img/tutorial/productOptionAssign.png' />
+    <img className="bordered-img" src='/img/tutorial/productOptionAssign.png' />
   </div>
 </splitColumn>
 

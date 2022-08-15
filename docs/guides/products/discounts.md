@@ -45,7 +45,7 @@ You can create an unlimited number of discounts, using the following steps:
     </li>
   </ol>
   <div>
-    <img src="/img/tutorial/productDiscount.png" />
+    <img className="bordered-img" src="/img/tutorial/productDiscount.png" />
   </div>
 </splitColumn>
 

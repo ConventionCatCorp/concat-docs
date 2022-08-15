@@ -61,7 +61,7 @@ Product options allow you to request additional information from attendees when 
     </li>
   </ol>
   <div>
-    <img src='/img/tutorial/productOptionCreate.png' />
+    <img className="bordered-img" src='/img/tutorial/productOptionCreate.png' />
   </div>
 </splitColumn>
 
@@ -98,7 +98,7 @@ After a product option has been created, you'll need to associate it with a prod
     </li>
   </ol>
   <div>
-    <img src='/img/tutorial/productOptionAssign.png' />
+    <img className="bordered-img" src='/img/tutorial/productOptionAssign.png' />
   </div>
 </splitColumn>
 
