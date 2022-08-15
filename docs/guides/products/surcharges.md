@@ -57,7 +57,7 @@ In some jurisdictions, charging processing fees to your customers may be prohibi
       </span>
     </li>
   </ol>
-  <div>
+  <div style={{ textAlign: 'center' }}>
     <img className="bordered-img" src='/img/tutorial/surchargeAddTaxRate.png' />
   </div>
 </splitColumn>

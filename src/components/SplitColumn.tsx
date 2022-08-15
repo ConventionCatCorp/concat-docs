@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
 
+import styles from './splitcolumn.module.scss';
+
 interface Props {
   children: ReactNode[];
   childStyle?: React.CSSProperties;
@@ -7,7 +9,7 @@ interface Props {
 
 export default function SplitColumn({ children, childStyle }: Props) {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gridGap: '1rem' }}>
+    <div className={styles.splitcolumn}>
       {children.map((child, idx) => (
         <div style={childStyle} key={idx}>{child}</div>
       ))}
