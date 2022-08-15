@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Badge designer
+# Badge Designer
 
 <splitColumn>
   <div>
