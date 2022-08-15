@@ -24,7 +24,7 @@ const features: Feature[] = [
     name: "Attendee Registration",
   },
   {
-    description: `With the event store you can provide attendees the ability to purchase additional swag
+    description: `With the event store you can provide attendees the ability to purchase additional promotional items
     ahead of your event, as well as free and paid tickets to panel events with limited seating through
     QuikTicket™.`,
     icon: "shopping_basket",
@@ -51,7 +51,7 @@ const features: Feature[] = [
     name: "Vendor Hall Management",
   },
   {
-    description: `Add-Ons allow you to include items like swag with another product or attendance
+    description: `Add-Ons allow you to include items like promotional items with another product or attendance
     type, or to offer it as a paid optional addition. Vouchers and Discounts offer the flexability
     to provide either a redeemable code, one-time discount, or a multi-use discount based on role
     or time.`,

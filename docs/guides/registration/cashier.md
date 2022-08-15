@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
-# Cashier
+# Cashier UI
 
 Cashier Mode is a special interface designed to optimize the workflow of checking users into the convention and giving out badges.
 

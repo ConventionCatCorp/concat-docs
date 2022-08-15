@@ -37,7 +37,7 @@ const config = {
   ],
 
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
+    'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0',
   ],
 
   themeConfig:
@@ -57,7 +57,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'guides/intro',
             position: 'left',
             label: 'Documentation',
           },
@@ -82,7 +82,7 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/intro',
+                to: '/docs/guides/intro',
               },
               {
                 label: 'Pricing',
@@ -130,5 +130,17 @@ const config = {
       },
     }),
 };
+
+const branch = process.env.CF_PAGES_BRANCH;
+if (branch != null && branch != 'main') {
+  config.themeConfig.announcementBar = {
+    id: 'prerelease-banner',
+    content:
+      '<span class="material-symbols-outlined">construction</span> This is a preview version of the ConCat documentation. Information may be incomplete or inaccurate. Please report any issues on <a href="https://github.com/ConventionCatCorp/concat-docs/">GitHub</a>. <small>(Branch: ' + branch + ')</small>',
+    backgroundColor: '#ac1b1b',
+    textColor: '#091E42',
+    isCloseable: false,
+  };
+}
 
 module.exports = config;

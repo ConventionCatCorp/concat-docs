@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   background-color: $brand-accent;
+  box-shadow: 0 0 10px #000;
 
   h1 {
     color: $brand-dark;
@@ -51,6 +52,7 @@
 [data-theme='dark'] {
   .heroBanner {
     background-color: $brand-dark;
+    box-shadow: 0 0 10px $brand-mid;
 
     h1 {
       color: $brand-accent;
