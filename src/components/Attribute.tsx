@@ -1,8 +1,9 @@
-import React, { ReactNode } from 'react';
+import React, { FunctionComponent, ReactNode, useCallback, useState } from 'react';
 import MaterialIcon from './MaterialIcon';
 
 import styles from './attribute.module.scss';
 import Highlight from './Highlight';
+import clsx from 'clsx';
 
 interface Props {
   children: ReactNode;
@@ -15,7 +16,7 @@ interface Props {
   permissions?: string[];
 }
 
-export default function Attribute({
+export function Attribute({
   children, name, id, type, response = false, optional = false, deprecated = false, permissions = [],
 }: Props) {
   const hasPermissions = permissions.length > 0;
@@ -64,4 +65,25 @@ export default function Attribute({
       </div>
     </div>
   );
+}
+
+interface ParentProps extends Props {
+  children: ReactNode[];
+}
+
+export function ParentAttribute(props: ParentProps): JSX.Element {
+  const [childState, setChildState] = useState(false);
+  const toggleChildren = useCallback(() => setChildState(!childState), [childState]);
+
+  return (
+    <div className={styles['attribute-parent']}>
+      <Attribute {...props} children={props.children[0]} />
+      <div className={clsx(styles['attribute-showhide-children'], childState && styles['attribute-children-visible'])} onClick={toggleChildren}>
+        {childState ? 'Hide' : 'Show'} child attributes
+      </div>
+      <div className={clsx(styles['attribute-children'], childState && styles['attribute-children-visible'])}>
+        {props.children[1]}
+      </div>
+    </div>
+  )
 }

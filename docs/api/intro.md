@@ -5,13 +5,18 @@ displayed_sidebar: apiSidebar
 
 # API Introduction
 
-### API References
-
 Welcome! 👋 
 
 If you're new to our APIs, we'd recommend the extra 10 minutes to go through our getting started and best practices guide. Otherwise, feel free to skip ahead to the section you're after, or reach out to us if there's something we've missed!
 
 We currently don't have any SDKs available, but we'll give you everything you need to send requests over HTTP directly to our REST-compliant API.
+
+### Latest Version
+The latest version of the API is **v0**.
+
+:::caution Beta Notice
+The v0 API is in **beta** and is subject to change, including without limitation any breaking changes to the API. All API changes will be documented on the API Release Notes page.
+:::
 
 ### Guidelines, Do's & Don'ts
 
@@ -29,13 +34,4 @@ Abuse refers to the act of misusing the APIs, bypassing rate-limits, gaining una
 
 ##### 2. Misuse our Trademarks, Logos, or Brand
 
-You are free to use ConCat's Trademarks and Logos to identify and promote your use of the platform or services, subject to the following conditions:
-
-* Please do not alter the ConCat logo in any way (e.g. stretched out, different colors, inverted colors, etc).
-
-* Refrain from implying any partnership or sponsorship by ConCat without our written permission.
-
-* Convention Cat Event Systems, Inc. is a company / trade name. You are permitted to reference "Convention Cat Event Systems, Inc." as a company in written materials by using the full trade name, followed by "ConCat" in all subsequent references for brevity. When referring to ConCat as a service, properly designate it (&trade;) the first time it appears in text.
-
-* When using ConCat's Trademarks and Logos, include an appropriate trademark attribution statement at the bottom of the page in which you use a ConCat trademark, for example:
-> ConCat and the ConCat logo are trademarks of Convention Cat Event Systems, Inc. in the United States and other jurisdictions.
+You are free to use ConCat's Trademarks and Logos to identify and promote your use of the platform or API services, subject to the conditions outlined in our Master SaaS Agreement.
