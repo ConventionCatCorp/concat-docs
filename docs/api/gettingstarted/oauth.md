@@ -3,13 +3,14 @@ sidebar_position: 2
 displayed_sidebar: apiSidebar
 ---
 
-# Alternative: Using OAuth
+# Obtaining a Bearer Token
 
 :::info
-Using the OAuth method requires a user to interact with your application and the ConCat API in order to obtain a token. Any changes to your application scopes will require the user to re-authenticate.
+Using OAuth in On Behalf Of (OBO) mode requires a user to interact with your application and the ConCat API in order to obtain a token. Any changes to your application scopes will require the user to re-authenticate. Service integrations do not require a user to authenticate, and application scopes can be modified at any time.
 :::
 
-When using the OAuth method, the user will be redirected to an authentication page displaying the requested permission scopes, a basic description of your app, and the ability to grant or deny access.
+## On Behalf Of (OBO)
+When using the OBO method, the user will be redirected to an authentication page displaying the requested permission scopes, a basic description of your app, and the ability to grant or deny access.
 
 After receiving authorization, the user will be redirected back to your application with a token. You can use this token to authenticate your future requests to the ConCat APIs by exchanging it for a bearer token and a refresh token. The bearer token will expire after a set amount of time, but the refresh token will never expire until used or the user revokes access.
 
@@ -163,6 +164,57 @@ If your app no longer requires access to all of the scopes originally requested,
 </div>
 
 ### Step 5. Authenticating with the Token
+
+All requests to the ConCat APIs **must** be done through a HTTPS connection, with a minimum TLS protocol of v1.2 or newer. ConCat uses a HTTP Authorization header to authenticate API requests. The Authorization header must be in the following format:
+
+```
+Authorization: Bearer <Token>
+```
+
+:::info
+The above header **should** always be included in your request, even if the request is not authenticated. This helps us prevent abuse of the APIs, and collect usage statistics to improve the service.
+:::
+
+## Service Integration
+
+When using the service integration method, the application ID and secret are exchanged for a time-limited bearer token with a set of requested application scopes. The requested application scopes can be any subset of the scopes approved for use by the application, allowing multiple bearer tokens to be issued with limited scopes and use cases.
+
+### Step 1. Requesting a token
+
+<splitColumn>
+  <div>
+    <p>
+      To receive an access token, the application can exchange its ID and secret for a limited-time bearer token. The bearer token will expire after a set amount of time and must be re-requested using this flow when it expires.
+    </p>
+    <p>
+      The response will return an access token, the length of time until the token expires, and the valid scopes. In order to change the scopes of the token, a new token must be requested with the updated scopes.
+    </p>
+    <Admonition type="tip">
+      Attempting to request OBO-only scopes will result in an error.
+    </Admonition>
+  </div>
+  <div>
+    <exampleBox header="/api/oauth/token" method="POST" headerSubText="cURL">
+      {`curl https://reg.mybigevent.org/api/oauth/token \\
+  -X POST \\
+  -H "Content-Type: application/x-www-form-urlencoded" \\
+  -d "client_id=123" \\
+  -d "client_secret=abc" \\
+  -d "grant_type=client_credentials" \\
+  -d "scope=user%3Aread"`}
+    </exampleBox>
+    <exampleBox header="Response" headerSubText="application/json">
+      {`{
+  "access_token": "...",
+  "expires_in": 3600,
+  "scope": "user:read",
+  "token_type": "bearer",
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Step 2. Authenticating with the Token
 
 All requests to the ConCat APIs **must** be done through a HTTPS connection, with a minimum TLS protocol of v1.2 or newer. ConCat uses a HTTP Authorization header to authenticate API requests. The Authorization header must be in the following format:
 

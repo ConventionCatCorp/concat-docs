@@ -3,6 +3,7 @@
   border: 1px solid rgb(220, 220, 220);
   height: fit-content;
   overflow: hidden;
+  margin-bottom: 1rem;
 
   header {
     background-color: rgb(244, 244, 244);
@@ -17,6 +18,7 @@
 
   &:first-child {
     border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
 
     header {
       border-radius: 7px 7px 0 0;
@@ -29,7 +31,6 @@
   }
 
   &:last-child {
-    margin-bottom: 1rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }

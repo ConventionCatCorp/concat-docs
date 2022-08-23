@@ -1,0 +1,283 @@
+---
+sidebar_position: 1
+displayed_sidebar: apiSidebar
+hide_table_of_contents: true
+---
+
+# Users
+
+<splitColumn>
+  <div>
+    This object represents an end-user within an event organization. Users can be attendees, vendors, performers, staff, etc.
+  </div>
+  <restList>
+    <restElement method='GET' path='/api/v0/users/{id}/volunteer' anchor='retrieve-a-users-volunteer-record' />
+    <restElement method='GET' path='/api/v0/users/search' anchor='search-users' />
+  </restList>
+</splitColumn>
+
+### Retrieve a user's volunteer record
+<splitColumn>
+  <div>
+    <p>Returns the volunteer object for the specified user.</p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>volunteer:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <attribute id="ruvr-id" name="id" type="string" response>
+      The unique identifier of the volunteer record.
+    </attribute>
+    <attribute id="ruvr-created_at" name="created_at" type="ISO-8601 Date" response>
+      The date the volunteer record was created.
+    </attribute>
+    <attribute id="ruvr-updated_at" name="updated_at" type="ISO-8601 Date" response>
+      The date the volunteer record was last updated.
+    </attribute>
+    <parentAttribute id="ruvr-contact_methods" name="contact_methods" type="Array of ContactMethod" response>
+      <span>Set of contact methods provided by the volunteer.</span>
+      <>
+        <attribute id="ruvr-cm-name" name="name" type="string" response>
+          The name of the contact method.
+        </attribute>
+        <attribute id="ruvr-cm-is_primary" name="is_primary" type="boolean" response>
+          Whether this contact method is the preferred way of contacting the volunteer.
+        </attribute>
+        <attribute id="ruvr-cm-value" name="value" type="string" response>
+          An arbitrary string identifier for the contact method.
+        </attribute>
+      </>
+    </parentAttribute>
+    <parentAttribute id="ruvr-departments" name="departments" type="Array of DepartmentAssignment" response>
+      <span>Set of departments where the volunteer has expressed a preference or has an assignment.</span>
+      <>
+        <attribute id="ruvr-dpt-id" name="id" type="string" response>
+          The unique identifier of the department.
+        </attribute>
+        <attribute id="ruvr-dpt-states" name="states" type="Array of strings" response>
+          <div>The flags indicating the volunteer's preference or assignment for the department.</div>
+          <div>
+            <strong>Possible values</strong>: <code>experience</code>, <code>interest</code>, <code>avoid</code>, <code>assignment</code>, <code>request</code>
+          </div>
+        </attribute>
+        <attribute id="ruvr-dpt-name" name="name" type="string" response>
+          The name of the department.
+        </attribute>
+      </>
+    </parentAttribute>
+    <parentAttribute id="ruvr-user" name="user" type="User" response>
+      <span>The user object for the volunteer.</span>
+      <>
+        <attribute id="ruvr-usr-id" name="id" type="string" response>
+          The unique identifier of the user.
+        </attribute>
+        <attribute id="ruvr-usr-first_name" name="first_name" type="string" response>
+          The first name of the user.
+        </attribute>
+        <attribute id="ruvr-usr-last_name" name="last_name" type="string" response>
+          The last name of the user.
+        </attribute>
+        <attribute id="ruvr-usr-username" name="username" type="string" response>
+          The username of the user.
+        </attribute>
+        <attribute id="ruvr-usr-preferred_name" name="preferred_name" type="string" optional response>
+          The preferred name of the user. If provided, this should be used instead of the first and last name, except where legally required.
+        </attribute>
+        <attribute id="ruvr-usr-phone" name="phone" type="string" response>
+          The phone number of the user in E.164 format.
+        </attribute>
+        <attribute id="ruvr-usr-email" name="email" type="string" response>
+          The email address of the user.
+        </attribute>
+      </>
+    </parentAttribute>
+    <parentAttribute id="ruvr-options" name="options" type="Array of Option" response>
+      <span>A set of options, customized by the event, that contain arbitrary data provided by the volunteer.</span>
+      <>
+        <attribute id="ruvr-opt-name" name="name" type="string" response>
+          The name of the option as defined by the event.
+        </attribute>
+        <attribute id="ruvr-opt-type" name="type" type="string" response>
+          <div>The type of the option as defined by the event.</div>
+          <div>
+            <strong>Possible values</strong>: <code>select</code>, <code>multi</code>, <code>text</code>, <code>number</code>.
+          </div>
+        </attribute>
+        <attribute id="ruvr-opt-value" name="value" type="number, string, or Array of string" response>
+          The value of the option.
+        </attribute>
+      </>
+    </parentAttribute>
+  </div>
+  <div>
+    <exampleBox method='GET' header='/api/v0/users/:id/volunteer' headerSubText='cURL'>
+      {`curl https://reg.cces.dev/api/v0/users/{id}/volunteer \\
+  -H "Authorization: Bearer <token>"`}
+    </exampleBox>
+    <exampleBox header='Response' headerSubText='application/json'>
+      {`{
+  "id": "1234",
+  "created_at": "2020-01-01T00:00:00Z",
+  "updated_at": "2020-01-01T00:00:00Z",
+  "contact_methods": [
+    {
+      "name": "discord",
+      "is_primary": true,
+      "value": "Username#1234",
+    },
+  ],
+  "departments": [
+    {
+      "id": "1234",
+      "states": ["experience", "interest"],
+      "name": "Registration"
+    },
+    {
+      "id": "5678",
+      "states": ["avoid"],
+    }
+  ],
+  "user": {
+    "id": "1234",
+    "first_name": "John",
+    "last_name": "Doe",
+    "username": "jdoe",
+    "preferred_name": "Johnny",
+    "phone": "+15555555555",
+    "email": "johnny.test@concat.systems",
+  },
+  "options": [
+    {
+      "name": "jump",
+      "type": "select",
+      "value": "How high?"
+    },
+  ],
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Search users
+
+<splitColumn>
+  <div>
+    <p>
+      Search for users using a variety of filters. A maximum of 1000 results will be returned per request. If additional results are available, they can be retrieved using the <code>next_page</code> parameter from the previous response.
+    </p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>user:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Request</h4>
+    <attribute id="su-next_page" name="next_page" type="string" optional>
+      A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>next_page</code> parameter from the previous response for each subsequent request.
+    </attribute>
+    <attribute id="su-limit" name="limit" type="number" optional>
+      The maximum number of results to return, between 1 and 1000. Defaults to 1000.
+    </attribute>
+    <parentAttribute id="su-filter" name="filter" type="object" optional>
+      <span>Filters to apply to the search.</span>
+      <>
+        <attribute id="su-flr-role_id" name="role_id" type="number" optional>
+          The ID of the role to filter by.
+        </attribute>
+      </>
+    </parentAttribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <parentAttribute id="su-resp-data" name="data" type="Array of User" response optional>
+      <span>The users that match the search.</span>
+      <>
+        <attribute id="su-resp-id" name="id" type="string" response>
+          The unique identifier of the user.
+        </attribute>
+        <attribute id="su-resp-email" name="email" type="string" response>
+          The email address of the user.
+        </attribute>
+        <attribute id="su-resp-preferred_name" name="preferred_name" type="string" response optional>
+          The preferred name of the user. If provided, this should be used instead of the first and ast name, except where legally required.
+        </attribute>
+        <attribute id="su-resp-first_name" name="first_name" type="string" response>
+          The first name of the user.
+        </attribute>
+        <attribute id="su-resp-last_name" name="last_name" type="string" response>
+          The last name of the user.
+        </attribute>
+        <attribute id="su-resp-username" name="username" type="string" response>
+          The username of the user.
+        </attribute>
+        <attribute id="su-resp-verified" name="verified" type="boolean" response>
+          Whether the user has verified their email address.
+        </attribute>
+        <attribute id="su-resp-phone" name="phone" type="boolean" response>
+          The phone number of the user in E.164 format.
+        </attribute>
+        <parentAttribute id="su-resp-address" name="address" type="Address" response optional>
+          <span>The address of the user. If PII is not required to register, the child attributes will be <code>null</code>.</span>
+          <>
+            <attribute id="su-resp-addr-address_city" name="address_city" type="string" response>
+              The city of the address.
+            </attribute>
+            <attribute id="su-resp-addr-address_country" name="address_country" type="string" response>
+              The two-letter country code of the address.
+            </attribute>
+            <attribute id="su-resp-addr-address_line1" name="address_line1" type="string" response>
+              The first line of the address.
+            </attribute>
+            <attribute id="su-resp-addr-address_line2" name="address_line2" type="string" response optional>
+              The second line of the address, such as an apartment number, if applicable.
+            </attribute>
+            <attribute id="su-resp-addr-address_state" name="address_state" type="string" response>
+              The state or province of the address.
+            </attribute>
+            <attribute id="su-resp-addr-address_zipcode" name="address_zipcode" type="string" response>
+              The ZIP or postal code of the address.
+            </attribute>
+          </>
+        </parentAttribute>
+      </>
+    </parentAttribute>
+    <attribute id="su-resp-next_page" name="next_page" type="string" response optional>
+      A cursor for pagination across multiple pages of results. If this attribute is present, there are more results available. Use this value in the <code>next_page</code> parameter for the next request.
+    </attribute>
+  </div>
+  <div>
+    <exampleBox method='POST' header='/api/v0/users/search' headerSubText='JSON'>
+      {`{
+  "next_page": "eyBsYXN0SWQ6IDEwMDAgfQ==",
+  "limit": 100,
+  "filter": {
+    "role_id": 12,
+  },
+}`}
+    </exampleBox>
+    <exampleBox header='Response' headerSubText='application/json'>
+      {`{
+  "data": [
+    {
+      "id": "1234",
+      "email": "johnny.test@concat.systems",
+      "preferred_name": "JT",
+      "first_name": "John",
+      "last_name": "Test",
+      "username": "jtest",
+      "verified": true,
+      "phone": "+15555555555",
+      "address": {
+        "address_city": "San Francisco",
+        "address_country": "US",
+        "address_line1": "123 Main St",
+        "address_line2": "Apt 1",
+        "address_state": "CA",
+        "address_zipcode": "94105",
+      },
+    },
+  ],
+  "next_page": null,
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>

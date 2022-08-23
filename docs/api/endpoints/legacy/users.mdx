@@ -1,0 +1,120 @@
+---
+sidebar_position: 1
+displayed_sidebar: apiSidebar
+hide_table_of_contents: true
+---
+
+# Users
+
+<splitColumn>
+  <div>
+    This object represents an end-user within an event organization. Users can be attendees, vendors, performers, staff, etc.
+  </div>
+  <restList>
+    <restElement method='GET' path='/api/users/current' anchor='retrieve-current-user' />
+  </restList>
+</splitColumn>
+
+### Retrieve Current User
+Returns the user object for the currently authenticated user.
+
+<splitColumn>
+  <div>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">On Behalf Of (OBO)</link> with <code>pii:basic</code> scope. Other permissions are required to access additional information, such as PII and order history.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <attribute id="user-current-retrieve-resp-bornAt" name="bornAt" type="string" response>
+      The date the user was born, in ISO 8601 format.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-emailMd5" name="emailMd5" type="string" response>
+      The MD5 hash of the user's email address.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-firstName" name="firstName" type="string" response>
+      The user's legal first name, as it appears on their ID.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-id" name="id" type="number" response>
+      The ID of the user.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-lastName" name="lastName" type="string" response>
+      The user's legal last name, as it appears on their ID.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-permissions" name="permissions" type="array of string" response>
+      The permissions granted to the user.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-preferredName" name="preferredName" type="string" optional response>
+      An optional preferred name for the user. This will be displayed first on the user's profile.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-newsletter" name="newsletter" type="boolean" response>
+      Whether the user has opted in to the newsletter.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-identityVerified" name="identityVerified" type="boolean" response>
+      Returns true if the user has verified their identity.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-isVolunteer" name="isVolunteer" type="boolean" response>
+      Returns true if the user is an assigned volunteer.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-username" name="username" type="string" response>
+      The user's username.
+    </attribute>
+    <details>
+      <summary>Scope Restricted Attributes</summary>
+      <div>
+        <attribute id="user-current-retrieve-resp-addressCity" name="addressCity" type="string" response permissions={['pii:address']}>
+          City, town, or village of the user's address.
+        </attribute>
+        <attribute id="user-current-retrieve-resp-addressCountry" name="addressCountry" type="string" response permissions={['pii:address']}>
+          Two-letter ISO 3166-1 alpha-2 country code.
+        </attribute>
+        <attribute id="user-current-retrieve-resp-addressLine1" name="addressLine1" type="string" response permissions={['pii:address']}>
+          First line of the user's address. (e.g. 1234 Main St)
+        </attribute>
+        <attribute id="user-current-retrieve-resp-addressLine2" name="addressLine2" type="string" response permissions={['pii:address']} optional>
+          Optional second line of the user's address. (e.g. Suite 100, Apt 2B)
+        </attribute>
+        <attribute id="user-current-retrieve-resp-addressState" name="addressState" type="string" response permissions={['pii:address']}>
+          State or province of the user's address.
+        </attribute>
+        <attribute id="user-current-retrieve-resp-addressZipcode" name="addressZipcode" type="string" response permissions={['pii:address']}>
+          ZIP or postal code of the user's address.
+        </attribute>
+        <attribute id="user-current-retrieve-resp-email" name="email" type="string" response permissions={['pii:email']}>
+          The user's email address.
+        </attribute>
+        <attribute id="user-current-retrieve-resp-phone" name="phone" type="string" response permissions={['pii:phone']}>
+          Phone number in international format. (e.g. +15555555555)
+        </attribute>
+      </div>
+    </details>
+  </div>
+  <div>
+    <exampleBox method='GET' header='/api/users/:id' headerSubText='cURL'>
+      {`curl https://reg.cces.dev/api/users/current \\
+  -H "Authorization: Bearer <token>"`}
+    </exampleBox>
+    <exampleBox header='Response' headerSubText='application/json'>
+      {`{
+  "addressCity": "New York",
+  "addressCountry": "US",
+  "addressLine1": "123 Main St",
+  "addressLine2": "Suite 100",
+  "addressState": "NY",
+  "addressZipcode": "10001",
+  "bornAt": "1990-01-01T00:00:00.000Z",
+  "email": "aperson@example.com",
+  "firstName": "John",
+  "id": 1234,
+  "lastName": "Doe",
+  "newsletter": true,
+  "phone": "+15555555555",
+  "preferredName": "Jonathan",
+  "username": "aperson",
+  "identityVerified": true,
+  "isVolunteer": true,
+  "permissions": [],
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>

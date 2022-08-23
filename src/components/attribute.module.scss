@@ -1,7 +1,10 @@
-.attribute {
+.attribute, .attribute-parent {
   margin-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-left: 1.3rem;
+}
+
+.attribute {
   scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
 
   &:hover {
@@ -79,4 +82,63 @@ details .attribute:not(:last-child) {
 
 .attribute-optional {
   font-style: italic;
+}
+
+.attribute-parent {
+  > .attribute {
+    border-bottom: 0;
+    margin-left: 0;
+  }
+
+  border-bottom: 1px solid rgb(45, 45, 45);
+}
+
+.attribute-children {
+  display: none;
+
+  &.attribute-children-visible {
+    display: block;
+    border: 1px solid rgb(45, 45, 45);
+  }
+
+  .attribute-link :global(.material-symbols-outlined) {
+    background-color: white;
+  }
+
+  > .attribute {
+    margin-left: 1rem;
+
+    &:last-child {
+      border-bottom: 0 !important;
+    }
+  }
+
+  .attribute-optional, .attribute-required {
+    margin-right: 1rem;
+  }
+
+  .attribute-children {
+    margin-right: 1rem;
+  }
+}
+
+.attribute-showhide-children {
+  border: 1px solid rgb(45, 45, 45);
+  border-radius: 0.5rem;
+  padding: 0.15rem 0.55rem 0.15rem 0.5rem;
+  width: fit-content;
+  font-size: 12px;
+  cursor: pointer;
+
+  &.attribute-children-visible {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: -1px;
+  }
+}
+
+[data-theme='dark'] {
+  .attribute-children .attribute-link :global(.material-symbols-outlined) {
+    background-color: #1b1b1d;
+  }
 }
