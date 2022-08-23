@@ -21,13 +21,13 @@ The authorization URL is made up of the base URL of the event organization's ins
 
 #### Query Parameters
 <div style={{ marginBottom: "1rem" }}>
-  <attribute id="oauth-req-clientId" name="client_id" type="number">
+  <attribute id="oauth-req-client_id" name="client_id" type="number">
     The client ID that identifies your application.
   </attribute>
-  <attribute id="oauth-req-responseType" name="response_type" type="string">
+  <attribute id="oauth-req-response_type" name="response_type" type="string">
     The type of response that you want ConCat to return. The only supported value is "code".
   </attribute>
-  <attribute id="oauth-req-redirectUri" name="redirect_uri" type="string">
+  <attribute id="oauth-req-redirect_uri" name="redirect_uri" type="string">
     The URL that ConCat will redirect to after authorization. This must be the same URL that you provided when registering your application, otherwise the user will receive an invalid request error.
   </attribute>
   <attribute id="oauth-req-scope" name="scope" type="string">
