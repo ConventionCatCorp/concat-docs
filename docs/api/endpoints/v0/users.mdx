@@ -11,152 +11,8 @@ hide_table_of_contents: true
     This object represents an end-user within an event organization. Users can be attendees, vendors, performers, staff, etc.
   </div>
   <restList>
-    <restElement method='GET' path='/api/v0/users/{id}/volunteer' anchor='retrieve-a-users-volunteer-record' />
     <restElement method='GET' path='/api/v0/users/search' anchor='search-users' />
   </restList>
-</splitColumn>
-
-### Retrieve a user's volunteer record
-<splitColumn>
-  <div>
-    <p>Returns the volunteer object for the specified user.</p>
-    <h4>Authentication</h4>
-    <div>
-      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>volunteer:read</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Response</h4>
-    <attribute id="ruvr-id" name="id" type="string" response>
-      The unique identifier of the volunteer record.
-    </attribute>
-    <attribute id="ruvr-createdAt" name="createdAt" type="ISO-8601 Date" response>
-      The date the volunteer record was created.
-    </attribute>
-    <attribute id="ruvr-updatedAt" name="updatedAt" type="ISO-8601 Date" response>
-      The date the volunteer record was last updated.
-    </attribute>
-    <parentAttribute id="ruvr-contactMethods" name="contactMethods" type="Array of ContactMethod" response>
-      <span>Set of contact methods provided by the volunteer.</span>
-      <>
-        <attribute id="ruvr-cm-name" name="name" type="string" response>
-          The name of the contact method.
-        </attribute>
-        <attribute id="ruvr-cm-isPrimary" name="isPrimary" type="boolean" response>
-          Whether this contact method is the preferred way of contacting the volunteer.
-        </attribute>
-        <attribute id="ruvr-cm-value" name="value" type="string" response>
-          An arbitrary string identifier for the contact method.
-        </attribute>
-      </>
-    </parentAttribute>
-    <parentAttribute id="ruvr-departments" name="departments" type="Array of DepartmentAssignment" response>
-      <span>Set of departments where the volunteer has expressed a preference or has an assignment.</span>
-      <>
-        <attribute id="ruvr-dpt-id" name="id" type="string" response>
-          The unique identifier of the department.
-        </attribute>
-        <attribute id="ruvr-dpt-states" name="states" type="Array of strings" response>
-          <div>The flags indicating the volunteer's preference or assignment for the department.</div>
-          <div>
-            <strong>Possible values</strong>: <code>experience</code>, <code>interest</code>, <code>avoid</code>, <code>assignment</code>, <code>request</code>
-          </div>
-        </attribute>
-        <attribute id="ruvr-dpt-name" name="name" type="string" response>
-          The name of the department.
-        </attribute>
-      </>
-    </parentAttribute>
-    <parentAttribute id="ruvr-user" name="user" type="User" response>
-      <span>The user object for the volunteer.</span>
-      <>
-        <attribute id="ruvr-usr-id" name="id" type="string" response>
-          The unique identifier of the user.
-        </attribute>
-        <attribute id="ruvr-usr-firstName" name="firstName" type="string" response>
-          The first name of the user.
-        </attribute>
-        <attribute id="ruvr-usr-lastName" name="lastName" type="string" response>
-          The last name of the user.
-        </attribute>
-        <attribute id="ruvr-usr-username" name="username" type="string" response>
-          The username of the user.
-        </attribute>
-        <attribute id="ruvr-usr-preferredName" name="preferredName" type="string" optional response>
-          The preferred name of the user. If provided, this should be used instead of the first and last name, except where legally required.
-        </attribute>
-        <attribute id="ruvr-usr-phone" name="phone" type="string" response>
-          The phone number of the user in E.164 format.
-        </attribute>
-        <attribute id="ruvr-usr-email" name="email" type="string" response>
-          The email address of the user.
-        </attribute>
-      </>
-    </parentAttribute>
-    <parentAttribute id="ruvr-options" name="options" type="Array of Option" response>
-      <span>A set of options, customized by the event, that contain arbitrary data provided by the volunteer.</span>
-      <>
-        <attribute id="ruvr-opt-name" name="name" type="string" response>
-          The name of the option as defined by the event.
-        </attribute>
-        <attribute id="ruvr-opt-type" name="type" type="string" response>
-          <div>The type of the option as defined by the event.</div>
-          <div>
-            <strong>Possible values</strong>: <code>select</code>, <code>multi</code>, <code>text</code>, <code>number</code>.
-          </div>
-        </attribute>
-        <attribute id="ruvr-opt-value" name="value" type="number, string, or Array of string" response>
-          The value of the option.
-        </attribute>
-      </>
-    </parentAttribute>
-  </div>
-  <div>
-    <exampleBox method='GET' header='/api/v0/users/:id/volunteer' headerSubText='cURL'>
-      {`curl https://reg.cces.dev/api/v0/users/{id}/volunteer \\
-  -H "Authorization: Bearer <token>"`}
-    </exampleBox>
-    <exampleBox header='Response' headerSubText='application/json'>
-      {`{
-  "id": "1234",
-  "createdAt": "2020-01-01T00:00:00Z",
-  "updatedAt": "2020-01-01T00:00:00Z",
-  "contactMethods": [
-    {
-      "name": "discord",
-      "isPrimary": true,
-      "value": "Username#1234",
-    },
-  ],
-  "departments": [
-    {
-      "id": "1234",
-      "states": ["experience", "interest"],
-      "name": "Registration"
-    },
-    {
-      "id": "5678",
-      "states": ["avoid"],
-    }
-  ],
-  "user": {
-    "id": "1234",
-    "firstName": "John",
-    "lastName": "Doe",
-    "username": "jdoe",
-    "preferredName": "Johnny",
-    "phone": "+15555555555",
-    "email": "johnny.test@concat.systems",
-  },
-  "options": [
-    {
-      "name": "jump",
-      "type": "select",
-      "value": "How high?"
-    },
-  ],
-}`}
-    </exampleBox>
-  </div>
 </splitColumn>
 
 ### Search users
@@ -272,11 +128,11 @@ hide_table_of_contents: true
         "addressLine1": "123 Main St",
         "addressLine2": "Apt 1",
         "addressState": "CA",
-        "addressZipcode": "94105",
+        "addressZipcode": "94105"
       },
     },
   ],
-  "nextPage": null,
+  "nextPage": null
 }`}
     </exampleBox>
   </div>

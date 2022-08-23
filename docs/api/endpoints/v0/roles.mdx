@@ -1,0 +1,60 @@
+---
+sidebar_position: 3
+displayed_sidebar: apiSidebar
+hide_table_of_contents: true
+---
+
+# Roles
+
+<splitColumn>
+  <div>
+    Roles are a group of users.
+  </div>
+  <restList>
+    <restElement method='GET' path='/api/v0/roles' anchor='list roles' />
+  </restList>
+</splitColumn>
+
+### List roles
+<splitColumn>
+  <div>
+    <p>Returns the volunteer object for the specified user.</p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>user:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <parentAttribute id="su-resp-data" name="data" type="Array of User" response optional>
+      <span>The users that match the search.</span>
+      <>
+        <attribute id="su-resp-id" name="id" type="string" response>
+          The unique identifier of the role.
+        </attribute>
+        <attribute id="su-resp-name" name="name" type="string" response>
+          The unique name of the role.
+        </attribute>
+      </>
+    </parentAttribute>
+    <attribute id="su-resp-nextPage" name="nextPage" type="string" response optional>
+      A cursor for pagination across multiple pages of results. If this attribute is present, there are more results available. Use this value in the <code>nextPage</code> parameter for the next request.
+    </attribute>
+  </div>
+  <div>
+    <exampleBox method='GET' header='/api/v0/roles' headerSubText='cURL'>
+      {`curl https://reg.cces.dev/api/v0/roles \\
+  -H "Authorization: Bearer <token>"`}
+    </exampleBox>
+    <exampleBox header='Response' headerSubText='application/json'>
+      {`{
+  "data": [
+    {
+      "id": "1234",
+      "name": "staff"
+    },
+  ],
+  "nextPage": null
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>
