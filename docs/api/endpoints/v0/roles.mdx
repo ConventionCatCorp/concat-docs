@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 <splitColumn>
   <div>
-    Roles are a group of users.
+    Roles are a way to group users together. They can be used to grant permissions to a group of users, or to identify a group of users for other purposes, such as identifying staff members or those who have signed an NDA.
   </div>
   <restList>
     <restElement method='GET' path='/api/v0/roles' anchor='list roles' />
@@ -18,15 +18,15 @@ hide_table_of_contents: true
 ### List roles
 <splitColumn>
   <div>
-    <p>Returns the volunteer object for the specified user.</p>
+    <p>Returns all role objects.</p>
     <h4>Authentication</h4>
     <div>
       <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>user:read</code> scope.
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
-    <parentAttribute id="su-resp-data" name="data" type="Array of User" response optional>
-      <span>The users that match the search.</span>
+    <parentAttribute id="su-resp-data" name="data" type="Array of Role" response optional>
+      <span>The roles that match the search.</span>
       <>
         <attribute id="su-resp-id" name="id" type="string" response>
           The unique identifier of the role.
