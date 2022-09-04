@@ -39,56 +39,58 @@ export default function Pricing(): JSX.Element {
               than 135 countries.
             </p>
           </div>
-          <Card header='Beta Plan' className={styles['price-card']}>
-            <div className={styles['pricing']}>
-              <div>75&cent; <small>per attendee</small></div>
-              <div>1% <small>all other transactions</small></div>
-            </div>
-            <hr />
-            <ul>
-              <li className={styles['feature-on']}>
-                <MaterialIcon name='check_circle' />
-                <span>Cloud Hosted</span>
-              </li>
-              <li className={styles['feature-on']}>
-                <MaterialIcon name='check_circle' />
-                <span>Unlimited Attendees</span>
-              </li>
-              <li className={styles['feature-on']}>
-                <MaterialIcon name='check_circle' />
-                <span>Unlimited Products</span>
-              </li>
-              <li className={styles['feature-on']}>
-                <MaterialIcon name='check_circle' />
-                <span>Volunteer Management</span>
-              </li>
-              <li className={styles['feature-on']}>
-                <MaterialIcon name='check_circle' />
-                <span>Vendor Management</span>
-              </li>
-              <li className={styles['feature-on']}>
-                <MaterialIcon name='check_circle' />
-                <span>Basic Support</span>
-              </li>
-              <li className={styles['feature-on']}>
-                <MaterialIcon name='check_circle' />
-                <span>Free concat.app Subdomain</span>
-              </li>
-              <li className={styles['feature-on']}>
-                <MaterialIcon name='check_circle' />
-                <span>Free Custom Domain</span>
-              </li>
-            </ul>
-            <hr />
-            <div className={styles.buttons}>
-              <a
-                className="button button--secondary button--lg"
-                target="_blank"
-                href="mailto:sales@concat.systems?subject=Interested in ConCat Standard">
-                Contact Sales
-              </a>
-            </div>
-          </Card>
+          <div className={styles['pricing-table']}>
+            <Card header='Beta Plan' className={styles['price-card']}>
+              <div className={styles['pricing']}>
+                <div>75&cent; <small>per attendee</small></div>
+                <div>1% <small>all other transactions</small></div>
+              </div>
+              <hr />
+              <ul>
+                <li className={styles['feature-on']}>
+                  <MaterialIcon name='check_circle' />
+                  <span>Cloud Hosted (SaaS)</span>
+                </li>
+                <li className={styles['feature-on']}>
+                  <MaterialIcon name='check_circle' />
+                  <span>Unlimited Attendees</span>
+                </li>
+                <li className={styles['feature-on']}>
+                  <MaterialIcon name='check_circle' />
+                  <span>Unlimited Products</span>
+                </li>
+                <li className={styles['feature-on']}>
+                  <MaterialIcon name='check_circle' />
+                  <span>Volunteer Management</span>
+                </li>
+                <li className={styles['feature-on']}>
+                  <MaterialIcon name='check_circle' />
+                  <span>Vendor Management</span>
+                </li>
+                <li className={styles['feature-on']}>
+                  <MaterialIcon name='check_circle' />
+                  <span>Basic Support</span>
+                </li>
+                <li className={styles['feature-on']}>
+                  <MaterialIcon name='check_circle' />
+                  <span>Free concat.app Subdomain</span>
+                </li>
+                <li className={styles['feature-on']}>
+                  <MaterialIcon name='check_circle' />
+                  <span>Free Bring Your Own Domain</span>
+                </li>
+              </ul>
+              <hr />
+              <div className={styles.buttons}>
+                <a
+                  className="button button--secondary button--lg"
+                  target="_blank"
+                  href="mailto:sales@concat.systems?subject=Interested in ConCat Standard">
+                  Contact Sales
+                </a>
+              </div>
+            </Card>
+          </div>
         </SplitColumn>
       </main>
     </Layout>

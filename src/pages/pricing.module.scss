@@ -60,6 +60,11 @@
   }
 }
 
+.pricing-table {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 966px) {
   .main {
     padding: 1.1rem;

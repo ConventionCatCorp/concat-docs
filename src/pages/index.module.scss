@@ -5,14 +5,39 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: $brand-accent;
+  background-color: $brand-dark;
   box-shadow: 0 0 10px #000;
 
   h1 {
-    color: $brand-dark;
+    color: $brand-accent;
 
     span {
-      color: $brand-primary;
+      color: lighten($brand-primary, 25%);
+    }
+  }
+
+  p {
+    color: white;
+  }
+
+  a:first-of-type {
+    background-color: $brand-accent;
+    color: $brand-dark;
+
+    &:hover {
+      background-color: lighten($brand-dark, 10%);
+      border-color: lighten($brand-primary, 80%);
+      color: lighten($brand-accent, 25%);
+    }
+  }
+
+  a:not(:first-of-type) {
+    background-color: transparent;
+    color: $brand-accent;
+    border-color: transparent;
+
+    &:hover {
+      background-color: darken($brand-accent, 50%);
     }
   }
 }
@@ -51,31 +76,6 @@
 
 [data-theme='dark'] {
   .heroBanner {
-    background-color: $brand-dark;
     box-shadow: 0 0 10px $brand-mid;
-
-    h1 {
-      color: $brand-accent;
-
-      span {
-        color: lighten($brand-primary, 25%);
-      }
-    }
-
-    a:first-of-type {
-      border-color: $brand-primary;
-      background-color: darken($brand-accent, 10%);
-      color: $brand-dark;
-    }
-
-    a:not(:first-of-type) {
-      background-color: transparent;
-      color: $brand-accent;
-      border-color: transparent;
-
-      &:hover {
-        background-color: darken($brand-accent, 50%);
-      }
-    }
   }
 }

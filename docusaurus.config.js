@@ -101,6 +101,14 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/ConCatEvents',
               },
+              {
+                label: 'Official Discord',
+                href: 'https://discord.concat.app',
+              },
+              {
+                label: 'Sleekplan (Bug / Feature Tracker)',
+                href: 'https://concat.sleekplan.app',
+              },
             ],
           },
           {
@@ -113,6 +121,10 @@ const config = {
               {
                 label: 'Terms of Service',
                 to: '/policy/terms',
+              },
+              {
+                label: 'SaaS Agreement',
+                to: '/policy/saas',
               },
               {
                 label: 'DMCA Takedown Policy',
