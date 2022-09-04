@@ -12,7 +12,7 @@ If you're new to our APIs, we'd recommend the extra 10 minutes to go through our
 We currently don't have any SDKs available, but we'll give you everything you need to send requests over HTTP directly to our REST-compliant API.
 
 ### Latest Version
-The latest version of the API is **v0**.
+The latest version of the API is **v0**. We list all of the changes to the API in our [changelog](/docs/api/changelog).
 
 :::caution Beta Notice
 The v0 API is in **beta** and is subject to change, including without limitation any breaking changes to the API. All API changes will be documented on the API Release Notes page.

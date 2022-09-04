@@ -18,7 +18,38 @@ const config = {
   deploymentBranch: 'deployment',
   trailingSlash: false,
 
-  plugins: [require.resolve('docusaurus-plugin-sass')],
+  plugins: [
+    require.resolve('docusaurus-plugin-sass'),
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        authorsMapPath: '../authors.yml',
+        blogTitle: 'API Changelog',
+        blogListComponent: '@theme/BlogListPage',
+        blogPostComponent: '@theme/BlogPostPage',
+        blogSidebarTitle: 'Latest changes',
+        blogTagsListComponent: '@theme/BlogTagsListPage',
+        blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+        id: 'api-release-notes',
+        routeBasePath: 'docs/api/changelog',
+        path: './changelogs/api',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        authorsMapPath: '../authors.yml',
+        blogTitle: 'ConCat Release Notes',
+        blogListComponent: '@theme/BlogListPage',
+        blogPostComponent: '@theme/BlogPostPage',
+        blogTagsListComponent: '@theme/BlogTagsListPage',
+        blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+        id: 'app-release-notes',
+        routeBasePath: 'blog/changelog',
+        path: './changelogs/app',
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -89,9 +120,13 @@ const config = {
                 to: '/pricing',
               },
               {
+                label: 'Release Notes',
+                to: '/blog/changelog',
+              },
+              {
                 label: 'API Reference',
                 to: '/docs/api/intro',
-              },
+              }
             ],
           },
           {
