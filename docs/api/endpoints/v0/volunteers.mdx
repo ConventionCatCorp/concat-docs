@@ -4,6 +4,8 @@ displayed_sidebar: apiSidebar
 hide_table_of_contents: true
 ---
 
+import VolunteerModel from './_volunteerModel.mdx';
+
 # Volunteers
 
 <splitColumn>
@@ -11,8 +13,81 @@ hide_table_of_contents: true
     This object represents a volunteer application within a convention. 
   </div>
   <restList>
+    <restElement method='POST' path='/api/v0/volunteers/search' anchor='search-for-volunteers' />
     <restElement method='GET' path='/api/v0/users/{id}/volunteer' anchor='retrieve-a-users-volunteer-record' />
+    <restElement method='GET' path='/api/v0/volunteers/departments' anchor='retrieve-list-of-departments' />
   </restList>
+</splitColumn>
+
+### Search for volunteers
+<splitColumn>
+  <div>
+    <p>Paginate through the volunteer list.</p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>volunteer:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Request</h4>
+    <attribute id="su-nextPage" name="nextPage" type="string" optional>
+      A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>nextPage</code> parameter from the previous response for each subsequent request.
+    </attribute>
+    <attribute id="su-limit" name="limit" type="number" optional>
+      The maximum number of results to return, between 1 and 1000. Defaults to 1000.
+    </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <VolunteerModel />
+  </div>
+  <div>
+    <exampleBox method='GET' header='/api/v0/users/:id/volunteer' headerSubText='cURL'>
+            {`{
+  "nextPage": "eyBsYXN0SWQ6IDEwMDAgfQ==",
+  "limit": 100,
+}`}
+    </exampleBox>
+    <exampleBox header='Response' headerSubText='application/json'>
+      {`{
+  "data": [
+    {
+      "createdAt": "2020-01-01T00:00:00Z",
+      "updatedAt": "2020-01-01T00:00:00Z",
+      "contactMethods": [
+        {
+          "name": "discord",
+          "isPrimary": true,
+          "value": "Username#1234"
+        },
+      ],
+      "departments": [
+        {
+          "id": "1234",
+          "states": ["experience", "interest"],
+          "name": "Registration"
+        },
+      ],
+      "user": {
+        "id": "1234",
+        "firstName": "John",
+        "lastName": "Doe",
+        "username": "jdoe",
+        "preferredName": "Johnny",
+        "phone": "+15555555555",
+        "email": "johnny.test@concat.systems",
+      },
+      "options": [
+        {
+          "name": "jump",
+          "type": "select",
+          "value": "How high?"
+        },
+      ],
+    },
+  ],
+  "nextPage": null,
+}`}
+    </exampleBox>
+  </div>
 </splitColumn>
 
 ### Retrieve a user's volunteer record
@@ -25,48 +100,81 @@ hide_table_of_contents: true
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
+    <VolunteerModel />
+  </div>
+  <div>
+    <exampleBox method='GET' header='/api/v0/users/:id/volunteer' headerSubText='cURL'>
+      {`curl https://reg.cces.dev/api/v0/users/{id}/volunteer \\
+  -H "Authorization: Bearer <token>"`}
+    </exampleBox>
+    <exampleBox header='Response' headerSubText='application/json'>
+      {`{
+  "createdAt": "2020-01-01T00:00:00Z",
+  "updatedAt": "2020-01-01T00:00:00Z",
+  "contactMethods": [
+    {
+      "name": "discord",
+      "isPrimary": true,
+      "value": "Username#1234"
+    },
+  ],
+  "departments": [
+    {
+      "id": "1234",
+      "states": ["experience", "interest"],
+      "name": "Registration"
+    },
+    {
+      "id": "5678",
+      "states": ["avoid"],
+      "name": "HR"
+    }
+  ],
+  "user": {
+    "id": "1234",
+    "firstName": "John",
+    "lastName": "Doe",
+    "username": "jdoe",
+    "preferredName": "Johnny",
+    "phone": "+15555555555",
+    "email": "johnny.test@concat.systems",
+  },
+  "options": [
+    {
+      "name": "jump",
+      "type": "select",
+      "value": "How high?"
+    },
+  ]
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Retrieve list of departments
+<splitColumn>
+  <div>
+    <p>Returns the list of volunteer departments.</p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>volunteer:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
     <attribute id="ruvr-id" name="id" type="string" response>
-      The unique identifier of the volunteer record.
+      The unique identifier of the department record.
     </attribute>
-    <attribute id="ruvr-createdAt" name="createdAt" type="ISO-8601 Date" response>
+    <attribute id="ruvr-email" name="name" type="string" response>
       The date the volunteer record was created.
     </attribute>
-    <attribute id="ruvr-updatedAt" name="updatedAt" type="ISO-8601 Date" response>
+    <attribute id="ruvr-name" name="email" type="email" response>
       The date the volunteer record was last updated.
     </attribute>
-    <parentAttribute id="ruvr-contactMethods" name="contactMethods" type="Array of ContactMethod" response>
-      <span>Set of contact methods provided by the volunteer.</span>
-      <>
-        <attribute id="ruvr-cm-name" name="name" type="string" response>
-          The name of the contact method.
-        </attribute>
-        <attribute id="ruvr-cm-isPrimary" name="isPrimary" type="boolean" response>
-          Whether this contact method is the preferred way of contacting the volunteer.
-        </attribute>
-        <attribute id="ruvr-cm-value" name="value" type="string" response>
-          An arbitrary string identifier for the contact method.
-        </attribute>
-      </>
-    </parentAttribute>
-    <parentAttribute id="ruvr-departments" name="departments" type="Array of DepartmentAssignment" response>
-      <span>Set of departments where the volunteer has expressed a preference or has an assignment.</span>
-      <>
-        <attribute id="ruvr-dpt-id" name="id" type="string" response>
-          The unique identifier of the department.
-        </attribute>
-        <attribute id="ruvr-dpt-states" name="states" type="Array of strings" response>
-          <div>The flags indicating the volunteer's preference or assignment for the department.</div>
-          <div>
-            <strong>Possible values</strong>: <code>experience</code>, <code>interest</code>, <code>avoid</code>, <code>assignment</code>, <code>request</code>
-          </div>
-        </attribute>
-        <attribute id="ruvr-dpt-name" name="name" type="string" response>
-          The name of the department.
-        </attribute>
-      </>
-    </parentAttribute>
-    <parentAttribute id="ruvr-user" name="user" type="User" response>
-      <span>The user object for the volunteer.</span>
+    <attribute id="ruvr-publiclyVisible" name="publiclyVisible" type="boolean" response>
+      Department is publicly visible to all users applying for a position.
+    </attribute>
+    <parentAttribute id="ruvr-leads" name="leads" type="Array of User" response>
+      <span>List of users who are assigned as leads for this department</span>
       <>
         <attribute id="ruvr-usr-id" name="id" type="string" response>
           The unique identifier of the user.
@@ -91,69 +199,32 @@ hide_table_of_contents: true
         </attribute>
       </>
     </parentAttribute>
-    <parentAttribute id="ruvr-options" name="options" type="Array of Option" response>
-      <span>A set of options, customized by the event, that contain arbitrary data provided by the volunteer.</span>
-      <>
-        <attribute id="ruvr-opt-name" name="name" type="string" response>
-          The name of the option as defined by the event.
-        </attribute>
-        <attribute id="ruvr-opt-type" name="type" type="string" response>
-          <div>The type of the option as defined by the event.</div>
-          <div>
-            <strong>Possible values</strong>: <code>select</code>, <code>multi</code>, <code>text</code>, <code>number</code>.
-          </div>
-        </attribute>
-        <attribute id="ruvr-opt-value" name="value" type="number, string, or Array of string" response>
-          The value of the option.
-        </attribute>
-      </>
-    </parentAttribute>
   </div>
   <div>
-    <exampleBox method='GET' header='/api/v0/users/:id/volunteer' headerSubText='cURL'>
-      {`curl https://reg.cces.dev/api/v0/users/{id}/volunteer \\
+    <exampleBox method='GET' header='/api/v0/volunteers/departments' headerSubText='cURL'>
+      {`curl https://reg.cces.dev/api/v0/volunteers/departments \\
   -H "Authorization: Bearer <token>"`}
     </exampleBox>
     <exampleBox header='Response' headerSubText='application/json'>
-      {`{
-  "id": "1234",
-  "createdAt": "2020-01-01T00:00:00Z",
-  "updatedAt": "2020-01-01T00:00:00Z",
-  "contactMethods": [
-    {
-      "name": "discord",
-      "isPrimary": true,
-      "value": "Username#1234"
-    },
-  ],
-  "departments": [
-    {
-      "id": "1234",
-      "states": ["experience", "interest"],
-      "name": "Registration"
-    },
-    {
-      "id": "5678",
-      "states": ["avoid"]
-    }
-  ],
-  "user": {
-    "id": "1234",
-    "firstName": "John",
-    "lastName": "Doe",
-    "username": "jdoe",
-    "preferredName": "Johnny",
-    "phone": "+15555555555",
-    "email": "johnny.test@concat.systems",
-  },
-  "options": [
-    {
-      "name": "jump",
-      "type": "select",
-      "value": "How high?"
-    },
-  ]
-}`}
+      {`[
+  {
+    "id": "1",
+    "email": "support@concat.org",
+    "name": "Information Technology",
+    "publiclyVisible": true,
+    "leads": [
+      {
+        "id": "1234",
+        "firstName": "Bob",
+        "lastName": "Smith",
+        "username": "bobsmith",
+        "preferredName": "Sphere",
+        "phone": "+11112223333",
+        "email": "bob@concat.org"
+      }
+    ]
+  }
+]`}
     </exampleBox>
   </div>
 </splitColumn>
