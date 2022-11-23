@@ -20,7 +20,7 @@ hide_table_of_contents: true
 <splitColumn>
   <div>
     <p>
-      Search for users using a variety of filters. A maximum of 1000 results will be returned per request. If additional results are available, they can be retrieved using the <code>nextPage</code> parameter from the previous response.
+      Search for users using a variety of filters. A maximum of 100 results will be returned per request. If additional results are available, they can be retrieved using the <code>nextPage</code> parameter from the previous response.
     </p>
     <h4>Authentication</h4>
     <div>
@@ -32,7 +32,7 @@ hide_table_of_contents: true
       A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>nextPage</code> parameter from the previous response for each subsequent request.
     </attribute>
     <attribute id="su-limit" name="limit" type="number" optional>
-      The maximum number of results to return, between 1 and 1000. Defaults to 1000.
+      The maximum number of results to return, between 1 and 100. Defaults to 100.
     </attribute>
     <parentAttribute id="su-filter" name="filter" type="object" optional>
       <span>Filters to apply to the search.</span>
