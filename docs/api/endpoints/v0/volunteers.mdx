@@ -33,14 +33,14 @@ import VolunteerModel from './_volunteerModel.mdx';
       A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>nextPage</code> parameter from the previous response for each subsequent request.
     </attribute>
     <attribute id="su-limit" name="limit" type="number" optional>
-      The maximum number of results to return, between 1 and 1000. Defaults to 1000.
+      The maximum number of results to return, between 1 and 100. Defaults to 100.
     </attribute>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
     <VolunteerModel />
   </div>
   <div>
-    <exampleBox method='GET' header='/api/v0/volunteers/search' headerSubText='cURL'>
+    <exampleBox method='POST' header='/api/v0/volunteers/search' headerSubText='cURL'>
             {`{
   "nextPage": "eyBsYXN0SWQ6IDEwMDAgfQ==",
   "limit": 100,
