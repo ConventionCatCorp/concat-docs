@@ -1,0 +1,172 @@
+---
+sidebar_position: 4
+displayed_sidebar: apiSidebar
+hide_table_of_contents: true
+---
+
+import RegistrationModel from './_registrationModel.mdx';
+
+# Registrations
+
+<splitColumn>
+  <div>
+    This object represents event registrations within a convention.
+  </div>
+  <restList>
+    <restElement method='GET' path='/api/v0/users/{id}/registration' anchor='get-registration' />
+    <restElement method='POST' path='/api/v0/registration/search' anchor='search-registrations' />
+  </restList>
+</splitColumn>
+
+### Get Registration
+
+<splitColumn>
+  <div>
+    <p>
+      Gets a single user registration by the giver user id.
+    </p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>registration:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Request</h4>
+    <RegistrationModel />
+  </div>
+  <div>
+    <exampleBox method='GET' header='/api/v0/users/{id}/registration' headerSubText='JSON' />
+    <exampleBox header='Response' headerSubText='JSON'>
+      {`{
+  "createdAt": "2022-02-23T00:30:47.468Z",
+  "updatedAt": "2022-09-21T01:04:51.456Z",
+  "badgeName": "Joe",
+  "status": "paid",
+  "productName": "Patron",
+  "productDisplayName": null,
+  "productId": "172",
+  "options": [
+      {
+          "name": "Species",
+          "type": "text",
+          "value": "Mega Bunny"
+      },
+      {
+          "name": "Shirt Size",
+          "type": "select",
+          "value": "M"
+      }
+  ],
+  "flags": [
+      {
+          "id": "1",
+          "shortName": "fursuits"
+      }
+  ],
+  "user": {
+      "id": "1234",
+      "firstName": "John",
+      "lastName": "Doe",
+      "username": "jdoe",
+      "preferredName": "Johnny",
+      "phone": "+15555555555",
+      "email": "johnny.test@concat.systems"
+  }
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Search registrations
+
+<splitColumn>
+  <div>
+    <p>
+      Search for registrations. A maximum of 100 results will be returned per request. If additional results are available, they can be retrieved using the <code>nextPage</code> parameter from the previous response.
+    </p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>registration:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Request</h4>
+    <attribute id="su-nextPage" name="nextPage" type="string" optional>
+      A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>nextPage</code> parameter from the previous response for each subsequent request.
+    </attribute>
+    <attribute id="su-limit" name="limit" type="number" optional>
+      The maximum number of results to return, between 1 and 100. Defaults to 100.
+    </attribute>
+    <parentAttribute id="su-filter" name="filter" type="object" optional>
+      <span>Filters to apply to the search.</span>
+      <>
+        <attribute id="su-flr-userIds" name="userIds" type="number" optional>
+          The ID of the user to filter by.
+        </attribute>
+      </>
+    </parentAttribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Response</h4>
+    <parentAttribute id="su-resp-data" name="data" type="Array of User" response optional>
+      <span>The registrations that match the search.</span>
+      <>
+        <RegistrationModel />
+      </>
+    </parentAttribute>
+    <attribute id="su-resp-nextPage" name="nextPage" type="string" response optional>
+      A cursor for pagination across multiple pages of results. If this attribute is present, there are more results available. Use this value in the <code>nextPage</code> parameter for the next request.
+    </attribute>
+  </div>
+  <div>
+    <exampleBox method='POST' header='/api/v0/registration/search' headerSubText='JSON'>
+      {`{
+  "nextPage": "eyBsYXN0SWQ6IDEwMDAgfQ==",
+  "limit": 100,
+  "filter": {
+    "userIds": ["1", "2", "3"],
+  },
+}`}
+    </exampleBox>
+    <exampleBox header='Response' headerSubText='JSON'>
+      {`{
+  "data": [
+    {
+      "createdAt": "2022-02-23T00:30:47.468Z",
+      "updatedAt": "2022-09-21T01:04:51.456Z",
+      "badgeName": "Joe",
+      "status": "paid",
+      "productName": "Patron",
+      "productDisplayName": null,
+      "productId": "172",
+      "options": [
+          {
+              "name": "Species",
+              "type": "text",
+              "value": "Mega Bunny"
+          },
+          {
+              "name": "Shirt Size",
+              "type": "select",
+              "value": "M"
+          }
+      ],
+      "flags": [
+          {
+              "id": "1",
+              "shortName": "fursuits"
+          }
+      ],
+      "user": {
+          "id": "1234",
+          "firstName": "John",
+          "lastName": "Doe",
+          "username": "jdoe",
+          "preferredName": "Johnny",
+          "phone": "+15555555555",
+          "email": "johnny.test@concat.systems"
+      }
+    },
+  ],
+  "nextPage": null
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>

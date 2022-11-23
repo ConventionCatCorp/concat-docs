@@ -1,0 +1,75 @@
+<attribute id="su-resp-createdAt" name="createdAt" type="string" response>
+  The date the registration record was created.
+</attribute>
+<attribute id="su-resp-updatedAt" name="updatedAt" type="string" response>
+  The date the registration record was last updated.
+</attribute>
+<attribute id="su-resp-badgeName" name="badgeName" type="string" response>
+  User input field about the badge name.
+</attribute>
+<attribute id="su-resp-status" name="status" type="string" response>
+  Current status of the registration. Either "paid" or "unpaid".
+</attribute>
+<attribute id="su-resp-productName" name="productName" type="string" response>
+  The name of the product the user purchashed when "paid", or intent to purchase when "unpaid".
+</attribute>
+<attribute id="su-resp-productDisplayName" name="productDisplayName" type="string" response>
+  The display name of the product.
+</attribute>
+<attribute id="su-resp-productId" name="productId" type="string" response>
+  The unique identifier for the product.
+</attribute>
+<parentAttribute id="ruvr-options" name="options" type="Array of Option" response>
+  <span>A set of options, customized by the event, that contain arbitrary data provided by the volunteer.</span>
+  <>
+    <attribute id="ruvr-opt-name" name="name" type="string" response>
+      The name of the option as defined by the event.
+    </attribute>
+    <attribute id="ruvr-opt-type" name="type" type="string" response>
+      <div>The type of the option as defined by the event.</div>
+      <div>
+        <strong>Possible values</strong>: <code>select</code>, <code>multi</code>, <code>text</code>, <code>number</code>.
+      </div>
+    </attribute>
+    <attribute id="ruvr-opt-value" name="value" type="number, string, or Array of string" response>
+      The value of the option.
+    </attribute>
+  </>
+</parentAttribute>
+<parentAttribute id="ruvr-flags" name="flags" type="Array of flag" response>
+  <span>Flag information</span>
+  <>
+    <attribute id="ruvr-usr-id" name="id" type="string" response>
+      The unique identifier of the flag.
+    </attribute>
+    <attribute id="ruvr-usr-shortName" name="shortName" type="string" response>
+      The flag short name.
+    </attribute>
+  </>
+</parentAttribute>
+<parentAttribute id="ruvr-user" name="user" type="User" response>
+  <span>User information</span>
+  <>
+    <attribute id="ruvr-usr-id" name="id" type="string" response>
+      The unique identifier of the user.
+    </attribute>
+    <attribute id="ruvr-usr-firstName" name="firstName" type="string" response>
+      The first name of the user.
+    </attribute>
+    <attribute id="ruvr-usr-lastName" name="lastName" type="string" response>
+      The last name of the user.
+    </attribute>
+    <attribute id="ruvr-usr-username" name="username" type="string" response>
+      The username of the user.
+    </attribute>
+    <attribute id="ruvr-usr-preferredName" name="preferredName" type="string" optional response>
+      The preferred name of the user. If provided, this should be used instead of the first and last name, except where legally required.
+    </attribute>
+    <attribute id="ruvr-usr-phone" name="phone" type="string" response>
+      The phone number of the user in E.164 format.
+    </attribute>
+    <attribute id="ruvr-usr-email" name="email" type="string" response>
+      The email address of the user.
+    </attribute>
+  </>
+</parentAttribute>
