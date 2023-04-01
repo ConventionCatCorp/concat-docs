@@ -14,6 +14,8 @@ Service integrations are granted a set of scopes at the time of creation. Approv
 | Scope | Description |
 | --- | --- |
 | `user:read` | Read-only access to user data |
+| `user:roles:update` | Access to updating user roles data |
+| `registration:read` | Read-only access to registration data |
 | `volunteer:read` | Read-only access to volunteer data |
 
 ## OBO scopes
