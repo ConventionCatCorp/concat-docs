@@ -38,14 +38,9 @@ Scan the following barcodes with the TEEMI scanner to configure it to be used wi
       <img src="/img/cashier/barcodes/04_enable_pdf417.PNG" />
     </li>
     <li>
-      Eanble DataMatrix (Required for the next step)
+      Eanble USB COM mode. This will allow the scanner to interface with the computer as a serial interface, instead of a keyboard, and allow for faster input of the driver's license information once scanned.
       <br/>
-      <img src="/img/cashier/barcodes/05_enable_datamatrix.PNG" />
-    </li>
-    <li>
-      Configure PDF417 output to ConCat's format (Sometimes the scanner may not read this from the computer's screen. You might need to send the image to your phone, and increase the brightness to maximum)
-      <br/>
-      <img src="/img/cashier/barcodes/06_configure_pdf417.png" />
+      <img src="/img/cashier/barcodes/05_usb_com.png" />
     </li>
   </ol>
 </div>
