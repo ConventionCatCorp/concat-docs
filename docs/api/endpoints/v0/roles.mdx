@@ -12,6 +12,9 @@ hide_table_of_contents: true
   </div>
   <restList>
     <restElement method='GET' path='/api/v0/roles' anchor='list roles' />
+    <restElement method='GET' path='/api/v0/users/{userId}/roles' anchor='list-user-roles' />
+    <restElement method='PUT' path='/api/v0/users/{userId}/roles/{roleId}' anchor='add-role-to-an-user' />
+    <restElement method='DELETE' path='/api/v0/users/{userId}/roles/{roleId}' anchor='remove-role-from-an-user' />
   </restList>
 </splitColumn>
 
@@ -56,5 +59,94 @@ hide_table_of_contents: true
   "nextPage": null
 }`}
     </exampleBox>
+  </div>
+</splitColumn>
+
+### List user roles
+
+<splitColumn>
+  <div>
+    <p>
+      List the roles given to the specified user.
+    </p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>user:read</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+     <h4>Response</h4>
+    <parentAttribute id="su-resp-data" name="data" type="Array of UserRole" response optional>
+      <span>The roles of the user.</span>
+      <>
+        <attribute id="su-resp-id" name="id" type="string" response>
+          The unique identifier of the role.
+        </attribute>
+        <attribute id="su-resp-name" name="name" type="string" response>
+          The name of the role.
+        </attribute>
+        <attribute id="su-resp-scope" name="scope" type="string" response>
+          Whatever the role was given to the user globally, or just for the current convention.
+        </attribute>
+      </>
+    </parentAttribute>
+  </div>
+  <div>
+    <exampleBox method='GET' header='/api/v0/users/:userId/roles' headerSubText='JSON'>
+      {`{
+  "data": [
+    {
+      "id": "1234",
+      "name": "admin",
+      "scope": "global",
+    }
+  ]
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Add role to an user
+
+<splitColumn>
+  <div>
+    <p>
+      Gives the user the specified role. This request will fail if the user already has the role.
+    </p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>user:roles:update</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+    <h4>Request</h4>
+    <attribute id="su-scope" name="scope" type="string">
+      Whatever the role will be given to the user for the current convention, or across all conventions in the organization. Values can be "convention" or "global".
+    </attribute>
+    <div style={{ marginBottom: '1.5rem' }} />
+  </div>
+  <div>
+    <exampleBox method='PUT' header='/api/v0/users/:userId/roles/:roleId' headerSubText='JSON'>
+      {`{
+  "scope": "convention"
+}`}
+    </exampleBox>
+  </div>
+</splitColumn>
+
+### Remove role from an user 
+
+
+<splitColumn>
+  <div>
+    <p>
+      Removes the user from the specified role. This request will fail if the user is not in the role.
+    </p>
+    <h4>Authentication</h4>
+    <div>
+      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>user:roles:update</code> scope.
+    </div>
+    <div style={{ marginBottom: '1.5rem' }} />
+  </div>
+  <div>
+    <exampleBox method='DELETE' header='/api/v0/users/:userId/roles/:roleId' />
   </div>
 </splitColumn>

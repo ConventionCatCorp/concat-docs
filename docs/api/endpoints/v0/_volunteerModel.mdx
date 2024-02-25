@@ -1,0 +1,80 @@
+<attribute id="ruvr-createdAt" name="createdAt" type="ISO-8601 Date" response>
+  The date the volunteer record was created.
+</attribute>
+<attribute id="ruvr-updatedAt" name="updatedAt" type="ISO-8601 Date" response>
+  The date the volunteer record was last updated.
+</attribute>
+<parentAttribute id="ruvr-contactMethods" name="contactMethods" type="Array of ContactMethod" response>
+  <span>Set of contact methods provided by the volunteer.</span>
+  <>
+    <attribute id="ruvr-cm-name" name="name" type="string" response>
+      The name of the contact method.
+    </attribute>
+    <attribute id="ruvr-cm-isPrimary" name="isPrimary" type="boolean" response>
+      Whether this contact method is the preferred way of contacting the volunteer.
+    </attribute>
+    <attribute id="ruvr-cm-value" name="value" type="string" response>
+      An arbitrary string identifier for the contact method.
+    </attribute>
+  </>
+</parentAttribute>
+<parentAttribute id="ruvr-departments" name="departments" type="Array of DepartmentAssignment" response>
+  <span>Set of departments where the volunteer has expressed a preference or has an assignment.</span>
+  <>
+    <attribute id="ruvr-dpt-id" name="id" type="string" response>
+      The unique identifier of the department.
+    </attribute>
+    <attribute id="ruvr-dpt-states" name="states" type="Array of strings" response>
+      <div>The flags indicating the volunteer's preference or assignment for the department.</div>
+      <div>
+        <strong>Possible values</strong>: <code>experience</code>, <code>interest</code>, <code>avoid</code>, <code>assignment</code>, <code>request</code>
+      </div>
+    </attribute>
+    <attribute id="ruvr-dpt-name" name="name" type="string" response>
+      The name of the department.
+    </attribute>
+  </>
+</parentAttribute>
+<parentAttribute id="ruvr-user" name="user" type="User" response>
+  <span>The user object for the volunteer.</span>
+  <>
+    <attribute id="ruvr-usr-id" name="id" type="string" response>
+      The unique identifier of the user.
+    </attribute>
+    <attribute id="ruvr-usr-firstName" name="firstName" type="string" response>
+      The first name of the user.
+    </attribute>
+    <attribute id="ruvr-usr-lastName" name="lastName" type="string" response>
+      The last name of the user.
+    </attribute>
+    <attribute id="ruvr-usr-username" name="username" type="string" response>
+      The username of the user.
+    </attribute>
+    <attribute id="ruvr-usr-preferredName" name="preferredName" type="string" optional response>
+      The preferred name of the user. If provided, this should be used instead of the first and last name, except where legally required.
+    </attribute>
+    <attribute id="ruvr-usr-phone" name="phone" type="string" response>
+      The phone number of the user in E.164 format.
+    </attribute>
+    <attribute id="ruvr-usr-email" name="email" type="string" response>
+      The email address of the user.
+    </attribute>
+  </>
+</parentAttribute>
+<parentAttribute id="ruvr-options" name="options" type="Array of Option" response>
+  <span>A set of options, customized by the event, that contain arbitrary data provided by the volunteer.</span>
+  <>
+    <attribute id="ruvr-opt-name" name="name" type="string" response>
+      The name of the option as defined by the event.
+    </attribute>
+    <attribute id="ruvr-opt-type" name="type" type="string" response>
+      <div>The type of the option as defined by the event.</div>
+      <div>
+        <strong>Possible values</strong>: <code>select</code>, <code>multi</code>, <code>text</code>, <code>number</code>.
+      </div>
+    </attribute>
+    <attribute id="ruvr-opt-value" name="value" type="number, string, or Array of string" response>
+      The value of the option.
+    </attribute>
+  </>
+</parentAttribute>
