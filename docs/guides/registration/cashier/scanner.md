@@ -1,12 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Cashier
-
-Cashiers are part of the staff who are responsible for checking users in, and giving out badges to attendees.  
-
-# Supported Barcode Scanner
+# Scanner
 
 Convention Cat's supported scanner is the [TEEMI 2D Barcode Scanner](https://www.amazon.com/gp/product/B074KH88Z7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1). The scanner behaves as a keyboard, and within the United States, it may scan attendees driver license to output into the search bar, to more quickly find the user, and verify their information.
 
