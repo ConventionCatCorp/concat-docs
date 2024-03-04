@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Convention Checklist
+# Checklist
 
 Simple checklist to help conventions ensure that they have everything they need to get started with a convention.
 
@@ -13,7 +13,7 @@ Simple checklist to help conventions ensure that they have everything they need 
   <div><input type="checkbox" />Discuss refund policy for attendees who do not attend the convention</div>
   <div><input type="checkbox" />Discuss if the end of the pre-registration period (Or if the registration can remain open all the way up to the convention)</div>
   <div><input type="checkbox" />Discuss pre-registration discount date ranges</div>
-  <div><input type="checkbox" />Update the registration flags settings. (System Settings > Reg flags)</div>
+  <div><input type="checkbox" />Update the registration flags settings. (Settings > Reg flags)</div>
   <ul>
     <li>Verify that the convnetion is okay with having user's accounts redacted after the convention is over (The 'nukeme' setting)</li>
   </ul>
@@ -23,7 +23,8 @@ Simple checklist to help conventions ensure that they have everything they need 
 
 <div>
   <div><input type="checkbox" />Go over the cashier interface.</div>
-  <div><input type="checkbox" />Verify that the convention has a badge design that needs to be printed.</div>
+  <div><input type="checkbox" />Verify that the convention has a badge design that needs to be printed. (Settings > Badge Designer)</div>
+  <div><input type="checkbox" />Verify that the printer works with the cashier station.</div>
   <div><input type="checkbox" />Verify that driver license's scanner is working.</div>
   <div><input type="checkbox" />Have a method to collect payments at the convention. ConCat does not yet have a method to directly collect payments, but orders can be mark as paid from an external 'cash' or 'card' method.</div>
   <div><input type="checkbox" />Verify that all dealers have paid for registration. (Check Attendee Statistics > Dealers)</div>
