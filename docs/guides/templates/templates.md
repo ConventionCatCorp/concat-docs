@@ -63,7 +63,7 @@ Templates can only have two potential overrides, this being an organization leve
   </li>
 </ul>
 
-Existing overrides have three buttons: Activate/Deactivate, Edit, and Delete respectively.
+Existing overrides have two buttons: Edit and Delete.
 
 ### Creating and modifying overrides
 
@@ -71,41 +71,59 @@ Writing template overrides is done in a templating language called [Handlebars](
 
 If not, in short, Handlebars combines HTML with a bracket notation used to access certain variables, ``{{likeThis}}``.
 
-Let's take a look at an example. At my convention, I want volunteers to join a Telegram group. I created a redirect on my marketing domain for `/volunteertg` to the group, and now I want to make sure that everyone that applied to volunteer gets the link.
+<splitColumn>
+  <div>
+    <p>Let's take a look at an example. At my convention, I want volunteers to join a Telegram group. I created a redirect on my marketing domain for `/volunteertg` to the group, and now I want to make sure that everyone that applied to volunteer gets the link.</p>
+    <p>When I navigate to my list of templates, I find the one I want to modify. <code>volunteerConfirm</code> seems good to me.</p>
+  </div>
+  <img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmListEntry.png" />
+</splitColumn>
 
-When I navigate to my list of templates, I find the one I want to modify. ``volunteerConfirm`` seems good to me.
+<splitColumn>
+  Selecting modify, I'm presented with an overview of current overrides for the template.
+  <img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmOverview.png" />
+</splitColumn>
 
-<img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmListEntry.png" />
+<splitColumn>
+  <div>
+    In the overview you're able to view the default template and any overrides. The green "Active" tag will be shown next to whichever will be sent out to users. Right now, that's the default template. I only want this template to apply for this convention, so I'm going to select "Create Override" next to Convention Level Override.
+    I start with the default template and can modify it as I please. A preview is automatically generated below, and the variables available for you to use are provided on the right.
+  </div>
+  <img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmEditor.png" />
+</splitColumn>
 
-Selecting modify, I'm presented with an overview of current overrides for the template.
-
-<img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmOverview.png" />
-
-In the overview you're able to view the default template and any overrides. The green "Active" tag will be shown next to whichever will be sent out to users. Right now, that's the default template. I only want this template to apply for this convention, so I'm going to select "Create Override" next to Convention Level Override.
-
-<img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmEditor.png" />
-
-I start with the default template and can modify it as I please. A preview is automatically generated below, and the variables available for you to use are provided on the right.
 
 ### Variables
 
-The power of Handlebars comes from the variables. We provide a list of the available variables for that particular template and their type.
+<splitColumn>
+  <div>
+    The power of Handlebars comes from the variables. We provide a list of the available variables for that particular template and their type.
+    You access these via bracket statements, with dots to access inner variables. For example, to access the convention's long name from above, I would write <code>&#123;&#123;convention.name.long&#125;&#125;</code>. Convention and User information is available for all templates, and additional variables are available as necessary.
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+  <div>
+    <img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmVariables.png" style={{height: 'auto', maxWidth: '100%'}} />
+  </div>
+</splitColumn>
 
-<img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmVariables.png" />
-
-You access these via bracket statements, with dots to access inner variables. For example, to access the convention's long name from above, I would write `{{convention.name.long}}`. Convention and User information is available for all templates, and additional variables are available as necessary.
 
 ### Errors
 
 While editing, you may see errors come up. These are to ensure you're not including variables that don't exist, and that your template isn't broken. You cannot submit templates that contain errors.
 
 #### Missing Variables
-
-This means you used a variable that does not exist within the context of the template. Check your spelling or remove it.
-<img className="bordered-img" src="/img/tutorial/emailTemplates/variableMissingEditor.png" />
+<splitColumn>
+  This means you used a variable that does not exist within the context of the template. Check your spelling or remove it.
+  <img className="bordered-img" src="/img/tutorial/emailTemplates/variableMissingEditor.png" />
+</splitColumn>
 
 #### Parse Error
-<div className="flex-container">
-  <p>Something went wrong when the server tried to parse your template. Please read the error message and check the offending element. It's likely you left an open bracket <code>&#123;&#123;</code> or something of the sort.</p>
+<splitColumn>
+  <div>
+    Something went wrong when the server tried to parse your template. Please read the error message and check the offending element. It's likely you left an open bracket (<code>&#123;&#123;</code>) or something of the sort.
+  </div>
   <img className="bordered-img" src="/img/tutorial/emailTemplates/parseErrorPreview.png" />
-</div>
+</splitColumn>
