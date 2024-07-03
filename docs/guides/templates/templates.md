@@ -5,7 +5,7 @@ hide_table_of_contents: true
 
 # Email Template Overrides
 
-ConCat sends attendees emails for various actions taken in the application, for example when they successfully pay for an order, or when they change their email address. These templates can be overriden for a better level of customization, if you wish.
+ConCat sends attendees emails for various actions taken in the application, for example when they successfully pay for an order, or when they change their email address. These templates can be overriden for a better level of customization, and some can be disabled outright.
 
 ### List templates
 
@@ -29,24 +29,24 @@ You can now view all available templates, a brief description of what they are u
 <ul>
   <li>
     <span>
-      <strong>Default</strong> - The template is not being overridden, and is using the default ConCat provided template.
+      <strong>Default</strong> - The email template is not being overridden, and is using the default ConCat provided template.
     </span>
   </li>
-    <li>
+  <li>
     <span>
-      <strong>Has Override</strong> - The template contains an override.
+      <strong>Overridden</strong> - The email template is being overridden by a custom template.
     </span>
   </li>
-    <li>
+  <li>
     <span>
-      <strong>Active Override</strong> - The template actively being overriden.
+      <strong>Disabled</strong> - The email template is disabled and will not be sent.
     </span>
   </li>
 </ul>
 
 ### Configuring overrides
 
-Upon selecting "Modify" on the template you wish to inspect, you can view a rendered example email of the template, alongside an "Active" badge next to whichever template would be sent.
+Upon selecting "Modify" on the template you wish to inspect, you can view a rendered example email of the template, alongside a "Current" badge next to whichever configuration is active.
 
 Templates can only have two potential overrides, this being an organization level or a convention level override. The default template cannot be deleted.
 
@@ -83,7 +83,7 @@ Selecting modify, I'm presented with an overview of current overrides for the te
 
 In the overview you're able to view the default template and any overrides. The green "Active" tag will be shown next to whichever will be sent out to users. Right now, that's the default template. I only want this template to apply for this convention, so I'm going to select "Create Override" next to Convention Level Override.
 
-<img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmCreateOverride.png" />
+<img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmEditor.png" />
 
 I start with the default template and can modify it as I please. A preview is automatically generated below, and the variables available for you to use are provided on the right.
 
@@ -102,8 +102,10 @@ While editing, you may see errors come up. These are to ensure you're not includ
 #### Missing Variables
 
 This means you used a variable that does not exist within the context of the template. Check your spelling or remove it.
-<img className="bordered-img" src="/img/tutorial/emailTemplates/variablesMissing.png" />
+<img className="bordered-img" src="/img/tutorial/emailTemplates/variableMissingEditor.png" />
 
 #### Parse Error
-Something went wrong when the server tried to parse your template. Please read the error message and check the offending element. It's likely you left an open bracket (`{{`) or something of the sort.
-<img className="bordered-img" src="/img/tutorial/emailTemplates/parseError.png" />
+<div className="flex-container">
+  <p>Something went wrong when the server tried to parse your template. Please read the error message and check the offending element. It's likely you left an open bracket <code>&#123;&#123;</code> or something of the sort.</p>
+  <img className="bordered-img" src="/img/tutorial/emailTemplates/parseErrorPreview.png" />
+</div>
