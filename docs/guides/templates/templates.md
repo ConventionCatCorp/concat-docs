@@ -44,6 +44,10 @@ You can now view all available templates, a brief description of what they are u
   </li>
 </ul>
 
+#### Regarding `register`
+
+You may notice that `register` (sent out to confirm someones email address when they first sign up for an account) is unable to be modified by default. We consider this template critical and do not allow it to be overridden without contacting support first. Reach out to support if you would like to modify this template.
+
 ### Configuring overrides
 
 Upon selecting "Modify" on the template you wish to inspect, you can view a rendered example email of the template, alongside a "Current" badge next to whichever configuration is active.
@@ -81,7 +85,7 @@ If not, in short, Handlebars combines HTML with a bracket notation used to acces
 
 <splitColumn>
   Selecting modify, I'm presented with an overview of current overrides for the template.
-  <img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmOverview.png" />
+  <img src="/img/tutorial/emailTemplates/volunteerConfirmOverview.png" />
 </splitColumn>
 
 <splitColumn>
@@ -89,7 +93,7 @@ If not, in short, Handlebars combines HTML with a bracket notation used to acces
     In the overview you're able to view the default template and any overrides. The green "Active" tag will be shown next to whichever will be sent out to users. Right now, that's the default template. I only want this template to apply for this convention, so I'm going to select "Create Override" next to Convention Level Override.
     I start with the default template and can modify it as I please. A preview is automatically generated below, and the variables available for you to use are provided on the right.
   </div>
-  <img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmEditor.png" />
+  <img src="/img/tutorial/emailTemplates/volunteerConfirmEditor.png" />
 </splitColumn>
 
 ### Disabling Templates
@@ -110,7 +114,7 @@ Once disabled, you'll see this message in place of the rendered example.
     You access these via bracket statements, with dots to access inner variables. For example, to access the convention's long name from above, I would write <code>&#123;&#123;convention.name.long&#125;&#125;</code>. Convention and User information is available for all templates, and additional variables are available as necessary.
   </div>
   <div>
-    <img className="bordered-img" src="/img/tutorial/emailTemplates/volunteerConfirmVariables.png" style={{height: '100%', maxHeight:'600px'}} />
+    <img src="/img/tutorial/emailTemplates/volunteerConfirmVariables.png" style={{height: '100%', maxHeight:'600px'}} />
   </div>
 </div>
 
@@ -143,5 +147,5 @@ Template overrides are respected in the following order:
     <p>Convention overrides always take priority, then any set at the organization level, and finally if there are none present the default is chosen.</p>
     <p>For clarity, the active configuration is always highlighted as "Current" in the template's overview screen.</p>
   </div>
-  <img className="bordered-img" src="/img/tutorial/emailTemplates/waterfallExample.png" />
+  <img src="/img/tutorial/emailTemplates/waterfallExample.png" />
 </splitColumn>
