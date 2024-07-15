@@ -12,9 +12,13 @@ Dealer applications then need to be approved by a vendor administrator, at which
 
 After the vendor pays for their amenities, the vendor will be promoted to an “approved (paid)” status.
 
+:::info Note
+Dealers are still expected to pay for their registration. If you'd like to offer a discount or registration for free, you can do so via a [Product Discount](/docs/guides/products/discounts)
+:::
+
 # Dealer Areas
 
-Dealers may apply to more than one dealer area. Each dealer area have a different product category, which gives the dealer different choices of table types to pick from.
+Dealers may apply to more than one dealer area (if only one exists then they will not be given the option). Each dealer area have a different product category, which gives the dealer different choices of table types to pick from.
 
 # Creating a product category 
 

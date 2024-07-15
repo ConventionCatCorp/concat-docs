@@ -34,4 +34,4 @@ Adminstators can also assign volunteers as staff if they require particular perm
 
 ## Compensation
 
-If you would like, Registration can be set up to provide product discounts for volunteers.
+If you would like, Registration can be set up a [Product Discount](/docs/guides/products/discounts) for volunteers on particular attendance tiers.
