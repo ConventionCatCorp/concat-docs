@@ -64,6 +64,12 @@ You can create an unlimited number of products, using the following steps:
         <li>
           <strong>Maximum Purchase Age</strong> - The maximum age that attendees can be to purchase this product.
         </li>
+        <li>
+          <strong>Restrict Product to User Roles</strong> - Only users with the specified role(s) can purchase this product.
+        </li>
+        <li>
+          <strong>Restrict Product to Grants</strong> - Only users that have already purchased and have a grant for the specified product(s) can purchase this product.
+        </li>
       </ul>
     </div>
   </li>
