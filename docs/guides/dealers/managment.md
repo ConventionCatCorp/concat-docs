@@ -20,7 +20,7 @@ Dealers are still expected to pay for their registration. If you'd like to offer
 
 Dealers may apply to more than one dealer area (if only one exists then they will not be given the option). Each dealer area have a different product category, which gives the dealer different choices of table types to pick from. This category **must** be created before creating the dealer area.
 
-# Creating a Vendor Category 
+# Creating a Vendor Category
 
 You can manage Vendor Categories directly from the Dealers tab.
 
@@ -30,13 +30,17 @@ Visible products will be displayed as table types that the dealer can choose.
 
 Hidden products that are set as "Addons" to the visible products will be displayed as additional optional choices for dealers to pick.
 
-# Item Categories 
+# Item Categories
 
 This list is for information only. Edit the list of product choices a dealer has under the "System" > "Settings" > "Vendor" list.
 <!-- todo: clarify what this means -->
 
-## Dealer Assistants 
+## Dealer Assistants
 
 Dealers are allowed to request for assistants, which when approved, will be also given a “Dealer” status on their badge. 
 
 Once they have been approved and pay for their table, Dealers can head to the "Vendor" tab (where they applied) and select the "Manage Assistants" button in order to add and manage their assistants. They will need to know the assistant's username.
+
+## Seating Preferences
+
+Dealers can also request to be next to other vendors. By selecting the "Seating Preferences" button on the Vendor tab, dealers can view their Vendor ID to share with others in order to request shared seating.
