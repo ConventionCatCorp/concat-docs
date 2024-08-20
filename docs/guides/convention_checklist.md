@@ -15,7 +15,7 @@ Simple checklist to help conventions ensure that they have everything they need 
   <div><input type="checkbox" />Discuss pre-registration discount date ranges</div>
   <div><input type="checkbox" />Update the registration flags settings. (Settings > Reg flags)</div>
   <ul>
-    <li>Verify that the convnetion is okay with having user's accounts redacted after the convention is over (The 'nukeme' setting)</li>
+    <li><input type="checkbox" />Verify that the convnetion is okay with having user's accounts redacted after the convention is over (The 'nukeme' setting)</li>
   </ul>
 </div>
 
