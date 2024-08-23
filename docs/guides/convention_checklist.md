@@ -17,6 +17,7 @@ Simple checklist to help conventions ensure that they have everything they need 
   <ul>
     <li><input type="checkbox" />Verify that the convnetion is okay with having user's accounts redacted after the convention is over (The 'nukeme' setting)</li>
   </ul>
+  <div><input type="checkbox" />Add additional addons for swag pickup for Sponsor+ registration levels. It is recommended that only a single "Swag" bag product is added, as the cashiers will have to individually mark each item as picked up.</div>
 </div>
 
 ## Before first day of registration
@@ -28,6 +29,7 @@ Simple checklist to help conventions ensure that they have everything they need 
   <div><input type="checkbox" />Verify that driver license's scanner is working.</div>
   <div><input type="checkbox" />Have a method to collect payments at the convention. ConCat does not yet have a method to directly collect payments, but orders can be mark as paid from an external 'cash' or 'card' method.</div>
   <div><input type="checkbox" />Verify that all dealers have paid for registration. (Check Attendee Statistics > Dealers)</div>
+  <div><input type="checkbox" />Verify that the correct label sizes have been bought for the printer.</div>
 </div>
 
 ## After the event
