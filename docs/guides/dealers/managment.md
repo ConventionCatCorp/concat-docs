@@ -30,11 +30,6 @@ Visible products will be displayed as table types that the dealer can choose.
 
 Hidden products that are set as "Addons" to the visible products will be displayed as additional optional choices for dealers to pick.
 
-# Item Categories
-
-This list is for information only. Edit the list of product choices a dealer has under the "System" > "Settings" > "Vendor" list.
-<!-- todo: clarify what this means -->
-
 ## Dealer Assistants
 
 Dealers are allowed to request for assistants, which when approved, will be also given a “Dealer” status on their badge. 
