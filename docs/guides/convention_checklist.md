@@ -18,6 +18,7 @@ Simple checklist to help conventions ensure that they have everything they need 
     <li><input type="checkbox" />Verify that the convnetion is okay with having user's accounts redacted after the convention is over (The 'nukeme' setting)</li>
   </ul>
   <div><input type="checkbox" />Add additional addons for swag pickup for Sponsor+ registration levels. It is recommended that only a single "Swag" bag product is added, as the cashiers will have to individually mark each item as picked up.</div>
+  <div><input type="checkbox" />Check your Stripe payoff schedule. ConCat recommends to have daily automatic transfers.</div>
 </div>
 
 ## Before first day of registration
