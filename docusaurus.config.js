@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'ConCat',
   tagline: 'Manage events. Not spreadsheets.',
-  url: 'https://docs.concat.app',
+  url: 'https://concat.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
