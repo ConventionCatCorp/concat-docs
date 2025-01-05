@@ -86,7 +86,7 @@ Abuse or misuse of sensitive scopes will result in your application being suspen
 The user will be redirected back to your application's `redirect_uri` with query parameters containing a `code` and optional `state` attribute. You can use this code to exchange it for a bearer token and a refresh token.
 
 <exampleBox header="Example" codeBlockType="http">
-  https://thebest.app/oauth/callback?code=123&state=xyz
+  https://thebest.app/api/oauth/token?code=123&state=xyz
 </exampleBox>
 
 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gridGap: '1rem', marginBottom: '1rem' }}>
@@ -116,7 +116,7 @@ The user will be redirected back to your application's `redirect_uri` with query
   "expires_in": 3600,
   "scope": "pii:basic",
   "refresh_token": "...",
-  "token_type": "bearer",
+  "token_type": "Bearer",
 }`}
     </exampleBox>
   </div>
@@ -157,7 +157,7 @@ If your app no longer requires access to all of the scopes originally requested,
   "expires_in": 3600,
   "scope": "pii:basic",
   "refresh_token": "...",
-  "token_type": "bearer",
+  "token_type": "Bearer",
 }`}
     </exampleBox>
   </div>
@@ -208,7 +208,7 @@ When using the service integration method, the application ID and secret are exc
   "access_token": "...",
   "expires_in": 3600,
   "scope": "user:read",
-  "token_type": "bearer",
+  "token_type": "Bearer",
 }`}
     </exampleBox>
   </div>

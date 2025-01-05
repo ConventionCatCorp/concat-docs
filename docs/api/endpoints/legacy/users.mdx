@@ -26,11 +26,11 @@ Returns the user object for the currently authenticated user.
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
+    <attribute id="user-current-retrieve-resp-sub" name="sub" type="string" response>
+      The ID of the user, represented as a string.
+    </attribute>
     <attribute id="user-current-retrieve-resp-bornAt" name="bornAt" type="string" response>
       The date the user was born, in ISO 8601 format.
-    </attribute>
-    <attribute id="user-current-retrieve-resp-emailMd5" name="emailMd5" type="string" response>
-      The MD5 hash of the user's email address.
     </attribute>
     <attribute id="user-current-retrieve-resp-firstName" name="firstName" type="string" response>
       The user's legal first name, as it appears on their ID.
@@ -41,14 +41,17 @@ Returns the user object for the currently authenticated user.
     <attribute id="user-current-retrieve-resp-lastName" name="lastName" type="string" response>
       The user's legal last name, as it appears on their ID.
     </attribute>
-    <attribute id="user-current-retrieve-resp-permissions" name="permissions" type="array of string" response>
-      The permissions granted to the user.
+    <attribute id="user-current-retrieve-resp-newsletter" name="newsletter" type="boolean" response>
+      Whether the user has opted in to the newsletter.
     </attribute>
     <attribute id="user-current-retrieve-resp-preferredName" name="preferredName" type="string" optional response>
       An optional preferred name for the user. This will be displayed first on the user's profile.
     </attribute>
-    <attribute id="user-current-retrieve-resp-newsletter" name="newsletter" type="boolean" response>
-      Whether the user has opted in to the newsletter.
+    <attribute id="user-current-retrieve-resp-username" name="username" type="string" response>
+      The user's username.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-emailVerified" name="emailVerified" type="boolean" response>
+      Returns true if the user has verified their email.
     </attribute>
     <attribute id="user-current-retrieve-resp-identityVerified" name="identityVerified" type="boolean" response>
       Returns true if the user has verified their identity.
@@ -56,8 +59,14 @@ Returns the user object for the currently authenticated user.
     <attribute id="user-current-retrieve-resp-isVolunteer" name="isVolunteer" type="boolean" response>
       Returns true if the user is an assigned volunteer.
     </attribute>
-    <attribute id="user-current-retrieve-resp-username" name="username" type="string" response>
-      The user's username.
+    <attribute id="user-current-retrieve-resp-permissions" name="permissions" type="array of string" response>
+      The permissions granted to the user.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-profilePictureUrl" name="profilePictureUrl" type="string" response>
+      Publicly accessible URL to the user's profile picture.
+    </attribute>
+    <attribute id="user-current-retrieve-resp-isDepartmentLead" name="isDepartmentLead" type="boolean" response>
+      Returns true if the user is assigned as the lead of a department.
     </attribute>
     <details>
       <summary>Scope Restricted Attributes</summary>
@@ -96,6 +105,7 @@ Returns the user object for the currently authenticated user.
     </exampleBox>
     <exampleBox header='Response' headerSubText='application/json'>
       {`{
+  "sub": "1234",
   "addressCity": "New York",
   "addressCountry": "US",
   "addressLine1": "123 Main St",
@@ -111,9 +121,12 @@ Returns the user object for the currently authenticated user.
   "phone": "+15555555555",
   "preferredName": "Jonathan",
   "username": "aperson",
+  "emailVerified": true,
   "identityVerified": true,
   "isVolunteer": true,
   "permissions": [],
+  "profilePictureUrl": "https://www.gravatar.com/avatar/example",
+  "isDepartmentLead": false
 }`}
     </exampleBox>
   </div>
