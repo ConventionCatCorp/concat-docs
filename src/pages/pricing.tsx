@@ -41,8 +41,9 @@ export default function Pricing(): JSX.Element {
           </div>
           <Card header='Beta Plan' className={styles['price-card']}>
             <div className={styles['pricing']}>
-              <div>75&cent; <small>per attendee</small></div>
-              <div>1% <small>all other transactions</small></div>
+              <div>$1.00 <small>per attendee*</small></div>
+              <div>1% <small>all other transactions*</small></div>
+              <div><small>* Stripe fees not included.</small></div>
             </div>
             <hr />
             <ul>
