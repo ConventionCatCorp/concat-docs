@@ -116,7 +116,7 @@ The user will be redirected back to your application's `redirect_uri` with query
   "expires_in": 3600,
   "scope": "pii:basic",
   "refresh_token": "...",
-  "token_type": "bearer",
+  "token_type": "Bearer",
 }`}
     </exampleBox>
   </div>
@@ -157,7 +157,7 @@ If your app no longer requires access to all of the scopes originally requested,
   "expires_in": 3600,
   "scope": "pii:basic",
   "refresh_token": "...",
-  "token_type": "bearer",
+  "token_type": "Bearer",
 }`}
     </exampleBox>
   </div>
@@ -208,7 +208,7 @@ When using the service integration method, the application ID and secret are exc
   "access_token": "...",
   "expires_in": 3600,
   "scope": "user:read",
-  "token_type": "bearer",
+  "token_type": "Bearer",
 }`}
     </exampleBox>
   </div>
