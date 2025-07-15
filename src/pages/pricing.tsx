@@ -20,13 +20,13 @@ export default function Pricing(): JSX.Element {
               scales as your event grows.
             </p>
             <p>
-              We offer a fixed price per registered attendee and a small percentage for all other transactions,
+              We offer a fixed price per registered attendee & hotel reservations, and a small percentage for all other transactions,
               such as vendor tables and the event store.
             </p>
             <h3>No Module Costs</h3>
             <p>
               There's no per-module costs for the additional modules included with ConCat. That means you
-              get vendor management, volunteer management, and our event store at no extra cost!
+              get vendor management, volunteer management, hotel management, and our event store at no extra cost!
             </p>
             <h3>No Hidden Costs</h3>
             <p>
@@ -42,6 +42,7 @@ export default function Pricing(): JSX.Element {
           <Card header='Beta Plan' className={styles['price-card']}>
             <div className={styles['pricing']}>
               <div>$1.00 <small>per attendee*</small></div>
+              <div>$1.00 <small>per hotel room</small></div>
               <div>1% <small>all other transactions*</small></div>
               <div><small>* Stripe fees not included.</small></div>
             </div>
