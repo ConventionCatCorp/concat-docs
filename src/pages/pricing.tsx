@@ -39,7 +39,7 @@ export default function Pricing(): JSX.Element {
               than 135 countries.
             </p>
           </div>
-          <Card header='Beta Plan' className={styles['price-card']}>
+          <Card header='Standard Plan' className={styles['price-card']}>
             <div className={styles['pricing']}>
               <div>$1.00 <small>per attendee*</small></div>
               <div>$1.00 <small>per hotel room</small></div>
