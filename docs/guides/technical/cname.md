@@ -48,4 +48,10 @@ After creating the request inside of ConCat, the Email Settings tab will display
 
 Utilize the copy buttons to get the exact values required, and paste them into the appropriate fields outlined.
 
-<!-- TODO: Write -->
+Once you have set the records, wait up to 5 minutes for your DNS provider to update the records. Then, press "Verify" in ConCat.
+
+If you see a warning stating that the verification was not complete, that's perfectly OK. Sometimes DNS providers can be slow, try again in 30-60 minutes.
+
+Also double check that the records you set were on the right domain and are *exactly* as described by ConCat.
+
+If this process takes more than 24 hours, please contact support.
