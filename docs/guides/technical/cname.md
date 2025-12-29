@@ -11,7 +11,7 @@ In order to configure ConCat to utilize your organization's domain, you must add
 
 ### DNS Panel
 
-The first step in managing these records is to access your DNS management panel. This will be with the registrar you purchased your domain through (ex. GoDaddy, NameCheap, Porkbun).
+The first step in managing these records is to access your DNS management panel. This usually will be with the registrar you purchased your domain through (ex. GoDaddy, NameCheap, Porkbun).
 If you do not have access to this, contact someone in your organization who does. Access to this panel is **required** in order to proceed.
 
 :::info Custom Nameservers
@@ -28,8 +28,6 @@ These guides are for specific procedures within ConCat.
 
 ### Custom Domain for Convention
 
-<!-- TODO: Editing, this is wordy -->
-
 When creating new conventions, a new domain is utilized in order to maintain access to the old convention. Upon creation however, the new domain will not be immediately accessible.
 
 You must add a `CNAME` record to the new domain, with the value set to `customers.concat.app`.
@@ -38,15 +36,17 @@ For example, if an old convention was moved to `2025.example.com`, a new record 
 
 ### Custom Email Domains
 
-<!-- TODO: Screenshots once copy and layout are finalized -->
-
 When adding a custom domain for email sending, multiple records are required to be added.
 
 After creating the request inside of ConCat, the Email Settings tab will display a list of records and their values that need to be added.
 
-(insert screenshot on right)
+Example:
+<img src="/img/technical/email_settings_cname.png" />
 
 Utilize the copy buttons to get the exact values required, and paste them into the appropriate fields outlined.
+
+Example:
+<img src="/img/technical/email_settings_dns.png" />
 
 Once you have set the records, wait up to 5 minutes for your DNS provider to update the records. Then, press "Verify" in ConCat.
 
