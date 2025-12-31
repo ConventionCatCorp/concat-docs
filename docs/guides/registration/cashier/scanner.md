@@ -36,6 +36,12 @@ Scan the following barcodes with the TEEMI scanner to configure it to be used wi
       <img src="/img/cashier/barcodes/04_enable_pdf417.PNG" />
     </li>
     <li>
+      (optional): Enable QR Codes to be scanned. (Used by Registration QR codes in email confirmations, if your event has enabled them.)
+      <br />
+      <!-- TOOD: Get the right image, validate solely these two being enabled works -->
+      <img src="/img/cashier/barcodes/04_enable_pdf417.PNG" />
+    </li>
+    <li>
       Eanble USB COM mode. This will allow the scanner to interface with the computer as a serial interface, instead of a keyboard, and allow for faster input of the driver's license information once scanned.
       <br/>
       <img src="/img/cashier/barcodes/05_usb_com.png" />
