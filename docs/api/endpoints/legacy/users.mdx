@@ -68,6 +68,17 @@ Returns the user object for the currently authenticated user.
     <attribute id="user-current-retrieve-resp-isDepartmentLead" name="isDepartmentLead" type="boolean" response>
       Returns true if the user is assigned as the lead of a department.
     </attribute>
+    <parentAttribute id="user-current-retrieve-resp-userRoles" name="userRoles" type="Array of Object" response>
+      <span>A list of the user's assigned roles for the requested convention and organization.</span>
+      <>
+        <attribute id="user-current-retrieve-resp-id" name="id" type="number" response>
+          The id of the role.
+        </attribute>
+        <attribute id="user-current-retrieve-resp-name" name="name" type="string" response>
+          The name of the role.
+        </attribute>
+      </>
+    </parentAttribute>
     <details>
       <summary>Scope Restricted Attributes</summary>
       <div>
@@ -126,7 +137,13 @@ Returns the user object for the currently authenticated user.
   "isVolunteer": true,
   "permissions": [],
   "profilePictureUrl": "https://www.gravatar.com/avatar/example",
-  "isDepartmentLead": false
+  "isDepartmentLead": false,
+  "userRoles": [
+    {
+      "id": 5,
+      "name": "user"
+    }
+  ]
 }`}
     </exampleBox>
   </div>
