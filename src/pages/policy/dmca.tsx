@@ -14,10 +14,10 @@ export default function Terms(): JSX.Element {
       <main className={styles.main}>
         <h1>DMCA Takedown Policy</h1>
         <div className={styles.subtitle}>
-          Effective date: July 14, 2022
+          Effective date: March 12, 2026
         </div>
         <p>
-          Convention Cat Event Systems, Inc. ("ConCat") respects the intellectual property rights of others
+          Convention Cat LLC ("ConCat") respects the intellectual property rights of others
           and expects the same from all users of its services.
         </p>
 
@@ -38,7 +38,7 @@ export default function Terms(): JSX.Element {
             <p>
               <strong>By Mail</strong>:<br />
               Attn: DMCA Compliance Agent<br />
-              Convention Cat Event Systems, Inc.<br />
+              Convention Cat LLC<br />
               270 S 171st<br />
               Burien, WA 98148
             </p>
@@ -54,7 +54,7 @@ export default function Terms(): JSX.Element {
         </ul>
         <p>
           A copy of this Designated Agent Information can be retrieved from the US Copyright Office&nbsp;
-          <a href="https://dmca.copyright.gov">DMCA Designated Agent Directory</a> website.
+          <a href="https://dmca.copyright.gov">DMCA Designated Agent Directory</a> website. Registration Number: DMCA-1040726.
         </p>
         <h3>DMCA Handling Process</h3>
         <ol>
@@ -175,15 +175,15 @@ export default function Terms(): JSX.Element {
               <li>
                 <strong>If within the United States</strong>,&nbsp;
                 <i>
-                  "I consent to the jurisdiction of the Federal District Court for the judicial district in
+                  "I consent to the jurisdiction of the United States District Court for the judicial district in
                   which my provided address is located."
                 </i>
               </li>
               <li>
                 <strong>If outside the United States</strong>,&nbsp;
                 <i>
-                  "I consent to the jurisdiction of the Federal District Court for the District of Delaware
-                  in which Convention Cat Event Systems, Inc. is located."
+                  "I consent to the jurisdiction of the United States District Court for the Western District
+                  of Washington in which Convention Cat LLC is located."
                 </i>
               </li>
             </ul>
