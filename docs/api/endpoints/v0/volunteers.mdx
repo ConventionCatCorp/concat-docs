@@ -8,19 +8,19 @@ import VolunteerModel from './_volunteerModel.mdx';
 
 # Volunteers
 
-<splitColumn>
+<SplitColumn>
   <div>
     This object represents a volunteer application within a convention. 
   </div>
-  <restList>
-    <restElement method='POST' path='/api/v0/volunteers/search' anchor='search-for-volunteers' />
-    <restElement method='GET' path='/api/v0/users/{id}/volunteer' anchor='retrieve-a-users-volunteer-record' />
-    <restElement method='GET' path='/api/v0/volunteers/departments' anchor='retrieve-list-of-departments' />
-  </restList>
-</splitColumn>
+  <RestList>
+    <RestElement method='POST' path='/api/v0/volunteers/search' anchor='search-for-volunteers' />
+    <RestElement method='GET' path='/api/v0/users/{id}/volunteer' anchor='retrieve-a-users-volunteer-record' />
+    <RestElement method='GET' path='/api/v0/volunteers/departments' anchor='retrieve-list-of-departments' />
+  </RestList>
+</SplitColumn>
 
 ### Search for volunteers
-<splitColumn>
+<SplitColumn>
   <div>
     <p>Paginate through the volunteer list.</p>
     <h4>Authentication</h4>
@@ -29,24 +29,24 @@ import VolunteerModel from './_volunteerModel.mdx';
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Request</h4>
-    <attribute id="su-nextPage" name="nextPage" type="string" optional>
+    <Attribute id="su-nextPage" name="nextPage" type="string" optional>
       A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>nextPage</code> parameter from the previous response for each subsequent request.
-    </attribute>
-    <attribute id="su-limit" name="limit" type="number" optional>
+    </Attribute>
+    <Attribute id="su-limit" name="limit" type="number" optional>
       The maximum number of results to return, between 1 and 100. Defaults to 100.
-    </attribute>
+    </Attribute>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
     <VolunteerModel />
   </div>
   <div>
-    <exampleBox method='POST' header='/api/v0/volunteers/search' headerSubText='cURL'>
+    <ExampleBox method='POST' header='/api/v0/volunteers/search' headerSubText='cURL'>
             {`{
   "nextPage": "eyBsYXN0SWQ6IDEwMDAgfQ==",
   "limit": 100,
 }`}
-    </exampleBox>
-    <exampleBox header='Response' headerSubText='application/json'>
+    </ExampleBox>
+    <ExampleBox header='Response' headerSubText='application/json'>
       {`{
   "data": [
     {
@@ -86,12 +86,12 @@ import VolunteerModel from './_volunteerModel.mdx';
   ],
   "nextPage": null,
 }`}
-    </exampleBox>
+    </ExampleBox>
   </div>
-</splitColumn>
+</SplitColumn>
 
 ### Retrieve a user's volunteer record
-<splitColumn>
+<SplitColumn>
   <div>
     <p>Returns the volunteer object for the specified user.</p>
     <h4>Authentication</h4>
@@ -103,11 +103,11 @@ import VolunteerModel from './_volunteerModel.mdx';
     <VolunteerModel />
   </div>
   <div>
-    <exampleBox method='GET' header='/api/v0/users/:id/volunteer' headerSubText='cURL'>
+    <ExampleBox method='GET' header='/api/v0/users/:id/volunteer' headerSubText='cURL'>
       {`curl https://reg.cces.dev/api/v0/users/{id}/volunteer \\
   -H "Authorization: Bearer <token>"`}
-    </exampleBox>
-    <exampleBox header='Response' headerSubText='application/json'>
+    </ExampleBox>
+    <ExampleBox header='Response' headerSubText='application/json'>
       {`{
   "createdAt": "2020-01-01T00:00:00Z",
   "updatedAt": "2020-01-01T00:00:00Z",
@@ -147,12 +147,12 @@ import VolunteerModel from './_volunteerModel.mdx';
     },
   ]
 }`}
-    </exampleBox>
+    </ExampleBox>
   </div>
-</splitColumn>
+</SplitColumn>
 
 ### Retrieve list of departments
-<splitColumn>
+<SplitColumn>
   <div>
     <p>Returns the list of volunteer departments.</p>
     <h4>Authentication</h4>
@@ -161,51 +161,51 @@ import VolunteerModel from './_volunteerModel.mdx';
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
-    <attribute id="ruvr-id" name="id" type="string" response>
+    <Attribute id="ruvr-id" name="id" type="string" response>
       The unique identifier of the department record.
-    </attribute>
-    <attribute id="ruvr-email" name="name" type="string" response>
+    </Attribute>
+    <Attribute id="ruvr-email" name="name" type="string" response>
       The date the volunteer record was created.
-    </attribute>
-    <attribute id="ruvr-name" name="email" type="email" response>
+    </Attribute>
+    <Attribute id="ruvr-name" name="email" type="email" response>
       The date the volunteer record was last updated.
-    </attribute>
-    <attribute id="ruvr-publiclyVisible" name="publiclyVisible" type="boolean" response>
+    </Attribute>
+    <Attribute id="ruvr-publiclyVisible" name="publiclyVisible" type="boolean" response>
       Department is publicly visible to all users applying for a position.
-    </attribute>
-    <parentAttribute id="ruvr-leads" name="leads" type="Array of User" response>
+    </Attribute>
+    <ParentAttribute id="ruvr-leads" name="leads" type="Array of User" response>
       <span>List of users who are assigned as leads for this department</span>
       <>
-        <attribute id="ruvr-usr-id" name="id" type="string" response>
+        <Attribute id="ruvr-usr-id" name="id" type="string" response>
           The unique identifier of the user.
-        </attribute>
-        <attribute id="ruvr-usr-firstName" name="firstName" type="string" response>
+        </Attribute>
+        <Attribute id="ruvr-usr-firstName" name="firstName" type="string" response>
           The first name of the user.
-        </attribute>
-        <attribute id="ruvr-usr-lastName" name="lastName" type="string" response>
+        </Attribute>
+        <Attribute id="ruvr-usr-lastName" name="lastName" type="string" response>
           The last name of the user.
-        </attribute>
-        <attribute id="ruvr-usr-username" name="username" type="string" response>
+        </Attribute>
+        <Attribute id="ruvr-usr-username" name="username" type="string" response>
           The username of the user.
-        </attribute>
-        <attribute id="ruvr-usr-preferredName" name="preferredName" type="string" optional response>
+        </Attribute>
+        <Attribute id="ruvr-usr-preferredName" name="preferredName" type="string" optional response>
           The preferred name of the user. If provided, this should be used instead of the first and last name, except where legally required.
-        </attribute>
-        <attribute id="ruvr-usr-phone" name="phone" type="string" response>
+        </Attribute>
+        <Attribute id="ruvr-usr-phone" name="phone" type="string" response>
           The phone number of the user in E.164 format.
-        </attribute>
-        <attribute id="ruvr-usr-email" name="email" type="string" response>
+        </Attribute>
+        <Attribute id="ruvr-usr-email" name="email" type="string" response>
           The email address of the user.
-        </attribute>
+        </Attribute>
       </>
-    </parentAttribute>
+    </ParentAttribute>
   </div>
   <div>
-    <exampleBox method='GET' header='/api/v0/volunteers/departments' headerSubText='cURL'>
+    <ExampleBox method='GET' header='/api/v0/volunteers/departments' headerSubText='cURL'>
       {`curl https://reg.cces.dev/api/v0/volunteers/departments \\
   -H "Authorization: Bearer <token>"`}
-    </exampleBox>
-    <exampleBox header='Response' headerSubText='application/json'>
+    </ExampleBox>
+    <ExampleBox header='Response' headerSubText='application/json'>
       {`[
   {
     "id": "1",
@@ -225,6 +225,6 @@ import VolunteerModel from './_volunteerModel.mdx';
     ]
   }
 ]`}
-    </exampleBox>
+    </ExampleBox>
   </div>
-</splitColumn>
+</SplitColumn>

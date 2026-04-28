@@ -6,20 +6,20 @@ hide_table_of_contents: true
 
 # Roles
 
-<splitColumn>
+<SplitColumn>
   <div>
     Roles are a way to group users together. They can be used to grant permissions to a group of users, or to identify a group of users for other purposes, such as identifying staff members or those who have signed an NDA.
   </div>
-  <restList>
-    <restElement method='GET' path='/api/v0/roles' anchor='list roles' />
-    <restElement method='GET' path='/api/v0/users/{userId}/roles' anchor='list-user-roles' />
-    <restElement method='PUT' path='/api/v0/users/{userId}/roles/{roleId}' anchor='add-role-to-an-user' />
-    <restElement method='DELETE' path='/api/v0/users/{userId}/roles/{roleId}' anchor='remove-role-from-an-user' />
-  </restList>
-</splitColumn>
+  <RestList>
+    <RestElement method='GET' path='/api/v0/roles' anchor='list roles' />
+    <RestElement method='GET' path='/api/v0/users/{userId}/roles' anchor='list-user-roles' />
+    <RestElement method='PUT' path='/api/v0/users/{userId}/roles/{roleId}' anchor='add-role-to-an-user' />
+    <RestElement method='DELETE' path='/api/v0/users/{userId}/roles/{roleId}' anchor='remove-role-from-an-user' />
+  </RestList>
+</SplitColumn>
 
 ### List roles
-<splitColumn>
+<SplitColumn>
   <div>
     <p>Returns all role objects.</p>
     <h4>Authentication</h4>
@@ -28,27 +28,27 @@ hide_table_of_contents: true
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
-    <parentAttribute id="su-resp-data" name="data" type="Array of Role" response optional>
+    <ParentAttribute id="su-resp-data" name="data" type="Array of Role" response optional>
       <span>The roles that match the search.</span>
       <>
-        <attribute id="su-resp-id" name="id" type="string" response>
+        <Attribute id="su-resp-id" name="id" type="string" response>
           The unique identifier of the role.
-        </attribute>
-        <attribute id="su-resp-name" name="name" type="string" response>
+        </Attribute>
+        <Attribute id="su-resp-name" name="name" type="string" response>
           The unique name of the role.
-        </attribute>
+        </Attribute>
       </>
-    </parentAttribute>
-    <attribute id="su-resp-nextPage" name="nextPage" type="string" response optional>
+    </ParentAttribute>
+    <Attribute id="su-resp-nextPage" name="nextPage" type="string" response optional>
       A cursor for pagination across multiple pages of results. If this attribute is present, there are more results available. Use this value in the <code>nextPage</code> parameter for the next request.
-    </attribute>
+    </Attribute>
   </div>
   <div>
-    <exampleBox method='GET' header='/api/v0/roles' headerSubText='cURL'>
+    <ExampleBox method='GET' header='/api/v0/roles' headerSubText='cURL'>
       {`curl https://reg.cces.dev/api/v0/roles \\
   -H "Authorization: Bearer <token>"`}
-    </exampleBox>
-    <exampleBox header='Response' headerSubText='application/json'>
+    </ExampleBox>
+    <ExampleBox header='Response' headerSubText='application/json'>
       {`{
   "data": [
     {
@@ -58,13 +58,13 @@ hide_table_of_contents: true
   ],
   "nextPage": null
 }`}
-    </exampleBox>
+    </ExampleBox>
   </div>
-</splitColumn>
+</SplitColumn>
 
 ### List user roles
 
-<splitColumn>
+<SplitColumn>
   <div>
     <p>
       List the roles given to the specified user.
@@ -75,23 +75,23 @@ hide_table_of_contents: true
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
      <h4>Response</h4>
-    <parentAttribute id="su-resp-data" name="data" type="Array of UserRole" response optional>
+    <ParentAttribute id="su-resp-data" name="data" type="Array of UserRole" response optional>
       <span>The roles of the user.</span>
       <>
-        <attribute id="su-resp-id" name="id" type="string" response>
+        <Attribute id="su-resp-id" name="id" type="string" response>
           The unique identifier of the role.
-        </attribute>
-        <attribute id="su-resp-name" name="name" type="string" response>
+        </Attribute>
+        <Attribute id="su-resp-name" name="name" type="string" response>
           The name of the role.
-        </attribute>
-        <attribute id="su-resp-scope" name="scope" type="string" response>
+        </Attribute>
+        <Attribute id="su-resp-scope" name="scope" type="string" response>
           Whatever the role was given to the user globally, or just for the current convention.
-        </attribute>
+        </Attribute>
       </>
-    </parentAttribute>
+    </ParentAttribute>
   </div>
   <div>
-    <exampleBox method='GET' header='/api/v0/users/:userId/roles' headerSubText='JSON'>
+    <ExampleBox method='GET' header='/api/v0/users/:userId/roles' headerSubText='JSON'>
       {`{
   "data": [
     {
@@ -101,13 +101,13 @@ hide_table_of_contents: true
     }
   ]
 }`}
-    </exampleBox>
+    </ExampleBox>
   </div>
-</splitColumn>
+</SplitColumn>
 
 ### Add role to an user
 
-<splitColumn>
+<SplitColumn>
   <div>
     <p>
       Gives the user the specified role. This request will fail if the user already has the role.
@@ -118,24 +118,24 @@ hide_table_of_contents: true
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Request</h4>
-    <attribute id="su-scope" name="scope" type="string">
+    <Attribute id="su-scope" name="scope" type="string">
       Whatever the role will be given to the user for the current convention, or across all conventions in the organization. Values can be "convention" or "global".
-    </attribute>
+    </Attribute>
     <div style={{ marginBottom: '1.5rem' }} />
   </div>
   <div>
-    <exampleBox method='PUT' header='/api/v0/users/:userId/roles/:roleId' headerSubText='JSON'>
+    <ExampleBox method='PUT' header='/api/v0/users/:userId/roles/:roleId' headerSubText='JSON'>
       {`{
   "scope": "convention"
 }`}
-    </exampleBox>
+    </ExampleBox>
   </div>
-</splitColumn>
+</SplitColumn>
 
 ### Remove role from an user 
 
 
-<splitColumn>
+<SplitColumn>
   <div>
     <p>
       Removes the user from the specified role. This request will fail if the user is not in the role.
@@ -147,6 +147,6 @@ hide_table_of_contents: true
     <div style={{ marginBottom: '1.5rem' }} />
   </div>
   <div>
-    <exampleBox method='DELETE' header='/api/v0/users/:userId/roles/:roleId' />
+    <ExampleBox method='DELETE' header='/api/v0/users/:userId/roles/:roleId' />
   </div>
-</splitColumn>
+</SplitColumn>

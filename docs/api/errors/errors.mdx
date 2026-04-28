@@ -31,12 +31,12 @@ Some `4xx` codes may indicate a problem with your integration or application, su
 
 ### Server Errors
 
-Server Errors indicate a problem with the ConCat platform that is not related to the data provided in the request. Usually these will accompany a <highlight color="#c70a0a">500 - Internal Server Error</highlight> HTTP status code.
+Server Errors indicate a problem with the ConCat platform that is not related to the data provided in the request. Usually these will accompany a <Highlight color="#c70a0a">500 - Internal Server Error</Highlight> HTTP status code.
 
 #### Attributes
-<attribute id="server-errors-attr-hash" name="hash" type="hash, string">
+<Attribute id="server-errors-attr-hash" name="hash" type="hash, string">
   A tracing hash of the error to provide to support.
-</attribute>
+</Attribute>
 
 #### Example
 ```json
@@ -51,28 +51,28 @@ Server Errors indicate a problem with the ConCat platform that is not related to
 
 ### Access Errors
 
-Access Errors indicate an API authentication or permission restriction preventing the request. Usually these will accompany a <highlight color="#c7620a">403 - Forbidden</highlight> HTTP status code.
+Access Errors indicate an API authentication or permission restriction preventing the request. Usually these will accompany a <Highlight color="#c7620a">403 - Forbidden</Highlight> HTTP status code.
 
 #### Attributes
 
-<attribute id="access-errors-attr-message" name="message" type="string">
+<Attribute id="access-errors-attr-message" name="message" type="string">
   A human-readable message describing the error.
-</attribute>
+</Attribute>
 
-<attribute id="access-errors-attr-permissions" name="permissions" type="array of Permission" optional>
+<Attribute id="access-errors-attr-permissions" name="permissions" type="array of Permission" optional>
   A list of permissions that are required to access the resource. May be empty or not provided if the error is not related to permissions.
-</attribute>
+</Attribute>
 
 ### Logic Errors
 
-Logic Errors indicate an issue with the data provided in the request or some other business logic error. Usually these will accompany a <highlight color="#c7620a">400 - Bad Request</highlight> HTTP status code.
+Logic Errors indicate an issue with the data provided in the request or some other business logic error. Usually these will accompany a <Highlight color="#c7620a">400 - Bad Request</Highlight> HTTP status code.
 
 #### Attributes
 
-<attribute id="logic-errors-attr-code" name="code" type="LogicError">
+<Attribute id="logic-errors-attr-code" name="code" type="LogicError">
   A code indicating the specific logic error. See [Logic Error Codes](/docs/api/errors/logicerrorcodes) for possible values.
-</attribute>
+</Attribute>
 
-<attribute id="access-errors-attr-message" name="message" type="string">
+<Attribute id="access-errors-attr-message" name="message" type="string">
   A human-readable message describing the error.
-</attribute>
+</Attribute>
