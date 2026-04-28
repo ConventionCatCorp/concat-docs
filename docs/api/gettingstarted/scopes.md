@@ -20,7 +20,7 @@ Service integrations are granted a set of scopes at the time of creation. Approv
 
 ## OBO scopes
 
-On Behalf Of (OBO) integrations are granted a set of scopes at the time of authentication by the end-user. Scopes can be dropped when they are no longer required by passing a subset of approved scopes in the <link to="/docs/api/gettingstarted/oauth#step-4-refreshing-the-token">token refresh flow</link>. Additional scopes can be requested by re-authenticating the end-user.
+On Behalf Of (OBO) integrations are granted a set of scopes at the time of authentication by the end-user. Scopes can be dropped when they are no longer required by passing a subset of approved scopes in the [token refresh flow](/docs/api/gettingstarted/oauth#step-4-refreshing-the-token). Additional scopes can be requested by re-authenticating the end-user.
 
 The following scopes are available for use with OBO integrations:
 
