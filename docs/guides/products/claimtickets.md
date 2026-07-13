@@ -5,54 +5,33 @@ hide_table_of_contents: true
 
 # Claim Tickets
 
-Claim Tickets let attendees buy digital products online, then redeem those products onsite using a printed claim ticket.
+Claim Tickets are a new feature for digital product in ConCat, where users can have a voucher printed for them live.
 
-When a product is configured as a Claim Ticket product, the system prints an additional badge label for the attendee. That label can be attached to a physical claim ticket and redeemed at a pickup or fulfillment location during the event.
+### Brief Overview
 
-### How Claim Tickets Work
+For attendees, this feature is transparent until the day of the event. Online purchasing still works the same, the magic happens during badge pickup. An additional label will be printed when the attendee is checked in via the Cashier UI. This label can then be placed on any ticket template you choose - or use the label standalone. This ticket can then be used and validated anywhere in the event using ConCat.
 
-<ol className="numbered-list">
-  <li>
-    <span>
-      An attendee purchases a digital claim-ticket-enabled product online.
-    </span>
-  </li>
-  <li>
-    <span>
-      During badge printing, an additional label is printed for that attendee.
-    </span>
-  </li>
-  <li>
-    <span>
-      Staff attach the extra label to a physical claim ticket.
-    </span>
-  </li>
-  <li>
-    <span>
-      The attendee presents the claim ticket at the appropriate location and staff redeem it.
-    </span>
-  </li>
-</ol>
+Use this for T-Shirt vouchers, private events, or anything that you may want to have a physical ticket to guarentee valid claims!
+This feature is generally ideal for situations where payment can only be collected online or before the event, but can only be fulfilled at the event itself.
 
-### Typical Use Cases
+#### Example Label
 
-<ul>
-  <li>
-    <strong>Merch pickup</strong> for pre-purchased items.
-  </li>
-  <li>
-    <strong>Attend private events</strong> where access is redeemed onsite.
-  </li>
-</ul>
-
-### Example Label
-
-The example below shows an additional printed label that can be used as a claim ticket marker.
+Photo provided by OffKai Expo.
 
 <div>
   <img className="bordered-img" src="/img/tutorial/claimTicketsExample.jpg" />
 </div>
 
-:::note
-Use claim ticket workflows for products that are paid for online but fulfilled physically at the event.
-:::
+## Get Started
+
+This will be step by step instructions on how to configure the feature properly, may also need to link back to the badge designer stuff
+
+## Validating Tickets
+
+Thsi will be step by step instructions on how to validate tickets for receivers (if this is supported)
+
+## Another Topic Here
+
+More topic here om nom nom
+
+<!-- Written by living creatures -->
