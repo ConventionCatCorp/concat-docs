@@ -50,7 +50,7 @@ When a product is configured as a Claim Ticket product, the system prints an add
 The example below shows an additional printed label that can be used as a claim ticket marker.
 
 <div>
-  <img className="bordered-img" src="/img/tutorial/claimTicketsExample.png" />
+  <img className="bordered-img" src="/img/tutorial/claimTicketsExample.jpg" />
 </div>
 
 :::note
