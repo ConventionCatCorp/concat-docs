@@ -96,6 +96,9 @@ You can create an unlimited number of products, using the following steps:
         <bigButton title="Surcharges" to="/docs/guides/products/surcharges">
           Surcharges are additional fees that are added to the base price of the product as either a flat fee or a percentage of the base price.
         </bigButton>
+        <bigButton title="Claim Tickets" to="/docs/guides/products/claimtickets">
+          Claim Tickets let attendees purchase digital products online and redeem them onsite using an additional printed badge label.
+        </bigButton>
       </splitColumn>
     </div>
   </li>
