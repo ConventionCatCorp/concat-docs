@@ -17,21 +17,45 @@ This feature is generally ideal for situations where payment can only be collect
 #### Example Label
 
 Photo provided by OffKai Expo.
+!!! ZEN MOVE TO RIGHT WITH SIDE-IMAGE COMPONENT
 
 <div>
   <img className="bordered-img" src="/img/tutorial/claimTicketsExample.jpg" />
 </div>
 
-## Get Started
+## Get Started with Claim Tickets
 
-This will be step by step instructions on how to configure the feature properly, may also need to link back to the badge designer stuff
+Claim tickets can be configured on products that have already been for sale, or on brand new ones; They only effect the checkin process.
 
-## Validating Tickets
+### Configuring ticket design
 
-Thsi will be step by step instructions on how to validate tickets for receivers (if this is supported)
+The design and format of the labels for the claim tickets are based on the existing Badge Designer. If you want to re-use your badge design, you can skip designing a new label and proceed. If you do not have a badge design yet, or are unfamiliar with the Badge Designer, head [here](/docs/guides/registration/badge_designer).
 
-## Another Topic Here
+### Adding to a product
 
-More topic here om nom nom
+<ol class="numbered-list">
+  <li>
+    <span>
+      In <strong>Housekeeping</strong>, navigate to the product page for the product you want to add the ticket to.
+      <small>Or, if you are creating a new product, open the product creation page for the respective category.</small>
+    </span>
+  </li>
+  <li>
+    <span>
+      Locate the `Badge Print Design` field, and select your desired design for the label.
+      !!!! ZEN ADD A SCREENSHOT HERE FOR THE LABEL THINGY MAYBE TO THE SIDE
+    </span>
+  </li>
+  <li>
+    <span>
+      Save the product. Configuration is complete! (It really is that simple!)
+    </span>
+  </li>
+</ol>
+
+### Handling printout
+
+!!! ZEN WRITE THE SECTION
+Information about how the printout/checkin stage changes at all. If it does not change, highlight that it does not to assure worried readers
 
 <!-- Written by living creatures -->
