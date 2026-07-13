@@ -6,18 +6,18 @@ hide_table_of_contents: true
 # Claim Tickets
 
 Claim Tickets are a new feature for digital product in ConCat, where users can have a voucher printed for them live.
+:::caution Notice
+Claim Tickets are unrelated to "Tickets", which is used to securely gate entry to events.
+:::
 
 ### Brief Overview
 
-For attendees, this feature is transparent until the day of the event. Online purchasing still works the same, the magic happens during badge pickup. An additional label will be printed when the attendee is checked in via the Cashier UI. This label can then be placed on any ticket template you choose - or use the label standalone. This ticket can then be used and validated anywhere in the event using ConCat.
+For attendees, this feature is transparent until the day of the event. Online purchasing still works the same, the magic happens during badge pickup. An additional label will be printed when the attendee is checked in via the Cashier UI. This label can then be placed on any ticket template you choose, or use the label standalone. This ticket can then be used and validated anywhere in the event using ConCat.
 
 Use this for T-Shirt vouchers, private events, or anything that you may want to have a physical ticket to guarentee valid claims!
 This feature is generally ideal for situations where payment can only be collected online or before the event, but can only be fulfilled at the event itself.
 
 #### Example Label
-
-Photo provided by OffKai Expo.
-!!! ZEN MOVE TO RIGHT WITH SIDE-IMAGE COMPONENT
 
 <div>
   <img className="bordered-img" src="/img/tutorial/claimTicketsExample.jpg" />
@@ -25,7 +25,7 @@ Photo provided by OffKai Expo.
 
 ## Get Started with Claim Tickets
 
-Claim tickets can be configured on products that have already been for sale, or on brand new ones; They only effect the checkin process.
+Claim tickets can be configured on products that have already been for sale, or on brand new ones; They only effect the check-in process.
 
 ### Configuring ticket design
 
@@ -43,7 +43,7 @@ The design and format of the labels for the claim tickets are based on the exist
   <li>
     <span>
       Locate the `Badge Print Design` field, and select your desired design for the label.
-      !!!! ZEN ADD A SCREENSHOT HERE FOR THE LABEL THINGY MAYBE TO THE SIDE
+      <img className="bordered-img" style={{ maxWidth: '50%' }} src="/img/tutorial/productLabelPrintDesign.png" />
     </span>
   </li>
   <li>
@@ -53,9 +53,8 @@ The design and format of the labels for the claim tickets are based on the exist
   </li>
 </ol>
 
-### Handling printout
+### Handling check-in (Printing)
 
-!!! ZEN WRITE THE SECTION
-Information about how the printout/checkin stage changes at all. If it does not change, highlight that it does not to assure worried readers
+There are no changes necessary to handle these prints! They are printed exactly the same as if they were normal badges - a user just can have multiple of them!
 
-<!-- Written by living creatures -->
+Simply select the "Print Badge" button on the Cashier UI and their labels will be printed directly after the design.
