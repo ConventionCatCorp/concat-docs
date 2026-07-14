@@ -8,34 +8,34 @@ import RegistrationModel from './_registrationModel.mdx';
 
 # Registrations
 
-<splitColumn>
+<SplitColumn>
   <div>
     This object represents event registrations within a convention.
   </div>
-  <restList>
-    <restElement method='GET' path='/api/v0/users/{id}/registration' anchor='get-registration' />
-    <restElement method='POST' path='/api/v0/registration/search' anchor='search-registrations' />
-  </restList>
-</splitColumn>
+  <RestList>
+    <RestElement method='GET' path='/api/v0/users/{id}/registration' anchor='get-registration' />
+    <RestElement method='POST' path='/api/v0/registration/search' anchor='search-registrations' />
+  </RestList>
+</SplitColumn>
 
 ### Get Registration
 
-<splitColumn>
+<SplitColumn>
   <div>
     <p>
       Gets a single user registration by the giver user id.
     </p>
     <h4>Authentication</h4>
     <div>
-      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>registration:read</code> scope.
+      [Service Integration](/docs/api/gettingstarted/oauth) with <code>registration:read</code> scope.
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Request</h4>
     <RegistrationModel />
   </div>
   <div>
-    <exampleBox method='GET' header='/api/v0/users/{id}/registration' headerSubText='JSON' />
-    <exampleBox header='Response' headerSubText='JSON'>
+    <ExampleBox method='GET' header='/api/v0/users/{id}/registration' headerSubText='JSON' />
+    <ExampleBox header='Response' headerSubText='JSON'>
       {`{
   "createdAt": "2022-02-23T00:30:47.468Z",
   "updatedAt": "2022-09-21T01:04:51.456Z",
@@ -72,51 +72,51 @@ import RegistrationModel from './_registrationModel.mdx';
       "email": "johnny.test@concat.systems"
   }
 }`}
-    </exampleBox>
+    </ExampleBox>
   </div>
-</splitColumn>
+</SplitColumn>
 
 ### Search registrations
 
-<splitColumn>
+<SplitColumn>
   <div>
     <p>
       Search for registrations. A maximum of 100 results will be returned per request. If additional results are available, they can be retrieved using the <code>nextPage</code> parameter from the previous response.
     </p>
     <h4>Authentication</h4>
     <div>
-      <link to="/docs/api/gettingstarted/oauth">Service Integration</link> with <code>registration:read</code> scope.
+      [Service Integration](/docs/api/gettingstarted/oauth) with <code>registration:read</code> scope.
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Request</h4>
-    <attribute id="su-nextPage" name="nextPage" type="string" optional>
+    <Attribute id="su-nextPage" name="nextPage" type="string" optional>
       A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>nextPage</code> parameter from the previous response for each subsequent request.
-    </attribute>
-    <attribute id="su-limit" name="limit" type="number" optional>
+    </Attribute>
+    <Attribute id="su-limit" name="limit" type="number" optional>
       The maximum number of results to return, between 1 and 100. Defaults to 100.
-    </attribute>
-    <parentAttribute id="su-filter" name="filter" type="object" optional>
+    </Attribute>
+    <ParentAttribute id="su-filter" name="filter" type="object" optional>
       <span>Filters to apply to the search.</span>
       <>
-        <attribute id="su-flr-userIds" name="userIds" type="number" optional>
+        <Attribute id="su-flr-userIds" name="userIds" type="number" optional>
           The ID of the user to filter by.
-        </attribute>
+        </Attribute>
       </>
-    </parentAttribute>
+    </ParentAttribute>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
-    <parentAttribute id="su-resp-data" name="data" type="Array of User" response optional>
+    <ParentAttribute id="su-resp-data" name="data" type="Array of User" response optional>
       <span>The registrations that match the search.</span>
       <>
         <RegistrationModel />
       </>
-    </parentAttribute>
-    <attribute id="su-resp-nextPage" name="nextPage" type="string" response optional>
+    </ParentAttribute>
+    <Attribute id="su-resp-nextPage" name="nextPage" type="string" response optional>
       A cursor for pagination across multiple pages of results. If this attribute is present, there are more results available. Use this value in the <code>nextPage</code> parameter for the next request.
-    </attribute>
+    </Attribute>
   </div>
   <div>
-    <exampleBox method='POST' header='/api/v0/registration/search' headerSubText='JSON'>
+    <ExampleBox method='POST' header='/api/v0/registration/search' headerSubText='JSON'>
       {`{
   "nextPage": "eyBsYXN0SWQ6IDEwMDAgfQ==",
   "limit": 100,
@@ -124,8 +124,8 @@ import RegistrationModel from './_registrationModel.mdx';
     "userIds": ["1", "2", "3"],
   },
 }`}
-    </exampleBox>
-    <exampleBox header='Response' headerSubText='JSON'>
+    </ExampleBox>
+    <ExampleBox header='Response' headerSubText='JSON'>
       {`{
   "data": [
     {
@@ -167,6 +167,6 @@ import RegistrationModel from './_registrationModel.mdx';
   ],
   "nextPage": null
 }`}
-    </exampleBox>
+    </ExampleBox>
   </div>
-</splitColumn>
+</SplitColumn>

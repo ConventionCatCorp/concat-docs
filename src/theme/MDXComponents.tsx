@@ -17,20 +17,18 @@ import Admonition from '@theme/Admonition';
 export default {
   // Re-use the default mapping
   ...MDXComponents,
-  // Map the "highlight" tag to our <Highlight /> component!
-  // `Highlight` will receive all props that were passed to `highlight` in MDX
   Admonition: Admonition,
-  highlight: Highlight,
-  attribute: Attribute,
-  parentAttribute: ParentAttribute,
-  materialIcon: MaterialIcon,
-  link: Link,
-  restElement: RESTElement,
-  restList: RESTList,
-  endpointRequest: EndpointRequest,
-  endpointResponse: EndpointResponse,
-  exampleBox: ExampleBox,
-  splitColumn: SplitColumn,
-  card: Card,
-  bigButton: BigButton,
+  Highlight: Highlight,
+  Attribute: Attribute,
+  ParentAttribute: ParentAttribute,
+  MaterialIcon: MaterialIcon,
+  Link: Link,
+  RestElement: RESTElement,
+  RestList: RESTList,
+  EndpointRequest: EndpointRequest,
+  EndpointResponse: EndpointResponse,
+  ExampleBox: ExampleBox,
+  SplitColumn: SplitColumn,
+  Card: Card,
+  BigButton: BigButton,
 };
