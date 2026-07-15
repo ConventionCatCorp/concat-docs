@@ -12,7 +12,7 @@ Claim Tickets are unrelated to "Tickets", which is used to securely gate entry t
 
 ### Brief Overview
 
-For attendees, this feature is transparent until the day of the event. Online purchasing still works the same, the magic happens during badge pickup. An additional label will be printed when the attendee is checked in via the Cashier UI. This label can then be placed on any ticket template you choose, or use the label standalone. This ticket can then be used and validated anywhere in the event using ConCat.
+For attendees, this feature is transparent until the day of the event. Online purchases continue to function the same, the only difference is during badge pickup. An additional label will be printed when the attendee is checked in via the Cashier UI. This label can then be placed on any ticket template you choose, or use the label standalone. This ticket can then be used and validated anywhere in the event using ConCat.
 
 Use this for T-Shirt vouchers, private events, or anything that you may want to have a physical ticket to guarentee valid claims!
 This feature is generally ideal for situations where payment can only be collected online or before the event, but can only be fulfilled at the event itself.
