@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 hide_table_of_contents: true
 ---
 
@@ -8,6 +8,7 @@ hide_table_of_contents: true
 Images are a great way to show off your products and their features. You can create a gallery of images for your product, or just upload a single image. Only the first image will be used as the main image for the product.
 
 Uploaded images are currently limited by the following constraints:
+
 - Images must be no larger than 1MB in size.
 - Images must be in PNG format.
 - Images should be at least 512x512 pixels in size, and rectangular in shape.

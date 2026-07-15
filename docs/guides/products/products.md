@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 hide_table_of_contents: true
 ---
 
@@ -134,6 +134,7 @@ To modify a Product, you can use the following steps:
 </ol>
 
 ### Removing a Product
+
 :::caution
 Deleting a product using the delete (<i className="material-symbols-outlined">delete</i>) icon will archive it and prevent any further changes. Archived products cannot be restored at this time.
 :::

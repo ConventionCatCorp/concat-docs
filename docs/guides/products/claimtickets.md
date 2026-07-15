@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 2
 hide_table_of_contents: true
 ---
 
@@ -20,7 +20,8 @@ This feature is generally ideal for situations where payment can only be collect
 #### Example Label
 
 <div>
-  <img className="bordered-img" src="/img/tutorial/claimTicketsExample.jpg" />
+  <img className="bordered-img" style={{ maxWidth: '50%' }} src="/img/tutorial/claimTicketsCat.jpg" alt="A gray cat is surrounded by printed out Claim Tickets with varying labels." />
+  Photo provided by OffKai Expo.
 </div>
 
 ## Get Started with Claim Tickets
