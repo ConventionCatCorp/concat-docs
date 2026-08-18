@@ -3,15 +3,20 @@ sidebar_position: 1
 displayed_sidebar: apiSidebar
 ---
 
+:::caution Please Be Aware
+API documentation here is not automatically updated. We do our best to keep it up to date, but it may be incomplete. For the most accurate and up to date information about our `v0` API, please navigate to `/api/docs` from your instance URL. This endpoint is where our Swagger documentation lives, which is automatically generated from code.
+:::
+
 # API Introduction
 
-Welcome! 👋 
+Welcome! 👋
 
 If you're new to our APIs, we'd recommend the extra 10 minutes to go through our getting started and best practices guide. Otherwise, feel free to skip ahead to the section you're after, or reach out to us if there's something we've missed!
 
 We currently don't have any SDKs available, but we'll give you everything you need to send requests over HTTP directly to our REST-compliant API.
 
 ### Latest Version
+
 The latest version of the API is **v0**.
 
 :::caution Beta Notice
