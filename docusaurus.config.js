@@ -10,7 +10,11 @@ const config = {
   url: 'https://concat.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/ConCatLogo.ico',
   organizationName: 'ConventionCatCorp', // Usually your GitHub org/user name.
   projectName: 'concat-docs', // Usually your repo name.
