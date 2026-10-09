@@ -1,7 +1,31 @@
 {
   // This file is not used in compilation. It is here just for a nice editor experience.
   "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "include": ["src", "declarations.d.ts", "docusaurus.config.js", "sidebars.js", "babel.config.js"],
   "compilerOptions": {
-    "baseUrl": "."
+    // TypeScript 7 removed baseUrl; unset the one inherited from the base config.
+    "baseUrl": null,
+    "paths": {
+      "@site/*": ["./*"]
+    },
+
+    // Type-check JS config files too, not just files with `// @ts-check`.
+    "checkJs": true,
+
+    // Babel compiles each file in isolation.
+    "verbatimModuleSyntax": true,
+
+    // Stricter than `strict` (the TS 7 default).
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false
   }
 }

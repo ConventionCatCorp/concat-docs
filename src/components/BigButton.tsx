@@ -26,14 +26,14 @@ export default function BigButton({ href, to, title, children, icon }: Props) {
     <div className={styles['big-button']}>
       <MaterialIcon name={icon} />
       <div>
-        {href ? (
-          <a href={href} className={styles['big-button-link']}>
-            {title}
-          </a>
-        ) : (
+        {to ? (
           <Link to={to} className={styles['big-button-link']}>
             {title}
           </Link>
+        ) : (
+          <a href={href} className={styles['big-button-link']}>
+            {title}
+          </a>
         )}
         {children && (
           <div className={styles['big-button-subtext']}>

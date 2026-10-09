@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactNode, useCallback, useState } from 'react';
+import React, { type ReactNode, useCallback, useState } from 'react';
 import MaterialIcon from './MaterialIcon';
 
 import styles from './attribute.module.scss';
@@ -71,7 +71,7 @@ interface ParentProps extends Props {
   children: ReactNode[];
 }
 
-export function ParentAttribute(props: ParentProps): JSX.Element {
+export function ParentAttribute(props: ParentProps): React.JSX.Element {
   const [childState, setChildState] = useState(false);
   const toggleChildren = useCallback(() => setChildState(!childState), [childState]);
 

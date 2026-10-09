@@ -130,9 +130,9 @@ const config = {
     }),
 };
 
-const branch = process.env.CF_PAGES_BRANCH;
-if (branch != null && branch != 'main') {
-  config.themeConfig.announcementBar = {
+const branch = process.env['CF_PAGES_BRANCH'];
+if (branch != null && branch != 'main' && config.themeConfig) {
+  config.themeConfig['announcementBar'] = {
     id: 'prerelease-banner',
     content:
       '<span class="material-symbols-outlined">construction</span> This is a preview version of the ConCat documentation. Information may be incomplete or inaccurate. Please report any issues on <a href="https://github.com/ConventionCatCorp/concat-docs/">GitHub</a>. <small>(Branch: ' + branch + ')</small>',

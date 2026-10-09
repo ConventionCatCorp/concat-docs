@@ -1,12 +1,10 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Admonition from '@theme/Admonition';
 import Layout from "@theme/Layout";
 import React from "react";
 
 import styles from './policy.module.scss';
 
-export default function Terms(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+export default function Terms(): React.JSX.Element {
   return (
     <Layout
       title="DMCA Takedown Policy"

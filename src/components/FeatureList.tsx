@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { ReactNode, useCallback, useState } from "react";
+import React, { type ReactNode, useState } from "react";
 import MaterialIcon from "./MaterialIcon";
 import SplitColumn from "./SplitColumn";
 
@@ -71,9 +71,9 @@ const features: Feature[] = [
   }
 ];
 
-export default function FeatureList(): JSX.Element {
+export default function FeatureList(): React.JSX.Element {
   const [activeFeature, setActiveFeature] = useState<string>("attendee-reg");
-  const feature: Feature = features.find(({ id }) => activeFeature === id);
+  const feature = features.find(({ id }) => activeFeature === id);
 
   return (
     <SplitColumn>

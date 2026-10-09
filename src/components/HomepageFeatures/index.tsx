@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 type FeatureItem = {
   title: string;
   image: string;
-  description: JSX.Element;
+  description: React.JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -45,7 +45,7 @@ function Feature({title, image, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <img className={styles.featureSvg} alt={title} src={image} />
+        <img className={styles['featureSvg']} alt={title} src={image} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -55,9 +55,9 @@ function Feature({title, image, description}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): JSX.Element {
+export default function HomepageFeatures(): React.JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className={styles['features']}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

@@ -6,7 +6,7 @@ import SplitColumn from "../components/SplitColumn";
 
 import styles from './pricing.module.scss';
 
-export default function Pricing(): JSX.Element {
+export default function Pricing(): React.JSX.Element {
   return (
     <Layout
       title="Pricing"

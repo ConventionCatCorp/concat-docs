@@ -1,11 +1,9 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import React from "react";
 
 import styles from './policy.module.scss';
 
-export default function Privacy(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+export default function Privacy(): React.JSX.Element {
   return (
     <Layout
       title="Privacy Policy"
