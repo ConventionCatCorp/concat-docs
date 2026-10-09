@@ -73,16 +73,14 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-div[class^='announcementBar_'] > div {
+.theme-announcement-bar > div {
   cursor: default;
   color: white;
 
   .material-symbols-outlined {
     cursor: default;
     font-size: 24px;
-    position: relative;
-    top: 6px;
-    margin-top: -7px;
+    vertical-align: middle;
   }
 }
 
