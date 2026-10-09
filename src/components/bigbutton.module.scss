@@ -1,4 +1,4 @@
-@import '@site/src/css/_variables.scss';
+@use '@site/src/css/variables' as *;
 
 .big-button {
   display: inline-flex;
