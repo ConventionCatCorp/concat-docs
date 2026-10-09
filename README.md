@@ -1,41 +1,39 @@
-# Website
+# ConCat Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Source for [concat.app](https://concat.app): the ConCat marketing pages, user guides, and API reference. Built with [Docusaurus 3](https://docusaurus.io/).
 
-### Installation
+## Requirements
 
-```
-$ yarn
-```
+- Node.js 26 (see `engines` in `package.json`)
+- npm
 
-### Local Development
+## Development
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+```sh
+npm install
+npm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This starts a local dev server and opens a browser window. Most changes are reflected live without restarting the server.
 
-### Deployment
+Guides live in `docs/guides/`, the API reference in `docs/api/`, and standalone pages (home, pricing, policies) in `src/pages/`.
 
-Using SSH:
+## Checks
 
-```
-$ USE_SSH=true yarn deploy
-```
+CI runs these on every pull request:
 
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```sh
+npm run format:check   # Prettier (code, styles, JSON, YAML; not docs/)
+npm run typecheck      # TypeScript
+npm run build          # production build; fails on broken links
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Run `npm run format` to fix formatting. To have `git blame` skip the bulk formatting commit:
+
+```sh
+git config blame.ignoreRevsFile .git-blame-ignore-revs
+```
+
+## Deployment
+
+The site is deployed with Cloudflare Pages. Pushes to `main` publish to production. Other branches get preview deployments with a "preview version" banner.
