@@ -10,9 +10,7 @@ export default function RESTList({ children }: Props) {
   return (
     <div className={styles.restlist}>
       <header>Endpoints</header>
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </div>
-  )
+  );
 }

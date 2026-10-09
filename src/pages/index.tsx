@@ -17,18 +17,14 @@ function HomepageHeader() {
               Manage your <span>event</span>, not a <span>spreadsheet</span>.
             </h1>
             <p>
-              Simple event management for events of all sizes. Whether you're just
-              starting out or already established, we're right there with you.
+              Simple event management for events of all sizes. Whether you're just starting out or already established,
+              we're right there with you.
             </p>
             <div className={styles.buttons}>
-              <Link
-                className="button button--primary button--lg"
-                to="/pricing">
+              <Link className="button button--primary button--lg" to="/pricing">
                 View Pricing
               </Link>
-              <Link
-                className="button button--secondary button--lg"
-                to="/docs/guides/intro">
+              <Link className="button button--secondary button--lg" to="/docs/guides/intro">
                 Learn More
               </Link>
             </div>
@@ -43,11 +39,9 @@ function HomepageHeader() {
 }
 
 export default function Home(): React.JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Simple event management for events of all sizes.">
+    <Layout title={`${siteConfig.title}`} description="Simple event management for events of all sizes.">
       <HomepageHeader />
       <main>
         <FeatureList />

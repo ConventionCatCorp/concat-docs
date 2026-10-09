@@ -15,13 +15,9 @@ export default function EndpointRequest({ contentType = 'application/json', meth
     <div className={styles.endpointrequest}>
       <header>
         <span className={styles[`rest-${method.toLowerCase()}`]}>{method}</span> {path}
-        <span className={styles['pull-right']}>
-          {contentType}
-        </span>
+        <span className={styles['pull-right']}>{contentType}</span>
       </header>
-      <CodeBlock className={`language-json ${styles['theme-code-block']}`}>
-        {children}
-      </CodeBlock>
+      <CodeBlock className={`language-json ${styles['theme-code-block']}`}>{children}</CodeBlock>
     </div>
   );
 }

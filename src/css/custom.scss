@@ -43,7 +43,7 @@
 /*
  * Reset the line-number counter for each .prism-code scope
  */
- .prism-code {
+.prism-code {
   counter-reset: line-number;
 }
 
@@ -73,7 +73,7 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-div[class^="announcementBar_"] > div {
+div[class^='announcementBar_'] > div {
   cursor: default;
   color: white;
 
@@ -86,7 +86,8 @@ div[class^="announcementBar_"] > div {
   }
 }
 
-h2, h3 {
+h2,
+h3 {
   border-bottom: 1px solid rgb(65, 65, 65);
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading) * 2) !important;
 }
@@ -112,7 +113,7 @@ i.material-symbols-outlined {
   }
 }
 
-.numbered-list { 
+.numbered-list {
   counter-reset: item;
   list-style-type: none;
 
@@ -122,7 +123,7 @@ i.material-symbols-outlined {
   }
 
   > li:before {
-    content: counter(item); 
+    content: counter(item);
     counter-increment: item;
     margin-right: 1rem;
     background-color: $brand-accent;

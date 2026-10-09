@@ -39,9 +39,7 @@ const config = {
     ],
   ],
 
-  stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0',
-  ],
+  stylesheets: ['https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0'],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -120,9 +118,9 @@ const config = {
               {
                 label: 'DMCA Takedown Policy',
                 to: '/policy/dmca',
-              }
-            ]
-          }
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Convention Cat Event Systems, Inc.`,
       },
@@ -139,7 +137,9 @@ if (branch != null && branch != 'main' && config.themeConfig) {
   config.themeConfig['announcementBar'] = {
     id: 'prerelease-banner',
     content:
-      '<span class="material-symbols-outlined">construction</span> This is a preview version of the ConCat documentation. Information may be incomplete or inaccurate. Please report any issues on <a href="https://github.com/ConventionCatCorp/concat-docs/">GitHub</a>. <small>(Branch: ' + branch + ')</small>',
+      '<span class="material-symbols-outlined">construction</span> This is a preview version of the ConCat documentation. Information may be incomplete or inaccurate. Please report any issues on <a href="https://github.com/ConventionCatCorp/concat-docs/">GitHub</a>. <small>(Branch: ' +
+      branch +
+      ')</small>',
     backgroundColor: '#ac1b1b',
     textColor: '#091E42',
     isCloseable: false,

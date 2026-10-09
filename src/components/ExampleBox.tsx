@@ -11,9 +11,13 @@ interface Props {
   codeBlockType?: string;
 }
 
-export default function EndpointRequest(
-  { header, headerSubText, method, children, codeBlockType = 'language-json' }: Props,
-) {
+export default function EndpointRequest({
+  header,
+  headerSubText,
+  method,
+  children,
+  codeBlockType = 'language-json',
+}: Props) {
   return (
     <div className={styles.endpointrequest}>
       <header>
@@ -23,15 +27,9 @@ export default function EndpointRequest(
           </>
         )}
         {header}
-        {headerSubText && (
-          <span className={styles['pull-right']}>
-            {headerSubText}
-          </span>
-        )}
+        {headerSubText && <span className={styles['pull-right']}>{headerSubText}</span>}
       </header>
-      <CodeBlock className={`${codeBlockType} ${styles['theme-code-block']}`}>
-        {children}
-      </CodeBlock>
+      <CodeBlock className={`${codeBlockType} ${styles['theme-code-block']}`}>{children}</CodeBlock>
     </div>
   );
 }
