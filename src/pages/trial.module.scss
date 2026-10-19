@@ -1,0 +1,241 @@
+@use 'sass:color';
+@use '@site/src/css/variables' as *;
+
+$input-border: color.adjust($brand-accent, $lightness: -5%);
+$input-border-dark: #46474a;
+$required: #ac1b1b;
+$required-dark: #ff8080;
+
+.main {
+  padding: 1.25rem 1rem 3rem 2rem;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  h3 {
+    margin: 2.5rem 0 1rem !important;
+  }
+
+  p {
+    max-width: 62ch;
+  }
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+
+  li {
+    display: inline-flex;
+    width: 100%;
+    align-items: baseline;
+    margin-bottom: 0.35rem;
+  }
+
+  :global(.material-symbols-outlined) {
+    color: $brand-primary;
+    margin-right: 1rem;
+    width: 24px;
+    flex-shrink: 0;
+  }
+}
+
+.steps {
+  padding: 0;
+  margin: 0;
+
+  > li::before {
+    color: $brand-dark;
+    line-height: 1.2;
+  }
+}
+
+.form-card {
+  width: 100%;
+  max-width: 29rem;
+  background-color: var(--ifm-background-surface-color);
+
+  header {
+    text-align: center;
+  }
+
+  hr {
+    opacity: 0.5;
+    border-width: 0.5px;
+    margin: 1rem 0;
+  }
+}
+
+.legend {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ifm-font-color-secondary);
+  margin: 0 0 0.75rem;
+}
+
+.field {
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  input,
+  select {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.5rem 0.65rem;
+    color: var(--ifm-font-color-base);
+    background-color: var(--ifm-background-color);
+    border: 1px solid $input-border;
+    border-radius: 0.25rem;
+    transition:
+      border-color 120ms ease,
+      box-shadow 120ms ease;
+
+    &:focus {
+      outline: none;
+      border-color: $brand-primary;
+      box-shadow: 0 0 0 3px rgba($brand-primary, 0.25);
+    }
+  }
+
+  input::placeholder {
+    color: var(--ifm-font-color-secondary);
+    opacity: 0.8;
+  }
+
+  select {
+    appearance: none;
+    background-image:
+      linear-gradient(45deg, transparent 50%, var(--ifm-font-color-secondary) 50%),
+      linear-gradient(135deg, var(--ifm-font-color-secondary) 50%, transparent 50%);
+    background-position:
+      calc(100% - 18px) 55%,
+      calc(100% - 13px) 55%;
+    background-size:
+      5px 5px,
+      5px 5px;
+    background-repeat: no-repeat;
+    padding-right: 2rem;
+  }
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.required {
+  color: $required;
+  margin-left: 0.15rem;
+}
+
+.help {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--ifm-font-color-secondary);
+  margin-top: 0.3rem;
+}
+
+.captcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  // Reserve the checkbox widget's height so the layout doesn't jump when it loads.
+  min-height: 78px;
+}
+
+.error {
+  color: $required;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.fine-print {
+  font-size: 0.8rem;
+  color: var(--ifm-font-color-secondary);
+  text-align: center;
+  margin: 0.75rem 0 0;
+}
+
+.notice {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.success {
+  text-align: center;
+  padding: 1rem 0;
+
+  :global(.material-symbols-outlined) {
+    font-size: 48px;
+    color: $brand-primary;
+    top: 0;
+    margin: 0;
+  }
+
+  h2 {
+    border: 0;
+    margin: 0.5rem 0;
+  }
+}
+
+[data-theme='dark'] {
+  .steps > li::before {
+    color: $brand-accent;
+  }
+
+  .field {
+    input,
+    select {
+      border-color: $input-border-dark;
+
+      &:focus {
+        border-color: $brand-primary;
+      }
+    }
+  }
+
+  .required,
+  .error {
+    color: $required-dark;
+  }
+
+  .feature-list :global(.material-symbols-outlined),
+  .success :global(.material-symbols-outlined) {
+    color: color.adjust($brand-primary, $lightness: 25%);
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .main {
+    padding: 1.1rem 1.1rem 2rem;
+  }
+
+  .form-card {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .field input,
+  .field select {
+    transition: none;
+  }
+}

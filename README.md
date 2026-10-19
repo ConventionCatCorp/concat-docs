@@ -18,6 +18,17 @@ This starts a local dev server and opens a browser window. Most changes are refl
 
 Guides live in `docs/guides/`, the API reference in `docs/api/`, and standalone pages (home, pricing, policies) in `src/pages/`.
 
+## Configuration
+
+The trial signup page (`/trial`) reads two environment variables at build time:
+
+| Variable | Default | Purpose |
+|---|---|---|
+| `ONBOARDING_API_ORIGIN` | `https://onboarding.concat.app` | The form POSTs to `<origin>/api/signups` |
+| `RECAPTCHA_SITE_KEY` | Google's test key in development; **none** in production builds | reCAPTCHA v2 checkbox site key |
+
+A production build without `RECAPTCHA_SITE_KEY` replaces the form with a "temporarily unavailable" notice.
+
 ## Checks
 
 CI runs these on every pull request:
