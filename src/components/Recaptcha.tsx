@@ -29,19 +29,21 @@ function loadRecaptcha(): Promise<Grecaptcha> {
     const script = document.createElement('script');
     script.src = 'https://www.google.com/recaptcha/api.js?render=explicit';
     script.async = true;
+    // Clear the cached promise on failure so a later mount retries instead of reusing the rejection.
+    const fail = (message: string) => {
+      scriptPromise = undefined;
+      script.remove();
+      reject(new Error(message));
+    };
     script.onload = () => {
       const { grecaptcha } = window;
       if (grecaptcha) {
         grecaptcha.ready(() => resolve(grecaptcha));
       } else {
-        reject(new Error('reCAPTCHA did not initialize'));
+        fail('reCAPTCHA did not initialize');
       }
     };
-    script.onerror = () => {
-      scriptPromise = undefined;
-      script.remove();
-      reject(new Error('Failed to load reCAPTCHA'));
-    };
+    script.onerror = () => fail('Failed to load reCAPTCHA');
     document.head.appendChild(script);
   });
   return scriptPromise;
