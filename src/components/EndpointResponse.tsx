@@ -12,13 +12,9 @@ export default function EndpointResponse({ children }: Props) {
     <div className={styles.endpointrequest}>
       <header>
         <span>Response</span>
-        <span className={styles['pull-right']}>
-          application/json
-        </span>
+        <span className={styles['pull-right']}>application/json</span>
       </header>
-      <CodeBlock className={`language-json ${styles['theme-code-block']}`}>
-        {children}
-      </CodeBlock>
+      <CodeBlock className={`language-json ${styles['theme-code-block']}`}>{children}</CodeBlock>
     </div>
   );
 }

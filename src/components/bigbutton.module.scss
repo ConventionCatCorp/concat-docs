@@ -1,4 +1,4 @@
-@import '@site/src/css/_variables.scss';
+@use '@site/src/css/variables' as *;
 
 .big-button {
   display: inline-flex;
@@ -34,7 +34,7 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-  content: "";
+  content: '';
 }
 
 .big-button-subtext {

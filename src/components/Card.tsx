@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import React, { ReactNode } from "react";
+import clsx from 'clsx';
+import React, { type ReactNode } from 'react';
 
 import styles from './card.module.scss';
 
@@ -12,12 +12,8 @@ interface Props {
 export default function Card({ children, className, header }: Props) {
   return (
     <div className={clsx(styles.card, className)}>
-      <header>
-        {header}
-      </header>
-      <div>
-        {children}
-      </div>
+      <header>{header}</header>
+      <div>{children}</div>
     </div>
-  )
+  );
 }

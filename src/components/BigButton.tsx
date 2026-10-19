@@ -1,6 +1,6 @@
 import Link from '@docusaurus/Link';
 import Admonition from '@theme/Admonition';
-import React from "react";
+import React from 'react';
 
 import styles from './bigbutton.module.scss';
 import MaterialIcon from './MaterialIcon';
@@ -19,27 +19,23 @@ export default function BigButton({ href, to, title, children, icon }: Props) {
       <Admonition type="danger" title="BigButton: Improper Use of Component">
         This component should have a link using <code>href</code> <strong>OR</strong> <code>to</code>, not both.
       </Admonition>
-    )
+    );
   }
 
   return (
     <div className={styles['big-button']}>
       <MaterialIcon name={icon} />
       <div>
-        {href ? (
-          <a href={href} className={styles['big-button-link']}>
-            {title}
-          </a>
-        ) : (
+        {to ? (
           <Link to={to} className={styles['big-button-link']}>
             {title}
           </Link>
+        ) : (
+          <a href={href} className={styles['big-button-link']}>
+            {title}
+          </a>
         )}
-        {children && (
-          <div className={styles['big-button-subtext']}>
-            {children}
-          </div>
-        )}
+        {children && <div className={styles['big-button-subtext']}>{children}</div>}
       </div>
     </div>
   );

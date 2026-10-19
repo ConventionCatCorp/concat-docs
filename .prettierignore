@@ -1,0 +1,7 @@
+# Prettier doesn't fully support MDX 3; leave content files to their authors.
+docs/
+*.md
+*.mdx
+
+static/
+package-lock.json

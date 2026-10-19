@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactNode, useCallback, useState } from 'react';
+import React, { type ReactNode, useCallback, useState } from 'react';
 import MaterialIcon from './MaterialIcon';
 
 import styles from './attribute.module.scss';
@@ -17,7 +17,14 @@ interface Props {
 }
 
 export function Attribute({
-  children, name, id, type, response = false, optional = false, deprecated = false, permissions = [],
+  children,
+  name,
+  id,
+  type,
+  response = false,
+  optional = false,
+  deprecated = false,
+  permissions = [],
 }: Props) {
   const hasPermissions = permissions.length > 0;
 
@@ -43,16 +50,8 @@ export function Attribute({
               </Highlight>
             </div>
           )}
-          {(!optional && !response) && (
-            <div className={styles['attribute-required']}>
-              Required
-            </div>
-          )}
-          {(optional && response) && (
-            <div className={styles['attribute-optional']}>
-              nullable
-            </div>
-          )}
+          {!optional && !response && <div className={styles['attribute-required']}>Required</div>}
+          {optional && response && <div className={styles['attribute-optional']}>nullable</div>}
         </small>
       </div>
       <div style={{ fontSize: '12px' }}>
@@ -71,19 +70,22 @@ interface ParentProps extends Props {
   children: ReactNode[];
 }
 
-export function ParentAttribute(props: ParentProps): JSX.Element {
+export function ParentAttribute(props: ParentProps): React.JSX.Element {
   const [childState, setChildState] = useState(false);
   const toggleChildren = useCallback(() => setChildState(!childState), [childState]);
 
   return (
     <div className={styles['attribute-parent']}>
       <Attribute {...props} children={props.children[0]} />
-      <div className={clsx(styles['attribute-showhide-children'], childState && styles['attribute-children-visible'])} onClick={toggleChildren}>
+      <div
+        className={clsx(styles['attribute-showhide-children'], childState && styles['attribute-children-visible'])}
+        onClick={toggleChildren}
+      >
         {childState ? 'Hide' : 'Show'} child attributes
       </div>
       <div className={clsx(styles['attribute-children'], childState && styles['attribute-children-visible'])}>
         {props.children[1]}
       </div>
     </div>
-  )
+  );
 }

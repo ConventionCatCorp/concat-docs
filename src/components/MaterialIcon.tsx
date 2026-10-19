@@ -7,11 +7,7 @@ interface Props {
 
 export default function MaterialIcon({ name, title }: Props) {
   return (
-    <span
-      className="material-symbols-outlined"
-      style={{ display: 'inline-block' }}
-      title={title}
-    >
+    <span className="material-symbols-outlined" style={{ display: 'inline-block' }} title={title}>
       {name}
     </span>
   );

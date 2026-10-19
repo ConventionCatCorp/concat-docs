@@ -57,7 +57,10 @@
   }
 }
 
-.rest-post, .rest-get, .rest-patch, .rest-delete {
+.rest-post,
+.rest-get,
+.rest-patch,
+.rest-delete {
   background-color: gray;
   padding: 3px 10px;
   border-radius: 15px;

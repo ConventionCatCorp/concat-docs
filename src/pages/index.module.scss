@@ -1,4 +1,5 @@
-@import '@site/src/css/_variables.scss';
+@use 'sass:color';
+@use '@site/src/css/variables' as *;
 
 .heroBanner {
   padding: 4rem 0;
@@ -39,7 +40,7 @@
   align-items: center;
   justify-content: center;
 
-  >:global(.button) {
+  > :global(.button) {
     margin: 0 0.5rem;
   }
 }
@@ -58,13 +59,13 @@
       color: $brand-accent;
 
       span {
-        color: lighten($brand-primary, 25%);
+        color: color.adjust($brand-primary, $lightness: 25%);
       }
     }
 
     a:first-of-type {
       border-color: $brand-primary;
-      background-color: darken($brand-accent, 10%);
+      background-color: color.adjust($brand-accent, $lightness: -10%);
       color: $brand-dark;
     }
 
@@ -74,7 +75,7 @@
       border-color: transparent;
 
       &:hover {
-        background-color: darken($brand-accent, 50%);
+        background-color: color.adjust($brand-accent, $lightness: -50%);
       }
     }
   }

@@ -12,29 +12,29 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "engines": {
-    "node": "^24.10"
+    "node": "^26"
   },
   "dependencies": {
-    "@docusaurus/core": "3.9.2",
-    "@docusaurus/preset-classic": "3.9.2",
-    "@mdx-js/react": "^3.0.0",
-    "clsx": "^2.0.0",
-    "docusaurus-plugin-sass": "^0.2.6",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "sass": "^1.52.3"
+    "@docusaurus/core": "^3.10.2",
+    "@docusaurus/preset-classic": "^3.10.2",
+    "@mdx-js/react": "^3.1.1",
+    "clsx": "^2.1.1",
+    "docusaurus-plugin-sass": "^0.2.7",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sass": "^1.105.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.9.2",
-    "@tsconfig/docusaurus": "^2.0.0",
-    "typescript": "^5.0.0"
-  },
-  "overrides": {
-    "webpack": "5.105.4"
+    "@docusaurus/module-type-aliases": "^3.10.2",
+    "@tsconfig/docusaurus": "^2.0.9",
+    "prettier": "^3.9.9",
+    "typescript": "^7.0.2"
   },
   "browserslist": {
     "production": [

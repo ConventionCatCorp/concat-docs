@@ -1,4 +1,4 @@
-@import '@site/src/css/_variables.scss';
+@use '@site/src/css/variables' as *;
 
 .main {
   padding: 1.25rem 1rem 1rem 2rem;
@@ -64,7 +64,7 @@
   .main {
     padding: 1.1rem;
   }
-  
+
   .price-card {
     ul {
       margin-left: 0;

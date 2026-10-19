@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 
 import styles from './restlist.module.scss';
 
@@ -10,9 +10,7 @@ export default function RESTList({ children }: Props) {
   return (
     <div className={styles.restlist}>
       <header>Endpoints</header>
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </div>
-  )
+  );
 }
