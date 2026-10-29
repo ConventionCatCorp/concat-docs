@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Successful","content":{"*/*":{"schema":{"type":"object","properties":{"id":{"type":"string"}},"required":["id"]}}}}}}

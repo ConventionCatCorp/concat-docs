@@ -1,0 +1,2796 @@
+{
+  "basePath": "/",
+  "info": {
+    "title": "ConCat API Documentation",
+    "version": "1.0.0"
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "OAuth": {
+      "type": "oauth2",
+      "flow": "application",
+      "scopes": {
+        "user:read": "Read user data and PII",
+        "user:roles:update": "Update user roles",
+        "registration:read": "Read registration data",
+        "vendor:read": "Read vendor data",
+        "volunteer:read": "Read volunteer data",
+        "order:view": "Read order data",
+        "system:export:sqlite": "Export statistics data in SQLite format"
+      },
+      "tokenUrl": "/api/oauth/token"
+    }
+  },
+  "security": [
+    {
+      "OAuth": []
+    }
+  ],
+  "swagger": "2.0",
+  "host": "demo.concat.app",
+  "schemes": [
+    "https"
+  ],
+  "tags": [],
+  "paths": {
+    "/.well-known/jwks.json": {
+      "get": {
+        "summary": "Get public keys for JWT verification in JWK set format",
+        "operationId": "getWellknownJwksjson",
+        "description": "### Authentication\n*This endpoint is not authenticated.*",
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/roles": {
+      "get": {
+        "operationId": "getApiV0Roles",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:read",
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "roles"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/V0RoleList"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/users/{id}": {
+      "get": {
+        "operationId": "getApiV0UsersId",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:read",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "users"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model3"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/volunteers/departments": {
+      "get": {
+        "operationId": "getApiV0VolunteersDepartments",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - volunteer:read",
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "volunteers"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model6"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/users/{id}/registration": {
+      "get": {
+        "operationId": "getApiV0UsersIdRegistration",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - registration:read",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "registration"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model9"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/users/{userId}/roles": {
+      "get": {
+        "operationId": "getApiV0UsersUseridRoles",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:read",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "userId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "roles"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/V0UserRoleList"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/users/{id}/volunteer": {
+      "get": {
+        "operationId": "getApiV0UsersIdVolunteer",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - volunteer:read",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "volunteers"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model17"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/users/{userId}/roles/{roleId}": {
+      "put": {
+        "operationId": "putApiV0UsersUseridRolesRoleid",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:roles:update",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "userId",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "number",
+            "name": "roleId",
+            "in": "path",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/V0UserRoleGrant"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "roles"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "string"
+            },
+            "description": "Successful"
+          }
+        }
+      },
+      "delete": {
+        "operationId": "deleteApiV0UsersUseridRolesRoleid",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:roles:update",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "userId",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "number",
+            "name": "roleId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "roles"
+        ],
+        "responses": {
+          "204": {
+            "description": "The role was removed from the user."
+          },
+          "400": {
+            "schema": {
+              "$ref": "#/definitions/Model78"
+            },
+            "description": "This role is managed by an automated process and cannot be manually removed."
+          },
+          "404": {
+            "description": "The user does not have this role."
+          }
+        }
+      }
+    },
+    "/api/v0/users": {
+      "post": {
+        "operationId": "postApiV0Users",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:create",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/V0UserCreate"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "users"
+        ],
+        "security": [
+          {
+            "OAuth": [
+              "user:create"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model18"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/dealers/search": {
+      "post": {
+        "operationId": "postApiV0DealersSearch",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - vendor:read",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model19"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "dealers"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model29"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/orders/search": {
+      "post": {
+        "operationId": "postApiV0OrdersSearch",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - order:view",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model31"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "orders"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model42"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/registration/search": {
+      "post": {
+        "operationId": "postApiV0RegistrationSearch",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - registration:read",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model44"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "registration"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model47"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/users/search": {
+      "post": {
+        "operationId": "postApiV0UsersSearch",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:read",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/V0UserSearchFilter"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "users"
+        ],
+        "security": [
+          {
+            "OAuth": [
+              "user:read"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model50"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/volunteers/search": {
+      "post": {
+        "operationId": "postApiV0VolunteersSearch",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - volunteer:read",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model51"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "volunteers"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model53"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/vouchers/search": {
+      "post": {
+        "operationId": "postApiV0VouchersSearch",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - order:view",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model55"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "vouchers"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model59"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/roles/{roleId}/users": {
+      "post": {
+        "operationId": "postApiV0RolesRoleidUsers",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:read",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "roleId",
+            "in": "path",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model60"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "roles",
+          "users"
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/V0RoleUserList"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/users/notes/search": {
+      "post": {
+        "operationId": "postApiV0UsersNotesSearch",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - user:note:read",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model63"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "userNotes"
+        ],
+        "security": [
+          {
+            "OAuth": [
+              "user:note:read"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model66"
+            },
+            "description": "Successful"
+          }
+        }
+      }
+    },
+    "/api/v0/orders/items/{orderItemId}/revoke": {
+      "post": {
+        "operationId": "postApiV0OrdersItemsOrderitemidRevoke",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - order:manage",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "orderItemId",
+            "in": "path",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model67"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "orders"
+        ],
+        "responses": {
+          "201": {
+            "description": "The order item grant was removed from the order item."
+          },
+          "400": {
+            "schema": {
+              "$ref": "#/definitions/Model68"
+            },
+            "description": "The order is not yet paid."
+          },
+          "404": {
+            "description": "The order item does not exist."
+          }
+        }
+      }
+    },
+    "/api/v0/orders/items/{orderItemId}": {
+      "delete": {
+        "operationId": "deleteApiV0OrdersItemsOrderitemid",
+        "description": "### Authentication\n\n  This endpoint requires the following scopes:\n\n  - order:manage",
+        "parameters": [
+          {
+            "type": "number",
+            "name": "orderItemId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "tags": [
+          "orders"
+        ],
+        "responses": {
+          "204": {
+            "description": "The order item was removed from the order."
+          },
+          "400": {
+            "schema": {
+              "$ref": "#/definitions/Model73"
+            },
+            "description": "The order is already marked as paid and the order item can not be removed."
+          },
+          "404": {
+            "description": "The order item does not exist."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "kty": {
+      "type": "string",
+      "enum": [
+        "RSA"
+      ]
+    },
+    "JWKPublicKey": {
+      "type": "object",
+      "properties": {
+        "alg": {
+          "type": "string"
+        },
+        "kid": {
+          "type": "string"
+        },
+        "kty": {
+          "$ref": "#/definitions/kty"
+        },
+        "n": {
+          "type": "string"
+        },
+        "e": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "alg",
+        "kid",
+        "kty",
+        "n",
+        "e"
+      ]
+    },
+    "keys": {
+      "type": "array",
+      "description": "JWK public keys in RFC-7517 JWK Set Format",
+      "items": {
+        "$ref": "#/definitions/JWKPublicKey",
+        "x-alternatives": [
+          {
+            "$ref": "#/x-alt-definitions/JWKPublicKey"
+          },
+          {
+            "$ref": "#/x-alt-definitions/Model2"
+          }
+        ]
+      }
+    },
+    "Model1": {
+      "type": "object",
+      "properties": {
+        "keys": {
+          "$ref": "#/definitions/keys"
+        }
+      }
+    },
+    "Model2": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "V0Role": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model2"
+      }
+    },
+    "V0RoleList": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/V0Role"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "line1": {
+          "type": "string"
+        },
+        "line2": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zipcode": {
+          "type": "string"
+        }
+      }
+    },
+    "Model3": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "preferredName": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "bornAt": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "address": {
+          "$ref": "#/definitions/address"
+        },
+        "profilePictureURL": {
+          "type": "string"
+        },
+        "ownerUserId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "email",
+        "firstName",
+        "lastName",
+        "username",
+        "verified",
+        "profilePictureURL",
+        "ownerUserId"
+      ]
+    },
+    "Model4": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "preferredName": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "profilePictureURL": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "firstName",
+        "lastName",
+        "username",
+        "email",
+        "profilePictureURL"
+      ]
+    },
+    "leads": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model4"
+      }
+    },
+    "Model5": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "leads": {
+          "$ref": "#/definitions/leads"
+        },
+        "publiclyVisible": {
+          "type": "boolean"
+        },
+        "email": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "leads",
+        "publiclyVisible",
+        "email"
+      ]
+    },
+    "Model6": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model5"
+      }
+    },
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "preferredName": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "profilePictureURL": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "firstName",
+        "lastName",
+        "username",
+        "email",
+        "profilePictureURL"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "paid",
+        "unpaid"
+      ]
+    },
+    "order": {
+      "type": "object",
+      "properties": {
+        "orderId": {
+          "type": "string"
+        },
+        "orderItemId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "orderId",
+        "orderItemId"
+      ]
+    },
+    "Model7": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "shortName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "shortName"
+      ]
+    },
+    "flags": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/Model7"
+      }
+    },
+    "Model8": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type"
+      ]
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model8"
+      }
+    },
+    "Model9": {
+      "type": "object",
+      "properties": {
+        "uuid": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "user": {
+          "$ref": "#/definitions/user"
+        },
+        "badgeId": {
+          "type": "integer"
+        },
+        "badgeName": {
+          "type": "string"
+        },
+        "badgePrinted": {
+          "type": "string"
+        },
+        "productId": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "productDisplayName": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/status"
+        },
+        "order": {
+          "$ref": "#/definitions/order"
+        },
+        "flags": {
+          "$ref": "#/definitions/flags"
+        },
+        "options": {
+          "$ref": "#/definitions/options"
+        }
+      },
+      "required": [
+        "uuid",
+        "createdAt",
+        "updatedAt",
+        "badgeId",
+        "badgeName",
+        "productId",
+        "productName",
+        "productDisplayName",
+        "status"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "convention",
+        "global"
+      ]
+    },
+    "V0UserRole": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/definitions/scope"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "scope"
+      ]
+    },
+    "V0UserRole[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/V0UserRole"
+      }
+    },
+    "V0UserRoleList": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/V0UserRole%5B%5D"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "Model10": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "isPrimary": {
+          "type": "boolean"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "contactMethods": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model10"
+      }
+    },
+    "Model11": {
+      "type": "string",
+      "enum": [
+        "assignment",
+        "avoid",
+        "experience",
+        "interest",
+        "request"
+      ]
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model11"
+      }
+    },
+    "Model12": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "states": {
+          "$ref": "#/definitions/states"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "states",
+        "name"
+      ]
+    },
+    "departments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model12"
+      }
+    },
+    "Model13": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "preferredName": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "profilePictureURL": {
+          "type": "string"
+        },
+        "isStaff": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "firstName",
+        "lastName",
+        "username",
+        "email",
+        "profilePictureURL",
+        "isStaff"
+      ]
+    },
+    "Model14": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Model15": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/definitions/Model14",
+          "x-alternatives": [
+            {
+              "$ref": "#/x-alt-definitions/value"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type"
+      ]
+    },
+    "Model16": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model15"
+      }
+    },
+    "Model17": {
+      "type": "object",
+      "properties": {
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "contactMethods": {
+          "$ref": "#/definitions/contactMethods"
+        },
+        "departments": {
+          "$ref": "#/definitions/departments"
+        },
+        "user": {
+          "$ref": "#/definitions/Model13"
+        },
+        "options": {
+          "$ref": "#/definitions/Model16"
+        }
+      },
+      "required": [
+        "createdAt",
+        "updatedAt",
+        "contactMethods",
+        "options"
+      ]
+    },
+    "V0UserRoleGrant": {
+      "type": "object",
+      "properties": {
+        "scope": {
+          "$ref": "#/definitions/scope"
+        }
+      }
+    },
+    "V0UserCreate": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "maxLength": 255,
+          "pattern": "^(\\p{L}|[0-9]|-|'|’|\\.|,|\\s)*$",
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "lastName": {
+          "type": "string",
+          "maxLength": 255,
+          "pattern": "^(\\p{L}|[0-9]|-|'|’|\\.|,|\\s)*$",
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "preferredName": {
+          "type": "string",
+          "maxLength": 255,
+          "pattern": "^(\\p{L}|[0-9]|-|'|’|\\.|,|\\s)*$",
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "bornAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 255,
+          "pattern": "^\\+[1-9]\\d{1,14}$"
+        },
+        "addressCity": {
+          "type": "string",
+          "maxLength": 255,
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "addressCountry": {
+          "type": "string",
+          "maxLength": 255,
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "addressLine1": {
+          "type": "string",
+          "maxLength": 255,
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "addressLine2": {
+          "type": "string",
+          "maxLength": 255,
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "addressState": {
+          "type": "string",
+          "maxLength": 255,
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "addressZipcode": {
+          "type": "string",
+          "maxLength": 16,
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "newsletter": {
+          "type": "boolean"
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 256,
+          "x-format": {
+            "email": {
+              "minDomainSegments": 2
+            }
+          },
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "id": {
+          "type": "string",
+          "description": "For conventions that opted to reserve an id range for administrators",
+          "pattern": "^\\d{1,8}$"
+        },
+        "password": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 10
+        },
+        "username": {
+          "type": "string",
+          "minLength": 4,
+          "maxLength": 64,
+          "pattern": "^[\\da-z][\\w.-]+$",
+          "x-convert": {
+            "trim": true
+          }
+        },
+        "sendEmail": {
+          "type": "boolean",
+          "description": "Send email to the user to reset their password",
+          "default": false
+        }
+      },
+      "required": [
+        "username"
+      ]
+    },
+    "Model18": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "userIds": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "pattern": "^\\d{1,8}$"
+      }
+    },
+    "filter": {
+      "type": "object",
+      "properties": {
+        "userIds": {
+          "$ref": "#/definitions/userIds"
+        }
+      },
+      "required": [
+        "userIds"
+      ]
+    },
+    "Model19": {
+      "type": "object",
+      "properties": {
+        "nextPage": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "limit": {
+          "type": "integer",
+          "default": 100,
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "filter": {
+          "$ref": "#/definitions/filter"
+        }
+      }
+    },
+    "Model20": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "paid": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "paid"
+      ]
+    },
+    "dealerRequestTypes": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/Model20"
+      }
+    },
+    "dealerArea": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Model21": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Model22": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/definitions/Model21",
+          "x-alternatives": [
+            {
+              "$ref": "#/x-alt-definitions/value"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type"
+      ]
+    },
+    "Model23": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model22"
+      }
+    },
+    "Model24": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "specialRequests": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "tableNumber": {
+          "type": "string"
+        },
+        "dealerRequestTypes": {
+          "$ref": "#/definitions/dealerRequestTypes"
+        },
+        "tableType": {
+          "$ref": "#/definitions/Model20"
+        },
+        "dealerArea": {
+          "$ref": "#/definitions/dealerArea"
+        },
+        "options": {
+          "$ref": "#/definitions/Model23"
+        }
+      },
+      "required": [
+        "id",
+        "status",
+        "options"
+      ]
+    },
+    "applications": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/Model24"
+      }
+    },
+    "Model25": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Model26": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/definitions/Model25",
+          "x-alternatives": [
+            {
+              "$ref": "#/x-alt-definitions/value"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type"
+      ]
+    },
+    "Model27": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model26"
+      }
+    },
+    "Model28": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "user": {
+          "$ref": "#/definitions/user"
+        },
+        "applications": {
+          "$ref": "#/definitions/applications"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "addressLine1": {
+          "type": "string"
+        },
+        "addressLine2": {
+          "type": "string"
+        },
+        "addressCity": {
+          "type": "string"
+        },
+        "addressZipcode": {
+          "type": "string"
+        },
+        "addressCountry": {
+          "type": "string"
+        },
+        "addressState": {
+          "type": "string"
+        },
+        "options": {
+          "$ref": "#/definitions/Model27"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "email",
+        "addressLine1",
+        "addressLine2",
+        "addressCity",
+        "addressZipcode",
+        "addressCountry",
+        "addressState",
+        "options"
+      ]
+    },
+    "data": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/Model28"
+      }
+    },
+    "Model29": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/data"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "Model30": {
+      "type": "object",
+      "properties": {
+        "productId": {
+          "type": "string",
+          "pattern": "^\\d{1,8}$"
+        },
+        "userId": {
+          "type": "string",
+          "pattern": "^\\d{1,8}$"
+        },
+        "status": {
+          "$ref": "#/definitions/status"
+        }
+      }
+    },
+    "Model31": {
+      "type": "object",
+      "properties": {
+        "nextPage": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "limit": {
+          "type": "integer",
+          "default": 100,
+          "minimum": 1,
+          "maximum": 100
+        },
+        "filter": {
+          "$ref": "#/definitions/Model30"
+        }
+      }
+    },
+    "Model32": {
+      "type": "string",
+      "enum": [
+        "paid",
+        "unpaid",
+        "cancelled"
+      ]
+    },
+    "breakdown": {
+      "type": "object",
+      "properties": {
+        "paid": {
+          "type": "number",
+          "description": "Sum of payments"
+        },
+        "subtotal": {
+          "type": "number",
+          "description": "Sum of order items"
+        },
+        "fees": {
+          "type": "number",
+          "description": "Sum of additional fees"
+        },
+        "refunds": {
+          "type": "number",
+          "description": "Sum of refunds given to the order"
+        },
+        "total": {
+          "type": "number",
+          "description": "Sum of subtotal, fees, taxes, and surcharges (minus vouchers)"
+        },
+        "taxAndSurcharges": {
+          "type": "number",
+          "description": "Sum of surcharges and taxes"
+        },
+        "voucherTotal": {
+          "type": "number",
+          "description": "Sum of voucher values applied"
+        }
+      },
+      "required": [
+        "paid",
+        "subtotal",
+        "fees",
+        "refunds",
+        "total",
+        "taxAndSurcharges",
+        "voucherTotal"
+      ]
+    },
+    "Model33": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Some vouchers may only be created when the order is paid."
+        },
+        "amount": {
+          "type": "number"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "upgradeOrderItem": {
+          "type": "string",
+          "description": "For upgrade vouchers, this is the original order item."
+        }
+      },
+      "required": [
+        "amount"
+      ]
+    },
+    "vouchers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model33"
+      }
+    },
+    "product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Model34": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Model35": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/definitions/Model34",
+          "x-alternatives": [
+            {
+              "$ref": "#/x-alt-definitions/value"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type"
+      ]
+    },
+    "Model36": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model35"
+      }
+    },
+    "discount": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "availableFrom": {
+          "type": "string"
+        },
+        "availableTo": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "availableFrom",
+        "availableTo",
+        "price"
+      ]
+    },
+    "Model37": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "number",
+          "description": "Price of the original product"
+        },
+        "totalPrice": {
+          "type": "number",
+          "description": "Price of the product after discounts and fees"
+        },
+        "referenceId": {
+          "type": "string"
+        },
+        "parentOrderItemId": {
+          "type": "string",
+          "description": "For addons items, the parent item is the product which the addon came from"
+        },
+        "cancelledOn": {
+          "type": "string"
+        },
+        "dispatchedOn": {
+          "type": "string"
+        },
+        "product": {
+          "$ref": "#/definitions/product"
+        },
+        "options": {
+          "$ref": "#/definitions/Model36"
+        },
+        "discount": {
+          "$ref": "#/definitions/discount"
+        }
+      },
+      "required": [
+        "id",
+        "quantity",
+        "price",
+        "totalPrice",
+        "options"
+      ]
+    },
+    "orderItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model37"
+      }
+    },
+    "Model38": {
+      "type": "string",
+      "enum": [
+        "failed",
+        "pending",
+        "refunded",
+        "success"
+      ]
+    },
+    "Model39": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "number",
+          "description": "Amount in cents the payment is valid for"
+        },
+        "reference": {
+          "type": "string"
+        },
+        "gateway": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/Model38"
+        }
+      },
+      "required": [
+        "id",
+        "createdAt",
+        "amount",
+        "gateway",
+        "status"
+      ]
+    },
+    "payments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model39"
+      }
+    },
+    "Model40": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/Model32"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "paidAt": {
+          "type": "string",
+          "description": "Time in which the order was completed."
+        },
+        "breakdown": {
+          "$ref": "#/definitions/breakdown"
+        },
+        "vouchers": {
+          "$ref": "#/definitions/vouchers"
+        },
+        "orderItems": {
+          "$ref": "#/definitions/orderItems"
+        },
+        "payments": {
+          "$ref": "#/definitions/payments"
+        }
+      },
+      "required": [
+        "id",
+        "status",
+        "userId",
+        "paidAt"
+      ]
+    },
+    "Model41": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model40"
+      }
+    },
+    "Model42": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/Model41"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "Model43": {
+      "type": "object",
+      "properties": {
+        "userIds": {
+          "$ref": "#/definitions/userIds"
+        },
+        "paidProductId": {
+          "type": "string",
+          "pattern": "^\\d{1,8}$"
+        }
+      }
+    },
+    "Model44": {
+      "type": "object",
+      "properties": {
+        "nextPage": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "limit": {
+          "type": "integer",
+          "default": 100,
+          "minimum": 1,
+          "maximum": 100
+        },
+        "filter": {
+          "$ref": "#/definitions/Model43"
+        }
+      }
+    },
+    "Model45": {
+      "type": "object",
+      "properties": {
+        "uuid": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "user": {
+          "$ref": "#/definitions/user"
+        },
+        "badgeId": {
+          "type": "integer"
+        },
+        "badgeName": {
+          "type": "string"
+        },
+        "badgePrinted": {
+          "type": "string"
+        },
+        "productId": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "productDisplayName": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/status"
+        },
+        "order": {
+          "$ref": "#/definitions/order"
+        },
+        "flags": {
+          "$ref": "#/definitions/flags"
+        },
+        "options": {
+          "$ref": "#/definitions/options"
+        }
+      },
+      "required": [
+        "uuid",
+        "createdAt",
+        "updatedAt",
+        "badgeId",
+        "badgeName",
+        "productId",
+        "productName",
+        "productDisplayName",
+        "status"
+      ]
+    },
+    "Model46": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/Model45"
+      }
+    },
+    "Model47": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/Model46"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "Model48": {
+      "type": "object",
+      "properties": {
+        "roleId": {
+          "type": "integer",
+          "description": "The ID of the role to filter by",
+          "minimum": 0
+        },
+        "email": {
+          "type": "string",
+          "description": "An email address to filter by",
+          "x-format": {
+            "email": true
+          }
+        },
+        "search": {
+          "type": "string",
+          "description": "A search string to filter by"
+        },
+        "ownerUserId": {
+          "type": "integer",
+          "description": "The ID of the owner user to filter by (sub-accounts owned by this user)",
+          "minimum": 0
+        }
+      }
+    },
+    "V0UserSearchFilter": {
+      "type": "object",
+      "properties": {
+        "nextPage": {
+          "type": "string",
+          "description": "A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the `nextPage` parameter from the previous response for each subsequent request.",
+          "maxLength": 256
+        },
+        "limit": {
+          "type": "integer",
+          "description": "The maximum number of results to return, between 1 and 1000.",
+          "default": 1000,
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "filter": {
+          "$ref": "#/definitions/Model48"
+        }
+      }
+    },
+    "Model49": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model3"
+      }
+    },
+    "Model50": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/Model49"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "Model51": {
+      "type": "object",
+      "properties": {
+        "nextPage": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "limit": {
+          "type": "integer",
+          "default": 100,
+          "minimum": 1,
+          "maximum": 100
+        }
+      }
+    },
+    "Model52": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model17"
+      }
+    },
+    "Model53": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/Model52"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "voucherIds": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "pattern": "^\\d{1,8}$"
+      }
+    },
+    "Model54": {
+      "type": "object",
+      "properties": {
+        "voucherIds": {
+          "$ref": "#/definitions/voucherIds"
+        }
+      },
+      "required": [
+        "voucherIds"
+      ]
+    },
+    "Model55": {
+      "type": "object",
+      "properties": {
+        "nextPage": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "limit": {
+          "type": "integer",
+          "default": 100,
+          "minimum": 1,
+          "maximum": 100
+        },
+        "filter": {
+          "$ref": "#/definitions/Model54"
+        }
+      }
+    },
+    "productsRestriction": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "Model56": {
+      "type": "object",
+      "properties": {
+        "orderId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "paidAt": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "orderId",
+        "status",
+        "userId"
+      ]
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model56"
+      }
+    },
+    "Model57": {
+      "type": "object",
+      "properties": {
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer"
+        },
+        "code": {
+          "type": "string"
+        },
+        "availableFrom": {
+          "type": "string"
+        },
+        "availableTo": {
+          "type": "string"
+        },
+        "canBeStacked": {
+          "type": "boolean"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "maxUses": {
+          "type": "integer"
+        },
+        "productsRestriction": {
+          "$ref": "#/definitions/productsRestriction"
+        },
+        "orders": {
+          "$ref": "#/definitions/orders"
+        }
+      },
+      "required": [
+        "createdAt",
+        "updatedAt",
+        "id",
+        "amount",
+        "code",
+        "availableFrom"
+      ]
+    },
+    "Model58": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model57"
+      }
+    },
+    "Model59": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/Model58"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "Model60": {
+      "type": "object",
+      "properties": {
+        "nextPage": {
+          "type": "string",
+          "description": "A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the `nextPage` parameter from the previous response for each subsequent request.",
+          "maxLength": 256
+        },
+        "limit": {
+          "type": "integer",
+          "description": "The maximum number of results to return, between 1 and 1000.",
+          "default": 1000,
+          "minimum": 1,
+          "maximum": 1000
+        }
+      }
+    },
+    "Model61": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userId"
+      ]
+    },
+    "users[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model61"
+      }
+    },
+    "V0RoleUserList": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/users%5B%5D"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "ids": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "pattern": "^\\d{1,8}$"
+      }
+    },
+    "Model62": {
+      "type": "object",
+      "properties": {
+        "ids": {
+          "$ref": "#/definitions/ids"
+        }
+      },
+      "required": [
+        "ids"
+      ]
+    },
+    "Model63": {
+      "type": "object",
+      "properties": {
+        "nextPage": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "limit": {
+          "type": "integer",
+          "default": 100,
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "filter": {
+          "$ref": "#/definitions/Model62"
+        }
+      }
+    },
+    "Model64": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "userId": {
+          "type": "number"
+        },
+        "authorId": {
+          "type": "number"
+        },
+        "organizationId": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "authorId",
+        "organizationId",
+        "category",
+        "text"
+      ]
+    },
+    "Model65": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/Model64"
+      }
+    },
+    "Model66": {
+      "type": "object",
+      "properties": {
+        "hasMore": {
+          "type": "boolean"
+        },
+        "nextPage": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/Model65"
+        }
+      },
+      "required": [
+        "hasMore"
+      ]
+    },
+    "Model67": {
+      "type": "object",
+      "properties": {
+        "stockReturn": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "stockReturn"
+      ]
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        49
+      ]
+    },
+    "message": {
+      "type": "string",
+      "enum": [
+        "The order has an outstanding balance and cannot be marked as paid."
+      ]
+    },
+    "logic": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "$ref": "#/definitions/code"
+        },
+        "message": {
+          "$ref": "#/definitions/message"
+        }
+      }
+    },
+    "errors": {
+      "type": "object",
+      "properties": {
+        "logic": {
+          "$ref": "#/definitions/logic"
+        }
+      }
+    },
+    "Model68": {
+      "type": "object",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/errors"
+        }
+      }
+    },
+    "Model69": {
+      "type": "string",
+      "enum": [
+        79
+      ]
+    },
+    "Model70": {
+      "type": "string",
+      "enum": [
+        "Order is already paid."
+      ]
+    },
+    "Model71": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "$ref": "#/definitions/Model69"
+        },
+        "message": {
+          "$ref": "#/definitions/Model70"
+        }
+      }
+    },
+    "Model72": {
+      "type": "object",
+      "properties": {
+        "logic": {
+          "$ref": "#/definitions/Model71"
+        }
+      }
+    },
+    "Model73": {
+      "type": "object",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/Model72"
+        }
+      }
+    },
+    "Model74": {
+      "type": "string",
+      "enum": [
+        138
+      ]
+    },
+    "Model75": {
+      "type": "string",
+      "enum": [
+        "Attempted to add/remove an internal role."
+      ]
+    },
+    "Model76": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "$ref": "#/definitions/Model74"
+        },
+        "message": {
+          "$ref": "#/definitions/Model75"
+        }
+      }
+    },
+    "Model77": {
+      "type": "object",
+      "properties": {
+        "logic": {
+          "$ref": "#/definitions/Model76"
+        }
+      }
+    },
+    "Model78": {
+      "type": "object",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/Model77"
+        }
+      }
+    }
+  },
+  "x-alt-definitions": {
+    "kty": {
+      "type": "string",
+      "enum": [
+        "RSA"
+      ]
+    },
+    "JWKPublicKey": {
+      "type": "object",
+      "properties": {
+        "alg": {
+          "type": "string"
+        },
+        "kid": {
+          "type": "string"
+        },
+        "kty": {
+          "$ref": "#/x-alt-definitions/kty"
+        },
+        "n": {
+          "type": "string"
+        },
+        "e": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "alg",
+        "kid",
+        "kty",
+        "n",
+        "e"
+      ]
+    },
+    "Model1": {
+      "type": "string",
+      "enum": [
+        "EC"
+      ]
+    },
+    "Model2": {
+      "type": "object",
+      "properties": {
+        "alg": {
+          "type": "string"
+        },
+        "kid": {
+          "type": "string"
+        },
+        "kty": {
+          "$ref": "#/x-alt-definitions/Model1"
+        },
+        "crv": {
+          "type": "string"
+        },
+        "x": {
+          "type": "string"
+        },
+        "y": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "alg",
+        "kid",
+        "kty",
+        "crv",
+        "x",
+        "y"
+      ]
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
