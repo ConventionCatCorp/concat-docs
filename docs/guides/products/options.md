@@ -1,107 +1,140 @@
 ---
 sidebar_position: 4
 hide_table_of_contents: true
+textbook: true
 ---
 
 # Product Options
 
-Product options allow you to request additional information from attendees when they purchase a product, such as a T-Shirt size, or a color. Product options are generic and can be used with any product.
+Product options ask attendees for extra details when they buy a product, such as a T-shirt size or the name to print on a thank-you card. You create an option once, then assign it to each product that should ask for it.
 
-### Types of Product Options
+:::info[In this guide]
+The eight option types and their styles (section 1), creating an option (section 2), and assigning it to a product so attendees are asked for it (section 3).
+:::
 
-<ul>
-  <li>
-    <strong>Single Select</strong> - A dropdown list of options that the attendee can select from.
-  </li>
-  <li>
-    <strong>Multi Select</strong> - A checkbox list of options that the attendee can select from.
-  </li>
-  <li>
-    <strong>Freetext Field</strong> - An text input field that the attendee can enter their own value, with a customizable minimum and maximum length.
-  </li>
-  <li>
-    <strong>Number</strong> - A number field that the attendee can enter their own value, with a customizable minimum and maximum value.
-  </li>
-  <li>
-    <strong>Currency</strong> - A currency field that allows the attendee to enter their own value, with a customizable minimum and maximum value. The line item price of the product will be increased by the entered amount.
-  </li>
-</ul>
+## Option types
 
-### Creating a Product Option
+<Sidenote title="One list, two menus">
+Badge products and store products share one list of options: **Registration › Options** and **Store Management › Options** open the same list. Volunteer and dealer forms have options of their own.
+</Sidenote>
 
-<splitColumn>
-  <ol className="numbered-list">
-    <li>
-      <span>
-        Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.
-      </span>
-    </li>
-    <li>
-      <span>
-        Click "<strong>Options</strong>" from the left-hand sidebar, then click "<strong>Create New Option</strong>".
-      </span>
-    </li>
-    <li>
-      <div>
-        <div>Enter a name for your option, and select the type of option you want to create.</div>
-        <div>
-          <small>Note: The chosen name will be displayed to the attendee when they customize a product with this option.</small>
-        </div>
-      </div>
-    </li>
-    <li>
-      <span>
-        Customize the option based on the type of option you selected. Fields that are optional are marked with a <i>(Optional)</i> label.
-      </span>
-    </li>
-    <li>
-      <span>
-        Click "<strong>Create</strong>".
-      </span>
-    </li>
-  </ol>
-  <div>
-    <img className="bordered-img" src='/img/tutorial/productOptionCreate.png' />
-  </div>
-</splitColumn>
+Every option has a **Type**, which sets what the attendee fills in. Single Select, Multi Select and Free text Field also have a **Style**, which changes how the field looks. Table 1.1 lists them.
 
-### Associating a Product Option with a Product
+<TableFigure title="Option types and their styles">
 
-After a product option has been created, you'll need to associate it with a product using the following steps:
+| Type | What the attendee does | Styles |
+| --- | --- | --- |
+| Single Select | Selects one choice from a list you set up. | Radio, Dropdown |
+| Multi Select | Selects any number of choices from a list you set up. | Checkboxes, Blocks |
+| Free text Field | Types any text. | Text, Textarea |
+| Number | Enters a whole number. | None |
+| Currency | Enters an amount of money. | None |
+| Phone Number | Enters a valid phone number. | None |
+| Address | Enters a valid address. | None |
+| Files | Uploads files. | None |
 
-<splitColumn>
-  <ol className="numbered-list">
-    <li>
-      <span>
-        In <strong>Housekeeping</strong>, navigate to the product's page.
-      </span>
-    </li>
-    <li>
-      <span>
-        Click the green plus (<i className="material-symbols-outlined">add</i>) button next to the "<strong>Options</strong>" section.
-      </span>
-    </li>
-    <li>
-      <span>
-        Search for the product options you want to add and select them from the dropdown.
-      </span>
-    </li>
-    <li>
-      <span>
-        <i>(Optional)</i> If you want to require the attendee to select or fill in a value for this option, check the "<strong>Mark Selected Options as Required</strong>" checkbox.
-      </span>
-    </li>
-    <li>
-      <span>
-        Click "<strong>Assign Options</strong>".
-      </span>
-    </li>
-  </ol>
-  <div>
-    <img className="bordered-img" src='/img/tutorial/productOptionAssign.png' />
-  </div>
-</splitColumn>
+</TableFigure>
 
-:::note Note
-Disassociating a product option from a product will not remove the attendee selected / entered value, or modify the line item price, on any existing orders.
+## Creating an option
+
+Create the option first, then assign it (section 3). These steps use the Registration menu; **Store Management › Options** works the same way.
+
+<Sidenote title="Option missing from the menu?">
+**Options** only appears for roles that can manage products.
+</Sidenote>
+
+1. Go to **Housekeeping › Registration › Options**: in the left-hand menu click **Housekeeping**, choose **Registration** from the module menu at the top of the side menu, then click **Options** under **Badges and Tiers**.
+
+   <Result>The **Options** page opens, with a **Create New Option** button above a searchable table of existing options. The address ends in `/housekeeping/registration/options`.</Result>
+
+2. Click **Create New Option**.
+
+   <Result>The **Creating Option** form opens, with a **Back to Options** button above it.</Result>
+
+3. Enter a **Name**. Attendees see this name when they fill in the option.
+
+4. Choose a **Type** from Table 1.1. If the type has styles, choose a **Style** as well.
+
+   <Result>The fields below **Type** change to suit it. A Free text Field, for example, shows **Min Length** and **Max Length**.</Result>
+
+5. Fill in the remaining fields. Fields marked **(Optional)** can be left empty.
+
+6. Click **Create**.
+
+   <Result>A **New option has been created** message appears and you're back on the **Options** page, where the new option is listed.</Result>
+
+<Figure
+  src="/img/tutorial/productOptionCreate.png"
+  alt="The Creating Option form, with Name, Type, Min Length and Max Length fields above a Create button."
+  title="The Creating Option form"
+  markers={[
+    { n: 1, x: 2, y: 30.5, w: 47, h: 14.5 },
+    { n: 2, x: 51, y: 30.5, w: 46.8, h: 14.5 },
+    { n: 3, x: 2, y: 46.5, w: 95.8, h: 23 },
+    { n: 4, x: 2, y: 79.5, w: 95.8, h: 13.5 },
+  ]}
+>
+
+1. **Name**, as attendees will see it.
+2. **Type**: here, a Free text Field.
+3. Settings for that type: **Min Length** and **Max Length**.
+4. **Create** saves the option.
+
+This screenshot predates the form's **Description**, **Style** and **Display on cashier interface** fields.
+
+</Figure>
+
+## Assigning an option to a product
+
+An option does nothing until it's assigned to a product. Assign it on every product that should ask for it.
+
+<Sidenote title="Changing the lock later">
+Each assigned option has a lock button that turns **Prevent changes to this option after purchase is complete.** on or off. It's unavailable for options that change the price.
+</Sidenote>
+
+1. Open the product: in **Housekeeping › Registration**, click **Badge Products**, or in **Housekeeping › Store Management**, click **Store Products**. Then click the product.
+
+   <Result>The product's page opens, with an **Options** card. If the product has no options yet, the card says *There are currently no product options.*</Result>
+
+2. In the **Options** card, click the green **Add** button (<i className="material-symbols-outlined">add</i>).
+
+   <Result>The card shows an **Option Search** field, two checkboxes and an **Assign Options** button.</Result>
+
+3. In **Option Search**, type part of the option's name and select it. Repeat for any other options.
+
+   <Result>Each selected option appears under the search field, with its ID.</Result>
+
+4. *(Optional)* To make attendees fill in the options, tick **Mark selected options as required.**
+
+5. *(Optional)* To stop attendees changing their answers once they've paid, tick **Prevent changes to this option after purchase is complete.**
+
+6. Click **Assign Options**.
+
+   <Result>The search closes and the options are listed in the **Options** card, each with a lock button and a delete button.</Result>
+
+<Figure
+  src="/img/tutorial/productOptionAssign.png"
+  alt="The Options card on a product page, with Option Search, one selected option, the required checkbox and an Assign Options button."
+  title="Assigning options on a product's page"
+  markers={[
+    { n: 1, x: 2, y: 34.5, w: 96, h: 28.5 },
+    { n: 2, x: 1.8, y: 66.5, w: 34.5, h: 12.5 },
+    { n: 3, x: 2, y: 80, w: 96, h: 12.5 },
+  ]}
+>
+
+1. **Option Search**, with one option selected.
+2. **Mark selected options as required.**
+3. **Assign Options** saves the change.
+
+This screenshot predates the **Prevent changes to this option after purchase is complete.** checkbox, which now appears below the first one.
+
+</Figure>
+
+:::caution[Watch out]
+Options that change the price are always locked after purchase. When you select a **Currency** option, or a select option with a choice that changes the price, **Prevent changes to this option after purchase is complete.** is ticked and can't be cleared.
+:::
+
+:::note[Removing an option]
+Removing an option from a product doesn't change existing orders. Attendees keep the values they chose or entered, and line-item prices stay the same.
 :::

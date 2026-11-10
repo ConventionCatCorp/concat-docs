@@ -1,0 +1,37 @@
+@use '@site/src/css/variables' as *;
+
+.sidenote {
+  margin: var(--cc-space-4) 0;
+  padding: var(--cc-space-1) 0 var(--cc-space-1) var(--cc-space-3);
+  border-left: 1px solid var(--cc-color-rule-soft);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--cc-color-text-muted);
+
+  p {
+    margin-bottom: var(--cc-space-2);
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  display: block;
+  margin-bottom: var(--cc-space-1);
+  font-family: var(--cc-font-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--cc-color-label);
+}
+
+// Wide articles: the note floats into the margin column beside the text that follows it.
+@container textbook (min-width: #{$textbook-wide}) {
+  .sidenote {
+    float: right;
+    clear: right;
+    width: var(--tb-margin-col);
+    margin: 0.2rem calc(-1 * var(--tb-reach)) var(--cc-space-4) 0;
+  }
+}

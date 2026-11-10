@@ -1,0 +1,218 @@
+@use '@site/src/css/variables' as *;
+
+// Textbook article styling. Applies only inside `.textbook`, which src/theme/DocItem/Content
+// adds around a doc's body when its front matter has `textbook: true`. The theme around the
+// article (navbar, sidebar, breadcrumbs, pagination) is untouched.
+
+.textbook {
+  // Margin column: the reference layout splits the text width 71 / 2 / 27 between the
+  // main column, the gutter and the margin column.
+  --tb-margin-col: clamp(12rem, 27cqi, 17rem);
+  --tb-gutter: clamp(1.25rem, 2.5cqi, 2rem);
+  --tb-reach: calc(var(--tb-margin-col) + var(--tb-gutter));
+
+  container: textbook / inline-size;
+
+  .markdown {
+    --ifm-paragraph-margin-bottom: var(--cc-space-3);
+    --ifm-list-margin: var(--cc-space-4);
+
+    counter-reset: tb-section tb-subsection tb-figure tb-table;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--cc-color-text);
+  }
+
+  // Title and lede
+  .markdown > header > h1 {
+    margin-bottom: var(--cc-space-3);
+    font-family: var(--cc-font-display);
+    font-size: clamp(1.75rem, 4.2cqi, 2.25rem);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--cc-color-heading);
+  }
+
+  .markdown > header + p {
+    margin-bottom: var(--cc-space-5);
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: var(--cc-color-text-muted);
+  }
+
+  // Numbered headings: ## is section N, ### is subsection N.M. The number hangs in the left margin.
+  .markdown > h2,
+  .markdown > h3 {
+    position: relative;
+    padding-left: 2.75rem;
+    border-bottom: 0;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--cc-color-heading);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: var(--cc-font-display);
+      font-size: 0.75em;
+      line-height: calc(1.3 / 0.75);
+      color: var(--cc-color-step);
+    }
+  }
+
+  .markdown > h2 {
+    clear: right;
+    // !important beats the site-wide `h2, h3` margin rule in custom.scss, which also uses it.
+    margin-top: var(--cc-space-7) !important;
+    margin-bottom: var(--cc-space-3);
+    font-size: 1.5rem;
+    counter-increment: tb-section;
+    // counter-set (not counter-reset) restarts the article-level counters created on .markdown;
+    // a reset here would start sibling-scoped counters that browsers don't restart reliably.
+    counter-set: tb-subsection 0 tb-figure 0 tb-table 0;
+
+    &::before {
+      content: counter(tb-section);
+    }
+  }
+
+  .markdown > h3 {
+    margin-top: var(--cc-space-6) !important;
+    margin-bottom: var(--cc-space-2);
+    font-size: 1.125rem;
+    counter-increment: tb-subsection;
+
+    &::before {
+      content: counter(tb-section) '.' counter(tb-subsection);
+    }
+  }
+
+  .markdown > h4 {
+    margin-top: var(--cc-space-5);
+    margin-bottom: var(--cc-space-1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cc-color-text);
+  }
+
+  // Bulleted lists
+  .markdown ul > li {
+    margin-bottom: var(--cc-space-1);
+
+    &::marker {
+      color: var(--cc-color-step);
+    }
+  }
+
+  // Procedures: a top-level numbered list is a set of steps, numbered in platform wizard badges.
+  .markdown > ol {
+    counter-reset: tb-step;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .markdown > ol > li {
+    position: relative;
+    min-height: 1.75rem;
+    margin-bottom: var(--cc-space-3);
+    padding-left: 2.5rem;
+    counter-increment: tb-step;
+
+    &::before {
+      content: counter(tb-step);
+      position: absolute;
+      top: -0.05rem;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 50%;
+      background-color: var(--cc-color-step);
+      font-size: 0.8125rem;
+      line-height: 1;
+      color: var(--cc-color-on-step);
+    }
+
+    > p {
+      margin-bottom: var(--cc-space-1);
+    }
+  }
+
+  // Callouts (admonitions): tinted box with a thick left rule and a small display-face label.
+  .theme-admonition {
+    clear: right;
+    margin: var(--cc-space-5) 0;
+    padding: var(--cc-space-3) var(--cc-space-4);
+    border-radius: 0 var(--cc-radius) var(--cc-radius) 0;
+    box-shadow: none;
+    font-size: 0.875rem;
+    line-height: 1.6;
+
+    [class^='admonitionHeading'] {
+      margin-bottom: var(--cc-space-1);
+      font-family: var(--cc-font-display);
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      color: var(--cc-callout-label);
+    }
+
+    [class^='admonitionIcon'] {
+      display: none;
+    }
+  }
+
+  // Tables: rules above and below, a brand header row, hairlines between rows, light banding.
+  .markdown table {
+    --ifm-table-background: transparent;
+    --ifm-table-border-width: 0;
+    --ifm-table-cell-padding: 0.45rem 0.75rem;
+    --ifm-table-head-background: var(--cc-color-rule-strong);
+    --ifm-table-head-color: var(--cc-color-on-strong);
+    --ifm-table-head-font-weight: 400;
+    --ifm-table-stripe-background: var(--cc-color-surface-tint);
+
+    border-top: 2px solid var(--cc-color-rule-strong);
+    border-bottom: 2px solid var(--cc-color-rule-strong);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+
+    th {
+      text-align: left;
+      letter-spacing: 0.02em;
+    }
+
+    td {
+      border-top: 1px solid var(--cc-color-rule);
+      vertical-align: top;
+    }
+
+    // A second line in a cell, such as where a setting lives in the app.
+    td small {
+      display: block;
+      margin-top: 0.125rem;
+      font-size: 0.75rem;
+      color: var(--cc-color-text-muted);
+    }
+  }
+
+  // Plain Markdown images: screenshot frame with the platform's card shape.
+  .markdown > p > img {
+    border: 1px solid var(--cc-color-rule);
+    border-radius: var(--cc-radius);
+    box-shadow: var(--cc-shadow-sm);
+  }
+}
+
+// Wide articles get the margin column. Callouts span both columns, like the reference layout.
+@container textbook (min-width: #{$textbook-wide}) {
+  .textbook .markdown {
+    padding-right: var(--tb-reach);
+  }
+
+  .textbook .markdown > .theme-admonition {
+    margin-right: calc(-1 * var(--tb-reach));
+  }
+}

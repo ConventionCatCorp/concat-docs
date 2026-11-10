@@ -1,0 +1,151 @@
+@use 'sass:color';
+@use 'sass:map';
+@use '@site/src/css/variables' as *;
+
+// Infima expects a primary colour plus six shades. Docusaurus derives them by scaling
+// the lightness by 10%, 15% and 30% in each direction; do the same from the brand colour.
+@mixin infima-primary($base) {
+  $l: color.channel($base, 'lightness', $space: hsl);
+  --ifm-color-primary: #{$base};
+  --ifm-color-primary-dark: #{color.adjust($base, $lightness: -$l * 0.1, $space: hsl)};
+  --ifm-color-primary-darker: #{color.adjust($base, $lightness: -$l * 0.15, $space: hsl)};
+  --ifm-color-primary-darkest: #{color.adjust($base, $lightness: -$l * 0.3, $space: hsl)};
+  --ifm-color-primary-light: #{color.adjust($base, $lightness: $l * 0.1, $space: hsl)};
+  --ifm-color-primary-lighter: #{color.adjust($base, $lightness: $l * 0.15, $space: hsl)};
+  --ifm-color-primary-lightest: #{color.adjust($base, $lightness: $l * 0.3, $space: hsl)};
+}
+
+// Sets the colours of one callout (admonition) kind: tinted background, left rule, label.
+@mixin callout($background, $rule, $label) {
+  --ifm-alert-background-color: #{$background};
+  --ifm-alert-background-color-highlight: #{color.change($rule, $alpha: 0.15)};
+  --ifm-alert-border-color: #{$rule};
+  --ifm-alert-foreground-color: var(--ifm-color-content);
+  --cc-callout-label: #{$label};
+}
+
+:root {
+  @include infima-primary(map.get($concat-blue, 500));
+
+  // Fonts: Armata for all text, Krona One for brand display text (both from the platform).
+  --cc-font-text: 'Armata', system-ui, -apple-system, 'Segoe UI', roboto, 'Helvetica Neue', arial, sans-serif;
+  --cc-font-display: 'Krona One', var(--cc-font-text);
+
+  // Text
+  --cc-color-text: #{$body-text};
+  --cc-color-text-muted: #{map.get($independence-gray, 500)};
+  --cc-color-heading: #{map.get($concat-blue, 600)};
+  --cc-color-label: #{map.get($concat-blue, 700)};
+
+  // Surfaces and rules
+  --cc-color-surface-tint: #{$ghost-white};
+  --cc-color-rule: #{map.get($independence-gray, 200)};
+  --cc-color-rule-soft: #{map.get($independence-gray, 300)};
+  --cc-color-rule-strong: #{map.get($concat-blue, 600)};
+  --cc-color-on-strong: #fff;
+
+  // Signals
+  --cc-color-step: #{map.get($concat-blue, 500)};
+  --cc-color-on-step: #{$isabelline-white};
+  --cc-color-marker: #{map.get($danger, 600)};
+  --cc-color-result: #{map.get($success, 700)};
+
+  // Shapes: Bootstrap 5.3 radius and shadows as the platform renders them
+  --cc-radius: 0.375rem;
+  --cc-shadow-sm: 0 0.125rem 0.25rem rgb(0 0 0 / 7.5%);
+  --cc-shadow: 0 0.25rem 1rem rgb(48 55 66 / 15%);
+
+  // Spacing scale
+  --cc-space-1: 0.25rem;
+  --cc-space-2: 0.5rem;
+  --cc-space-3: 0.75rem;
+  --cc-space-4: 1rem;
+  --cc-space-5: 1.5rem;
+  --cc-space-6: 2rem;
+  --cc-space-7: 2.75rem;
+
+  // Infima hooks
+  --ifm-font-family-base: var(--cc-font-text);
+  --ifm-heading-font-family: var(--cc-font-text);
+  --ifm-heading-font-weight: 400;
+  --ifm-code-font-size: 95%;
+  --ifm-alert-border-radius: var(--cc-radius);
+  --ifm-alert-border-left-width: 4px;
+  --ifm-global-radius: var(--cc-radius);
+}
+
+[data-theme='dark'] {
+  @include infima-primary(map.get($concat-blue, 300));
+
+  --cc-color-text: #{$body-text-dark};
+  --cc-color-text-muted: #{map.get($independence-gray, 300)};
+  --cc-color-heading: #{map.get($concat-blue, 300)};
+  --cc-color-label: #{map.get($concat-blue, 200)};
+  --cc-color-surface-tint: rgb(255 255 255 / 4%);
+  --cc-color-rule: #{map.get($independence-gray, 600)};
+  --cc-color-rule-soft: #{map.get($independence-gray, 400)};
+  --cc-color-rule-strong: #{map.get($concat-blue, 700)};
+  --cc-color-step: #{map.get($concat-blue, 400)};
+  --cc-color-on-step: #{map.get($japanese-indigo, 900)};
+  --cc-color-result: #{map.get($success, 400)};
+  --cc-shadow-sm: 0 0.125rem 0.25rem rgb(0 0 0 / 30%);
+  --cc-shadow: 0 0.25rem 1rem rgb(0 0 0 / 40%);
+}
+
+// Callout colours, site-wide. Docusaurus maps note → secondary, tip → success, info → info,
+// warning and caution → warning, danger → danger.
+.alert.theme-admonition-note {
+  @include callout($ghost-white, map.get($independence-gray, 400), map.get($independence-gray, 600));
+}
+
+.alert.theme-admonition-info {
+  @include callout(map.get($independence-gray, 100), map.get($concat-blue, 500), map.get($concat-blue, 700));
+}
+
+.alert.theme-admonition-tip {
+  @include callout(map.get($success, 100), map.get($success, 600), map.get($success, 800));
+}
+
+.alert.theme-admonition-warning,
+.alert.theme-admonition-caution {
+  @include callout(map.get($warning, 100), map.get($warning, 700), map.get($warning, 900));
+}
+
+.alert.theme-admonition-danger {
+  @include callout(map.get($danger, 100), map.get($danger, 600), map.get($danger, 800));
+}
+
+[data-theme='dark'] {
+  .alert.theme-admonition-note {
+    @include callout(rgb(255 255 255 / 5%), map.get($independence-gray, 400), map.get($independence-gray, 200));
+  }
+
+  .alert.theme-admonition-info {
+    @include callout(
+      color.change(map.get($concat-blue, 500), $alpha: 0.16),
+      map.get($concat-blue, 400),
+      map.get($concat-blue, 200)
+    );
+  }
+
+  .alert.theme-admonition-tip {
+    @include callout(
+      color.change(map.get($success, 500), $alpha: 0.14),
+      map.get($success, 500),
+      map.get($success, 200)
+    );
+  }
+
+  .alert.theme-admonition-warning,
+  .alert.theme-admonition-caution {
+    @include callout(
+      color.change(map.get($warning, 500), $alpha: 0.14),
+      map.get($warning, 500),
+      map.get($warning, 200)
+    );
+  }
+
+  .alert.theme-admonition-danger {
+    @include callout(color.change(map.get($danger, 500), $alpha: 0.16), map.get($danger, 400), map.get($danger, 200));
+  }
+}

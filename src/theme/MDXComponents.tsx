@@ -11,6 +11,10 @@ import ExampleBox from '@site/src/components/ExampleBox';
 import SplitColumn from '@site/src/components/SplitColumn';
 import BigButton from '@site/src/components/BigButton';
 import Card from '@site/src/components/Card';
+import Figure from '@site/src/components/Figure';
+import TableFigure from '@site/src/components/TableFigure';
+import Sidenote from '@site/src/components/Sidenote';
+import Result from '@site/src/components/Result';
 import Link from '@docusaurus/Link';
 import Admonition from '@theme/Admonition';
 
@@ -31,4 +35,9 @@ export default {
   SplitColumn: SplitColumn,
   Card: Card,
   BigButton: BigButton,
+  // Textbook elements (see docs-style/TEXTBOOK-STYLE.md)
+  Figure: Figure,
+  TableFigure: TableFigure,
+  Sidenote: Sidenote,
+  Result: Result,
 };

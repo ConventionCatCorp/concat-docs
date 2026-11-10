@@ -29,9 +29,13 @@ Use **npm** (`package-lock.json` is committed). Node `^26` is required.
 
 ## MDX components
 
-`src/theme/MDXComponents.tsx` swizzles the MDX mapper so these components are usable in any `.md`/`.mdx` file **without importing them**: `Highlight`, `Attribute`, `ParentAttribute`, `MaterialIcon`, `Link`, `RestElement`, `RestList`, `EndpointRequest`, `EndpointResponse`, `ExampleBox`, `SplitColumn`, `Card`, `BigButton`, `Admonition`. A new component meant for docs must be registered there.
+`src/theme/MDXComponents.tsx` swizzles the MDX mapper so these components are usable in any `.md`/`.mdx` file **without importing them**: `Highlight`, `Attribute`, `ParentAttribute`, `MaterialIcon`, `Link`, `RestElement`, `RestList`, `EndpointRequest`, `EndpointResponse`, `ExampleBox`, `SplitColumn`, `Card`, `BigButton`, `Admonition`, `Figure`, `TableFigure`, `Sidenote`, `Result`. A new component meant for docs must be registered there. Tags are case-sensitive: a lowercase tag such as `<splitColumn>` compiles to an unknown HTML element, not the component.
 
-`MaterialIcon` relies on the Material Symbols font loaded in `docusaurus.config.js` `stylesheets`.
+`MaterialIcon` relies on the Material Symbols font loaded in `docusaurus.config.js` `stylesheets`, which also loads the platform fonts (Armata, Krona One).
+
+## Textbook style
+
+Guides with `textbook: true` in front matter get the textbook article layout (numbered sections, margin column, numbered figures and tables, step badges with `<Result>` lines). `src/theme/DocItem/Content` adds the `.textbook` wrapper; styles are in `src/css/_textbook.scss`, tokens in `src/css/_tokens.scss`. `docs-style/TEXTBOOK-STYLE.md` is the spec: tokens and how each element is written. Adding or removing a file under `src/theme/` needs a dev-server restart.
 
 ## API reference page conventions
 

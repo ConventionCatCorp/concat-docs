@@ -49,7 +49,11 @@ const config = {
     ],
   ],
 
-  stylesheets: ['https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0'],
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0',
+    // The ConCat platform's typefaces: Armata for text, Krona One for display (see src/css/_tokens.scss).
+    'https://fonts.googleapis.com/css2?family=Armata&family=Krona+One&display=swap',
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

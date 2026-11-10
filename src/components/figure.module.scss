@@ -1,0 +1,144 @@
+@use '@site/src/css/variables' as *;
+
+.figure {
+  clear: right;
+  margin: var(--cc-space-5) 0;
+  counter-increment: tb-figure;
+}
+
+.media {
+  min-width: 0;
+}
+
+.frame {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--cc-color-rule);
+    border-radius: var(--cc-radius);
+    box-shadow: var(--cc-shadow-sm);
+  }
+}
+
+.area,
+.point {
+  position: absolute;
+  pointer-events: none;
+}
+
+.area {
+  border: 2px solid var(--cc-color-marker);
+  border-radius: var(--cc-radius);
+}
+
+.badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.375rem;
+  height: 1.375rem;
+  border-radius: 50%;
+  background-color: var(--cc-color-marker);
+  box-shadow: 0 0 0 2px #fff;
+  font-family: var(--cc-font-text);
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.area .badge {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.point .badge {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.caption {
+  margin-top: var(--cc-space-3);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--cc-color-text-muted);
+
+  p {
+    margin: var(--cc-space-2) 0 0;
+  }
+
+  // Numbered notes; each number matches a marker on the image.
+  ol {
+    counter-reset: tb-callout;
+    margin: var(--cc-space-2) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ol > li {
+    position: relative;
+    margin-bottom: var(--cc-space-1);
+    padding-left: 1.75rem;
+    counter-increment: tb-callout;
+
+    &::before {
+      content: counter(tb-callout);
+      position: absolute;
+      top: 0.1rem;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 50%;
+      background-color: var(--cc-color-marker);
+      font-size: 0.6875rem;
+      line-height: 1;
+      color: #fff;
+    }
+  }
+}
+
+.heading {
+  display: block;
+}
+
+.title {
+  color: var(--cc-color-text);
+}
+
+// The number comes from the section and figure counters, which only textbook pages set up.
+:global(.textbook) .label::before {
+  content: 'Figure ' counter(tb-section) '.' counter(tb-figure);
+  margin-right: 0.6em;
+  font-family: var(--cc-font-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--cc-color-label);
+}
+
+// Wide articles: the image stays in the main column and the caption sits in the margin column.
+@container textbook (min-width: #{$textbook-wide}) {
+  .figure {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--tb-margin-col);
+    column-gap: var(--tb-gutter);
+    align-items: start;
+    margin-right: calc(-1 * var(--tb-reach));
+  }
+
+  .caption {
+    margin-top: 0;
+    padding-left: var(--cc-space-3);
+    border-left: 1px solid var(--cc-color-rule-soft);
+  }
+}
