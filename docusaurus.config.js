@@ -21,6 +21,16 @@ const config = {
   deploymentBranch: 'deployment',
   trailingSlash: false,
 
+  customFields: {
+    // Origin of the onboarding service; the trial form POSTs to `${onboardingApiOrigin}/api/signups`.
+    onboardingApiOrigin: process.env['ONBOARDING_API_ORIGIN'] ?? 'https://onboarding.concat.app',
+    // reCAPTCHA v2 (checkbox) site key. Outside production builds this falls back to Google's
+    // test key, which always passes verification.
+    recaptchaSiteKey:
+      process.env['RECAPTCHA_SITE_KEY'] ??
+      (process.env['NODE_ENV'] === 'production' ? '' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'),
+  },
+
   plugins: [require.resolve('docusaurus-plugin-sass')],
 
   presets: [
@@ -67,6 +77,11 @@ const config = {
             docId: 'api/intro',
             position: 'left',
             label: 'API Reference',
+          },
+          {
+            label: 'Get a Trial Instance',
+            position: 'left',
+            to: '/trial',
           },
           {
             href: 'https://github.com/ConventionCatCorp/concat-docs',

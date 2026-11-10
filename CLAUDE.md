@@ -43,6 +43,10 @@ Follow the pattern in `docs/api/endpoints/v0/*.mdx` (e.g. `dealers.mdx`):
 - `Attribute` `id`s must be unique within the page, so they use a short per-endpoint prefix (e.g. `su-`, `su-resp-`).
 - Shared object models live in underscore-prefixed partials (`_registrationModel.mdx`, `_volunteerModel.mdx`). Docusaurus doesn't render these as pages; import them with `import X from './_xModel.mdx'`.
 
+## Trial signup page
+
+`src/pages/trial.tsx` posts `{ country, email, firstName, lastName, orgName }` as JSON (CORS) to `${onboardingApiOrigin}/api/signups`, sending the reCAPTCHA v2 token in an `X-Recaptcha-Token` header. Both values come from `customFields` in `docusaurus.config.js`, which reads `ONBOARDING_API_ORIGIN` and `RECAPTCHA_SITE_KEY` at build time. `country` is an ISO 3166-1 alpha-2 code from the static list in `src/data/countries.ts`. That list is static so server and browser render identical names; don't switch it to runtime `Intl.DisplayNames`. Helper modules must not live in `src/pages/`, because every file there becomes a route.
+
 ## CI & deployment
 
 GitHub Actions (`.github/workflows/ci.yml`) runs `npm run format:check`, `npm run typecheck` and `npm run build` on pushes to `main` and on every PR, using the Node version from `package.json` `engines`.
