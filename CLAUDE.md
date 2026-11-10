@@ -45,7 +45,7 @@ Follow the pattern in `docs/api/endpoints/v0/*.mdx` (e.g. `dealers.mdx`):
 
 ## Trial signup page
 
-`src/pages/trial.tsx` posts `{ country, email, firstName, lastName, orgName }` as JSON (CORS) to `${onboardingApiOrigin}/api/signups`, sending the reCAPTCHA v2 token in an `X-Recaptcha-Token` header. Both values come from `customFields` in `docusaurus.config.js`, which reads `ONBOARDING_API_ORIGIN` and `RECAPTCHA_SITE_KEY` at build time. `country` is an ISO 3166-1 alpha-2 code from the static list in `src/data/countries.ts`. That list is static so server and browser render identical names; don't switch it to runtime `Intl.DisplayNames`. Helper modules must not live in `src/pages/`, because every file there becomes a route.
+`src/pages/trial.tsx` posts `{ country, email, firstName, lastName, orgName }` as JSON (CORS) to `${onboardingApiOrigin}/api/signups`, with the reCAPTCHA v2 token in the `g-recaptcha-response` body field (a custom header would fail the backend's CORS preflight). Both values come from `customFields` in `docusaurus.config.js`, which reads `ONBOARDING_API_ORIGIN` and `RECAPTCHA_SITE_KEY` at build time. `country` is an ISO 3166-1 alpha-2 code from the static list in `src/data/countries.ts`. That list is static so server and browser render identical names; don't switch it to runtime `Intl.DisplayNames`. Helper modules must not live in `src/pages/`, because every file there becomes a route.
 
 ## CI & deployment
 

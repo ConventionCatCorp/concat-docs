@@ -101,11 +101,9 @@ function TrialForm() {
       const response = await fetch(signupUrl, {
         method: 'POST',
         mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Recaptcha-Token': captchaToken,
-        },
-        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json' },
+        // The backend reads the token from this body field; a custom header would fail its CORS preflight.
+        body: JSON.stringify({ ...payload, 'g-recaptcha-response': captchaToken }),
       });
       if (!response.ok) {
         setStatus({ state: 'error', message: await readErrorMessage(response) });
