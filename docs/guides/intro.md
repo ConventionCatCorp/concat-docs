@@ -15,8 +15,8 @@ Where to start (section 1), and how to read the guides: steps and results, on-sc
 ## Where to start
 
 <SplitColumn childStyle={{ width: '100%' }}>
-  <BigButton to="/docs/guides/convention_checklist" title="Getting Started with ConCat" icon="not_started">
-    Onboarding checklist for working with us to get your event set up.
+  <BigButton to="/docs/guides/quickstart/start-here" title="Quickstart" icon="not_started">
+    Set up a new event step by step, from a trial sign-up to opening registration.
   </BigButton>
   <BigButton to="/docs/guides/registration/attendance" title="Attendance Tiers" icon="badge">
     Creating and managing registration tier products, assigning add-ons, discounts, and more.
