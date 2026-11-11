@@ -89,7 +89,7 @@ The left side of the **Edit Registration** dialog has extra buttons, which depen
 
    <Result>A **Payment deleted!** message appears. The **Registration** row now shows a warning sign instead of the green tick.</Result>
 
-To give the money back as well, refund the order: see the *Refunds* guide (Orders section).
+To give the money back as well, refund the order: see [Refunds](../orders/refunds.md).
 
 ### Transfer a paid registration
 
@@ -141,4 +141,4 @@ The **Orders** tab lists the person's orders for this convention, and their paid
 
 An order card can also carry a message: a yellow one when a refund request is pending, a red one when a request was denied, a green one with the amount when a refund was approved, and a blue one listing review flags on the payment. Ticketed products add a **Retrieve Ticket(s)** button.
 
-Working with an order, such as taking payments, cancelling items or refunds, is covered in [Orders](../orders/orders.md) and in the *Refunds* guide (Orders section).
+Working with an order, such as taking payments, cancelling items or refunds, is covered in [Orders](../orders/orders.md) and in [Refunds](../orders/refunds.md).

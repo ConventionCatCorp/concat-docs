@@ -146,7 +146,7 @@ The audit history records what happened to the account and who did it: sign-ins,
 
    <Result>The list jumps to the entries around that date.</Result>
 
-To browse audit logs for the whole system, see the *Audit logs* guide (System section).
+To browse audit logs for the whole system, see [Audit logs](../system/audit-logs.md).
 
 ## Export one person's data
 

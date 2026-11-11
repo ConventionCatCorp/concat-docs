@@ -78,4 +78,12 @@ You can also give a role from a person's profile (section 2). On the **Roles** t
 **Deny** always wins. If any of a person's roles denies a permission, they don't have it, whatever their other roles allow.
 :::
 
+:::tip[In more detail]
+The full guides behind this page:
+
+- [Creating user accounts](../system/users.md)
+- [Finding attendees](../attendees/user-search.md)
+- [Roles and permissions](../system/roles.md)
+:::
+
 You've finished the Quickstart. Before you open for attendees, look at the [Checklist](../convention_checklist.md), and set a default badge design so the Cashier UI can print badges.

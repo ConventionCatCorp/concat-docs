@@ -156,5 +156,5 @@ If you have no badge products yet, the preview says *Add a product to this conve
 If you click the back arrow with unsaved changes, an **Unsaved Changes** dialog says *You have unsaved changes! If you leave now, your changes will be lost.* Choose **Save and Exit**, **Exit without Saving** or **Cancel** (to stay in the editor).
 
 :::note[Dealer and volunteer forms]
-The dealer and volunteer application forms use the same editor, with their own toolbox and a preview always shown beside the form. They're opened from **Dealer Settings** and **Volunteer Settings**; see the *Dealer settings* and *Volunteer settings* guides.
+The dealer and volunteer application forms use the same editor, with their own toolbox and a preview always shown beside the form. They're opened from **Dealer Settings** and **Volunteer Settings**; see [Dealer settings, policy and form](../dealers/settings.md) and [Volunteer settings and form](../volunteers/settings.md).
 :::

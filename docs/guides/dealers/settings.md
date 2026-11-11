@@ -43,7 +43,7 @@ General dealer settings (section 1), the Dealer Policy (section 2), custom quest
 You also need at least one enabled dealer area before dealers can apply: see [Dealer areas and table types](./areas-and-products.md).
 
 :::note[Exports and mass email]
-The **Export Data** card's **CSV** and **JSON** buttons, and **Dealers › Dynamic Export**, are covered in the *Exports* guide (System section). **Dealers › Mass Email** is covered in the *Mass email* guide (Attendees section).
+The **Export Data** card's **CSV** and **JSON** buttons, and **Dealers › Dynamic Export**, are covered in [Exports](../system/exports.md). **Dealers › Mass Email** is covered in [Mass email](../attendees/mass-email.md).
 :::
 
 ## Dealer Policy
@@ -100,7 +100,7 @@ To ask something about a dealer's table, such as which side they want power on, 
 ## The dealer application form
 
 <Sidenote title="One editor, three forms">
-The registration, dealer and volunteer forms share one editor. The *Registration form editor* guide (Registration section) explains it in full.
+The registration, dealer and volunteer forms share one editor. The [Registration form editor](../registration/form-editor.md) explains it in full.
 </Sidenote>
 
 The dealer form is the first page of the application: the dealer's business details, your questions and the Dealer Policy agreement. A new convention starts with three sections: **Business Info**, **Product Info** and **Dealer Policy**.

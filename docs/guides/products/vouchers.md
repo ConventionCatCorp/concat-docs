@@ -180,4 +180,4 @@ The **+** and **-** buttons are only shown on unpaid orders. The rest of the ord
 
 </TableFigure>
 
-If an issued voucher covers the whole order but the order hasn't been completed, the checkout shows a **Pay with Voucher Balance** card instead, with a **Confirm Order** button. The rest of checkout is covered in the *Checkout and payment* guide (Orders section).
+If an issued voucher covers the whole order but the order hasn't been completed, the checkout shows a **Pay with Voucher Balance** card instead, with a **Confirm Order** button. The rest of checkout is covered in [Checkout and payment](../orders/checkout.md).

@@ -40,7 +40,7 @@ Table 1.1 lists the messages a login can end with instead.
 
 </TableFigure>
 
-The **Login Page Announcement** is one of your policies: see [Convention setup](../quickstart/convention-setup.md), section 3. When maintenance mode is on, a **Maintenance Mode** card replaces the login form, with an **Admin Login** button for staff; it's covered in the *Convention settings* guide (System section).
+The **Login Page Announcement** is one of your policies: see [Convention setup](../quickstart/convention-setup.md), section 3. When maintenance mode is on, a **Maintenance Mode** card replaces the login form, with an **Admin Login** button for staff; it's covered in [Convention settings](../system/settings.md).
 
 ## Create an account
 
@@ -66,7 +66,7 @@ The age buttons come from the **Child Age Threshold** and **Minor Age Threshold*
 
 As the attendee types a username or email address, the form checks it: *Great! This username is available*, *This username is already in use.*, or *That username is invalid. Usernames must be between 4 and 64 characters.*
 
-The youngest button ends at a **We're sorry** card showing your **Child Registration Error** policy: the person can't make an account. The middle button adds your **Minor Registration Warning** policy to the policies card; registering younger attendees is covered in the *Sub-accounts, children and minors* guide (Registration section).
+The youngest button ends at a **We're sorry** card showing your **Child Registration Error** policy: the person can't make an account. The middle button adds your **Minor Registration Warning** policy to the policies card; registering younger attendees is covered in [Sub-accounts, children and minors](../registration/sub-accounts.md).
 
 :::note[Settings that change this form]
 - **Require e-mail confirmation before login.** (on by default, under **Users** on the **Convention** tab of **Housekeeping › System › Settings**): when it's off, step 4 logs the attendee straight in instead. They still get the confirmation email.
@@ -243,7 +243,7 @@ An attendee can set their date of birth once; after that, only staff can change 
 
 ### Finish an account migration
 
-A parent can turn a sub-account into the dependent's own account, as the *Sub-accounts, children and minors* guide (Registration section) explains. The dependent then gets an email with the subject *Account Migration Confirmation* (after your **Notification Prefix**).
+A parent can turn a sub-account into the dependent's own account, as [Sub-accounts, children and minors](../registration/sub-accounts.md) explains. The dependent then gets an email with the subject *Account Migration Confirmation* (after your **Notification Prefix**).
 
 1. In the *Account Migration Confirmation* email, click the link.
 

@@ -104,5 +104,5 @@ Attendees who tick the `nukeme` flag ask for their account to be deleted after t
    <Result>The dialog warns *This cannot be undone, and a new request will need to be made in order to clear PII.* After you confirm, a **Request was successfully canceled.** message appears and the notice is gone.</Result>
 
 :::danger[Irreversible]
-Once the 24 hours have passed, the data is cleared and can't be recovered. Export anything you need to keep first; see the *Exports* guide (System section).
+Once the 24 hours have passed, the data is cleared and can't be recovered. Export anything you need to keep first; see [Exports](../system/exports.md).
 :::

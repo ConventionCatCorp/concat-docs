@@ -189,4 +189,4 @@ Staff with `volunteer:read` also see a person's application on their Housekeepin
 
 The **Volunteer** tab isn't shown for sub-accounts. When staff save the form, no confirmation email is sent to the person.
 
-To email volunteers, see the *Mass email* guide (Attendees section).
+To email volunteers, see [Mass email](../attendees/mass-email.md).

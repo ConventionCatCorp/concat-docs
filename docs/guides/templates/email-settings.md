@@ -76,7 +76,7 @@ The sender list holds the mailbox names staff can choose as the **From Address**
 
    <Result>A *Removed "*name*" from the senders list.* message appears, and the name is no longer listed.</Result>
 
-The list can hold up to 16 names and can't be emptied. Each name, followed by your domain, must form a valid email address. Sending a mass email is covered in the *Mass email* guide (Attendees section).
+The list can hold up to 16 names and can't be emptied. Each name, followed by your domain, must form a valid email address. Sending a mass email is covered in [Mass email](../attendees/mass-email.md).
 
 ## Contact addresses
 

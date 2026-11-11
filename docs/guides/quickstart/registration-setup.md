@@ -173,4 +173,15 @@ Registration stays closed until you open it, so attendees can't register while y
 
    <Result>The page offers **Start registration**.</Result>
 
+:::tip[In more detail]
+The full guides behind this page:
+
+- [Badge Products](../registration/attendance/attendance.md)
+- [Product Options](../products/options.md) and [Addons](../products/addons.md)
+- [Registration form editor](../registration/form-editor.md)
+- [Sub-accounts, children and minors](../registration/sub-accounts.md)
+- [Registration settings](../registration/settings.md)
+- [How attendees register](../registration/registering.md)
+:::
+
 The next guide, [Store and products setup](./store-setup.md), sets up everything else you sell.

@@ -177,4 +177,14 @@ Three things decide how your email looks to attendees: the domain it's sent from
 The mass-email senders are only offered when sending a mass email. The **Contact** addresses are the senders of registration, volunteer and dealer emails. Templates can be changed for one convention or for the whole organization.
 :::
 
+:::tip[In more detail]
+The full guides behind this page:
+
+- [Convention settings](../system/settings.md): every field on the **Convention** tab, and the **Links** and **Platform Info** tabs.
+- [Conventions and next year](../system/conventions.md)
+- [Terms and policies](../system/terms.md)
+- [Payment gateways](../system/payments.md)
+- [Sending domain, senders and contact addresses](../templates/email-settings.md) and [Email Template Overrides](../templates/templates.md)
+:::
+
 The next guide, [Registration setup](./registration-setup.md), creates the badges attendees buy.

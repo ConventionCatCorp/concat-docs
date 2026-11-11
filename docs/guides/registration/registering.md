@@ -113,7 +113,7 @@ If the tier has paid addons that are **Public**, a **Product addons** card below
 
    <Result>The status card on **Attendance** says *You're registered for* your convention's short name, and the attendee's card shows the status **Registered**.</Result>
 
-When **Cart Timeout** is set in [Registration settings](./settings.md), the unpaid registration is held only for that long, and the status card counts down: *Your unpaid registration at* your event *will be held for* the time left. Checkout, vouchers and payment are covered in the *Checkout* guide (Orders section).
+When **Cart Timeout** is set in [Registration settings](./settings.md), the unpaid registration is held only for that long, and the status card counts down: *Your unpaid registration at* your event *will be held for* the time left. Checkout, vouchers and payment are covered in [Checkout and payment](../orders/checkout.md).
 
 ## Change or upgrade a registration
 

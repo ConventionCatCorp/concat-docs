@@ -43,7 +43,7 @@ Volunteer applications are closed on a new convention. Turn them on when your de
 
    <Result>**Volunteering** is listed. It opens the **Volunteer Application** page.</Result>
 
-The **Export Data** card downloads volunteers' names, assigned departments and contact methods as **CSV** or **JSON**. It needs the `system:export` permission; see the *Exports* guide (System section).
+The **Export Data** card downloads volunteers' names, assigned departments and contact methods as **CSV** or **JSON**. It needs the `system:export` permission; see [Exports](../system/exports.md).
 
 ## Volunteer Code of Conduct
 
@@ -92,7 +92,7 @@ A new question isn't asked until you add it to the form with an **Option** eleme
 ## The application form
 
 <Sidenote title="One editor, three forms">
-The volunteer form uses the same editor as the registration and dealer forms. The *Registration form editor* guide (Registration section) covers sections and moving elements in detail.
+The volunteer form uses the same editor as the registration and dealer forms. The [Registration form editor](../registration/form-editor.md) covers sections and moving elements in detail.
 </Sidenote>
 
 The form is built from sections, each holding elements. A new convention's form has the sections *Volunteer Code of Conduct*, *Contact Information*, *Availability*, *Departments*, *Previous Years* and *Anything Else*.
@@ -166,4 +166,4 @@ The form is built from sections, each holding elements. A new convention's form 
 
 </TableFigure>
 
-To email volunteers by department, see the *Mass email* guide (Attendees section).
+To email volunteers by department, see [Mass email](../attendees/mass-email.md).

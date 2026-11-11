@@ -20,7 +20,7 @@ Programming and revoking badges need **system:nfc_token:program** (*Program NFC 
 
 When a station programs a badge, it reads the chip's unique ID from the reader. ConCat then creates the attendee's NFC record: a new password, and a signed record of the attendee, the convention and how many badges they've been issued. Last, the station locks the chip with the password and writes the signed record to it.
 
-To read a badge, a station asks ConCat for the chip's password, reads the record and checks its signature. Each read is recorded in the audit log and fires the `nfc-badge-scanned` webhook event, which identifies the card, the badge holder and the staff member who scanned it. Webhooks are set up in the *OAuth applications and webhooks* guide (Technical section).
+To read a badge, a station asks ConCat for the chip's password, reads the record and checks its signature. Each read is recorded in the audit log and fires the `nfc-badge-scanned` webhook event, which identifies the card, the badge holder and the staff member who scanned it. Webhooks are set up in [OAuth applications and webhooks](../../technical/developers.md).
 
 An attendee has one active NFC badge per convention. Programming a new badge deactivates the old one, and revoking a badge deactivates it with no replacement.
 

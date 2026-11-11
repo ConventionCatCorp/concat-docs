@@ -89,4 +89,11 @@ Each item appears only if your account has the permission for it, so a staff mem
 Menu paths in these guides start with **Housekeeping**, then the module, then the sidebar item. **Housekeeping › System › Settings** means: click **Housekeeping**, choose **System** from the module menu, then click **Settings** in the sidebar.
 :::
 
+:::tip[In more detail]
+The full guides behind this page:
+
+- [The attendee homepage](../attendees/homepage.md): what attendees see.
+- [Dashboards and statistics](../registration/statistics.md): the Housekeeping **Dashboard** and its cards.
+:::
+
 The next guide, [Convention setup](./convention-setup.md), starts with your event's name and dates.

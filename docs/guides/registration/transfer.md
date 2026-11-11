@@ -67,4 +67,4 @@ Both blocked dialogs end with *If you have any questions, please contact the reg
 
 ## Transfers by staff
 
-Staff can also move a paid registration to another attendee from the attendee's profile in Housekeeping, with **Transfer** in the **Edit Registration** dialog. This needs the `registration:update` permission. It works even when **Enable Registration Transfers** is off and after the badge has been printed, but not for a registration locked by its discount, and the recipient must still have an unpaid registration. See the *Managing an attendee's registrations and orders* guide (Attendees section).
+Staff can also move a paid registration to another attendee from the attendee's profile in Housekeeping, with **Transfer** in the **Edit Registration** dialog. This needs the `registration:update` permission. It works even when **Enable Registration Transfers** is off and after the badge has been printed, but not for a registration locked by its discount, and the recipient must still have an unpaid registration. See [Managing an attendee's registrations and orders](../attendees/user-registrations.md).

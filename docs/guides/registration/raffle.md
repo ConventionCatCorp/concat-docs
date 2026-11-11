@@ -159,7 +159,7 @@ A draw marks the attendees you choose as winners and, at the same time, can deal
 If you plan several rounds, leave non-winners on **Do Nothing**. To take new entries between rounds, untick **Close the raffle to new entries**.
 :::
 
-ConCat doesn't notify winners. Tell them yourself, for example with a mass email to the silo's entrants; see the *Mass email* guide (Attendees section).
+ConCat doesn't notify winners. Tell them yourself, for example with a mass email to the silo's entrants; see [Mass email](../attendees/mass-email.md).
 
 ## What attendees see
 

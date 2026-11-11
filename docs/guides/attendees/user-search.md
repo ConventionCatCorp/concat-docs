@@ -149,4 +149,4 @@ Each tab needs its own permission, so you only see the tabs your roles allow. Ta
 A shield after **User Profile** means the person's identity was verified with Stripe Identity. A red icon after the email address means they haven't confirmed it yet. A warning sign there means they've asked to change it and haven't clicked the link sent to the new address.
 :::
 
-The **Roles** and **Permissions** tabs are explained in full in the *Roles and permissions* guide (System section).
+The **Roles** and **Permissions** tabs are explained in full in [Roles and permissions](../system/roles.md).

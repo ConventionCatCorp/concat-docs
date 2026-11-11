@@ -109,6 +109,6 @@ Because a word matches anywhere in the text, a short word also matches harmless 
 | **Kiosk** | Self-registration kiosks, and whether **Devices** is shown | [Kiosk](./kiosk.md), section 2 |
 | **Cashier UI** | Check-in without printing, and a required reason for reprints | [Cashier UI](./cashier/cashier.md) |
 | **Form Editor** | Opening the registration form editor | [Registration form editor](./form-editor.md), section 2 |
-| **Export Data** | Downloading every registration as **CSV** or **JSON** | the *Exports* guide (System section) |
+| **Export Data** | Downloading every registration as **CSV** or **JSON** | [Exports](../system/exports.md) |
 
 </TableFigure>

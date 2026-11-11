@@ -18,7 +18,7 @@ What QuikTicket does and who can use it (section 1), turning QuikTicket off and 
 Authorizing a device needs **admin:ticket:scan** (*Mark issued tickets as scanned*) or **admin:ticket:read** (*Access all issued tickets*). The *admin* role has both. Authorizing for someone else also needs **system:devices:manage** (*Allows managing authorized QuikTicket devices*), which no default role has: give it through a role, as in [Users and access](../../quickstart/users-and-access.md), section 3.
 </Sidenote>
 
-QuikTicket scans the QR codes on tickets for ticketed products. Attendees find their ticket codes on their **Attendance** page, under **Tickets**, by clicking **Show details**. Ticketed products themselves are set up in the *Ticketed products* guide (Products section).
+QuikTicket scans the QR codes on tickets for ticketed products. Attendees find their ticket codes on their **Attendance** page, under **Tickets**, by clicking **Show details**. Ticketed products themselves are set up in [Ticketed products](../../products/tickets.md).
 
 An authorized device acts with the account that authorized it, and carries only that account's ticket permissions: scanning, reading, or both. *Devices are authorized for 6 hours before requiring reauthorization with a new code.*
 

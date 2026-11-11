@@ -39,7 +39,7 @@ Table 1.1 describes the parts of the page. With nothing in the cart, the page sa
 | Taxes and surcharges | Under each item, a **Tax** or **Fee / Surcharge** line for each surcharge, then **Total w/ Surcharges**. <small>Surcharges are set up in [Store and products setup](../quickstart/store-setup.md), section 3.</small> |
 | **Fees, Charges, and Fines** | The total of any fees you've charged the attendee. See [Fees](./fees.md). |
 | **Order Summary** | A total for each product category, the fees, **Taxes & Surcharges**, any **Discount** from a voucher, and the **Order Total**. <small>After a part payment, the last line is **Remaining Balance**.</small> |
-| **Have a voucher to redeem?** | A code field and **Redeem Voucher**. See the *Vouchers* guide (Products section). |
+| **Have a voucher to redeem?** | A code field and **Redeem Voucher**. See [Vouchers](../products/vouchers.md). |
 
 </TableFigure>
 
@@ -111,6 +111,6 @@ If the order isn't paid yet, the page says **Payment error** with *The payment i
 
    <Result>The **Transaction history** page lists the attendee's orders as cards, newest first. Each card shows **Order #** and the number with the order total, **Order paid:** and the date once it's paid, the items and an **Order Summary**. With no orders, the page says *You've got no previous orders.* and *Once you pay for an order, you can view and manage it here.*</Result>
 
-Orders from your organization's other conventions are listed too, with that convention's short name after the order number. An order with tickets ends with *You have one or more tickets for this order.* and a **Retrieve Ticket(s)** button: see the *Ticketed products* guide (Products section).
+Orders from your organization's other conventions are listed too, with that convention's short name after the order number. An order with tickets ends with *You have one or more tickets for this order.* and a **Retrieve Ticket(s)** button: see [Ticketed products](../products/tickets.md).
 
 There's no receipt page: the *Payment Successful* email is the receipt, and only staff can resend it (see [Orders](./orders.md), section 4). The **⋯** menu on an order card is where attendees ask for a refund, as [Refunds](./refunds.md), section 2, shows.

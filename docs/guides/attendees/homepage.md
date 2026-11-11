@@ -52,7 +52,7 @@ The sidebar is only shown to people who are logged in. Most items appear only wh
 
 </TableFigure>
 
-You can add your own links under **Attendance**, **Event store** or **Applications**; the *Convention settings* guide (System section) explains how. The **User menu** holds **Log out**: see [Attendee accounts and sign-in](./accounts.md), section 9.
+You can add your own links under **Attendance**, **Event store** or **Applications**; [Convention settings](../system/settings.md) explains how. The **User menu** holds **Log out**: see [Attendee accounts and sign-in](./accounts.md), section 9.
 
 ## The Attendance dashboard
 
@@ -77,11 +77,11 @@ The top of the **Attendance** page is a status card that tells the attendee what
 
    <Result>The registration form opens, at an address ending in `/event/register/new`.</Result>
 
-Registering is covered in the *How attendees register* guide (Registration section), and opening registration in [Registration setup](../quickstart/registration-setup.md), section 7. When sub-accounts are on, the heading reads **Your registrations** and an **Attendees** counter appears with buttons to add people: see the *Sub-accounts, children and minors* guide (Registration section). Attendees whose email isn't confirmed also see a reminder banner: see [Attendee accounts and sign-in](./accounts.md), section 2.2.
+Registering is covered in [How attendees register](../registration/registering.md), and opening registration in [Registration setup](../quickstart/registration-setup.md), section 7. When sub-accounts are on, the heading reads **Your registrations** and an **Attendees** counter appears with buttons to add people: see [Sub-accounts, children and minors](../registration/sub-accounts.md). Attendees whose email isn't confirmed also see a reminder banner: see [Attendee accounts and sign-in](./accounts.md), section 2.2.
 
 ## Your notice to attendees
 
-You can post a notice at the top of every attendee's dashboard, for example to announce a deadline or a change of venue. You write it in Registration settings, under **Attendee Notice**, as the *Registration settings* guide (Registration section) explains.
+You can post a notice at the top of every attendee's dashboard, for example to announce a deadline or a change of venue. You write it in Registration settings, under **Attendee Notice**, as [Registration settings](../registration/settings.md) explains.
 
 1. With a notice saved, open **Attendance** as a test attendee.
 
@@ -141,7 +141,7 @@ Each person on the account has a card under **Your registration**: people with a
 
 </TableFigure>
 
-When the attendee can't register another person yet, **Register** on a sub-account's card is grey, and clicking it explains why, for example *Enter your own registration details first before adding other attendees.* Sub-accounts are covered in the *Sub-accounts, children and minors* guide (Registration section), and the **QR code** in [Scanner](../registration/cashier/scanner.md). A **Tickets** list appears below the cards for attendees who bought ticketed products; see the *Ticketed products* guide (Products section).
+When the attendee can't register another person yet, **Register** on a sub-account's card is grey, and clicking it explains why, for example *Enter your own registration details first before adding other attendees.* Sub-accounts are covered in [Sub-accounts, children and minors](../registration/sub-accounts.md), and the **QR code** in [Scanner](../registration/cashier/scanner.md). A **Tickets** list appears below the cards for attendees who bought ticketed products; see [Ticketed products](../products/tickets.md).
 
 ## The footer and changelog
 
@@ -153,7 +153,7 @@ When the attendee can't register another person yet, **Register** on a sub-accou
 
    <Result>The **Changelog** page opens on the latest year, listing ConCat's releases with their dates, and **Previous year** and **Next year** buttons where there are other years.</Result>
 
-The changelog lists changes to ConCat itself, not to your event. The two policy links open your **Convention Policy / Terms & Conditions** and **Privacy terms**: see [Convention setup](../quickstart/convention-setup.md), section 3. The **Language** list changes the language of ConCat's screens; see the *Languages and wording* guide (Technical section).
+The changelog lists changes to ConCat itself, not to your event. The two policy links open your **Convention Policy / Terms & Conditions** and **Privacy terms**: see [Convention setup](../quickstart/convention-setup.md), section 3. The **Language** list changes the language of ConCat's screens; see [Languages and wording](../technical/languages.md).
 
 ## The waiting room
 

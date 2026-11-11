@@ -105,4 +105,4 @@ These steps are what a lead does. To try them yourself, name yourself a lead (se
 
 Staff see the request on **Volunteers › Applications**: the row's **Status** is **Pending Request**, and in the **Assign** view the department's button has a yellow outline. Clicking it assigns the volunteer.
 
-Leads also see **Mass Email** in the Volunteers sidebar, limited to the volunteers of their own departments. See the *Mass email* guide (Attendees section). Answers to questions marked **Visible to admins only** are not shown to leads, unless they also have `volunteer:update` (see [Volunteer settings and form](./settings.md), section 4).
+Leads also see **Mass Email** in the Volunteers sidebar, limited to the volunteers of their own departments. See [Mass email](../attendees/mass-email.md). Answers to questions marked **Visible to admins only** are not shown to leads, unless they also have `volunteer:update` (see [Volunteer settings and form](./settings.md), section 4).

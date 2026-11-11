@@ -64,7 +64,7 @@ When nothing can be listed, the store says *There are no items available.* and *
 
 The **Quantity** field is left out for ticketed products, and for products limited to one per person. A product whose stock has run out shows a disabled **Sold Out!** button instead of **Add to cart**.
 
-A product in a Gatekeeping silo first asks attendees to enter a draw, with **Enter raffle**; see the *Gatekeeping* guide (Registration section).
+A product in a Gatekeeping silo first asks attendees to enter a draw, with **Enter raffle**; see [Gatekeeping](../registration/raffle.md).
 
 ## Eligibility, limits and exclusions
 
@@ -102,4 +102,4 @@ The product form has no field for exclusions, so they can't be set up from House
 When the product is free and the attendee's cart has nothing to pay, the button reads **Complete order** instead. Clicking it completes the order straight away: **Order completed!** appears, with *Your order for … has been completed.* and a **View transaction history** button.
 :::
 
-Paying for the order is covered in the *Checkout and payment* guide (Orders section).
+Paying for the order is covered in [Checkout and payment](../orders/checkout.md).

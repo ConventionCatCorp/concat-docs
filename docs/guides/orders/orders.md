@@ -88,7 +88,7 @@ To see one attendee's orders, open their profile, as in [Users and access](../qu
 | Item cards | **Pending payment** for an unpaid order. For a paid one: **Fulfilled** (items handed over, and items with nothing to hand over), **Unfulfilled** and **Canceled**. <small>Refunds are listed in the same cards, as **Refund #** and their status.</small> |
 | **Customer Info** | The attendee's name, ID, address and email. <small>The address needs PII access.</small> |
 | **Payments** | **Amount**, **Status**, **Gateway**, **Reference ID** and **Date** for each payment. <small>With `refund:create`, a Stripe reference links to the payment in Stripe.</small> |
-| **Vouchers** | Vouchers applied to the order. See the *Vouchers* guide. |
+| **Vouchers** | Vouchers applied to the order. See [Vouchers](../products/vouchers.md). |
 | **PagSeguro Checkouts** | Shown only if your organization uses PagSeguro and the attendee started a PagSeguro checkout. |
 | **Customer Profile**, **Transaction history** | Buttons that open the attendee's profile and, with `audit:read`, the order's audit history. |
 

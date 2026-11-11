@@ -175,7 +175,7 @@ A person between the child and minor age thresholds can create their own account
 
    <Result>The sign-up continues. On the policies step, your **Minor Registration Warning** is shown with the other policies.</Result>
 
-Choosing the last option stops the sign-up with **We're sorry**. Identity verification, where ConCat Support has turned it on, replaces this age check. The full sign-up is covered in the *Attendee accounts and sign-in* guide (Attendees section).
+Choosing the last option stops the sign-up with **We're sorry**. Identity verification, where ConCat Support has turned it on, replaces this age check. The full sign-up is covered in [Attendee accounts and sign-in](../attendees/accounts.md).
 
 ## The old child registration
 

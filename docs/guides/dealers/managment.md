@@ -40,7 +40,7 @@ An application goes through these steps:
 </TableFigure>
 
 :::caution[Watch out]
-ConCat doesn't email dealers when their status changes. Tell them yourself, for example with a mass email to the dealers (see the *Mass email* guide in the Attendees section).
+ConCat doesn't email dealers when their status changes. Tell them yourself, for example with a mass email to the dealers (see [Mass email](../attendees/mass-email.md) in the Attendees section).
 :::
 
 ConCat also keeps two roles in step with the applications: everyone with an application gets the *vendor* role, and everyone with an approved application gets *vendorApproved*. You don't assign these by hand.
