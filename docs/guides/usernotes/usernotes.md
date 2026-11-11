@@ -58,6 +58,10 @@ A role can also grant reading chosen categories to people without `user:note:rea
 
    <Result>The note appears in the **Notes** card. Its footer reads the category, **created by** your name, **on** and the date. A note kept to this convention has a grey badge with the convention's short name.</Result>
 
+:::caution[Keeping a note to this convention]
+**Apply only to this convention.** starts ticked, but ConCat saves the note for your whole organization unless you change the box first. To keep a note to this convention, untick the box and tick it again before you click **Add New Note**. The grey badge on the note shows it worked.
+:::
+
 3. *(Optional: edit)* Click the note's edit button (<MaterialIcon name="edit" />), change it in the **Edit User Note** dialog, and click **Edit**.
 
    <Result>A **Note has been edited** message appears.</Result>
@@ -84,7 +88,7 @@ The **User Notes** page lists notes across everyone, including bans on people wh
 
    <Result>A **Create New User Note** dialog opens, with **Note Category**, **User**, **Apply only to this convention.** and **Text**.</Result>
 
-4. Choose the **Note Category**, select the person in **User**, enter the **Text**, and click **Create**.
+4. Choose the **Note Category**, select the person in **User**, enter the **Text**, and click **Create**. To keep the note to this convention, untick and re-tick **Apply only to this convention.** first, as section 2 explains.
 
    <Result>A **Note has been added** message appears, the dialog closes, and the note is listed.</Result>
 
@@ -186,6 +190,10 @@ The **Note Categories** tab needs `user:note:categories:manage`, which only the 
 
 5. *(Optional: delete)* Click **Delete** on a category you added, then **Delete** in the **Delete Category** dialog.
 
-   <Result>A **Category deleted.** message appears, and the category is no longer listed.</Result>
+   <Result>A **Category deleted.** message appears.</Result>
+
+:::caution[Deleting a category doesn't remove it yet]
+In the current version of ConCat, a deleted category is still listed and can still be chosen for new notes, even after you reload the page. To steer staff away from it, change its **Category Display Name** with **Modify**, for example to *Do not use*. In the **Delete Category** dialog, **Delete all notes?** shows as a text box rather than a checkbox, and **Cancel** doesn't close the dialog; reload the page to leave it.
+:::
 
 **Category Name** is the internal name; **Category Display Name** is what staff see, if you set one. Tick **Mark category as restricted.** for notes only people with `user:note:read:hr` should read. **Cashier**, **Ban** and **Restriction** have no **Delete** button.
