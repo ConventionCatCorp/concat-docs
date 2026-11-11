@@ -38,7 +38,7 @@ A domain can be set for the organization, which covers every convention, or for 
 
    <Result>A CSV file downloads, with the columns `Type`, `Name` and `Value` and one `CNAME` row per record.</Result>
 
-5. Add each record at your domain's DNS provider, as [CNAME Records](../technical/cname.md#custom-email-domains) explains. Then click **Verify**.
+5. Add each record at your domain's DNS provider, as [CNAME Records](../technical/cname.md#custom-email-domain) explains. Then click **Verify**.
 
    <Result>A *Your domain was successfully validated.* message appears, and the card says *This organization's email domain is:* (or *convention's*) and your domain. If DNS hasn't updated yet, the message is *Your domain was not able to be validated yet.* Wait, then click **Verify** again.</Result>
 
