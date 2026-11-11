@@ -83,9 +83,9 @@ In the **Applications** card, **Count** is every application in the area, **Conf
 
    <Result>Only matching rows are listed.</Result>
 
-3. *(Optional)* To narrow the list by **Status**, **Registration**, **Area** or **Table Type**, use the filter button in that column's header and choose the values to show.
+3. *(Optional)* To narrow the list by **Status**, **Registration**, **Area** or **Table Type**, click the filter button in that column's header. In the list that opens, untick the values you don't want (or untick **(Select all)** and tick the ones you do), then click **Apply**.
 
-   <Result>Only rows with those values are listed.</Result>
+   <Result>Only rows with those values are listed, and the column's filter button is highlighted. To remove the filter, open it again and click **Clear**.</Result>
 
 4. Click the business name in the **Store** column.
 
