@@ -54,7 +54,7 @@ System settings need the permission to update system settings. The administrator
    <Result>A table lists your organization's conventions, with columns **Long Name**, **Short Name**, **Dates** and **Domain**. Your convention's row shows the new dates and your instance's address.</Result>
 
 :::note[One organization, several conventions]
-Your organization can run more than one convention, each at its own address. The **Conventions** tab is also where you start next year's event, with **Next Year**, which copies most settings from this one.
+Your organization can run more than one convention, each at its own address. The **Conventions** tab is also where you start next year's event: the add button (<MaterialIcon name="add" />) above the table offers **Next Year**, which copies most settings from this one.
 :::
 
 ## Terms and policies

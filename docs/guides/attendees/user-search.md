@@ -26,7 +26,7 @@ Accounts belong to your organization, not to one convention, so the search cover
 
 2. In **Search users...**, type the start of a first name, last name or username.
 
-   <Result>After a moment, matching people are listed, at most 15 to a page, with page buttons below when there are more. Each row shows the person's picture and name, with the text that matched in bold, then their status badges (Table 3.1) and, underneath, their badge name for this convention.</Result>
+   <Result>After a moment, matching people are listed, at most 15 to a page, with page buttons below. Each row shows the person's picture and name, with the text that matched in bold, then their status badges (Table 3.1) and, underneath, their badge name for this convention.</Result>
 
 3. Replace the text with a badge ID in its printed form, such as `B101`.
 
@@ -34,7 +34,7 @@ Accounts belong to your organization, not to one convention, so the search cover
 
 4. Replace the text with a name nobody has, such as `zzzz`.
 
-   <Result>**No results found.** appears above the **Search Parameters** list.</Result>
+   <Result>**No results found.** appears under the **Search Parameters** heading, above the list of what you can search for.</Result>
 
 Table 1.1 lists everything you can type.
 

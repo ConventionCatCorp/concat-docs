@@ -67,14 +67,14 @@ An option asks attendees for extra details when they register, such as a T-shirt
 ## Addons
 
 <Sidenote title="Addons are products too">
-An addon points to another product, so its price and stock are kept in one place. Create the product first, usually in your store ([Store and products setup](./store-setup.md)), then come back to attach it.
+An addon points to another product, so its price and stock are kept in one place. Create the product first in your store ([Store and products setup](./store-setup.md)), then come back to attach it. A badge product can't be an addon.
 </Sidenote>
 
 An addon is a product that comes with a tier, such as a free T-shirt with a Sponsor badge or a paid banquet seat attendees can add.
 
 1. Open a badge product (section 1, step 4). In its **Addons** card, click the green **Add** button.
 
-   <Result>A **Product Search** field appears, with the checkboxes **Add-on is complimentary and should be provided free** and **Add-on is hidden and should not appear in users' carts**, and a **Create Add-On** button. With no addons yet, the card says *There are no addons for this product.*</Result>
+   <Result>A **Product Search** field appears, with the checkboxes **Add-on is complimentary and should be provided free** and **Add-on is hidden and should not appear in users' carts**, and a **Create Add-On** button.</Result>
 
 2. Select the product in **Product Search**. Tick **Add-on is complimentary and should be provided free** if it comes free with the tier, then click **Create Add-On**.
 
@@ -94,7 +94,7 @@ The registration form is the page attendees fill in after choosing a tier. It's 
 
 2. In the **Form Editor** card, click **Go to Registration Form Editor**.
 
-   <Result>The **Express Mode Editor** opens. The current form's sections are on the left, and the **Toolbox** of elements is on the right. The address ends in `/housekeeping/editor/registration`.</Result>
+   <Result>The **Express Mode Editor** opens. The **Toolbox** of elements is on the left. On the right, under **Form Editor**, are the current form's sections, with **View Preview** and **Save Changes** buttons. The address ends in `/housekeeping/editor/registration`.</Result>
 
 3. Drag an element from the **Toolbox** into a section, or drag an element to reorder it.
 
@@ -126,7 +126,7 @@ Sub-accounts let one account register a group or family and pay for everyone in 
 
 Attendees then see the options below on their **Attendance** page, under **Your registrations**, once they've registered themselves.
 
-1. As an attendee, click **Register another attendee**.
+1. As an attendee, click **Register another attendee** (**Register another attendee (Ages** *age***+)** when PII-free children are allowed).
 
    <Result>The registration starts with a **New user** step asking for the person's name and date of birth. It uses the account holder's address unless **Use different mailing address** is ticked. Then it continues to **Registration Type**, **Additional Information** and **Review**.</Result>
 

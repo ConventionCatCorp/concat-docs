@@ -74,10 +74,10 @@ Housekeeping is split into modules: Attendees, Registration, Store Management, V
 
 | Module | Sidebar items |
 | --- | --- |
-| Attendees | **Dashboard**, **Cashier UI**, **Devices**; under *Attendee Management*: **User Search**, **User Notes**, **Fee Management**, **Refund Requests**, **Mass Email**, **Event Statistics** |
+| Attendees | **Dashboard**, **Cashier UI**, **Devices** <small>(hidden when QuikTicket is turned off)</small>; under *Module Management*, when hotels are on: **Hotel Management**; under *Attendee Management*: **User Search**, **User Notes**, **Fee Management**, **Refund Requests**, **Mass Email**, **Event Statistics** |
 | Registration | **Dashboard**, **Registration Statistics**, **Mass Email**, **Settings**, **Dynamic Export**; under *Badges and Tiers*: **Badge Products**, **Options**, **Badge Art**, **Badge Designer**, **Registration Flags** |
 | Store Management | **Store Products**, **Options**, **Surcharges**, **Vouchers**, **Orders**, **Gatekeeping** |
-| Volunteers | **Dashboard**, **Applications**, **My Department(s)**, **Mass Email**, **Volunteer Stats**; under *Settings*: **Options**, **Volunteer Settings** |
+| Volunteers | **Dashboard**, **Applications**, **My Department(s)** <small>(department leads only)</small>, **Mass Email**, **Volunteer Stats**; under *Settings*: **Options**, **Volunteer Settings** |
 | Dealers | **Dashboard**, **Applications**, **Areas**, **Products**, **Mass Email**, **Options**, **Dynamic Export**; under *Settings*: **Dealer Settings** |
 | System | **Dynamic Export**, **Export**, **User Creation**, **Audit Logs**, **Developers**, **Settings**, **Roles** |
 

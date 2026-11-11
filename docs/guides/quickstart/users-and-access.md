@@ -24,7 +24,7 @@ Attendees and most staff create their own accounts from your homepage. Create an
 
 2. Fill in **Reason for manual creation**, which is written to the audit log, and the person's details: **Username**, **Email Address**, **First Name**, **Last Name**, **Preferred Name**, **Date of birth**, address and **Phone number**. Tick **Send the user an account confirmation email.**, so they can confirm the address and set their own password. Then click **Create User**.
 
-   <Result>An **Account created.** message appears.</Result>
+   <Result>An **Account created.** message appears, and the new person's profile opens.</Result>
 
 :::note[Creating a sub-account]
 Choosing an **Owner account** makes the new person a sub-account of that account, as when a parent registers a child (see [Registration setup](./registration-setup.md), section 5).
@@ -66,13 +66,13 @@ A permission allows one action, such as viewing orders. A role is a named set of
 
    <Result>The person is listed on the role's **Users** tab.</Result>
 
-5. *(Instead of step 4, for people who will sign up themselves)* Click **Invites**, then **Create Invite**. Set the **Amount** of codes, their **Max Uses** (`-1` for unlimited) and when they **Expire**, then click **Create Invite**.
+5. *(Instead of step 4, for people who will sign up themselves)* Click **Invites**, then **Create Invite**. Set the **Amount** of codes, their **Max Uses** (`-1` for unlimited) and when they expire (**Expires**), then click **Create Invite**.
 
    <Result>An **Invite(s) created!** message appears, and the invite is listed with its **Code**, **Expiration** and **Uses**. Its **Copy Link** button copies a link to send to your team, and shows **Invite link copied to clipboard**.</Result>
 
 To make a new role, click **Add new role** on the **Roles** page. Fill in the **Create new role** dialog: the name, the description, an optional **Cashier message** shown at check-in, the **Role Managers** who may hand the role out, and the **User Note Categories** its members may read. Then click **Save**. A **Role created successfully** message appears.
 
-You can also give a role from a person's profile (section 2). On the **Roles** tab, each role has a **Convention** button and a **Global** button. Click one to give the role for this convention or for all conventions; a **Role added** message appears, and the button is highlighted. Click it again to take the role away.
+You can also give a role from a person's profile (section 2). On the **Roles** tab, each role has a **Convention** button and a **Global** button. Click one to give the role for this convention or for all conventions; a **Role added** message appears, and the button is highlighted. Click it again to take the role away; a **Role removed** message appears.
 
 :::caution[Watch out]
 **Deny** always wins. If any of a person's roles denies a permission, they don't have it, whatever their other roles allow.

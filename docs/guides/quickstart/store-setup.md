@@ -38,7 +38,7 @@ Every store product belongs to a category, such as *Merchandise* or *Charity*.
 
 3. Enter a **Name** and click **Create Category**.
 
-   <Result>A **New category has been created.** message appears. Click **Back to Categories** to see it in the list.</Result>
+   <Result>A **New category has been created.** message appears, and the new category's page opens. Click **Back to Categories** to see it in the list.</Result>
 
 ## Products
 
@@ -62,7 +62,7 @@ To change the price later, use the **Prices** card: click **Change Price**, ente
 
 ### Images
 
-1. In the **Product Images** card, click the green **Create** button (<i className="material-symbols-outlined">add</i>) and choose an image file.
+1. In the **Product Images** card, click the green **Create** button (<i className="material-symbols-outlined">add</i>). Click the upload area, **Choose or drop images to upload.**, and choose an image file, or drag one onto it.
 
    <Result>An **Upload Complete!** message appears, and the image is shown in the card.</Result>
 
