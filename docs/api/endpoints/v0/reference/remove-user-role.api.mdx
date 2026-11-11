@@ -1,0 +1,74 @@
+---
+id: remove-user-role
+title: "Remove a role from a user"
+description: "Removes the role from the user, whether it was granted for this convention or globally. Roles that an automated process manages can't be removed."
+sidebar_label: "Remove a role from a user"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVk1v20gM/SsD5rBtIVhut4dCewrSHAIU2G4+Tq6B0DO0NBtpRpmh7BqG/vuCM7LjtGl7Wexlc7E0Q1Lke49k9uB7CsjWuysDFQTq/IbuIoVr3xIUYCjqYHsxgAqu03VU3JAKviW1Dr5Lb0OkUKhtQ9xQUJbVFqOqAzomo9Y+KG5sVNq7DTkJpnxQdetX2La7mZKPSVRkhU7hwL5DceyD1xSj6tBhTVFpdL+xWpHKeZrZF/fFnZ2dqfOBGwmsUylyeivfI2d6bx2rQI+DDVPm95JsJfnHaugNMt2rqH1PMyigx4AdMYUI1WIPDjuCCsTjykABVmDokRsoYApqoOIwUAFRN9QhVHvgXS9e1jHVFKCAzjrbDR1U83EsjlElhX8r6rIAxlqSTmEjLCVU7L2LFMX73fy9/Dwn9PZApNA1gfqc1BmMBbyfz1/ytTE72wNDRq12LzOIzgh7zif6OnSDMH/kEQrQ3jE5lu+8Kd/Iz3eV+9XfpFlICiJbtrkyCsGH+Gu71tdW/9pMe0MnVpGDdTUUQE6gXrz9/cNyLKCjGLH+mSGcM1PXCwrsFRpT5moFIOEwOGwTfjNYjsc/AfsHRAkdyniKSmBscEO5q3KMMSXFjZc+NtQSU5IzN1BBib0tN/NSQsRyn+U8lkkp5T7rcIQCIukhWN4l7f8pXQXVYiniOtzcCCkZqOn+CU8cuHkHBaxbv81QtpYcXwQy0pzYZpL8A7m70B7SSm5lOpUMpBGTXe5SQpMGD5qpfmRMavp8dQVFNtKBkCWDi/SQDVFrPziOByPnmb4P1we/ti0JonQ0PR0NUMFdesj2ubektWobOU/OZ1FPL1KyUMCGnPHPazGE7VSNGPh2cEzf1Hs8PZj5YChUG0vbg0k6eX6dO/E4rBNWgTb+gSZry9RJCXEXmbqKvvY+cBUfW5uqvUzvKjKyjWx1zJBbp27++mSZZJp3yDCp1bq1T6xabhMF3l0gq/PPV+qj10NHjhMWCYYQs5rfzuaz+QvbZU2BnKZpYZCagt1v5vfq+vLmVsLO1DU9DhQ5ypg5TH1SW8uNtFZSpbAvYyep6g8ViVK8Rb6sB2to+aph7mNVlto7jTzDvi+N1zGJsiZm6+rIGJhM1ujrlFfjt9LPNbHyjtJ47H3kDp3AME32A/YnWxKTgL4tev809/4P23WaFExfuexbtE7gG2QW7KdRtQDsrYhlPnWjSLU67t9D/1XT7lwW0PjI4rffrzDSXWjHUY4fBwoyx5YFbDBYXIk8F3swNsqzgWqNbaSf8PHqelrFr9WPUp8O0e0kZWwHeYMCHmj39F+DbPz/8KsTMqNsqYbQUEh158tzrannEzfZtTLfj6vj4+Wny9tLGMd/AEmBgNo=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/endpoints/v0/reference/concat-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove a role from a user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/v0/users/{userId}/roles/{roleId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Removes the role from the user, whether it was granted for this convention or globally. Roles that an automated process manages can't be removed.
+
+### Authentication
+
+This endpoint requires the `user:roles:update` scope.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./remove-user-role.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./remove-user-role.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./remove-user-role.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

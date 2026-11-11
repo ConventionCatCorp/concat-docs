@@ -4,7 +4,7 @@ displayed_sidebar: apiSidebar
 ---
 
 :::caution Please Be Aware
-API documentation here is not automatically updated. We do our best to keep it up to date, but it may be incomplete. For the most accurate and up to date information about our `v0` API, please navigate to `/api/docs` from your instance URL. This endpoint is where our Swagger documentation lives, which is automatically generated from code.
+The [Endpoint reference](/docs/api/endpoints/v0/reference/concat-api-documentation) is generated from the ConCat API's own Swagger spec. The guides around it are written by hand: we do our best to keep them up to date, but they may be incomplete. Every ConCat instance also serves its live Swagger documentation at `/api/docs`.
 :::
 
 # API Introduction
@@ -20,7 +20,7 @@ We currently don't have any SDKs available, but we'll give you everything you ne
 The latest version of the API is **v0**.
 
 :::caution Beta Notice
-The v0 API is in **beta** and is subject to change, including without limitation any breaking changes to the API. All API changes will be documented on the API Release Notes page.
+The v0 API is in **beta** and is subject to change, including without limitation any breaking changes to the API. See the [Endpoint reference](/docs/api/endpoints/v0/reference/concat-api-documentation) for every v0 endpoint.
 :::
 
 ### Guidelines, Do's & Don'ts

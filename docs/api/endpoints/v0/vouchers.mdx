@@ -1,0 +1,45 @@
+---
+sidebar_position: 8
+displayed_sidebar: apiSidebar
+hide_table_of_contents: true
+---
+
+# Vouchers
+
+<SplitColumn>
+  <div>
+    <p>
+      A voucher is a code that takes an amount off an order. Vouchers belong to the event organization, and each one lists the orders it was applied to.
+    </p>
+    <p>
+      <strong>Scope:</strong> <code>order:view</code>, a <Link to="/docs/api/gettingstarted/scopes#service-integration-scopes">service integration scope</Link>.
+    </p>
+  </div>
+  <RestList>
+    <RestElement method="POST" path="/api/v0/vouchers/search" anchor="search-vouchers" />
+  </RestList>
+</SplitColumn>
+
+## The voucher object
+
+- `code` is the voucher code, and `amount` an integer.
+- `availableFrom` is a timestamp; `availableTo` is a timestamp or `null`. `displayName` can be `null`.
+- `canBeStacked`, `maxUses` and `productsRestriction` (a list of product IDs, as numbers) describe the voucher's limits.
+- `orders` lists the orders the voucher was applied to, each with its `orderId`, `status`, `paidAt` (or `null`) and `userId`.
+- Deleted vouchers are included.
+- IDs are strings, except in `productsRestriction`.
+
+## Paging
+
+[Search vouchers](#search-vouchers) returns `{ "hasMore": …, "nextPage": …, "data": [ … ] }`. Leave `nextPage` out of the first request. While `hasMore` is `true`, send the `nextPage` value from the previous response to get the next page. On the last page, `nextPage` is left out of the response rather than set to `null`. An invalid `nextPage` returns logic error `112` (`BadPaginationToken`).
+
+## Endpoints
+
+### Search vouchers
+
+Returns the organization's vouchers, ordered by ID. `limit` is 1 to 100, and defaults to 100.
+
+- Without a filter, vouchers marked as internal-only are left out.
+- With `filter.voucherIds`, an array of up to 100 voucher IDs, you get those vouchers, internal-only ones included. `nextPage` is ignored in this case.
+
+Scope: `order:view`. [Full reference](/docs/api/endpoints/v0/reference/search-vouchers).

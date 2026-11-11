@@ -1,172 +1,53 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 displayed_sidebar: apiSidebar
 hide_table_of_contents: true
 ---
 
-import RegistrationModel from './_registrationModel.mdx';
-
-# Registrations
+# Registration
 
 <SplitColumn>
   <div>
-    This object represents event registrations within a convention.
+    <p>
+      A registration is a user's attendee registration for the current convention: their badge, the registration product they chose or paid for, their answers to registration options, and any flags.
+    </p>
+    <p>
+      <strong>Scope:</strong> <code>registration:read</code>, a <Link to="/docs/api/gettingstarted/scopes#service-integration-scopes">service integration scope</Link>. A user can read their own registration without it.
+    </p>
   </div>
   <RestList>
-    <RestElement method='GET' path='/api/v0/users/{id}/registration' anchor='get-registration' />
-    <RestElement method='POST' path='/api/v0/registration/search' anchor='search-registrations' />
+    <RestElement method="POST" path="/api/v0/registration/search" anchor="search-registrations" />
+    <RestElement method="GET" path="/api/v0/users/{id}/registration" anchor="get-a-user-registration" />
   </RestList>
 </SplitColumn>
 
-### Get Registration
+## The registration object
 
-<SplitColumn>
-  <div>
-    <p>
-      Gets a single user registration by the giver user id.
-    </p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>registration:read</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Request</h4>
-    <RegistrationModel />
-  </div>
-  <div>
-    <ExampleBox method='GET' header='/api/v0/users/{id}/registration' headerSubText='JSON' />
-    <ExampleBox header='Response' headerSubText='JSON'>
-      {`{
-  "createdAt": "2022-02-23T00:30:47.468Z",
-  "updatedAt": "2022-09-21T01:04:51.456Z",
-  "badgeName": "Joe",
-  "status": "paid",
-  "productName": "Patron",
-  "productDisplayName": null,
-  "productId": "172",
-  "options": [
-      {
-          "name": "Species",
-          "type": "text",
-          "value": "Mega Bunny"
-      },
-      {
-          "name": "Shirt Size",
-          "type": "select",
-          "value": "M"
-      }
-  ],
-  "flags": [
-      {
-          "id": "1",
-          "shortName": "fursuits"
-      }
-  ],
-  "user": {
-      "id": "1234",
-      "firstName": "John",
-      "lastName": "Doe",
-      "username": "jdoe",
-      "preferredName": "Johnny",
-      "phone": "+15555555555",
-      "email": "johnny.test@concat.systems"
-  }
-}`}
-    </ExampleBox>
-  </div>
-</SplitColumn>
+- `uuid` identifies the registration, and `badgeId` is the number printed on the badge. `badgeName` can be an empty string.
+- `status` is `paid` when the registration has been paid for, and `unpaid` otherwise.
+- `productId`, `productName` and `productDisplayName` describe the paid-for product when `status` is `paid`, and the selected registration product otherwise. `productDisplayName` can be `null`.
+- `order` is only present when the registration is paid. It holds the `orderId` and `orderItemId` that paid for it.
+- `badgePrinted` is the ID of the user who printed the badge, or `null` if it hasn't been printed.
+- `flags` lists the registration's flags, each with an `id` and a `shortName`.
+- `options` lists the registration's option answers. Each has an `id`, a `name`, a `type` (`address`, `currency`, `file`, `multi`, `number`, `phone`, `select` or `text`) and a `value`.
+- `user` is the registered user: `id`, `firstName`, `lastName`, `username`, `preferredName`, `email`, `phone` and `profilePictureURL`. All but `id` and `profilePictureURL` can be `null`.
+- IDs are strings.
+
+## Paging
+
+[Search registrations](#search-registrations) returns `{ "hasMore": …, "nextPage": …, "data": [ … ] }`. Leave `nextPage` out of the first request. While `hasMore` is `true`, send the `nextPage` value from the previous response to get the next page. On the last page, `nextPage` is left out of the response rather than set to `null`. An invalid `nextPage` returns logic error `112` (`BadPaginationToken`).
+
+## Endpoints
 
 ### Search registrations
 
-<SplitColumn>
-  <div>
-    <p>
-      Search for registrations. A maximum of 100 results will be returned per request. If additional results are available, they can be retrieved using the <code>nextPage</code> parameter from the previous response.
-    </p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>registration:read</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Request</h4>
-    <Attribute id="su-nextPage" name="nextPage" type="string" optional>
-      A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>nextPage</code> parameter from the previous response for each subsequent request.
-    </Attribute>
-    <Attribute id="su-limit" name="limit" type="number" optional>
-      The maximum number of results to return, between 1 and 100. Defaults to 100.
-    </Attribute>
-    <ParentAttribute id="su-filter" name="filter" type="object" optional>
-      <span>Filters to apply to the search.</span>
-      <>
-        <Attribute id="su-flr-userIds" name="userIds" type="number" optional>
-          The ID of the user to filter by.
-        </Attribute>
-      </>
-    </ParentAttribute>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Response</h4>
-    <ParentAttribute id="su-resp-data" name="data" type="Array of User" response optional>
-      <span>The registrations that match the search.</span>
-      <>
-        <RegistrationModel />
-      </>
-    </ParentAttribute>
-    <Attribute id="su-resp-nextPage" name="nextPage" type="string" response optional>
-      A cursor for pagination across multiple pages of results. If this attribute is present, there are more results available. Use this value in the <code>nextPage</code> parameter for the next request.
-    </Attribute>
-  </div>
-  <div>
-    <ExampleBox method='POST' header='/api/v0/registration/search' headerSubText='JSON'>
-      {`{
-  "nextPage": "eyBsYXN0SWQ6IDEwMDAgfQ==",
-  "limit": 100,
-  "filter": {
-    "userIds": ["1", "2", "3"],
-  },
-}`}
-    </ExampleBox>
-    <ExampleBox header='Response' headerSubText='JSON'>
-      {`{
-  "data": [
-    {
-      "createdAt": "2022-02-23T00:30:47.468Z",
-      "updatedAt": "2022-09-21T01:04:51.456Z",
-      "badgeName": "Joe",
-      "status": "paid",
-      "productName": "Patron",
-      "productDisplayName": null,
-      "productId": "172",
-      "options": [
-          {
-              "name": "Species",
-              "type": "text",
-              "value": "Mega Bunny"
-          },
-          {
-              "name": "Shirt Size",
-              "type": "select",
-              "value": "M"
-          }
-      ],
-      "flags": [
-          {
-              "id": "1",
-              "shortName": "fursuits"
-          }
-      ],
-      "user": {
-          "id": "1234",
-          "firstName": "John",
-          "lastName": "Doe",
-          "username": "jdoe",
-          "preferredName": "Johnny",
-          "phone": "+15555555555",
-          "email": "johnny.test@concat.systems"
-      }
-    },
-  ],
-  "nextPage": null
-}`}
-    </ExampleBox>
-  </div>
-</SplitColumn>
+Returns the current convention's registrations, ordered by user ID. `limit` is 1 to 100, and defaults to 100.
+
+- `filter.userIds` is an array of up to 100 user IDs, as strings, to fetch the registrations of specific users.
+- `filter.paidProductId` only includes registrations paid for with that product.
+
+Scope: `registration:read`. [Full reference](/docs/api/endpoints/v0/reference/search-registrations).
+
+### Get a user registration
+
+Returns the user's registration for the current convention, or a `404` resource error if they haven't registered. Scope: `registration:read`, or none when a user reads their own. [Full reference](/docs/api/endpoints/v0/reference/get-user-registration).

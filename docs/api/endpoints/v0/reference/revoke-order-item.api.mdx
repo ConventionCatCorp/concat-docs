@@ -1,0 +1,74 @@
+---
+id: revoke-order-item
+title: "Revoke an order item"
+description: "Revokes what an item in a paid order granted, along with any free addons of it that haven't been handed out yet. Set `stockReturn` to put the stock back."
+sidebar_label: "Revoke an order item"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVsGO2zYQ/ZXB5NCkUC0nyKXqKd3msECBpLubk2Ngx+JYYlYiFXJkr2Ho34sh5V1vtk3Qc32xTD6OZ948vtER/cCBxHp3abDCwDt/xx+C4XAp3GOBhmMd7KAIrPAq7UfYtyRADqxwD9YBwUDWgNeD0ARywqYA6rxrYG+lBXIH2AZmIGO8i+C3YAVEw7S0Y/eTwIbZQUvOsAE/ChxYFnDNArdRfH13xTIGdwviYRj1KENahw3Vd4vP7rN78eIFvBulZSe2TjXp6k1rI7Azg7dOIPDX0QaO6fxtyrfqyVHDtxBrP/ACCxwoUM/CIWK1OqKjnrFCf2Ll0mCBVukYSFoscA5qsJIwcoGxbrknrI4oh0GPWifccMACe+tsP/ZYLadpnU9ylN+9OSi89k7YiT7SMHRzFeWXqOQfn8f1my9ci2YctI9iOSbcI19n4I33HZPDaTrPePUEvZ4m3RZqtPRccsSUaBy8izn+m+Vr/XoqjZuW5/4nUSQRwJ4iBO79jg1sg+8T7Y+oBU4Fvl0uvxstgvNJDUlj2p8zmn4uf/4vzHAIPsQf4zrf2PrHsNobPkNFCdY1WCA7bfHq7a/rqcCeY6Tme7izaluKeq/8KFHIGesa2FBHrmYgZ6Amp2RsGHoKd2yA4sxK6lz+KKVvf9gg4zkzy/c2yiLJomdpvfrA4GOqVvVdYUmDLXfLMsuh1OOxPJ7dh6nMxoEFRq7HYOWQbs4HvY5Yrdaq9dPOtfYq8zfvP9JMo7RvsMBt5/eZ4c6yk4vARm81dbl3/o7dp9CdUkvHyrSqGeg1TrgxcqgCk0nORQZ0AQwJJTI/Xl5ikUF1YBLN4CI9ZCDVtR+dxBPIeeHn4Ybgt7ZjpZIfoMF3HKtxMDnqp/SQ8WkrmUZjo2TvfRL1fCMliwXu2Bn/tBbD1M3VKMB3oxP+pt6H1RMsG97O8v4EyYp4sp39MAH05iaucn/P9KMlxEMU7iu+H3yQKn7tbKr2ffoNUUhsFFvHTLl1cP3Xn1YYtj70JDiLVd3t6tEH399TP3T8zMfUWif13a1PGrDSpYZ5d0EC7z5ewh++Hnt2kphLpIWYpf96sVws/2GYbTmwXq2tD8mZ5mC3u+UtXL2/vtGwC5iTi0CPw4VPYw2ShlUrHCMkDf4GkTnFW+XNZrSG1y9bkSFWZVl7V5MsaBhK4+uYJNywiHVNFArCJiv6Vcqr9XudeQ0LeMfJMfV29pS8fZ5NeS4n53jo0Lf1no2X/8kcn11F+F7KoSPrlLxRfeM4W9sKabAqleVJ/arrk76rpyN/9rh1ga3aY7XC43FDkT+Fbpp0+evIQY1vXeCOgqWNKnR1RGOjPhusttRF/k5fXl7Ng/kV/Fv+8yK5g+ZN3ai/sMA7PnzzkjLp9GmZDIeURkZc5D/75UbjPEZ49r4xFacT7+qaBznD6tBVR38YFx8/XN9ggZv5NaZPYxED7ZU12ucEfao3GXNaO2JHrhmz1eS/1M/fdL2tGA==
+sidebar_class_name: "post api-method"
+info_path: docs/api/endpoints/v0/reference/concat-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Revoke an order item"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/v0/orders/items/{orderItemId}/revoke"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Revokes what an item in a paid order granted, along with any free addons of it that haven't been handed out yet. Set `stockReturn` to put the stock back.
+
+### Authentication
+
+This endpoint requires the `order:manage` scope.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./revoke-order-item.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./revoke-order-item.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./revoke-order-item.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,74 @@
+---
+id: list-user-roles
+title: "List a user's roles"
+description: "Returns the roles the user holds for this convention, plus their global roles; `scope` says which each one is. Expired role grants are left out. The list isn't paginated, so `hasMore` is always `false`."
+sidebar_label: "List a user's roles"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVdtu4zYQ/RVi9mEvEGx3H7VPQRoUAbZo6iRPXgOekGOJjUQqnJGTwNC/F0PJjrNJ2x/okyjO4XAuh2f2EDtKKD6GSwclNJ7lliktY0MMBThim3yndihhSdKnwEZqMkkRedUzJVPHxrHZxmSk9mxsDDsKeqwwXdNnoE+mauIdNuPZb2bDNna0MYzPbB5rb2tDaGsTAxnPM3Px1PlELsNNlTAIG0xkGtqKib3MzE1NRkM2nsNHMR1WPqCQKwxHs6mRf4+JNsazweZRb9lssWHazH6EH+HDhw/mrJda47S5BLp7o+FTcF30QUyih96nKdGNZlomQrcxOfQZFNBhwpaEEkO52kPAlqAERV46KMBr3TqUGgqYnDkoJfVUANuaWoRyD/Lc6SkfhCpKUEDrg2/7FsrFMKwLEKzUPeTCwVpdcRcDE+vpr4uFfl736rq3lpi3fQMF2BiEgijqy/yLft7cHe/+IiuaUFJKiB99TzU8Ad7F2BAGGAoI9CRXWJ1aWZIPlRodyql/TAmftSBCLf/3vd6963Qs7zuG3I+3lgIoaBlX8MJIKGDkIayH4bQrK711uuPgcT38jDlURC1qa0nqqG+nopyG9rqEOXZ+vlvMlQg83498GOZpeldMtk9enjNn/lAWQrlaa6sPlmtt0FiLyf5SMuyl/goFbJv4mBG28RTkPJHTFLEZCxzvKdym5hBNPjbPu4f0Mu7I6vzC0Y0PWttnMDhzdXkJxQiyiVA0gvO8GIFobeyD8AEUotBbd12KW9+QUesRmqtR9p0bvd7mxYg/FCpR5VlGhXrl9dSQg4UCdhRcfJ2LI2ymbBQQmz4I/ZTvcfcAi8lRKneeHg+QvPPa3GLI1IcltXFHuVaJdvGeJvTI9AL4mYXakp66mKTkh8bnbC/yv2FB8Sze8lhyH8z1n9+9kIppiwITzXzYxtxVL01uQQznKObs6tL8Gm3fUhCc2L2jxKMI/DJbzBbvyPiWEgVLk16TmZxtdouNWV5c36jbmVnSQ0+sovuikmQevdQGg8ms1O4Ts8ms+maYKPtbjcaq947Wn2qRjsv53MZgUWbYdXMXLWdSViTiQ8WCSciNHP2c46rjo5FoKhIdCDN95F1kaTFoGSad/a7ij5kyH/lImlfp7l/U7/8B9s4Am0RF6EnmXYM+K3uvsrGfxGwF2Hnl1WJ6uFrj8jjijkOpjiyK3u/vkOk2NcOg2w89JRW6dQE7TB7vlL+rPTjPunZQ5pz+pW2flpP+fjb/FPBhygSdMTtsev2DAu7p+WUcD+uhgJrQUcoRjMYza6mTk2M6IlWKj8r+28UNDMPfyBwukw==
+sidebar_class_name: "get api-method"
+info_path: docs/api/endpoints/v0/reference/concat-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List a user's roles"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v0/users/{userId}/roles"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns the roles the user holds for this convention, plus their global roles; `scope` says which each one is. Expired role grants are left out. The list isn't paginated, so `hasMore` is always `false`.
+
+### Authentication
+
+This endpoint requires the `user:read` scope.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./list-user-roles.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./list-user-roles.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./list-user-roles.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

@@ -31,7 +31,26 @@ const config = {
       (process.env['NODE_ENV'] === 'production' ? '' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'),
   },
 
-  plugins: [require.resolve('docusaurus-plugin-sass')],
+  plugins: [
+    require.resolve('docusaurus-plugin-sass'),
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: 'openapi',
+        docsPluginId: 'classic',
+        config: {
+          // The v0 API reference, generated from ConCat master's Swagger spec (scripts/update-openapi.mjs).
+          concat: {
+            specPath: 'static/openapi/concat.json',
+            outputDir: 'docs/api/endpoints/v0/reference',
+            hideSendButton: true,
+            sidebarOptions: { groupPathsBy: 'tag' },
+          },
+        },
+      },
+    ],
+  ],
+  themes: ['docusaurus-theme-openapi-docs'],
 
   presets: [
     [
@@ -41,6 +60,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/ConventionCatCorp/concat-docs/tree/main/',
+          docItemComponent: '@theme/ApiItem',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.scss')],

@@ -1,0 +1,72 @@
+---
+id: search-registrations
+title: "Search registrations"
+description: "Returns this convention's registrations, ordered by user ID. Use `userIds` to fetch specific users, or `paidProductId` to only include registrations paid for with that product."
+sidebar_label: "Search registrations"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV0tvGzcQ/ivEpEDbYCvJAVoU25Ob5CAgbVw/TrIK0+RIy2SXZMhZ2YKw/70YciWtbCkPtMfqIi7n45DDeX3cgPMYJBlnpxpKiCiDqi5xaSLl6QgFaIwqGM+fUMIlUhtsFFSZKJSzK7Qs+T6KMFxXCBc0BtTifi3aiEFM34zETURxx19THe8EObFAUpWIHpVZGJWAaam489Loi+B0q2iqE9bZei2MVXWr8XAzwWCxcEE8GKoEVZKEz2tHt/bWvnjxQpy3VPFRVVrCs9dsAVrtnbEkAn5qTUA2DMXdUH0ZUOo7EZXzOIICGImRfnd6DeUGlLOElngova/7DcYfIl/XBqKqsJE8orVHKMHdf0BFUIAPfPtkMLLU4iNdyCUOkJGCsUsooJGP79AuqYLy1c+/dAXUpjE0QBpLuMSQnLWQbU1Qnk0mBTTGmqZtoDxLSvrxZNIVsDA1YfjyuXpvDYAyBLmGpHxK2EQoJ0l7/5E2Nnn83BQviTBwIP19e6s3Z8Wv3XfQdSwY+PsbVuZfASSXEcoZDD0Hc/ZW9M7GbMyryYT/DiP6qlUKY1y0NRRDb74cv/wWB1Yy/uHC0H/3ztUoLXTFZ7zbFaAlyS/d79MLPeWt1hy5vK4AFVAS6nM6Km29/pw0fk2gnNh4YUKkP2Vz3PRafkbI+9pTQh9wgSGgPrncV84el2AjTX1Cq1uYGi+MojbgzeW7I6gulwATUHPAGQ1DKwc2DSzY7nlsh3lXwL3USzyI+21Kb4UnzUzSi8D44x7wp7NqLz19i1n+xkRfy/VJWCRJ7dGMR8tFZ5YSnK/EpgEbnTrElwMrwU6cPssIm6PyJ57aKjpcxidZ1Kl6/CcpeCIPYuXCqVs+FlF7/Jzlzud2/PyM/+5YJ/MrTxwRrGTdfq0Rfewn5Lx7CknFaliahoVonxPDBBhG82HsHo3UXVw+33xbrud9/2iQKsckyLtIud1UUMJYejNeTcbDtjLOPIm1o2qDoTWUsw28Z4oB5WzezfeSK+4e2QO9fO8o2VL1iotH7R4SQtUGLb0OqJmpyDq71X1EexPq7WHSsnGa5RMwK9k16kRVEkmTOrMu7i1CWi0uptO+IJX5wqGE12mQgVIp11qKW5B1hM/V9dVLsHQHDa7GWGbXQQk3aZDxSZQ40xM+tdU6FKTDQgErtNod2qJR1r01DHB1awmf2Lub3cJSlpcrgw9bSJo5FDfSpr4Ml9i4Faa7CrhyH7FH5/wqIK4jYVPio3eByvipNsnat+lbcJyZSEbFfOXGiqu/3hlCpqWNJOjDjGnh5Z5Avn2Uja/xkADua2fP8xKl2hO2HSWbbZHzZ/xpmJbGLlyKJEN1cruzryWJ84upeONU26ClTJf46kPMrOhsNBlNjrD/BQa0KpmVqHKv7G41uROXb6+uWe1I9CZGIfe0GzM7l1akTOCIwxhFiuTfRERM+mZZuGyNxvkPFZGP5XisnFWSRtL7sXYqpkRYIpGxy0gyEOqcFz+mc1XugR8MSyThLI5SG3ORGpkYeS55cJWS+PAh8dTeAbv//+GzrVuEjzT2tTSJ2bYhMalcLmcgveEwmjzJ+VQrU9GcF1BxhS1nsNncy4g3oe46nv7UYuBKOuceE4y852CdcXuuUCamMNvAR1znCGav/HTNJ9q1pOfvr67YrjhXCj0NsMzuuVDv6v7F+6tr7jX9s65xmmFBPrApkksIHLThNLeBWtplm9M2b8m/fwDd11Ma
+sidebar_class_name: "post api-method"
+info_path: docs/api/endpoints/v0/reference/concat-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Search registrations"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/v0/registration/search"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns this convention's registrations, ordered by user ID. Use `userIds` to fetch specific users, or `paidProductId` to only include registrations paid for with that product.
+
+### Authentication
+
+This endpoint requires the `registration:read` scope.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./search-registrations.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./search-registrations.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

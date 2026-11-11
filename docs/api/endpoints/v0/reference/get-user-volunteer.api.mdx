@@ -1,0 +1,74 @@
+---
+id: get-user-volunteer
+title: "Get a user's volunteer application"
+description: "Returns the user's volunteer application for this convention, including their departments, contact methods and option answers, or a 404 if they haven't applied. Users can read their own application without the scope."
+sidebar_label: "Get a user's volunteer application"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1vGzcQ/SvE5JAPbCU1yGl7MlIjMJC2rh33ogjweDnSst4lN+Ts2oKw/70YkrLkWHKNoMeevOY8Dufjad5swHXkkY2zZxpKWBFfBfJ/uaa3TOShAE2h8qYTCJRwQdx7GxTXpPpA/nVQwxassOsaU0Vvaum84toEVTk7kJWzQhlbNb02diX3jVeaOvTckuVQCJCxYtUS104HhVYrF99VaMMd+VAo5xWqD7MPyizFxVrVOJB9zelp0hMl4QdVoVWeUOd33J19FNyd4dr1HLMIleto8tV+ta9evVInPdcSbQLK6RdJgqzunLGsPH3rjadUgOuH1Et57Dr7ggI69NgSkw9QzjdgsSUowWgowEgZO+QaCsjeNJTseyogVDW1COUGeN3FG5ZpFdvQGmvavoVyNo6LAhhX4hoeIgiwEH+hczZQEBfvZzP587h/l31VUQjLvoECpOJkWVDvpu/kz5MA3M3fVLFk5IUpbJLvyhMy6RPegwb2xq5gLKDv9DPW3OffUpv3IOg9rqVCTG349xhSUQ88YMK5Ny369Z71xrmG0Ip5wKY/dHHc78c8wxZyvEfTHw/X6IPBBkaml7jNVwogKzSYA4ZgVlaiggJwcJFddN+RN2QrilRj8hQ4M02+Yj5HKvddAaK/HF6+E2/Lz/6H010aH/j3Y51r8BmjvHu0552nJXlP+uj1rnb2sIVaNM0Rr25pGjo3Ffeeri4+H+HbJeNyeYhth0q6K8FewnvpbQM69PzuscVYQJqO/z0nj1Y5HRwwPPym7n/ChiURNgOl4fcyXo9j8XBk+/aGPOydbEGL4sXuDpU+1zdCF08gu6G2P8KeDKxd3cWFOEmKleQzDn+uoYQpdmY6zKbS2DDdGD1Ohz1dDVT13vA61ugP0R0o5wvJcGu5lGGcGpXtu35iz/V7IVPj7tJEbgxZ/uhJi3xhk2ribsle+WYbTbw2jacSgahVxEmIUcKiwqOO0q40MkYVPj87ywQtU42ghI/xIwGxqlwvwzGDrGN66i6zWYn1AepdQ6FM1YYSruJHwkdTHF0rEzgtKY+87htisFDAQFa7x7lowiZnI4BHkr3F7HaYDHNeky8HQ3dbSDx5bG7R4ooioHUDxVp5GtwtZXQiZwFhHZjaku4757kM3xoTsz2N/yuZsSawqUIqubHq8s/PhkmWqBYZMs2MXbrYVcNNbIGzH5HVyfmZ+tVVvShBrEUsgw9J8H+ezCazA2vckryoRN7TSGVn18PsWl2cXn4RtxN1kWQjKNztRRTXJ4VWRVZK9ykEFVn1iwpE0d88GVe90bR4UzN3oZxOK2cr5Al23VS7KkRSrojZ2FVg9Ew6cfRtjKt2d4qdWhErZ2kSJ7IL3KLd6T98Ilb47C76ffab3eLz/z77sn02jx2me552DZq4SPU+qmYad3PAzgjzZvmnLbwv49TdTb1FAbULLOjN5gYDXflmHOX4W0+yr80XoiXe4I0wfL4BbYJ8ayiX2AR6ppNvLvIof6uOBbyVDivCkSULoIBbWqftfBRVrQm1bDjzTTacVBV1vHdFlmUZ1A9z/9PpFxjHfwBPgJ/E
+sidebar_class_name: "get api-method"
+info_path: docs/api/endpoints/v0/reference/concat-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a user's volunteer application"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v0/users/{id}/volunteer"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns the user's volunteer application for this convention, including their departments, contact methods and option answers, or a 404 if they haven't applied. Users can read their own application without the scope.
+
+### Authentication
+
+This endpoint requires the `volunteer:read` scope.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./get-user-volunteer.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./get-user-volunteer.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./get-user-volunteer.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

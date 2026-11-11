@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 displayed_sidebar: apiSidebar
 hide_table_of_contents: true
 ---
@@ -8,145 +8,61 @@ hide_table_of_contents: true
 
 <SplitColumn>
   <div>
-    Roles are a way to group users together. They can be used to grant permissions to a group of users, or to identify a group of users for other purposes, such as identifying staff members or those who have signed an NDA.
+    <p>
+      A role is a named set of permissions defined in the event organization. A user holds a role either for one convention or globally, for every convention in the organization. Some role grants expire; expired grants are left out of every response.
+    </p>
+    <p>
+      <strong>Scopes:</strong> <code>user:read</code> to list roles and who holds them; <code>user:roles:update</code> to grant and remove them. Both are <Link to="/docs/api/gettingstarted/scopes#service-integration-scopes">service integration scopes</Link>.
+    </p>
   </div>
   <RestList>
-    <RestElement method='GET' path='/api/v0/roles' anchor='list roles' />
-    <RestElement method='GET' path='/api/v0/users/{userId}/roles' anchor='list-user-roles' />
-    <RestElement method='PUT' path='/api/v0/users/{userId}/roles/{roleId}' anchor='add-role-to-an-user' />
-    <RestElement method='DELETE' path='/api/v0/users/{userId}/roles/{roleId}' anchor='remove-role-from-an-user' />
+    <RestElement method="GET" path="/api/v0/roles" anchor="list-roles" />
+    <RestElement method="POST" path="/api/v0/roles/{roleId}/users" anchor="list-users-with-a-role" />
+    <RestElement method="GET" path="/api/v0/users/{userId}/roles" anchor="list-the-roles-of-a-user" />
+    <RestElement method="PUT" path="/api/v0/users/{userId}/roles/{roleId}" anchor="grant-a-role-to-a-user" />
+    <RestElement method="DELETE" path="/api/v0/users/{userId}/roles/{roleId}" anchor="remove-a-role-from-a-user" />
   </RestList>
 </SplitColumn>
 
+## The role object
+
+- A role has an `id` (a string) and a `name`.
+- In a user's list of roles, each role also has a `scope`: `convention` if it was granted for the current convention, or `global` if it was granted for the whole organization.
+
+## Paging
+
+Every list on this page uses the paging shape `{ "hasMore": …, "nextPage": …, "data": [ … ] }`, but only [List users with a role](#list-users-with-a-role) is actually paged. The other two return everything at once, with `hasMore` always `false` and no `nextPage`.
+
+For [List users with a role](#list-users-with-a-role), leave `nextPage` out of the first request. While `hasMore` is `true`, send the `nextPage` value from the previous response to get the next page. On the last page, `nextPage` is left out of the response rather than set to `null`. An invalid `nextPage` returns logic error `112` (`BadPaginationToken`).
+
+## Endpoints
+
 ### List roles
-<SplitColumn>
-  <div>
-    <p>Returns all role objects.</p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>user:read</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Response</h4>
-    <ParentAttribute id="su-resp-data" name="data" type="Array of Role" response optional>
-      <span>The roles that match the search.</span>
-      <>
-        <Attribute id="su-resp-id" name="id" type="string" response>
-          The unique identifier of the role.
-        </Attribute>
-        <Attribute id="su-resp-name" name="name" type="string" response>
-          The unique name of the role.
-        </Attribute>
-      </>
-    </ParentAttribute>
-    <Attribute id="su-resp-nextPage" name="nextPage" type="string" response optional>
-      A cursor for pagination across multiple pages of results. If this attribute is present, there are more results available. Use this value in the <code>nextPage</code> parameter for the next request.
-    </Attribute>
-  </div>
-  <div>
-    <ExampleBox method='GET' header='/api/v0/roles' headerSubText='cURL'>
-      {`curl https://reg.cces.dev/api/v0/roles \\
-  -H "Authorization: Bearer <token>"`}
-    </ExampleBox>
-    <ExampleBox header='Response' headerSubText='application/json'>
-      {`{
-  "data": [
-    {
-      "id": "1234",
-      "name": "staff"
-    },
-  ],
-  "nextPage": null
-}`}
-    </ExampleBox>
-  </div>
-</SplitColumn>
 
-### List user roles
+Returns every role defined in the organization. Scope: `user:read`. [Full reference](/docs/api/endpoints/v0/reference/list-roles).
 
-<SplitColumn>
-  <div>
-    <p>
-      List the roles given to the specified user.
-    </p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>user:read</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-     <h4>Response</h4>
-    <ParentAttribute id="su-resp-data" name="data" type="Array of UserRole" response optional>
-      <span>The roles of the user.</span>
-      <>
-        <Attribute id="su-resp-id" name="id" type="string" response>
-          The unique identifier of the role.
-        </Attribute>
-        <Attribute id="su-resp-name" name="name" type="string" response>
-          The name of the role.
-        </Attribute>
-        <Attribute id="su-resp-scope" name="scope" type="string" response>
-          Whatever the role was given to the user globally, or just for the current convention.
-        </Attribute>
-      </>
-    </ParentAttribute>
-  </div>
-  <div>
-    <ExampleBox method='GET' header='/api/v0/users/:userId/roles' headerSubText='JSON'>
-      {`{
-  "data": [
-    {
-      "id": "1234",
-      "name": "admin",
-      "scope": "global",
-    }
-  ]
-}`}
-    </ExampleBox>
-  </div>
-</SplitColumn>
+### List users with a role
 
-### Add role to an user
+Returns the IDs of the users who hold the role, for the current convention or globally, ordered by user ID, as `{ "userId": "…" }` objects. `limit` is 1 to 1000, and defaults to 1000. Scope: `user:read`. [Full reference](/docs/api/endpoints/v0/reference/list-role-users).
 
-<SplitColumn>
-  <div>
-    <p>
-      Gives the user the specified role. This request will fail if the user already has the role.
-    </p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>user:roles:update</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Request</h4>
-    <Attribute id="su-scope" name="scope" type="string">
-      Whatever the role will be given to the user for the current convention, or across all conventions in the organization. Values can be "convention" or "global".
-    </Attribute>
-    <div style={{ marginBottom: '1.5rem' }} />
-  </div>
-  <div>
-    <ExampleBox method='PUT' header='/api/v0/users/:userId/roles/:roleId' headerSubText='JSON'>
-      {`{
-  "scope": "convention"
-}`}
-    </ExampleBox>
-  </div>
-</SplitColumn>
+### List the roles of a user
 
-### Remove role from an user 
+Returns the roles the user holds for the current convention, plus their global roles. Scope: `user:read`. [Full reference](/docs/api/endpoints/v0/reference/list-user-roles).
 
+### Grant a role to a user
 
-<SplitColumn>
-  <div>
-    <p>
-      Removes the user from the specified role. This request will fail if the user is not in the role.
-    </p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>user:roles:update</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-  </div>
-  <div>
-    <ExampleBox method='DELETE' header='/api/v0/users/:userId/roles/:roleId' />
-  </div>
-</SplitColumn>
+Grants the role to the user and returns an empty response. The request body is optional: set `scope` to `global` to grant the role for every convention in the organization; anything else grants it for the current convention only.
+
+- If the user already has the role, for this convention or globally, you get logic error `10` (`UserAlreadyHasRole`).
+- The roles that ConCat assigns itself (department lead, dealer assistant and role manager) can't be granted here. They return logic error `220`, `221` or `222`, telling you where in Housekeeping to assign the user instead.
+
+Scope: `user:roles:update`. [Full reference](/docs/api/endpoints/v0/reference/grant-user-role).
+
+### Remove a role from a user
+
+Removes the role from the user and returns an empty response. Every grant of the role to the user in the organization is removed: the global grant, and the grants for each convention, not only the current one.
+
+- If the user doesn't hold the role for the current convention or globally, you get a `404` resource error.
+- The roles that ConCat assigns itself return logic error `220`, `221` or `222`, as for granting.
+
+Scope: `user:roles:update`. [Full reference](/docs/api/endpoints/v0/reference/remove-user-role).

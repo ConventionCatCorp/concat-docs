@@ -1,230 +1,52 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 displayed_sidebar: apiSidebar
 hide_table_of_contents: true
 ---
-
-import VolunteerModel from './_volunteerModel.mdx';
 
 # Volunteers
 
 <SplitColumn>
   <div>
-    This object represents a volunteer application within a convention. 
+    <p>
+      A volunteer application is a user's application to volunteer at the current convention: how to contact them, the departments they're interested in or assigned to, and their answers to volunteer options. Departments are the teams volunteers work in, each with its own leads.
+    </p>
+    <p>
+      <strong>Scope:</strong> <code>volunteer:read</code>, a <Link to="/docs/api/gettingstarted/scopes#service-integration-scopes">service integration scope</Link>. A user can read their own application without it.
+    </p>
   </div>
   <RestList>
-    <RestElement method='POST' path='/api/v0/volunteers/search' anchor='search-for-volunteers' />
-    <RestElement method='GET' path='/api/v0/users/{id}/volunteer' anchor='retrieve-a-users-volunteer-record' />
-    <RestElement method='GET' path='/api/v0/volunteers/departments' anchor='retrieve-list-of-departments' />
+    <RestElement method="POST" path="/api/v0/volunteers/search" anchor="search-volunteers" />
+    <RestElement method="GET" path="/api/v0/users/{id}/volunteer" anchor="get-a-user-volunteer-application" />
+    <RestElement method="GET" path="/api/v0/volunteers/departments" anchor="list-volunteer-departments" />
   </RestList>
 </SplitColumn>
 
-### Search for volunteers
-<SplitColumn>
-  <div>
-    <p>Paginate through the volunteer list.</p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>volunteer:read</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Request</h4>
-    <Attribute id="su-nextPage" name="nextPage" type="string" optional>
-      A cursor for pagination across multiple pages of results. Don't include this attribute on the first call. Use the <code>nextPage</code> parameter from the previous response for each subsequent request.
-    </Attribute>
-    <Attribute id="su-limit" name="limit" type="number" optional>
-      The maximum number of results to return, between 1 and 100. Defaults to 100.
-    </Attribute>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Response</h4>
-    <VolunteerModel />
-  </div>
-  <div>
-    <ExampleBox method='POST' header='/api/v0/volunteers/search' headerSubText='cURL'>
-            {`{
-  "nextPage": "eyBsYXN0SWQ6IDEwMDAgfQ==",
-  "limit": 100,
-}`}
-    </ExampleBox>
-    <ExampleBox header='Response' headerSubText='application/json'>
-      {`{
-  "data": [
-    {
-      "createdAt": "2020-01-01T00:00:00Z",
-      "updatedAt": "2020-01-01T00:00:00Z",
-      "contactMethods": [
-        {
-          "name": "discord",
-          "isPrimary": true,
-          "value": "Username#1234"
-        },
-      ],
-      "departments": [
-        {
-          "id": "1234",
-          "states": ["experience", "interest"],
-          "name": "Registration"
-        },
-      ],
-      "user": {
-        "id": "1234",
-        "firstName": "John",
-        "lastName": "Doe",
-        "username": "jdoe",
-        "preferredName": "Johnny",
-        "phone": "+15555555555",
-        "email": "johnny.test@concat.systems",
-      },
-      "options": [
-        {
-          "name": "jump",
-          "type": "select",
-          "value": "How high?"
-        },
-      ],
-    },
-  ],
-  "nextPage": null,
-}`}
-    </ExampleBox>
-  </div>
-</SplitColumn>
+## The volunteer object
 
-### Retrieve a user's volunteer record
-<SplitColumn>
-  <div>
-    <p>Returns the volunteer object for the specified user.</p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>volunteer:read</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Response</h4>
-    <VolunteerModel />
-  </div>
-  <div>
-    <ExampleBox method='GET' header='/api/v0/users/:id/volunteer' headerSubText='cURL'>
-      {`curl https://reg.cces.dev/api/v0/users/{id}/volunteer \\
-  -H "Authorization: Bearer <token>"`}
-    </ExampleBox>
-    <ExampleBox header='Response' headerSubText='application/json'>
-      {`{
-  "createdAt": "2020-01-01T00:00:00Z",
-  "updatedAt": "2020-01-01T00:00:00Z",
-  "contactMethods": [
-    {
-      "name": "discord",
-      "isPrimary": true,
-      "value": "Username#1234"
-    },
-  ],
-  "departments": [
-    {
-      "id": "1234",
-      "states": ["experience", "interest"],
-      "name": "Registration"
-    },
-    {
-      "id": "5678",
-      "states": ["avoid"],
-      "name": "HR"
-    }
-  ],
-  "user": {
-    "id": "1234",
-    "firstName": "John",
-    "lastName": "Doe",
-    "username": "jdoe",
-    "preferredName": "Johnny",
-    "phone": "+15555555555",
-    "email": "johnny.test@concat.systems",
-  },
-  "options": [
-    {
-      "name": "jump",
-      "type": "select",
-      "value": "How high?"
-    },
-  ]
-}`}
-    </ExampleBox>
-  </div>
-</SplitColumn>
+- The application has no ID of its own in the response; use `user.id` to identify it.
+- `user` is the applicant: `id`, `firstName`, `lastName`, `username`, `preferredName`, `email`, `phone` and `profilePictureURL`, plus `isStaff`. All but `id`, `profilePictureURL` and `isStaff` can be `null`.
+- `contactMethods` lists how to reach the volunteer, each with a `name` and a `value`. The preferred one has `isPrimary: true`; on the others, `isPrimary` is left out rather than set to `false`.
+- `departments` lists the departments the application mentions. Each has an `id`, a `name` and a list of `states`: `assignment`, `avoid`, `experience`, `interest` or `request`.
+- `options` lists the volunteer's option answers. Each has an `id`, a `name`, a `type` (`address`, `currency`, `file`, `multi`, `number`, `phone`, `select` or `text`) and a `value`.
+- `createdAt` and `updatedAt` are ISO 8601 timestamps. IDs are strings.
 
-### Retrieve list of departments
-<SplitColumn>
-  <div>
-    <p>Returns the list of volunteer departments.</p>
-    <h4>Authentication</h4>
-    <div>
-      [Service Integration](/docs/api/gettingstarted/oauth) with <code>volunteer:read</code> scope.
-    </div>
-    <div style={{ marginBottom: '1.5rem' }} />
-    <h4>Response</h4>
-    <Attribute id="ruvr-id" name="id" type="string" response>
-      The unique identifier of the department record.
-    </Attribute>
-    <Attribute id="ruvr-email" name="name" type="string" response>
-      The date the volunteer record was created.
-    </Attribute>
-    <Attribute id="ruvr-name" name="email" type="email" response>
-      The date the volunteer record was last updated.
-    </Attribute>
-    <Attribute id="ruvr-publiclyVisible" name="publiclyVisible" type="boolean" response>
-      Department is publicly visible to all users applying for a position.
-    </Attribute>
-    <ParentAttribute id="ruvr-leads" name="leads" type="Array of User" response>
-      <span>List of users who are assigned as leads for this department</span>
-      <>
-        <Attribute id="ruvr-usr-id" name="id" type="string" response>
-          The unique identifier of the user.
-        </Attribute>
-        <Attribute id="ruvr-usr-firstName" name="firstName" type="string" response>
-          The first name of the user.
-        </Attribute>
-        <Attribute id="ruvr-usr-lastName" name="lastName" type="string" response>
-          The last name of the user.
-        </Attribute>
-        <Attribute id="ruvr-usr-username" name="username" type="string" response>
-          The username of the user.
-        </Attribute>
-        <Attribute id="ruvr-usr-preferredName" name="preferredName" type="string" optional response>
-          The preferred name of the user. If provided, this should be used instead of the first and last name, except where legally required.
-        </Attribute>
-        <Attribute id="ruvr-usr-phone" name="phone" type="string" response>
-          The phone number of the user in E.164 format.
-        </Attribute>
-        <Attribute id="ruvr-usr-email" name="email" type="string" response>
-          The email address of the user.
-        </Attribute>
-      </>
-    </ParentAttribute>
-  </div>
-  <div>
-    <ExampleBox method='GET' header='/api/v0/volunteers/departments' headerSubText='cURL'>
-      {`curl https://reg.cces.dev/api/v0/volunteers/departments \\
-  -H "Authorization: Bearer <token>"`}
-    </ExampleBox>
-    <ExampleBox header='Response' headerSubText='application/json'>
-      {`[
-  {
-    "id": "1",
-    "email": "support@concat.org",
-    "name": "Information Technology",
-    "publiclyVisible": true,
-    "leads": [
-      {
-        "id": "1234",
-        "firstName": "Bob",
-        "lastName": "Smith",
-        "username": "bobsmith",
-        "preferredName": "Sphere",
-        "phone": "+11112223333",
-        "email": "bob@concat.org"
-      }
-    ]
-  }
-]`}
-    </ExampleBox>
-  </div>
-</SplitColumn>
+Hidden departments are included everywhere on this page.
+
+## Paging
+
+[Search volunteers](#search-volunteers) returns `{ "hasMore": …, "nextPage": …, "data": [ … ] }`. Leave `nextPage` out of the first request. While `hasMore` is `true`, send the `nextPage` value from the previous response to get the next page. On the last page, `nextPage` is left out of the response rather than set to `null`. An invalid `nextPage` returns logic error `112` (`BadPaginationToken`).
+
+## Endpoints
+
+### Search volunteers
+
+Returns the current convention's volunteer applications, ordered by application. `limit` is 1 to 100, and defaults to 100. Scope: `volunteer:read`. [Full reference](/docs/api/endpoints/v0/reference/search-volunteers).
+
+### Get a user volunteer application
+
+Returns the user's volunteer application for the current convention, or a `404` resource error if they haven't applied. Scope: `volunteer:read`, or none when a user reads their own. [Full reference](/docs/api/endpoints/v0/reference/get-user-volunteer).
+
+### List volunteer departments
+
+Returns the current convention's departments, all at once rather than in pages. Each has an `id`, a `name`, the department's `email`, `publiclyVisible` (`false` for a hidden department), and its `leads` as user objects. Scope: `volunteer:read`. [Full reference](/docs/api/endpoints/v0/reference/list-volunteer-departments).
