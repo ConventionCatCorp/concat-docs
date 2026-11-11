@@ -1,0 +1,91 @@
+---
+sidebar_position: 4
+hide_table_of_contents: true
+textbook: true
+---
+
+# What volunteers see when they apply
+
+This guide shows the volunteer application from your attendees' side: applying, checking the status, changing or withdrawing the application, and the messages shown when someone can't apply. Follow the steps with an attendee account to see it yourself.
+
+:::info[In this guide]
+What's needed to apply (section 1), applying (section 2), the application's status (section 3), changing or withdrawing it (section 4), and when applying is blocked (section 5).
+:::
+
+## Before attendees can apply
+
+<Sidenote title="Who sees which departments">
+Applicants are offered only departments ticked **Show on public application form**. See [Departments and leads](./departments.md).
+</Sidenote>
+
+Attendees apply from **Volunteering**, under **Applications** in the homepage sidebar. They need:
+
+- **Enable Volunteers** turned on (see [Volunteer settings and form](./settings.md), section 1);
+- to be signed in, with a confirmed email address.
+
+The form they fill in is the one you build in [Volunteer settings and form](./settings.md), section 4. These steps describe a new convention's form.
+
+## Apply
+
+1. As an attendee, click **Volunteering** under **Applications** in the homepage sidebar.
+
+   <Result>The **Volunteer Application** page shows the form's sections: *Volunteer Code of Conduct*, *Contact Information*, *Availability*, *Departments*, *Previous Years* and *Anything Else*. **Submit** is greyed out.</Result>
+
+2. Read the Code of Conduct and tick **Volunteer Terms**.
+
+   <Result>**Submit** can now be clicked.</Result>
+
+3. In the department grid, tick **Interest** for six departments.
+
+   <Result>The sixth box stays unticked, and a *You can only select up to 5 interests* message appears.</Result>
+
+4. Tick **Avoid** for a department that has **Interest** or **Experience** ticked.
+
+   <Result>**Interest** and **Experience** are cleared for that department.</Result>
+
+5. Choose your preferred contact method, fill in the other contact methods and answer the questions, then click **Submit**.
+
+   <Result>A *Your volunteer application has been saved!* message appears. The top of the page now says *Your application is awaiting assignment.* and *Our HR department will review your application and use this to assign you to a department before the convention.*</Result>
+
+With **Enable Volunteer Emails** on, the applicant also gets a *Volunteer Confirmation* email. The application appears on **Housekeeping › Volunteers › Applications** (see [Volunteers](./volunteers.md), section 2).
+
+## Application status
+
+The status at the top of the page changes once your staff assign the volunteer to a department.
+
+1. In Housekeeping, assign the volunteer to a department (see [Volunteers](./volunteers.md), section 4). Then, as the attendee, open **Volunteering** again.
+
+   <Result>A green box says *Your application has been approved!* and *You have been approved as a volunteer for this year and are assigned to:*, followed by the departments and *If you are unhappy with your assignment(s), simply email* your HR address *and we'll work something out.*</Result>
+
+With **Enable Volunteer Emails** on, the volunteer also gets an email titled *Volunteer Assignment:* and the department's name.
+
+## Change or withdraw the application
+
+1. On **Volunteering**, change an answer and click **Submit**.
+
+   <Result>A *Your volunteer application has been saved!* message appears. With **Enable Volunteer Emails** on, another *Volunteer Confirmation* email is sent.</Result>
+
+2. Click **Delete Application**.
+
+   <Result>A dialog titled **Are you sure?** asks *Are you sure you want to delete this volunteer application?*, with **Delete** and **Cancel**.</Result>
+
+3. Click **Delete**.
+
+   <Result>A *Your volunteer application has been deleted.* message appears, and the homepage opens. If the volunteer is assigned to a department, the application stays, and the message is *You are currently assigned to a department. Please contact* your HR address *if you no longer wish to volunteer.*</Result>
+
+Answers to questions set to **Disable after approval** can't be changed once the volunteer is assigned.
+
+## When applying is blocked
+
+Instead of the form, the **Volunteer Application** page can show one of the messages in Table 5.1. Wherever a message names your HR address, it's the **HR Email** from [Sending domain, senders and contact addresses](../templates/email-settings.md), section 3.
+
+<TableFigure title="Why an attendee can't apply">
+
+| Message | Why | What to do |
+| --- | --- | --- |
+| *Volunteer applications for the convention are currently closed.* | **Enable Volunteers** is off. The sidebar item is hidden too. | Turn it on (see [Volunteer settings and form](./settings.md), section 1). |
+| **Email verification required** <small>*Please verify your email address before applying.*</small> | The attendee hasn't confirmed their email address. | They click **Resend verification email**, which shows *A new verification email has been sent and will arrive shortly.*, and follow the link in the email. |
+| *You are currently banned from volunteering at the convention.* <small>*Please contact* your HR address *if you think this is in error.*</small> | The attendee has a ban note with the volunteer ban category. | See [User Notes](../usernotes/usernotes.md). |
+| *Volunteering while chaperoning a child is not allowed at this event.* <small>*Thanks for offering, but your kids are more important.*</small> | The attendee has registered with child registrations, and **Allow Parents to Volunteer** is off. | Turn on **Allow Parents to Volunteer** if parents may volunteer. |
+
+</TableFigure>
