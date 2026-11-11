@@ -1,144 +1,246 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
 hide_table_of_contents: true
+textbook: true
 ---
 
 # Products
 
-### Creating a Product
+This guide covers the products you sell in your event store: the categories that group them, the product form field by field, and how to change, archive and follow a product once it's on sale. The other guides in this section cover each card on a product's page.
 
-You can create an unlimited number of products, using the following steps:
-
-<ol className="numbered-list">
-  <li>
-    <span>
-      Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.
-    </span>
-  </li>
-  <li>
-    <span>
-      Click "<strong>Products</strong>" from the left-hand sidebar, then click "<strong>View Products</strong>" next to the category you want to create the product in.
-    </span>
-  </li>
-  <li>
-    <span>Click "<strong>Create New Product</strong>".</span>
-  </li>
-  <li>
-    <div>
-      Enter basic information for your Product:
-      <ul>
-        <li>
-          <strong>Name</strong> - This is the name of your Product (like "T-Shirt" or "Bobblehead"). If you'd like to use a different name externally, you can do so in the "Display Name" field.
-        </li>
-        <li>
-          <strong>Description</strong> - A brief description of the product and its functionality.
-        </li>
-        <li>
-          <strong>Base Price</strong> - The price that will be charged for this product, before any add-ons or discounts are applied.
-        </li>
-        <li>
-          <strong>Stock Control</strong> - Whether or not you want to control the number of this product that can be purchased. This is useful for physical products where you have a fixed inventory available.
-        </li>
-        <li>
-          <strong>Pass Platform Fee to Customer</strong> - By default, our platform fees are absorbed into the cost of each product and are paid by the event, but as the organizer, you can choose to pass these fees to your attendees.
-        </li>
-        <li>
-          <strong>Make Product Publicly Visible</strong> - By default, your new product will not be shown in the Event Store, but you can make it visible by checking this box. This can be used for special products you don't want available for direct purchase, such as promotional items for higher tier Attendance Types.
-        </li>
-      </ul>
-    </div>
-  </li>
-  <li>
-    <div>
-      <i>(Optional)</i> Customize advanced options:
-      <ul>
-        <li>
-          <strong>Available From</strong> - The date that this product will be available for purchase.
-        </li>
-        <li>
-          <strong>Available Until</strong> - The date that this product will no longer be available for purchase.
-        </li>
-        <li>
-          <strong>Minimum Purchase Age</strong> - The minimum age that attendees must be to purchase this product.
-        </li>
-        <li>
-          <strong>Maximum Purchase Age</strong> - The maximum age that attendees can be to purchase this product.
-        </li>
-        <li>
-          <strong>Restrict Product to User Roles</strong> - Only users with the specified role(s) can purchase this product.
-        </li>
-        <li>
-          <strong>Restrict Product to Grants</strong> - Only users that have already purchased and have a grant for the specified product(s) can purchase this product.
-        </li>
-      </ul>
-    </div>
-  </li>
-  <li>
-    <span>Click "<strong>Create Product</strong>", and your Product will be created!</span>
-  </li>
-  <li>
-    <div>
-      <i>(Optional)</i> Customize your Product:
-      <div style={{ marginBottom: "1rem" }} />
-      <splitColumn childStyle={{ width: "100%" }}>
-        <bigButton title="Product Images" to="/docs/guides/products/productimages">
-          Adding a product image is a great way to show your attendees how awesome your product looks.
-        </bigButton>
-        <bigButton title="Addons" to="/docs/guides/products/addons">
-          Addons are other products that are offered alongside as an additional purchase, or are included for free, with the product.
-        </bigButton>
-        <bigButton title="Discounts" to="/docs/guides/products/discounts">
-          Discounted pricing can be available for a set period of time, or to a specific user role (such as Staff or Volunteers).
-        </bigButton>
-        <bigButton title="Product Options" to="/docs/guides/products/options">
-          Product Options enable you to add custom fields (required or optional) for your attendees to fill out when they purchase the product (such as "T-Shirt Size", "Company Name", or "Extra Donation").
-        </bigButton>
-        <bigButton title="Surcharges" to="/docs/guides/products/surcharges">
-          Surcharges are additional fees that are added to the base price of the product as either a flat fee or a percentage of the base price.
-        </bigButton>
-        <bigButton title="Claim Tickets" to="/docs/guides/products/claimtickets">
-          Claim Tickets let attendees purchase digital products online and redeem them onsite using an additional printed badge label.
-        </bigButton>
-      </splitColumn>
-    </div>
-  </li>
-</ol>
-
-### Modifying a Product
-
-You can modify a product at any time by clicking the edit (<i className="material-symbols-outlined">edit</i>) icon in the <strong>Product Information</strong> section of the tier.
-
-Other sections (<strong>Product Images</strong>, <strong>Addons</strong>, <strong>Discounts</strong>, <strong>Product Options</strong>, and <strong>Surcharges</strong>) can be modified at any time.
-
-To modify a Product, you can use the following steps:
-
-<ol className="numbered-list">
-  <li>
-    <span>Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.</span>
-  </li>
-  <li>
-    <span>Click "<strong>Products</strong>" from the left-hand sidebar, then click "<strong>View Products</strong>" next to the category that contains the product you want to edit.</span>
-  </li>
-  <li>
-    <span>Click on "<strong>View / Edit Details</strong>" for the Product you'd like to modify.</span>
-  </li>
-  <li>
-    <span>
-      Click the edit (<i className="material-symbols-outlined">edit</i>) icon in
-      the <strong>Product Information</strong> section of the product.
-    </span>
-  </li>
-  <li>
-    <span>Updated the details you'd like to change, and click "<strong>Update Product</strong>".</span>
-  </li>
-</ol>
-
-### Removing a Product
-
-:::caution
-Deleting a product using the delete (<i className="material-symbols-outlined">delete</i>) icon will archive it and prevent any further changes. Archived products cannot be restored at this time.
+:::info[In this guide]
+Categories (section 1), the product list (section 2), creating a product (section 3), the product page and changing a product (section 4), clearing a product from unpaid carts (section 5), deleting a product (section 6), and a product's orders and history (section 7).
 :::
 
-To remove a product from sale, follow <strong>steps 1 through 3 above</strong>, then click the delete (<i className="material-symbols-outlined">delete</i>) icon in the <strong>Product Information</strong> section of the product.
+## Categories
 
-When a product is archived it will be removed from any unpaid orders, but already paid orders will not be affected. If you want to remove the archived product from a paid order, follow the steps in the <strong>Manage Orders</strong> section.
+<Sidenote title="Who can do this">
+The **Store Products** menu item needs the `product:read` permission. Creating, hiding and deleting categories needs `product:category:manage`, and creating or changing products needs `product:manage`. The default *admin* and *productEditor* roles have all three.
+</Sidenote>
+
+Every store product belongs to a category, such as *Merchandise* or *Charity*. In the event store, attendees browse your products by category (see [What attendees see in the store](./store.md)). Badge products aren't here: they have their own module, **Housekeeping › Registration › Badge Products** (see [Registration setup](../quickstart/registration-setup.md)). [Start here](../quickstart/start-here.md), section 2, shows how to switch to the Store Management menu.
+
+1. Go to **Housekeeping › Store Management › Store Products**.
+
+   <Result>The **Product Categories** page opens, with a **Create New Category** button. Each category is a card showing its name and ID, a **General Products** badge, a **View Products** button and a **…** menu. A box headed **Looking for the Registration category?** has a **Go to Badge Products** button. The address ends in `/housekeeping/store/products`.</Result>
+
+### Create a category
+
+1. Click **Create New Category**.
+
+   <Result>A **New Category** form opens, with a **Name** field and a **Hide this category** checkbox. A **Back to Categories** button is above it.</Result>
+
+2. Enter a **Name**. Tick **Hide this category** if attendees shouldn't see the category and its products yet. Then click **Create Category**.
+
+   <Result>A **New category has been created.** message appears, and the category's page opens, titled **Category:** and the name. Click **Back to Categories** to see it in the list.</Result>
+
+### Hide or show a category
+
+A hidden category, with every product in it, is left out of the event store. You can build a category while it's hidden and show it when it's ready.
+
+1. On **Product Categories**, open the category's **…** menu and choose **Hide Category**.
+
+   <Result>The category's card shows a **Hidden** badge. The event store no longer lists the category or its products.</Result>
+
+2. To show it again, open the **…** menu and choose **Show Category**.
+
+   <Result>The **Hidden** badge is gone, and the category is back in the event store.</Result>
+
+### Delete a category
+
+A category can only go once its products are deleted with it or moved to another category.
+
+1. Open the category's **…** menu and choose **Delete Category**.
+
+   <Result>The card changes to **Delete Category:** and the category's name, with the warning *Deleting a category is a PERMANENT action and cannot be undone.*, a **Delete all existing items** checkbox, and a **New Category** field.</Result>
+
+2. Either tick **Delete all existing items**, or choose in **New Category** the category its products should move to. Then click **Delete Category**.
+
+   <Result>The category is no longer listed on **Product Categories**. If you chose a new category, the products are now listed in it.</Result>
+
+:::caution[Watch out]
+There's no confirmation once you click **Delete Category**, and a deleted category can't be restored. **Delete all existing items** deletes every product in the category.
+:::
+
+With the `audit:read` permission, the **…** menu also has **View History**, which opens the category's audit log.
+
+## The product list
+
+Each category has a page that lists its products in a table. Under each product's name are the status badges in Table 2.1.
+
+1. On **Product Categories**, click **View Products** on the category.
+
+   <Result>The page is titled **Category:** and the category's name, with the buttons **Create New Product**, **Category Surcharges** and **Back to Categories**. Below them is a table with the columns **ID**, **Name** and **Description**. A category with no products shows **No Products Here!**</Result>
+
+2. Type part of a product's name or description in the search box (*Search...*) above the table.
+
+   <Result>Only the matching products are listed.</Result>
+
+3. *(If the category has deleted products)* Click **Show Deleted Products** below the table.
+
+   <Result>Deleted products are listed too, marked **Deleted / Archived**. The button now reads **Hide Deleted Products**.</Result>
+
+<TableFigure title="Product status badges">
+
+| Badge | What it means |
+| --- | --- |
+| **Public / Visible**, **Unlisted** or **Hidden** | The product's **Product visibility** (Table 3.1). |
+| **Deleted / Archived** | The product has been deleted (section 6). |
+| **In Stock:** *x*/*y* **Available** | Stock is limited, and *x* of *y* are left. |
+| **Out of Stock** | Limited stock is used up. <small>**Out of Stock - Exceeded by** *n* means *n* more were sold than the limit.</small> |
+| **Limit per user:** *n* | **Maximum purchases per user** is set. |
+| **Role Restriction**, **Product Role Blacklist** | **Product Role Whitelist** or **Product Role Blacklist** is set. |
+| **Grant Restriction** | **Restrict product to grants** is set. |
+| **Not Yet Available** | **Available From** is in the future. |
+| **Expired** | **Available Until** has passed. |
+| **Age Restricted:** and the ages | A minimum or maximum purchase age is set. |
+| **Addon Stock:** *x*/*y* **Available**, **Addon Out of Stock** | A complimentary addon has limited stock (see [Addons](./addons.md)). |
+| **Unused Stock:** *n* | *Product is using stock, but has no active grant.* <small>Click it to see the orders concerned.</small> |
+
+</TableFigure>
+
+## Create a product
+
+<Sidenote title="Fields with a checkbox">
+**Maximum purchases per user**, **Limit Available Stock**, **Product Label Print Design** and **Available Until** each have a checkbox in front. The field stays off until you tick it.
+</Sidenote>
+
+1. On the category's page (section 2, step 1), click **Create New Product**.
+
+   <Result>A **New Product** form opens, with a **Back to Products** button above it. Below the name and description, the form has the sections **Pricing**, **Stock Control**, **Cashier** and **Restrictions**.</Result>
+
+2. Fill in the fields in Table 3.1. Only **Name** and **Base Price** are required; leave the others as they are if you don't need them. Then click **Create Product**.
+
+   <Result>A **New product has been created** message appears, the form closes, and the product is listed in the category's table.</Result>
+
+<TableFigure title="The New Product form for store products">
+
+| Field | What it does |
+| --- | --- |
+| **Name** | The product's name in Housekeeping. Attendees see it too, unless you give a **Display Name**. |
+| **Display Name** (Optional) | The name attendees see, if it should differ from **Name**. |
+| **Description** | Shown on the product's card and page in the store. <small>Markdown formatting is applied.</small> |
+| **Product visibility** | **Public**: listed in the store for anyone who meets the restrictions. **Unlisted**: can be bought by anyone who meets the restrictions, but isn't listed in the store; attendees need the product's link. **Hidden**: can't be bought, and is only given by automated means, such as a complimentary addon. |
+| **Base Price** | The price before discounts, options and surcharges. <small>**Pricing** section. Only on this form; change it later with **Change Price** (section 4.2).</small> |
+| **Pass Platform Fee to Customer** | Adds ConCat's platform fee on top of the price, instead of taking it from what you receive. <small>**Pricing** section. See [Surcharges](./surcharges.md), section 6.</small> |
+| **Maximum purchases per user** | The most one attendee can buy. <small>**Stock Control** section.</small> |
+| **Limit Available Stock** | How many can be sold in total. <small>**Stock Control** section. *Maximum stock can only be decreased by the remaining stock available.*</small> |
+| **Product Label Print Design** | A badge design to print as a claim ticket for each one bought. <small>**Cashier** section. See [Claim Tickets](./claimtickets.md).</small> |
+| **Deliverable** | Ticked by default. Lets cashiers and admins mark the product as delivered; use it for physical goods. <small>**Cashier** section.</small> |
+| **Available From** | When the product goes on sale. It starts at the beginning of today. <small>**Restrictions** section.</small> |
+| **Available Until** | When the product comes off sale. <small>**Restrictions** section.</small> |
+| **Minimum Purchase Age**, **Maximum Purchase Age** (Optional) | The age range allowed to buy, counted on the convention's start date. <small>**Restrictions** section.</small> |
+| **Product Role Whitelist** | Only people with at least one of these roles see the product. <small>**Restrictions** section. Needs `system:permission:read`.</small> |
+| **Product Role Blacklist** | People with any of these roles don't see the product, even if they're on the whitelist. <small>**Restrictions** section. Needs `system:permission:read`.</small> |
+| **Restrict product to grants** | Only people who have bought, or have in their cart, one of the chosen products can buy this one. <small>**Restrictions** section.</small> |
+
+</TableFigure>
+
+## The product page
+
+Everything about a product after it's created is on its own page.
+
+1. On the category's page, click the product's name.
+
+   <Result>The page is titled **Product:** and the product's name and ID, followed by its status badges and the tabs **Product**, **Orders** and **Audit Logs**. The **Product** tab has the cards in Table 4.1. The address ends in `/housekeeping/store/products/` and the product's ID.</Result>
+
+<TableFigure title="The cards on a product's page">
+
+| Card | What it's for |
+| --- | --- |
+| **Product Information** | The product's details, with the edit and delete buttons (sections 4.1 and 6). <small>Shows **Name**, **Display Name**, **Description**, the purchase ages, **Category** and **Platform Fee**.</small> |
+| **Product Images** | The pictures shown in the store. See [Product Images](./productimages.md). |
+| **Addons** | Other products that come with this one. See [Addons](./addons.md). |
+| **Discounts** | Lower prices for a set period or for some roles. See [Discounts](./discounts.md). |
+| **Options** | Questions buyers answer, such as a size. See [Product Options](./options.md). |
+| **Surcharges** | Fees and taxes added to the price. See [Surcharges](./surcharges.md). |
+| **Prices** | The **Current Price**, with **Change Price** (section 4.2). |
+| **Actions** | **Clear unpaid orders?** (section 5). <small>Shown only with `product:manage`.</small> |
+
+</TableFigure>
+
+The **Audit Logs** tab is shown only with the `audit:read` permission.
+
+### Change the product's details
+
+1. In **Product Information**, click the edit button (<MaterialIcon name="edit" />).
+
+   <Result>The card shows the product form filled in with the current values. It has no **Base Price** field, and its button reads **Update Product**.</Result>
+
+2. Change the fields you need (Table 3.1), then click **Update Product**.
+
+   <Result>The form closes, and **Product Information** shows the new values.</Result>
+
+### Change the price
+
+1. In **Prices**, click **Change Price**.
+
+   <Result>The card shows a **New Price** field beside the **Current Price**, with **Save New Price** and **Cancel** buttons.</Result>
+
+2. Enter the **New Price** and click **Save New Price**.
+
+   <Result>The card shows the new amount under **Current Price**.</Result>
+
+:::note[Who pays the new price]
+Unpaid carts always use the current price, so items already in a cart change to the new price. Paid orders keep the price that was paid. A discount keeps its own price. The new price must differ from the current one.
+:::
+
+## Clear a product from unpaid carts
+
+**Clear unpaid orders?** removes this product from every cart that hasn't been paid yet, for example after a pricing mistake. Paid orders aren't touched.
+
+1. In the **Actions** card, click **Clear unpaid orders?**
+
+   <Result>A **Clear unpaid orders?** dialog asks *Are you sure you want to remove this product from all carts in which the payment has not yet been completed?*</Result>
+
+2. Click **Clear unpaid orders?** in the dialog.
+
+   <Result>An **Order items removed** message appears.</Result>
+
+:::caution[Watch out]
+Attendees aren't told that the product has gone from their cart.
+:::
+
+## Delete a product
+
+<Sidenote title="Deleted, or archived">
+Deleting doesn't erase a product: it archives it. The product comes off sale, and its orders and history stay.
+</Sidenote>
+
+Deleting a product takes it out of the store and out of every unpaid cart. Paid orders keep it.
+
+1. In **Product Information**, click the delete button (<MaterialIcon name="delete" />).
+
+   <Result>A **Delete product?** dialog opens, with **Delete** and **Cancel** buttons.</Result>
+
+2. Click **Delete**.
+
+   <Result>The product's page shows a **Deleted / Archived** badge. The edit, delete and **Change Price** buttons are gone, and so are the add buttons on the other cards.</Result>
+
+:::caution[Watch out]
+There's no way to restore a deleted product. In the category's table, it's only listed after you click **Show Deleted Products** (section 2, step 3).
+:::
+
+## Orders and history
+
+<Sidenote title="Grants">
+A grant is ConCat's record that an attendee owns what they paid for. A refund can take it away again.
+</Sidenote>
+
+1. On the product's page, click the **Orders** tab.
+
+   <Result>The orders that include this product are listed, each as **Order #** *n* — *k* **Item(s)**, with status badges. Above the list is a **Filters** row: **Paid**, **Unpaid**, **Cancelled**, **With grant**, **No grant** and **Requires Fulfillment**, plus **With stock** and **No stock** if the stock is limited.</Result>
+
+2. Click a filter.
+
+   <Result>Only the matching orders are listed, and the header shows how many **Result(s)** there are. Click the filter again to remove it.</Result>
+
+3. Click an order.
+
+   <Result>The order's page opens, as in [Orders](../orders/orders.md).</Result>
+
+4. Click the **Audit Logs** tab.
+
+   <Result>The changes recorded for this product are listed, such as price changes and images added.</Result>
+
+The other guides in this section cover [Vouchers](./vouchers.md), [Claim Tickets](./claimtickets.md), [Ticketed products](./tickets.md) and [What attendees see in the store](./store.md).

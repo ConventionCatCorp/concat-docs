@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 hide_table_of_contents: true
 textbook: true
 ---
@@ -9,7 +9,7 @@ textbook: true
 Product options ask attendees for extra details when they buy a product, such as a T-shirt size or the name to print on a thank-you card. You create an option once, then assign it to each product that should ask for it.
 
 :::info[In this guide]
-The eight option types and their styles (section 1), creating an option (section 2), and assigning it to a product so attendees are asked for it (section 3).
+The eight option types and their styles (section 1), creating an option (section 2), assigning it to a product so attendees are asked for it (section 3), and editing or deleting it (section 4).
 :::
 
 ## Option types
@@ -51,15 +51,11 @@ Create the option first, then assign it (section 3). These steps use the Registr
 
    <Result>The **Creating Option** form opens, with a **Back to Options** button above it.</Result>
 
-3. Enter a **Name**. Attendees see this name when they fill in the option.
-
-4. Choose a **Type** from Table 1.1. If the type has styles, choose a **Style** as well.
+3. Enter a **Name**, then choose a **Type** from Table 1.1. If the type has styles, choose a **Style** as well.
 
    <Result>The fields below **Type** change to suit it. A Free text Field, for example, shows **Min Length** and **Max Length**.</Result>
 
-5. Fill in the remaining fields. Fields marked **(Optional)** can be left empty.
-
-6. Click **Create**.
+4. Fill in the remaining fields, leaving any marked **(Optional)** empty if you don't need them. Then click **Create**.
 
    <Result>A **New option has been created** message appears and you're back on the **Options** page, where the new option is listed.</Result>
 
@@ -92,7 +88,7 @@ An option does nothing until it's assigned to a product. Assign it on every prod
 Each assigned option has a lock button that turns **Prevent changes to this option after purchase is complete.** on or off. It's unavailable for options that change the price.
 </Sidenote>
 
-1. Open the product: in **Housekeeping › Registration**, click **Badge Products**, or in **Housekeeping › Store Management**, click **Store Products**. Then click the product.
+1. Open the product: in **Housekeeping › Registration**, click **Badge Products**, then the product. Or in **Housekeeping › Store Management**, click **Store Products**, then **View Products** on the product's category, then the product.
 
    <Result>The product's page opens, with an **Options** card. If the product has no options yet, the card says *There are currently no product options.*</Result>
 
@@ -104,13 +100,9 @@ Each assigned option has a lock button that turns **Prevent changes to this opti
 
    <Result>Each selected option appears under the search field, with its ID.</Result>
 
-4. *(Optional)* To make attendees fill in the options, tick **Mark selected options as required.**
+4. *(Optional)* Tick **Mark selected options as required.** to make attendees answer the options, and **Prevent changes to this option after purchase is complete.** to stop them changing their answers once they've paid. Then click **Assign Options**.
 
-5. *(Optional)* To stop attendees changing their answers once they've paid, tick **Prevent changes to this option after purchase is complete.**
-
-6. Click **Assign Options**.
-
-   <Result>The search closes and the options are listed in the **Options** card, each with a lock button and a delete button.</Result>
+   <Result>The search closes and the options are listed in the **Options** card, each with a lock button and a delete button. Options you made required are marked **Required**; options you locked are marked **Immutable**.</Result>
 
 <Figure
   src="/img/tutorial/productOptionAssign.png"
@@ -135,6 +127,22 @@ This screenshot predates the **Prevent changes to this option after purchase is 
 Options that change the price are always locked after purchase. When you select a **Currency** option, or a select option with a choice that changes the price, **Prevent changes to this option after purchase is complete.** is ticked and can't be cleared.
 :::
 
-:::note[Removing an option]
-Removing an option from a product doesn't change existing orders. Attendees keep the values they chose or entered, and line-item prices stay the same.
+## Editing or deleting an option
+
+Changes to an option apply everywhere it's assigned.
+
+1. Go to **Housekeeping › Registration › Options** (or **Store Management › Options**) and click the option in the table.
+
+   <Result>The page is titled **Editing Option:** and the option's name, with **Save Changes** and **Delete** buttons. The **Type** can't be changed.</Result>
+
+2. Change the fields you need, then click **Save Changes**.
+
+   <Result>An **Option has been updated!** message appears, and you're back on the **Options** page.</Result>
+
+3. To remove the option altogether, click **Delete** instead, then confirm in the **Delete Option** dialog.
+
+   <Result>An **Option has been deleted!** message appears, and the option is gone from the **Options** page.</Result>
+
+:::danger[Deleting erases answers]
+The **Delete Option** dialog warns that *Data for this option from users will be erased.* To stop asking a question on one product but keep past answers, remove it from that product's **Options** card instead of deleting it.
 :::
