@@ -67,7 +67,7 @@ Choosing **Tax Rate** sets **Amount Type** to **Percentage**. A percentage can b
 
 2. In **Surcharge Search**, type part of a surcharge's name or its ID, and select it. Repeat for any others.
 
-   <Result>Each selected surcharge appears in the field with its ID. The search results also offer **Create New Surcharge**, which opens the surcharge form in the card; once you click **Create Surcharge**, the new surcharge is selected.</Result>
+   <Result>Each selected surcharge appears in the field with its ID. Once you type, the search results end with **Create New Surcharge**, even when nothing matches. It opens the surcharge form in the card; once you click **Create Surcharge**, the new surcharge is selected.</Result>
 
 3. Click **Assign Surcharges**.
 
@@ -123,7 +123,7 @@ The surcharge's own page shows where it's used. From here you can assign it to s
 
    <Result>An **Assigned Surcharge successfully.** message appears, and the products are listed under **Associated Products**, marked **Assigned**.</Result>
 
-4. To unassign a product, open the menu on its row in **Associated Products** and choose **Unassign**.
+4. To unassign a product, click the more button (<MaterialIcon name="more_horiz" />, **Options**) on its row in **Associated Products**, then choose **Unassign**. The same menu has **View Product**.
 
    <Result>A **Removed surcharge from Product #** message appears, with the product's ID.</Result>
 

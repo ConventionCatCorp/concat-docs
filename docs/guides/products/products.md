@@ -241,6 +241,6 @@ A grant is ConCat's record that an attendee owns what they paid for. A refund ca
 
 4. Click the **Audit Logs** tab.
 
-   <Result>The changes recorded for this product are listed, such as price changes and images added.</Result>
+   <Result>The product's audit history is listed, newest first: edits and price changes, and the orders the product was added to or completed in, with who did each. It works like a person's audit history: see [Managing an attendee's account](../attendees/user-accounts.md), section 4.</Result>
 
 The other guides in this section cover [Vouchers](./vouchers.md), [Claim Tickets](./claimtickets.md), [Ticketed products](./tickets.md) and [What attendees see in the store](./store.md).

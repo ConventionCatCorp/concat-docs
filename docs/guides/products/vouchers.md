@@ -143,7 +143,7 @@ From an unpaid order in Housekeeping, you can create a voucher that only that or
 
    <Result>A **Create voucher #** dialog opens, with the order's number. It says *Create a one-time use voucher for this order.* and has **Display Name** (Optional), **Amount**, **Cancel** and **Create**.</Result>
 
-3. Enter a **Display Name**, such as *Comp from the registration desk*, and the **Amount**. Then click **Create**.
+3. Enter a **Display Name**, such as *Comp from the registration desk*, and the **Amount**. Then click **Create**. Although **Display Name** is marked *Optional*, leaving it empty fails with *displayName is required*.
 
    <Result>The dialog closes. The **Vouchers** card lists the voucher's code, display name and amount, with a **-** button.</Result>
 
@@ -167,11 +167,13 @@ The **+** and **-** buttons are only shown on unpaid orders. The rest of the ord
 
    <Result>The **Order Summary** shows a line **Discount:** with the voucher's display name and code, and its amount taken off. If the voucher covers everything left to pay, the order is completed.</Result>
 
+When a code is refused, the first three messages in Table 8.1 appear in red under the code field. The others appear as an error message, after *One or more errors occurred while trying to process your request.*
+
 <TableFigure title="When a code is refused">
 
 | Message | Why |
 | --- | --- |
-| *Invalid Voucher.* | No voucher has this code, or it has reached **Max Uses**. |
+| *Invalid Voucher.* | No voucher has this code, or it has reached **Max Uses**, as a one-time order voucher (section 7) has once it's on the order. |
 | *This voucher cannot be used with other vouchers.* | The order already has a voucher, and one of them doesn't allow stacking. |
 | *Your balance is too low to redeem another voucher.* | There's nothing left to pay. |
 | *Voucher is expired.* | It's before **Available From** or after **Available Until**. |
