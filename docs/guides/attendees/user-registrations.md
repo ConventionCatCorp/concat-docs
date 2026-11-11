@@ -47,7 +47,7 @@ A registration created by staff starts unpaid. The person pays for it at checkou
 
    <Result>The dialog closes, and the **Registration** row shows the new registration.</Result>
 
-The **Force Registration** dialog appears when the badge product can't be sold: it's sold out, its sale dates have passed, or the person doesn't meet its age rules. It says *The product you are trying to register for is not available. Would you like to force the registration?* and *This will override any product stock limits, expired products, and age restrictions.*
+The **Force Registration** dialog appears when the badge product can't be sold: it's sold out, or it's outside its sale dates. If the person doesn't meet the product's age rules, there's no dialog: a *This product is age restricted and cannot be purchased.* message appears instead, and you need to choose another product. It says *The product you are trying to register for is not available. Would you like to force the registration?* and *This will override any product stock limits, expired products, and age restrictions.*
 
 :::note[Gatekeeping products]
 If the badge product is gatekept, the dialog also has **Silo Options**, with a **Status** list for the person's ticket: `redeemed`, `rescinded`, `waiting` or `winner` (and `deleted`). See [Gatekeeping](../registration/raffle.md).

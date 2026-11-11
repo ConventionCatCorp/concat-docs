@@ -144,7 +144,7 @@ The audit history records what happened to the account and who did it: sign-ins,
 
 4. Click the date between the arrows below the list, choose a **Date** in the **Pick a time to browse from** dialog, and click **Update**.
 
-   <Result>The list jumps to the entries around that date.</Result>
+   <Result>The list now starts at that date and shows the entries before it, newest first. If there are none, it shows **(Empty)**.</Result>
 
 To browse audit logs for the whole system, see [Audit logs](../system/audit-logs.md).
 

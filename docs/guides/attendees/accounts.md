@@ -255,7 +255,7 @@ A parent can turn a sub-account into the dependent's own account, as [Sub-accoun
 
 ### Accept a role invite
 
-Staff can invite people into a role, such as *staff*, with a link: see [Users and access](../quickstart/users-and-access.md), section 3. The person must be logged in to accept.
+Staff can invite people into a role, such as *staff*, with a link: see [Users and access](../quickstart/users-and-access.md), section 3. The person must be logged in to accept. If they open the link while logged out, the login page opens first, and logging in takes them on to the invite.
 
 1. Log in as the invited person, then open the invite link.
 

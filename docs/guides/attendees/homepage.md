@@ -26,7 +26,7 @@ The sidebar is only shown to people who are logged in. Most items appear only wh
 
 2. Make the browser window as narrow as a phone screen, then click **Open Menu** at the top of the page.
 
-   <Result>The sidebar, hidden at this width, opens over the page. Its close button (<MaterialIcon name="close" />) hides it again.</Result>
+   <Result>The sidebar, hidden at this width (575 pixels or narrower), fills the screen in place of the page. Its close button (<MaterialIcon name="close" />) hides it again and brings the page back.</Result>
 
 3. Under **Theme Settings** at the bottom of the sidebar, click the moon button (**Dark mode**).
 

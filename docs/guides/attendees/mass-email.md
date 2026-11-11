@@ -58,7 +58,7 @@ These steps use the Attendees module and a hand-picked list, which is also the s
 
 4. Type a **Subject**, and write the **Body** in Markdown.
 
-   <Result>The preview card shows the email as recipients will see it, with the greeting and footer around your text.</Result>
+   <Result>The preview card shows the email's body as recipients will see it: a greeting (*Dear* and a name; the preview uses your own), your text with its Markdown formatted, and a sign-off with your convention's name and website.</Result>
 
 5. Click **Prepare Email**.
 
