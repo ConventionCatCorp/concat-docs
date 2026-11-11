@@ -49,9 +49,11 @@ A new convention starts with a list of common departments, such as *Art Show*, *
 
    <Result>The **Edit Entry** dialog opens with the department's current values, and the buttons **Save** and **Cancel**.</Result>
 
-5. In **Leads**, type part of a person's name and select them from the results. Repeat for each lead, then click **Save**.
+5. In **Leads**, type part of a person's name and select them from the results, which are shown as `#` and the user ID, then the name. Repeat for each lead, then click **Save**.
 
    <Result>An **Item edited** message appears. The **Leads** column lists each lead's name, linked to their profile.</Result>
+
+   To remove a lead, click the **×** on their name in **Leads** and click **Save**. You can't remove a department's last lead this way: saving with **Leads** empty fails with *leads does not contain 1 required value(s)*. Add the replacement lead first, or ask ConCat Support to clear the leads.
 
 6. *(Optional: to hide a department from applicants)* Click **Edit** again, untick **Show on public application form**, and click **Save**.
 

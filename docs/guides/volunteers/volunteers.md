@@ -60,9 +60,9 @@ The **Applications** list also sums each application up in a few columns, shown 
 
    <Result>Only matching applications are listed. If none match, the table says *No results found.*</Result>
 
-4. *(Optional)* Click the filter button in the **Status** column header, keep only **Unassigned** ticked, and apply the filter.
+4. *(Optional)* Click the filter button in the **Status** column header. In the list that opens, untick **Assigned** and **Pending Request** so that only **Unassigned** is ticked, then click **Apply**.
 
-   <Result>Only volunteers with no assignment are listed.</Result>
+   <Result>Only volunteers with no assignment are listed, and the column's filter button is highlighted. To remove the filter, open it again and click **Clear**.</Result>
 
 :::note[Filtering by department and status together]
 The **Status** and **Department(s)** filters work together. With **Assigned** and *Art Show* ticked, the list shows volunteers assigned to Art Show, not volunteers assigned anywhere who are interested in Art Show.
