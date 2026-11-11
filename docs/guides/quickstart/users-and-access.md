@@ -66,7 +66,7 @@ A permission allows one action, such as viewing orders. A role is a named set of
 
    <Result>The person is listed on the role's **Users** tab.</Result>
 
-5. *(Instead of step 4, for people who will sign up themselves)* Click **Invites**, then **Create Invite**. Set the **Amount** of codes, their **Max Uses** (`-1` for unlimited) and when they **Expire**, then click **Submit**.
+5. *(Instead of step 4, for people who will sign up themselves)* Click **Invites**, then **Create Invite**. Set the **Amount** of codes, their **Max Uses** (`-1` for unlimited) and when they **Expire**, then click **Create Invite**.
 
    <Result>An **Invite(s) created!** message appears, and the invite is listed with its **Code**, **Expiration** and **Uses**. Its **Copy Link** button copies a link to send to your team, and shows **Invite link copied to clipboard**.</Result>
 

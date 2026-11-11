@@ -67,26 +67,22 @@ Attendees agree to your policies when they create an account and when they regis
 
 1. Click the **Terms** tab.
 
-   <Result>Each policy is listed with a short description. A policy that doesn't exist yet shows **Create Organization-wide Policy** and **Create Convention-specific Policy** under **Create Policies**.</Result>
+   <Result>Each policy is listed with a short description. **Privacy terms** and **Convention Policy / Terms & Conditions** already have an **Organization-wide Policy** box, holding the placeholder *To update this value: Go to Housekeeping > Settings > Terms.*</Result>
 
-2. Under **Privacy terms**, click **Create Organization-wide Policy**, or **Create Convention-specific Policy** if this wording is for this convention only.
+2. Under **Privacy terms**, replace the placeholder in the **Organization-wide Policy** box with your privacy policy, then click **Save** below it.
 
-   <Result>A text box headed **Organization-wide Policy** (or **Convention-specific Policy**) appears, containing *TBC*.</Result>
+   <Result>An **Organization-wide policy saved** message appears.</Result>
 
-3. Replace *TBC* with your privacy policy, then click **Save**.
+3. Do the same for **Convention Policy / Terms & Conditions**: your terms and conditions or code of conduct.
 
-   <Result>An **Organization-wide policy saved** message appears (or **Convention-specific policy saved**).</Result>
+   <Result>A second **Organization-wide policy saved** message appears.</Result>
 
-4. Repeat steps 2 and 3 for **Convention Policy / Terms & Conditions**: your terms and conditions or code of conduct.
-
-   <Result>A second saved message appears, and both policies show your text instead of *TBC*.</Result>
-
-5. Open your instance's homepage in a private browser window and click **Privacy Policy** at the bottom of the page.
+4. Open your instance's homepage in a private browser window and click **Privacy Policy** at the bottom of the page.
 
    <Result>The page shows the privacy policy you saved.</Result>
 
 :::caution[Watch out]
-A policy takes effect as soon as you create it, with the placeholder text *TBC*. Replace the placeholder and save before attendees can see the policy.
+A new organization starts with placeholder or sample text in most policies, and attendees see it until you replace it. Read every policy in Table 3.1 before opening registration. To use different wording for this convention only, click **Create Convention-specific Policy** under the policy; it then replaces the organization-wide text here.
 :::
 
 <TableFigure title="The other policies">
