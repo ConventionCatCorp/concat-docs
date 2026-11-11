@@ -22,7 +22,7 @@ A badge product is a tier attendees register for, such as *General Admission* or
 
 1. Go to **Housekeeping › Registration › Badge Products**.
 
-   <Result>The **Badge Products** page lists your registration tiers, with **Create New Product**, **Category Surcharges** and **Show Deleted Products** above them.</Result>
+   <Result>The **Badge Products** page lists your registration tiers, with **Create New Product** and **Category Surcharges** above them.</Result>
 
 2. Click **Create New Product**.
 
@@ -126,15 +126,15 @@ Sub-accounts let one account register a group or family and pay for everyone in 
 
 Attendees then see the options below on their **Attendance** page, under **Your registrations**, once they've registered themselves.
 
-3. As an attendee, click **Register another attendee**.
+1. As an attendee, click **Register another attendee**.
 
-   <Result>The registration starts with a **New user** step asking for the person's name, date of birth, address and phone number, then continues to **Registration Type**, **Additional Information** and **Review**.</Result>
+   <Result>The registration starts with a **New user** step asking for the person's name and date of birth. It uses the account holder's address unless **Use different mailing address** is ticked. Then it continues to **Registration Type**, **Additional Information** and **Review**.</Result>
 
-4. *(If PII-free children are allowed)* As an attendee, click **Register child (under** *age***)**.
+2. *(If PII-free children are allowed)* As an attendee, click **Register child (under** *age***)**.
 
    <Result>There is no personal-details step. The attendee ticks your child-registration terms, chooses a tier and fills in the form, where an emergency contact is required.</Result>
 
-5. As an attendee, click **Complete registration**.
+3. As an attendee, click **Complete registration**.
 
    <Result>Every unpaid attendee under the account is paid for in one checkout.</Result>
 
