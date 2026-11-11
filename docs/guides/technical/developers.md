@@ -81,7 +81,7 @@ The webhook list has the columns **#**, **Name**, **URL**, **Events**, **Fires**
 
 1. In the webhook's row, click **Test**.
 
-   <Result>ConCat sends a `test` event, with the data `{"test":123}`, to the webhook's URL. If your server accepts it, a **Success, see console for data** message appears. If it refuses it or can't be reached, an error message appears instead.</Result>
+   <Result>ConCat sends a `test` event, with the data `{"test":123}`, to the webhook's URL. If your server accepts it, a **Success, see console for data** message appears. If it refuses it or can't be reached, an error message appears instead. For an address that can't be reached, it's a general one: *Our server ran into an issue!* with a reference code.</Result>
 
 2. Click **View Verification Key**.
 
