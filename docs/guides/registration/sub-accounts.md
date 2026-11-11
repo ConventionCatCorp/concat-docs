@@ -96,7 +96,7 @@ Follow these steps as an attendee to see what account holders see. The account h
 
 7. Click **Complete registration** at the top of **Attendance** and pay.
 
-   <Result>Every unpaid attendee on the account is paid for in one checkout. The status card says *All set! You and* the number of others *are ready to attend* your convention.</Result>
+   <Result>Every unpaid attendee on the account is paid for in one checkout. The status card says, for example, *All set! You and 1 others are ready to attend* and your convention's name, with the number of other attendees, followed by everyone's names.</Result>
 
 <TableFigure title="Messages in the Attendees box and on Register">
 
@@ -165,7 +165,7 @@ An approved dealer whose table type allows assistants can add their own sub-acco
 
 2. Click **Add** next to a sub-account.
 
-   <Result>An **Assistant added.** message appears, and the sub-account is listed under **Current Assistants**.</Result>
+   <Result>An **Assistant added.** message appears, and the sub-account is listed under **Current Assistants** as **Accepted**. Its name is blank there, because the list shows usernames and a sub-account has none.</Result>
 
 ## Minors who sign up themselves
 
@@ -173,7 +173,7 @@ A person between the child and minor age thresholds can create their own account
 
 1. In a private browser window, start creating an account on your instance, and at the age check choose the middle option. It reads *I was born before* a date, followed by the age range, such as *(16 to 18 years old)*.
 
-   <Result>The sign-up continues. On the policies step, your **Minor Registration Warning** is shown with the other policies.</Result>
+   <Result>The sign-up continues. On the **Convention Policies** step, your **Minor Registration Warning** is shown below your terms and conditions, above the two checkboxes.</Result>
 
 Choosing the last option stops the sign-up with **We're sorry**. Identity verification, where ConCat Support has turned it on, replaces this age check. The full sign-up is covered in [Attendee accounts and sign-in](../attendees/accounts.md).
 

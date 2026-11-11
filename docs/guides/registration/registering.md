@@ -133,7 +133,7 @@ Attendees can change their registration later, for example to fix their badge na
 
 3. *(Upgrade)* Click **Modify** again, then **Change**, then **Select** on the higher tier, then **Update Registration**.
 
-   <Result>**Product added to cart!** appears. In the cart, the new tier has an **Upgrade Discount** for what the attendee already paid, so they pay the difference.</Result>
+   <Result>**Product added to cart!** appears. In the cart, the **Order Summary** has a **Discount: Upgrade Discount** line for what the attendee already paid, so they pay the difference. If the old tier was free, there's no discount line.</Result>
 
 4. *(Undo an upgrade before paying)* Click **Modify**, then **Change**, then **Cancel Upgrade** on the paid tier, then **Update Registration**.
 

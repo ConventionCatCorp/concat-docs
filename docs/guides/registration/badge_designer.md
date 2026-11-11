@@ -118,9 +118,9 @@ A node's **Node** group has **Rotate**, which turns its contents 90 degrees, and
 
 ## Preview and test print
 
-1. Click **Load users**, choose up to 10 attendees in the **Select Preview Users** dialog, and click **Submit**.
+1. Click **Load users**. In the **Select Preview Users** dialog, search for up to 10 attendees by name or ID and select each one, then click **Submit**.
 
-   <Result>The preview shows a blank label followed by a label for each attendee you chose, filled in with their details.</Result>
+   <Result>The preview shows the sample label, filled in with the elements' placeholders, followed by a label for each attendee you chose, filled in with their details.</Result>
 
 2. Click **Print**.
 

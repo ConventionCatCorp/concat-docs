@@ -44,7 +44,7 @@ Before the sender starts, the recipient must create an account and register, cho
 
 2. Enter the recipient's email address and your own password, then click **Transfer registration**.
 
-   <Result>A **Registration has been transferred!** message appears. The sender's card no longer shows the status **Registered**.</Result>
+   <Result>A **Registration has been transferred!** message appears. The sender's registration is now unpaid: their card shows the status **Unpaid**, and the status card asks them to **Complete registration**.</Result>
 
 3. As the recipient, open **Attendance**.
 
