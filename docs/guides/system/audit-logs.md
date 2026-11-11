@@ -76,4 +76,4 @@ Tags describe an entry, such as **admin** for admin activity, **create**, **edit
 
 2. Choose a date, then click **Update**.
 
-   <Result>The log shows entries from that date, and the date between the arrows changes to match.</Result>
+   <Result>The log moves back to that date: it lists the entries from before it, newest first, and can start with a few entries from just after it. The date between the arrows changes too.</Result>

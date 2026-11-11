@@ -42,7 +42,7 @@ Exports cover the convention you're signed in to, except the user export, which 
 
 2. On the card for the data you need, click **CSV** or **JSON**.
 
-   <Result>Your browser downloads the export. A JSON file is named after the export, such as `registration.json`.</Result>
+   <Result>Your browser downloads the export, named after it, such as `registration.csv` or `registration.json`.</Result>
 
 3. *(Optional)* Go to **Housekeeping › Registration › Settings** and, on the **Export Data** card, click **CSV** or **JSON**.
 
