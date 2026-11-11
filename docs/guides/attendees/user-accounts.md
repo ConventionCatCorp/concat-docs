@@ -6,61 +6,80 @@ textbook: true
 
 # Managing an attendee's account
 
-This guide covers the account side of an attendee's profile: correcting their details, helping them sign in, reading their emergency contacts and audit history, exporting their data and deleting the account. Every section starts on the person's profile, which you open from **Housekeeping › Attendees › User Search** as [Finding attendees](./user-search.md) explains.
+Correct an attendee's details, help them sign in, and view, export or delete their account. Every section starts on the person's profile: see [Finding attendees](./user-search.md).
 
 :::info[In this guide]
-Editing personal details (section 1), helping someone sign in (section 2), emergency contacts (section 3), the audit history (section 4), exporting one person's data (section 5), and deleting an account (section 6).
+Personal details (section 1), sign-in help (section 2), emergency contacts (section 3), audit history (section 4), data export (section 5), and account deletion (section 6).
 :::
 
 ## Edit personal details
 
 <Sidenote title="Who can do this">
-Editing needs `user:update`, which the default *admin* and *registration* roles have. Without it, the pencil button isn't shown.
+Needs `user:update` (default *admin* and *registration* roles). Without it, there's no pencil button.
 </Sidenote>
 
-1. On the person's profile, on the **Name** tab, click the pencil button (<MaterialIcon name="edit" />) in the **User Profile** card.
+1. On the **Name** tab, click the pencil button (<MaterialIcon name="edit" />) in the **User Profile** card (Figure 1.1).
 
-   <Result>The **Edit User** dialog opens, with **Preferred Name**, **Date of birth**, **First Name**, **Last Name**, **Email**, **Phone**, **Address Line 1**, **Address Line 2 (Optional)**, **City**, **Country**, **State / province** and **Zip / postal code**.</Result>
+   <Result>The **Edit User** dialog opens with the person's names, date of birth, email, phone and address.</Result>
 
 2. Correct the details, then click **Update User**.
 
    <Result>The dialog closes, and the **User Profile** card shows the new details.</Result>
 
+<Figure
+  src="/img/guides/attendees/profile-name-tab.webp"
+  alt="A test attendee's profile on the Name tab: the tabs Name, Notes, Orders, Roles, Permissions, Volunteer, Dealer and Audit; the User Profile card with pencil, download and delete buttons; the Information card; and the Actions card."
+  title="A profile's Name tab"
+  markers={[
+    { n: 1, x: 0.8, y: 12.4, w: 98.4, h: 6.8 },
+    { n: 2, x: 38.5, y: 21.7, w: 8.8, h: 4.6 },
+    { n: 3, x: 92.8, y: 29.1, w: 4.9, h: 6.3 },
+    { n: 4, x: 50.8, y: 64.7, w: 48.4, h: 34 },
+  ]}
+>
+
+1. The profile's tabs. You see only those your permissions allow.
+2. Edit (pencil), export (section 5) and delete (section 6).
+3. The **Registration** row's pencil: see [Managing an attendee's registrations and orders](./user-registrations.md).
+4. The **Actions** card (section 2).
+
+</Figure>
+
 :::caution[Watch out]
-- **Email address:** a new address doesn't take effect straight away. ConCat emails a confirmation link to the new address, and the card keeps the old one, with a warning sign, until the person clicks it. Only one change is allowed in 24 hours; a second try shows *You can only change your email once every 24 hours.*
-- **Date of birth:** a main account can't be given a date of birth below your **Child Age Threshold**: *User is underage. The minimum age is … years old.* You can't change your own date of birth here.
-- **Address:** if the person has sub-accounts at the same address and phone number, those change with it.
+- **Email address:** the change waits until the person clicks the link sent to the new address; until then the card shows the old one with a warning sign. One change per 24 hours (*You can only change your email once every 24 hours.*).
+- **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is … years old.*). You can't change your own here.
+- **Address:** sub-accounts with the same address and phone number change with it.
 :::
 
 ## Help someone sign in
 
-The **Actions** card on the **Name** tab holds the sign-in tools. It's shown to staff with `registration:cashier` or `user:update`. Table 2.1 lists its buttons.
+The **Actions** card on the **Name** tab holds the sign-in tools, for staff with `registration:cashier` or `user:update`.
 
 <TableFigure title="The Actions card">
 
 | Button | Does | Shown when |
 | --- | --- | --- |
-| **Open Cashier Interface** | Opens this person in the [Cashier UI](../registration/cashier/cashier.md). | You have `registration:cashier`. |
-| **Allow user to login** | Lets the person log in before they've confirmed their email (section 2.1). | You have `user:update`, and the account isn't confirmed. Not for sub-accounts. |
-| **Send password reset email** | Emails the person a password reset link (section 2.2). | You have `user:update`. Not for sub-accounts. |
-| **At-Con Password Reset** | Makes a reset code to give the person face to face (section 2.3). | You have `user:update`. Not for sub-accounts. |
-| **Reset 2FA** | Removes the person's two-factor authentication (section 2.4). | The person has set it up. Removing it needs `user:update`. |
+| **Open Cashier Interface** | Opens the person in the [Cashier UI](../registration/cashier/cashier.md). | You have `registration:cashier`. |
+| **Allow user to login** | Lets them log in before confirming their email (section 2.1). | You have `user:update`; account unconfirmed. Not for sub-accounts. |
+| **Send password reset email** | Emails a reset link (section 2.2). | You have `user:update`. Not for sub-accounts. |
+| **At-Con Password Reset** | Makes a reset code to give in person (section 2.3). | You have `user:update`. Not for sub-accounts. |
+| **Reset 2FA** | Removes two-factor authentication (section 2.4). | The person has set it up. Removing it needs `user:update`. |
 
 </TableFigure>
 
 ### Let an unconfirmed attendee log in
 
-When **Require e-mail confirmation before login.** is on (the default), a new account can't log in until its owner clicks the link in the confirmation email. Until then, a login attempt says *Please check your email to confirm your account and complete registration.*
+When **Require e-mail confirmation before login.** is on (the default), a new account can't log in until its owner clicks the link in the confirmation email.
 
 1. In the **Actions** card, click **Allow user to login**.
 
-   <Result>A **Verify user** dialog explains that the user will be able to log in, but won't receive any further emails until their email is verified, and asks *Are you sure you want to verify this user?*</Result>
+   <Result>A **Verify user** dialog asks *Are you sure you want to verify this user?*</Result>
 
 2. Click **Verify**.
 
-   <Result>A **Success! That user has verified, reloading.** message appears, and the **Allow user to login** button disappears.</Result>
+   <Result>**Success! That user has verified, reloading.** appears, and **Allow user to login** disappears.</Result>
 
-The person still gets no email from ConCat until they confirm their address. They can ask for a new confirmation email from their homepage: see [Attendee accounts and sign-in](./accounts.md), section 2.
+They still get no ConCat email until they confirm their address, which they can resend from their homepage: see [Attendee accounts and sign-in](./accounts.md), section 2.
 
 ### Send a password reset email
 
@@ -70,25 +89,25 @@ The person still gets no email from ConCat until they confirm their address. The
 
 2. Click **Confirm**.
 
-   <Result>A **Successfully sent password reset email!** message appears. The person receives an email with the subject *Password Reset* (after your **Notification Prefix**), with a link that works for 24 hours.</Result>
+   <Result>**Successfully sent password reset email!** appears, and the person gets a *Password Reset* email with a link that works for 24 hours.</Result>
 
-Setting a new password from the link also confirms the person's email address, so it fixes an unconfirmed account too. The attendee's side is in [Attendee accounts and sign-in](./accounts.md), section 4.
+Setting a new password from the link also confirms the email address. The attendee's side is in [Attendee accounts and sign-in](./accounts.md), section 4.
 
 ### Give a reset code at the convention
 
 <Sidenote title="Deprecated">
-ConCat marks this tool as deprecated and recommends **Send password reset email** instead.
+ConCat marks this tool deprecated; use **Send password reset email** instead.
 </Sidenote>
 
-An at-con reset code lets someone at your registration desk set a new password without email. Only give one in person, after checking the person's ID.
+The code lets someone at your registration desk set a new password without email. Give one only in person, after checking ID.
 
 1. In the **Actions** card, click **At-Con Password Reset**.
 
-   <Result>An **At-Con Password Reset** dialog warns that a code should only be issued in person after verifying the attendee's identity, and that the feature is deprecated.</Result>
+   <Result>An **At-Con Password Reset** dialog warns to issue codes only in person, after verifying identity.</Result>
 
 2. Click **Confirm**.
 
-   <Result>The button now reads **Reset code:** followed by an 8-character code.</Result>
+   <Result>The button now reads **Reset code:** and an 8-character code.</Result>
 
 3. Give the code to the person. On the login page they click **Already Got a Reset Code?**, enter the code and a new password, and click **Reset Password**.
 
@@ -104,90 +123,108 @@ Use this when someone has lost their authenticator app and backup codes.
 
 2. Click **Remove**.
 
-   <Result>The dialog closes and the **Reset 2FA** button disappears. The person can now log in with their password alone, and set up two-factor authentication again.</Result>
+   <Result>**Reset 2FA** disappears. The person can log in with their password alone and set up two-factor authentication again.</Result>
 
 ## Emergency contacts
 
 <Sidenote title="Who can do this">
-The **Emergency Contacts** tab needs `admin:read:emergencycontacts`, which the default *admin* and *registration* roles have. It only appears for people registered for this convention.
+Needs `admin:read:emergencycontacts` (default *admin* and *registration* roles). The tab shows only for people registered for this convention.
 </Sidenote>
 
-Attendees give up to two emergency contacts when they register. Opening them is logged, because they're personal information about someone else.
+Attendees give up to two emergency contacts when registering. Viewing them is logged, as they're someone else's personal information.
 
 1. On the person's profile, click the **Emergency Contacts** tab.
 
-   <Result>A **PII Access Warning** card says you're about to see sensitive personal information, that you must have a legitimate reason, and *This access will be logged for auditing purposes.* A **Continue** button is below it.</Result>
+   <Result>A **PII Access Warning** card says *This access will be logged for auditing purposes.*, with a **Continue** button.</Result>
 
 2. Click **Continue**.
 
-   <Result>Two **Emergency Contact Info** cards appear, each with a **Name** and **Phone**, or *Contact information was not provided.* The access is written to the audit log.</Result>
+   <Result>Two **Emergency Contact Info** cards show a **Name** and **Phone** each, or *Contact information was not provided.*</Result>
 
 ## Audit history
 
 <Sidenote title="Who can do this">
-The **Audit** tab needs `audit:read`, which the default *admin* and *hr* roles have.
+Needs `audit:read` (default *admin* and *hr* roles).
 </Sidenote>
 
-The audit history records what happened to the account and who did it: sign-ins, changes, staff actions, and views of personal information.
+The audit history records sign-ins, changes, staff actions and views of personal information, and who did them.
 
 1. On the person's profile, click the **Audit** tab.
 
-   <Result>A list of audit entries for this account appears, each with its date and time and a sentence describing what happened. Entries made by ConCat support are shaded pink, with a support-agent icon. A **Search all tags...** box is above the list.</Result>
+   <Result>The account's entries are listed with date, time and description, below a **Search all tags...** box. ConCat support's entries are shaded pink, with a support-agent icon.</Result>
 
-2. Click the arrow (**Toggle details**) at the start of an entry.
+2. Click the arrow (**Toggle details**) at the start of an entry (Figure 4.1).
 
-   <Result>The entry opens, with a **Show Raw** button, the entry's type, and its tags, each with a plus and a minus button.</Result>
+   <Result>The entry opens with **Show Raw**, its type, and its tags, each with plus and minus buttons.</Result>
 
 3. Click the plus button on one of the tags.
 
-   <Result>Only entries with that tag are listed, and the tag is shown above the list with a button to remove the filter.</Result>
+   <Result>Only entries with that tag are listed; the tag shows above the list with a button to remove the filter.</Result>
 
 4. Click the date between the arrows below the list, choose a **Date** in the **Pick a time to browse from** dialog, and click **Update**.
 
-   <Result>The list now starts at that date and shows the entries before it, newest first. If there are none, it shows **(Empty)**.</Result>
+   <Result>The list shows the entries before that date, newest first, or **(Empty)**.</Result>
 
-To browse audit logs for the whole system, see [Audit logs](../system/audit-logs.md).
+<Figure
+  src="/img/guides/attendees/audit-entry.webp"
+  alt="An expanded audit entry: an arrow pointing down, the date, the sentence, a Show Raw button, the entry's type, and the tags admin, email and export, each with plus and minus buttons."
+  title="An expanded audit entry"
+  width="600px"
+  markers={[
+    { n: 1, x: 0, y: 5.9, w: 7.2, h: 30.6 },
+    { n: 2, x: 6.7, y: 52.6, w: 14.3, h: 21 },
+    { n: 3, x: 25.4, y: 74.4, w: 18.5, h: 25 },
+  ]}
+>
+
+1. **Toggle details**.
+2. **Show Raw**.
+3. A tag, with its plus (show only entries with it) and minus (hide them) buttons.
+
+</Figure>
+
+For system-wide logs, see [Audit logs](../system/audit-logs.md).
 
 ## Export one person's data
 
 <Sidenote title="Who can do this">
-Exporting needs `user:update` and `system:export`. By default, only the *admin* role has both.
+Needs `user:update` and `system:export`; by default only *admin* has both.
 </Sidenote>
 
-Use this to answer a person's request for a copy of their data. The file holds personal information, and the export itself is logged.
+Use this when a person asks for a copy of their data.
 
 1. On the person's profile, click the download button (<MaterialIcon name="download" />) in the **User Profile** card.
 
-   <Result>A dialog titled **Export for User ID** and the person's ID opens, with the warning **This export will contain PII, and be logged. Handle with care.** and a **Do not include audit log entries.** switch.</Result>
+   <Result>An **Export for User ID** dialog warns **This export will contain PII, and be logged. Handle with care.**</Result>
 
-2. If you don't need the audit entries, turn on **Do not include audit log entries.**, which keeps the file much smaller. Then click **Download**.
+2. To leave out audit entries for a much smaller file, turn on **Do not include audit log entries.** Then click **Download**.
 
-   <Result>A message asks you to wait on the page: *Export request made. Please wait on this page, and do not navigate away.* Then **Export successful.** appears, and your browser saves a file named `user_` + the ID + `_export.json`.</Result>
+   <Result>Stay on the page until **Export successful.** appears; your browser saves `user_` + the ID + `_export.json`.</Result>
 
 ## Delete an account
 
 <Sidenote title="Who can do this">
-Deleting needs `user:update`, `staff:admin:update`, `pii:admin:read` and `pii:admin:delete`. By default, only the *admin* role has them.
+Needs `user:update`, `staff:admin:update`, `pii:admin:read` and `pii:admin:delete`; by default only *admin* has them.
 </Sidenote>
 
-Deleting is a request that runs 24 hours later, when ConCat erases the account's personal information. Until then you can cancel it. You can't request your own deletion this way (*You cannot delete your account this way.*), or another administrator's (*You cannot delete other administrators.*).
+Deletion runs 24 hours after the request, erasing the account's personal information; until then you can cancel. You can't delete your own account this way (*You cannot delete your account this way.*) or another administrator's (*You cannot delete other administrators.*).
 
 1. On the person's profile, click the delete button (<MaterialIcon name="delete" />) in the **User Profile** card.
 
-   <Result>A **Request to delete account?** dialog asks *Are you sure you want to request to delete this account? It will be deleted in 24 hours unless canceled.*</Result>
+   <Result>A **Request to delete account?** dialog asks you to confirm.</Result>
 
 2. Click **Delete**.
 
-   <Result>A **Deletion of user has been requested.** message appears. A red banner at the top of the **Name** tab says *This account is marked for deletion and will be deleted on* the date and time, with a **Cancel Request** button.</Result>
+   <Result>**Deletion of user has been requested.** appears, and a red banner on the **Name** tab gives the deletion date and time, with a **Cancel Request** button.</Result>
 
 3. *(To cancel)* Click **Cancel Request** in the banner.
 
-   <Result>A **Cancel Request** dialog says the cancellation can't be undone, and that a new request will be needed to delete the user again.</Result>
+   <Result>A **Cancel Request** dialog warns this can't be undone; deleting later needs a new request.</Result>
 
 4. Click **Confirm Cancellation**.
 
-   <Result>A **Request was successfully canceled.** message appears, and the red banner disappears.</Result>
+   <Result>**Request was successfully canceled.** appears, and the banner disappears.</Result>
 
 :::danger[Deletion is permanent]
-Once the 24 hours are up, the personal information is gone and can't be brought back. Export the person's data first (section 5) if you need a copy.
+After the 24 hours, the personal information can't be brought back. Export the data first (section 5) if you need a copy.
 :::

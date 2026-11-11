@@ -6,147 +6,158 @@ textbook: true
 
 # Finding attendees
 
-User Search finds any account in your organization by name, username, email address, phone number, badge ID or date of birth. Each result opens the person's profile, where most work on one attendee starts.
+Find any account by name, username, email, phone, badge ID or date of birth, and open the person's profile.
 
 :::info[In this guide]
-Searching for a person (section 1), narrowing the search with filters (section 2), what the badges in the results mean (section 3), and the profile and its tabs (section 4).
+Searching (section 1), filters (section 2), result badges (section 3), and the profile and its tabs (section 4).
 :::
 
 ## Search for a person
 
 <Sidenote title="Who can do this">
-Anyone who can open Housekeeping (`system:login`) can search. Email addresses and dates of birth only show to staff allowed to read them (`user:pii:email`, `user:pii:bornat`).
+Searching needs `system:login`. Email addresses and dates of birth show only with `user:pii:email` and `user:pii:bornat`.
 </Sidenote>
 
-Accounts belong to your organization, not to one convention, so the search covers every account in the organization. The registration details shown with each result are for the convention you're working in.
+The search covers every account in your organization; registration details are for the convention you're working in.
 
 1. Go to **Housekeeping › Attendees › User Search**.
 
-   <Result>The **User Search** page opens, with a **Search users...** box and a filter button next to it. Below, **Search Parameters** lists what you can search for: **Badge ID (for example, B101)**, **Username**, **First Name, Last Name, and / or Preferred Name**, **Phone number**, **Email Address** and **Date of birth (YYYY-MM-DD)**. The address ends in `/housekeeping/attendees/search`.</Result>
+   <Result>The **User Search** page opens at `/housekeeping/attendees/search`, with a **Search users...** box and a **Search Parameters** list.</Result>
 
 2. In **Search users...**, type the start of a first name, last name or username.
 
-   <Result>After a moment, matching people are listed, at most 15 to a page, with page buttons below. Each row shows the person's picture and name, with the text that matched in bold, then their status badges (Table 3.1) and, underneath, their badge name for this convention.</Result>
+   <Result>Matching people are listed, 15 to a page, with their status badges (Table 3.1) and badge name.</Result>
 
 3. Replace the text with a badge ID in its printed form, such as `B101`.
 
-   <Result>The person who has that badge ID at this convention is listed, with a blue **Badge ID:** badge showing it.</Result>
+   <Result>The person with that badge ID at this convention is listed, with a blue **Badge ID:** badge.</Result>
 
 4. Replace the text with a name nobody has, such as `zzzz`.
 
-   <Result>**No results found.** appears under the **Search Parameters** heading, above the list of what you can search for.</Result>
-
-Table 1.1 lists everything you can type.
+   <Result>**No results found.** appears.</Result>
 
 <TableFigure title="What you can search for">
 
 | You type | The search finds |
 | --- | --- |
-| A first name, last name, preferred name or username | People whose name or username starts with what you typed. |
-| A first name, a space, then a last name | People whose first name starts with the first word and whose last name starts with any later word. <small>Extra words, such as a middle name, don't stop a match.</small> |
-| An email address or phone number | People whose email address or phone number starts with what you typed. |
-| A user ID, such as `1234` | The person with that ID, listed first with an **ID: #1234** badge. |
-| A badge ID in printed form, such as `B101` | The person with that badge ID at this convention. |
-| A date of birth as `YYYY-MM-DD` | On its own, everyone born that day. After a name, only the matches born that day. |
+| A first name, last name, preferred name or username | Names or usernames starting with it. |
+| A first name, a space, then a last name | First name starting with the first word, last name with any later word. <small>Extra words, such as a middle name, don't stop a match.</small> |
+| An email address or phone number | Addresses or numbers starting with it. |
+| A user ID, such as `1234` | That person, listed first with an **ID: #1234** badge. |
+| A badge ID in printed form, such as `B101` | That badge's holder at this convention. |
+| A date of birth as `YYYY-MM-DD` | Alone, everyone born that day. After a name, only matches born that day. |
 
 </TableFigure>
 
 :::tip
-The search text and any filters you turn on are kept in the page address. Bookmark the page, or send the address to a colleague, to repeat a search.
+The search and filters are kept in the page address: bookmark or share it to repeat a search.
 :::
 
-With a barcode scanner set up as in [Scanner](../registration/cashier/scanner.md), scanning the barcode on an ID or an attendee's registration QR code fills in the search box for you.
+A barcode scanner ([Scanner](../registration/cashier/scanner.md)) fills in the search box from an ID or a registration QR code.
 
 ## Narrow the search
 
-Filters cut a long list down to one group of people.
+1. Click the filter button (<MaterialIcon name="tune" />) next to **Search users...** (Figure 2.1).
 
-1. Click the filter button (<MaterialIcon name="tune" />) next to **Search users...**.
-
-   <Result>A panel titled **Configure User Search Filters** opens, with the five switches in Table 2.1, all off.</Result>
+   <Result>A **Configure User Search Filters** panel opens with the five switches in Table 2.1, all off.</Result>
 
 2. Type a name in **Search users...**, then turn on **Only show volunteers**.
 
-   <Result>The list keeps only people who have a volunteer application for this convention.</Result>
+   <Result>Only people with a volunteer application for this convention stay listed.</Result>
+
+<Figure
+  src="/img/guides/attendees/user-search-filters.webp"
+  alt="User Search with docs typed in the search box, two people listed, and the Configure User Search Filters panel open below the filter button, with five switches."
+  title="The search filters"
+  markers={[
+    { n: 1, x: 92.8, y: 10.5, w: 5.4, h: 15.5 },
+    { n: 2, x: 75.2, y: 22.9, w: 24.6, h: 67.7 },
+  ]}
+>
+
+1. The filter button.
+2. The **Configure User Search Filters** panel, with every switch off.
+
+</Figure>
 
 <TableFigure title="Search filters">
 
-| Switch | Keeps |
+| Switch | Keeps, at this convention |
 | --- | --- |
-| **Only show badge printed users** | People whose badge for this convention has been printed. |
-| **Only show paid users** | People whose registration for this convention is paid. |
-| **Only show dealers** | People with a dealer application for this convention. |
-| **Only show volunteers** | People with a volunteer application for this convention. |
-| **Search badge name + UID** | Also matches the start of badge names at this convention, as well as names. |
+| **Only show badge printed users** | People with a printed badge. |
+| **Only show paid users** | People with a paid registration. |
+| **Only show dealers** | People with a dealer application. |
+| **Only show volunteers** | People with a volunteer application. |
+| **Search badge name + UID** | Also matches the start of badge names. |
 
 </TableFigure>
 
 ## Read the results
 
 <Sidenote title="Returning attendees">
-**Returning attendee** only appears when **Show 'Returning Attendee' badge on the user profile.** is on, under **Users** on the **Convention** tab of **Housekeeping › System › Settings**.
+Shown only when **Show 'Returning Attendee' badge on the user profile.** is on, under **Users** on the **Convention** tab of **Housekeeping › System › Settings**.
 </Sidenote>
 
-Each result, and the header of each profile, carries status badges. Table 3.1 explains them.
+Results and profile headers carry these status badges.
 
 <TableFigure title="Status badges">
 
 | Badge | Means |
 | --- | --- |
-| **Registered, Paid** | The person has a paid registration for this convention. |
-| **Registered, Not Paid** | The person has a registration for this convention that isn't paid yet. |
-| **Not Registered** | The person has no registration for this convention. |
-| **Sub-account** | The account is managed from another account, such as a parent's. |
-| **Child** | A child sub-account, or someone below your **Child Age Threshold** when the convention starts. <small>The age check needs permission to read dates of birth.</small> |
-| **Returning attendee** | The person's badge was printed at your previous convention. |
-| **Banned** | The person has a ban note. See [User Notes](../usernotes/usernotes.md). |
-| **Restriction** | The person has a restriction note. |
-| **Pending Review** | The account may duplicate a banned account. <small>Shown on the profile only. Hover over it for details.</small> |
+| **Registered, Paid** | A paid registration for this convention. |
+| **Registered, Not Paid** | An unpaid registration for this convention. |
+| **Not Registered** | No registration for this convention. |
+| **Sub-account** | Managed from another account, such as a parent's. |
+| **Child** | A child sub-account, or below your **Child Age Threshold** when the convention starts. <small>The age check needs permission to read dates of birth.</small> |
+| **Returning attendee** | Badge printed at your previous convention. |
+| **Banned** | Has a ban note. See [User Notes](../usernotes/usernotes.md). |
+| **Restriction** | Has a restriction note. |
+| **Pending Review** | May duplicate a banned account. <small>Profile only; hover for details.</small> |
 
 </TableFigure>
 
-Blue badges show which part of the account matched: **Email:**, **Badge Name:**, **ID:**, **Badge ID:** or **DoB:**, followed by the matching value.
+Blue badges show the field that matched and its value: **Email:**, **Badge Name:**, **ID:**, **Badge ID:** or **DoB:**.
 
 ## Open a profile
 
 <Sidenote title="Sub-accounts">
-A sub-account's profile has no **Notes**, **Orders**, **Volunteer** or **Dealer** tab. Its **User Profile** card shows **Owner account**, which links to the parent. The parent's **Registration** row lists **Other Accounts:**, with a link to each sub-account.
+No **Notes**, **Orders**, **Volunteer** or **Dealer** tab; **Owner account** links to the parent. The parent's **Registration** row links each sub-account under **Other Accounts:**.
 </Sidenote>
 
 1. Click a person in the results.
 
-   <Result>Their profile opens on the **Name** tab. The header shows their name and **[ID: …]** with their status badges. The **Notes**, **Orders** and **Roles** tabs show a count. The address ends in `/housekeeping/attendees/user/` followed by the ID.</Result>
+   <Result>Their profile opens on the **Name** tab, with **[ID: …]** and status badges in the header. The address ends in `/housekeeping/attendees/user/` and the ID.</Result>
 
 2. Look over the **Name** tab.
 
-   <Result>It has a **User Profile** card, with **First Name**, **Last Name**, **Preferred Name**, **User Name**, **Born At**, **Email**, **Phone number** and the address; an **Information** card, with a **Registration** row; and, if you can manage the account, an **Actions** card.</Result>
+   <Result>It has a **User Profile** card (names, username, date of birth, email, phone, address), an **Information** card with a **Registration** row, and, if you can manage the account, an **Actions** card.</Result>
 
 3. Hover over the icon after the attendance type in the **Registration** row.
 
-   <Result>A green tick says *This user has an active entitlement that grants this attendance type.*, and links to the order that paid for it. A warning sign says *This user does not have an active order correlated with this registration.*, which means the registration isn't paid.</Result>
+   <Result>A green tick says *This user has an active entitlement that grants this attendance type.* and links to the paying order. A warning sign says *This user does not have an active order correlated with this registration.*: it isn't paid.</Result>
 
-The **Information** card can also show a **Dealer** row (with `vendor:read`) and a **Volunteer** row (with `volunteer:read`), each saying **No application.** or summing up the application. A **Hotel** row appears when the person has hotel entries. If the account might duplicate a banned account, the card starts with **Possible duplicate account with a ban**: see [User Notes](../usernotes/usernotes.md).
+The **Information** card can also show **Dealer** (`vendor:read`), **Volunteer** (`volunteer:read`) and **Hotel** rows, and, for a possible duplicate of a banned account, **Possible duplicate account with a ban**: see [User Notes](../usernotes/usernotes.md).
 
-Each tab needs its own permission, so you only see the tabs your roles allow. Table 4.1 lists them.
+Each tab needs its own permission (Table 4.1).
 
 <TableFigure title="Profile tabs">
 
 | Tab | Holds | Who sees it |
 | --- | --- | --- |
-| **Name** | Personal details, the registration, applications and account actions. See [Managing an attendee's account](./user-accounts.md) and [Managing an attendee's registrations and orders](./user-registrations.md). | Everyone |
-| **Notes** | Notes, restrictions and bans. See [User Notes](../usernotes/usernotes.md). | `user:note:read`, `user:note:read:hr` or `system:login` |
-| **Orders** | The person's orders. See [Managing an attendee's registrations and orders](./user-registrations.md), section 5. | `order:view` |
-| **Roles** | The roles the person has, for this convention or globally. See [Users and access](../quickstart/users-and-access.md), section 3. | `user:roles:update`, or a role manager |
-| **Permissions** | Permissions set for this person alone. | `system:permission:read`; changing them needs `system:permission:update` |
-| **Volunteer** | The volunteer application. See [Volunteers](../volunteers/volunteers.md). | `volunteer:read` |
-| **Dealer** | The dealer application. See [Dealers](../dealers/managment.md). | `vendor:read` |
-| **Emergency Contacts** | The emergency contacts given at registration. See [Managing an attendee's account](./user-accounts.md), section 3. | `admin:read:emergencycontacts`, for registered people only |
+| **Name** | Details, registration, applications, account actions. See [Managing an attendee's account](./user-accounts.md) and [Managing an attendee's registrations and orders](./user-registrations.md). | Everyone |
+| **Notes** | Notes, restrictions, bans. See [User Notes](../usernotes/usernotes.md). | `user:note:read`, `user:note:read:hr` or `system:login` |
+| **Orders** | Orders. See [Managing an attendee's registrations and orders](./user-registrations.md), section 5. | `order:view` |
+| **Roles** | Convention and global roles. See [Users and access](../quickstart/users-and-access.md), section 3. | `user:roles:update`, or a role manager |
+| **Permissions** | Permissions for this person alone. | `system:permission:read`; changing them needs `system:permission:update` |
+| **Volunteer** | Volunteer application. See [Volunteers](../volunteers/volunteers.md). | `volunteer:read` |
+| **Dealer** | Dealer application. See [Dealers](../dealers/managment.md). | `vendor:read` |
+| **Emergency Contacts** | Contacts given at registration. See [Managing an attendee's account](./user-accounts.md), section 3. | `admin:read:emergencycontacts`, registered people only |
 | **Audit** | Everything logged about the account. See [Managing an attendee's account](./user-accounts.md), section 4. | `audit:read` |
 
 </TableFigure>
 
 :::note[Icons on the User Profile card]
-A shield after **User Profile** means the person's identity was verified with Stripe Identity. A red icon after the email address means they haven't confirmed it yet. A warning sign there means they've asked to change it and haven't clicked the link sent to the new address.
+A shield after **User Profile**: identity verified with Stripe Identity. A red icon after the email: not confirmed. A warning sign there: an email change waits for the person to click the link sent to the new address.
 :::
 
-The **Roles** and **Permissions** tabs are explained in full in [Roles and permissions](../system/roles.md).
+**Roles** and **Permissions** are covered in [Roles and permissions](../system/roles.md).
