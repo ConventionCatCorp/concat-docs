@@ -112,6 +112,12 @@
     list-style: none;
   }
 
+  // A list that starts above 1 continues the steps above it, after a figure or callout broke the
+  // list. Not resetting keeps counting on the previous list's counter, which is still in scope.
+  .markdown > ol[start]:not([start='1']) {
+    counter-reset: none;
+  }
+
   .markdown > ol > li {
     position: relative;
     min-height: 1.75rem;
