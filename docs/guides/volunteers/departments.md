@@ -6,28 +6,28 @@ textbook: true
 
 # Departments and leads
 
-Departments are the teams volunteers apply to, such as *Registration* or *Art Show*. Each department can have leads, who see the volunteers for their departments and ask for the ones they want.
+Departments are the teams volunteers apply to, such as *Registration* or *Art Show*. Their leads see the volunteers and request the ones they want.
 
 :::info[In this guide]
-What a department holds (section 1), creating, editing and deleting departments and naming leads (section 2), and what a lead sees and does on **My Department(s)** (section 3).
+Department fields (section 1), managing departments and leads (section 2), and what leads see on **My Department(s)** (section 3).
 :::
 
 ## Departments
 
 <Sidenote title="Who can do this">
-Managing departments needs the `volunteer:admin` permission. Hidden departments, and every department's email and leads, are only listed for people with `volunteer:dept:hidden`. The default *admin* and *hr* roles have both.
+Managing departments needs `volunteer:admin`. Hidden departments, and every department's email and leads, are only listed for people with `volunteer:dept:hidden`. The default *admin* and *hr* roles have both.
 </Sidenote>
 
-A new convention starts with a list of common departments, such as *Art Show*, *Gophers* and *Registration*. Their email addresses are a placeholder, `support@concat.org`, so change each one to an address of your own, or delete the departments you don't need. When you start next year's convention, its departments and leads are copied from this one.
+A new convention starts with common departments, such as *Art Show* and *Gophers*, with the placeholder email `support@concat.org`. Change each to your own address or delete it. Next year's convention copies its departments and leads from this one.
 
 <TableFigure title="Department fields">
 
 | Field | What it holds |
 | --- | --- |
-| **Name** | The department's name, as applicants see it. At most 64 characters. |
-| **Email** | A full email address for the department. <small>It receives an email each time a volunteer is assigned to the department.</small> |
+| **Name** | The name applicants see. At most 64 characters. |
+| **Email** | A full email address. <small>It gets an email each time a volunteer is assigned to the department.</small> |
 | **Leads** | Up to 10 people who lead the department (section 3). |
-| **Show on public application form** | When unticked, applicants aren't offered the department. On the application form, staff still see it, marked *This is a hidden department.* |
+| **Show on public application form** | When unticked, applicants aren't offered the department. Staff still see it, marked *This is a hidden department.* |
 
 </TableFigure>
 
@@ -35,11 +35,11 @@ A new convention starts with a list of common departments, such as *Art Show*, *
 
 1. Go to **Housekeeping › Volunteers › Volunteer Settings** and click the **Department(s)** tab.
 
-   <Result>A **Department(s)** card lists your departments with the columns **Name**, **Email**, **Leads**, **Show on public application form** and **Actions**. A green **+** button (**Create**) is at the top right of the card. The address ends in `/housekeeping/volunteers/settings/departments`.</Result>
+   <Result>A **Department(s)** card lists your departments, with a green **+** button (**Create**) at its top right.</Result>
 
-2. Click the green **+** button.
+2. Click the green **+** button (Figure 2.1).
 
-   <Result>An **Edit Entry** dialog opens with **Name**, **Email**, **Leads** and **Show on public application form**, and the buttons **Add** and **Cancel**.</Result>
+   <Result>An **Edit Entry** dialog opens with the fields in Table 1.1.</Result>
 
 3. Fill in **Name** and **Email**, then click **Add**.
 
@@ -47,51 +47,66 @@ A new convention starts with a list of common departments, such as *Art Show*, *
 
 4. On the department's row, click the blue pencil button (**Edit**).
 
-   <Result>The **Edit Entry** dialog opens with the department's current values, and the buttons **Save** and **Cancel**.</Result>
+   <Result>The **Edit Entry** dialog opens with the department's values.</Result>
 
-5. In **Leads**, type part of a person's name and select them from the results, which are shown as `#` and the user ID, then the name. Repeat for each lead, then click **Save**.
+5. In **Leads**, type part of a person's name and select them (shown as `#`, user ID and name). Repeat for each lead, then click **Save**.
 
-   <Result>An **Item edited** message appears. The **Leads** column lists each lead's name, linked to their profile.</Result>
+   <Result>An **Item edited** message appears, and the **Leads** column lists each lead.</Result>
 
-   To remove a lead, click the **×** on their name in **Leads** and click **Save**. You can't remove a department's last lead this way: saving with **Leads** empty fails with *leads does not contain 1 required value(s)*. Add the replacement lead first, or ask ConCat Support to clear the leads.
+   To remove a lead, click the **×** on their name and click **Save**. The last lead can't be removed: saving with **Leads** empty fails with *leads does not contain 1 required value(s)*. Add the replacement first, or ask ConCat Support to clear the leads.
 
-6. *(Optional: to hide a department from applicants)* Click **Edit** again, untick **Show on public application form**, and click **Save**.
+6. *(Optional: to hide a department from applicants)* Click **Edit**, untick **Show on public application form**, and click **Save**.
 
-   <Result>An **Item edited** message appears, and the department's **Show on public application form** column reads **No**.</Result>
+   <Result>An **Item edited** message appears, and the **Show on public application form** column reads **No**.</Result>
 
-7. *(Optional: to delete a department)* On its row, click the red trash button (**Delete**).
+7. *(Optional: to delete a department)* Click the red trash button (**Delete**) on its row.
 
-   <Result>A **Delete entry** dialog asks *Are you sure you want to delete? Data for this option from users will be erased.*, with **Delete** and **Cancel**.</Result>
+   <Result>A **Delete entry** dialog asks *Are you sure you want to delete? Data for this option from users will be erased.*</Result>
 
 8. Click **Delete**.
 
    <Result>An **Item deleted** message appears, and the department is no longer listed.</Result>
 
+<Figure
+  src="/img/guides/volunteers/departments.webp"
+  alt="The Department(s) card: a green add button, a search box, and a table of departments with Name, Email, Leads, Show on public application form and Actions, each row with a blue pencil and a red trash button."
+  title="The Department(s) card"
+  markers={[
+    { n: 1, x: 94.5, y: 5.8, w: 3.4, h: 12.3 },
+    { n: 2, x: 85.7, y: 60.5, w: 5.5, h: 15.5 },
+    { n: 3, x: 90.9, y: 60.5, w: 5.5, h: 15.5 },
+  ]}
+>
+
+1. The green **+** button (**Create**).
+2. **Edit**.
+3. **Delete**.
+
+</Figure>
+
 :::caution[Watch out]
-Deleting a department also removes every volunteer's interest, experience, avoid, request and assignment for it, and its leads. It can't be undone.
+Deleting a department also removes its leads and every volunteer's interest, experience, avoid, request and assignment for it. It can't be undone.
 :::
 
 ## What leads see and do
 
 <Sidenote title="No Housekeeping access needed">
-Naming someone a lead gives them ConCat's internal *lead* role, which lets them use Mass Email and read volunteers' contact details. They don't need any other role to reach **My Department(s)**.
+A lead gets ConCat's internal *lead* role, which lets them use Mass Email and read volunteers' contact details. They need no other role to reach **My Department(s)**.
 </Sidenote>
 
-A lead sees the volunteers who chose **Interest** or **Experience** for one of their departments, plus anyone requested for or assigned to it. Leads can *request* volunteers, but only your volunteer staff can assign them (see [Volunteers](./volunteers.md), section 4).
+A lead sees volunteers who chose **Interest** or **Experience** for one of their departments, or were requested for or assigned to it. Leads only *request* volunteers; your volunteer staff assign them (see [Volunteers](./volunteers.md), section 4). To try these steps, name yourself a lead (section 2, step 5).
 
-These steps are what a lead does. To try them yourself, name yourself a lead (section 2, step 5).
+1. As the lead, click **My Department(s)** under your convention's name in the homepage sidebar. A lead who can already see all applications uses **Housekeeping › Volunteers › My Department(s)** instead.
 
-1. As the lead, click **My Department(s)** in the homepage sidebar, under your convention's name. A lead who can already see all applications uses **Housekeeping › Volunteers › My Department(s)** instead.
-
-   <Result>The **My Department(s)** page lists the volunteers for the lead's departments, in the same table as **Applications**. The address ends in `/housekeeping/volunteers/lead`.</Result>
+   <Result>**My Department(s)** lists the lead's volunteers, in the same table as **Applications**.</Result>
 
 2. Click a volunteer's name.
 
-   <Result>The application dialog opens. Its footer has **Manage Requests** instead of **Assign**, and no **Make Staff** or **…** button.</Result>
+   <Result>The application dialog opens, with **Manage Requests** instead of **Assign**.</Result>
 
 3. Click **Manage Requests**.
 
-   <Result>Each of the lead's departments is listed with a **Recruit Request** button and a **Staff Request** button. A department the volunteer is already assigned to shows a disabled **Assigned** button instead.</Result>
+   <Result>Each of the lead's departments has **Recruit Request** and **Staff Request** buttons, or a disabled **Assigned** button if the volunteer is assigned there.</Result>
 
 4. Click **Recruit Request**, or **Staff Request** to suggest them as staff.
 
@@ -105,6 +120,6 @@ These steps are what a lead does. To try them yourself, name yourself a lead (se
 
    <Result>The department shows both **Recruit Request** and **Staff Request** again.</Result>
 
-Staff see the request on **Volunteers › Applications**: the row's **Status** is **Pending Request**, and in the **Assign** view the department's button has a yellow outline. Clicking it assigns the volunteer.
+Staff then see **Pending Request** on **Volunteers › Applications** and a yellow-outlined button in the **Assign** view. Clicking it assigns the volunteer.
 
-Leads also see **Mass Email** in the Volunteers sidebar, limited to the volunteers of their own departments. See [Mass email](../attendees/mass-email.md). Answers to questions marked **Visible to admins only** are not shown to leads, unless they also have `volunteer:update` (see [Volunteer settings and form](./settings.md), section 4).
+Leads can also use **Mass Email** for their own departments' volunteers (see [Mass email](../attendees/mass-email.md)). They don't see answers to questions marked **Visible to admins only** unless they have `volunteer:update` (see [Volunteer settings and form](./settings.md), section 4).
