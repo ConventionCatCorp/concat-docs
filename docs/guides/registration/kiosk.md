@@ -6,7 +6,7 @@ textbook: true
 
 # Kiosk
 
-A kiosk is a device at your registration desk where walk-up attendees create an account, register and, if you allow it, pay, before going to the cashier for their badge. This guide sets up kiosk mode and shows what attendees do at the kiosk.
+Set up a device at your registration desk where walk-up attendees create an account, register and, if you allow it, pay, before collecting their badge at the cashier.
 
 :::info[In this guide]
 What the kiosk is (section 1), the **Kiosk** settings card (section 2), starting a kiosk (section 3), registering at the kiosk (section 4), and the automatic reset (section 5).
@@ -15,30 +15,30 @@ What the kiosk is (section 1), the **Kiosk** settings card (section 2), starting
 ## What the kiosk is
 
 <Sidenote title="Not a check-in">
-The kiosk is for self-*registration*. Attendees still collect their badge at the Cashier UI. Scanning tickets on staff devices is QuikTicket, covered in [Devices and QuikTicket](./cashier/devices.md).
+Attendees still collect their badge at the Cashier UI. Scanning tickets on staff devices is QuikTicket; see [Devices and QuikTicket](./cashier/devices.md).
 </Sidenote>
 
-The kiosk is a page of your instance, at the address ending in `/kiosk`. Nothing in ConCat links to it: staff open it on the device. It walks each attendee through four steps, **Policies**, **User info**, **Badge Info** and **Payment**, then signs them out and resets for the next person.
+The kiosk is the page at your instance's address followed by `/kiosk`. Nothing links to it: staff open it on the device. It takes each attendee through **Policies**, **User info**, **Badge Info** and **Payment**, then signs them out and resets.
 
-The kiosk uses your normal registration form ([Registration form editor](./form-editor.md)) and your public badge tiers. Registration must be open.
+It uses your registration form ([Registration form editor](./form-editor.md)) and public badge tiers, and needs registration to be open.
 
 ## The Kiosk settings card
 
 <Sidenote title="Who can do this">
-The **Kiosk** card is on **Registration Settings**, which needs the `system:settings:update` permission.
+The **Kiosk** card is on **Registration Settings**, which needs `system:settings:update`.
 </Sidenote>
 
 <TableFigure title="Settings in the Kiosk card">
 
 | Setting | What it does |
 | --- | --- |
-| **Disable QuikTicket** | Hides **Devices** from the Attendees module's sidebar. <small>Not a kiosk setting, but it lives on this card.</small> |
-| **Allow Online Payments in Kiosk Mode** | Attendees can pay by card at the kiosk. Without it, the payment step is skipped and they pay at the cashier desk. <small>Leave it off if the kiosk runs on shared devices that aren't secure.</small> |
+| **Disable QuikTicket** | Hides **Devices** from the Attendees module's sidebar. <small>Not a kiosk setting, but it's on this card.</small> |
+| **Allow Online Payments in Kiosk Mode** | Attendees can pay by card at the kiosk. Without it, the payment step is skipped and they pay at the cashier desk. <small>Leave it off on shared devices that aren't secure.</small> |
 | **Kiosk mode timeout** | Resets the kiosk when nobody uses it for a while (section 5). |
 
 </TableFigure>
 
-1. Go to **Housekeeping › Registration › Settings**. In the **Kiosk** card, tick the settings you need, then click **Save** in that card.
+1. In **Housekeeping › Registration › Settings**, tick the settings you need in the **Kiosk** card, then click **Save** in that card.
 
    <Result>A **Kiosk settings saved** message appears.</Result>
 
@@ -46,9 +46,9 @@ The **Kiosk** card is on **Registration Settings**, which needs the `system:sett
 
 1. On the kiosk device, open your instance's address followed by `/kiosk`.
 
-   <Result>The kiosk opens with the steps **Policies**, **User info**, **Badge Info** and **Payment** along the top, and an **Age check** asking the attendee to confirm their age.</Result>
+   <Result>The kiosk opens on an **Age check**, with **Policies**, **User info**, **Badge Info** and **Payment** along the top.</Result>
 
-If the kiosk can't start, it shows **Kiosk Unavailable**, *The following errors are preventing this kiosk from starting:*, the reasons in Table 3.1, and *Please contact a member of staff for assistance.*
+If the kiosk can't start, it shows **Kiosk Unavailable** and the reasons in Table 3.1.
 
 <TableFigure title="Why a kiosk won't start">
 
@@ -56,49 +56,49 @@ If the kiosk can't start, it shows **Kiosk Unavailable**, *The following errors 
 | --- | --- |
 | *System is currently in maintenance mode.* | Turn off maintenance mode in **Housekeeping › System › Settings**. |
 | *No attendance types are available for registration.* | Create at least one badge tier ([Badge Products](./attendance/attendance.md)). |
-| *Kiosk registration is not supported while captcha is enabled.* | Captcha is set for your instance by ConCat. Contact ConCat Support. |
+| *Kiosk registration is not supported while captcha is enabled.* | ConCat sets captcha for your instance: contact ConCat Support. |
 
 </TableFigure>
 
 ## Register at the kiosk
 
-Follow these steps on the kiosk as an attendee would.
+Do these steps on the kiosk, as an attendee.
 
 1. Choose the age option that applies.
 
-   <Result>The **Convention Policies** step shows your convention policy, with the checkboxes *I have read and agree to the convention policies above.* and *I have read and agree to the* **Privacy Policy**. If the attendee is too young, an error is shown and the kiosk resets after 10 seconds.</Result>
+   <Result>The **Convention Policies** step shows your convention policy and two agreement checkboxes. If the attendee is too young, an error is shown and the kiosk resets after 10 seconds.</Result>
 
 2. Tick both checkboxes and click **Continue**.
 
-   <Result>The **User info** step shows a login form (**Username**, **Password**, **Login**) and, below it, a sign-up form starting with **Email Address**, then the attendee's details, an **Account Creation** card and a **Continue** button.</Result>
+   <Result>The **User info** step shows a login form and, below it, a sign-up form starting with **Email Address**.</Result>
 
-3. Either log in with an existing account, or fill in the sign-up form and click **Continue**. *(Optional)* To keep the account after the event, tick **I would like to create an account.** and choose a **Username** and password.
+3. Log in with an existing account, or fill in the sign-up form and click **Continue**. *(Optional)* To keep the account after the event, tick **I would like to create an account.** and choose a **Username** and password.
 
-   <Result>The **Badge Info** step shows your badge tiers and your registration form.</Result>
+   <Result>The **Badge Info** step shows your badge tiers and registration form.</Result>
 
 4. Choose a tier, fill in the form and click **Register**.
 
-   <Result>The **Payment** step shows *If you want to pay by cash or card at the cashier desk, click the Pay at Cashier button to skip this step.*, with **Pay at Cashier** and **Pay now** buttons and the checkout. If online payments are off, the kiosk goes straight to the last screen.</Result>
+   <Result>The **Payment** step shows **Pay at Cashier**, **Pay now** and the checkout. With online payments off, the kiosk goes straight to the last screen.</Result>
 
 5. Click **Pay at Cashier**, or pay in the checkout.
 
-   <Result>The kiosk says **Please Proceed to the Cashier Desk!**, *Your registration is now complete and you have been logged out.* and *Please ensure that you have your ID ready for the cashier to verify.* If the attendee hasn't paid, it adds *As you have not yet paid, you will need to make a cash or card payment at the cashier desk.* It ends with **This kiosk will reset shortly.**</Result>
+   <Result>The kiosk says **Please Proceed to the Cashier Desk!** and that the attendee is logged out (and, if unpaid, must pay at the cashier desk), ending with **This kiosk will reset shortly.**</Result>
 
 6. Wait 10 seconds.
 
-   <Result>A **You are now logged out.** message appears, and the kiosk is back at the **Age check** for the next attendee.</Result>
+   <Result>A **You are now logged out.** message appears, and the kiosk is back at the **Age check**.</Result>
 
-An attendee who doesn't tick **I would like to create an account.** gets an account with a generated username and password, which they can't sign in to. *If you choose not to register an account, your information will be deleted after the end of the convention.* The **Email Address** field tells attendees whose address is already in use to go to the registration desk.
+An attendee who doesn't tick **I would like to create an account.** gets an account with a generated username and password, which they can't sign in to. *If you choose not to register an account, your information will be deleted after the end of the convention.* If the **Email Address** is already in use, the field tells the attendee to go to the registration desk.
 
-If your instance requires identity verification, which ConCat Support turns on, the kiosk asks for it after the age check.
+If ConCat Support has turned on identity verification for your instance, the kiosk asks for it after the age check.
 
 ## Automatic reset
 
-With **Kiosk mode timeout** ticked, the kiosk watches for input. After 45 seconds without any (120 seconds just after identity verification), it shows a warning, then resets.
+With **Kiosk mode timeout** ticked, after 45 seconds without input (120 seconds just after identity verification), the kiosk shows a warning, then resets.
 
 1. Start a registration on the kiosk, then leave it untouched for 45 seconds.
 
-   <Result>An **Are You Still There?** box says *We haven't detected any input from you in a little while.* and *For security, we'll automatically reset this kiosk in*, counting down from 30 seconds.</Result>
+   <Result>An **Are You Still There?** box counts down from 30 seconds to an automatic reset.</Result>
 
 2. Let the countdown finish.
 
