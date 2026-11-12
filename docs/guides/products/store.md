@@ -6,37 +6,37 @@ textbook: true
 
 # What attendees see in the store
 
-This guide shows your event store from the attendee's side: how they browse it, what a product's page tells them, and what stops them buying. Follow the steps signed in as an attendee to check your store before you open it.
+Sign in as an attendee to check your event store before you open it: browsing, product pages and what stops a purchase.
 
 :::info[In this guide]
-Turning the store on (section 1), the store page (section 2), a product's page (section 3), eligibility, limits and exclusions (section 4), and adding a product to the cart (section 5).
+Turning the store on (section 1), the store page (section 2), a product's page (section 3), eligibility, limits and exclusions (section 4), and adding to the cart (section 5).
 :::
 
 ## Turn the store on
 
 <Sidenote title="Who can do this">
-These settings need the `system:settings:update` permission, which the default *admin* role has.
+These settings need `system:settings:update`, which the default *admin* role has.
 </Sidenote>
 
-The store is hidden from attendees until you turn it on. While it's off, the **Event store** item is missing from the homepage sidebar, and the store's address sends attendees back to the homepage. Your products still exist in Housekeeping.
+The store is hidden until you turn it on: **Event store** is missing from the homepage sidebar, and the store's address sends attendees back to the homepage.
 
-1. Go to **Housekeeping › System › Settings**. On the **Convention** tab, under **Event store**, turn on **Enable Event Store**, then click **Save** in that section.
+1. Go to **Housekeeping › System › Settings**. On the **Convention** tab, under **Event store**, turn on **Enable Event Store** and click **Save** in that section.
 
-   <Result>An **Event store settings saved** message appears. Attendees now see **Event store** in the homepage sidebar, under the **Event store** heading.</Result>
+   <Result>**Event store settings saved** appears, and attendees see **Event store** in the homepage sidebar.</Result>
 
-2. *(Optional)* To make attendees pick a category before seeing any products, turn on **Event Store: Hide 'All Products' Tab** in the same section and click **Save**.
+2. *(Optional)* To make attendees pick a category before seeing products, turn on **Event Store: Hide 'All Products' Tab** and click **Save**.
 
-   <Result>An **Event store settings saved** message appears. The setting can only be turned on while the store is enabled.</Result>
+   <Result>**Event store settings saved** appears. This setting can only be turned on while the store is enabled.</Result>
 
 ## The store page
 
 1. As an attendee, click **Event store** in the homepage sidebar.
 
-   <Result>The store opens under the breadcrumb **Event Store**. A **Categories** card lists **All Products** and each of your visible categories. Beside it, each product has a card with its primary image, name, the start of its description, its price and a **View Product** button.</Result>
+   <Result>The store shows a **Categories** card (**All Products** and each visible category) and a card for each product, with **View Product**.</Result>
 
 2. Click a category in the **Categories** card.
 
-   <Result>Only that category's products are shown, and the breadcrumb adds the category's name.</Result>
+   <Result>Only that category's products are shown.</Result>
 
 Table 2.1 lists what decides whether a product appears.
 
@@ -46,60 +46,60 @@ Table 2.1 lists what decides whether a product appears.
 | --- | --- |
 | Its **Product visibility** is **Public**. <small>An **Unlisted** product only opens from its link; a **Hidden** one never does.</small> | The product form ([Products](./products.md), Table 3.1) |
 | Its category isn't hidden. | **Hide Category** ([Products](./products.md), section 1) |
-| **Available From** has passed, and **Available Until** hasn't. | The product form |
+| It's after **Available From** and before **Available Until**. | The product form |
 | The attendee has a role on the **Product Role Whitelist**, if there is one, and none on the **Product Role Blacklist**. | The product form |
-| It hasn't been deleted. | **Product Information** ([Products](./products.md), section 6) |
+| It isn't deleted. | **Product Information** ([Products](./products.md), section 6) |
 
 </TableFigure>
 
 A product with an age limit is still listed, with an **Age Restricted Product** badge.
 
-When nothing can be listed, the store says *There are no items available.* and *It seems there isn't anything you can purchase right now. Why not check back later?* With **All Products** hidden, the store first shows *Welcome to the … Store!*, with your convention's short name, and asks attendees to browse the categories on the left.
+With nothing to list, the store says *There are no items available.* With **All Products** hidden, it first shows *Welcome to the … Store!* and asks attendees to browse the categories.
 
 ## A product's page
 
 1. On a product's card, click **View Product**.
 
-   <Result>The product's page opens under the breadcrumb **Event Store** › the category › the product. It shows the product's images (as a slideshow if there are several), its name and category badge, **Price**, **Includes** for any complimentary addons, the product's options, a **Quantity** field, an **Add to cart** button and the **Description**.</Result>
+   <Result>The product's page shows its images, **Price**, any **Includes**, the options, **Quantity**, **Add to cart** and the **Description**.</Result>
 
-The **Quantity** field is left out for ticketed products, and for products limited to one per person. A product whose stock has run out shows a disabled **Sold Out!** button instead of **Add to cart**.
+Ticketed products and products limited to one per person have no **Quantity** field. A sold-out product shows a disabled **Sold Out!** button instead of **Add to cart**.
 
-A product in a Gatekeeping silo first asks attendees to enter a draw, with **Enter raffle**; see [Gatekeeping](../registration/raffle.md).
+A product in a Gatekeeping silo first asks attendees to enter a draw with **Enter raffle**; see [Gatekeeping](../registration/raffle.md).
 
 ## Eligibility, limits and exclusions
 
-A product's page tells attendees when something limits their purchase. Table 4.1 lists the messages and where each comes from.
+Table 4.1 lists the messages a product's page shows when something limits a purchase.
 
 <TableFigure title="Messages on a product's page">
 
 | Message | Shown when |
 | --- | --- |
 | **Age Restricted Product** badge. Its help says, for example, *You must be at least* 18 *on* the convention's start date *to purchase this product.* | **Minimum Purchase Age** or **Maximum Purchase Age** is set. <small>Someone outside the range can't add it to their cart.</small> |
-| *To purchase this product, you must have already purchased one of the following:* and the products | **Restrict product to grants** is set, and the attendee has none of those products. **Add to cart** is disabled. |
-| *You are eligible to purchase this product because you have purchased the following product:* and the product | **Restrict product to grants** is set, and the attendee has one of them. |
+| *To purchase this product, you must have already purchased one of the following:* and the products | **Restrict product to grants** is set and the attendee has none of them. **Add to cart** is disabled. |
+| *You are eligible to purchase this product because you have purchased the following product:* and the product | **Restrict product to grants** is set and the attendee has one of them. |
 | *There is a limit of* n *per customer for this product.* | **Maximum purchases per user** is set. <small>**Quantity** can't go above what's left for them.</small> |
 | *You have already reached the purchase limit for this product.* | The attendee has bought the maximum. **Add to cart** is disabled. |
 | *This product cannot be combined with:* and the products | The product excludes other products. |
-| *You cannot purchase this product because you have already purchased, or have in your cart, the following product:* and the product | The attendee has one of the excluded products. **Add to cart** is disabled. |
+| *You cannot purchase this product because you have already purchased, or have in your cart, the following product:* and the product | The attendee has an excluded product. **Add to cart** is disabled. |
 | *This is a Ticketed Product.* | The product is ticketed; see [Ticketed products](./tickets.md). |
-| *You've already purchased one of this product.* | The attendee already has a ticket for this ticketed product. |
+| *You've already purchased one of this product.* | The attendee already has this ticket. |
 
 </TableFigure>
 
-The product form has no field for exclusions, so they can't be set up from Housekeeping.
+Exclusions can't be set up from Housekeeping: the product form has no field for them.
 
 ## Add a product to the cart
 
-1. On the product's page, answer the product's options, set the **Quantity**, and click **Add to cart**.
+1. On the product's page, answer the options, set the **Quantity** and click **Add to cart**.
 
-   <Result>**Product added to cart!** appears, with *… has been added to your cart.* and the buttons **View cart** and **Back to Product**. If the product has extra-purchase addons, a **Product addons** card lists them.</Result>
+   <Result>**Product added to cart!** appears, with **View cart**. Any extra-purchase addons are listed in a **Product addons** card.</Result>
 
 2. Click **View cart**.
 
    <Result>The **Checkout** page opens with the product in your cart.</Result>
 
 :::note[Free products]
-When the product is free and the attendee's cart has nothing to pay, the button reads **Complete order** instead. Clicking it completes the order straight away: **Order completed!** appears, with *Your order for … has been completed.* and a **View transaction history** button.
+When the product is free and the cart has nothing to pay, the button reads **Complete order** and completes the order at once: **Order completed!** appears, with a **View transaction history** button.
 :::
 
 Paying for the order is covered in [Checkout and payment](../orders/checkout.md).
