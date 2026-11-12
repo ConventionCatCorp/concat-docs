@@ -87,7 +87,7 @@ Attendees see no change until you click **Save Changes**.
    <Result>The section and its elements disappear at once, with no confirmation.</Result>
 
 :::caution[Watch out]
-A new section shows **Full Width** but appears at half width on the form. Click its width button twice to make it full width, and check with **View Preview**. To get back a section deleted by mistake, leave with **Exit without Saving** (section 8); this also discards your other unsaved changes.
+To get back a section deleted by mistake, leave with **Exit without Saving** (section 8); this also discards your other unsaved changes.
 :::
 
 ## Add, move and remove elements
@@ -115,7 +115,6 @@ A new section shows **Full Width** but appears at half width on the form. Click 
 | **Text block** | Markdown text | The text |
 | **Divider** | A horizontal line | None |
 | **Option** | One option, or the **Badge Name** field | Which option; **Display full width** |
-| **Subheader** | Nothing <small>Use a **Text block** with a Markdown heading instead.</small> | None |
 | **Terms agreement** | A policy, with a checkbox attendees must tick | **Input type** (the policy); **Text to be displayed by the checkbox** <small>Default: *I have read and agree to the policies above.*</small> |
 | **Link to terms page** | A checkbox attendees must tick, with text linking to your terms | The text, in Markdown <small>The default, *Do you agree to the terms?*, links to concat.app: change it to your terms page.</small> |
 | **Registration flags** | A checkbox per [registration flag](./flags.md) visible to attendees | None |

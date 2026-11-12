@@ -93,7 +93,7 @@ Station settings and devices are saved in the browser, not in ConCat. Set up eac
 | Setting | Default | What it does |
 | --- | --- | --- |
 | **Enable payment acceptance** | Off | Takes payment for a balance due (section 4.2). |
-| **No ID barcode has been scanned.** | Off | Despite its label, *requires* an ID scan: check-in is blocked until the attendee's ID barcode is scanned (section 7). |
+| **No ID barcode has been scanned.** | Off | Requires an ID scan: check-in is blocked until the attendee's ID barcode is scanned (section 7). |
 | **Enable staff check-in** | On | Prints staff and volunteer badges, for anyone with an approved volunteer application. <small>Off: *This registration station is not configured to print staff / volunteer badges.*</small> |
 | **Restrict Product Check-in** | Off | Serves only the badge products you select (step 3). |
 | **Print separate staff badge** | Off | Two badges for staff and volunteers: one with their attendance type, one with STAFF. <small>Off: one badge with both, separated by a slash.</small> |
@@ -103,10 +103,6 @@ Station settings and devices are saved in the browser, not in ConCat. Set up eac
 | **Badge type printer preferences** | Minor badges on the secondary, the rest on the primary | Zebra printer for each badge type (step 4). With no secondary printer, all print on the primary. See [Badge and receipt printers](./printers.md). |
 
 </TableFigure>
-
-:::note[Two settings don't survive a reload]
-**Show reprint modal** and **Override badge design** go back to their defaults (on, and **(Default)**) whenever the station page reloads. Check them again after a reload.
-:::
 
 ## Event-wide Cashier UI settings
 
@@ -137,9 +133,7 @@ These two settings apply to every station (Table 3.1).
 
 </TableFigure>
 
-:::caution[Watch out]
-With printing off, stations say *Badge printing is disabled. To re-enable, head to Housekeeping -> Settings -> Registration.* The setting is actually in **Housekeeping › Registration › Settings**, in the **Cashier UI** card.
-:::
+With printing off, stations say *Badge printing is disabled.* and point to this setting, in **Housekeeping › Registration › Settings**.
 
 ## Check an attendee in
 

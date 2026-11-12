@@ -85,10 +85,6 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 Once approved, the space page also shows **Seating Preferences** and, if the table type allows assistants, **Manage Assistants**.
 
-:::note[The Next Steps card]
-From approval on, the **Next Steps** card says *Your application was approved and has been paid.*, even before the dealer pays. Go by the alert on **Dealing**, and point unsure dealers to it.
-:::
-
 ## Name assistants
 
 <Sidenote title="When dealers can do this">

@@ -38,7 +38,7 @@ The station prints badges in one of two ways:
 
 Zebra and receipt printers need a browser with WebUSB. Without it, **Add zebra printer** does nothing, and **Receipt Printers** says *It seems like your browser does not support WebUSB. Please use a supported browser.*
 
-When the event checks attendees in without printing ([Cashier UI](./cashier.md), section 3), **Configure Devices** shows *Badge printing is disabled. To re-enable, head to Housekeeping -> Settings -> Registration.*
+When the event checks attendees in without printing ([Cashier UI](./cashier.md), section 3), **Configure Devices** shows *Badge printing is disabled.* and points to the setting that turns printing back on.
 
 ## Add a Zebra badge printer
 

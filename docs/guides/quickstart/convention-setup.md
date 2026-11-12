@@ -34,7 +34,7 @@ This page needs the permission to update system settings. Your trial's administr
 
 | Field | What it holds |
 | --- | --- |
-| **Convention Long Type** | Your event's full name, at least 6 characters. <small>Shown in the sidebar on the registration link. Despite the label, it's the name, not a type.</small> |
+| **Convention Long Type** | Your event's full name, at least 6 characters. <small>Shown in the sidebar on the registration link.</small> |
 | **Convention Short Name** | A short name, at most 6 characters. |
 | **Notification Prefix** | Starts the subject of every email your event sends. |
 | **Convention Legal Name** | The legal name of the organization running the event. |

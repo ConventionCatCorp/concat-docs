@@ -80,7 +80,7 @@ What attendees can't request:
 
    <Result>A **Refund #** dialog shows **Products**, **Request Info** and **Related Payments**, with **Profile** and, while pending, **Approve** and **Reject**.</Result>
 
-Despite the empty-list text, decided refunds are listed too; narrow the list with **Search...** or the **Reason for Request** and **Status** filters. **Profile** opens the attendee's profile in a new tab.
+The list includes decided refunds too; narrow it with **Search...** or the **Reason for Request** and **Status** filters. **Profile** opens the attendee's profile in a new tab.
 
 ## Approve a request
 

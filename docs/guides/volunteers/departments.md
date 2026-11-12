@@ -53,7 +53,7 @@ A new convention starts with common departments, such as *Art Show* and *Gophers
 
    <Result>An **Item edited** message appears, and the **Leads** column lists each lead.</Result>
 
-   To remove a lead, click the **×** on their name and click **Save**. The last lead can't be removed: saving with **Leads** empty fails with *leads does not contain 1 required value(s)*. Add the replacement first, or ask ConCat Support to clear the leads.
+   To remove a lead, click the **×** on their name and click **Save**; **Item edited** appears, and the name leaves the **Leads** column. A department can have no leads.
 
 6. *(Optional: to hide a department from applicants)* Click **Edit**, untick **Show on public application form**, and click **Save**.
 

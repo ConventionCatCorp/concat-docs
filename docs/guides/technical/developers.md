@@ -79,7 +79,7 @@ The **Fires** column shows a green tick when the webhook fires for the conventio
 
 1. In the webhook's row, click **Test** (Figure 3.1).
 
-   <Result>ConCat sends a `test` event (`{"test":123}`) to the URL. If your server accepts it, **Success, see console for data** appears; otherwise an error does. An address that can't be reached gives only a generic error: *Our server ran into an issue!* with a reference code.</Result>
+   <Result>ConCat sends a `test` event (`{"test":123}`) to the URL. If your server accepts it, **Success, see console for data** appears. If your server refuses it or can't be reached, an error message says so.</Result>
 
 2. Click **View Verification Key**.
 

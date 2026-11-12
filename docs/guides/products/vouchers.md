@@ -110,11 +110,11 @@ Issuing skips the checkout checks: the voucher is added even if it's outside its
 
 1. On the voucher's page, click the **Edit** tab.
 
-   <Result>An **Edit Voucher** card opens, with **Voucher Code** and **Amount** read-only. Edits don't affect existing orders.</Result>
+   <Result>An **Edit Voucher** card opens with the voucher's values, **Voucher Code** and **Amount** read-only, and the products it's restricted to in **Restrict voucher to products**. Edits don't affect existing orders.</Result>
 
-2. Change the fields you need and click **Update Voucher**.
+2. Change the fields you need, such as the products in **Restrict voucher to products**, and click **Update Voucher**.
 
-   <Result>**Voucher has been updated!** appears.</Result>
+   <Result>**Voucher has been updated!** appears, and **Product Restrictions** on the **Summary** tab lists the products you chose.</Result>
 
 3. To delete the voucher, click **Delete** in the **Delete Voucher** card.
 
@@ -125,7 +125,7 @@ Issuing skips the checkout checks: the voucher is added even if it's outside its
    <Result>**Voucher has been deleted successfully.** appears, and the **Vouchers** list shows it as **Deleted / Archived**.</Result>
 
 :::caution[Watch out]
-When you edit a voucher, **Restrict voucher to products** starts empty even if the voucher has restrictions. Leave it empty to keep the products listed under **Product Restrictions** on **Summary**; choosing products replaces them. Deleting a voucher can't be undone.
+Deleting a voucher can't be undone.
 :::
 
 ## A one-time voucher on one order
@@ -140,7 +140,7 @@ On an unpaid order, you can create a voucher only that order can use, for exampl
 
    <Result>A **Create voucher #** dialog opens.</Result>
 
-3. Enter a **Display Name**, such as *Comp from the registration desk*, and the **Amount**, then click **Create**. **Display Name** is marked *Optional*, but leaving it empty fails with *displayName is required*.
+3. Enter the **Amount** and, if you like, a **Display Name**, such as *Comp from the registration desk*, then click **Create**.
 
    <Result>The **Vouchers** card lists the voucher, with a **-** button.</Result>
 

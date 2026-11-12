@@ -81,7 +81,7 @@ Exports leave out personal information (PII) until your PII access is approved, 
 
 1. On the **Export Data** page, click **Request PII access**.
 
-   <Result>The button changes to **Pending PII access approval**. Everyone with the **admin** role globally gets a *Data Export Request* email.</Result>
+   <Result>The button changes to **Pending PII access approval**. A note below it says the request will be approved automatically after a 24-hour safety delay, and ends with *Auto-approval date/time:* and that date and time. Everyone with the **admin** role globally gets a *Data Export Request* email.</Result>
 
 2. Ask another admin to approve the request (section 4), or wait 24 hours, then reload the **Export Data** page.
 

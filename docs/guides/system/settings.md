@@ -57,7 +57,7 @@ Each section of the **Convention** tab has its own **Save** button, which saves 
 
 | Field | What it holds |
 | --- | --- |
-| **Convention Long Type** | Your event's full name, at least 6 characters. <small>Despite the label, this is the name. It heads the attendee sidebar.</small> |
+| **Convention Long Type** | Your event's full name, at least 6 characters. <small>It heads the attendee sidebar.</small> |
 | **Convention Short Name** | At most 6 characters. |
 | **Notification Prefix** | The prefix on notifications from this convention. |
 | **Convention Legal Name** | The legal name of the organization running the event. |
@@ -118,9 +118,11 @@ If no one in your organization has **system:maintenance**, turning maintenance m
 
    <Result>A **Danger zone settings saved** message appears, and the login page shows the sign-in form again.</Result>
 
-:::note[Enable rate limit]
-**Enable rate limit**, in the same section, isn't saved when you click **Save**, so changing it has no effect. Contact ConCat Support to change rate limits.
-:::
+4. *(Optional)* To change rate limiting, tick or untick **Enable rate limit**, in the same section, and click **Save**.
+
+   <Result>A **Danger zone settings saved** message appears, and **Enable rate limit** keeps its new value after you reload the page.</Result>
+
+**Enable rate limit** prevents abuse by limiting how quickly people can use ConCat. People with the `ratelimit:bypass` permission aren't limited.
 
 ## Cancel a pending PII clear
 

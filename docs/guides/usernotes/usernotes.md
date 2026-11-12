@@ -56,7 +56,7 @@ A role can also grant reading chosen categories under **User Note Categories** (
 
 2. Choose a **Note Category**, enter the **Text**, and click **Add New Note** (Figure 2.1).
 
-   <Result>The note appears in the **Notes** card. A note kept to this convention has a grey badge with the convention's short name.</Result>
+   <Result>The note appears in the **Notes** card with a grey badge showing the convention's short name, because **Apply only to this convention.** was ticked. A note saved with the box unticked has no badge and is shown in every convention of your organization.</Result>
 
 <Figure
   src="/img/guides/usernotes/add-note.webp"
@@ -71,18 +71,14 @@ A role can also grant reading chosen categories under **User Note Categories** (
 >
 
 1. **Note Category**, with what the category does below it.
-2. **Apply only to this convention.**, ticked at the start. See the caution below.
+2. **Apply only to this convention.**, ticked at the start, keeps the note to this convention. Untick it to share the note across your organization.
 3. **Add New Note**.
 
 </Figure>
 
-:::caution[Keeping a note to this convention]
-**Apply only to this convention.** starts ticked, but the note is saved for your whole organization unless you change the box first. To keep a note to this convention, untick and re-tick the box before you click **Add New Note**; the grey badge confirms it.
-:::
-
 3. *(Optional: edit)* Click the note's edit button (<MaterialIcon name="edit" />), change it in the **Edit User Note** dialog, and click **Edit**.
 
-   <Result>A **Note has been edited** message appears.</Result>
+   <Result>A **Note has been edited** message appears. The note keeps its convention badge, or lack of one, unless you changed **Apply only to this convention.**</Result>
 
 4. *(Optional: delete)* Click the note's delete button (<MaterialIcon name="delete" />), then **Delete** in the **Delete note?** dialog.
 
@@ -106,7 +102,7 @@ The **User Notes** page lists everyone's notes, including bans on people with no
 
    <Result>A **Create New User Note** dialog opens.</Result>
 
-4. Choose the **Note Category**, select the person in **User**, enter the **Text**, and click **Create**. To keep the note to this convention, see section 2 first.
+4. Choose the **Note Category**, select the person in **User**, enter the **Text**, leave **Apply only to this convention.** ticked to keep the note to this convention, and click **Create**.
 
    <Result>A **Note has been added** message appears, and the note is listed.</Result>
 
@@ -201,12 +197,8 @@ The **Note Categories** tab needs `user:note:categories:manage`, which only *adm
 
    <Result>A **Category successfully updated.** message appears. **Category Name** can't be changed after creation.</Result>
 
-5. *(Optional: delete)* Click **Delete** on a category you added, then **Delete** in the **Delete Category** dialog.
+5. *(Optional: delete)* Click **Delete** on a category you added. In the **Delete Category** dialog, tick **Delete all notes?** to delete the category's notes as well, then click **Delete**. **Cancel** closes the dialog without deleting.
 
-   <Result>A **Category deleted.** message appears.</Result>
-
-:::caution[Deleting a category doesn't remove it yet]
-A deleted category is still listed and can still be chosen for new notes, even after a reload. To steer staff away from it, use **Modify** to set its **Category Display Name** to, for example, *Do not use*. In the **Delete Category** dialog, **Delete all notes?** is a text box rather than a checkbox, and **Cancel** doesn't close the dialog; reload the page to leave it.
-:::
+   <Result>A **Category deleted.** message appears, and the category is no longer listed or offered under **Note Category**.</Result>
 
 **Category Name** is internal; **Category Display Name**, if set, is what staff see. **Mark category as restricted.** limits the notes to people with `user:note:read:hr`. **Cashier**, **Ban** and **Restriction** have no **Delete** button.

@@ -165,7 +165,7 @@ An approved dealer whose table type allows assistants can add their sub-accounts
 
 2. Click **Add** next to a sub-account.
 
-   <Result>An **Assistant added.** message appears, and the sub-account is listed under **Current Assistants** as **Accepted**, with a blank name: the list shows usernames, and a sub-account has none.</Result>
+   <Result>An **Assistant added.** message appears, and the sub-account is listed under **Current Assistants** by name, as **Accepted**.</Result>
 
 ## Minors who sign up themselves
 
