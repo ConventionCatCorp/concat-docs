@@ -9,7 +9,7 @@ textbook: true
 Upload the background images attendees choose for their badge, limit how many badges use each image, and delete images.
 
 :::info[In this guide]
-How badge art works (section 1), uploading images (section 2), limiting an image (section 3), and deleting an image (section 4).
+How badge art works, uploading images, limiting an image, and deleting an image.
 :::
 
 ## How badge art works

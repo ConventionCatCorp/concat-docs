@@ -9,7 +9,7 @@ textbook: true
 ConCat's screens come in four languages, and each person picks their own. See how to switch, what isn't translated, and how to change ConCat's wording.
 
 :::info[In this guide]
-The four languages (section 1), choosing a language (section 2), what isn't translated (section 3), changing ConCat's wording (section 4).
+The four languages, choosing a language, what isn't translated, changing ConCat's wording.
 :::
 
 ## The four languages

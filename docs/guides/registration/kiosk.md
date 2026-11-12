@@ -9,7 +9,7 @@ textbook: true
 Set up a device at your registration desk where walk-up attendees create an account, register and, if you allow it, pay, before collecting their badge at the cashier.
 
 :::info[In this guide]
-What the kiosk is (section 1), the **Kiosk** settings card (section 2), starting a kiosk (section 3), registering at the kiosk (section 4), and the automatic reset (section 5).
+What the kiosk is, the **Kiosk** settings card, starting a kiosk, registering at the kiosk, and the automatic reset.
 :::
 
 ## What the kiosk is

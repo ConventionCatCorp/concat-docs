@@ -9,7 +9,7 @@ textbook: true
 Options ask buyers for details such as a T-shirt size. Create an option once, then assign it to each product that should ask for it.
 
 :::info[In this guide]
-Option types and styles (section 1), creating an option (section 2), assigning it to a product (section 3), and editing or deleting it (section 4).
+Option types and styles, creating an option, assigning it to a product, and editing or deleting it.
 :::
 
 ## Option types

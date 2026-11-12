@@ -9,7 +9,7 @@ textbook: true
 Follow a dealer application from the dealer's side: profile, application, payment, assistants and neighbours. Use a test attendee account to check your setup before you open applications.
 
 :::info[In this guide]
-Opening the application (section 1), the dealer profile (section 2), applying for space (section 3), status and payment (section 4), naming assistants (section 5), assistant confirmation (section 6), and seating preferences (section 7).
+Opening the application, the dealer profile, applying for space, status and payment, naming assistants, assistant confirmation, and seating preferences.
 :::
 
 ## Open the dealer application

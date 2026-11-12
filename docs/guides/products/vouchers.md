@@ -9,7 +9,7 @@ textbook: true
 A voucher is a code worth an amount of money, such as a comp, a prize or refund credit. Attendees enter it at checkout, or you issue it to their cart.
 
 :::info[In this guide]
-How vouchers work (section 1), the voucher list (section 2), creating a voucher (section 3), a voucher's page (section 4), issuing it to attendees (section 5), editing or deleting it (section 6), one-time order vouchers (section 7), and checkout (section 8).
+How vouchers work, the voucher list, creating a voucher, a voucher's page, issuing it to attendees, editing or deleting it, one-time order vouchers, and checkout.
 :::
 
 ## How vouchers work

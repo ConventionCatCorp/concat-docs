@@ -9,7 +9,7 @@ textbook: true
 Find your registration and sales numbers, counted as they happen, on two dashboards and two statistics pages.
 
 :::info[In this guide]
-Who can see statistics (section 1), the Housekeeping dashboard (section 2), the registration dashboard (section 3), registration statistics (section 4), and event statistics (section 5).
+Who can see statistics, the Housekeeping dashboard, the registration dashboard, registration statistics, and event statistics.
 :::
 
 ## Who can see statistics

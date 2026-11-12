@@ -9,7 +9,7 @@ textbook: true
 Build the form attendees fill in after choosing a tier: badge name, your questions, registration flags and an emergency contact.
 
 :::info[In this guide]
-How the form works (section 1), opening the editor (section 2), the editor's layout (section 3), sections (section 4), adding, moving and removing elements (section 5), element properties (section 6), previewing (section 7), and saving and leaving (section 8).
+How the form works; opening the editor; the editor's layout; sections; adding, moving and removing elements; element properties; previewing; and saving and leaving.
 :::
 
 ## How the registration form works

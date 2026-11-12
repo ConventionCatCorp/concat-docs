@@ -99,7 +99,7 @@ At `$textbook-wide` and above, the article has a main column and a margin column
 | Title | Names the guide | `# Title` | `.markdown > header > h1` |
 | Lede | Says in one or two sentences what the guide helps you do | The first paragraph after the title | `.markdown > header + p` |
 | Byline, running head, page numbers | Show where the page sits and what comes next | Nothing to write | Docusaurus breadcrumbs, sidebar and previous/next links |
-| In this guide | Lists what the guide covers, by section number | `:::info[In this guide]` | `.theme-admonition` |
+| In this guide | Lists what the guide covers, in section order, without section numbers. Separate entries with semicolons when one contains a comma | `:::info[In this guide]` | `.theme-admonition` |
 | Section | Starts numbered section N | `## Heading` | `.markdown > h2`, counter `tb-section` |
 | Subsection | Starts numbered subsection N.M | `### Heading` | `.markdown > h3`, counter `tb-subsection` |
 | Minor heading | Labels a short run of text, unnumbered | `#### Heading` | `.markdown > h4` |
@@ -139,7 +139,7 @@ textbook: true
 One or two sentences on what this guide helps you do.
 
 :::info[In this guide]
-What section 1 covers (section 1), and what section 2 covers (section 2).
+What section 1 covers, and what section 2 covers.
 :::
 
 ## First section

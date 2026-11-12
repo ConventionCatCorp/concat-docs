@@ -9,7 +9,7 @@ textbook: true
 Open and close registration, show attendees a notice, and flag banned words on badges.
 
 :::info[In this guide]
-The settings page (section 1), the **General** card (section 2), the attendee notice (section 3), banned words (section 4), and the other cards (section 5).
+The settings page, the **General** card, the attendee notice, banned words, and the other cards.
 :::
 
 ## The settings page

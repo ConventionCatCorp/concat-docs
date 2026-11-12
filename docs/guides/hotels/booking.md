@@ -13,7 +13,7 @@ Hotel booking is off until ConCat support turns it on for your convention, and i
 :::
 
 :::info[In this guide]
-The hotel page (section 1), block cards and states (section 2), entering a block (section 3), booking a room (section 4), finding and managing a reservation (section 5).
+The hotel page, block cards and states, entering a block, booking a room, finding and managing a reservation.
 :::
 
 ## The hotel page

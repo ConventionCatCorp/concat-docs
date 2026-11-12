@@ -9,7 +9,7 @@ textbook: true
 Webhooks tell another system when something happens, such as an order completing. OAuth applications let it use the ConCat API, on its own or for an attendee who agrees.
 
 :::info[In this guide]
-The **Developers** page (section 1), creating a webhook (section 2), testing, verifying and deleting webhooks (section 3), creating an OAuth application (section 4), editing or deleting one (section 5), what attendees see when authorizing an app (section 6), logging out through an app (section 7).
+The **Developers** page; creating a webhook; testing, verifying and deleting webhooks; creating an OAuth application; editing or deleting one; what attendees see when authorizing an app; logging out through an app.
 :::
 
 ## The Developers page

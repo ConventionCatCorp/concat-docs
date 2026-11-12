@@ -9,7 +9,7 @@ textbook: true
 An order holds everything an attendee buys in one checkout: badges, dealer tables, store products and fees. Find, change, settle and cancel orders, hand over goods and correct single items.
 
 :::info[In this guide]
-How orders work (section 1), finding an order (section 2), unpaid orders (section 3), paid orders (section 4), and correcting a single item (section 5). For refunds, see [Refunds](./refunds.md).
+How orders work, finding an order, unpaid orders, paid orders, and correcting a single item. For refunds, see [Refunds](./refunds.md).
 :::
 
 ## How orders work

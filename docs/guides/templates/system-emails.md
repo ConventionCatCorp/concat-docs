@@ -9,7 +9,7 @@ textbook: true
 The 33 emails ConCat sends: when, to whom, and whether you can turn each off. To reword or turn one off, see [Email Template Overrides](./templates.md), section 1.
 
 :::info[In this guide]
-Reading this list (section 1), then accounts (section 2), orders and tickets (section 3), refunds (section 4), volunteers and staff (section 5), dealers (section 6), administration (section 7) and hotels (section 8).
+Reading this list, then accounts, orders and tickets, refunds, volunteers and staff, dealers, administration and hotels.
 :::
 
 ## How to read this list

@@ -9,7 +9,7 @@ textbook: true
 Find any account by name, username, email, phone, badge ID or date of birth, and open the person's profile.
 
 :::info[In this guide]
-Searching (section 1), filters (section 2), result badges (section 3), and the profile and its tabs (section 4).
+Searching, filters, result badges, and the profile and its tabs.
 :::
 
 ## Search for a person

@@ -9,7 +9,7 @@ textbook: true
 Welcome to ConCat! These guides take you through setting up and running your event, one task at a time.
 
 :::info[In this guide]
-Where to start (section 1), and how to read the guides (section 2).
+Where to start, and how to read the guides.
 :::
 
 ## Where to start

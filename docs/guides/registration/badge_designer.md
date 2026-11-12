@@ -9,7 +9,7 @@ textbook: true
 Lay out the label printed on each attendee's badge, from positioned layers that suit a wide range of printers and badge stock.
 
 :::info[In this guide]
-How badge designs work (section 1), the list of designs (section 2), creating a design (section 3), text elements (section 4), images and containers (section 5), previewing and test printing (section 6), and pre-printed badges, export and import (section 7).
+How badge designs work; the list of designs; creating a design; text elements; images and containers; previewing and test printing; and pre-printed badges, export and import.
 :::
 
 ## How badge designs work

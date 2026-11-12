@@ -15,7 +15,7 @@ You also need a **Passkey** or **MeetingMax** account for your event. ConCat doe
 :::
 
 :::info[In this guide]
-How hotel booking works (section 1), connecting a provider and opening hotels (section 2), dashboard and room inventory (section 3), creating a block (section 4), editing a block (section 5), a block's entries (section 6), reservations and one person's entry (section 7).
+How hotel booking works, connecting a provider and opening hotels, dashboard and room inventory, creating a block, editing a block, a block's entries, reservations and one person's entry.
 :::
 
 ## How hotel booking works

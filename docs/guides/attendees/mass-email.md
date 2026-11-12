@@ -9,7 +9,7 @@ textbook: true
 Send one message to a group of attendees, volunteers or dealers. Four modules have a **Mass Email** page; they share one form and differ only in how you choose recipients.
 
 :::info[In this guide]
-How it works (section 1), sending (section 2), and recipients by module: Attendees (section 3), Registration (section 4), Volunteers (section 5) and Dealers (section 6).
+How it works, sending, and recipients by module: Attendees, Registration, Volunteers and Dealers.
 :::
 
 ## How mass email works

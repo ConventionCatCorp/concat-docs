@@ -9,7 +9,7 @@ textbook: true
 A fee is an amount you charge an attendee on top of what they buy, such as a replacement badge or a fine. Charge fees, check what the attendee sees, and review or delete them.
 
 :::info[In this guide]
-How fees work (section 1), charging a fee (section 2), and reviewing or deleting fees (section 3).
+How fees work, charging a fee, and reviewing or deleting fees.
 :::
 
 ## How fees work

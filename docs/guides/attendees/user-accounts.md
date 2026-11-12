@@ -9,7 +9,7 @@ textbook: true
 Correct an attendee's details, help them sign in, and view, export or delete their account. Every section starts on the person's profile: see [Finding attendees](./user-search.md).
 
 :::info[In this guide]
-Personal details (section 1), sign-in help (section 2), emergency contacts (section 3), audit history (section 4), data export (section 5), and account deletion (section 6).
+Personal details, sign-in help, emergency contacts, audit history, data export, and account deletion.
 :::
 
 ## Edit personal details

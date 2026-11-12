@@ -9,7 +9,7 @@ textbook: true
 Review dealer applications in Housekeeping: the dealer dashboard, finding and approving applications, and assistants and seating requests.
 
 :::info[In this guide]
-How dealing works (section 1), the dashboard (section 2), finding (section 3) and reviewing an application (section 4), paid applications (section 5), other areas (section 6), dealer details (section 7), assistants and seating (section 8), and user profiles (section 9).
+How dealing works, the dashboard, finding and reviewing an application, paid applications, other areas, dealer details, assistants and seating, and user profiles.
 :::
 
 ## How dealing works

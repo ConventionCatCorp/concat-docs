@@ -9,7 +9,7 @@ textbook: true
 Let one account register and pay for a family or group, set who counts as a child or minor, and hand a sub-account to a grown-up dependent.
 
 :::info[In this guide]
-Sub-accounts, children and minors (section 1), turning on sub-accounts (section 2), age thresholds (section 3), registering other attendees (section 4), migrating to a full account (section 5), dealer assistants (section 6), minors who sign up themselves (section 7), and the old child registration (section 8).
+Sub-accounts, children and minors; turning on sub-accounts; age thresholds; registering other attendees; migrating to a full account; dealer assistants; minors who sign up themselves; and the old child registration.
 :::
 
 ## Sub-accounts, children and minors

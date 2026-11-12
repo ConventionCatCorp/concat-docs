@@ -9,7 +9,7 @@ textbook: true
 Turn on dealer applications, set the address dealer emails come from, and choose what dealers agree to and answer when they apply.
 
 :::info[In this guide]
-General settings (section 1), the Dealer Policy (section 2), custom questions (section 3), and the application form (section 4).
+General settings, the Dealer Policy, custom questions, and the application form.
 :::
 
 ## General settings

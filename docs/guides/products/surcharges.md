@@ -9,7 +9,7 @@ textbook: true
 Add a fee or tax on top of a product's price, such as sales tax or a handling fee. Create the surcharge once, then assign it to products or a whole category.
 
 :::info[In this guide]
-Surcharge types (section 1), creating a surcharge (section 2), assigning it to a product (section 3) or a category (section 4), the surcharge's page (section 5), and the platform fee (section 6).
+Surcharge types, creating a surcharge, assigning it to a product or a category, the surcharge's page, and the platform fee.
 :::
 
 ## Surcharge types

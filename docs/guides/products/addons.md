@@ -9,7 +9,7 @@ textbook: true
 An addon attaches another product to this one, free or as an extra purchase, such as a free T-shirt with a sponsor badge.
 
 :::info[In this guide]
-The two kinds of addon (section 1), which products can be addons (section 2), adding an addon (section 3), removing one (section 4), and what attendees see (section 5).
+The two kinds of addon, which products can be addons, adding an addon, removing one, and what attendees see.
 :::
 
 ## How addons work

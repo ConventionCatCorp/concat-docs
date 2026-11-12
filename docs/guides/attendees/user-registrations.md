@@ -9,7 +9,7 @@ textbook: true
 Register someone on their behalf, edit, transfer or delete their registration, and look through their orders. Start on the person's profile: see [Finding attendees](./user-search.md).
 
 :::info[In this guide]
-The Registration row (section 1), creating a registration (section 2), editing one (section 3), removing a payment, transferring or deleting (section 4), and the **Orders** tab (section 5).
+The Registration row; creating a registration; editing one; removing a payment, transferring or deleting; and the **Orders** tab.
 :::
 
 ## A registration on the profile

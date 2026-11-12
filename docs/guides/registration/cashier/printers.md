@@ -9,7 +9,7 @@ textbook: true
 Print badges on a USB Zebra label printer or through the browser, and cash receipts and pick lists on a USB receipt printer with a cash drawer.
 
 :::info[In this guide]
-How the station prints (section 1), Zebra printers (section 2), the test printer (section 3), browser printing (section 4), and receipt printers and cash drawers (section 5).
+How the station prints, Zebra printers, the test printer, browser printing, and receipt printers and cash drawers.
 :::
 
 ## How the station prints

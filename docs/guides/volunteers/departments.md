@@ -9,7 +9,7 @@ textbook: true
 Departments are the teams volunteers apply to, such as *Registration* or *Art Show*. Their leads see the volunteers and request the ones they want.
 
 :::info[In this guide]
-Department fields (section 1), managing departments and leads (section 2), and what leads see on **My Department(s)** (section 3).
+Department fields, managing departments and leads, and what leads see on **My Department(s)**.
 :::
 
 ## Departments

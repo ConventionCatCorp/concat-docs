@@ -9,7 +9,7 @@ textbook: true
 Gatekeeping limits who can buy a product, often a badge tier: attendees enter a **silo** instead of buying, and you choose who may buy. Use it for events with limited space, or a sponsor tier for only some people.
 
 :::info[In this guide]
-How gatekeeping works (section 1), the list of silos (section 2), creating a silo (section 3), changing or deleting a silo (section 4), entrants (section 5), wording (section 6), running a draw (section 7), and what attendees see (section 8).
+How gatekeeping works, the list of silos, creating a silo, changing or deleting a silo, entrants, wording, running a draw, and what attendees see.
 :::
 
 ## How gatekeeping works

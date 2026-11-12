@@ -9,7 +9,7 @@ textbook: true
 Set up your event store: categories, products and their extras, and vouchers. Store products are everything you sell besides badges, such as merchandise, meal tickets or donations.
 
 :::info[In this guide]
-Turning on the store (section 1), categories (section 2), products (section 3), and vouchers (section 4).
+Turning on the store, categories, products, and vouchers.
 :::
 
 ## Turn on the store

@@ -9,7 +9,7 @@ textbook: true
 Write the policies attendees read and agree to, from your privacy policy to the messages at registration, login and on the hotel pages, for your whole organization or one convention.
 
 :::info[In this guide]
-How policies work (section 1), editing a policy (section 2), overriding one for a convention (section 3), deleting a policy (section 4), what attendees see (section 5).
+How policies work, editing a policy, overriding one for a convention, deleting a policy, what attendees see.
 :::
 
 ## How policies work

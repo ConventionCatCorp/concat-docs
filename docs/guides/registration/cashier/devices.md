@@ -9,7 +9,7 @@ textbook: true
 QuikTicket is ConCat's mobile app for scanning tickets. Authorize a phone or tablet for it with a QR code from Housekeeping.
 
 :::info[In this guide]
-QuikTicket and its permissions (section 1), turning it off or on (section 2), authorizing a device (section 3), and authorizing one for someone else (section 4).
+QuikTicket and its permissions, turning it off or on, authorizing a device, and authorizing one for someone else.
 :::
 
 ## What QuikTicket does

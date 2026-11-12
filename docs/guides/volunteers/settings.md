@@ -9,7 +9,7 @@ textbook: true
 Open volunteer applications and set up what applicants agree to and answer.
 
 :::info[In this guide]
-General settings (section 1), the Code of Conduct (section 2), questions (section 3), the application form (section 4) and statistics (section 5).
+General settings, the Code of Conduct, questions, the application form and statistics.
 :::
 
 ## General settings

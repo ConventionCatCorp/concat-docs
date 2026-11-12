@@ -9,7 +9,7 @@ textbook: true
 A ticketed product gives each buyer a personal QR-code ticket for a set time window, which staff scan at the door. Use it for limited events such as a workshop or a meet-and-greet.
 
 :::info[In this guide]
-How ticketed products work (section 1), setting one up (section 2), what attendees see (section 3), printable tickets (section 4), and scanning at the door (section 5).
+How ticketed products work, setting one up, what attendees see, printable tickets, and scanning at the door.
 :::
 
 ## How ticketed products work

@@ -9,7 +9,7 @@ textbook: true
 Reword ConCat's emails for one convention or your whole organization, and turn off the ones you don't want.
 
 :::info[In this guide]
-How overrides work (section 1), finding a template (section 2), writing an override (section 3), disabling and reactivating an email (section 4), variables (section 5), and template errors (section 6).
+How overrides work, finding a template, writing an override, disabling and reactivating an email, variables, and template errors.
 :::
 
 ## How templates work

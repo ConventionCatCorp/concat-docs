@@ -9,7 +9,7 @@ textbook: true
 Add the `CNAME` records ConCat needs to send email from your domain or serve a convention at your own address. No DNS experience needed.
 
 :::info[In this guide]
-CNAME records and your DNS panel (section 1), a custom email domain (section 2), a convention on your own domain (section 3), when verification doesn't pass (section 4).
+CNAME records and your DNS panel, a custom email domain, a convention on your own domain, when verification doesn't pass.
 :::
 
 ## CNAME records and your DNS panel

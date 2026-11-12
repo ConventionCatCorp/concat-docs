@@ -9,7 +9,7 @@ textbook: true
 See the volunteer application as your attendees do. Follow the steps with an attendee account.
 
 :::info[In this guide]
-Prerequisites (section 1), applying (section 2), status (section 3), changing or withdrawing (section 4), and blocked applications (section 5).
+Prerequisites, applying, status, changing or withdrawing, and blocked applications.
 :::
 
 ## Before attendees can apply

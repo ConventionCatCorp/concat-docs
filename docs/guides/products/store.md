@@ -9,7 +9,7 @@ textbook: true
 Sign in as an attendee to check your event store before you open it: browsing, product pages and what stops a purchase.
 
 :::info[In this guide]
-Turning the store on (section 1), the store page (section 2), a product's page (section 3), eligibility, limits and exclusions (section 4), and adding to the cart (section 5).
+Turning the store on; the store page; a product's page; eligibility, limits and exclusions; and adding to the cart.
 :::
 
 ## Turn the store on

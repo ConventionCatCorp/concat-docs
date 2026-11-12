@@ -9,7 +9,7 @@ textbook: true
 See what attendees see when they pay, what can block a payment, and their transaction history. Use a test attendee account to check your setup.
 
 :::info[In this guide]
-The checkout page (section 1), paying by card (section 2), paying with PagSeguro (section 3), free and voucher-covered orders (section 4), what stops a payment (section 5), the payment result page (section 6), and transaction history (section 7).
+The checkout page, paying by card, paying with PagSeguro, free and voucher-covered orders, what stops a payment, the payment result page, and transaction history.
 :::
 
 ## The checkout page

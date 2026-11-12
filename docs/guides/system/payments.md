@@ -9,7 +9,7 @@ textbook: true
 Connect Stripe, and PagSeguro for Brazil, to take attendees' card payments online, and see how payments taken by hand fit in.
 
 :::info[In this guide]
-How payments work (section 1), connecting Stripe (section 2), finishing or updating Stripe details (section 3), PagSeguro (section 4), payments taken by hand (section 5).
+How payments work, connecting Stripe, finishing or updating Stripe details, PagSeguro, payments taken by hand.
 :::
 
 ## How payments work

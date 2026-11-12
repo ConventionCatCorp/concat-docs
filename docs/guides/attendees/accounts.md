@@ -9,7 +9,7 @@ textbook: true
 See what attendees get when they create an account, log in, recover a password and manage their account. Follow along with a test account.
 
 :::info[In this guide]
-The login page (section 1), creating an account (section 2), email login links (section 3), forgotten passwords (section 4), two-factor authentication (section 5), account settings and email changes (section 6), personal details (section 7), links from staff and parents (section 8), and logging out and other conventions (section 9).
+The login page, creating an account, email login links, forgotten passwords, two-factor authentication, account settings and email changes, personal details, links from staff and parents, and logging out and other conventions.
 :::
 
 ## The login page

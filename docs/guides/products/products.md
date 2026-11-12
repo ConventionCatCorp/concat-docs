@@ -9,7 +9,7 @@ textbook: true
 Create the products in your event store, group them in categories, and change, archive or track them once they're on sale.
 
 :::info[In this guide]
-Categories (section 1), the product list (section 2), creating a product (section 3), the product page (section 4), clearing unpaid carts (section 5), deleting a product (section 6), and orders and history (section 7).
+Categories, the product list, creating a product, the product page, clearing unpaid carts, deleting a product, and orders and history.
 :::
 
 ## Categories

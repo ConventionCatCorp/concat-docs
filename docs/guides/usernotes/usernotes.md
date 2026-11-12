@@ -9,7 +9,7 @@ textbook: true
 Record what your team needs to know about a person, from a commendation to a ban, and handle the account reviews a ban can trigger.
 
 :::info[In this guide]
-How notes work (section 1), notes on a profile (section 2), searching and creating notes (section 3), bans (section 4), account reviews (section 5), and note categories (section 6).
+How notes work, notes on a profile, searching and creating notes, bans, account reviews, and note categories.
 :::
 
 ## How notes work

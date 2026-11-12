@@ -9,7 +9,7 @@ textbook: true
 Register, pay and change a registration as an attendee would, to check your setup before you open registration.
 
 :::info[In this guide]
-Before attendees can register (section 1), starting a registration (section 2), choosing a tier (section 3), the registration form (section 4), the result (section 5), paying (section 6), changing or upgrading (section 7), and closed registration (section 8).
+Before attendees can register, starting a registration, choosing a tier, the registration form, the result, paying, changing or upgrading, and closed registration.
 :::
 
 ## Before attendees can register

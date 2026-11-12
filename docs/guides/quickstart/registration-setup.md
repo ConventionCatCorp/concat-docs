@@ -9,7 +9,7 @@ textbook: true
 Set up badge tiers, their questions and extras, and the registration form; choose how families and minors register; then open registration.
 
 :::info[In this guide]
-Badge products (section 1), badge product options (section 2), addons (section 3), the registration form (section 4), sub-accounts (section 5), minors and dependents (section 6), and opening registration (section 7).
+Badge products, badge product options, addons, the registration form, sub-accounts, minors and dependents, and opening registration.
 :::
 
 ## Badge products

@@ -9,7 +9,7 @@ textbook: true
 Badge products are the registration tiers attendees choose from, such as *General Admission* or *Sponsor*. Create and edit tiers, and let attendees upgrade between them.
 
 :::info[In this guide]
-Badge products (section 1), the list (section 2), creating a tier (section 3), a tier's page (section 4), upgrade paths (section 5), and addons (section 6).
+Badge products, the list, creating a tier, a tier's page, upgrade paths, and addons.
 :::
 
 ## What a badge product is

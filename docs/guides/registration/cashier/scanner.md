@@ -9,7 +9,7 @@ textbook: true
 Scan an attendee's driver's licence or registration QR code, and the Cashier UI looks them up for you.
 
 :::info[In this guide]
-Codes the station reads (section 1), scanner modes (section 2), TEEMI setup (section 3), adding a Web Serial scanner (section 4), and registration QR codes (section 5).
+Codes the station reads, scanner modes, TEEMI setup, adding a Web Serial scanner, and registration QR codes.
 :::
 
 ## What the station reads

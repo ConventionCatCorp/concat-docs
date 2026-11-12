@@ -9,7 +9,7 @@ textbook: true
 Create an account by hand for someone who can't sign up themselves, or a sub-account that belongs to another account.
 
 :::info[In this guide]
-When to create an account by hand (section 1), creating an account (section 2), creating a sub-account (section 3).
+When to create an account by hand, creating an account, creating a sub-account.
 :::
 
 ## When to create an account by hand

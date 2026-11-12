@@ -9,7 +9,7 @@ textbook: true
 Upload a product's images and choose which one leads in the store.
 
 :::info[In this guide]
-Image roles and limits (section 1), uploading images (section 2), setting an image's role (section 3), and deleting an image (section 4).
+Image roles and limits, uploading images, setting an image's role, and deleting an image.
 :::
 
 ## How images are used

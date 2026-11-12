@@ -9,7 +9,7 @@ textbook: true
 The Cashier UI is the registration desk station: find an attendee, see whether they can check in, take any balance due, and print their badge.
 
 :::info[In this guide]
-Finding an attendee (section 1), station setup (section 2), event-wide settings (section 3), check-in and payment (section 4), reprints (section 5), check-in without printing (section 6), ID checks (section 7), the **Actions** menu (section 8) and child badges (section 9). Hardware: [Scanner](./scanner.md), [Badge and receipt printers](./printers.md), [NFC badges](./nfc.md), [Devices and QuikTicket](./devices.md).
+Finding an attendee, station setup, event-wide settings, check-in and payment, reprints, check-in without printing, ID checks, the **Actions** menu and child badges. Hardware: [Scanner](./scanner.md), [Badge and receipt printers](./printers.md), [NFC badges](./nfc.md), [Devices and QuikTicket](./devices.md).
 :::
 
 ## Open the station and find an attendee

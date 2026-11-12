@@ -9,7 +9,7 @@ textbook: true
 Get your team into ConCat: create or find their accounts, and give each person the Housekeeping access they need through roles.
 
 :::info[In this guide]
-Creating a user (section 1), finding a user (section 2), and roles and permissions (section 3).
+Creating a user, finding a user, and roles and permissions.
 :::
 
 ## Create a user

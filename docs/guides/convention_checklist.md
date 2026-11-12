@@ -9,7 +9,7 @@ textbook: true
 What to decide and check before opening registration, before the event and after it. Do the Quickstart first, from [Start here](./quickstart/start-here.md); each item links to the guide that shows how.
 
 :::info[In this guide]
-Before you open registration (section 1), before the first day of the event (section 2), and after the event (section 3).
+Before you open registration, before the first day of the event, and after the event.
 :::
 
 ## Before you open registration

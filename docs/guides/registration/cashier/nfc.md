@@ -9,7 +9,7 @@ textbook: true
 The Cashier UI writes a signed record to the NFC chip in each attendee's badge before printing its label. A programmed badge on the reader opens its holder, and other systems can check badges against ConCat.
 
 :::info[In this guide]
-How NFC badges work (section 1), turning them on (section 2), connecting a reader (section 3), programming and printing (section 4), finding an attendee by badge (section 5), and revoking a badge (section 6).
+How NFC badges work, turning them on, connecting a reader, programming and printing, finding an attendee by badge, and revoking a badge.
 :::
 
 ## How NFC badges work

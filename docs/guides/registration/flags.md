@@ -9,7 +9,7 @@ textbook: true
 Registration flags are yes-or-no checkboxes on the registration form, such as joining the newsletter. Create and edit them, see who set one, and clear the data of attendees who asked to be deleted.
 
 :::info[In this guide]
-How flags work (section 1), creating a flag (section 2), editing and deleting flags (section 3), who set a flag (section 4), and clearing *nukeme* data (section 5).
+How flags work, creating a flag, editing and deleting flags, who set a flag, and clearing *nukeme* data.
 :::
 
 ## How flags work

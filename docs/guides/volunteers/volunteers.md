@@ -9,7 +9,7 @@ textbook: true
 Find and review volunteer applications, assign volunteers to departments, make them staff, and clean up.
 
 :::info[In this guide]
-How volunteering works (section 1), finding applications (section 2), reviewing one (section 3), assigning departments (section 4), staff (section 5), clearing requests and deleting (section 6), and the profile's **Volunteer** tab (section 7).
+How volunteering works, finding applications, reviewing one, assigning departments, staff, clearing requests and deleting, and the profile's **Volunteer** tab.
 :::
 
 ## How volunteering works

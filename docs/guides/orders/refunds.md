@@ -9,7 +9,7 @@ textbook: true
 Approve or reject attendees' refund requests, refund any paid order yourself, and turn requests off.
 
 :::info[In this guide]
-How refunds work (section 1), what attendees see (section 2), the request queue (section 3), approving a request (section 4), rejecting one (section 5), refunding without a request (section 6), and turning off refund requests (section 7).
+How refunds work, what attendees see, the request queue, approving a request, rejecting one, refunding without a request, and turning off refund requests.
 :::
 
 ## How refunds work

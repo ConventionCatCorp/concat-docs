@@ -9,7 +9,7 @@ textbook: true
 Set the domain your email is sent from, the senders staff can pick for a mass email, and the contact addresses automated emails use.
 
 :::info[In this guide]
-The sending domain (section 1), senders for mass email (section 2), and contact addresses (section 3).
+The sending domain, senders for mass email, and contact addresses.
 :::
 
 ## Sending domain

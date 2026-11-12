@@ -9,7 +9,7 @@ textbook: true
 A claim ticket is a label the Cashier UI prints after an attendee's badge for each store product they bought that has a print design: a physical voucher for items handed over at the event, such as a T-shirt.
 
 :::info[In this guide]
-How claim tickets work (section 1), setting up a product (section 2), printing claim tickets (section 3), and handing out undelivered products (section 4).
+How claim tickets work, setting up a product, printing claim tickets, and handing out undelivered products.
 :::
 
 ## How claim tickets work

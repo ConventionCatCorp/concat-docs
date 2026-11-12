@@ -9,7 +9,7 @@ textbook: true
 See what attendees get after logging in, and which settings decide it.
 
 :::info[In this guide]
-The sidebar (section 1), the Attendance dashboard (section 2), your notice (section 3), registration cards and their menus (section 4), the footer and changelog (section 5), and the waiting room (section 6).
+The sidebar, the Attendance dashboard, your notice, registration cards and their menus, the footer and changelog, and the waiting room.
 :::
 
 ## The sidebar

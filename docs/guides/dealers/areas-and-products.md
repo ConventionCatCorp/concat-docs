@@ -9,7 +9,7 @@ textbook: true
 A dealer area is a part of your event where dealers apply for space, such as a dealers' den or an artists' alley. Set up its table types and add-ons, then the area itself.
 
 :::info[In this guide]
-How the pieces fit together (section 1), the dealer product category (section 2), table types and add-ons (section 3), creating an area (section 4), and editing or deleting one (section 5).
+How the pieces fit together, the dealer product category, table types and add-ons, creating an area, and editing or deleting one.
 :::
 
 ## How they fit together

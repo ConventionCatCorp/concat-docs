@@ -9,7 +9,7 @@ textbook: true
 Sell a product for less during a set period, optionally only to some roles: an early-bird, staff or volunteer price.
 
 :::info[In this guide]
-How discounts work and their statuses (section 1), creating a discount (section 2), editing one (section 3), and deleting one (section 4).
+How discounts work and their statuses, creating a discount, editing one, and deleting one.
 :::
 
 ## How discounts work

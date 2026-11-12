@@ -9,7 +9,7 @@ textbook: true
 Get a trial instance and learn your way around Housekeeping, where all setup happens. The next four guides then set up your convention, registration, store and staff.
 
 :::info[In this guide]
-Starting a trial and signing in (section 1), and finding your way around Housekeeping (section 2).
+Starting a trial and signing in, and finding your way around Housekeeping.
 :::
 
 ## Start a trial

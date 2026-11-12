@@ -9,7 +9,7 @@ textbook: true
 Export your event's data as CSV or JSON, get approval to include personal information, and build exports with the columns you choose.
 
 :::info[In this guide]
-Where to export (section 1), standard exports (section 2), personal information and its approval (section 3), approving, rejecting and cancelling requests (section 4), Dynamic Export (section 5).
+Where to export; standard exports; personal information and its approval; approving, rejecting and cancelling requests; Dynamic Export.
 :::
 
 ## Ways to export

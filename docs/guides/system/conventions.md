@@ -9,7 +9,7 @@ textbook: true
 Run several conventions in one organization, each at its own address: see what each one owns, and start next year's event or a separate new one.
 
 :::info[In this guide]
-Organizations and conventions (section 1), Next Year or New Convention (section 2), creating next year's convention (section 3), creating a separate new convention (section 4).
+Organizations and conventions, Next Year or New Convention, creating next year's convention, creating a separate new convention.
 :::
 
 ## Organizations and conventions

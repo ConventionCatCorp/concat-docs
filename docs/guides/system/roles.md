@@ -9,7 +9,7 @@ textbook: true
 Roles decide what each person can do in Housekeeping. Create them, set their permissions, and give them to people directly, by invite or through role managers.
 
 :::info[In this guide]
-How roles work (section 1), viewing roles (section 2), creating a role (section 3), its permissions (section 4), assigning people (section 5), roles on a profile (section 6), one person's overrides (section 7), invite links (section 8), accepting an invite (section 9), settings and role managers (section 10), history and deleting (section 11).
+How roles work, viewing roles, creating a role, its permissions, assigning people, roles on a profile, one person's overrides, invite links, accepting an invite, settings and role managers, history and deleting.
 :::
 
 ## How roles work

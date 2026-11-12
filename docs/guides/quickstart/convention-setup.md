@@ -9,7 +9,7 @@ textbook: true
 Set your event's identity, venue and dates, policies, payments and email. All of it is on one Housekeeping page, **System › Settings**.
 
 :::info[In this guide]
-Event info (section 1), venue and dates (section 2), terms and policies (section 3), payment (section 4) and email (section 5).
+Event info, venue and dates, terms and policies, payment and email.
 :::
 
 ## Event info

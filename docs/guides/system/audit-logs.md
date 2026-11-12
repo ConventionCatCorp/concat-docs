@@ -9,7 +9,7 @@ textbook: true
 See who changed settings, roles, orders, registrations and accounts, and when, and narrow the log to the entries you need.
 
 :::info[In this guide]
-What the audit log records (section 1), browsing it (section 2), filtering by tag and type (section 3), jumping to a date (section 4).
+What the audit log records, browsing it, filtering by tag and type, jumping to a date.
 :::
 
 ## What the audit log records

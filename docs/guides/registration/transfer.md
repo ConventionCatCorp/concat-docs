@@ -9,7 +9,7 @@ textbook: true
 Let attendees who can't come give their paid registration to another attendee instead of asking for a refund.
 
 :::info[In this guide]
-How transfers work (section 1), turning transfers on (section 2), transferring as an attendee (section 3), and transfers by staff (section 4).
+How transfers work, turning transfers on, transferring as an attendee, and transfers by staff.
 :::
 
 ## How transfers work
