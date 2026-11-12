@@ -59,7 +59,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/ConventionCatCorp/concat-docs/tree/main/',
           docItemComponent: '@theme/ApiItem',
         },
         theme: {

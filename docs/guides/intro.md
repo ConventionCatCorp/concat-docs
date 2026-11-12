@@ -72,6 +72,6 @@ Notes like this sit in the margin on wide screens and between paragraphs on narr
 
 Screenshots are numbered figures. Red numbered markers on a screenshot match the numbered notes in its caption. Tables are numbered by section: Table 2.1 is the first table in section 2.
 
-:::note[Contributing]
-These guides are written in [Markdown](https://en.wikipedia.org/wiki/Markdown), and anyone can suggest changes on our [GitHub](https://github.com/ConventionCatCorp/concat-docs). If something is wrong or out of date, click **Edit this page** at the bottom of the page.
+:::note[Found a mistake?]
+If a step doesn't match what you see, contact ConCat Support and tell them the guide, section and step.
 :::
