@@ -6,43 +6,41 @@ textbook: true
 
 # Hotel management
 
-This guide connects ConCat to your hotel booking partner and sets up the room blocks attendees enter to get a booking link. It also shows where to follow entries and reservations, and how to fix one person's booking.
+Connect ConCat to Passkey or MeetingMax, set up the room blocks attendees enter for a booking link, and follow and fix entries and reservations.
 
 :::caution[Before you start]
-Hotel booking is off until ConCat turns it on for your convention. The switch is a setting only ConCat can change: contact ConCat support to ask for it. Until then, nothing in this guide appears in Housekeeping.
+Hotel booking is off until ConCat support turns it on for your convention. Until then, nothing in this guide appears in Housekeeping.
 
-Hotel booking also needs a **Passkey** or **MeetingMax** account for your event. ConCat doesn't sell rooms itself: it hands attendees a personal link to book in Passkey or MeetingMax, and reads the bookings back.
+You also need a **Passkey** or **MeetingMax** account for your event. ConCat doesn't sell rooms: it gives attendees a personal link to book in Passkey or MeetingMax, and reads the bookings back.
 :::
 
 :::info[In this guide]
-How hotel booking works (section 1), connecting Passkey or MeetingMax and opening hotels (section 2), the dashboard and room inventory (section 3), creating a block (section 4), editing a block (section 5), reviewing a block's entries (section 6), and reservations and one person's hotel entry (section 7).
+How hotel booking works (section 1), connecting a provider and opening hotels (section 2), dashboard and room inventory (section 3), creating a block (section 4), editing a block (section 5), a block's entries (section 6), reservations and one person's entry (section 7).
 :::
 
 ## How hotel booking works
 
 <Sidenote title="Who can do this">
-Hotel pages need `hotel:view`. Changing settings, editing blocks and deleting entries need `hotel:manage`. The default **hotel** and **admin** roles have both.
+Hotel pages need `hotel:view`; changing settings, editing blocks and deleting entries need `hotel:manage`. The default **hotel** and **admin** roles have both.
 </Sidenote>
 
-Your convention has one *integration*: the link to your Passkey or MeetingMax event. ConCat reads your hotels, room types and nightly availability from it, so you don't type them in.
+Your convention has one *integration*: the link to your Passkey or MeetingMax event. ConCat reads hotels, room types and nightly availability from it.
 
-You release rooms in *blocks*. Housekeeping calls them **Release Groups**; attendees see the word *block*. Each block has a type:
+You release rooms in *blocks*, which Housekeeping calls **Release Groups**. Each block has a type:
 
-- **Random Draw**: attendees enter during an entry period. ConCat then picks the winners, up to the number you set, and gives each a booking link.
-- **First Come First Serve**: attendees join a queue, and booking links go out in the order they entered.
+- **Random Draw**: attendees enter during an entry period; ConCat then picks up to the number of winners you set and gives each a booking link.
+- **First Come First Serve**: attendees join a queue, and booking links go out in entry order.
 
-An attendee follows their link to Passkey or MeetingMax and books there. The integration then reports the reservation back to ConCat, where both you and the attendee can see it. What attendees see is in [What attendees see when booking](./booking.md).
-
-A block moves through the stages in Table 1.1, set by its dates.
+For the attendee side, see [What attendees see when booking](./booking.md). A block's dates move it through the stages in Table 1.1.
 
 <TableFigure title="Block stages">
 
 | Stage | When |
 | --- | --- |
 | **Pre Entry** | Before **Entry Start At**. |
-| **Entry period** | From **Entry Start At** to **Entry End At**. Random draws take entries only now. |
-| **Prerelease Ready** | After the entry period, before **Release Start At**. The draw runs in this stage. |
-| **Release Period** | From **Release Start At** to **Release End At**: the booking period. Selected attendees book; a first-come block also takes entries. |
+| **Entry period** | **Entry Start At** to **Entry End At**. Random draws take entries only now. |
+| **Prerelease Ready** | After the entry period, before **Release Start At**. The draw runs now. |
+| **Release Period** | **Release Start At** to **Release End At**: selected attendees book; a first-come block also takes entries. |
 | **Finished** | After **Release End At**. Attendees no longer see the block. |
 
 </TableFigure>
@@ -50,62 +48,60 @@ A block moves through the stages in Table 1.1, set by its dates.
 ## Connect Passkey or MeetingMax and open hotels
 
 <Sidenote title="Settings permission">
-The **Hotels** tab also needs `system:settings:update`, which every System › Settings tab needs.
+The **Hotels** tab also needs `system:settings:update`.
 </Sidenote>
-
-Have your Passkey event ID, or your MeetingMax event ID, API key and system identifier, ready before you start.
 
 1. Go to **Housekeeping › System › Settings** and click the **Hotels** tab.
 
-   <Result>A **Hotel Settings** card shows an **Open Hotels** checkbox and a **Save** button. Below it, **No hotel integration has been configured yet.** is followed by **Connect to Passkey** and **Connect to MeetingMax** buttons.</Result>
+   <Result>The **Hotel Settings** card shows **Open Hotels**, with **Connect to Passkey** and **Connect to MeetingMax** below.</Result>
 
 2. Click **Connect to Passkey** or **Connect to MeetingMax**, whichever your event uses.
 
-   <Result>A form headed **Connect to Passkey** (or **Connect to MeetingMax**) opens. Both have **Name** and an **Allow Group Bookings** checkbox. Passkey adds **Passkey Event ID**; MeetingMax adds **MeetingMax Event ID**, **MeetingMax API Key** and **MeetingMax System Identifier**.</Result>
+   <Result>The **Connect to Passkey** (or **Connect to MeetingMax**) form opens.</Result>
 
-3. Enter a **Name** for the connection and the event details from your provider, then click **Save**.
+3. Enter a **Name** and your event details (**Passkey Event ID**, or **MeetingMax Event ID**, **MeetingMax API Key** and **MeetingMax System Identifier**), then click **Save**.
 
-   <Result>A **Save Callback URL** dialog opens. It warns *This is the only time this URL will be shown. This is important for your Passkey configuration.*, and shows a web address ending in `/api/hotel/gateways/passkey/` and a code, with a copy button.</Result>
+   <Result>A **Save Callback URL** dialog shows, this one time only, an address ending in `/api/hotel/gateways/passkey/` and a code, with a copy button.</Result>
 
-4. Copy the address and keep it for your Passkey configuration, then click **Close**.
+4. Copy the address for your Passkey configuration, then click **Close**.
 
-   <Result>A **Hotel Integration Management** section lists the connection: its name, a **Passkey** or **MeetingMax** badge, its sync status, and **Disable** and **Delete** buttons.</Result>
+   <Result>**Hotel Integration Management** lists the connection with its sync status and **Disable** and **Delete** buttons.</Result>
 
-5. When you're ready for attendees to book, tick **Open Hotels** in the **Hotel Settings** card and click **Save**.
+5. When you're ready for attendees to book, tick **Open Hotels** and click **Save**.
 
    <Result>A **Hotel settings saved** message appears.</Result>
 
-**Open Hotels** opens or closes hotel reservations as a whole, whatever your blocks' dates say. While it's off, attendees see a closed notice instead of the blocks. You can add your own wording under that notice: it's the **Hotel Closed Message** policy on the **Terms** tab (see [Convention setup](../quickstart/convention-setup.md), section 3). The same tab holds the **Hotel Reservation Policy**, which attendees must agree to before they enter a block.
+**Open Hotels** opens or closes hotel booking as a whole, whatever the blocks' dates say. While it's off, attendees see a closed notice and your **Hotel Closed Message**, if you wrote one. That policy and the **Hotel Reservation Policy**, which attendees accept before entering a block, are on the **Terms** tab (see [Convention setup](../quickstart/convention-setup.md), section 3).
 
 <TableFigure title="Sync statuses">
 
 | Status | Meaning |
 | --- | --- |
-| **Awaiting first sync** | Connected, but ConCat hasn't read from the provider yet. |
+| **Awaiting first sync** | Connected; ConCat hasn't read from the provider yet. |
 | **Syncing** | A sync is running. |
 | **Synchronized** | The last sync worked. |
-| **Sync error** | The last sync failed. Check the event details you entered. |
+| **Sync error** | The last sync failed. Check the event details. |
 | **Disconnected** | ConCat can't reach the provider. |
 
 </TableFigure>
 
-Click **Refresh** to update the status. To pause hotel booking, click **Disable** and confirm: attendees no longer see the hotel pages and syncing stops, but blocks and reservations are kept. **Enable** turns it back on.
+**Refresh** updates the status. **Disable** pauses hotel booking: attendees lose the hotel pages and syncing stops, but blocks and reservations are kept. **Enable** resumes it.
 
 :::caution[Watch out]
-**Delete** removes the connection for good, and works only before anything has synced. Once hotels, reservations or blocks exist, use **Disable** instead. A convention can have only one connection.
+**Delete** removes the connection for good and works only before anything has synced; after that, use **Disable**. A convention can have only one connection.
 :::
 
 ## The dashboard and room inventory
 
-1. Go to **Housekeeping › Attendees › Hotel Management** (for the module menu, see [Start here](../quickstart/start-here.md), section 2). The item is under *Module Management* in the sidebar.
+1. Go to **Housekeeping › Attendees › Hotel Management**, under *Module Management* in the sidebar (see [Start here](../quickstart/start-here.md), section 2).
 
-   <Result>The **Hotel Management** page opens on its **Home** tab. The other tabs are **Hotels**, **Release Groups** and **Reservations**. **Home** shows **Dashboard**, with the cards **Total hotels**, **Total rooms**, **Total reservations**, **Total blocks** and **Total block entries**.</Result>
+   <Result>**Hotel Management** opens on its **Home** tab, showing dashboard totals.</Result>
 
 2. Click the **Hotels** tab.
 
-   <Result>**List of Hotels** shows a card for each hotel, with **Visible:** **Yes** or **No**, its address and **Phone**. Under **Rooms**, each room type shows its **Max Occupancy** and a table of **Count**, **Rate**, **Available On** and **Group ID**, one row per night. A sold-out night's count is red.</Result>
+   <Result>**List of Hotels** shows each hotel's room types, with a row per night of **Count**, **Rate**, **Available On** and **Group ID**. A sold-out night's count is red.</Result>
 
-The hotels, rooms and nightly counts come from Passkey or MeetingMax, so you can't edit them here. Change them with your provider; the next sync brings the change in.
+Hotels, rooms and counts come from your provider and can't be edited here. Change them there; the next sync brings the change in.
 
 ## Create a block
 
@@ -115,77 +111,75 @@ A day before **Release Start At**, ConCat draws the winners (Random Draw) or sta
 
 1. Click the **Release Groups** tab.
 
-   <Result>A **Create Release Group** button is shown above a card for each block. A card shows the block's name, its display name in brackets, its description and its current stage.</Result>
+   <Result>A **Create Release Group** button sits above a card for each block.</Result>
 
 2. Click **Create Release Group**.
 
-   <Result>The **Create Release Group** form opens, with a **Back** button. **Hotel Integration** shows the name of your connection.</Result>
+   <Result>The **Create Release Group** form opens; **Hotel Integration** shows your connection's name.</Result>
 
 3. Fill in the fields in Table 4.1, then click **Submit**.
 
-   <Result>A **Successfully created release group** message appears and the **Release Groups** tab opens. The new block's card has two more badges: **Create links task scheduled for:** and **Send emails task scheduled for:**, each with a date and time.</Result>
+   <Result>A **Successfully created release group** message appears. The new card shows **Create links task scheduled for:** and **Send emails task scheduled for:** with dates.</Result>
 
 4. When the block is ready for attendees, edit it (section 5) and set **Status** to **Ready**.
 
    <Result>A **Successfully updated release group** message appears. Attendees who can see the block now find it under **Active blocks** on their hotel page.</Result>
 
-If no connection exists, the form says *This convention does not have a hotel integration configured yet. Configure one in settings before creating a release group.* and **Submit** is greyed out. Do section 2 first.
+Without a connection (section 2), the form shows a warning and **Submit** is greyed out.
 
 <TableFigure title="Release group fields">
 
 | Field | What it does |
 | --- | --- |
 | **Release Group Name** | Required. Your name for the block. |
-| **Display Name** | The name attendees see. If it's empty, they see **Release Group Name**. |
-| **Description** | Shown to attendees on the block's card. |
-| **Status** | **Draft** while you prepare it; **Ready** to show it. Attendees never see a **Draft** block. |
-| **Type** | **Random Draw** or **First Come First Serve**. <small>You can't change it once the block is created.</small> |
-| **Number of Winners** | Random Draw only. At most this many entrants are picked. Set it at or above the number of entries to make every entrant a winner. |
+| **Display Name** | The name attendees see; if empty, **Release Group Name**. |
+| **Description** | Shown on the block's card. |
+| **Status** | **Draft** (attendees never see it) or **Ready**. |
+| **Type** | **Random Draw** or **First Come First Serve**. <small>Fixed once created.</small> |
+| **Number of Winners** | Random Draw only. The most entrants picked; at or above the number of entries, everyone wins. |
 | **Entry Start At**, **Entry End At** | Random Draw only. When entries open and close. |
 | **Release Start At**, **Release End At** | The booking period. Selected attendees must book before **Release End At**. |
-| **Validity Period** | A required number. Leave it at 0. |
-| **Require Registration** | **Required**: the attendee must be registered. **Required Paid**: registered and paid (the default). **Hidden**: no registration needed. |
-| **Force Entry** | **None**, or **By Product**, **By Role**, **By Role and Product**, **By Role or Product**: enters everyone who matches, without them opting in. <small>On a Random Draw it only enters eligible attendees during the entry period.</small> |
+| **Validity Period** | Required. Leave it at 0. |
+| **Require Registration** | **Required** (registered), **Required Paid** (registered and paid; the default) or **Hidden** (none needed). |
+| **Force Entry** | **By Product**, **By Role**, **By Role and Product** or **By Role or Product** enters everyone who matches, without opting in; **None** doesn't. <small>On a Random Draw, only eligible attendees during the entry period.</small> |
 | **Require Not Won** | Leaves out anyone already picked, with a booking, in another block. |
-| **Show Room Availability** | Adds a **View room availability** button to the block for attendees. |
-| **Visibility** | **Hidden**: attendees don't see it on their hotel page. **Always Visible**: everyone sees it. **Eligible Only**: only attendees who may enter see it. |
-| **Restrict to Roles**, **Restrict to Products** | Only people with one of these roles, or with one of these products, may enter. Leave both empty to open the block to all. |
-| **Meeting Max Group Code** | MeetingMax only. The MeetingMax group the rooms belong to. Leave it blank for the main block if it has no group code. |
-| **Passkey Attendee / Access Code** | Passkey only. The access code or attendee code your rooms use in Passkey. One code per block. |
+| **Show Room Availability** | Adds a **View room availability** button for attendees. |
+| **Visibility** | **Hidden** (not on the hotel page), **Always Visible** (everyone) or **Eligible Only** (attendees who may enter). |
+| **Restrict to Roles**, **Restrict to Products** | Only people with one of these roles or products may enter. Both empty: everyone. |
+| **Meeting Max Group Code** | MeetingMax only. The rooms' group; blank for a main block with no group code. |
+| **Passkey Attendee / Access Code** | Passkey only. Your rooms' access or attendee code, one per block. |
 
 </TableFigure>
 
 :::note[Who may enter]
-An attendee may enter when they meet **Require Registration** and **Require Not Won**, and, if you chose roles or products, have one of them.
+An attendee may enter when they meet **Require Registration** and **Require Not Won** and, if you chose roles or products, have one of them.
 :::
 
 ## Edit a block
 
 1. On the **Release Groups** tab, click the edit button (<MaterialIcon name="edit" />) on the block's card.
 
-   <Result>The **Update Release Group** form opens with the block's values. **Type** is greyed out.</Result>
+   <Result>The **Update Release Group** form opens; **Type** is greyed out.</Result>
 
-2. Change the fields you need, then click **Submit**.
+2. Change what you need, then click **Submit**.
 
-   <Result>A **Successfully updated release group** message appears and the **Release Groups** tab opens.</Result>
+   <Result>A **Successfully updated release group** message appears.</Result>
 
-If you move **Release Start At**, the two scheduled tasks move with it, as long as they haven't run yet.
+Moving **Release Start At** also moves the two scheduled tasks, if they haven't run yet.
 
 ## Review a block's entries
 
 1. On the block's card, click **View Details**.
 
-   <Result>The block's page opens. A **Group Information** card shows **Group ID**, **Name**, **Display Name**, **Description**, **Type**, **Show room availability** and **Stage**. **Release Entry Statistics** counts entries and reservations by status. **Release Entries** lists the entries.</Result>
+   <Result>The block's page opens with its details, entry statistics and the **Release Entries** table.</Result>
 
 2. Look over the **Release Entries** table.
 
-   <Result>Each row shows **User ID**, **User** (a link to the profile), **Selected?**, **Notified?** and **Reservation**: a **View Reservation** button, or **No Reservation**. A search box filters the rows.</Result>
+   <Result>Each row shows the **User**, **Selected?**, **Notified?** and **Reservation**. A search box filters the rows.</Result>
 
-3. *(Optional: remove an entry)* Click the delete button (<MaterialIcon name="delete" />) in the entry's **Actions** column, then click **Delete** in the **Delete Entry** dialog.
+3. *(Optional: remove an entry)* Click the delete button (<MaterialIcon name="delete" />) in the entry's **Actions** column, then **Delete** in the **Delete Entry** dialog.
 
    <Result>The entry is removed from the table.</Result>
-
-Deleting an entry needs `hotel:manage`.
 
 ## Reservations and one person's hotel entry
 
@@ -193,23 +187,23 @@ Deleting an entry needs `hotel:manage`.
 
 1. Click the **Reservations** tab.
 
-   <Result>A card headed with the number of **Result(s)** lists every reservation, each with its number and status.</Result>
+   <Result>A card headed with the number of **Result(s)** lists every reservation with its number and status.</Result>
 
 2. Click a reservation.
 
-   <Result>The page **Summary for** the person's name opens. It has a card for each of their entries and reservations, headed **Release Group** and the block's name, or **Reservation** with a **No release group entry** badge. The reservation's status badge is at the top right of the card.</Result>
+   <Result>**Summary for** the person's name opens, with a card for each block entry, or a **Reservation** card with a **No release group entry** badge.</Result>
 
-A reservation made outside ConCat, by someone with no ConCat account yet, isn't a link. You can also reach a person's summary from their profile: in the **Information** card, the **Hotel** row's edit button (<MaterialIcon name="edit" />) opens it. The **Hotel** row appears only when the person has a hotel entry or reservation. To open a profile, see [Finding attendees](../attendees/user-search.md).
+A reservation made outside ConCat by someone with no account isn't a link. You can also open a summary from the person's profile ([Finding attendees](../attendees/user-search.md)): the edit button (<MaterialIcon name="edit" />) on the **Hotel** row of the **Information** card, shown only when they have a hotel entry or reservation.
 
 <TableFigure title="Reservation statuses">
 
 | Status | Meaning |
 | --- | --- |
 | **Creating** | ConCat is making the booking link with your provider. |
-| **Pending** | The link is ready, but the attendee hasn't booked yet. |
+| **Pending** | The link is ready; the attendee hasn't booked. |
 | **New** | Booked, not yet confirmed by the hotel. |
 | **Confirmed** | Booked and confirmed. |
-| **Canceled** | Canceled, by the attendee or the event. |
+| **Canceled** | Canceled by the attendee or the event. |
 | **Expired** | The link wasn't used in time. |
 | **No show** | The guest didn't arrive. |
 | **Waitlisted** | On the hotel's waiting list. |
@@ -222,16 +216,16 @@ A reservation made outside ConCat, by someone with no ConCat account yet, isn't 
 Both buttons need `hotel:manage`.
 </Sidenote>
 
-An entry's card has at most two buttons. **Delete** appears when the entry has no reservation yet, or only a **Pending** one. **Reissue Link** appears when the reservation was canceled by the attendee in Passkey or MeetingMax.
+An entry's card shows **Delete** while it has no reservation or only a **Pending** one, and **Reissue Link** when the attendee canceled in Passkey or MeetingMax.
 
-1. *(Optional: remove the entry)* Click **Delete**, then **Delete** in the **Delete Entry** dialog, which says *Are you sure you want to delete this entry? This will also delete the associated reservation.*
+1. *(Optional: remove the entry)* Click **Delete**, then **Delete** in the **Delete Entry** dialog.
 
-   <Result>An **Entry deleted** message appears, and the entry's card is gone.</Result>
+   <Result>An **Entry deleted** message appears and the card is gone.</Result>
 
 2. *(Optional: give a new booking link)* On a canceled reservation, click **Reissue Link**, then **Reissue Link** in the dialog.
 
    <Result>A message says *A new booking link is being generated. It may take a few minutes to appear.*</Result>
 
 :::caution[Watch out]
-Deleting an entry also deletes its pending reservation and can't be undone. The attendee can enter the block again only while it still takes entries.
+Deleting an entry also deletes its pending reservation and can't be undone. The attendee can enter again only while the block still takes entries.
 :::
