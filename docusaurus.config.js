@@ -2,6 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const { themes: prismThemes } = require('prism-react-renderer');
+const { COMPANY_NAME } = require('./src/data/company');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -137,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Convention Cat Event Systems, LLC`,
+        copyright: `Copyright © ${new Date().getFullYear()} ${COMPANY_NAME}`,
       },
       prism: {
         additionalLanguages: ['http', 'csp', 'css', 'hpkp', 'hsts', 'javascript', 'json', 'markup', 'uri'],
