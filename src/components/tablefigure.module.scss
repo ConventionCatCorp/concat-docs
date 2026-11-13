@@ -1,0 +1,40 @@
+@use '@site/src/css/variables' as *;
+
+.tableFigure {
+  clear: right;
+  margin: var(--cc-space-5) 0;
+  counter-increment: tb-table;
+}
+
+.caption {
+  margin-bottom: var(--cc-space-2);
+  font-size: 0.8125rem;
+  color: var(--cc-color-text);
+}
+
+// The number comes from the section and table counters, which only textbook pages set up.
+:global(.textbook) .label::before {
+  content: 'Table ' counter(tb-section) '.' counter(tb-table);
+  margin-right: 0.6em;
+  font-family: var(--cc-font-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--cc-color-label);
+}
+
+.scroll {
+  overflow-x: auto;
+
+  table {
+    display: table;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+// Wide articles: tables span both columns, like the reference layout.
+@container textbook (min-width: #{$textbook-wide}) {
+  .tableFigure {
+    margin-right: calc(-1 * var(--tb-reach));
+  }
+}

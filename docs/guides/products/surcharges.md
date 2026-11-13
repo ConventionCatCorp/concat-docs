@@ -1,103 +1,162 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 hide_table_of_contents: true
+textbook: true
 ---
 
 # Surcharges
 
-Surcharges can be used to add additional flat-rate or percentage-based fees to a product, such as sales tax, shipping, and handling fees.
+Add a fee or tax on top of a product's price, such as sales tax or a handling fee. Create the surcharge once, then assign it to products or a whole category.
 
-:::caution Important
-In some jurisdictions, charging processing fees to your customers may be prohibited by law. It is <strong>your responsibility</strong> to act in accordance with applicable law.
+:::info[In this guide]
+Surcharge types, creating a surcharge, assigning it to a product or a category, the surcharge's page, and the platform fee.
 :::
 
-### Creating a Surcharge
+## Surcharge types
 
-<splitColumn>
-  <ol className="numbered-list">
-    <li>
-      <span>
-        Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.
-      </span>
-    </li>
-    <li>
-      <span>
-        Click "<strong>Surcharges</strong>" from the left-hand sidebar, then click "<strong>Create New Surcharge</strong>".
-      </span>
-    </li>
-    <li>
-      <span>
-        Enter an internal name and display name for your surcharge.
-      </span>
-    </li>
-    <li>
-      <div>
-        <div>Select the type of surcharge you want to create.</div>
-        <ul>
-          <li>
-            <strong>Surcharge - Fixed Amount</strong> - A fixed amount that is added to the line item price of the product.
-          </li>
-          <li>
-            <strong>Surcharge - Percentage</strong> - A percentage that is calculated from the base line item price of a product.
-          </li>
-          <li>
-            <strong>Tax Rate</strong> - A Government tax rate that is calculated from the base line item price of a product and added to the order total.
-          </li>
-        </ul>
-      </div>
-    </li>
-    <li>
-      <span>
-        Enter the amount or percentage rate of the surcharge.
-      </span>
-    </li>
-    <li>
-      <span>
-        Click "<strong>Create Surcharge</strong>".
-      </span>
-    </li>
-  </ol>
-  <div style={{ textAlign: 'center' }}>
-    <img className="bordered-img" src='/img/tutorial/surchargeAddTaxRate.png' />
-  </div>
-</splitColumn>
+<Sidenote title="One list for the organization">
+Surcharges belong to your organization, so every convention sees the same list. Assignments to products are per convention.
+</Sidenote>
 
-### Associating a Surcharge with a Product
+Each surcharge has a **Type** and an **Amount Type** (Table 1.1). Attendees see its **Display Name** in their cart; **Name** is for Housekeeping.
 
-After a surcharge has been created, you'll need to associate it with a product using the following steps:
+<TableFigure title="Surcharge types">
 
-<splitColumn>
-  <ol className="numbered-list">
-    <li>
-      <span>
-        In <strong>Housekeeping</strong>, navigate to the product's page.
-      </span>
-    </li>
-    <li>
-      <span>
-        Click the green plus (<i className="material-symbols-outlined">add</i>) button next to the "<strong>Surcharges</strong>" section.
-      </span>
-    </li>
-    <li>
-      <span>
-        Search for the surcharges you want to add and select them from the dropdown.
-      </span>
-    </li>
-    <li>
-      <span>
-        Click "<strong>Assign Surcharges</strong>".
-      </span>
-    </li>
-  </ol>
-  <div>
-    <img className="bordered-img" src='/img/tutorial/productOptionAssign.png' />
-  </div>
-</splitColumn>
+| Type | What it is | Amount Type |
+| --- | --- | --- |
+| **Surcharge** | Any fixed or percentage charge. | **Fixed Amount** or **Percentage** |
+| **Tax Rate** | A percentage charge required by a government. | Always **Percentage** |
 
-### Passing Platform Fees to Customers
+</TableFigure>
 
-By default, the platform fees charged by ConCat are absorbed into your pricing and subtracted from the order total when the payment is processed. You can choose to pass the platform fees to the customer instead by checking the "<strong>Pass Platform Fees to Customer</strong>" checkbox on a product's page.
+A percentage, at most 100, is worked out on the product's price and added on top. A product can have only one tax rate.
 
-When you pass platform fees to the customer, the platform fees are added on top of the attendee's order total and will be visible on the checkout and order history pages.
+:::info[Key idea]
+A surcharge can't be edited once it's created. To change a rate, create a new surcharge, assign it, then unassign or delete the old one.
+:::
 
-You can change this setting at any time, but it will only apply to orders processed after the change was made.
+:::caution[Watch out]
+Some places don't allow fees such as card processing fees to be passed on to customers. Check what applies to your event first.
+:::
+
+## Create a surcharge
+
+<Sidenote title="Who can do this">
+The **Surcharges** menu item, and creating and assigning surcharges, need `product:manage`. The default *admin* and *productEditor* roles have it.
+</Sidenote>
+
+1. Go to **Housekeeping › Store Management › Surcharges**.
+
+   <Result>The **Surcharges** page lists your surcharges as cards, each with its type and rate, such as *Tax Rate of 8.25%*.</Result>
+
+2. Click **Create New Surcharge**.
+
+   <Result>A **Create Surcharge** dialog opens.</Result>
+
+3. Enter a **Name** and a **Display Name** (both required), choose the **Type** and **Amount Type**, enter the **Amount**, and click **Create Surcharge**.
+
+   <Result>**Created new surcharge.** appears and the surcharge's page opens (section 5).</Result>
+
+## Assign a surcharge to a product
+
+1. Open the product's page (see [Products](./products.md), section 4) and click the green **Add** button (<MaterialIcon name="add" />) in **Surcharges**.
+
+   <Result>A **Surcharge Search** field appears.</Result>
+
+2. In **Surcharge Search**, type part of a surcharge's name or its ID, and select it. Repeat for any others.
+
+   <Result>Each selected surcharge appears in the field.</Result>
+
+3. Click **Assign Surcharges**.
+
+   <Result>The card lists each surcharge with its type and rate, such as *Surcharge of $2.00*.</Result>
+
+4. To take a surcharge off the product, click the delete button (<MaterialIcon name="delete" />) on its row.
+
+   <Result>The surcharge is removed at once, with no confirmation.</Result>
+
+Once you type, the search results end with **Create New Surcharge**, even when nothing matches. It creates a surcharge in the card and selects it.
+
+A second tax rate on one product fails with *Products cannot have more than one tax rate assigned.*
+
+## Assign a surcharge to a category
+
+<Sidenote title="Two permissions">
+Category surcharges need both `product:category:manage` and `product:manage`.
+</Sidenote>
+
+A category surcharge applies to every product in the category, including products added later. You can still remove it from one product in that product's **Surcharges** card.
+
+1. Go to **Housekeeping › Store Management › Store Products**, click **View Products** on the category, then **Category Surcharges**.
+
+   <Result>A **Category Surcharges** dialog lists the category's surcharges.</Result>
+
+2. Click **Assign Category Level Surcharge**.
+
+   <Result>An **Assign Category Level Surcharges** dialog opens.</Result>
+
+3. Select the surcharges in **Surcharge Search** and click **Assign Surcharges**.
+
+   <Result>**Successfully assigned new category level surcharges.** appears, and **Category Surcharges** lists them.</Result>
+
+4. *(Optional)* To remove a category surcharge, click the delete button (<MaterialIcon name="delete" />) on its row.
+
+   <Result>**Removed Category Level surcharge:** appears with its name. It's also removed from every product in the category.</Result>
+
+:::caution[Watch out]
+A category can have one tax rate. A new tax rate replaces the old one, and removes any other tax rate from the category's products.
+:::
+
+## The surcharge's page
+
+A surcharge's page shows where it's used, and lets you assign it to several products at once. It has no edit form.
+
+1. On **Surcharges**, click **View / Edit Details** on a surcharge.
+
+   <Result>The surcharge's page opens, with **Assign to Product**, **Delete**, and the panels **Associated Products** and **Associated Order Items**.</Result>
+
+2. Click **Assign to Product**.
+
+   <Result>An **Assign Surcharge #** dialog opens with a **Product Search** field.</Result>
+
+3. Select the products in **Product Search** and click **Assign Surcharge**.
+
+   <Result>**Assigned Surcharge successfully.** appears, and the products are listed under **Associated Products**.</Result>
+
+4. To unassign a product, click the more button (<MaterialIcon name="more_horiz" />, **Options**) on its row in **Associated Products** and choose **Unassign** (Figure 5.1).
+
+   <Result>**Removed surcharge from Product #** appears, with the product's ID.</Result>
+
+5. To delete the surcharge, click **Delete**.
+
+   <Result>A **Deleted / Archived** badge appears, and **Assign to Product** and **Delete** are gone.</Result>
+
+<Figure
+  src="/img/guides/products/surcharge-unassign.webp"
+  alt="The Associated Products panel of a surcharge's page: General Admission, marked Assigned, with its more button open on the menu View Product and Unassign."
+  title="Unassigning a product"
+  width="481px"
+  markers={[
+    { n: 1, x: 84.8, y: 49.1, w: 11, h: 17.3 },
+    { n: 2, x: 50.9, y: 63.9, w: 44.9, h: 32.5 },
+  ]}
+>
+
+1. The more button (**Options**) on the product's row.
+2. **View Product** and **Unassign**.
+
+</Figure>
+
+:::caution[Watch out]
+**Delete** acts at once, with no confirmation, and a deleted surcharge can't be restored. Check **Associated Order Items** first: each row has **View order**.
+:::
+
+## The platform fee
+
+<Sidenote title="Absorbed or passed on">
+Absorb the platform fee on a $50.00 registration and you receive $50.00 minus your agreed fee. Pass it on and the attendee pays $50.00 plus the fee, and you receive $50.00.
+</Sidenote>
+
+ConCat's platform fee is a surcharge of the type **Platform Fee**, which your event absorbs by default. To charge it to buyers, tick **Pass Platform Fee to Customer** in the product form (see [Products](./products.md), section 3). **Product Information** then shows **Platform Fee** as **Fees Passed On via Surcharge** instead of **Fees Absorbed / Included**, and the fee is listed in **Surcharges**.
+
+Platform fee surcharges can't be deleted: their **Delete** button reads **Cannot Be Deleted**.

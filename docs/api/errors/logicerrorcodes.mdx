@@ -5,30 +5,270 @@ displayed_sidebar: apiSidebar
 
 # Logic Error Codes
 
-<Attribute id="le-code-1" name="RecordIsReferenced" type="(1)">
-  The record you're trying to delete has other dependent records.
-</Attribute>
+A [logic error](/docs/api/errors#logic-errors) carries a numeric `code` and a human-readable `message`. This table lists every code ConCat defines, with its name and its English (en-US) message. It is generated from ConCat's source.
 
-<Attribute id="le-code-2" name="CannotChangeDealerStatus" type="(2)">
-  The vendor has already paid, so cannot be changed to a different status. Refund the vendor's payment before changing the status.
-</Attribute>
+- Words in braces, such as `{scopes}`, are filled in from the error's `args` when ConCat builds the message.
+- The `message` an API response carries is ConCat's English text. For a few codes it's worded slightly differently from this table.
+- Most codes come from the Housekeeping and attendee apps, not from the API. The codes the API endpoints and the OAuth flow can return include:
 
-<Attribute id="le-code-3" name="UserWasAlreadyAdded" type="(3)">
-  Target user is already associated with the target record. You can't add the same user to the same record twice.
-</Attribute>
+| Code | Name | Returned by |
+| ---: | --- | --- |
+| 10 | `UserAlreadyHasRole` | [Grant a role to a user](/docs/api/endpoints/v0/reference/grant-user-role) |
+| 31 | `OAuthInvalidScope` | [Token requests](/docs/api/gettingstarted/oauth) and the authorization request |
+| 32 | `OAuthInvalidRedirectURI` | [Token requests](/docs/api/gettingstarted/oauth) and the authorization request |
+| 49 | `OrderNotPaid` | [Revoke an order item](/docs/api/endpoints/v0/reference/revoke-order-item) |
+| 79 | `OrderIsPaid` | [Remove an order item](/docs/api/endpoints/v0/reference/remove-order-item) |
+| 112 | `BadPaginationToken` | Every search and paginated list endpoint |
+| 114 | `CannotRemoveAddonFromCart` | [Remove an order item](/docs/api/endpoints/v0/reference/remove-order-item) |
+| 116 | `ApplicationNotGranted` | [Service token requests](/docs/api/gettingstarted/oauth#service-integration) |
+| 137 | `OrderGrantError` | [Revoke an order item](/docs/api/endpoints/v0/reference/revoke-order-item) |
+| 139 | `UserMissingPermissions` | The authorization request |
+| 174 | `OnlySearchOrFilter` | [Search users](/docs/api/endpoints/v0/reference/search-users) |
+| 220 | `LeadRoleRequiresDepartmentLead` | [Grant a role to a user](/docs/api/endpoints/v0/reference/grant-user-role), [Remove a role from a user](/docs/api/endpoints/v0/reference/remove-user-role) |
+| 221 | `DealerAssistantRequiresAssignment` | [Grant a role to a user](/docs/api/endpoints/v0/reference/grant-user-role), [Remove a role from a user](/docs/api/endpoints/v0/reference/remove-user-role) |
+| 222 | `RoleManagerRequiresAssignment` | [Grant a role to a user](/docs/api/endpoints/v0/reference/grant-user-role), [Remove a role from a user](/docs/api/endpoints/v0/reference/remove-user-role) |
 
-<Attribute id="le-code-4" name="CannotDeleteApplication" type="(4)">
-  The vendor has already paid, so cannot be deleted. Refund the vendor's payment before deleting the application.
-</Attribute>
+Code `7` (`CannotAddCompensationToOwn`) is no longer returned.
 
-<Attribute id="le-code-5" name="CardDeclined" type="(5)">
-  The payment was declined by the credit card processor.
-</Attribute>
+## All codes
 
-<Attribute id="le-code-6" name="EmailAlreadyInUse" type="(6)">
-  The email address is already in use.
-</Attribute>
-
-<Attribute id="le-code-7" name="CannotAddCompensationToOwn" type="(7)" deprecated>
-  You cannot add compensation to your own user.
-</Attribute>
+| Code | Name | Message (en-US) |
+| ---: | --- | --- |
+| 1 | `RecordIsReferenced` | Cannot delete this `{name}` as it's referenced by another record(`{tableName}`). |
+| 2 | `CannotChangeDealerStatus` | Dealer has already paid, and can not change their status. Refund or remove their grant first. |
+| 3 | `UserWasAlreadyAdded` | User was already added as assistant |
+| 4 | `CannotDeleteApplication` | Cannot delete application as it is marked as paid. |
+| 5 | `CardDeclined` | Your card was declined. |
+| 6 | `EmailAlreadyInUse` | Email already in use. |
+| 7 | `CannotAddCompensationToOwn` | Cannot add compensation to own user |
+| 8 | `FailedToPerformCashierPayment` | Failed to perform cashier payment |
+| 9 | `AttendeeHasErrors` | Attendee has the following errors on record that must be addressed |
+| 10 | `UserAlreadyHasRole` | User already has this role. |
+| 11 | `UserAlreadyAssignedToDepartment` | User was already assigned to this department. |
+| 12 | `AssistanceRequestAlreadySubmitted` | User was already added as assistant. |
+| 13 | `AssistanceRequestNotFound` | Assistance request not found. |
+| 14 | `UserHasNotRegistered` | User has not yet registered. |
+| 15 | `CannotTargetSelf` | Cannot run action on self. |
+| 16 | `IncorrectPassword` | Incorrect password. |
+| 17 | `PaymentFailed` | Payment could not be confirmed. |
+| 18 | `ChildLimitExceeded` | Cannot register more than 4 children. |
+| 19 | `InvalidAttendanceType` | Invalid attendance type. |
+| 20 | `RegistrationIsFull` | Registration is full. |
+| 21 | `ProductNotAvailable` | Product is not available. |
+| 22 | `BadgeArtLimitReached` | Badge is no longer available. |
+| 23 | `InvalidBadgeArt` | Invalid badge art. |
+| 24 | `InvalidConvention` | Invalid convention. |
+| 25 | `EmergencyContactRequired` | Emergency contact is required. |
+| 26 | `RegistrationClosed` | Registration is closed. |
+| 27 | `ChildrenNotAllowed` | Children cannot be registered for this event. |
+| 28 | `TooManyChildren` | Maximum number of child registrations reached. |
+| 29 | `ParentCannotVolunteer` | Parents cannot volunteer - Your kids come first. |
+| 30 | `OAuthMissingToken` | Missing OAuth token |
+| 31 | `OAuthInvalidScope` | Requested scope does not exist: `{scopes}`. |
+| 32 | `OAuthInvalidRedirectURI` | Provided redirect URI is not authorized |
+| 33 | `DealerAlreadyAdded` | Dealer has already been added |
+| 34 | `InvalidPaymentProcessor` | Payment processor cannot be used for this order |
+| 35 | `CannotUpdateDateOfBirth` | Date of birth cannot be changed. Please contact support. |
+| 36 | `NotDepartmentLead` | Not assigned as a department lead. |
+| 37 | `DuplicateOrderNumber` | Another entry already has that order entry. |
+| 38 | `GatewayOperationNotSupported` | This gateway is not supported. |
+| 39 | `CannotRedeemVoucherNegative` | Your balance is too low to redeem another voucher. |
+| 40 | `InvalidVoucher` | Invalid Voucher. |
+| 41 | `GrantWithRefIdAlreadyExists` | You already own this product and cannot purchase it again. |
+| 42 | `RegistrationCategoryAlreadyExists` | A registration level category already exists. |
+| 43 | `RefundQuantityExceedsRemaining` | You cannot request a refund for more than was purchased. |
+| 44 | `InvalidRefundRequestStatus` | Refund request has already been resolved. |
+| 45 | `DataOutOfSync` | Data required for this operation is out of sync, please refresh and retry. |
+| 46 | `RefundOperationFailed` | The refund operation failed as all gateways returned an error. |
+| 47 | `InvalidRefundAmount` | Invalid refund amount. |
+| 48 | `VoucherAlreadyRedeemed` | You already redeemed this voucher. |
+| 49 | `OrderNotPaid` | The order has an outstanding balance and cannot be marked as paid. |
+| 50 | `VoucherCodeExists` | The voucher code is already in use. |
+| 51 | `CannotDeletePaidFee` | This fee has already been paid and cannot be deleted. |
+| 52 | `NoRefundItemsProvided` | At least one item must be selected to request a refund. |
+| 53 | `OrderCannotBeCancelled` | Order cannot be canceled in the current state. |
+| 54 | `InsufficientStock` | There is insufficient stock to add this item to your cart. |
+| 55 | `SecondFactorPhoneInUse` | Phone number is already in use |
+| 56 | `InvalidFactorIdOrVerification` | Invalid second factor identifier or verification |
+| 57 | `MissingRequiredProductOption` | `{name}` is missing. |
+| 58 | `UnknownProductOption` | Invalid option `{optionId}` |
+| 59 | `MustProvideSelectOption` | At least one select option must be provided. |
+| 60 | `InternalOption` | This option is required and cannot be deleted. |
+| 61 | `AgeRestrictedProduct` | This product is age restricted and cannot be purchased. |
+| 62 | `RoleRestrictedProduct` | This product is restricted to specific roles. |
+| 63 | `ProductNoMultipleTax` | Products cannot have more than one tax rate assigned. |
+| 64 | `WrongPlatformFeeAssignment` | The selected Platform Fee surcharge cannot be used with this product. |
+| 65 | `RaffleAlreadyClosed` | Entries are closed. |
+| 66 | `ProductInAnotherRaffle` | Product is already part of another silo. |
+| 67 | `RaffleTicketRescinded` | Your silo entry has been rescinded. You cannot perform this action. |
+| 68 | `AlreadyRedeemedError` | User has already participated in the silo. |
+| 69 | `RegistrationNotDeletable` | This registration cannot be deleted. Please contact the registration team. |
+| 70 | `GeoCodingError` | Could not query geolocation service. |
+| 71 | `TooFrequentEmailChange` | You can only change your email once every 24 hours. |
+| 72 | `DealerAreaClosed` | Dealer area is closed |
+| 73 | `CannotUpdateVolunteerOption` | Cannot update option `{optionId}`, contact HR in order to change it. |
+| 74 | `NoRegistrationGrantTransfer` | No registration grant available to transfer. |
+| 75 | `TargetEmailNotFound` | Target user email not found. |
+| 76 | `TargetRegistrationHasGrant` | Target user registration already has a grant. |
+| 77 | `VolunteerAlreadyAssigned` | You are currently assigned to a department. |
+| 78 | `DigitalGrantNotOwnedError` | Product can not be refunded since the digital grant belongs to another user. |
+| 79 | `OrderIsPaid` | Order is already paid. |
+| 80 | `NotAVendor` | User is not a dealer. |
+| 81 | `VendorIsNotApproved` | Dealer is not approved. |
+| 82 | `SessionAlreadyVerified` | Session has already been verified. |
+| 83 | `DateOfBirthMissing` | The verification session did not provide a date of birth. |
+| 84 | `IdentityInputMissing` | Identity session id is missing. |
+| 85 | `RequiredIdentityMissing` | A required field was not provided. |
+| 86 | `AgeVerification` | User does not meet age requirements. |
+| 87 | `CanNotUpdateVerifiedInformation` | Can not update verified information. |
+| 88 | `IdentitySessionAlreadyClaimed` | Identity session has already been claimed by another user. |
+| 89 | `IdentitySessionNotVerified` | Identity session is not verified. |
+| 90 | `CannotOversellProduct` | Maximum stock of a product cannot be decreased below the remaining stock value. |
+| 91 | `OrderAlreadyPaid` | Order has already been paid. |
+| 92 | `TicketAlreadyBought` | You already have a ticket for this event. |
+| 93 | `NoTicketGroupsAvailable` | No ticket groups available to purchase. |
+| 94 | `ProductStockTooSmall` | There is not enough product stock to distribute over the groups. |
+| 95 | `TooManyTickets` | There are too many tickets on this group to change the group size. |
+| 96 | `ProductRequiresGrant` | There is a prerequisite product that must be purchased before this product can be added to your cart. |
+| 97 | `ProductExcludedByGrant` | This product cannot be added to your cart because you already have a conflicting product. |
+| 98 | `VolunteerClosed` | Volunteer applications is closed. |
+| 99 | `DealersClosed` | Dealer applications is closed. |
+| 100 | `ProductVolumeError` | Product quantity set above the allowed volume |
+| 101 | `AddonsCanNotHaveAddonsError` | Addon products can not have additional addons |
+| 102 | `AddonItselfError` | A product can not be its own addon |
+| 103 | `AddonRegistrationError` | Registration products can not be addons |
+| 104 | `UserDoesNotHaveRole` | User does not have this role. |
+| 105 | `ExportRequestAlreadyCreated` | An export request already exists for this user |
+| 106 | `ExportIsExpired` | Export request is expired |
+| 107 | `ExportRequestAlreadyApproved` | The export request already went into the approval stage |
+| 108 | `ExportRequestIsRejected` | The export request has already been rejected |
+| 109 | `ExportRequestNotApproved` | The export request is not yet approved |
+| 110 | `DirectApprovalNotAllowed` | Direct approval of export requests by another admin is not enabled |
+| 111 | `ProductAlreadyInOrder` | This product is already in the order |
+| 112 | `BadPaginationToken` | Pagination token could not be parsed |
+| 113 | `AddonAlreadyExistsError` | Addon already exists |
+| 114 | `CannotRemoveAddonFromCart` | Can not remove addon from cart. |
+| 115 | `ExportUserApprovedSelf` | User cannot approve their own request |
+| 116 | `ApplicationNotGranted` | Requested scope has not been authorized for this application: `{scopes}`. |
+| 117 | `InvalidOptionValue` | `{name}` has invalid value: `{value}` |
+| 118 | `InternalRegistrationFlag` | Internal registration flag can not be deleted |
+| 119 | `VoucherProductRestricted` | Voucher is restricted to only specific products |
+| 120 | `EmptyCart` | The cart is empty. Order#`{orderId}` can not completed |
+| 121 | `OutstandingBalance` | Order#`{orderId}` is not fully paid |
+| 122 | `CategoryAssignedToDealerArea` | Category is being used by the dealer area "`{name}`" |
+| 123 | `DiscourseSignatureError` | Invalid Discourse SSO signature |
+| 124 | `DiscourseMissingNonce` | Nonce not present in the query |
+| 125 | `OptionIncorrectSource` | Option endpoint does not match the provided option |
+| 126 | `RequestEntityTooLarge` | Request is too large. Max size: `{bytes}` bytes. |
+| 127 | `CantTransferBadgePrinted` | Registration cannot be transferred as this badge has already been printed. |
+| 128 | `ProductNotFound` | Product #`{productId}` not found |
+| 129 | `InvalidImage` | File could not be decoded as an image |
+| 130 | `ImageFormatNotSupported` | Image format is not supported |
+| 131 | `ProductGrantQuantityLimit` | Product has a purchase quantity limit |
+| 132 | `NoDeleteRegistrationCategory` | Registration category can not be deleted |
+| 133 | `TransferDisabled` | Registration transfer is disabled |
+| 134 | `VoucherCannotBeUsedWithOtherVouchers` | This voucher cannot be used with other vouchers. |
+| 135 | `InvalidEmailDomain` | Emails can only be sent from @`{domain}`. |
+| 136 | `InvalidEmailSender` | Sending emails from "`{email}`" is not allowed. |
+| 137 | `OrderGrantError` | A server-side error occurred while processing your order. Please contact support. |
+| 138 | `InternalRole` | Attempted to add/remove an internal role. |
+| 139 | `UserMissingPermissions` | User does not have permission(s): `{scopes}` |
+| 140 | `RefundsDisabled` | Refunds are disabled. |
+| 141 | `VoucherExpired` | Voucher is expired. |
+| 142 | `TooManyAssistants` | Too many assistants. |
+| 143 | `IncorrectUser` | The request is coming from the incorrect user. |
+| 144 | `OptionTypeChange` | Option type cannot be changed. |
+| 145 | `ApplicationAlreadyApproved` | The application has already been approved and it can not be changed. |
+| 146 | `DealerNotAdmin` | Only admins can change the application status. |
+| 147 | `InvalidAddonDealerRequest` | Invalid dealer addon request. |
+| 148 | `TemplateCannotBeParsed` | Template failed to parse. |
+| 149 | `TemplateRequired` | Template cannot be disabled as it is required. |
+| 150 | `TemplateVariablesMissing` | Template is missing these variables: `{missing}` |
+| 151 | `NotAllowedToEditRegisterEmailTemplate` | The "register" template is not allowed to be overridden by default. Contact support. |
+| 152 | `ModelOverLimit` | `{model}` is at or over capacity and cannot create more resources. Contact support to change this limit. |
+| 153 | `OverSublimit` | There are too many `{sub}` on this `{main}`. |
+| 154 | `InvalidExpiration` | The provided expiration date is invalid. It must be set to a date at or later than when the product goes off sale. |
+| 155 | `InvalidDeviceType` | Invalid device type |
+| 156 | `DeviceAlreadyRegistered` | Device `{deviceIdentifier}` is already registered with ID `{id}` |
+| 157 | `QuikTicketDisabled` | QuikTicket is disabled |
+| 158 | `PaymentGatewayNotSetUp` | This Payment Gateway is not yet configured for use by the event. Please contact customer support. |
+| 159 | `PaymentGatewayValidationWouldViolate` | The Payment Gateway would not handle your request. Please contact customer support. |
+| 160 | `PaymentGatewayApiCallFailed` | The Payment Gateway could not handle your request. Please contact customer support. |
+| 161 | `PaymentGatewayResponseIncomplete` | The Payment Gateway replied something our servers could not understand. Please contact customer support. |
+| 162 | `UsernameTaken` | That username is already taken, please choose another one. |
+| 163 | `TaxMustBePercent` | Tax surcharge must be a percentage. |
+| 164 | `HotelReleaseGroupEntriesClosed` | Entries for this block are closed. |
+| 165 | `HotelReleaseEntryNotEligible` | You are not eligible to enter this block. |
+| 166 | `HotelIntegrationManualSyncNotAllowedError` | Integrations may only be manually synchronized once every 24 hours. Last manual sync was `{lastManualSyncAt}`. Please try again later. |
+| 167 | `HotelReservationTransferNotAllowedError` | Booking transfers are not allowed. |
+| 168 | `HotelReservationNotCancelled` | The reservation must be cancelled before a new link can be issued. |
+| 169 | `CannotUpdateProductOption` | Cannot update option `{optionId}`, contact the event in order to change it. |
+| 170 | `DealerOptionLockedError` | Option cannot be changed. Contact support. |
+| 171 | `RoleInviteExpired` | Role invite has expired. |
+| 172 | `RoleInviteMaxUses` | Role invite reached max uses. |
+| 173 | `ProductWithAddonsQuantityError` | Product with addons cannot have a quantity greater than 1. |
+| 174 | `OnlySearchOrFilter` | Only search or filter can be used. |
+| 175 | `OwningAccountNoRegistration` | The owning account does not have a registration. |
+| 176 | `CannotRequestDeleteSelf` | You cannot delete your account this way. |
+| 177 | `CannotDeleteAdmin` | You cannot delete other administrators. |
+| 178 | `DeletionRequestExists` | A pending deletion request already exists. |
+| 179 | `UserDoesNotExist` | This user does not exist. |
+| 180 | `NoPendingDeletionRequest` | There is no pending deletion task. |
+| 181 | `BadTaskState` | The deletion task is not pending, and may have already run. |
+| 182 | `NoUsernameError` | User does not have an username. |
+| 183 | `NoEmailError` | User does not have an email. |
+| 184 | `BadgeNameIsRequired` | Badge name is required. |
+| 185 | `SubAccountRestricted` | Sub accounts are not allowed this action. |
+| 186 | `UnderageProfile` | User is underage. The minimum age is `{childAgeThreshold}` years old. |
+| 187 | `ExportRequestAlreadyExists` | An export request already exists for this user |
+| 188 | `NoDataToExportError` | There is no data to export |
+| 189 | `VendorAddonMustBeInSameCategory` | Dealer addon must be in the same category as the product |
+| 190 | `CannotClearBeforeConEnd` | You cannot clear all PII before the convention has ended. |
+| 191 | `MalformedRequest` | The request is malformed and could not be processed. |
+| 192 | `NoUpgradePath` | There is no product upgrade path |
+| 193 | `AttendeesCannotEditOIO` | This event has disabled editing option values. Please contact the event for assistance. |
+| 194 | `CannotDirectEditRegOIO` | You cannot edit registration orders this way. Please use the normal method of modifying a registration. |
+| 195 | `RoleManagerRoleNotFound` | The roleManager role could not be found. |
+| 196 | `DomainTaken` | That domain is already in use. |
+| 197 | `WaitingRoomWaiting` | You are currently in the waiting room. Please wait to be admitted. |
+| 198 | `ConventionSequenceExists` | A convention was already created as a sequence of the previous convention. |
+| 199 | `CannotOverwriteDomain` | A domain is already set and cannot be overwritten. Clear the domain first. |
+| 200 | `NoAWSTokens` | No tokens were provided by AWS. Please contact support or try again. |
+| 201 | `UnknownAWSError` | An unknown AWS error occurred. Please contact support. |
+| 202 | `DomainNotFound` | The domain provided could not be found. |
+| 203 | `InternalCategoryName` | That category name is reserved for internal use. |
+| 204 | `FeatureDeprecated` | The feature "`{feature}`" is deprecated and soon to be removed. Contact support for more information. |
+| 205 | `RegistrationIsLocked` | This registration is locked and cannot be transferred. |
+| 206 | `NoteMustBeOrgWide` | This note category cannot be applied for just one convention. |
+| 207 | `BanNoteMustHavePayload` | No details for the ban were provided. |
+| 208 | `InternalCategoryCannotBeDeleted` | That category cannot be deleted. |
+| 209 | `NoPermissionOrNotFound` | Either you do not have permission to view that category, or it does not exist. |
+| 210 | `AlreadyFullAccount` | This account is already a full account! |
+| 211 | `UserUnderageForCon` | This user is not old enough to have an individual account for the convention. |
+| 212 | `UserUnderageForCOPPA` | This user is under the age of 13 and therefore is unable to be migrated. Please wait until the user is 13 years of age. |
+| 213 | `BadCode` | The code provided was invalid. |
+| 214 | `WebhookWrongConvention` | That WebHook is not configured to fire for this convention. |
+| 215 | `OrderIncomplete` | Order is incomplete. `{productName}` is missing data. |
+| 216 | `ItemNoGrant` | The item cannot be refunded because the user does not possess a grant for this item. |
+| 217 | `DisputeRefundNotEditable` | Dispute refunds are managed by Stripe and cannot be manually approved or denied. |
+| 218 | `DisputeActive` | A payment dispute is active on this order. Refund requests cannot be submitted while a dispute is pending. |
+| 219 | `NoRecursiveOwnership` | The targetted user is a sub-account, and therefore cannot own another sub-account. Migrate that user first, or use another account. |
+| 220 | `LeadRoleRequiresDepartmentLead` | This user must be assigned as a department lead under Volunteer Settings. |
+| 221 | `DealerAssistantRequiresAssignment` | This user must be assigned as a dealer assistant under a dealer's assistants. |
+| 222 | `RoleManagerRequiresAssignment` | This user must be assigned as a role manager under the role settings. |
+| 223 | `ShippingNameMissing` | A first and last name are required to pay for this order. Please update your profile. |
+| 224 | `TaskNotRunnable` | The task is not in a state that allows this action. |
+| 225 | `OrganizationNameTaken` | An organization with this name already exists. |
+| 226 | `ConventionNotFound` | No convention with this id exists in this organization. |
+| 227 | `AfterPayCurrencyUnsupported` | Afterpay cannot be enabled for this currency. Stripe only settles Afterpay in USD, CAD, AUD and GBP. |
+| 228 | `UpgradeMustBeRegistrationProduct` | Upgrade paths can only be set between registration products |
+| 229 | `HotelReleaseGroupTypeImmutable` | A block's selection type cannot be changed after it is created. |
+| 230 | `NotASubAccount` | This user is not one of your sub-accounts. |
+| 231 | `RegistrationUnderage` | Must be born on or before `{minBirthDate}` to register for this convention. |
+| 232 | `HotelIntegrationAlreadyExists` | This convention already has a hotel integration configured. |
+| 233 | `HotelIntegrationHasAssociatedData` | This integration has synced hotels or other data and cannot be deleted. Disable it instead. |
+| 234 | `HotelIntegrationTestFailed` | Could not connect using the provided credentials. Please check them and try again. |
+| 235 | `MissingDealerAssistantLimit` | Dealer products require a dealer assistant limit. Use 0 to disable assistants. |
+| 236 | `SubAccountModeNotAllowed` | This event does not allow that kind of sub-account. |
+| 237 | `SignupLinkInvalid` | This link is no longer valid. |
+| 238 | `SignupCapacityReached` | We've reached today's limit for new trial instances. Please try again tomorrow. |

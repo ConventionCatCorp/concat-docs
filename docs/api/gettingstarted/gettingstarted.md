@@ -11,7 +11,7 @@ The ConCat APIs are in **early access**, are subject to change, and are availabl
 If you're interested in integrating with ConCat, please reach out to **developers@concat.systems** with your use-case.
 :::
 
-There are two ways to integrate with the ConCat APIs: On Behalf Of (OBO) a user, or as a service. Service-level integration is the preferred method and will allow modification of data in the future, whereas OBO integration will remain read-only and intended for primarily authentication purposes.
+There are two ways to integrate with the ConCat APIs: On Behalf Of (OBO) a user, or as a service. A service integration can read data and change it: depending on its scopes, it can create user accounts, grant and remove roles, and remove or revoke order items. An OBO integration is intended primarily for signing a user in and reading information about them.
 
 ## Which method should I use?
 
@@ -23,19 +23,15 @@ OBO requires the service to redirect the user to an authentication page displayi
 #### As a service
 The as a service method is intended for allowing a third-party service to retrieve and modify data within the ConCat platform. This is useful for micro-services that need to perform automated actions based on webhooks, or that need to perform actions that require elevated permissions.
 
-Permissions for a service integration are granted by an event customer at the time the integration is created. There is no additional approval or authentication step. If your service requires additional permissions, you will need to contact the event customer to request them.
+Permissions for a service integration are granted by the event customer as **Application Permissions** on the OAuth application, and they can change them later. There is no additional approval or authentication step. If your service requires additional permissions, you will need to contact the event customer to request them. See [Scopes](/docs/api/gettingstarted/scopes) for what each one allows.
 
-## Registering as a developer
+## Getting an application ID and secret
 
-Developer registration is by invitation only. To register as a developer, please reach out to **developers@concat.systems** with the following:
+Every integration is an **OAuth application** that belongs to one event customer's organization. The event customer creates it themselves in **Housekeeping › System › Developers**, on the **OAuth Applications** tab, which needs the `oauth:manage` permission. There they set its name, description, callback URIs and Application Permissions. See [OAuth applications and webhooks](/docs/guides/technical/developers) for the steps.
 
-* Your name
-* Your company name, website, and contact information
-* A display name for your application
-* A short description of your use-case
-* A list of our event customers you are interested in, or are already working with *(optional)*
+When the application is created, ConCat shows its **ID** and **Secret** once. ConCat stores only a hash of the secret, so it can't be shown again: if it's lost, the event customer deletes the application and creates a new one. You use the ID and secret to authenticate your requests in both the OBO and service methods.
 
-Upon approval, you will be given a unique API ID and secret key. You can use these to authenticate your requests to the ConCat APIs in both OBO and as a service methods.
+If you're a developer working with an event customer, ask them to create the application and send you its ID and secret. If you have questions about building an integration, reach out to **developers@concat.systems**.
 
 ## Authenticating requests
 

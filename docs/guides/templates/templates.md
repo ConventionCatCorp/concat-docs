@@ -1,151 +1,170 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+textbook: true
 ---
 
 # Email Template Overrides
 
-ConCat sends attendees emails for various actions taken in the application, for example when they successfully pay for an order, or when they change their email address. These templates can be overriden for a better level of customization, and some can be disabled outright.
+Reword ConCat's emails for one convention or your whole organization, and turn off the ones you don't want.
 
-### List templates
+:::info[In this guide]
+How overrides work, finding a template, writing an override, disabling and reactivating an email, variables, and template errors.
+:::
 
-These templates can be overridden at the organization or convention level, depending on how you want to customize these messages. First, view the templates you can modify:
+## How templates work
 
-<ol className="numbered-list">
-  <li>
-    <span>
-      Navigate to your event website, then click "<strong>Housekeeping</strong>" from the left-hand sidebar.
-    </span>
-  </li>
-  <li>
-    <span>
-      Click "<strong>Settings</strong>" from the left-hand sidebar, then click the "<strong>Email Templates</strong>" tab.
-    </span>
-  </li>
-</ol>
+<Sidenote title="Who can do this">
+Email templates need `email:templates`, which the default *admin* role has, and access to **System › Settings**.
+</Sidenote>
 
-You can now view all available templates, a brief description of what they are used for, and some information about their states as badges:
+Every email comes from one of 33 templates, listed in [Emails ConCat sends](./system-emails.md). Each has ConCat's **Default Template** and up to two overrides:
 
-<ul>
-  <li>
-    <span>
-      <strong>Default</strong> - The email template is not being overridden, and is using the default ConCat provided template.
-    </span>
-  </li>
-  <li>
-    <span>
-      <strong>Overridden</strong> - The email template is being overridden by a custom template.
-    </span>
-  </li>
-  <li>
-    <span>
-      <strong>Disabled</strong> - The email template is disabled and will not be sent.
-    </span>
-  </li>
-</ul>
+- A **convention** override applies to this convention only, and isn't copied to next year's.
+- An **organization** override applies to every convention in your organization.
 
-#### Regarding `register`
+ConCat sends the first that exists: **convention override, then organization override, then the default.** The version in use has a green **Current** badge. Table 1.1 includes disabled overrides (section 4).
 
-You may notice that `register` (sent out to confirm someones email address when they first sign up for an account) is unable to be modified by default. We consider this template critical and do not allow it to be overridden without contacting support first. Reach out to support if you would like to modify this template.
+<TableFigure title="Which version is sent">
 
-### Configuring overrides
+| Convention override | Organization override | What is sent |
+| --- | --- | --- |
+| None | None | The default template |
+| None | Exists, not disabled | The organization override |
+| Exists, not disabled | Either | The convention override |
+| Disabled | Either | Nothing |
+| None | Disabled | Nothing |
 
-Upon selecting "Modify" on the template you wish to inspect, you can view a rendered example email of the template, alongside a "Current" badge next to whichever configuration is active.
+</TableFigure>
 
-Templates can only have two potential overrides, this being an organization level or a convention level override. The default template cannot be deleted.
+:::note[Templates you can't turn off or change]
+- Required templates, such as password resets and payment receipts, can't be disabled. [Emails ConCat sends](./system-emails.md) marks them.
+- The `register` template (new account confirmation) is locked: its card says *To modify this template, contact support.* ConCat can enable editing it for your organization.
+:::
 
-<ul>
-  <li>
-    <span>
-      <strong>Convention</strong> overrides are applied solely to this current convention. This will not persist to the next year or any other conventions within your organization.
-    </span>
-  </li>
-  <li>
-    <span>
-      <strong>Organization</strong> overrides are applied to the entire organization, and will persist throughout all conventions.
-    </span>
-  </li>
-</ul>
+## Find a template
 
-Existing overrides have two buttons: Edit and Delete.
+1. Go to **Housekeeping › System › Settings** and click the **Email Settings** tab.
 
-### Creating and modifying overrides
+   <Result>Under **Email Templates**, each template has a card with a **Default**, **Overridden** or **Disabled** badge and a **Modify** button. Overridden templates come first.</Result>
 
-Writing template overrides is done in a templating language called [Handlebars](https://handlebarsjs.com/). If you're familiar with it, editting templates will be a cinch.
+2. Click **Modify** on the `volunteerConfirm` template.
 
-If not, in short, Handlebars combines HTML with a bracket notation used to access certain variables, ``{{likeThis}}``.
+   <Result>The `volunteerConfirm` page opens with three cards: **Default Template** (marked **Current**), **Level Convention Override** and **Level Organization Override**. Each override card has **Create Override**.</Result>
 
-<splitColumn>
-  <div>
-    <p>Let's take a look at an example. At my convention, I want volunteers to join a Telegram group. I created a redirect on my marketing domain for `/volunteertg` to the group, and now I want to make sure that everyone that applied to volunteer gets the link.</p>
-    <p>When I navigate to my list of templates, I find the one I want to modify. <code>volunteerConfirm</code> seems good to me.</p>
-  </div>
-  <img src="/img/tutorial/emailTemplates/volunteerConfirmListEntry.png" />
-</splitColumn>
+## Write an override
 
-<splitColumn>
-  Selecting modify, I'm presented with an overview of current overrides for the template.
-  <img src="/img/tutorial/emailTemplates/volunteerConfirmOverview.png" />
-</splitColumn>
+Templates are HTML with [Handlebars](https://handlebarsjs.com/) expressions in double braces, such as `{{convention.name.long}}` (section 5).
 
-<splitColumn>
-  <div>
-    In the overview you're able to view the default template and any overrides. The green "Active" tag will be shown next to whichever will be sent out to users. Right now, that's the default template. I only want this template to apply for this convention, so I'm going to select "Create Override" next to Convention Level Override.
-    I start with the default template and can modify it as I please. A preview is automatically generated below, and the variables available for you to use are provided on the right.
-  </div>
-  <img src="/img/tutorial/emailTemplates/volunteerConfirmEditor.png" />
-</splitColumn>
+1. On the **Level Convention Override** card, click **Create Override**. (Use **Level Organization Override** for every convention.)
 
-### Disabling Templates
+   <Result>The **New Convention Level Override** editor opens with the default template in a large box, a **Preview** and **Available Variables**.</Result>
 
-<splitColumn>
-Some templates will show an option to be disabled. This will prevent an email from being sent at all when this template would normally be triggered. Templates will have a red "Disable Template", shown on the right.
-<img src="/img/tutorial/emailTemplates/disableExampleEditor.png" />
-</splitColumn>
-Once disabled, you'll see this message in place of the rendered example.
-<br />
-<img src="/img/tutorial/emailTemplates/disableExampleOverview.png" />
+2. Change the text in the large box, for example by adding a paragraph.
 
-### Variables
+   <Result>About a second after you stop typing, the **Preview** shows your change. **Submit** can't be clicked until the preview has updated.</Result>
 
-<div style={{display: 'grid', gridGap: '1rem', gridTemplateColumns: 'auto auto'}}>
-  <div>
-    The power of Handlebars comes from the variables. We provide a list of the available variables for that particular template and their type.
-    You access these via bracket statements, with dots to access inner variables. For example, to access the convention's long name from above, I would write <code>&#123;&#123;convention.name.long&#125;&#125;</code>. Convention and User information is available for all templates, and additional variables are available as necessary.
-  </div>
-  <div>
-    <img src="/img/tutorial/emailTemplates/volunteerConfirmVariables.png" style={{height: '100%', maxHeight:'600px'}} />
-  </div>
-</div>
+3. *(Optional)* Enter a **Subject Override (optional)**, then click **Submit**.
 
-### Errors
+   <Result>*New override has been created.* appears. The **Level Convention Override** card shows your version, marked **Current**, with a pencil button (**Edit**) and a trash button (**Delete**). On **Email Settings**, the badge reads **Overridden**.</Result>
 
-While editing, you may see errors come up. These are to ensure you're not including variables that don't exist, and that your template isn't broken. You cannot submit templates that contain errors.
+4. To change the override, click its pencil button (**Edit**).
 
-#### Missing Variables
-<splitColumn>
-  This means you used a variable that does not exist within the context of the template. Check your spelling or remove it.
-  <img src="/img/tutorial/emailTemplates/variableMissingEditor.png" />
-</splitColumn>
+   <Result>The **Modifying Convention Level Override** editor opens with your text.</Result>
 
-#### Parse Error
-<splitColumn>
-  <div>
-    Something went wrong when the server tried to parse your template. Please read the error message and check the offending element. It's likely you left an open bracket (<code>&#123;&#123;</code>) or something of the sort.
-  </div>
-  <img src="/img/tutorial/emailTemplates/parseErrorPreview.png" />
-</splitColumn>
+5. Change the text, then click **Submit**.
 
-### Priority Order
+   <Result>*Override has been modified.* appears, and the card's preview shows the change.</Result>
 
-Template overrides are respected in the following order:
+6. To go back to the default, click the override's trash button (**Delete**).
 
-**Convention > Organization > Default**
+   <Result>A **Delete override?** dialog asks *Are you sure you want to delete this template override?*</Result>
 
-<splitColumn>
-  <div>
-    <p>Convention overrides always take priority, then any set at the organization level, and finally if there are none present the default is chosen.</p>
-    <p>For clarity, the active configuration is always highlighted as "Current" in the template's overview screen.</p>
-  </div>
-  <img src="/img/tutorial/emailTemplates/waterfallExample.png" />
-</splitColumn>
+7. Click **Delete**.
+
+   <Result>*Override has been deleted.* appears. The card says *No convention level override exists for this template.* again, and **Default Template** is **Current**.</Result>
+
+:::note[Subjects and testing]
+- Every subject starts with your **Notification Prefix** and a dash (**System › Settings › Convention**). Leave the subject override empty to keep the default.
+- There's no test send. The preview uses your convention's details, your account as the recipient, and sample values for the rest.
+- Emails aren't translated: each level holds one version, in the language you write it.
+:::
+
+## Disable or reactivate an email
+
+<Sidenote title="Only when creating">
+**Disable Template** is only offered in a new override. To disable an email that already has an override at that level, delete the override first (section 3, step 6).
+</Sidenote>
+
+An email that isn't required can be turned off for one convention or the organization. These steps use `registrationQR`.
+
+1. Click **Modify** on the `registrationQR` template, then **Create Override** on the **Level Convention Override** card.
+
+   <Result>The editor opens with a red **Disable Template** button beside its title.</Result>
+
+2. Click **Disable Template**.
+
+   <Result>A **Disable email template?** dialog says *This action will prevent the email template registrationQR from being sent at all.*</Result>
+
+3. Click **Disable**.
+
+   <Result>*New override has been created.* appears. The card says *This email will not be sent for this convention.* and has a **Reactivate Template** button. On **Email Settings**, the badge reads **Disabled**.</Result>
+
+4. Click **Reactivate Template**.
+
+   <Result>A **Reactivate email template?** dialog opens.</Result>
+
+5. Click **Reactivate Template**.
+
+   <Result>*Reactivation complete.* appears, and the card says *No convention level override exists for this template.* again.</Result>
+
+:::caution[Watch out]
+A convention override wins over an organization override. If you disable an email for the organization, a convention with its own override still sends it.
+:::
+
+## Variables
+
+Variables are values ConCat fills in for each email, such as the recipient's name. Write them in double braces, with dots to reach values inside: `{{convention.name.long}}` is your convention's full name.
+
+The editor's **Available Variables** card lists the template's variables with example values. An arrow means the variable holds other values; *list, ex:* marks a list of values; **Complex List** marks a list of items with values of their own.
+
+Every template can use `user` (the recipient) and `convention` (Table 5.1). Each template adds its own, such as `orderId` for refund emails or `department` for volunteer assignments.
+
+<TableFigure title="Variables in every template">
+
+| Variable | Holds |
+| --- | --- |
+| `user.name` | The name ConCat uses to address the person. |
+| `user.firstName`, `user.lastName`, `user.preferredName`, `user.username`, `user.email`, `user.id` | The person's account details. |
+| `user.address.line1`, `.line2`, `.city`, `.state`, `.zipcode`, `.country` | The person's address. |
+| `convention.name.long`, `convention.name.short` | Your convention's full and short names. |
+| `convention.notificationPrefix` | The text that starts every subject. |
+| `convention.publicUrl` | Your instance's web address. |
+| `convention.marketingUrl` | Your **Marketing URL**. |
+| `convention.emailDomain` | The domain your email is sent from. |
+| `convention.start.year` | The year your convention starts. |
+
+</TableFigure>
+
+:::tip
+- Keep the building blocks starting with `{{>`, such as `{{>greeting user}}` and `{{>footer department="Human Resources"}}`: they write the greeting and signature.
+- Keep the triple braces around web addresses, such as `{{{convention.publicUrl}}}`, so HTML escaping doesn't change them.
+:::
+
+## Errors
+
+The editor checks your template as you type. **Submit** can't be clicked while there's an error.
+
+1. In the editor, type `{{notAVariable}}` in the large box.
+
+   <Result>About a second later, a red badge beside the editor's title says *'notAVariable' is Invalid*.</Result>
+
+2. Delete `{{notAVariable}}`, then type `{{` with no closing braces.
+
+   <Result>A red **Parse Error** badge appears. The **Preview** shows *Template was unable to be parsed.* and *A parsing error occurred. View the error below and remove or fix the offending expression.*, then the error, such as *Parse error on line 14:* with a pointer to the problem.</Result>
+
+3. Delete the `{{`.
+
+   <Result>The badge disappears, the preview shows the email, and **Submit** can be clicked again.</Result>
+
+*Invalid* means the variable doesn't exist for this template: check its spelling against **Available Variables**. A **Parse Error** usually means unmatched braces.

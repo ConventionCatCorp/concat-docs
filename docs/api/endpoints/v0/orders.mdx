@@ -1,0 +1,69 @@
+---
+sidebar_position: 2
+displayed_sidebar: apiSidebar
+hide_table_of_contents: true
+---
+
+# Orders
+
+<SplitColumn>
+  <div>
+    <p>
+      An order is a user's purchase at the current convention: the items in it, the payments made, the vouchers applied, and a price breakdown. The order endpoints can also take items out of an unpaid order, or revoke what an item in a paid order granted.
+    </p>
+    <p>
+      <strong>Scopes:</strong> <code>order:view</code> to search orders; <code>order:manage</code> to remove and revoke order items. Both are <Link to="/docs/api/gettingstarted/scopes#service-integration-scopes">service integration scopes</Link>.
+    </p>
+  </div>
+  <RestList>
+    <RestElement method="POST" path="/api/v0/orders/search" anchor="search-orders" />
+    <RestElement method="DELETE" path="/api/v0/orders/items/{orderItemId}" anchor="remove-an-order-item" />
+    <RestElement method="POST" path="/api/v0/orders/items/{orderItemId}/revoke" anchor="revoke-an-order-item" />
+  </RestList>
+</SplitColumn>
+
+## The order object
+
+- `status` is `paid`, `unpaid` or `cancelled`. `paidAt` is the time the order was completed, or `null`.
+- `breakdown` sums up the order: `subtotal` (the order items), `fees`, `taxAndSurcharges`, `voucherTotal`, `total`, `paid` (the payments) and `refunds`.
+- `orderItems` lists the items. Each has a `quantity`, a `price` (the product's original price) and a `totalPrice` (after discounts and fees), the `product` with its `id`, `name` and `displayName`, its `options`, and a `discount` or `null`. `parentOrderItemId` is set when the item is an addon of another item. `cancelledOn` and `dispatchedOn` are timestamps or `null`.
+- `payments` lists the payments. Each has an `amount` in cents, a `gateway`, a `reference` that can be `null`, and a `status`: `failed`, `pending`, `refunded` or `success`.
+- `vouchers` lists the vouchers applied, each with an `amount` and a `displayName`. A voucher's `id` can be `null`, because some vouchers are only created when the order is paid. `upgradeOrderItem` is set for upgrade vouchers, to the original order item.
+- IDs are strings.
+
+## Paging
+
+[Search orders](#search-orders) returns `{ "hasMore": …, "nextPage": …, "data": [ … ] }`. Leave `nextPage` out of the first request. While `hasMore` is `true`, send the `nextPage` value from the previous response to get the next page. On the last page, `nextPage` is left out of the response rather than set to `null`. An invalid `nextPage` returns logic error `112` (`BadPaginationToken`).
+
+## Endpoints
+
+### Search orders
+
+Returns the current convention's orders, ordered by ID. `limit` is 1 to 100, and defaults to 100.
+
+- `filter.userId` only includes that user's orders.
+- `filter.status` is `paid` or `unpaid`.
+- `filter.productId` only includes orders that contain that product.
+
+Canceled orders are included, with the status `cancelled`. The `status` filter matches the status the order had when it was canceled, so a canceled order can appear when you filter by `paid` or `unpaid`.
+
+Scope: `order:view`. [Full reference](/docs/api/endpoints/v0/reference/search-orders).
+
+### Remove an order item
+
+Removes an item from an unpaid order and returns an empty response.
+
+- An item in a paid order can't be removed: logic error `79` (`OrderIsPaid`).
+- An addon can't be removed on its own: logic error `114` (`CannotRemoveAddonFromCart`).
+- An item that doesn't exist returns a `404` resource error.
+
+Scope: `order:manage`. [Full reference](/docs/api/endpoints/v0/reference/remove-order-item).
+
+### Revoke an order item
+
+Revokes what an item in a paid order granted, such as a registration, along with any free addons of it that haven't been handed out yet. `stockReturn` is required: set it to `true` to put the stock back. The response is empty.
+
+- An item in an unpaid order returns logic error `49` (`OrderNotPaid`).
+- If the grant can't be revoked, you get logic error `137` (`OrderGrantError`).
+
+Scope: `order:manage`. [Full reference](/docs/api/endpoints/v0/reference/revoke-order-item).

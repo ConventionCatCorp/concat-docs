@@ -1,0 +1,18 @@
+.result {
+  display: flex;
+  gap: var(--cc-space-2);
+  align-items: baseline;
+  margin: var(--cc-space-1) 0 var(--cc-space-2);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--cc-color-text-muted);
+}
+
+.label {
+  flex: none;
+  font-family: var(--cc-font-display);
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cc-color-result);
+}

@@ -1,0 +1,74 @@
+---
+id: get-user-registration
+title: "Get a user's registration"
+description: "Returns the user's registration for this convention, or a 404 if they haven't registered. Users can read their own registration without the scope."
+sidebar_label: "Get a user's registration"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVktvGzcQ/ivE+JAHFpIa5LQ5GY4RGAha14+TIsA0OdKy3iXXnKEcQdB/L4a7siR75QbtsSet+H2cF+e1htBi1OyCv7BQwgL5ljBe4cIRd+dQgEUy0bX5XwlXyCl6UlyhSoTxHam4x1fzEBVXjpQJfolezgoVotLq8+SzcnO5uFKVXqJ/x/1VjGhHSlSTMtqriNoKz0UVnvyh/CfHVUic9ZMJLY5++B/+5OREnSauRKHJRDm9ETvQ2zY4L7oek4vYmX63L7QUhXe9OCig1VE3yBgJyukavG4QSnAWCnASg1ZzBQX0Ai2UHBMWQKbCRkO5Bl61+YZnXGCEAhrnXZMaKCebzawA1gsRDftGwEwkUhs8IYmQT5OJ/ByG/zoZg0TzVEMBJnhGz8L6OP4oP69MCPd/oWHxKcpbs+tkp+TsHos4Or+ATQEmoma0pzyIpta+hRLGf1Z9RPHcReLfc6QH0Fq/AYpefwxsI84xRrRHr7dV8MMINtrVR6SGuavx0hlOEW+vvg+wNvsZMu3SZ+flnk97Hmx1DmmYbQq413aBF3Ygx7bgUTczehmFP/wCbQw2Gb54Ez0exQ7/6qit9eoojVhzotdQAeilPqbQ6hyp5POHOB2i/ZXEyrQj1ncYYzOIv3ipraDDa2LJvM6F+yxAx6hXXXkLi6CcFOC6r39ZB1SFeCzKQxm1488ED7lRDNn438w6Wl/dwQCw1HX6VSf63M/M2eYlJTer/da034h2NbFfAPvZfJi7g5n6nJeiXNQ3yFXoR2IeCFxBCWPduvFyMpZypfHa2c04Hs5KQpOi41WeG3/IRIJyOpOWv0WupUN3oe7x3YvoxNUn6RJ1eMoMUzv0fBbRymDTdfd+4QH9bay3BuVr43wqFsgQ63o8YcyTLU9tbfO4VlazVtpbdXlx0XeesosslHCWPzqiNiYkz7Ql+cD4WlzfppSgz9QYaqSyeyMo4TZ/dPwM5dn5YvxupR4MezEWCliit+HQF4u67r0RQqiTZ3zh7/PplpbLuVw6fNpS8skh3GivF5gJTVhijlXEZXjAnt0VUgG0IsamxJ9tiFzSY+2yt+f5v5KEcsTOUBdy59X1n98do2xIjWboM835eciv6rjOTxD8mWZ1enmhvgaTGvS8Ta4lRuq2gN9Gk9FkYDWbY0RvsF/CUPXC7paTO3V1fn0jYkfqCh8TEpPSu40J82KltFc5K+X1kUjlrPqiCDHLm3bgIjmLs/cVc0vleGyCN5pHum3HNhjKSblAZucXxDoy2i5HP2S7qvCkOKgFsgoeR3l2BOJGewlDv2t9Q1Z6aL986fR6twT9L1bTvlUw/uRxW2vn8wIU85bSdakp6NZJtkz6cpRcLXMHfbluVoFYLqzX95rwNtabjRw/JozSwWbSxKPT95KY0zVYR/JtoZzrmvCNl3h/1bfvD+qYzdvp5GU29bMCoIAHXHW79kYGboU6z/7pugdOjcGW967I4iv99bljfzu/gc3mbxBJdHA=
+sidebar_class_name: "get api-method"
+info_path: docs/api/endpoints/v0/reference/concat-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a user's registration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v0/users/{id}/registration"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns the user's registration for this convention, or a 404 if they haven't registered. Users can read their own registration without the scope.
+
+### Authentication
+
+This endpoint requires the `registration:read` scope.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./get-user-registration.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./get-user-registration.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./get-user-registration.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

@@ -13,32 +13,214 @@ Some `4xx` codes may indicate a problem with your integration or application, su
 
 ### Base Format
 
+Every error response has an `errors` object with **exactly one** of the following categories. The category's value has a different shape for each category, described below.
+
 ```json
 {
   "errors": {
-    "server": {},
-    "access": {},
-    "logic": {},
-    "resource": {},
-    "usage": {},
-    "authentication": {},
-    "validation": {},
-    "rateLimit": {},
-    "internal": {}
+    "logic": [
+      {
+        "code": 112,
+        "message": "Pagination token could not be parsed"
+      }
+    ]
   }
 }
 ```
 
-### Server Errors
+| Category | HTTP status | Value |
+| --- | --- | --- |
+| [`validation`](#validation-errors) | <Highlight color="#c7620a">400</Highlight> | Array of validation errors |
+| [`logic`](#logic-errors) | <Highlight color="#c7620a">400</Highlight>, <Highlight color="#c7620a">413</Highlight> | Array of logic errors |
+| [`authentication`](#authentication-errors) | <Highlight color="#c7620a">401</Highlight> | Object |
+| [`access`](#access-errors) | <Highlight color="#c7620a">403</Highlight> | Object |
+| [`resource`](#resource-errors) | <Highlight color="#c7620a">404</Highlight> | Object |
+| [`usage`](#usage-errors) | <Highlight color="#c7620a">404</Highlight> | String |
+| [`rateLimit`](#rate-limit-errors) | <Highlight color="#c7620a">429</Highlight> | Object |
+| [`server`](#server-errors) | <Highlight color="#c70a0a">500</Highlight> | Object |
+| [`internal`](#internal-errors) | <Highlight color="#c70a0a">500</Highlight> | String or array of strings |
+| [`serviceUnavailable`](#service-unavailable-errors) | <Highlight color="#c70a0a">503</Highlight> | Array of strings |
 
-Server Errors indicate a problem with the ConCat platform that is not related to the data provided in the request. Usually these will accompany a <Highlight color="#c70a0a">500 - Internal Server Error</Highlight> HTTP status code.
+### Validation Errors
+
+Validation Errors indicate that the request didn't match the endpoint's schema: a missing or unknown field, a value of the wrong type, or a value out of range. They accompany a <Highlight color="#c7620a">400 - Bad Request</Highlight> HTTP status code. `validation` is an array with one entry per problem.
 
 #### Attributes
-<Attribute id="server-errors-attr-hash" name="hash" type="hash, string">
+
+<Attribute id="validation-errors-attr-source" name="source" type="string" response>
+  Where the problem is: <code>headers</code>, <code>params</code>, <code>payload</code> or <code>query</code>.
+</Attribute>
+
+<Attribute id="validation-errors-attr-message" name="message" type="string" response>
+  A human-readable message describing the problem.
+</Attribute>
+
+<Attribute id="validation-errors-attr-path" name="path" type="array of string or number" response>
+  The path to the field with the problem, for example <code>["filter", "email"]</code>.
+</Attribute>
+
+<Attribute id="validation-errors-attr-type" name="type" type="string" response>
+  The rule that failed, for example <code>any.required</code>, <code>number.max</code> or <code>string.email</code>. ConCat also uses <code>custom.unique</code> when a value, such as an email address, is already in use.
+</Attribute>
+
+<Attribute id="validation-errors-attr-context" name="context" type="object" response>
+  Details of the rule, such as the limit for <code>number.max</code>.
+</Attribute>
+
+#### Example
+
+```json
+{
+  "errors": {
+    "validation": [
+      {
+        "source": "payload",
+        "message": "\"limit\" must be less than or equal to 1000",
+        "path": ["limit"],
+        "type": "number.max",
+        "context": { "limit": 1000, "key": "limit" }
+      }
+    ]
+  }
+}
+```
+
+### Logic Errors
+
+Logic Errors indicate an issue with the data provided in the request or some other business logic error. They usually accompany a <Highlight color="#c7620a">400 - Bad Request</Highlight> HTTP status code; a request body that is too large returns logic error `126` with <Highlight color="#c7620a">413 - Payload Too Large</Highlight>. `logic` is an **array** of logic errors.
+
+#### Attributes
+
+<Attribute id="logic-errors-attr-code" name="code" type="number" response>
+  A code indicating the specific logic error. See [Logic Error Codes](/docs/api/errors/logicerrorcodes) for possible values.
+</Attribute>
+
+<Attribute id="logic-errors-attr-message" name="message" type="string" response>
+  A human-readable message describing the error.
+</Attribute>
+
+<Attribute id="logic-errors-attr-args" name="args" type="object" optional response>
+  Values that explain the error. For example, logic errors <code>31</code>, <code>116</code> and <code>139</code> carry the offending scopes in <code>args.scopes</code>.
+</Attribute>
+
+#### Example
+
+```json
+{
+  "errors": {
+    "logic": [
+      {
+        "code": 116,
+        "message": "Requested scope has not been authorized for this application: order:manage.",
+        "args": { "scopes": ["order:manage"] }
+      }
+    ]
+  }
+}
+```
+
+### Authentication Errors
+
+Authentication Errors indicate that the bearer token couldn't be used. They accompany a <Highlight color="#c7620a">401 - Unauthorized</Highlight> HTTP status code.
+
+#### Attributes
+
+<Attribute id="authentication-errors-attr-code" name="code" type="number" response>
+  The reason. For OAuth tokens: <code>2000</code> the token isn't valid, <code>2001</code> the token has expired.
+</Attribute>
+
+<Attribute id="authentication-errors-attr-message" name="message" type="string" response>
+  A human-readable message describing the error.
+</Attribute>
+
+### Access Errors
+
+Access Errors indicate an API authentication or permission restriction preventing the request. They accompany a <Highlight color="#c7620a">403 - Forbidden</Highlight> HTTP status code.
+
+#### Attributes
+
+<Attribute id="access-errors-attr-code" name="code" type="number" response>
+  A code indicating the specific access error. See the table below.
+</Attribute>
+
+<Attribute id="access-errors-attr-message" name="message" type="string" response>
+  A human-readable message describing the error.
+</Attribute>
+
+<Attribute id="access-errors-attr-permissions" name="permissions" type="array of string" optional response>
+  The scopes or permissions that are required to access the resource. Not provided if the error is not related to permissions. A token that lacks the endpoint's scope gets code <code>18</code> with the missing scope here.
+</Attribute>
+
+#### Example
+
+```json
+{
+  "errors": {
+    "access": {
+      "code": 18,
+      "message": "Missing permissions",
+      "permissions": ["user:read"]
+    }
+  }
+}
+```
+
+#### Access error codes
+
+The codes most relevant to API clients:
+
+| Code | Name | Message |
+| ---: | --- | --- |
+| 1 | `MissingCredentials` | Missing OAuth credentials |
+| 2 | `InvalidAuthHeader` | Invalid Authorization header, must be Basic |
+| 3 | `InvalidCredentials` | Invalid OAuth credentials |
+| 18 | `MissingPermissions` | Missing permissions |
+| 26 | `UnauthorizedOAuthScopes` | Unauthorized OAuth scope(s) |
+
+### Resource Errors
+
+Resource Errors indicate that a record the request refers to doesn't exist, or isn't visible to you. They accompany a <Highlight color="#c7620a">404 - Not Found</Highlight> HTTP status code.
+
+#### Attributes
+
+<Attribute id="resource-errors-attr-name" name="name" type="string" response>
+  The type of record that wasn't found, for example <code>User</code> or <code>Registration</code>.
+</Attribute>
+
+<Attribute id="resource-errors-attr-message" name="message" type="string" optional response>
+  A human-readable message describing the error.
+</Attribute>
+
+### Usage Errors
+
+Usage Errors indicate that the route doesn't exist. They accompany a <Highlight color="#c7620a">404 - Not Found</Highlight> HTTP status code, and `usage` is always the string `"No such route."`.
+
+### Rate Limit Errors
+
+Rate Limit Errors indicate that you've sent too many requests. They accompany a <Highlight color="#c7620a">429 - Too Many Requests</Highlight> HTTP status code.
+
+#### Attributes
+
+<Attribute id="ratelimit-errors-attr-expiresAt" name="expiresAt" type="number" response>
+  When the limit resets.
+</Attribute>
+
+<Attribute id="ratelimit-errors-attr-message" name="message" type="string" response>
+  A human-readable message describing the error.
+</Attribute>
+
+### Server Errors
+
+Server Errors indicate a problem with the ConCat platform that is not related to the data provided in the request. They accompany a <Highlight color="#c70a0a">500 - Internal Server Error</Highlight> HTTP status code.
+
+#### Attributes
+
+<Attribute id="server-errors-attr-hash" name="hash" type="string" optional response>
   A tracing hash of the error to provide to support.
 </Attribute>
 
 #### Example
+
 ```json
 {
   "errors": {
@@ -49,30 +231,20 @@ Server Errors indicate a problem with the ConCat platform that is not related to
 }
 ```
 
-### Access Errors
+### Internal Errors
 
-Access Errors indicate an API authentication or permission restriction preventing the request. Usually these will accompany a <Highlight color="#c7620a">403 - Forbidden</Highlight> HTTP status code.
+Internal Errors also indicate a problem with the ConCat platform, and accompany a <Highlight color="#c70a0a">500 - Internal Server Error</Highlight> HTTP status code. `internal` is a string or an array of strings describing the problem.
 
-#### Attributes
+### Service Unavailable Errors
 
-<Attribute id="access-errors-attr-message" name="message" type="string">
-  A human-readable message describing the error.
-</Attribute>
+Service Unavailable Errors indicate that the instance can't handle the request right now, for example because it's in maintenance mode. They accompany a <Highlight color="#c70a0a">503 - Service Unavailable</Highlight> HTTP status code. `serviceUnavailable` is an array of strings.
 
-<Attribute id="access-errors-attr-permissions" name="permissions" type="array of Permission" optional>
-  A list of permissions that are required to access the resource. May be empty or not provided if the error is not related to permissions.
-</Attribute>
+#### Example
 
-### Logic Errors
-
-Logic Errors indicate an issue with the data provided in the request or some other business logic error. Usually these will accompany a <Highlight color="#c7620a">400 - Bad Request</Highlight> HTTP status code.
-
-#### Attributes
-
-<Attribute id="logic-errors-attr-code" name="code" type="LogicError">
-  A code indicating the specific logic error. See [Logic Error Codes](/docs/api/errors/logicerrorcodes) for possible values.
-</Attribute>
-
-<Attribute id="access-errors-attr-message" name="message" type="string">
-  A human-readable message describing the error.
-</Attribute>
+```json
+{
+  "errors": {
+    "serviceUnavailable": ["Site is in maintenance mode"]
+  }
+}
+```

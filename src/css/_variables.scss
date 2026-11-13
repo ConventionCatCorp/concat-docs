@@ -1,4 +1,83 @@
-$brand-primary: #0670ad !default;
-$brand-accent: #ebecf0 !default;
-$brand-dark: #253858 !default;
-$brand-mid: #42526e !default;
+// Color ramps copied from the ConCat platform (ConventionCatCorp/ConCat,
+// src/frontend/styles/variables.scss). Keep them in sync with that file.
+$concat-blue: (
+  100: #caf5fa,
+  200: #97e5f6,
+  300: #60c6e6,
+  400: #38a0cd,
+  500: #0670ad,
+  600: #045794,
+  700: #03417c,
+  800: #012e64,
+  900: #012053,
+);
+$japanese-indigo: (
+  100: #dae9f6,
+  200: #b7d1ee,
+  300: #85a5cc,
+  400: #57739a,
+  500: #253858,
+  600: #1b2b4b,
+  700: #121f3f,
+  800: #0b1533,
+  900: #070e2a,
+);
+$independence-gray: (
+  100: #e3eef7,
+  200: #cadcf0,
+  300: #a0b6d3,
+  400: #7589a8,
+  500: #42526e,
+  600: #303f5e,
+  700: #212e4f,
+  800: #151f3f,
+  900: #0c1534,
+);
+$success: (
+  100: #e3fbd0,
+  200: #c1f7a3,
+  300: #93e772,
+  400: #67d04c,
+  500: #2eb21c,
+  600: #199914,
+  700: #0e8012,
+  800: #086714,
+  900: #055515,
+);
+$warning: (
+  100: #fff5cd,
+  200: #ffe89b,
+  300: #ffd869,
+  400: #ffc943,
+  500: #ffaf05,
+  600: #db8f03,
+  700: #b77102,
+  800: #935601,
+  900: #7a4300,
+);
+$danger: (
+  100: #fde2d4,
+  200: #fbc0a9,
+  300: #f4937d,
+  400: #e9695b,
+  500: #db2c29,
+  600: #bc1d28,
+  700: #9d1429,
+  800: #7f0d28,
+  900: #690727,
+);
+$isabelline-white: #ebecf0;
+$ghost-white: #f7f8f9;
+
+// Platform text colors that Bootstrap 5.3 supplies (the platform uses them unmodified).
+$body-text: #212529;
+$body-text-dark: #dee2e6;
+
+// Brand aliases used across src/. They resolve to the platform tokens above.
+$brand-primary: #0670ad !default; // $concat-blue 500 (platform $brandPrimary)
+$brand-accent: #ebecf0 !default; // $isabelline-white
+$brand-dark: #253858 !default; // $japanese-indigo 500
+$brand-mid: #42526e !default; // $independence-gray 500 (platform $primaryText)
+
+// Width of a textbook article at which the margin column appears (container query).
+$textbook-wide: 50rem;

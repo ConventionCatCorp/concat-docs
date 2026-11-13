@@ -1,0 +1,74 @@
+---
+id: remove-order-item
+title: "Remove an order item"
+description: "Removes an item from an unpaid order. Paid orders can't be changed, and an addon can't be removed on its own."
+sidebar_label: "Remove an order item"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU1vGzkM/SsCe9i2GNjeosCis6cgzcFAgWTzcXINhJHoGW1mpInIsRMY898X1NiOk+4m5/XFGpGiyMfHpy3EjhKKj2HuoIREbVzTeXKU5kItFOCIbfKdekAJl9nOBoPxQq1ZpdjqRx869M5EPTgxF4c1G4vhNzF3ZGyNoSJXGAxOj6BzMTybx5udiRqZTdyEyc/wM3z48MGc9FJTEG9znrp7XXs2FFwXfRCT6KH3idhITeY231u2GLCiW8M2djSBAjpM2JJQYigXWwjYEpQQ95XOHRTgtcQOpYYCdkEdlJJ6KoBtTS1CuQV56vSoD0IVJSig9cG3fQvlbBiWBQhWescYm2GpsbiLgYn1+JfZV/17iet1TSNgI6wb5AMgGWLZ2ycwFPB1NnszBBtsEqF7Mi2me3IG2eT+KPTy8iqLwYR43AJFy8YgFERv+Tz9rH+/1B/v/iYrimxSDokfy6OUYuL3/ZpYefu+m42OjrxYkg8VFEBBAV/88W05FNASM1Zv+cH5a2QUjwksh8NPYX2/My4SZ7zo0bNMYMjXSx11ehw1JJTJJjWUMMXOT9ez6ciEqQbg6faIcwMUwGT75OUp0/JcuQ7lYqlE2luuFPoRjp39GTXspf4CBayauBkBazwFOU3kdGSwGVsR7yncpGafUz42zbuagc5I9uuZUqn45FFHZ3TDOBTM1LmYz6EYnWwiFM3gNC9GR7Q29kF47xSi0K/huhRXviFFkQ6uKTbEZd+5MepNXoz+2ZQnsvIso1i9iHpsyMlCAWsKLr6sxRE2u2rUITZ9EHpV72F37zaqydrTZu8ykuGFeRSbgzxmrBKt4/0xdbQEfmKhtqTHLiYp+aHxudqz/G1YUDyLtzxC7oO5+uuHFzKrmFoU2PHUh1XMXfXS5BbEcIpiTi7m5nu0fUtBMhYZhsQjj3+fzCazf9HzFSUKNl+RpWEX7HY9uzWXZ1fXGnZiLumhJxY2+KzFZDZeapXyzErtPjGbzKo/DRPleIvRWPXe0fJjLdJxOZ3aGCzKBLtu6qLlTMqKRHyoWDAJuZGjn3JeddwYiaYiMTFQlsAusrQYFIadlB+wP8L8db3bZ2H7Hz9lu9kXepRp16APCkiv073dKc8CsPPa/tmeo8q+PQvL41dvWUAdWfTMdnuHTDepGQbdfugpqSotC1hj8ninZFtswXnWtYNyhQ3TGxB/vNw9op/Mf6W928TwpOli0+sXFHBPT6+e50GVviZ0lHIao8eJtdTJ0Vl9rlQ8D6L8/ezH2fUZDMM/+AAUwQ==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/endpoints/v0/reference/concat-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove an order item"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/v0/orders/items/{orderItemId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Removes an item from an unpaid order. Paid orders can't be changed, and an addon can't be removed on its own.
+
+### Authentication
+
+This endpoint requires the `order:manage` scope.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./remove-order-item.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./remove-order-item.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./remove-order-item.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

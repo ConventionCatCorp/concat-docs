@@ -1,57 +1,96 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 hide_table_of_contents: true
+textbook: true
 ---
 
 # CNAME Records
 
-In order to configure ConCat to utilize your organization's domain, you must add something called a `CNAME` record to your domain. This guide aims to explain how to do this for folks who may not be familiar with the concept.
+Add the `CNAME` records ConCat needs to send email from your domain or serve a convention at your own address. No DNS experience needed.
 
-## Overview
-
-### DNS Panel
-
-The first step in managing these records is to access your DNS management panel. This usually will be with the registrar you purchased your domain through (ex. GoDaddy, NameCheap, Porkbun).
-If you do not have access to this, contact someone in your organization who does. Access to this panel is **required** in order to proceed.
-
-:::info Custom Nameservers
-If your nameservers were altered (for example to utilize Cloudflare to handle DNS management) you will need to use *that* service's DNS panel. If you are unfamiliar with what "nameservers" are, it's unlikely these were changed, so don't worry.
+:::info[In this guide]
+CNAME records and your DNS panel, a custom email domain, a convention on your own domain, when verification doesn't pass.
 :::
 
-### Adding New Records
+## CNAME records and your DNS panel
 
-Now that you have access to the panel, you need to insert new records. These records publish information necessary for ConCat (or an upstream provider) to see and validate ownership of a domain.
+<Sidenote title="Who has access">
+Whoever bought the domain usually holds the DNS panel. If that isn't you, ask them to add the records or give you access.
+</Sidenote>
 
-## Specific Guides
+A `CNAME` record publishes a name on your domain that points to another name. ConCat, or a provider it uses, looks it up to confirm you own the domain.
 
-These guides are for specific procedures within ConCat.
+You add records in your domain's DNS management panel, usually at the registrar where you bought it, such as GoDaddy, NameCheap or Porkbun.
 
-### Custom Domain for Convention
+:::note[Custom nameservers]
+If your domain's nameservers were changed, for example so Cloudflare manages DNS, use *that* service's DNS panel. If you don't know what nameservers are, they probably weren't changed.
+:::
 
-When creating new conventions, a new domain is utilized in order to maintain access to the old convention. Upon creation however, the new domain will not be immediately accessible.
+## Custom email domain
 
-You must add a `CNAME` record to the new domain, with the value set to `customers.concat.app`.
+<Sidenote title="Who can do this">
+The **Email Settings** tab needs the permission to manage email templates; configuring a domain needs the permission to update system settings.
+</Sidenote>
 
-For example, if an old convention was moved to `2025.example.com`, a new record would need to be created at `2025.example.com` pointing to `customers.concat.app`, even if there is already a record at `example.com`.
+ConCat sends email from `concat.app` by default. To use your domain, request it in ConCat, add the three records it gives you, and verify them.
 
-### Custom Email Domains
+1. Go to **Housekeeping › System › Settings** and click the **Email Settings** tab.
 
-When adding a custom domain for email sending, multiple records are required to be added.
+   <Result>**Email Sending Domain** says *The domain is currently set to the default,* `concat.app`, with a **Configure a Domain** button.</Result>
 
-After creating the request inside of ConCat, the Email Settings tab will display a list of records and their values that need to be added.
+2. Click **Configure a Domain**.
 
-Example:
-<img src="/img/technical/email_settings_cname.png" />
+   <Result>A **Configure a Domain** dialog opens with a **Domain** field and a **Scope** choice of **Organization** or **Convention**.</Result>
 
-Utilize the copy buttons to get the exact values required, and paste them into the appropriate fields outlined.
+3. Enter your **Domain**, choose the **Scope** (**Organization** for every convention, **Convention** for this one only), then click **Submit**.
 
-Example:
-<img src="/img/technical/email_settings_dns.png" />
+   <Result>A box says *Please add the following CNAME records to your domain.* above three rows of **Name** and **Value**, each with a copy button, and the **Download CSV**, **Cancel** and **Verify** buttons.</Result>
 
-Once you have set the records, wait up to 5 minutes for your DNS provider to update the records. Then, press "Verify" in ConCat.
+4. In your DNS panel, add a `CNAME` record for each row, pasting the exact **Name** and **Value**.
 
-If you see a warning stating that the verification was not complete, that's perfectly OK. Sometimes DNS providers can be slow, try again in 30-60 minutes.
+   <Result>Your DNS panel lists three new `CNAME` records with names ending in `._domainkey` and values ending in `.dkim.amazonses.com`.</Result>
 
-Also double check that the records you set were on the right domain and are *exactly* as described by ConCat.
+5. Wait about 5 minutes for your DNS provider to publish the records, then click **Verify** in ConCat.
 
-If this process takes more than 24 hours, please contact support.
+   <Result>A **Your domain was successfully validated.** message appears, and the section says *This organization's email domain is:* (or *convention's*) and your domain. If you get a warning instead, see section 4.</Result>
+
+:::tip[Name field and your domain]
+The **Name** copy button copies only the part before your domain, such as `abc123._domainkey`; most DNS panels add the domain for you. If yours wants the full name, add your domain after it, as shown beside the field, or use **Download CSV**, which has the full names.
+:::
+
+## A convention on your own domain
+
+A new convention created on the **Conventions** tab gets its own address under the previous convention's domain, so the old one stays reachable. ConCat sets up `concat.app` addresses; on your own domain, the new address works only once you add a `CNAME` record for it.
+
+Add it at the new convention's full address, even if your main domain has one: if last year's convention moved to `2025.example.com`, add a record at `2025.example.com`.
+
+1. Go to **Housekeeping › System › Settings** and click the **Conventions** tab.
+
+   <Result>A convention on your own domain shows a badge after its domain: **pending** until the address works, **active** once it does.</Result>
+
+2. In your DNS panel, add a `CNAME` record whose name is the new convention's address. Ask ConCat Support for the value to point it to.
+
+   <Result>Your DNS panel lists the new `CNAME` record at the convention's address.</Result>
+
+3. Later, reload the **Conventions** tab.
+
+   <Result>The badge reads **active**. While it reads **pending**, hover over it to see why.</Result>
+
+## When verification doesn't pass
+
+A warning after **Verify** is normal: DNS providers can be slow, so try again in 30 to 60 minutes. Meanwhile, check the records are on the right domain and match ConCat's values *exactly*. After 24 hours, contact ConCat Support.
+
+<TableFigure title="Messages after Verify">
+
+| Message | What it means |
+| --- | --- |
+| **Your domain was successfully validated.** | The records are correct. ConCat sends from your domain. |
+| *Your domain was not able to be validated yet. …* | The records aren't visible yet, or don't match. Check them and retry later. |
+| *An error has occurred. Cancel this attempt and try again, or contact support.* | The request failed. Click **Cancel**, then start again from section 2, step 2. |
+| *The domain requested was not found, or does not have a valid attempt to verify.* | There's no pending request for this domain. Start again from section 2, step 2. |
+
+</TableFigure>
+
+:::caution[Watch out]
+**Cancel** removes the pending request. If you request the domain again, ConCat gives you new records, and you have to replace the ones you added.
+:::

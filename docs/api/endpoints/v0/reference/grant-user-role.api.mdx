@@ -1,0 +1,74 @@
+---
+id: grant-user-role
+title: "Grant a role to a user"
+description: "Grants the role to the user. Set `scope` to `global` to grant it for every convention in the organization; otherwise it applies to this convention only. Fails if the user already has the role."
+sidebar_label: "Grant a role to a user"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVktvGzcQ/ivE+JIEW62a4+bkum5hoEBd2T4pAjTeHe0y5pI0OStZFfTfgyFXD8dJT0VP1UXUPL95awfOU0DWzt40UEEb0PJDpDBzhqCAhmIdtBc+VPC7cKPijlRwhhS79B4ihYm6I1bLWDtPS2EsW+Me0aR3sqo0q5ULitYUtqp2dk1W7CptkxUXWrT674Tlk3LcUdjoSKKG3htNMfvT8VzZWbOdqN9Qm6j06ghHoQmEzVZ1eMI7+Ww/24uLC3U5cCf6dXIm1HsxS7bxTltWgZ4HHShrLsVeJfqxGnyDTEuVwpxAAR4D9sQUIlTzHVjsCSoQjZsGCtCSNY/cQQGj0QYqDgMVEOuOeoRqB7z1oqUtU0sBCui11f3QQzXd74ujVYHwb1ldZE2K/ItrtiJeO8tkWZ4p3Tk35Zcold+9tesev1DNkoIgLcSaYpZzwj6KRQ7atlAAWXE9h1PtoIDcI7DYp08BjK0kMoUaIYGM3tmYbX+cTuXrdU/eDXVNMa4GA8V5EB/KD9/FPQIaHfbEnZPG90OKRZJaQYlel+tpKXWM5S6Xc18mVOUu12EPBUSqh6B5m2r/p3QVVPOFJPfAuRP3Gf3IPyUQB+4+QgEr4zZJojaaLF8FaiRBaBKR3RPZh2AOsJJamaiCQNKd5HKXEkowM8Imj0GDjApto25vbqDIQnUgZEFwlR7jvNS1GyzHg5B1TG/N+eBW2pAS7lH0fDSggof0yPK5jlLGVkfOe+aV1XNGAgsFrMk27nUsDaEZoxEBZwbL9E28R+pBzIWGQrXWtDmIJMprdo8WW0oCvVtTylWgtXuiUVoz9RJC3EamvqIX7wJX8dnoFO11+q0iI+vIuo455dqqu7/+0Eyy8nrkQ7/JOM1Og3f9gr03dDY45/Oxl1FfudQFmk0qmbNXyOry9kb96uqhJ8s4ztKaQswj8fNkOpm+Wd4zWlEgWydIabONxpbr6VLNru/uxexEjfCiwtOWJLXR3Cm0KnWxdAtF2cdPZD+pSJTszTOzHXRDi3cds49VWdbO1sgT9L5sXB1TE7fErG0bGQNTk3v6fcLVuU26GMTKWZpIDryL3GPaQuMmTHdI4fEIYeq2byM+22n/X643l2vcQkwvXHqDOrXbIHtmN67BOaDX0ljTcdJlDKrjbTvMdjXepUUBnYsservdI0Z6CGa/F/LzQEF25KKANQaNj9LK8x00Osq7gWqFJtI/lO/dbDxz79WPoI9EtFuBjGaQX1DAE21PF1mu6X/odczMfrEvoCNsKKS4M/Mq+/npXkyclN8cX8GcNS7rmjyfycqNk2tzvGK3D/dQwON40nvXpP8NuJFy4SZDcynSdDMSbQcGbTvkLZg9yucr8cuCsA==
+sidebar_class_name: "put api-method"
+info_path: docs/api/endpoints/v0/reference/concat-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Grant a role to a user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/v0/users/{userId}/roles/{roleId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Grants the role to the user. Set `scope` to `global` to grant it for every convention in the organization; otherwise it applies to this convention only. Fails if the user already has the role.
+
+### Authentication
+
+This endpoint requires the `user:roles:update` scope.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./grant-user-role.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./grant-user-role.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./grant-user-role.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

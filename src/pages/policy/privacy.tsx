@@ -130,7 +130,7 @@ export default function Privacy(): React.JSX.Element {
         <p>
           Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are
           sent to your browser from a website and stored on your device. Other tracking technologies are also used such
-          as beacons, tags and scripts to collect and track information and to improve and analyse our Service.
+          as beacons, tags and scripts to collect and track information and to improve and analyze our Service.
         </p>
         <p>
           You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if
@@ -162,7 +162,7 @@ export default function Privacy(): React.JSX.Element {
           <li>To detect, prevent and address technical issues</li>
           <li>
             To provide you with news, special offers and general information about other goods, services and events
-            which we offer that are similar to those that you have already purchased or enquired about unless you have
+            which we offer that are similar to those that you have already purchased or inquired about unless you have
             opted not to receive such information
           </li>
         </ul>
@@ -212,7 +212,7 @@ export default function Privacy(): React.JSX.Element {
         <p>
           Convention Cat Event Systems, Inc. will take all the steps reasonably necessary to ensure that your data is
           treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take
-          place to an organisation or a country unless there are adequate controls in place including the security of
+          place to an organization or a country unless there are adequate controls in place including the security of
           your data and other personal information.
         </p>
 
@@ -319,7 +319,7 @@ export default function Privacy(): React.JSX.Element {
         <h2>Service Providers</h2>
         <p>
           We may employ third party companies and individuals to facilitate our Service ("Service Providers"), provide
-          the Service on our behalf, perform Service-related services or assist us in analysing how our Service is used.
+          the Service on our behalf, perform Service-related services or assist us in analyzing how our Service is used.
         </p>
         <p>
           These third parties have access to your Personal Data only to perform these tasks on our behalf and are
@@ -327,14 +327,14 @@ export default function Privacy(): React.JSX.Element {
         </p>
 
         <h3>Analytics</h3>
-        <p>We may use third-party Service Providers to monitor and analyse the use of our Service.</p>
+        <p>We may use third-party Service Providers to monitor and analyze the use of our Service.</p>
         <ul>
           <li>
             <p>
               <strong>Sentry</strong>
             </p>
             <p>
-              Sentry analyses errors on the website, and report to Convention Cat Event Systems, Inc about any potential
+              Sentry analyzes errors on the website, and report to Convention Cat Event Systems, Inc about any potential
               issues on the website.
             </p>
             <p>

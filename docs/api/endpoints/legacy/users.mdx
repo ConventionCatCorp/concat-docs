@@ -32,6 +32,12 @@ Returns the user object for the currently authenticated user.
     <Attribute id="user-current-retrieve-resp-bornAt" name="bornAt" type="string" response>
       The date the user was born, in ISO 8601 format.
     </Attribute>
+    <Attribute id="user-current-retrieve-resp-child" name="child" type="boolean" response>
+      Always <code>false</code>.
+    </Attribute>
+    <Attribute id="user-current-retrieve-resp-createdAt" name="createdAt" type="string" response>
+      The date the account was created, in ISO 8601 format.
+    </Attribute>
     <Attribute id="user-current-retrieve-resp-firstName" name="firstName" type="string" response>
       The user's legal first name, as it appears on their ID.
     </Attribute>
@@ -41,11 +47,23 @@ Returns the user object for the currently authenticated user.
     <Attribute id="user-current-retrieve-resp-lastName" name="lastName" type="string" response>
       The user's legal last name, as it appears on their ID.
     </Attribute>
+    <Attribute id="user-current-retrieve-resp-isRoleManager" name="isRoleManager" type="boolean" response>
+      Returns true if the user is a role manager in the organization.
+    </Attribute>
     <Attribute id="user-current-retrieve-resp-newsletter" name="newsletter" type="boolean" response>
       Whether the user has opted in to the newsletter.
     </Attribute>
+    <Attribute id="user-current-retrieve-resp-organizationId" name="organizationId" type="string" response>
+      The ID of the organization the user belongs to.
+    </Attribute>
     <Attribute id="user-current-retrieve-resp-preferredName" name="preferredName" type="string" optional response>
       An optional preferred name for the user. This will be displayed first on the user's profile.
+    </Attribute>
+    <Attribute id="user-current-retrieve-resp-supportAgent" name="supportAgent" type="object" optional response>
+      Details of a ConCat support session when the request comes from a ConCat support agent; otherwise <code>null</code>.
+    </Attribute>
+    <Attribute id="user-current-retrieve-resp-updatedAt" name="updatedAt" type="string" response>
+      The date the account was last updated, in ISO 8601 format.
     </Attribute>
     <Attribute id="user-current-retrieve-resp-username" name="username" type="string" response>
       The user's username.
@@ -71,10 +89,10 @@ Returns the user object for the currently authenticated user.
     <ParentAttribute id="user-current-retrieve-resp-userRoles" name="userRoles" type="Array of Object" response>
       <span>A list of the user's assigned roles for the requested convention and organization.</span>
       <>
-        <Attribute id="user-current-retrieve-resp-id" name="id" type="number" response>
+        <Attribute id="user-current-retrieve-resp-userRoles-id" name="id" type="number" response>
           The id of the role.
         </Attribute>
-        <Attribute id="user-current-retrieve-resp-name" name="name" type="string" response>
+        <Attribute id="user-current-retrieve-resp-userRoles-name" name="name" type="string" response>
           The name of the role.
         </Attribute>
       </>
@@ -110,7 +128,7 @@ Returns the user object for the currently authenticated user.
     </details>
   </div>
   <div>
-    <ExampleBox method='GET' header='/api/users/:id' headerSubText='cURL'>
+    <ExampleBox method='GET' header='/api/users/current' headerSubText='cURL'>
       {`curl https://reg.cces.dev/api/users/current \\
   -H "Authorization: Bearer <token>"`}
     </ExampleBox>
@@ -124,13 +142,19 @@ Returns the user object for the currently authenticated user.
   "addressState": "NY",
   "addressZipcode": "10001",
   "bornAt": "1990-01-01T00:00:00.000Z",
+  "child": false,
+  "createdAt": "2023-04-01T12:00:00.000Z",
   "email": "aperson@example.com",
   "firstName": "John",
   "id": 1234,
   "lastName": "Doe",
+  "isRoleManager": false,
   "newsletter": true,
+  "organizationId": "00000000-0000-0000-0000-000000000000",
   "phone": "+15555555555",
   "preferredName": "Jonathan",
+  "supportAgent": null,
+  "updatedAt": "2024-02-10T08:30:00.000Z",
   "username": "aperson",
   "emailVerified": true,
   "identityVerified": true,

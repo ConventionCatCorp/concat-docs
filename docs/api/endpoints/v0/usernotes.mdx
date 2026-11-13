@@ -1,0 +1,44 @@
+---
+sidebar_position: 5
+displayed_sidebar: apiSidebar
+hide_table_of_contents: true
+---
+
+# User Notes
+
+<SplitColumn>
+  <div>
+    <p>
+      User notes are notes that staff have written about users in the event organization, each filed under a note category.
+    </p>
+    <p>
+      <strong>Scope:</strong> <code>user:note:read</code>, a <Link to="/docs/api/gettingstarted/scopes#service-integration-scopes">service integration scope</Link>.
+    </p>
+  </div>
+  <RestList>
+    <RestElement method="POST" path="/api/v0/users/notes/search" anchor="search-user-notes" />
+  </RestList>
+</SplitColumn>
+
+## The note object
+
+- `id`, `authorId` and `organizationId` identify the note, the staff member who wrote it, and the organization.
+- `userId` is the user the note is about, or `null`.
+- `category` is the name of the note's category, and `text` is the note itself.
+- The IDs are sent as strings, although the endpoint reference types `id`, `userId` and `authorId` as numbers.
+
+The endpoint returns the notes in every category. Categories that are restricted in Housekeeping aren't left out, so grant this scope only to applications that may see every note.
+
+## Paging
+
+[Search user notes](#search-user-notes) returns `{ "hasMore": …, "nextPage": …, "data": [ … ] }`. Leave `nextPage` out of the first request. While `hasMore` is `true`, send the `nextPage` value from the previous response to get the next page. On the last page, `nextPage` is left out of the response rather than set to `null`. An invalid `nextPage` returns logic error `112` (`BadPaginationToken`).
+
+## Endpoints
+
+### Search user notes
+
+Returns the organization's user notes, ordered by ID. `limit` is 1 to 1000, and defaults to 100.
+
+The request accepts a `filter` object with an `ids` array, but the results aren't filtered by it: every note is returned.
+
+Scope: `user:note:read`. [Full reference](/docs/api/endpoints/v0/reference/search-user-notes).
