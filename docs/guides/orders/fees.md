@@ -36,7 +36,7 @@ A fee goes into the attendee's unpaid order for this convention (their cart), wh
 
    <Result>The **Fee Management** page opens: a searchable list of fees on the left, and a form with **User**, **Amount** and **Reason for Fee** on the right.</Result>
 
-2. In **User**, search for and select the attendee, enter the **Amount** and a **Reason for Fee**, and click **Create Fee** (greyed out until a user and amount are filled in).
+2. In **User**, search for and select the attendee, enter the **Amount** and a **Reason for Fee**, and click **Create Fee** (grayed out until a user and amount are filled in).
 
    <Result>A **New fee has been created** message appears, and the fee is listed as **Not Yet Paid**.</Result>
 

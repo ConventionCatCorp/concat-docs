@@ -6,7 +6,7 @@ textbook: true
 
 # Start here
 
-Get a trial instance and learn your way around Housekeeping, where all setup happens. The next four guides then set up your convention, registration, store and staff.
+Get a trial instance and learn your way around Housekeeping, the administration module of ConCat.
 
 :::info[In this guide]
 Starting a trial and signing in, and finding your way around Housekeeping.
@@ -41,10 +41,10 @@ A private ConCat instance with its own web address and your administrator accoun
 :::note[If something goes wrong]
 - *This link is no longer valid*: the confirmation link was already used or is over 7 days old. Start again from step 1.
 - *We hit a snag*: your details and password are saved and ConCat has been told; you'll get an email when the instance is ready. Quote the **Reference** shown if you contact support.
-- *You already have a ConCat trial*: this email replaces the confirmation if your address has already started a trial.
+- *You already have a ConCat trial*: you are only allowed one trial instance per email per organization. Please contact support to request an additional.
 :::
 
-Until the trial ends, every page shows a banner: **Trial instance.** *This trial ends on* and the date, 30 days after you signed up.
+Until the trial ends, every page shows a banner: **Trial instance.** *This trial ends* 30 days after you signed up.
 
 ## Find your way around Housekeeping
 
@@ -90,10 +90,10 @@ Housekeeping is split into modules, each with its own sidebar. A menu at the top
 
 | Module | Sidebar items |
 | --- | --- |
-| Attendees | **Dashboard**, **Cashier UI**, **Devices** <small>(hidden when QuikTicket is off)</small>; under *Module Management*, when hotels are on: **Hotel Management**; under *Attendee Management*: **User Search**, **User Notes**, **Fee Management**, **Refund Requests**, **Mass Email**, **Event Statistics** |
+| Attendees | **Dashboard**, **Cashier UI**, **Devices** (hidden when QuikTicket is off)<p>Under *Module Management*, when hotels are on: **Hotel Management**; under *Attendee Management*: **User Search**, **User Notes**, **Fee Management**, **Refund Requests**, **Mass Email**, **Event Statistics**</p> |
 | Registration | **Dashboard**, **Registration Statistics**, **Mass Email**, **Settings**, **Dynamic Export**; under *Badges and Tiers*: **Badge Products**, **Options**, **Badge Art**, **Badge Designer**, **Registration Flags** |
 | Store Management | **Store Products**, **Options**, **Surcharges**, **Vouchers**, **Orders**, **Gatekeeping** |
-| Volunteers | **Dashboard**, **Applications**, **My Department(s)** <small>(department leads only)</small>, **Mass Email**, **Volunteer Stats**; under *Settings*: **Options**, **Volunteer Settings** |
+| Volunteers | **Dashboard**, **Applications**, **My Department(s)** (department leads only) <p>**Mass Email**, **Volunteer Stats**; under *Settings*: **Options**, **Volunteer Settings**</p> |
 | Dealers | **Dashboard**, **Applications**, **Areas**, **Products**, **Mass Email**, **Options**, **Dynamic Export**; under *Settings*: **Dealer Settings** |
 | System | **Dynamic Export**, **Export**, **User Creation**, **Audit Logs**, **Developers**, **Settings**, **Roles** |
 

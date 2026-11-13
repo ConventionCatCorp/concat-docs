@@ -56,7 +56,7 @@ A role can also grant reading chosen categories under **User Note Categories** (
 
 2. Choose a **Note Category**, enter the **Text**, and click **Add New Note** (Figure 2.1).
 
-   <Result>The note appears in the **Notes** card with a grey badge showing the convention's short name, because **Apply only to this convention.** was ticked. A note saved with the box unticked has no badge and is shown in every convention of your organization.</Result>
+   <Result>The note appears in the **Notes** card with a gray badge showing the convention's short name, because **Apply only to this convention.** was ticked. A note saved with the box unticked has no badge and is shown in every convention of your organization.</Result>
 
 <Figure
   src="/img/guides/usernotes/add-note.webp"

@@ -40,7 +40,7 @@ Attendees apply from your homepage (see [What volunteers see when they apply](./
 | **Registration Status** | **Paid**, **Unpaid** or **Not Registered**, for this convention's badge. |
 | **Status** | **Assigned** to at least one department, **Pending Request** from a lead, or **Unassigned**. |
 | **Restrictions** | **Yes** if the person has a note in the *Restriction* category. See [User Notes](../usernotes/usernotes.md). |
-| **Department(s)** | A coloured badge per relation in Table 1.1, or **No Preferences / Assignments**. |
+| **Department(s)** | A colored badge per relation in Table 1.1, or **No Preferences / Assignments**. |
 
 </TableFigure>
 
@@ -117,15 +117,15 @@ Assigning approves the application for that department, and the volunteer sees *
 
 1. In the application dialog, click **Assign**.
 
-   <Result>A button appears for each department: grey with a **+** for not assigned, green for assigned, a yellow outline for requested by a lead, and red and disabled for avoided.</Result>
+   <Result>A button appears for each department: gray with a **+** for not assigned, green for assigned, a yellow outline for requested by a lead, and red and disabled for avoided.</Result>
 
-2. Click a grey or yellow department button.
+2. Click a gray or yellow department button.
 
    <Result>The button turns green. Any request for that department is replaced by the assignment.</Result>
 
 3. *(Optional: to unassign)* Click a green department button.
 
-   <Result>The button turns grey with a **+** again.</Result>
+   <Result>The button turns gray with a **+** again.</Result>
 
 4. Click **Go back**.
 

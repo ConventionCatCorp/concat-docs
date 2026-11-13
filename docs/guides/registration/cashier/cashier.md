@@ -250,7 +250,7 @@ An attendee with errors can't be checked in: a message starting *Registration ha
 The first name, last name and date of birth on the ID against the attendee's account, and the ID's expiry date.
 </Sidenote>
 
-Scanning a driver's licence or ID card (PDF417 barcode) on the search page finds the attendee and checks the ID in one go. On an attendee's page, a Web Serial scanner opens a check of its own. Scanner setup: [Scanner](./scanner.md).
+Scanning a driver's license or ID card (PDF417 barcode) on the search page finds the attendee and checks the ID in one go. On an attendee's page, a Web Serial scanner opens a check of its own. Scanner setup: [Scanner](./scanner.md).
 
 1. Open the attendee by searching for their name.
 
@@ -287,7 +287,7 @@ A registration QR code doesn't prove identity. Scanned here, it shows *Registrat
 ## The Actions menu
 
 <Sidenote title="Who can do this">
-**Update personal details** needs **user:update** and is greyed out without it. Saving a registration needs **registration:update**. The *admin* and *registration* roles have both.
+**Update personal details** needs **user:update** and is grayed out without it. Saving a registration needs **registration:update**. The *admin* and *registration* roles have both.
 </Sidenote>
 
 The **Actions** menu opens the tools in Table 8.1 without leaving the station.

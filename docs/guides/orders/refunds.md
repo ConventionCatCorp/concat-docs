@@ -100,7 +100,7 @@ The list includes decided refunds too; narrow it with **Search...** or the **Rea
 
 | Field | What it does |
 | --- | --- |
-| **Quantity** (per product) | How many to take back. ConCat removes what they granted, such as a badge. <small>Help icon: *Revoke Digital Grants?* Greyed out for an item that grants nothing.</small> |
+| **Quantity** (per product) | How many to take back. ConCat removes what they granted, such as a badge. <small>Help icon: *Revoke Digital Grants?* Grayed out for an item that grants nothing.</small> |
 | **Amount to Refund** (per product) | The value of the items taken back. *Currency being returned. For accounting purposes only.* <small>Filled in when you change the quantity.</small> |
 | **Return item to available stock?** | Ticked, the items go back into stock for someone else to buy. <small>Shown only when a product has limited stock.</small> |
 | **Amount to Refund** (per payment) | The money to return through that payment, up to its **Available Amount**. <small>With one payment, it follows the product amounts.</small> |

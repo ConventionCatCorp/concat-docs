@@ -54,7 +54,7 @@ Registration starts closed, so you can set up first. For what attendees see whil
 
 ## Attendee notice
 
-One notice at a time appears at the top of every attendee's **Attendance** page, such as a schedule change. **Importance** sets its colours: **Critical** for urgent alerts, **High** for announcements, **Normal** for reminders. **Show attendee notice** is **Experimental**.
+One notice at a time appears at the top of every attendee's **Attendance** page, such as a schedule change. **Importance** sets its colors: **Critical** for urgent alerts, **High** for announcements, **Normal** for reminders. **Show attendee notice** is **Experimental**.
 
 1. In the **Attendee Notice** card, tick **Show attendee notice**.
 

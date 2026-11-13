@@ -1,15 +1,15 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 hide_table_of_contents: true
 textbook: true
 ---
 
 # Checklist
 
-What to decide and check before opening registration, before the event and after it. Do the Quickstart first, from [Start here](./quickstart/start-here.md); each item links to the guide that shows how.
+What to decide and check before opening registration, before the event and after it.
 
 :::info[In this guide]
-Before you open registration, before the first day of the event, and after the event.
+What to do for the major checkpoints of before opening registration, before the first day of the event, and after the event.
 :::
 
 ## Before you open registration
@@ -28,8 +28,8 @@ The Quickstart sets up the basics: [Convention setup](./quickstart/convention-se
 ### Settings to check
 
 - **Registration flags**, in **Housekeeping › Registration › Registration Flags**. Check the wording of each flag attendees can tick ([Registration flags](./registration/flags.md)).
-  - Be sure you're happy to delete the accounts of attendees who tick the built-in `nukeme` flag (*Please delete my account after the con is over.*) after the event (section 3).
-- **Swag for sponsor-level badges.** Add it as an addon on those badge products ([Addons](./products/addons.md)). One "swag bag" product is easier at the desk than several, since the Cashier UI lists each undelivered item for staff to hand over.
+  - Be certain when deleting the accounts of attendees who tick the built-in `nukeme` flag (*Please delete my account after the con is over.*) after the event (section 3).
+- **Swag for sponsor-level badges.** Add it as an addon on those badge products ([Addons](./products/addons.md)). 
 - **Payments.** Connect Stripe in **Housekeeping › System › Settings › Payment Gateways** ([Convention setup](./quickstart/convention-setup.md), section 4), then check your payout schedule in Stripe (**Open Stripe Connect** on the same tab). Daily automatic payouts are recommended.
 
 ## Before the first day of the event

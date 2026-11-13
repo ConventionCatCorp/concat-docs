@@ -18,7 +18,7 @@ How orders work, finding an order, unpaid orders, paid orders, and correcting a 
 An attendee has at most one unpaid order per convention. It's their cart, and staff see the same order in Housekeeping.
 </Sidenote>
 
-An order is created when something first goes into the cart, and stays **Unpaid** until paid in full: by card, by a voucher that covers it, or by staff marking it paid (section 3). A paid order can't be changed or cancelled, only refunded.
+An order is created when something first goes into the cart, and stays **Unpaid** until paid in full: by card, by a voucher that covers it, or by staff marking it paid (section 3). A paid order can't be changed or canceled, only refunded.
 
 <TableFigure title="Order badges">
 
@@ -26,7 +26,7 @@ An order is created when something first goes into the cart, and stays **Unpaid*
 | --- | --- |
 | **Unpaid** | Still a cart; can be changed. |
 | **Paid** | Paid, and nothing refunded. |
-| **Canceled** | Cancelled before it was paid. <small>The list's filter is spelled **Cancelled**.</small> |
+| **Canceled** | Canceled before it was paid. <small>The list's filter is spelled **Cancelled**.</small> |
 | **Partially Refunded**, **Refunded** | Some or all of the money paid has been refunded. |
 | **Requires Fulfillment** | Every item in the paid order is a physical product still to hand over. |
 | **Requires Partial Fulfillment** | Some items are still to hand over. |
@@ -40,7 +40,7 @@ Only if you set **Cart Timeout** (marked experimental), in the **General** card 
 
 When time runs out, ConCat cancels the unpaid order and returns its items to stock, once any card payment still processing has settled. Attendees see a countdown at checkout ([Checkout and payment](./checkout.md)). Products staff add (section 3) are marked **Timeout Override** and don't start the clock.
 
-ConCat doesn't email the attendee when an order is cancelled, by staff or by timeout.
+ConCat doesn't email the attendee when an order is canceled, by staff or by timeout.
 
 ### Who can do what
 
@@ -166,12 +166,12 @@ If vouchers or earlier payments already cover the order, **Mark as Paid** has no
    <Result>An **Order has been canceled!** message appears, the status shows **Canceled**, and the items move to a **Canceled** card.</Result>
 
 :::caution[Watch out]
-**Cancel Order** acts at once, with no confirmation, and can't be undone. The items go back into stock. A paid order can't be cancelled; refund it instead ([Refunds](./refunds.md)).
+**Cancel Order** acts at once, with no confirmation, and can't be undone. The items go back into stock. A paid order can't be canceled; refund it instead ([Refunds](./refunds.md)).
 :::
 
 ## Paid orders
 
-### Fulfil physical products
+### Fulfill physical products
 
 <Sidenote title="Deliverable">
 **Deliverable** is under **Cashier** in the store product form, ticked by default. Untick it for anything nobody hands over, such as a donation. Badge products are never deliverable.
@@ -187,7 +187,7 @@ Only items whose product has **Deliverable** ticked need fulfilling, which recor
 
    <Result>The items move to the **Fulfilled** card. Once nothing is left, **Mark as Fulfilled** goes away and the list badge becomes **Fulfilled?**.</Result>
 
-The dialog has no "select all" and can't fulfil part of a quantity. ConCat doesn't email the attendee. To reverse a mistake, use **Undo Delivery** (section 5).
+The dialog has no "select all" and can't fulfill part of a quantity. ConCat doesn't email the attendee. To reverse a mistake, use **Undo Delivery** (section 5).
 
 ### Resend the confirmation email
 
@@ -209,7 +209,7 @@ A paid order has **Refund Order**, or **Approve Refund** and **Reject Refund** w
 
 ## Correct a single item
 
-Items can have a **⋯** menu, labelled **Options**, with corrections for that item (Table 5.1). It appears only when at least one applies.
+Items can have a **⋯** menu, labeled **Options**, with corrections for that item (Table 5.1). It appears only when at least one applies.
 
 <TableFigure title="The item menu">
 

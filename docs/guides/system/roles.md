@@ -173,7 +173,7 @@ The default **hr** role can give roles but can't open **System › Roles**, so H
   ]}
 >
 
-1. **Global**: not given at that level (grey).
+1. **Global**: not given at that level (gray).
 2. **Convention**: given for this convention (highlighted).
 
 </Figure>

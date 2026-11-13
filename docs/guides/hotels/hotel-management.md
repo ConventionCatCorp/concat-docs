@@ -125,7 +125,7 @@ A day before **Release Start At**, ConCat draws the winners (Random Draw) or sta
 
    <Result>A **Successfully updated release group** message appears. Attendees who can see the block now find it under **Active blocks** on their hotel page.</Result>
 
-Without a connection (section 2), the form shows a warning and **Submit** is greyed out.
+Without a connection (section 2), the form shows a warning and **Submit** is grayed out.
 
 <TableFigure title="Release group fields">
 
@@ -159,7 +159,7 @@ An attendee may enter when they meet **Require Registration** and **Require Not 
 
 1. On the **Release Groups** tab, click the edit button (<MaterialIcon name="edit" />) on the block's card.
 
-   <Result>The **Update Release Group** form opens; **Type** is greyed out.</Result>
+   <Result>The **Update Release Group** form opens; **Type** is grayed out.</Result>
 
 2. Change what you need, then click **Submit**.
 

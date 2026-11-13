@@ -14,15 +14,17 @@ Creating a user, finding a user, and roles and permissions.
 
 ## Create a user
 
-<Sidenote title="Most people sign up themselves">
-Attendees and most staff create their own accounts from your homepage. Create one by hand only for someone who can't, or on someone's behalf.
-</Sidenote>
+:::tip[Most people sign up themselves]
+Attendees and most staff create their own accounts from your homepage. Create one by hand only if it is necessary.
+:::
 
 1. Go to **Housekeeping › System › User Creation**.
 
    <Result>The **Manual Account Creation** page opens.</Result>
 
-2. Fill in **Reason for manual creation** (written to the audit log) and the person's details: **Username**, **Email Address**, **First Name**, **Last Name**, **Preferred Name**, **Date of birth**, address and **Phone number**. Tick **Send the user an account confirmation email.** so they can confirm the address and set their own password, then click **Create User**.
+<Sidenote title="Auditing Manual Creation">The reason for the manual user creation is stored in the audit log. The preferred method of account creation is to have the user create their own account.</Sidenote>
+
+2. Fill in **Reason for manual creation** and the person's details: **Username**, **Email Address**, **First Name**, **Last Name**, **Preferred Name**, **Date of birth**, address and **Phone number**. Tick **Send the user an account confirmation email.** so they can confirm the address and set their own password, then click **Create User**.
 
    <Result>An **Account created.** message appears, and the new person's profile opens.</Result>
 

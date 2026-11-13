@@ -70,7 +70,7 @@ A barcode scanner ([Scanner](../registration/cashier/scanner.md)) fills in the s
   alt="User Search with docs typed in the search box, two people listed, and the Configure User Search Filters panel open below the filter button, with five switches."
   title="The search filters"
   markers={[
-    { n: 1, x: 92.8, y: 10.5, w: 5.4, h: 15.5 },
+    { n: 1, x: 94, y: 7, w: 5.4, h: 15.5 },
     { n: 2, x: 75.2, y: 22.9, w: 24.6, h: 67.7 },
   ]}
 >
@@ -94,12 +94,6 @@ A barcode scanner ([Scanner](../registration/cashier/scanner.md)) fills in the s
 
 ## Read the results
 
-<Sidenote title="Returning attendees">
-Shown only when **Show 'Returning Attendee' badge on the user profile.** is on, under **Users** on the **Convention** tab of **Housekeeping › System › Settings**.
-</Sidenote>
-
-Results and profile headers carry these status badges.
-
 <TableFigure title="Status badges">
 
 | Badge | Means |
@@ -120,10 +114,6 @@ Blue badges show the field that matched and its value: **Email:**, **Badge Name:
 
 ## Open a profile
 
-<Sidenote title="Sub-accounts">
-No **Notes**, **Orders**, **Volunteer** or **Dealer** tab; **Owner account** links to the parent. The parent's **Registration** row links each sub-account under **Other Accounts:**.
-</Sidenote>
-
 1. Click a person in the results.
 
    <Result>Their profile opens on the **Name** tab, with **[ID: …]** and status badges in the header. The address ends in `/housekeeping/attendees/user/` and the ID.</Result>
@@ -135,6 +125,10 @@ No **Notes**, **Orders**, **Volunteer** or **Dealer** tab; **Owner account** lin
 3. Hover over the icon after the attendance type in the **Registration** row.
 
    <Result>A green tick says *This user has an active entitlement that grants this attendance type.* and links to the paying order. A warning sign says *This user does not have an active order correlated with this registration.*: it isn't paid.</Result>
+
+:::tip[Sub-accounts]
+No **Notes**, **Orders**, **Volunteer** or **Dealer** tab; **Owner account** links to the parent. The parent's **Registration** row links each sub-account under **Other Accounts:**.
+:::
 
 The **Information** card can also show **Dealer** (`vendor:read`), **Volunteer** (`volunteer:read`) and **Hotel** rows, and, for a possible duplicate of a banned account, **Possible duplicate account with a ban**: see [User Notes](../usernotes/usernotes.md).
 

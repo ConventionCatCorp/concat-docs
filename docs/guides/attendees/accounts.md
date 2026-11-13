@@ -54,7 +54,7 @@ The age buttons come from the **Child Age Threshold** and **Minor Age Threshold*
 
 2. Click the first button (born before the date).
 
-   <Result>A **Convention Policies** card shows your terms with two checkboxes; **Continue** stays greyed out until both are ticked.</Result>
+   <Result>A **Convention Policies** card shows your terms with two checkboxes; **Continue** stays grayed out until both are ticked.</Result>
 
 3. Tick both checkboxes and click **Continue**.
 
@@ -70,7 +70,7 @@ The youngest age button ends at a **We're sorry** card showing your **Child Regi
 
 :::note[Settings that change this form]
 - **Require e-mail confirmation before login.** (on by default; under **Users** on the **Convention** tab of **Housekeeping › System › Settings**): when off, step 4 logs the attendee straight in. The confirmation email is still sent.
-- **Personal details and reCAPTCHA:** ConCat sets the name, birth date and address fields, and a reCAPTCHA box, for your instance; ask ConCat to change them. While the reCAPTCHA box shows, **Create Your Account** stays greyed out until it's ticked.
+- **Personal details and reCAPTCHA:** ConCat sets the name, birth date and address fields, and a reCAPTCHA box, for your instance; ask ConCat to change them. While the reCAPTCHA box shows, **Create Your Account** stays grayed out until it's ticked.
 :::
 
 ### Confirm the email address
@@ -213,7 +213,7 @@ Changing the password sends a *Password Changed* email and logs the account out 
 
 2. Enter the **Current Password** and click **Update**.
 
-   <Result>The success message appears and the email field greys out. A *Request email change* email arrives at the new address.</Result>
+   <Result>The success message appears and the email field grays out. A *Request email change* email arrives at the new address.</Result>
 
 3. In that email, click the link.
 
@@ -259,7 +259,7 @@ Staff can invite people into a role, such as *staff*, with a link: see [Users an
 
 1. Log in as the invited person, then open the invite link.
 
-   <Result>The **Role Invite Code** page names the role, with **Click here to accept** and **Click here to decline**. Someone who already has the role sees a greyed-out **You already have this role.** button.</Result>
+   <Result>The **Role Invite Code** page names the role, with **Click here to accept** and **Click here to decline**. Someone who already has the role sees a grayed-out **You already have this role.** button.</Result>
 
 2. Click **Click here to accept**.
 

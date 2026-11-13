@@ -6,7 +6,7 @@ textbook: true
 
 # Convention setup
 
-Set your event's identity, venue and dates, policies, payments and email. All of it is on one Housekeeping page, **System › Settings**.
+Set your event's identity, venue and dates, policies, payments and email. 
 
 :::info[In this guide]
 Event info, venue and dates, terms and policies, payment and email.
@@ -58,7 +58,7 @@ This page needs the permission to update system settings. Your trial's administr
   alt="The Conventions tab: a table with Long Name, Short Name, Dates and Domain columns, a green add button in the header row, and a View button on the convention's row."
   title="The Conventions tab"
   markers={[
-    { n: 1, x: 79.8, y: 11, w: 5.4, h: 32.5 },
+    { n: 1, x: 79.6, y: 8, w: 5.4, h: 32.5 },
     { n: 2, x: 0.7, y: 44.7, w: 98.6, h: 49.4 },
   ]}
 >
@@ -123,7 +123,7 @@ The child and minor age thresholds are set in [Registration setup](./registratio
 ConCat connects your organization's own Stripe account through Stripe Connect. One connection covers every convention in your organization.
 </Sidenote>
 
-ConCat takes card payments through Stripe. Brazilian organizations can add PagSeguro (step 6).
+ConCat takes card payments through Stripe. 
 
 1. Click the **Payment Gateways** tab.
 
@@ -144,10 +144,6 @@ ConCat takes card payments through Stripe. Brazilian organizations can add PagSe
 5. If the status shows **More information required**, click **Open Stripe Connect**, give Stripe what it asks for, then come back and click **Refresh**.
 
    <Result>The status changes to **Status: Connected**.</Result>
-
-6. *(Optional, Brazil)* Under **PagSeguro Checkout** › **Add Token**, enter the PagSeguro API **Hostname** and the 100-character **Token** PagSeguro gave you, then click **Save**.
-
-   <Result>The section shows the **Base** hostname and **Token** you entered, with a **Remove Credentials** button.</Result>
 
 :::caution[Watch out]
 - **Country and currency:** ConCat sets them for your organization, and a trial starts in US dollars. Ask ConCat Support to change them *before* you connect Stripe.

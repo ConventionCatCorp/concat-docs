@@ -40,7 +40,7 @@ A badge product is a tier attendees register for, such as *General Admission* or
 
 | Section | Fields |
 | --- | --- |
-| (top) | **Name**, **Display Name** (optional), **Description**, **Product visibility**: **Public** (listed to anyone who meets the restrictions), **Unlisted** (for sale but not listed in the store) or **Hidden** (not for sale; only given automatically) |
+| **Product** | **Name**, **Display Name** (optional), **Description**, **Product visibility**: **Public** (listed to anyone who meets the restrictions), **Unlisted** (for sale but not listed in the store) or **Hidden** (not for sale; only given automatically) |
 | **Pricing** | **Base Price**, **Pass Platform Fee to Customer** |
 | **Stock Control** | **Expires On**, **Limit Available Stock** |
 | **Cashier** | **Product Label Print Design** <small>Overrides the default badge design for this tier.</small> |

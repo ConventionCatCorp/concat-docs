@@ -9,7 +9,7 @@ textbook: true
 Set your event's name, logo, venue, dates, store and account options, maintenance mode and sidebar links, and see ConCat's platform fees.
 
 :::info[In this guide]
-The System Settings tabs; logo and event info; venue, dates, store and user options; maintenance mode; cancelling a pending PII clear; custom menu links; platform fees.
+The System Settings tabs; logo and event info; venue, dates, store and user options; maintenance mode; canceling a pending PII clear; custom menu links; platform fees.
 :::
 
 ## The System Settings page

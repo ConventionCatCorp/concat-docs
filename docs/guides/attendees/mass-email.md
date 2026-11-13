@@ -23,8 +23,9 @@ You write the email, ConCat works out the recipients, and you review the final l
 - **The body is Markdown.** ConCat wraps it in the **Mass Email** template, with a greeting and your footer: see [Email Template Overrides](../templates/templates.md).
 - **The subject starts with your Notification Prefix,** as in every email your event sends.
 - **Some people are skipped.** Anyone with an unconfirmed email address or a registration ban doesn't get it. A sub-account without its own address gets it at the parent's.
-- **There's no scheduling, test send or sent-mail history.** The email goes as soon as you confirm.
-
+:::warning[Sent on confirmation]
+**There's no scheduling, test send or sent-mail history.** The email goes as soon as you confirm.
+:::
 <TableFigure title="The four Mass Email pages">
 
 | Menu path | Permission | Chooses recipients by |

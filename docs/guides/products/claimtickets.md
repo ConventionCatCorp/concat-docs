@@ -26,9 +26,9 @@ When staff print a badge at the Cashier UI, ConCat also prints claim tickets for
 
 Print on plain labels or onto ticket stock you've had printed.
 
-<Figure src="/img/tutorial/claimTicketsCat.jpg" alt="A grey cat lying among printed claim tickets, each with a label naming a meet-and-greet." title="Claim tickets in use" width="60%">
+<Figure src="/img/tutorial/claimTicketsCat.jpg" alt="A gray cat lying among printed claim tickets, each with a label naming a meet-and-greet." title="Claim tickets in use" width="60%">
 
-Claim tickets printed at an event, each labelled with the meet-and-greet it was bought for. Photo provided by OffKai Expo.
+Claim tickets printed at an event, each labeled with the meet-and-greet it was bought for. Photo provided by OffKai Expo.
 
 </Figure>
 

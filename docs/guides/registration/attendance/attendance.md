@@ -56,9 +56,9 @@ Unlike **Store Products**, this page has no categories. **Category Surcharges** 
 
 | Section | Fields |
 | --- | --- |
-| (top) | **Name**, **Display Name** <small>Optional: the name attendees see, if different.</small>, **Description**, **Product visibility** |
-| **Pricing** | **Base Price** <small>At creation only; later, use the **Prices** card.</small>, **Pass Platform Fee to Customer** |
-| **Stock Control** | **Expires On** <small>Registration only: paid badges of this tier expire after it. Must be on or after **Available Until**; a warning icon appears if they differ.</small>, **Limit Available Stock** <small>How many can be sold. Off: no limit.</small> |
+| **Tier** | **Name**, **Display Name** (Optional: the name attendees see, if different.) <p>**Description**, **Product visibility**</p> |
+| **Pricing** | **Base Price** (At creation only; later, use the **Prices** card)<p>**Pass Platform Fee to Customer**</p> |
+| **Stock Control** | **Expires On**, **Limit Available Stock** |
 | **Cashier** | **Product Label Print Design** <small>Prints this tier's badges with the chosen design instead of the default. See [Badge Designer](../badge_designer.md).</small> |
 | **Restrictions** | **Available From**, **Available Until**, **Minimum Purchase Age**, **Maximum Purchase Age**, **Product Role Whitelist**, **Product Role Blacklist**, **Restrict product to grants** |
 

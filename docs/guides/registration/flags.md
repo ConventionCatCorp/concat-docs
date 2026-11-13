@@ -18,7 +18,7 @@ How flags work, creating a flag, editing and deleting flags, who set a flag, and
 **Registration Flags** needs `registration:update`, which the default *admin* and *registration* roles have.
 </Sidenote>
 
-The form's **Registration flags** element ([Registration form editor](./form-editor.md), section 5) shows each flag as a checkbox labelled with its **Description**. Once ticked, its **Enabled description** appears below, for example to thank the attendee. Flags appear in **Sort order**, and only if **Make visible to attendees** is ticked.
+The form's **Registration flags** element ([Registration form editor](./form-editor.md), section 5) shows each flag as a checkbox labeled with its **Description**. Once ticked, its **Enabled description** appears below, for example to thank the attendee. Flags appear in **Sort order**, and only if **Make visible to attendees** is ticked.
 
 **Short Name** identifies the flag inside ConCat and can't be changed later. A new convention starts with the flags in Table 1.1.
 
@@ -99,14 +99,14 @@ To stop offering a flag but keep who set it, untick **Make visible to attendees*
 ## Clear the data of nukeme attendees
 
 <Sidenote title="Who can do this">
-Requesting the clear also needs `system:export`. Cancelling it needs `staff:admin:update`, `pii:admin:read`, `pii:admin:delete` and `system:settings:update`. The default *admin* role has them all.
+Requesting the clear also needs `system:export`. Canceling it needs `staff:admin:update`, `pii:admin:read`, `pii:admin:delete` and `system:settings:update`. The default *admin* role has them all.
 </Sidenote>
 
 Attendees who tick `nukeme` ask for their account to be deleted after the convention. Once it has ended, you can request that ConCat clear the personal data (PII) of all of them. The clear runs 24 hours after the request, leaving time to cancel.
 
 1. On the `nukeme` row, click the **Clear "nukeme" PII?** button (a crossed-out people icon).
 
-   <Result>A **Clear "nukeme" PII?** dialog warns that the PII will be cleared in 24 hours unless cancelled, and that this is irreversible.</Result>
+   <Result>A **Clear "nukeme" PII?** dialog warns that the PII will be cleared in 24 hours unless canceled, and that this is irreversible.</Result>
 
 2. *(Optional)* Tick **Delete Dealer Data** or **Delete Volunteer Data** to also clear these attendees' dealer or volunteer applications. Tick **Exclude specific users?** and choose attendees to leave out. Then click **Request to Clear PII**.
 

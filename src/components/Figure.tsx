@@ -6,7 +6,7 @@ import styles from './figure.module.scss';
 /**
  * A numbered marker drawn over the image. `x`, `y`, `w` and `h` are percentages of the image's
  * width and height. With `w` and `h` the marker outlines that area and puts its number on the
- * top-right corner; without them it is a single numbered badge centred on (x, y).
+ * top-right corner; without them it is a single numbered badge centered on (x, y).
  */
 export interface FigureMarker {
   n: number;

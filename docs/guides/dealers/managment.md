@@ -125,7 +125,7 @@ It only unlinks the payment from the application; the order stays paid. To give 
 
 1. Click the pencil button (**Edit**) on the paid application's card.
 
-   <Result>**Status**, **Table** and **Requests** are greyed out, with a red bin button next to **Status**.</Result>
+   <Result>**Status**, **Table** and **Requests** are grayed out, with a red bin button next to **Status**.</Result>
 
 2. Click the bin button.
 

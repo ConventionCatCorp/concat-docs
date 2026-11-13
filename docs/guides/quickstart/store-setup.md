@@ -76,10 +76,10 @@ To change the price later, click **Change Price** in the **Prices** card, enter 
   title="An image's gear menu"
   width="642px"
   markers={[
-    { n: 1, x: 87.9, y: 4.6, w: 8.3, h: 10.5 },
-    { n: 2, x: 5.8, y: 55.9, w: 9.7, h: 6 },
-    { n: 3, x: 39.3, y: 55.3, w: 8.3, h: 15.8 },
-    { n: 4, x: 39.3, y: 64.3, w: 33.6, h: 33.9 },
+    { n: 1, x: 89.2, y: 3, w: 8.3, h: 10.5 },
+    { n: 2, x: 5.8, y: 54.8, w: 9.7, h: 6 },
+    { n: 3, x: 39.8, y: 54, w: 8.3, h: 10 },
+    { n: 4, x: 39.8, y: 63.8, w: 33.6, h: 33.9 },
   ]}
 >
 

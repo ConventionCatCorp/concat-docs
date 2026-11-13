@@ -73,6 +73,6 @@ Staff who open another attendee's ticket page see *You are in staff mode. You ar
 Scanning needs `admin:ticket:scan`, which the default *admin* role has.
 </Sidenote>
 
-Staff scan tickets with ConCat's QuikTicket app, on a phone or tablet authorised with **Authorize New Device** in **Housekeeping › Attendees › Devices**. An authorisation lasts 6 hours; see [Devices and QuikTicket](../registration/cashier/devices.md).
+Staff scan tickets with ConCat's QuikTicket app, on a phone or tablet authorized with **Authorize New Device** in **Housekeeping › Attendees › Devices**. An authorization lasts 6 hours; see [Devices and QuikTicket](../registration/cashier/devices.md).
 
 Each ticket scans once. ConCat refuses a ticket already scanned, one scanned before its group's **Valid From** or after its **Valid Until**, and one for a different event or attendee.

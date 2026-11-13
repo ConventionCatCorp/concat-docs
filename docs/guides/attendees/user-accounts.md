@@ -31,10 +31,10 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
   alt="A test attendee's profile on the Name tab: the tabs Name, Notes, Orders, Roles, Permissions, Volunteer, Dealer and Audit; the User Profile card with pencil, download and delete buttons; the Information card; and the Actions card."
   title="A profile's Name tab"
   markers={[
-    { n: 1, x: 0.8, y: 12.4, w: 98.4, h: 6.8 },
-    { n: 2, x: 38.5, y: 21.7, w: 8.8, h: 4.6 },
-    { n: 3, x: 92.8, y: 29.1, w: 4.9, h: 6.3 },
-    { n: 4, x: 50.8, y: 64.7, w: 48.4, h: 34 },
+    { n: 1, x: 0.8, y: 11.5, w: 98.4, h: 6.8 },
+    { n: 2, x: 39.3, y: 20.6, w: 8.8, h: 4.6 },
+    { n: 3, x: 94.2, y: 28, w: 4.9, h: 6.3 },
+    { n: 4, x: 51.6, y: 63.5, w: 48.4, h: 34 },
   ]}
 >
 
@@ -46,9 +46,8 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
 </Figure>
 
 :::caution[Watch out]
-- **Email address:** the change waits until the person clicks the link sent to the new address; until then the card shows the old one with a warning sign. One change per 24 hours (*You can only change your email once every 24 hours.*).
-- **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is … years old.*). You can't change your own here.
-- **Address:** sub-accounts with the same address and phone number change with it.
+- **Email address:** the change waits until the person clicks the link sent to the new address; until then the card shows the old one with a warning sign. One change per 24 hours.
+- **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is … years old.*).
 :::
 
 ## Help someone sign in
@@ -69,7 +68,7 @@ The **Actions** card on the **Name** tab holds the sign-in tools, for staff with
 
 ### Let an unconfirmed attendee log in
 
-When **Require e-mail confirmation before login.** is on (the default), a new account can't log in until its owner clicks the link in the confirmation email.
+When **Require e-mail confirmation before login** is on (the default), a new account can't log in until its owner clicks the link in the confirmation email.
 
 1. In the **Actions** card, click **Allow user to login**.
 
@@ -172,8 +171,8 @@ The audit history records sign-ins, changes, staff actions and views of personal
   width="600px"
   markers={[
     { n: 1, x: 0, y: 5.9, w: 7.2, h: 30.6 },
-    { n: 2, x: 6.7, y: 52.6, w: 14.3, h: 21 },
-    { n: 3, x: 25.4, y: 74.4, w: 18.5, h: 25 },
+    { n: 2, x: 6.7, y: 45, w: 14.3, h: 21 },
+    { n: 3, x: 25.4, y: 70, w: 18.5, h: 25 },
   ]}
 >
 
@@ -207,7 +206,11 @@ Use this when a person asks for a copy of their data.
 Needs `user:update`, `staff:admin:update`, `pii:admin:read` and `pii:admin:delete`; by default only *admin* has them.
 </Sidenote>
 
-Deletion runs 24 hours after the request, erasing the account's personal information; until then you can cancel. You can't delete your own account this way (*You cannot delete your account this way.*) or another administrator's (*You cannot delete other administrators.*).
+Deletion runs 24 hours after the request, erasing the account's personal information; until then you can cancel. 
+
+:::warning[Warning] 
+You can't delete your own account this way or another administrator's.
+:::
 
 1. On the person's profile, click the delete button (<MaterialIcon name="delete" />) in the **User Profile** card.
 

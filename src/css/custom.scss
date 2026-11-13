@@ -1,5 +1,5 @@
 @use '@site/src/css/variables' as *;
-// Design tokens (colours, fonts, shapes, spacing) and the Infima overrides built from them.
+// Design tokens (colors, fonts, shapes, spacing) and the Infima overrides built from them.
 @use '@site/src/css/tokens';
 // Textbook article styling, scoped to pages with `textbook: true` in front matter.
 @use '@site/src/css/textbook';

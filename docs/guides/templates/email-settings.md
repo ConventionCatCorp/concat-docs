@@ -54,7 +54,7 @@ A domain can be set for the organization, covering every convention, or for one 
 
    <Result>The card says *The domain is currently set to the default,* `concat.app` again, or shows the other scope's domain if it has one.</Result>
 
-:::note[Cancelling or failing]
+:::note[Canceling or failing]
 - To abandon an unverified request, click **Cancel** next to **Verify**, then **Confirm**. *Request was successfully canceled.* appears. A new request needs new DNS records.
 - *An error has occurred. Cancel this attempt and try again, or contact support.* means verification failed. Cancel and start again from step 2.
 - If verification takes more than 24 hours, contact ConCat Support.

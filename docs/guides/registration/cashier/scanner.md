@@ -6,7 +6,7 @@ textbook: true
 
 # Scanner
 
-Scan an attendee's driver's licence or registration QR code, and the Cashier UI looks them up for you.
+Scan an attendee's driver's license or registration QR code, and the Cashier UI looks them up for you.
 
 :::info[In this guide]
 Codes the station reads, scanner modes, TEEMI setup, adding a Web Serial scanner, and registration QR codes.
@@ -20,7 +20,7 @@ The Cashier UI reads the codes in Table 1.1. Anything else a Web Serial scanner 
 
 | Code | Where it comes from | What the station does |
 | --- | --- | --- |
-| ID barcode (PDF417) | The back of a US-style driver's licence or ID card. Starts with `@ANSI`. | Searches by the ID's name and date of birth. If one attendee matches, opens their page and checks the ID ([Cashier UI](./cashier.md), section 7). |
+| ID barcode (PDF417) | The back of a US-style driver's license or ID card. Starts with `@ANSI`. | Searches by the ID's name and date of birth. If one attendee matches, opens their page and checks the ID ([Cashier UI](./cashier.md), section 7). |
 | Registration QR code | The confirmation email or **Attendance** page, if your event has registration QR codes (section 5). Starts with `@CONCAT;UUID`. | Opens the attendee whose registration it is. |
 
 </TableFigure>

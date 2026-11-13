@@ -91,7 +91,7 @@ Post a notice, such as a deadline or a venue change, at the top of every attende
 
    <Result>The message is hidden and the button reads **Show details**.</Result>
 
-The card's colour follows the importance you chose. The notice also shows in the waiting room (section 6).
+The card's color follows the importance you chose. The notice also shows in the waiting room (section 6).
 
 ## Registration cards
 
@@ -133,9 +133,9 @@ Each person on the account has a card under **Your registration**, registered pe
   alt="A test attendee's registration card: name, badge product, a green Registered badge, ID and badge name, with the menu next to Modify open, listing Edit personal details, View order and Transfer registration."
   title="A registration card and its menu"
   markers={[
-    { n: 1, x: 8.8, y: 53, w: 15.1, h: 16.1 },
-    { n: 2, x: 93.1, y: 13.1, w: 3.9, h: 21.2 },
-    { n: 3, x: 70.2, y: 31.1, w: 26.8, h: 65.1 },
+    { n: 1, x: 9.2, y: 49, w: 15.1, h: 16.1 },
+    { n: 2, x: 94.6, y: 9.8, w: 3.9, h: 19 },
+    { n: 3, x: 71.8, y: 27.5, w: 26.8, h: 65.1 },
   ]}
 >
 
@@ -158,7 +158,7 @@ Each person on the account has a card under **Your registration**, registered pe
 
 </TableFigure>
 
-If the attendee can't register another person yet, a sub-account's **Register** is grey, and clicking it says why, such as *Enter your own registration details first before adding other attendees.* See [Sub-accounts, children and minors](../registration/sub-accounts.md), and [Scanner](../registration/cashier/scanner.md) for the **QR code**. Buyers of ticketed products get a **Tickets** list below the cards: see [Ticketed products](../products/tickets.md).
+If the attendee can't register another person yet, a sub-account's **Register** is gray, and clicking it says why, such as *Enter your own registration details first before adding other attendees.* See [Sub-accounts, children and minors](../registration/sub-accounts.md), and [Scanner](../registration/cashier/scanner.md) for the **QR code**. Buyers of ticketed products get a **Tickets** list below the cards: see [Ticketed products](../products/tickets.md).
 
 ## The footer and changelog
 

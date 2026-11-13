@@ -6,7 +6,7 @@ textbook: true
 
 # What dealers see when they apply
 
-Follow a dealer application from the dealer's side: profile, application, payment, assistants and neighbours. Use a test attendee account to check your setup before you open applications.
+Follow a dealer application from the dealer's side: profile, application, payment, assistants and neighbors. Use a test attendee account to check your setup before you open applications.
 
 :::info[In this guide]
 Opening the application, the dealer profile, applying for space, status and payment, naming assistants, assistant confirmation, and seating preferences.
@@ -41,7 +41,7 @@ If the dealer can't apply, the page says why (Table 1.1).
 
 The first page is your dealer form ([Dealer settings, policy and form](./settings.md), section 4). Dealers who applied at one of your earlier conventions find it filled in, with *We've automatically filled in some of the details from a previous application.*
 
-1. Fill in the form, tick the **Dealer Policy** agreement, and click **Continue** (greyed out until every required agreement is ticked).
+1. Fill in the form, tick the **Dealer Policy** agreement, and click **Continue** (grayed out until every required agreement is ticked).
 
    <Result>A **Your dealer information has been saved.** message appears, and the space application opens at `/dealer/space`.</Result>
 
@@ -65,7 +65,7 @@ With one enabled area, the dealer goes straight to its application. With several
 
    <Result>A **Your dealer application has been deleted.** message appears.</Result>
 
-A **Pending** application can be updated or deleted. Once your team sets another status, the form is greyed out with *The application is* followed by the status, *and can not be modified.* Full and closed areas show the messages in [Dealer areas and table types](./areas-and-products.md), Table 4.1.
+A **Pending** application can be updated or deleted. Once your team sets another status, the form is grayed out with *The application is* followed by the status, *and can not be modified.* Full and closed areas show the messages in [Dealer areas and table types](./areas-and-products.md), Table 4.1.
 
 ## Status and paying for the table
 

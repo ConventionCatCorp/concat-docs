@@ -47,7 +47,9 @@ Registrations staff create start unpaid: the person pays at checkout, or staff t
 
    <Result>The dialog closes, and the **Registration** row shows the new registration.</Result>
 
+:::warning[Force Registration]
 **Force Registration** appears when the badge product can't be sold (sold out, or outside its sale dates), and warns *This will override any product stock limits, expired products, and age restrictions.* If the person fails the product's age rules, there's no dialog: *This product is age restricted and cannot be purchased.* appears, and you need another product.
+:::
 
 :::note[Gatekeeping products]
 For a gatekept badge product, the dialog adds **Silo Options**, with a **Status** for the person's ticket: `redeemed`, `rescinded`, `waiting` or `winner` (and `deleted`). See [Gatekeeping](../registration/raffle.md).
@@ -141,4 +143,4 @@ The tab lists the person's orders for this convention, plus paid orders from you
 
 Order cards can also show a refund message (yellow pending, red denied, green approved with the amount) or blue payment review flags. Ticketed products add **Retrieve Ticket(s)**.
 
-Payments, cancelling items and refunds are covered in [Orders](../orders/orders.md) and [Refunds](../orders/refunds.md).
+Payments, canceling items and refunds are covered in [Orders](../orders/orders.md) and [Refunds](../orders/refunds.md).

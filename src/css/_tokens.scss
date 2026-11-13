@@ -2,8 +2,8 @@
 @use 'sass:map';
 @use '@site/src/css/variables' as *;
 
-// Infima expects a primary colour plus six shades. Docusaurus derives them by scaling
-// the lightness by 10%, 15% and 30% in each direction; do the same from the brand colour.
+// Infima expects a primary color plus six shades. Docusaurus derives them by scaling
+// the lightness by 10%, 15% and 30% in each direction; do the same from the brand color.
 @mixin infima-primary($base) {
   $l: color.channel($base, 'lightness', $space: hsl);
   --ifm-color-primary: #{$base};
@@ -15,7 +15,7 @@
   --ifm-color-primary-lightest: #{color.adjust($base, $lightness: $l * 0.3, $space: hsl)};
 }
 
-// Sets the colours of one callout (admonition) kind: tinted background, left rule, label.
+// Sets the colors of one callout (admonition) kind: tinted background, left rule, label.
 @mixin callout($background, $rule, $label) {
   --ifm-alert-background-color: #{$background};
   --ifm-alert-background-color-highlight: #{color.change($rule, $alpha: 0.15)};
@@ -92,7 +92,7 @@
   --cc-shadow: 0 0.25rem 1rem rgb(0 0 0 / 40%);
 }
 
-// Callout colours, site-wide. Docusaurus maps note → secondary, tip → success, info → info,
+// Callout colors, site-wide. Docusaurus maps note → secondary, tip → success, info → info,
 // warning and caution → warning, danger → danger.
 .alert.theme-admonition-note {
   @include callout($ghost-white, map.get($independence-gray, 400), map.get($independence-gray, 600));

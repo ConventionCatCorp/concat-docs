@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 hide_table_of_contents: true
 textbook: true
 ---
@@ -12,50 +12,35 @@ Welcome to ConCat! These guides take you through setting up and running your eve
 Where to start, and how to read the guides.
 :::
 
-## Where to start
-
-<SplitColumn childStyle={{ width: '100%' }}>
-  <BigButton to="/docs/guides/quickstart/start-here" title="Quickstart" icon="not_started">
-    Set up a new event step by step, from trial sign-up to opening registration.
-  </BigButton>
-  <BigButton to="/docs/guides/registration/attendance" title="Attendance Tiers" icon="badge">
-    Create and manage registration tiers, with add-ons, discounts and more.
-  </BigButton>
-</SplitColumn>
-
 ## How to read these guides
 
-These guides share the conventions below. [Product Options](/docs/guides/products/options) is a complete example.
+These guides share the conventions below.
 
 ### Steps and results
 
 A task is a numbered list of steps. The **Result** under each step says what you should see once it has worked, so you can check it before going on. Try it:
 
-1. Click the light and dark mode button in the top bar of this site (tooltip *Switch between dark and light mode*).
+1. Click the light and dark mode button on the right side of the top bar.
 
-   <Result>The site switches between light and dark colours. Click the button again to switch back.</Result>
+   <Result>The site switches between light and dark colors. Click the button again to switch back.</Result>
 
 ### On-screen labels
-
-<Sidenote title="Why exact labels">
-Exact labels make each step easy to find on screen and easy to test.
-</Sidenote>
 
 Bold text is an exact label from ConCat: a menu item, button, field or message. A path such as **Housekeeping › Registration › Options** means clicking each item in turn.
 
 ### Callouts
 
-Coloured boxes hold information outside the steps. Table 2.1 lists each kind.
+Colored boxes hold information outside the steps. Table 2.1 lists each kind.
 
 <TableFigure title="Callouts used in these guides">
 
-| Label | Colour | What it holds |
+| Label | Color | What it holds |
 | --- | --- | --- |
 | In this guide | Blue | What the guide covers. |
 | Key idea | Blue | The one idea to take from a section. |
 | Watch out | Amber | Something that can go wrong or can't be undone. |
 | Tip | Green | A quicker or better way. |
-| Note | Grey | Extra detail you can skip. |
+| Note | Gray | Extra detail you can skip. |
 | Danger | Red | A step that can lose data or money. |
 
 </TableFigure>

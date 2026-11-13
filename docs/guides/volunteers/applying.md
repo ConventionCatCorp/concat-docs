@@ -26,7 +26,7 @@ The form is the one you build in [Volunteer settings and form](./settings.md), s
 
 1. As an attendee, click **Volunteering** under **Applications** in the homepage sidebar.
 
-   <Result>The **Volunteer Application** form opens. **Submit** is greyed out.</Result>
+   <Result>The **Volunteer Application** form opens. **Submit** is grayed out.</Result>
 
 2. Read the Code of Conduct and tick **Volunteer Terms**.
 
