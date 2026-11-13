@@ -10,8 +10,8 @@ export default function Privacy(): React.JSX.Element {
         <h1>Privacy Policy</h1>
         <div className={styles.subtitle}>Effective date: February 16, 2022</div>
         <p>
-          Convention Cat Event Systems, Inc. ("us", "we", or "our") operates the concat.app website (hereinafter
-          referred to as the "Service").
+          Convention Cat Event Systems, LLC ("us", "we", or "our") operates the concat.app website (hereinafter referred
+          to as the "Service").
         </p>
         <p>
           This page informs you of our policies regarding the collection, use and disclosure of personal data when you
@@ -29,7 +29,7 @@ export default function Privacy(): React.JSX.Element {
             <p>
               <strong>Service</strong>
             </p>
-            <p>Service is the concat.app website operated by Convention Cat Event Systems, Inc.</p>
+            <p>Service is the concat.app website operated by Convention Cat Event Systems, LLC</p>
           </li>
           <li>
             <p>
@@ -151,7 +151,7 @@ export default function Privacy(): React.JSX.Element {
         </ul>
 
         <h2>Use of Data</h2>
-        <p>Convention Cat Event Systems, Inc. uses the collected data for various purposes:</p>
+        <p>Convention Cat Event Systems, LLC uses the collected data for various purposes:</p>
         <ul>
           <li>To provide and maintain our Service</li>
           <li>To notify you about changes to our Service</li>
@@ -169,11 +169,11 @@ export default function Privacy(): React.JSX.Element {
 
         <h2>Legal Basis for Processing Personal Data under the General Data Protection Regulation (GDPR)</h2>
         <p>
-          If you are from the European Economic Area (EEA), Convention Cat Event Systems, Inc. legal basis for
-          collecting and using the personal information described in this Privacy Policy depends on the Personal Data we
-          collect and the specific context in which we collect it.
+          If you are from the European Economic Area (EEA), Convention Cat Event Systems, LLC legal basis for collecting
+          and using the personal information described in this Privacy Policy depends on the Personal Data we collect
+          and the specific context in which we collect it.
         </p>
-        <p>Convention Cat Event Systems, Inc. may process your Personal Data because:</p>
+        <p>Convention Cat Event Systems, LLC may process your Personal Data because:</p>
         <ul>
           <li>We need to perform a contract with you</li>
           <li>You have given us permission to do so</li>
@@ -183,13 +183,13 @@ export default function Privacy(): React.JSX.Element {
 
         <h2>Retention of Data</h2>
         <p>
-          Convention Cat Event Systems, Inc. will retain your Personal Data only for as long as is necessary for the
+          Convention Cat Event Systems, LLC will retain your Personal Data only for as long as is necessary for the
           purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to
           comply with our legal obligations (for example, if we are required to retain your data to comply with
           applicable laws), resolve disputes and enforce our legal agreements and policies.
         </p>
         <p>
-          Convention Cat Event Systems, Inc. will also retain Usage Data for internal analysis purposes. Usage Data is
+          Convention Cat Event Systems, LLC will also retain Usage Data for internal analysis purposes. Usage Data is
           generally retained for a shorter period of time, except when this data is used to strengthen the security or
           to improve the functionality of our Service, or we are legally obligated to retain this data for longer
           periods.
@@ -210,7 +210,7 @@ export default function Privacy(): React.JSX.Element {
           to that transfer.
         </p>
         <p>
-          Convention Cat Event Systems, Inc. will take all the steps reasonably necessary to ensure that your data is
+          Convention Cat Event Systems, LLC will take all the steps reasonably necessary to ensure that your data is
           treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take
           place to an organisation or a country unless there are adequate controls in place including the security of
           your data and other personal information.
@@ -219,26 +219,26 @@ export default function Privacy(): React.JSX.Element {
         <h2>Disclosure of Data</h2>
         <h3>Business Transaction</h3>
         <p>
-          If Convention Cat Event Systems, Inc. is involved in a merger, acquisition or asset sale, your Personal Data
+          If Convention Cat Event Systems, LLC is involved in a merger, acquisition or asset sale, your Personal Data
           may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a
           different Privacy Policy.
         </p>
 
         <h3>Disclosure for Law Enforcement</h3>
         <p>
-          Under certain circumstances, Convention Cat Event Systems, Inc. may be required to disclose your Personal Data
+          Under certain circumstances, Convention Cat Event Systems, LLC may be required to disclose your Personal Data
           if required to do so by law or in response to valid requests by public authorities (e.g. a court or a
           government agency).
         </p>
 
         <h3>Legal Requirements</h3>
         <p>
-          Convention Cat Event Systems, Inc. may disclose your Personal Data in the good faith belief that such action
-          is necessary to:
+          Convention Cat Event Systems, LLC may disclose your Personal Data in the good faith belief that such action is
+          necessary to:
         </p>
         <ul>
           <li>To comply with a legal obligation</li>
-          <li>To protect and defend the rights or property of Convention Cat Event Systems, Inc.</li>
+          <li>To protect and defend the rights or property of Convention Cat Event Systems, LLC</li>
           <li>To prevent or investigate possible wrongdoing in connection with the Service</li>
           <li>To protect the personal safety of users of the Service or the public</li>
           <li>To protect against legal liability</li>
@@ -304,7 +304,7 @@ export default function Privacy(): React.JSX.Element {
           <li>
             <p>
               <strong>The right to withdraw consent.</strong> You also have the right to withdraw your consent at any
-              time where Convention Cat Event Systems, Inc. relied on your consent to process your personal information.
+              time where Convention Cat Event Systems, LLC relied on your consent to process your personal information.
             </p>
           </li>
         </ul>
@@ -414,12 +414,12 @@ export default function Privacy(): React.JSX.Element {
 
         <h2>Customer Data Ownership</h2>
         <p>
-          Direct Convention Cat Event Systems, Inc. customers utilizing our Service may collect data from their own
-          customers at any time through the Service. Convention Cat Event Systems, Inc. takes no ownership of this data,
+          Direct Convention Cat Event Systems, LLC customers utilizing our Service may collect data from their own
+          customers at any time through the Service. Convention Cat Event Systems, LLC takes no ownership of this data,
           but rather its customers own the data they collect via the Service.
         </p>
         <p>
-          To this end, Convention Cat Event Systems, Inc. holds a limited non-exclusive license to this data for the
+          To this end, Convention Cat Event Systems, LLC holds a limited non-exclusive license to this data for the
           reasons of:
         </p>
         <ul>

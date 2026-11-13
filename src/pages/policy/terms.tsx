@@ -11,7 +11,7 @@ export default function Terms(): React.JSX.Element {
         <div className={styles.subtitle}>Effective date: February 16, 2022</div>
         <p>
           Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the concat.app
-          website (the "Service") operated by Convention Cat Event Systems, Inc. ("us", "we", or "our").
+          website (the "Service") operated by Convention Cat Event Systems, LLC ("us", "we", or "our").
         </p>
 
         <p>
@@ -92,12 +92,12 @@ export default function Terms(): React.JSX.Element {
           Content available to other users of the Service, who may also use your Content subject to these Terms.
         </p>
         <p>
-          Convention Cat Event Systems, Inc. has the right but not the obligation to monitor and edit all Content
+          Convention Cat Event Systems, LLC has the right but not the obligation to monitor and edit all Content
           provided by users.
         </p>
         <p>
-          In addition, Content found on or through this Service are the property of Convention Cat Event Systems, Inc.
-          or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said
+          In addition, Content found on or through this Service are the property of Convention Cat Event Systems, LLC or
+          used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said
           Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance
           written permission from us.
         </p>
@@ -105,7 +105,7 @@ export default function Terms(): React.JSX.Element {
         <h2>Customer Data</h2>
         <p>
           Our Service allows you to collect data for the purposes of conducting day to day business for your event.
-          Convention Cat Event Systems, Inc. holds a limited non-exclusive license to this data for the reasons of
+          Convention Cat Event Systems, LLC holds a limited non-exclusive license to this data for the reasons of
           providing our Service to you, and your customers. Such data may include:
         </p>
         <ul>
@@ -227,24 +227,24 @@ export default function Terms(): React.JSX.Element {
         <h2>Intellectual Property</h2>
         <p>
           The Service and its original content (excluding Content and Data provided by users), features and
-          functionality are and will remain the exclusive property of Convention Cat Event Systems, Inc. and its
+          functionality are and will remain the exclusive property of Convention Cat Event Systems, LLC and its
           licensors. The Service is protected by copyright, trademark, and other laws of both the United States and
           foreign countries. Our trademarks and trade dress may not be used in connection with any product or service
-          without the prior written consent of Convention Cat Event Systems, Inc..
+          without the prior written consent of Convention Cat Event Systems, LLC.
         </p>
 
         <h2>Links To Other Web Sites</h2>
         <p>
           Our Service may contain links to third party web sites or services that are not owned or controlled by
-          Convention Cat Event Systems, Inc.
+          Convention Cat Event Systems, LLC
         </p>
         <p>
-          Convention Cat Event Systems, Inc. has no control over, and assumes no responsibility for the content, privacy
+          Convention Cat Event Systems, LLC has no control over, and assumes no responsibility for the content, privacy
           policies, or practices of any third party web sites or services. We do not warrant the offerings of any of
           these entities/individuals or their websites.
         </p>
         <p>
-          You acknowledge and agree that Convention Cat Event Systems, Inc. shall not be responsible or liable, directly
+          You acknowledge and agree that Convention Cat Event Systems, LLC shall not be responsible or liable, directly
           or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or
           reliance on any such content, goods or services available on or through any such third party web sites or
           services.
@@ -269,7 +269,7 @@ export default function Terms(): React.JSX.Element {
 
         <h2>Indemnification</h2>
         <p>
-          You agree to defend, indemnify and hold harmless Convention Cat Event Systems, Inc. and its licensee and
+          You agree to defend, indemnify and hold harmless Convention Cat Event Systems, LLC and its licensee and
           licensors, and their employees, contractors, agents, officers and directors, from and against any and all
           claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to
           attorney's fees), resulting from or arising out of a) your use and access of the Service, by you or any person
@@ -278,7 +278,7 @@ export default function Terms(): React.JSX.Element {
 
         <h2>Limitation Of Liability</h2>
         <p>
-          In no event shall Convention Cat Event Systems, Inc., nor its directors, employees, partners, agents,
+          In no event shall Convention Cat Event Systems, LLC, nor its directors, employees, partners, agents,
           suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages,
           including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from
           (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any
@@ -296,7 +296,7 @@ export default function Terms(): React.JSX.Element {
           performance.
         </p>
         <p>
-          Convention Cat Event Systems, Inc. its subsidiaries, affiliates, and its licensors do not warrant that a) the
+          Convention Cat Event Systems, LLC its subsidiaries, affiliates, and its licensors do not warrant that a) the
           Service will function uninterrupted, secure or available at any particular time or location; b) any errors or
           defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of
           using the Service will meet your requirements.

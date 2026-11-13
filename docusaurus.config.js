@@ -137,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Convention Cat Event Systems, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Convention Cat Event Systems, LLC`,
       },
       prism: {
         additionalLanguages: ['http', 'csp', 'css', 'hpkp', 'hsts', 'javascript', 'json', 'markup', 'uri'],
