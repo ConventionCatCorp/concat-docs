@@ -261,7 +261,7 @@ export default function Privacy(): React.JSX.Element {
         <h2>Your Data Protection Rights under the General Data Protection Regulation (GDPR)</h2>
         <p>
           If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Convention
-          Cat Event Systems, Inc. aims to take reasonable steps to allow you to correct, amend, delete or limit the use
+          Cat Event Systems, LLC aims to take reasonable steps to allow you to correct, amend, delete or limit the use
           of your Personal Data.
         </p>
         <p>
@@ -334,7 +334,7 @@ export default function Privacy(): React.JSX.Element {
               <strong>Sentry</strong>
             </p>
             <p>
-              Sentry analyses errors on the website, and report to Convention Cat Event Systems, Inc about any potential
+              Sentry analyses errors on the website, and report to Convention Cat Event Systems LLC about any potential
               issues on the website.
             </p>
             <p>
