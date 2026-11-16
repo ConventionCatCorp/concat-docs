@@ -32,7 +32,7 @@ To print the art, use an **Image** element with **Source** `badgeDesign` in the 
 
 2. Click the upload box and choose one or more images, or drop them on it.
 
-   <Result>An **Upload Complete!** message appears. Each image gets a card with *Limit:* followed by *0 / ∞*, a **Configure limit** button and a delete button.</Result>
+   <Result>An **Upload Complete!** message appears. Each image gets a card with *Limit:0 / ∞*, a **Configure limit** button and a delete button.</Result>
 
 The first number is how many registrations use the image; the second is its limit.
 
@@ -44,10 +44,10 @@ The first number is how many registrations use the image; the second is its limi
 
 2. Tick **Enable limit**, enter the number of badges allowed, and click **Update**.
 
-   <Result>A **Badge art has been updated** message appears, and the card shows the limit, such as *Limit: 0 / 100*.</Result>
+   <Result>A **Badge art has been updated** message appears, and the card shows the limit, such as *Limit:0 / 100*.</Result>
 
 :::tip[The numbers are examples]
-The 100 in *Limit: 0 / 100* and the image ID in **Delete 3** are examples. The app shows how many badges have used each image, the limit you set, and the image's own ID.
+The 100 in *Limit:0 / 100* and the image ID in **Delete 3** are examples. The app shows how many badges have used each image, the limit you set, and the image's own ID.
 :::
 
 To remove a limit, untick **Enable limit** in **Configure limit** and click **Update**; the card shows *∞* again.
