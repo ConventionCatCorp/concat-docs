@@ -28,7 +28,7 @@ An order is created when something first goes into the cart, and stays **Unpaid*
 | **Paid** | Paid, and nothing refunded. |
 | **Canceled** | Canceled before it was paid. <small>The list's filter is spelled **Cancelled**.</small> |
 | **Partially Refunded**, **Refunded** | Some or all of the money paid has been refunded. |
-| **Requires Fulfillment** | Every item in the paid order is a physical product still to hand over. |
+| **Requires Fulfillment** | Every item in the paid order is still to hand over. |
 | **Requires Partial Fulfillment** | Some items are still to hand over. |
 | **Fulfilled?** | Nothing in the paid order is left to hand over. <small>The question mark is part of the label.</small> |
 
@@ -73,7 +73,7 @@ Buttons you lack the permission for are hidden, except in the item menu (section
 
    <Result>The order's page opens. The bar at the top shows its status (**Not Paid**, **Paid**, **Paid, but Partially Refunded**, **Paid, but Refunded** or **Canceled**) and your actions; Table 2.1 lists the rest.</Result>
 
-Orders must match every filter that's on, except that **Paid** and **Unpaid** together show both. **Requires Fulfillment** also matches unpaid orders, so add **Paid** to see only what's ready to hand over.
+Orders must match every filter that's on, except that **Paid** and **Unpaid** together show both. **Requires Fulfillment** also matches unpaid orders, so add **Paid** to see only what's ready to hand over. It counts only store products, so an order whose only items left to hand over are dealer tables isn't listed.
 
 For one attendee's orders, open their profile and click the **Orders** tab; **Show details** opens an order.
 
@@ -176,10 +176,10 @@ If nothing is left to pay, because the order is free or vouchers or earlier paym
 ### Fulfill physical products
 
 <Sidenote title="Deliverable">
-**Deliverable** is under **Cashier** in the store product form, ticked by default. Untick it for anything nobody hands over, such as a donation. Badge products are never deliverable.
+**Deliverable** is under **Cashier** in the store product form, ticked by default. Untick it for anything nobody hands over, such as a donation. Badge products are never deliverable, and dealer tables always are.
 </Sidenote>
 
-Only items whose product has **Deliverable** ticked need fulfilling, which records that staff handed them over.
+Only deliverable items need fulfilling, which records that staff handed them over.
 
 1. Open a paid order with a **Requires Fulfillment** or **Requires Partial Fulfillment** badge, then click **Mark as Fulfilled**.
 

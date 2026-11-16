@@ -154,7 +154,7 @@ A registration ban logs the person out at once, and they can't log back in. Chec
 ## Account reviews
 
 <Sidenote title="The email">
-Each review also emails *Registration Requires Review* to your registration address, set on the **Contact** tab of **Housekeeping › System › Settings**.
+When someone signs up and their new account goes into review, ConCat also emails *Registration Requires Review* to your registration address, set on the **Contact** tab of **Housekeeping › System › Settings**. Reviews of accounts staff create, of sub-accounts and of name changes send no email.
 </Sidenote>
 
 When an account or sub-account is created, or a person changes their name, ConCat compares the name with every ban in your organization, in any ban category. A match marks the account **Pending Review**, so someone can check whether it's the banned person signing up again.

@@ -205,3 +205,5 @@ Staff with `volunteer:read` see a person's application on their profile; with `v
    <Result>*Your volunteer application has been saved!* appears. If the form was empty, the person now has an application on **Applications**.</Result>
 
 Sub-accounts have no **Volunteer** tab. Saving here sends the person no confirmation email.
+
+With **Allow Parents to Volunteer** off, the form still opens for a person with child registrations, but **Submit** shows *One or more errors occurred while trying to process your request.* and *Parents cannot volunteer - Your kids come first.*

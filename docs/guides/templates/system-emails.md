@@ -113,7 +113,7 @@ These emails come from your **HR Email** address, except `registerNewReview` (fr
 
 | Template | Sent when | Sent to | Can be turned off |
 | --- | --- | --- | --- |
-| `registerNewReview` <small>Registration Requires Review</small> | A new account needs review, for example because it looks like a banned person's. | Your **Registration Email** address | Yes |
+| `registerNewReview` <small>Registration Requires Review</small> | Someone signs up, and the new account needs review, for example because it looks like a banned person's. | Your **Registration Email** address | Yes |
 | `exportRequest` <small>Data Export Request</small> | An admin requests access to personal data in exports. | Global admins | No |
 | `exportRequestApproved` <small>Data export request approved</small> | Another admin approves the request. | Global admins | No |
 | `exportRequestRejected` <small>Data export request rejected</small> | Another admin rejects the request. | Global admins | Yes |

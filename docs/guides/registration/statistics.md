@@ -37,12 +37,12 @@ Everything here needs `registration:stats`. Without it, both dashboards show **N
 | **Badges Printed** | At least one badge has been printed. |
 | **Accounts Pending Review** | An account is waiting for review, and you have `user:note:delete`. |
 | **Pending Refund Requests** | A refund request is waiting, and you have `refund:create`. The title links to **Refund Requests**. |
-| **Identity Verifications Left**, and a card per status, such as **Identity: verified** | ConCat Support has turned on identity verification for your event. |
+| **Identity Verifications Left**, and a card per status, such as **Identity: verified** or **Identity: requires_input** | ConCat Support has turned on identity verification for your event. |
 
 </TableFigure>
 
 :::tip[The names are examples]
-*General Admission* in **General Admission (Paid)** and *verified* in **Identity: verified** are examples. The app shows each tier's name and each identity verification status.
+*General Admission* in **General Admission (Paid)**, and *verified* and *requires_input* in the identity cards, are examples. The app shows each tier's name, and each identity verification status as ConCat stores it: *canceled*, *processing*, *processing_test*, *requires_input* or *verified*.
 :::
 
 ## The registration dashboard

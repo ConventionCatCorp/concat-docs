@@ -85,6 +85,8 @@ Instead of the form, the page can show a message from Table 5.1.
 | *Volunteer applications for the convention are currently closed.* | **Enable Volunteers** is off. The sidebar item is hidden too. | Turn it on (see [Volunteer settings and form](./settings.md), section 1). |
 | **Email verification required** <small>*Please verify your email address before applying.*</small> | The attendee hasn't confirmed their email address. | They click **Resend verification email** and follow the link in the email. |
 | *You are currently banned from volunteering at the convention.* <small>*Please contact hr@example.com if you think this is in error.*</small> | The attendee has a volunteer ban note. | See [User Notes](../usernotes/usernotes.md). |
-| *Volunteering while chaperoning a child is not allowed at this event.* <small>*Thanks for offering, but your kids are more important.*</small> | The attendee has child registrations, and **Allow Parents to Volunteer** is off. | Turn on **Allow Parents to Volunteer** if parents may volunteer. |
+| *Volunteering while chaperoning a child is not allowed at this event.* <small>*Thanks for offering, but your kids are more important.*</small> | The attendee has their own registration and child registrations, and **Allow Parents to Volunteer** is off. | Turn on **Allow Parents to Volunteer** if parents may volunteer. |
 
 </TableFigure>
+
+An attendee with child registrations but no registration of their own sees the form. With **Allow Parents to Volunteer** off, **Submit** then shows *One or more errors occurred while trying to process your request.* and *Parents cannot volunteer - Your kids come first.*

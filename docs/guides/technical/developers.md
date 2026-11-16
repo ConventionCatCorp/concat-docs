@@ -42,7 +42,7 @@ A webhook listens for one or more of the events in Table 2.1.
 | `volunteer-updated` | A volunteer application changes. |
 | `volunteer-assigned`, `volunteer-unassigned` | A volunteer is assigned to, or removed from, a department. |
 | `volunteer-deleted` | A volunteer application is deleted. |
-| `registration-created` | Never sent at present. <small>Use `registration-updated`.</small> |
+| `registration-created` | Not sent. New registrations are sent as `registration-updated`. |
 | `registration-updated` | A registration is created or changes. |
 | `user-updated` | A user's account details change. <small>Only sent to webhooks that fire for every convention.</small> |
 | `order-complete`, `order-canceled` | An order is completed or canceled. |
