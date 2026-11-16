@@ -68,7 +68,7 @@ The order number in **Order #13 — Tickets**, the product *Photo Shoot*, the sc
 A scanned ticket's barcode is marked **REDEEMED**, with the scan time, such as **Scanned At**: 10/3/2026, 2:15:00 PM.
 
 :::note[Staff viewing a ticket page]
-Staff who open another attendee's ticket page see *You are in staff mode. You are viewing the tickets of UID 7.*
+Staff who open another attendee's ticket page see *You are in staff mode. You are viewing the tickets of UID7.*
 :::
 
 ## Scanning tickets at the door

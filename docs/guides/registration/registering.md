@@ -97,10 +97,10 @@ Public paid addons for the tier are offered in a **Product addons** card below t
 
 1. On the result, click **Go to dashboard**. After **Order completed!**, open **Attendance** in the homepage sidebar instead.
 
-   <Result>**Attendance** opens. The status card says **Complete your registration** (or *You're registered for Starfall!*, if nothing was due); the attendee's card shows the tier, **Unpaid** or **Registered**, and the badge name, such as *Nova*.</Result>
+   <Result>**Attendance** opens. The status card says **Complete your registration** (or *You're registered for Star26!*, if nothing was due); the attendee's card shows the tier, **Unpaid** or **Registered**, and the badge name, such as *Nova*.</Result>
 
 :::tip[The names are examples]
-*Starfall* and the badge name *Nova* are examples. The app shows your convention's short name and the attendee's own badge name.
+*Star26* and the badge name *Nova* are examples. The app shows your convention's short name and the attendee's own badge name.
 :::
 
 ## Pay

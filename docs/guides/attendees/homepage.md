@@ -62,23 +62,23 @@ The status card at the top of **Attendance** tells the attendee what to do next.
 
 | Card heading | Shown when | Buttons |
 | --- | --- | --- |
-| *Ready to attend Starfall?* | Registration is open and the attendee hasn't registered. | **Start registration**, **Update personal info** |
+| *Ready to attend Star26?* | Registration is open and the attendee hasn't registered. | **Start registration**, **Update personal info** |
 | *Complete your registration* | Any registration on the account is unpaid. <small>Lists unpaid people when sub-accounts are on; counts down while unpaid items are held in the cart.</small> | **Complete registration**, which opens checkout |
-| *You're registered for Starfall!* | The attendee's own registration is paid and nothing is unpaid. | None |
+| *You're registered for Star26!* | The attendee's own registration is paid and nothing is unpaid. | None |
 | *Registration for Starfall Con 2026 is closed.* | **Open Registration** is off. <small>The rest of the page is hidden.</small> | **Update personal info** |
 
 </TableFigure>
 
 1. As a test attendee with no registration, while registration is open, click **Attendance** in the sidebar.
 
-   <Result>The *Ready to attend Starfall?* card appears with **Start registration** and **Update personal info**, and the attendee's own card below, under **Your registration**.</Result>
+   <Result>The *Ready to attend Star26?* card appears with **Start registration** and **Update personal info**, and the attendee's own card below, under **Your registration**.</Result>
 
 2. Click **Start registration**.
 
    <Result>The registration form opens at `/event/register/new`.</Result>
 
 :::tip[The names and numbers are examples]
-Names and numbers on this page are examples. The app shows your convention's short name (*Starfall*) or long name (*Starfall Con 2026*), the attendee's own name, each order's own number and ConCat's current version.
+Names and numbers on this page are examples. The app shows your convention's short name (*Star26*) or long name (*Starfall Con 2026*), the attendee's own name, each order's own number and ConCat's current version.
 :::
 
 With sub-accounts on, the heading reads **Your registrations**, with an **Attendees** counter and buttons to add people: see [Sub-accounts, children and minors](../registration/sub-accounts.md). Attendees with an unconfirmed email see a reminder banner: see [Attendee accounts and sign-in](./accounts.md), section 2.2. Registering is covered in [How attendees register](../registration/registering.md); opening registration in [Registration setup](../quickstart/registration-setup.md), section 7.
