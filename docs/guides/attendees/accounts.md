@@ -6,7 +6,7 @@ textbook: true
 
 # Attendee accounts and sign-in
 
-See what attendees get when they create an account, log in, recover a password and manage their account. Follow along with a test account.
+See what attendees get when they create an account, log in, recover a password and manage their account.
 
 :::info[In this guide]
 The login page, creating an account, email login links, forgotten passwords, two-factor authentication, account settings and email changes, personal details, links from staff and parents, and logging out and other conventions.
@@ -22,7 +22,7 @@ Anyone not logged in is sent to the login page, then back to the page they wante
 
 1. Open your instance's address in a private browser window, so you aren't logged in as yourself.
 
-   <Result>The **Welcome** page opens: your convention's card (logo, name, dates, venue, and any **Login Page Announcement**) and the **Login** card, with **Email me a login link**, **Create Your Account**, **Forgot Password?** and **Already Got a Reset Code?**.</Result>
+   <Result>The **Welcome** page opens: your convention's card (logo, name, dates and venue), any **Login Page Announcement** below it, and the **Login** card, with **Email me a login link**, **Create Your Account**, **Forgot Password?** and **Already Got a Reset Code?**.</Result>
 
 2. Enter a test account's email address or username and its password, then click **Login**.
 
@@ -159,7 +159,7 @@ An attendee who can't remember their password can ask for a link that logs them 
 
    <Result>**Success** and *Your password has been successfully reset and you can now login.* appear.</Result>
 
-The link works for 24 hours, and resetting also confirms the email address. With a code from staff at the convention, the attendee clicks **Already Got a Reset Code?** instead; the same page opens with a **Reset Code** field. Staff tools are in [Managing an attendee's account](./user-accounts.md), section 2.
+The link works for 24 hours, and resetting also confirms the email address. With a code from staff at the convention, the attendee clicks **Already Got a Reset Code?** instead; the same page opens with a **Reset Code** field.
 
 ## Two-factor authentication
 

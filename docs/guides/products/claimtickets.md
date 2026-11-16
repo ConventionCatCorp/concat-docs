@@ -74,7 +74,7 @@ Claim tickets need a badge design for the attendee: their badge product's design
 Marking items delivered needs `order:fulfill`. By default only the *admin* role has it.
 </Sidenote>
 
-Once paid for, products with **Deliverable** ticked (see [Products](./products.md), Table 3.1) are listed on the attendee's Cashier UI screen, so staff can hand them over with or without a claim ticket.
+Once paid for, products with **Deliverable** ticked are listed on the attendee's Cashier UI screen, so staff can hand them over with or without a claim ticket.
 
 1. Open the attendee in the Cashier UI (section 3, step 1).
 

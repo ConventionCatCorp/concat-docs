@@ -58,7 +58,7 @@ A permission allows one action, such as viewing orders. A role is a named set of
 
 2. Click a role's name.
 
-   <Result>The role's page opens, with the tabs **Users**, **Permissions**, **History**, **Invites** and **Settings**.</Result>
+   <Result>The role's page opens, with the tabs **Users**, **Permissions**, **History**, **Invites**, **Settings** and **Delete**.</Result>
 
 3. Click **Permissions** and choose **Default**, **Allow** or **Deny** for each permission (Figure 3.1).
 

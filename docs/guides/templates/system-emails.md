@@ -6,7 +6,7 @@ textbook: true
 
 # Emails ConCat sends
 
-The 33 emails ConCat sends: when, to whom, and whether you can turn each off. To reword or turn one off, see [Email Template Overrides](./templates.md), section 1.
+Look up when ConCat sends each of its 33 emails, to whom, and whether you can turn it off.
 
 :::info[In this guide]
 Reading this list, then accounts, orders and tickets, refunds, volunteers and staff, dealers, administration and hotels.
@@ -21,7 +21,7 @@ Some emails go to your global admins: everyone with the *admin* role for all con
 Each table gives the template's name, as on **System › Settings › Email Settings**, with its default subject below. **No** under **Can be turned off** means the template is required and can only be reworded.
 
 - **Subject:** every subject starts with your **Notification Prefix** and a dash, except the hotel raffle results.
-- **Sender:** named in each section; the addresses are set in [Sending domain, senders and contact addresses](./email-settings.md), section 3.
+- **Sender:** named in each section. The addresses are set on the **Contact** tab of **System › Settings**.
 - **Who receives it:** only people with a confirmed email address who aren't banned from registration, except for password reset, sign-in link, account confirmation, account migration, email-change request, refund, hotel entry and hotel guest-removed emails, which are always sent.
 - **Sub-accounts:** without their own address, the account owner gets the email.
 - **Language:** emails are sent as written, not translated.
@@ -76,7 +76,7 @@ These emails come from your **Registration Email** address.
 
 ## Volunteers and staff
 
-Sent only while **Enable Volunteer Emails** is on (see [Volunteer settings and form](../volunteers/settings.md), section 1), from your **HR Email** address, except `undoAdmin`, from **Registration Email**.
+Sent only while **Enable Volunteer Emails** is on in **Volunteers › Volunteer Settings**, from your **HR Email** address, except `undoAdmin`, from **Registration Email**.
 
 <TableFigure title="Volunteer emails">
 
@@ -109,7 +109,7 @@ These emails come from your **HR Email** address, except `registerNewReview` (fr
 
 | Template | Sent when | Sent to | Can be turned off |
 | --- | --- | --- | --- |
-| `registerNewReview` <small>Registration Requires Review</small> | A new account needs review, for example because it looks like a banned person's. See [User Notes](../usernotes/usernotes.md). | Your **Registration Email** address | Yes |
+| `registerNewReview` <small>Registration Requires Review</small> | A new account needs review, for example because it looks like a banned person's. | Your **Registration Email** address | Yes |
 | `exportRequest` <small>Data Export Request</small> | An admin requests access to personal data in exports. | Global admins | No |
 | `exportRequestApproved` <small>Data export request approved</small> | Another admin approves the request. | Global admins | No |
 | `exportRequestRejected` <small>Data export request rejected</small> | Another admin rejects the request. | Global admins | Yes |

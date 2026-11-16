@@ -21,7 +21,7 @@ Printer choices are saved in the browser: set up each registration computer sepa
 The station prints badges in one of two ways:
 
 - **Zebra printer.** The badge goes straight to a USB Zebra label printer, with no print dialog, sized to the printer's labels. A station can have a primary and a secondary, such as one with standard and one with minor labels.
-- **OS Controlled.** With no Zebra printer active, **Print Badge** opens the browser's print dialog (section 4).
+- **OS Controlled**. With no Zebra printer active, **Print Badge** opens the browser's print dialog (section 4).
 
 **Printer Status**, in the station header, shows which is in use (Table 1.1).
 
@@ -68,8 +68,8 @@ Connect the printer to the station computer by USB and load the badge labels fir
 
    <Result>The button reads **Active as Secondary**, and **Printer Status** adds **Secondary: Label (#D4J221805678)**.</Result>
 
-:::tip[The serial numbers are examples]
-The serial numbers in **Label (#D4J221801234)**, **Label (#D4J221805678)** and **Receipt (#X4ZM012345)** are examples. Each printer is listed with its own serial number.
+:::tip[The serial numbers and badge product are examples]
+The serial numbers in **Label (#D4J221801234)**, **Label (#D4J221805678)** and **Receipt (#X4ZM012345)**, and *General Admission* in the test printer's message, are examples. Each printer is listed with its own serial number, and the message names the attendee's badge product.
 :::
 
 Which badge types go to the secondary is set per station, under **Badge type printer preferences** ([Cashier UI](./cashier.md), section 2). By default, only minor badges do.
@@ -90,7 +90,7 @@ The test printer lets you try the printing workflow without a printer.
 
 2. On an attendee's page, click **Print Badge**.
 
-   <Result>Nothing prints. A message says *This is just a test for* and the attendee's badge type.</Result>
+   <Result>Nothing prints. A message says *This is just a test for General Admission.*</Result>
 
 3. To remove the test printer, click its gear button, then **Remove**.
 
@@ -104,7 +104,7 @@ A test print still records the badge as printed, under your name, in the attende
 
 1. With no Zebra printer active, click **Print Badge** on an attendee's page.
 
-   <Result>The browser's print dialog opens with the badge, or several badges if the station prints separate staff or dealer badges.</Result>
+   <Result>The browser's print dialog opens with all the attendee's badges, including any separate staff or dealer badges and labels for store products.</Result>
 
 2. Choose the badge printer and print.
 

@@ -6,7 +6,7 @@ textbook: true
 
 # Convention setup
 
-Set your event's identity, venue and dates, policies, payments and email. 
+Set your event's identity, venue and dates, policies, payments and email.
 
 :::info[In this guide]
 Event info, venue and dates, terms and policies, payment and email.
@@ -24,7 +24,7 @@ This page needs the permission to update system settings. Your trial's administr
 
 2. Under **Logo**, choose your logo image and click **Save Logo**.
 
-   <Result>An **Upload success** message appears, and the logo shows on your homepage.</Result>
+   <Result>An **Upload success** message appears, and the logo shows on your login page.</Result>
 
 3. Under **Event info**, fill in the fields in Table 1.1 and click **Save** below them.
 
@@ -63,7 +63,7 @@ This page needs the permission to update system settings. Your trial's administr
   ]}
 >
 
-1. The add button, which starts a new convention (see the note below).
+1. The add button, which starts a new convention.
 2. Your convention's row, with its **Dates** and **Domain**.
 
 </Figure>
@@ -123,7 +123,7 @@ The child and minor age thresholds are set in [Registration setup](./registratio
 ConCat connects your organization's own Stripe account through Stripe Connect. One connection covers every convention in your organization.
 </Sidenote>
 
-ConCat takes card payments through Stripe. 
+ConCat takes card payments through Stripe.
 
 1. Click the **Payment Gateways** tab.
 
@@ -146,7 +146,7 @@ ConCat takes card payments through Stripe.
    <Result>The status changes to **Status: Connected**.</Result>
 
 :::caution[Watch out]
-- **Country and currency:** ConCat sets them for your organization, and a trial starts in US dollars. Ask ConCat Support to change them *before* you connect Stripe.
+- **Country and currency:** the country is the one you chose when you signed up, and a trial starts in US dollars. Ask ConCat Support to change either *before* you connect Stripe.
 - **Live payments:** Housekeeping has no test-mode switch, so once Stripe is connected, payments are real. To test without charging anyone, ask ConCat Support.
 :::
 
@@ -178,14 +178,18 @@ Three things shape your email: the domain it's sent from, the mailbox names it's
 
 5. Back on **Email Settings**, under **Email Senders for Mass Email**, type a mailbox name in **Enter a new sender...** and click the green tick button.
 
-   <Result>An **Added "*name*" to the senders list.** message appears, and the name is listed.</Result>
+   <Result>An **Added "news" to the senders list.** message appears, and the name is listed.</Result>
 
 6. Under **Email Templates**, look through the emails ConCat sends.
 
-   <Result>Each template has a **Modify** button that opens it for editing.</Result>
+   <Result>Each template has a **Modify** button that opens it for editing. The `register` template's card says *To modify this template, contact support.* instead.</Result>
 
 :::note[Senders and templates]
 Mass-email senders are offered only when staff send a mass email. The **Contact** addresses send registration, volunteer and dealer emails. Templates can be changed for one convention or the whole organization.
+:::
+
+:::tip[The sender name is an example]
+The *news* in **Added "news" to the senders list.** is an example. The message shows the mailbox name you typed.
 :::
 
 :::tip[In more detail]

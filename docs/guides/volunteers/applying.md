@@ -6,7 +6,7 @@ textbook: true
 
 # What volunteers see when they apply
 
-See the volunteer application as your attendees do. Follow the steps with an attendee account.
+See the volunteer application as your attendees do.
 
 :::info[In this guide]
 Prerequisites, applying, status, changing or withdrawing, and blocked applications.
@@ -15,10 +15,10 @@ Prerequisites, applying, status, changing or withdrawing, and blocked applicatio
 ## Before attendees can apply
 
 <Sidenote title="Who sees which departments">
-Applicants are offered only departments ticked **Show on public application form**. See [Departments and leads](./departments.md).
+Applicants are offered only departments ticked **Show on public application form**.
 </Sidenote>
 
-Attendees apply from **Volunteering**, under **Applications** in the homepage sidebar. They need **Enable Volunteers** on (see [Volunteer settings and form](./settings.md), section 1), and must be signed in with a confirmed email address.
+Attendees apply from **Volunteering**, under **Applications** in the homepage sidebar. They need **Enable Volunteers** on, and must be signed in with a confirmed email address.
 
 The form is the one you build in [Volunteer settings and form](./settings.md), section 4. These steps assume a new convention's form.
 
@@ -44,7 +44,7 @@ The form is the one you build in [Volunteer settings and form](./settings.md), s
 
    <Result>*Your volunteer application has been saved!* appears, and the top of the page says *Your application is awaiting assignment.*</Result>
 
-With **Enable Volunteer Emails** on, the applicant gets a *Volunteer Confirmation* email. Staff see the application on **Housekeeping › Volunteers › Applications** (see [Volunteers](./volunteers.md), section 2).
+With **Enable Volunteer Emails** on, the applicant gets a *Volunteer Confirmation* email. Staff see the application on **Housekeeping › Volunteers › Applications**.
 
 ## Application status
 
@@ -54,8 +54,8 @@ With **Enable Volunteer Emails** on, the applicant gets a *Volunteer Confirmatio
 
 With **Enable Volunteer Emails** on, the volunteer also gets an email titled *Volunteer Assignment: Art Show*.
 
-:::tip[The department is an example]
-*Art Show* is an example. The email names the volunteer's department.
+:::tip[The department and address are examples]
+*Art Show* and hr@example.com on this page are examples. The email names the volunteer's department, and the messages show your **HR Email** address, set on the **Contact** tab of **Housekeeping › System › Settings**.
 :::
 
 ## Change or withdraw the application
@@ -70,13 +70,13 @@ With **Enable Volunteer Emails** on, the volunteer also gets an email titled *Vo
 
 3. Click **Delete**.
 
-   <Result>*Your volunteer application has been deleted.* appears, and the homepage opens. An assigned volunteer's application stays instead, with *You are currently assigned to a department. Please contact* your HR address *if you no longer wish to volunteer.*</Result>
+   <Result>*Your volunteer application has been deleted.* appears, and the homepage opens. An assigned volunteer's application stays instead, with *You are currently assigned to a department. Please contact hr@example.com if you no longer wish to volunteer.*</Result>
 
 Answers to questions set to **Disable after approval** can't be changed once the volunteer is assigned.
 
 ## When applying is blocked
 
-Instead of the form, the page can show a message from Table 5.1. The HR address in a message is the **HR Email** from [Sending domain, senders and contact addresses](../templates/email-settings.md), section 3.
+Instead of the form, the page can show a message from Table 5.1.
 
 <TableFigure title="Why an attendee can't apply">
 
@@ -84,7 +84,7 @@ Instead of the form, the page can show a message from Table 5.1. The HR address 
 | --- | --- | --- |
 | *Volunteer applications for the convention are currently closed.* | **Enable Volunteers** is off. The sidebar item is hidden too. | Turn it on (see [Volunteer settings and form](./settings.md), section 1). |
 | **Email verification required** <small>*Please verify your email address before applying.*</small> | The attendee hasn't confirmed their email address. | They click **Resend verification email** and follow the link in the email. |
-| *You are currently banned from volunteering at the convention.* <small>*Please contact* your HR address *if you think this is in error.*</small> | The attendee has a volunteer ban note. | See [User Notes](../usernotes/usernotes.md). |
+| *You are currently banned from volunteering at the convention.* <small>*Please contact hr@example.com if you think this is in error.*</small> | The attendee has a volunteer ban note. | See [User Notes](../usernotes/usernotes.md). |
 | *Volunteering while chaperoning a child is not allowed at this event.* <small>*Thanks for offering, but your kids are more important.*</small> | The attendee has child registrations, and **Allow Parents to Volunteer** is off. | Turn on **Allow Parents to Volunteer** if parents may volunteer. |
 
 </TableFigure>

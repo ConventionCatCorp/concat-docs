@@ -46,7 +46,11 @@ Each card has its own **Save** button, which saves that card only.
 
 2. As an attendee, open **Attendance** in the homepage sidebar.
 
-   <Result>With **Open Registration** ticked, an attendee who hasn't registered is offered **Start registration**. Unticked, the page says *Registration for* your convention's name *is closed.*</Result>
+   <Result>With **Open Registration** ticked, an attendee who hasn't registered is offered **Start registration**. Unticked, the page says *Registration for Starfall Con 2026 is closed.*</Result>
+
+:::tip[The name is an example]
+*Starfall Con 2026* is an example. The app shows your convention's long name.
+:::
 
 Registration starts closed, so you can set up first.
 
@@ -69,10 +73,6 @@ One notice at a time, such as a schedule change, appears at the top of every att
 4. *(Remove the notice)* In the **Attendee Notice** card, untick **Show attendee notice** and click **Save**.
 
    <Result>An **Attendee notice saved** message appears, and attendees no longer see the notice.</Result>
-
-:::tip[The name is an example]
-*Starfall Con 2026* is an example. The notice shows your convention's long name.
-:::
 
 **Message** accepts Markdown. **Date** is for display only: the notice shows whatever the date. Attendees see the notice only while registration is open.
 

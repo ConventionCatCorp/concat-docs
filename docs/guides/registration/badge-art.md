@@ -40,14 +40,14 @@ The first number is how many registrations use the image; the second is its limi
 
 1. On an image's card, click **Configure limit**.
 
-   <Result>A **Set a limit for** dialog opens with the image's ID and an **Enable limit** checkbox.</Result>
+   <Result>A dialog titled with the image's ID, such as **Set a limit for 3**, opens with an **Enable limit** checkbox.</Result>
 
 2. Tick **Enable limit**, enter the number of badges allowed, and click **Update**.
 
    <Result>A **Badge art has been updated** message appears, and the card shows the limit, such as *Limit:0 / 100*.</Result>
 
 :::tip[The numbers are examples]
-The 100 in *Limit:0 / 100* and the image ID in **Delete 3** are examples. The app shows how many badges have used each image, the limit you set, and the image's own ID.
+The 100 in *Limit:0 / 100* and the image ID in **Set a limit for 3** and **Delete 3** are examples. The app shows how many badges have used each image, the limit you set, and the image's own ID.
 :::
 
 To remove a limit, untick **Enable limit** in **Configure limit** and click **Update**; the card shows *∞* again.

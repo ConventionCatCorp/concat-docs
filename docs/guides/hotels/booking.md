@@ -6,7 +6,7 @@ textbook: true
 
 # What attendees see when booking
 
-See the hotel pages attendees use, from entering a block to managing their reservation. Follow along with a test attendee account.
+See the hotel pages attendees use, from entering a block to managing their reservation.
 
 :::caution[Before you start]
 Hotel booking is off until ConCat support turns it on for your convention, and it needs a working **Passkey** or **MeetingMax** connection ([Hotel management](./hotel-management.md), section 2). Without both, attendees have no hotel pages.
@@ -34,7 +34,7 @@ Use a test account without staff roles, in a private window, with the registrati
 
    <Result>A card appears for each **Ready**, unfinished block this attendee can see; with none, **No blocks available**.</Result>
 
-A block is visible when its **Visibility** is **Always Visible**, or **Eligible Only** and the attendee may enter it. Blocks they may enter come first.
+A block is visible when its **Visibility** is **Always Visible**, or **Eligible Only** and the attendee may enter it or has one of its roles or products. Blocks they may enter come first.
 
 While **Open Hotels** is off ([Hotel management](./hotel-management.md), section 2), **Active blocks** is replaced by *Reservations are not being accepted at this time.* and your **Hotel Closed Message**, if you wrote one.
 
@@ -140,17 +140,17 @@ A booking is listed under **My reservation** once it has synced.
 
 2. As the primary guest, click **Manage reservation**.
 
-   <Result>The reservation page opens, titled with its number, such as **Reservation # 12**, with the room, rates, guests and policies.</Result>
+   <Result>The reservation page opens, titled with its number and hotel, such as **Reservation # 12at Riverside Hotel**, with the room, rates, guests and policies.</Result>
 
 3. Click **Update / Cancel reservation**.
 
    <Result>Passkey or MeetingMax opens to change or cancel the booking. Changes reach ConCat on the next sync.</Result>
 
 :::tip[The names and numbers are examples]
-The block name in **Hotel—Riverside Hotel**, the opening date and the reservation number 12 are examples. The app shows your own blocks and dates, and each reservation's own number.
+The block name in **Hotel—Riverside Hotel**, the opening date, the reservation number 12 and the hotel name are examples. The app shows your own blocks, dates and hotels, and each reservation's own number.
 :::
 
-**Update / Cancel reservation** appears only while **Open Hotels** is on; otherwise the page says *Modifications to existing reservations are no longer being accepted.* A canceled reservation says *This reservation has been canceled and cannot be modified.* Guests are added or removed with the provider, not in ConCat.
+While **Open Hotels** is off, **Update / Cancel reservation** is grayed out and the page says *Modifications to existing reservations are no longer being accepted.* A canceled reservation says *This reservation has been canceled and cannot be modified.* Guests are added or removed with the provider, not in ConCat.
 
 Your **Hotel Reservation Additional Info** text (**Terms** tab) shows at the top of the reservation page.
 
@@ -164,6 +164,6 @@ An attendee who booked directly with the hotel, or is an extra guest on someone 
 
 2. Enter the reservation number and click **Find reservation**.
 
-   <Result>*Your reservation has been found and linked to your account!* appears and the reservation is listed under **My reservation**. If it isn't found: *We could not find a reservation matching the provided reservation ID.*</Result>
+   <Result>*Your reservation has been found and linked to your account!* appears and the reservation is listed under **My reservation**. If it isn't found, or the guest details don't match: *We could not find a reservation matching the provided reservation ID.*</Result>
 
-Name matching ignores capitals, not spelling: *alex smith* matches *Alex Smith*; *Alexander Smith* doesn't. Linking a reservation as its primary guest withdraws the attendee's other entries that haven't been picked.
+Name matching ignores capitals, not spelling: *alex smith* matches *Alex Smith*; *Alexander Smith* doesn't. If the reservation lists the guest's email address, it must also match the account's. Linking a reservation as its primary guest withdraws the attendee's other entries that haven't been picked.

@@ -6,7 +6,7 @@ textbook: true
 
 # Ticketed products
 
-A ticketed product gives each buyer a personal QR-code ticket for a set time window, which staff scan at the door. Use it for limited events such as a workshop or a meet-and-greet.
+A ticketed product gives each buyer a personal QR-code ticket for a set time window, such as a workshop or meet-and-greet slot, which staff scan at the door.
 
 :::info[In this guide]
 How ticketed products work, setting one up, what attendees see, printable tickets, and scanning at the door.
@@ -77,6 +77,6 @@ Staff who open another attendee's ticket page see *You are in staff mode. You ar
 Scanning needs `admin:ticket:scan`, which the default *admin* role has.
 </Sidenote>
 
-Staff scan tickets with ConCat's QuikTicket app, on a phone or tablet authorized with **Authorize New Device** in **Housekeeping › Attendees › Devices**. An authorization lasts 6 hours; see [Devices and QuikTicket](../registration/cashier/devices.md).
+Staff scan tickets with ConCat's QuikTicket app, on a phone or tablet. QuikTicket is off by default: turn it on, then authorize each device with **Authorize New Device** in **Housekeeping › Attendees › Devices** ([Devices and QuikTicket](../registration/cashier/devices.md)). An authorization ends 6 hours after its code was requested.
 
 Each ticket scans once. ConCat refuses a ticket already scanned, one scanned before its group's **Valid From** or after its **Valid Until**, and one for a different event or attendee.

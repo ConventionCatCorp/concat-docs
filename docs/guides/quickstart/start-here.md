@@ -40,11 +40,15 @@ A private ConCat instance with its own web address and your administrator accoun
 
 :::note[If something goes wrong]
 - *This link is no longer valid*: the confirmation link was already used or is over 7 days old. Start again from step 1.
-- *We hit a snag*: your details and password are saved and ConCat has been told; you'll get an email when the instance is ready. Quote the **Reference** shown if you contact support.
+- *We hit a snag*: your details and password are saved and ConCat has been told; you'll get an email when the instance is ready. Quote the reference shown, such as **Reference: ONB-7K2QX9**, if you contact support.
 - *You already have a ConCat trial*: you are only allowed one trial instance per email per organization. Please contact support to request an additional.
 :::
 
 Until the trial ends, every page shows a banner: **Trial instance.** *This trial ends* 30 days after you signed up.
+
+:::tip[The reference is an example]
+The ONB-7K2QX9 in **Reference: ONB-7K2QX9** is an example. The page shows the reference ConCat gave your sign-up.
+:::
 
 ## Find your way around Housekeeping
 

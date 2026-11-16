@@ -29,15 +29,15 @@ Some things can be set for the whole organization or for one convention:
 
 1. Go to **Housekeeping › System › Settings** and click the **Conventions** tab (Figure 1.1).
 
-   <Result>A table lists your conventions and their **Domain**, with a green **+** button in the header row and a blue **View** button (an eye) on each row.</Result>
+   <Result>A table lists your conventions and their **Domain**, with a green **+** button in the header row and a blue eye button on each row.</Result>
 
-2. *(Optional)* Click **View** on another convention's row.
+2. *(Optional)* Click the eye button on another convention's row.
 
    <Result>That convention's **Conventions** tab opens at its own address.</Result>
 
 <Figure
   src="/img/guides/system/conventions-table.webp"
-  alt="The Conventions tab: a table with Long Name, Short Name, Dates and Domain columns, a green add button in the header row, and a View button on the convention's row."
+  alt="The Conventions tab: a table with Long Name, Short Name, Dates and Domain columns, a green add button in the header row, and an eye button on the convention's row."
   title="The Conventions tab"
   markers={[
     { n: 1, x: 79.8, y: 11, w: 5.4, h: 32.5 },
@@ -46,7 +46,7 @@ Some things can be set for the whole organization or for one convention:
 >
 
 1. The green **+** button, which creates a convention (sections 3 and 4).
-2. A convention's row, with its **Dates**, **Domain** and **View** button.
+2. A convention's row, with its **Dates**, **Domain** and eye button.
 
 </Figure>
 
@@ -102,7 +102,7 @@ The **Domain Action** decides which convention keeps your current address:
 
    <Result>A **New convention created.** message appears and the convention is listed. With **Replace**, it adds *You have been pushed to the login screen, please refresh the page.*</Result>
 
-6. Open the new convention (**View**, or your usual address after **Replace**). On the **Convention** tab of **Housekeeping › System › Settings**, update **Convention Start Date** and **Convention End Date** under **Venue & dates** and click **Save**.
+6. Open the new convention (its eye button, or your usual address after **Replace**). On the **Convention** tab of **Housekeeping › System › Settings**, update **Convention Start Date** and **Convention End Date** under **Venue & dates** and click **Save**.
 
    <Result>A **Venue & dates saved** message appears; the **Conventions** tab shows the new dates.</Result>
 
@@ -124,10 +124,10 @@ Use **New Convention** for an event that shouldn't inherit anything, such as a s
 
    <Result>A **New convention created.** message appears. The table lists a new convention named **testconvention**, short name **test**, at your address.</Result>
 
-3. Click **View** on the new row, then set up the convention as in [Convention setup](../quickstart/convention-setup.md).
+3. Click the eye button on the new row, then set up the convention as in [Convention setup](../quickstart/convention-setup.md).
 
    <Result>The new convention's **Conventions** tab opens at its own address.</Result>
 
-:::note[Limits]
+:::caution[Watch out]
 An organization can hold a limited number of conventions. Past the limit, creating one says *Convention is at or over capacity and cannot create more resources. Contact support to change this limit.*
 :::

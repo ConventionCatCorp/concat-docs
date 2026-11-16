@@ -18,7 +18,7 @@ When to create an account by hand, creating an account, creating a sub-account.
 **User Creation** needs **user:create**, which the default **admin** and **registration** roles have.
 </Sidenote>
 
-Create an account by hand for someone with no email address, who can't use the sign-up form, or who is at the desk. It's the same as a signed-up account, with no roles; for staff access, see [Roles and permissions](./roles.md).
+Create an account by hand for someone with no email address, who can't use the sign-up form, or who is at the desk. It's the same as a signed-up account, with no roles.
 
 ConCat sets a random password nobody knows. To sign in, the person resets it from the login page.
 
@@ -57,7 +57,7 @@ A username or email address already in use is flagged next to the field, and the
 
 ## Create a sub-account
 
-A sub-account belongs to another account, its *owner*, as when a parent registers a child (see [Registration setup](../quickstart/registration-setup.md), section 5).
+A sub-account belongs to another account, its *owner*, as when a parent registers a child.
 
 1. In **Housekeeping › System › User Creation**, type the owner's name or username in **Owner account** and choose them.
 
@@ -65,8 +65,8 @@ A sub-account belongs to another account, its *owner*, as when a parent register
 
 2. Fill in the sub-account's details from Table 2.1 (**Username** can be empty), then click **Create User**.
 
-   <Result>An **Account created.** message appears and the sub-account's profile opens, with no **Orders**, **Volunteer** or **Dealer** tab.</Result>
+   <Result>An **Account created.** message appears and the sub-account's profile opens, with no **Notes**, **Orders**, **Volunteer** or **Dealer** tab.</Result>
 
 :::caution[Watch out]
-The owner must be an ordinary account. Choosing a sub-account fails with *The targetted user is a sub-account, and therefore cannot own another sub-account.*
+The owner must be an ordinary account. Choosing a sub-account fails with *The targetted user is a sub-account, and therefore cannot own another sub-account. Migrate that user first, or use another account.*
 :::

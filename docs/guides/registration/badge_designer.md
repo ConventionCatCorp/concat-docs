@@ -32,7 +32,7 @@ The Cashier UI prints each badge with the convention's default design, unless th
 
    <Result>That design's star is filled; the others are empty.</Result>
 
-3. *(Optional)* To copy a design, click its copy button, enter a **Name** in the **Duplicate** dialog, and click **Duplicate**.
+3. *(Optional)* To copy a design, click its copy button. In the dialog titled with the design's name, such as **Duplicate: Attendee Badge**, enter a **Name** and click **Duplicate**.
 
    <Result>The copy is listed under its new name.</Result>
 
@@ -41,7 +41,7 @@ The Cashier UI prints each badge with the convention's default design, unless th
    <Result>The dialog asks to confirm with the design's name, such as *Are you sure you want to delete Attendee Badge?* After you confirm, the design is no longer listed.</Result>
 
 :::tip[The name is an example]
-*Attendee Badge* is an example. The dialog names the design you're deleting.
+*Attendee Badge* is an example. The dialogs name the design you're copying or deleting.
 :::
 
 The history button opens the design's entries in **System › Audit Logs**.
@@ -120,7 +120,7 @@ A text element shows a fixed **Placeholder**, or an attendee value chosen with *
 
 </TableFigure>
 
-The **Text** group also has **Transform** (such as `uppercase`), **Font Weight**, **Text Color** and **Prefix padding**, which pads a number with a character to a set length, for example `00042`. The **Font** group sets **Font Size** (inches), **Horizontal Binding**, **Vertical Binding**, **Text Align** and the **Font**: `Krona One`, `Armata`, `datamatrix` (a 2D barcode), or `custom` with a **Custom Font** name. **Text Autoscale** fits text to its box, between **Grow Min** and **Grow Max**.
+The **Text** group also has **Transform** (such as `uppercase`), **Font Weight**, **Text Color** and **Prefix padding**, which pads a number with a character to a set length, for example `00042`. The **Font** group sets **Font Size** (inches), **Horizontal Binding**, **Vertical Binding**, **Text Align** and the **Font**: `Krona One`, `Armata`, `datamatrix` (a 2D barcode), or `custom` with a **Custom Font** name. With **Enable Autoscale** ticked, **Text Autoscale** fits text to its box, between **Grow Min** and **Grow Max**.
 
 :::tip[Badge ID or user ID]
 Use `badgeId` only if staff know it isn't the user ID: it prints with a B in front, such as *B101*. The editor warns you when you choose it.

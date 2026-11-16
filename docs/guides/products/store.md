@@ -18,7 +18,7 @@ Turning the store on; the store page; a product's page; eligibility, limits and 
 These settings need `system:settings:update`, which the default *admin* role has.
 </Sidenote>
 
-The store is hidden until you turn it on: **Event store** is missing from the homepage sidebar, and the store's address sends attendees back to the homepage.
+**Enable Event Store** is on in a new convention. While it's off, **Event store** is missing from the homepage sidebar, and the store's address sends attendees back to the homepage.
 
 1. Go to **Housekeeping › System › Settings**. On the **Convention** tab, under **Event store**, turn on **Enable Event Store** and click **Save** in that section.
 
@@ -38,8 +38,6 @@ The store is hidden until you turn it on: **Event store** is missing from the ho
 
    <Result>Only that category's products are shown.</Result>
 
-Table 2.1 lists what decides whether a product appears.
-
 <TableFigure title="Which products the store lists">
 
 | A product is listed if | Set in |
@@ -56,8 +54,8 @@ A product with an age limit is still listed, with an **Age Restricted Product** 
 
 With nothing to list, the store says *There are no items available.* With **All Products** hidden, it first shows *Welcome to the Star26 Store!* and asks attendees to browse the categories.
 
-:::tip[The name is an example]
-*Star26* in *Welcome to the Star26 Store!* is an example. The heading shows your convention's short name.
+:::tip[The values are examples]
+*Star26* in *Welcome to the Star26 Store!*, and the age, date, limit and product names in Table 4.1, are examples. The app shows your convention's short name and start date, and each product's own settings.
 :::
 
 ## A product's page
@@ -72,19 +70,17 @@ A product in a Gatekeeping silo first asks attendees to enter a draw with **Ente
 
 ## Eligibility, limits and exclusions
 
-Table 4.1 lists the messages a product's page shows when something limits a purchase.
-
 <TableFigure title="Messages on a product's page">
 
 | Message | Shown when |
 | --- | --- |
-| **Age Restricted Product** badge. Its help says, for example, *You must be at least* 18 *on* the convention's start date *to purchase this product.* | **Minimum Purchase Age** or **Maximum Purchase Age** is set. <small>Someone outside the range can't add it to their cart.</small> |
-| *To purchase this product, you must have already purchased one of the following:* and the products | **Restrict product to grants** is set and the attendee has none of them. **Add to cart** is disabled. |
-| *You are eligible to purchase this product because you have purchased the following product:* and the product | **Restrict product to grants** is set and the attendee has one of them. |
-| *There is a limit of* n *per customer for this product.* | **Maximum purchases per user** is set. <small>**Quantity** can't go above what's left for them.</small> |
+| **Age Restricted Product** badge. Its help says, for example, *You must be at least 18 on 10/1/2026, 12:00:00 AM PDT to purchase this product.* | **Minimum Purchase Age** or **Maximum Purchase Age** is set. <small>Someone outside the range can't add it to their cart.</small> |
+| *To purchase this product, you must have already purchased one of the following:Sponsor.* | **Restrict product to grants** is set and the attendee has none of them. **Add to cart** is disabled. |
+| *You are eligible to purchase this product because you have purchased the following product: Sponsor.Sponsor.* | **Restrict product to grants** is set and the attendee has one of them. |
+| *There is a limit of 4 per customer for this product.* | **Maximum purchases per user** is set. <small>**Quantity** can't go above what's left for them.</small> |
 | *You have already reached the purchase limit for this product.* | The attendee has bought the maximum. **Add to cart** is disabled. |
-| *This product cannot be combined with:* and the products | The product excludes other products. |
-| *You cannot purchase this product because you have already purchased, or have in your cart, the following product:* and the product | The attendee has an excluded product. **Add to cart** is disabled. |
+| *This product cannot be combined with: Day Pass* | The product excludes other products. |
+| *You cannot purchase this product because you have already purchased, or have in your cart, the following product: Day Pass.* | The attendee has an excluded product. **Add to cart** is disabled. |
 | *This is a Ticketed Product.* | The product is ticketed; see [Ticketed products](./tickets.md). |
 | *You've already purchased one of this product.* | The attendee already has this ticket. |
 

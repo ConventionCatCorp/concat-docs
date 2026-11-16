@@ -36,7 +36,7 @@ A refund does two separate things, both set when you approve it:
 ConCat emails the attendee at each step: *Order #13 - New Refund Request* (copied to your registration address), *Refund Request Approved for Order #13* and *Refund Request Denied for Order #13*.
 
 :::tip[The numbers are examples]
-Numbers on this page, such as the order number 13 and the refund number 2, are examples, as are the amount $10.00 and the message after *Refunds are disabled:*. The app shows each order's and refund request's own numbers and amounts, and your own message.
+Numbers on this page, such as the order number 13 and the refund number 2, are examples, as are the amount $10.00 in the approval banner and the partial-refund warning, and the message after *Refunds are disabled:*. The app shows each order's and refund request's own numbers and amounts, and your own message.
 :::
 
 :::note[Chargebacks]
@@ -65,7 +65,7 @@ Use an attendee account that has a paid order.
 
 The reasons offered are *I purchased this by accident.*, *I can no longer / don't want to attend.*, *I have changed my mind*, *Item is damaged or not as described.* and **Other**.
 
-An approved request shows a green banner on the card: *Your refund request has been approved. You should receive a refund of* the amount*. Processing may take a few days.* A denied one shows a red banner.
+An approved request shows a green banner on the card: *Your refund request has been approved. You should receive a refund of $10.00. Processing may take a few days.* A denied one shows a red banner.
 
 What attendees can't request:
 
@@ -106,7 +106,7 @@ The list includes decided refunds too; narrow it with **Search...** or the **Rea
 | --- | --- |
 | **Quantity** (per product) | How many to take back. ConCat removes what they granted, such as a badge. <small>Help icon: *Revoke Digital Grants?* Grayed out for an item that grants nothing.</small> |
 | **Amount to Refund** (per product) | The value of the items taken back. *Currency being returned. For accounting purposes only.* <small>Filled in when you change the quantity.</small> |
-| **Return item to available stock?** | Ticked, the items go back into stock for someone else to buy. <small>Shown only when a product has limited stock.</small> |
+| **Return item to available stock?** | Ticked, the items go back into stock for someone else to buy. <small>Ticked by default. Shown only when a product has limited stock.</small> |
 | **Amount to Refund** (per payment) | The money to return through that payment, up to its **Available Amount**. <small>With one payment, it follows the product amounts.</small> |
 | **Reason for Approval** | Required. Kept in the audit log. |
 | **Message to Customer** | Optional. Added to the approval email. |
@@ -115,7 +115,7 @@ The list includes decided refunds too; narrow it with **Search...** or the **Rea
 
 :::caution[Watch out]
 - **Amount to Refund** under **Related Payments** starts at each payment's full amount, not the price of the items asked for. Check it before you click **Approve Refund**.
-- A refund can't be undone. For cash, card-terminal and write-off payments, ConCat only records it (section 1).
+- A refund can't be undone. For cash, card-terminal, write-off and PagSeguro payments, ConCat only records it: you hand the money back yourself.
 :::
 
 If a payment can't be refunded through its gateway, a warning stays until you close it: *Refund request was only partially refunded $10.00 due to gateway errors. Please review the Related Payments tab for information.* If every payment fails, *The refund operation failed as all gateways returned an error.* appears and nothing is refunded.
@@ -170,6 +170,6 @@ Stop attendee requests, for example after your refund deadline. Staff can still 
 
 To allow requests again, untick **Disable refunds** and click **Save**.
 
-:::tip
+:::tip[Type a message]
 Always type a message. Ticked and empty, refunds are still disabled, but attendees see *Refunds are disabled:* with nothing after it.
 :::

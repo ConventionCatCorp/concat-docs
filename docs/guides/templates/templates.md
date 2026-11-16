@@ -15,7 +15,7 @@ How overrides work, finding a template, writing an override, disabling and react
 ## How templates work
 
 <Sidenote title="Who can do this">
-Email templates need `email:templates`, which the default *admin* role has, and access to **System › Settings**.
+Email templates need `email:templates`, and **System › Settings** needs `system:settings:update`. The default *admin* role has both.
 </Sidenote>
 
 Every email comes from one of 33 templates, listed in [Emails ConCat sends](./system-emails.md). Each has ConCat's **Default Template** and up to two overrides:
@@ -23,7 +23,7 @@ Every email comes from one of 33 templates, listed in [Emails ConCat sends](./sy
 - A **convention** override applies to this convention only, and isn't copied to next year's.
 - An **organization** override applies to every convention in your organization.
 
-ConCat sends the first that exists: **convention override, then organization override, then the default.** The version in use has a green **Current** badge. Table 1.1 includes disabled overrides (section 4).
+ConCat sends the first that exists: **convention override, then organization override, then the default.** The version in use has a green **Current** badge.
 
 <TableFigure title="Which version is sent">
 
@@ -46,7 +46,7 @@ ConCat sends the first that exists: **convention override, then organization ove
 
 1. Go to **Housekeeping › System › Settings** and click the **Email Settings** tab.
 
-   <Result>Under **Email Templates**, each template has a card with a **Default**, **Overridden** or **Disabled** badge and a **Modify** button. Overridden templates come first.</Result>
+   <Result>Under **Email Templates**, each template has a card with a **Default**, **Overridden** or **Disabled** badge and a **Modify** button. Overridden and disabled templates come first.</Result>
 
 2. Click **Modify** on the `volunteerConfirm` template.
 
@@ -85,7 +85,7 @@ Templates are HTML with [Handlebars](https://handlebarsjs.com/) expressions in d
    <Result>*Override has been deleted.* appears. The card says *No convention level override exists for this template.* again, and **Default Template** is **Current**.</Result>
 
 :::note[Subjects and testing]
-- Every subject starts with your **Notification Prefix** and a dash (**System › Settings › Convention**). Leave the subject override empty to keep the default.
+- Every subject starts with your **Notification Prefix** and a dash (**System › Settings › Convention**), except the hotel raffle results. A subject override needs at least 4 characters; leave it empty to keep the default.
 - There's no test send. The preview uses your convention's details, your account as the recipient, and sample values for the rest.
 - Emails aren't translated: each level holds one version, in the language you write it.
 :::
@@ -146,7 +146,7 @@ Every template can use `user` (the recipient) and `convention` (Table 5.1). Each
 
 </TableFigure>
 
-:::tip
+:::tip[What to keep from the default]
 - Keep the building blocks starting with `{{>`, such as `{{>greeting user}}` and `{{>footer department="Human Resources"}}`: they write the greeting and signature.
 - Keep the triple braces around web addresses, such as `{{{convention.publicUrl}}}`, so HTML escaping doesn't change them.
 :::

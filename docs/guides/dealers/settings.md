@@ -15,10 +15,10 @@ General settings, the Dealer Policy, custom questions, and the application form.
 ## General settings
 
 <Sidenote title="Who can do this">
-Needs the permission to update vendor applications, which the default *dealersden* role has.
+Needs `vendor:update`, which the default *dealersden* role has.
 </Sidenote>
 
-1. Go to **Housekeeping › Dealers › Dealer Settings** (the menu is explained in [Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Dealers › Dealer Settings**.
 
    <Result>The **Dealer Settings** page opens on the **General** tab.</Result>
 
@@ -34,7 +34,7 @@ Needs the permission to update vendor applications, which the default *dealersde
 
 | Setting | What it does |
 | --- | --- |
-| **Enable Dealers Module** | Shows **Dealing** in the attendee sidebar and opens the application. <small>While off, nobody, not even staff, can create a dealer profile. **Housekeeping › Dealers** stays available.</small> |
+| **Enable Dealers Module** | Shows **Dealing** in the attendee sidebar and opens the application. <small>While off, nobody, not even staff, can create or edit a dealer profile. **Housekeeping › Dealers** stays available.</small> |
 | **Force Dealer Registration** | Dealers must register for the convention before paying for a table. <small>Until then, checkout shows **Convention Registration Needed**; the badge can share the cart with the table. While **Open Registration** is off, dealers can't pay for tables at all.</small> |
 | **Dealers Email** | The part before the @ of the address dealer emails come from, also shown to dealers as the contact. <small>Letters, numbers, dots and dashes only. Same setting as **Dealers Email** on the **Contact** tab of **System › Settings**.</small> |
 
@@ -49,7 +49,7 @@ For the **Export Data** card and **Dealers › Dynamic Export**, see [Exports](.
 ## Dealer Policy
 
 <Sidenote title="Who can do this">
-Needs the permission to update system settings, or the **Terms** tab doesn't load.
+Needs `system:settings:update`, or the **Terms** tab doesn't load.
 </Sidenote>
 
 The Dealer Policy is what dealers agree to when they apply. Like the policies in [Convention setup](../quickstart/convention-setup.md), section 3, it can be organization-wide or for this convention only.

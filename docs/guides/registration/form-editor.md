@@ -41,7 +41,7 @@ Needs `registration:form:manage`, which only the default *admin* role has. Witho
 
 - **Toolbox**: the elements you can add (Table 5.1).
 - **Form Editor**: your sections in order, with **Add New Section** below.
-- **View Preview** (section 7) and **Save Changes** (section 8).
+- **View Preview** and **Save Changes**, at the top right.
 
 <Figure
   src="/img/guides/registration/form-editor.webp"
@@ -87,7 +87,7 @@ Attendees see no change until you click **Save Changes**.
    <Result>The section and its elements disappear at once, with no confirmation.</Result>
 
 :::caution[Watch out]
-To get back a section deleted by mistake, leave with **Exit without Saving** (section 8); this also discards your other unsaved changes.
+To get back a section deleted by mistake, click the back arrow at the top left and choose **Exit without Saving**. This also discards your other unsaved changes.
 :::
 
 ## Add, move and remove elements

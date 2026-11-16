@@ -6,7 +6,7 @@ textbook: true
 
 # Product Options
 
-Options ask buyers for details such as a T-shirt size. Create an option once, then assign it to each product that should ask for it.
+Ask buyers for details such as a T-shirt size, with an option you create once and assign to each product that should ask for it.
 
 :::info[In this guide]
 Option types and styles, creating an option, assigning it to a product, and editing or deleting it.
@@ -51,7 +51,7 @@ An option's **Type** sets what the attendee fills in. Three types also have a **
 
 3. Enter a **Name** and choose a **Type** (Table 1.1), plus a **Style** if the type has one.
 
-   <Result>The fields below **Type** change to suit it, such as **Min Length** and **Max Length** for a Free text Field.</Result>
+   <Result>The fields below **Type** change to suit it, such as **Min Length** and **Max Length (Optional)** for a Free text Field.</Result>
 
 4. Fill in the other fields you need and click **Create**.
 
@@ -71,14 +71,14 @@ An option's **Type** sets what the attendee fills in. Three types also have a **
 
 1. **Name**, as attendees will see it.
 2. **Type**, here a Free text Field, and its **Style**.
-3. Settings for that type: **Min Length** and **Max Length**.
+3. Settings for that type: **Min Length** and **Max Length (Optional)**.
 4. **Create** saves the option.
 
 </Figure>
 
 ## Assigning an option to a product
 
-An option is only asked on the products it's assigned to.
+An option is only asked on the products it's assigned to. A product can have up to 10 options; at 10, the add button disappears.
 
 <Sidenote title="Changing the lock later">
 Each assigned option has a lock button that turns **Prevent changes to this option after purchase is complete.** on or off, except on options that change the price.
@@ -88,7 +88,7 @@ Each assigned option has a lock button that turns **Prevent changes to this opti
 
    <Result>The product's page opens with an **Options** card.</Result>
 
-2. In the **Options** card, click the green **Add** button (<i className="material-symbols-outlined">add</i>).
+2. In the **Options** card, click the green add button (<MaterialIcon name="add" />).
 
    <Result>An **Option Search** field appears, with two checkboxes and **Assign Options**.</Result>
 
@@ -129,7 +129,7 @@ Changes apply everywhere the option is assigned.
 
 1. On **Housekeeping › Registration › Options** (or **Store Management › Options**), click the option in the table.
 
-   <Result>The **Editing Option:** page opens. The **Type** can't be changed.</Result>
+   <Result>The option's page opens, headed with its name, such as **Editing Option: Pronouns**. The **Type** can't be changed.</Result>
 
 2. Change the fields you need and click **Save Changes**.
 
@@ -141,4 +141,8 @@ Changes apply everywhere the option is assigned.
 
 :::danger[Deleting erases answers]
 The **Delete Option** dialog warns that *Data for this option from users will be erased.* To stop asking on one product but keep past answers, remove the option from that product's **Options** card instead.
+:::
+
+:::tip[The name is an example]
+*Pronouns* in **Editing Option: Pronouns** is an example. The heading shows the option's own **Name**.
 :::

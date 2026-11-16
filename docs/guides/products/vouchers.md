@@ -6,7 +6,7 @@ textbook: true
 
 # Vouchers
 
-A voucher is a code worth an amount of money, such as a comp, a prize or refund credit. Attendees enter it at checkout, or you issue it to their cart.
+A voucher is a code worth an amount of money, such as a comp, a prize or refund credit, that attendees enter at checkout or that you issue to their cart.
 
 :::info[In this guide]
 How vouchers work, the voucher list, creating a voucher, a voucher's page, issuing it to attendees, editing or deleting it, one-time order vouchers, and checkout.
@@ -94,7 +94,7 @@ Issuing puts the voucher on each person's current unpaid order for this conventi
 
    <Result>The tab shows a **User(s)** field and **Issue Voucher**.</Result>
 
-2. Choose people in **User(s)**. Tick **Attempt to fulfill associated orders automatically.** to complete the orders the voucher covers. Click **Issue Voucher**.
+2. Choose up to 250 people in **User(s)**. Tick **Attempt to fulfill associated orders automatically.** to complete the orders the voucher covers. Click **Issue Voucher**.
 
    <Result>*Voucher #3 has been issued to 2 user(s).* appears.</Result>
 
@@ -156,7 +156,7 @@ On an unpaid order, you can create a voucher only that order can use, for exampl
 
    <Result>The voucher is no longer listed.</Result>
 
-**+** and **-** only appear on unpaid orders. See [Orders](../orders/orders.md) for the rest of the order's page.
+**+** and **-** only appear on unpaid orders.
 
 ## What attendees see at checkout
 

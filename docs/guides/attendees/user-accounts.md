@@ -6,7 +6,7 @@ textbook: true
 
 # Managing an attendee's account
 
-Correct an attendee's details, help them sign in, and view, export or delete their account. Every section starts on the person's profile: see [Finding attendees](./user-search.md).
+Correct an attendee's details, help them sign in, and view, export or delete their account.
 
 :::info[In this guide]
 Personal details, sign-in help, emergency contacts, audit history, data export, and account deletion.
@@ -51,7 +51,7 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
 :::
 
 :::tip[The values are examples]
-The 16 in *User is underage. The minimum age is 16 years old.* and the code in **Reset code: K7QX2M9P** are examples. The message shows your **Child Age Threshold**, and each reset gives a new code.
+The 16 in *User is underage. The minimum age is 16 years old.*, the code in **Reset code: K7QX2M9P**, and the 7 in **Export for User ID 7** and `user_7_export.json` are examples. The message shows your **Child Age Threshold**, each reset gives a new code, and the export uses the person's own user ID.
 :::
 
 ## Help someone sign in
@@ -82,7 +82,7 @@ When **Require e-mail confirmation before login** is on (the default), a new acc
 
    <Result>**Success! That user has verified, reloading.** appears, and **Allow user to login** disappears.</Result>
 
-They still get no ConCat email until they confirm their address, which they can resend from their homepage: see [Attendee accounts and sign-in](./accounts.md), section 2.
+They still get no ConCat email until they confirm their address, which they can resend from their homepage: see [Attendee accounts and sign-in](./accounts.md), section 2.2.
 
 ### Send a password reset email
 
@@ -94,7 +94,7 @@ They still get no ConCat email until they confirm their address, which they can 
 
    <Result>**Successfully sent password reset email!** appears, and the person gets a *Password Reset* email with a link that works for 24 hours.</Result>
 
-Setting a new password from the link also confirms the email address. The attendee's side is in [Attendee accounts and sign-in](./accounts.md), section 4.
+Setting a new password from the link also confirms the email address.
 
 ### Give a reset code at the convention
 
@@ -186,8 +186,6 @@ The audit history records sign-ins, changes, staff actions and views of personal
 
 </Figure>
 
-For system-wide logs, see [Audit logs](../system/audit-logs.md).
-
 ## Export one person's data
 
 <Sidenote title="Who can do this">
@@ -198,11 +196,11 @@ Use this when a person asks for a copy of their data.
 
 1. On the person's profile, click the download button (<MaterialIcon name="download" />) in the **User Profile** card.
 
-   <Result>An **Export for User ID** dialog warns **This export will contain PII, and be logged. Handle with care.**</Result>
+   <Result>An **Export for User ID 7** dialog warns **This export will contain PII, and be logged. Handle with care.**</Result>
 
 2. To leave out audit entries for a much smaller file, turn on **Do not include audit log entries.** Then click **Download**.
 
-   <Result>Stay on the page until **Export successful.** appears; your browser saves `user_` + the ID + `_export.json`.</Result>
+   <Result>Stay on the page until **Export successful.** appears; your browser saves `user_7_export.json`.</Result>
 
 ## Delete an account
 
@@ -210,9 +208,9 @@ Use this when a person asks for a copy of their data.
 Needs `user:update`, `staff:admin:update`, `pii:admin:read` and `pii:admin:delete`; by default only *admin* has them.
 </Sidenote>
 
-Deletion runs 24 hours after the request, erasing the account's personal information; until then you can cancel. 
+Deletion runs 24 hours after the request, erasing the account's personal information; until then you can cancel.
 
-:::warning[Warning] 
+:::warning[Warning]
 You can't delete your own account this way or another administrator's.
 :::
 

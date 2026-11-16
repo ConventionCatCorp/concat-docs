@@ -18,7 +18,7 @@ The System Settings tabs; logo and event info; venue, dates, store and user opti
 The page needs **system:settings:update**, which the default **admin** role has. Some tabs need more (Table 1.1).
 </Sidenote>
 
-The **Convention** tab applies to the convention you're signed in to; some other tabs apply to your whole organization. For the module menu, see [Start here](../quickstart/start-here.md), section 2.
+The **Convention** tab applies to the convention you're signed in to; some other tabs apply to your whole organization.
 
 1. Go to **Housekeeping › System › Settings**.
 
@@ -47,7 +47,7 @@ Each section of the **Convention** tab has its own **Save** button, which saves 
 
 1. On the **Convention** tab, under **Logo**, choose a PNG (64 pixels wide is recommended) and click **Save Logo**.
 
-   <Result>**Upload success** appears, and the logo shows on your homepage and login page.</Result>
+   <Result>**Upload success** appears, and the logo shows on your login page.</Result>
 
 2. Under **Event info**, fill in the fields in Table 2.1 and click its **Save**.
 
@@ -84,15 +84,13 @@ Each section of the **Convention** tab has its own **Save** button, which saves 
 
 | Option | What it does |
 | --- | --- |
-| **Enable Event Store** | Shows **Event store** in the attendee sidebar. <small>Products stay in Housekeeping while it's off. See [Store setup](../quickstart/store-setup.md).</small> |
+| **Enable Event Store** | Shows **Event store** in the attendee sidebar. <small>Products stay in Housekeeping while it's off.</small> |
 | **Event Store: Hide 'All Products' Tab** | Hides the store's *All Products* tab. <small>Only while the store is enabled.</small> |
 | **Require e-mail confirmation before login.** | Attendees must confirm their email to sign in; unconfirmed users get no further email. |
 | **Show 'Returning Attendee' badge on the user profile.** | Marks people who attended the year before. |
 | **Enable Attendees to Edit Order Options** | Attendees can change option values on orders that aren't registrations. |
 
 </TableFigure>
-
-The registration form editor is under **Housekeeping › Registration › Settings** (**Go to Registration Settings**).
 
 ## Maintenance mode
 
@@ -154,11 +152,15 @@ Menu links add your own entries, such as a schedule or survey, to signed-in atte
 | **URL** | Where the link goes. <small>`{{user.id}}` and `{{user.username}}` are replaced with the attendee's ID and username.</small> |
 | **Icon** | A Material icon name, such as `event`. <small>**Icon References** opens the list.</small> |
 | **Order** | Sorts links of the same type, lowest first. |
-| **Type** | Where the link appears: **Application** (under *Applications*), your convention's name (under it, after *Attendance*), or **Event Store** (under *Event store*). |
+| **Type** | Where the link appears: **Application** (under *Applications*), your convention's name, such as **Starfall Con 2026** (under it, after *Attendance*), or **Event Store** (under *Event store*). |
 | **Open in a new tab** | Opens the link in a new browser tab. |
 | **Only show to users with a paid registration** | Hides the link until the attendee has paid for a registration. |
 
 </TableFigure>
+
+:::tip[The name is an example]
+**Starfall Con 2026** is an example. The **Type** list shows your convention's name, from **Convention Long Type** under **Event info**.
+:::
 
 1. Click the **Links** tab.
 
@@ -172,11 +174,11 @@ Menu links add your own entries, such as a schedule or survey, to signed-in atte
 
    <Result>The link appears with its icon, under the heading set by **Type**.</Result>
 
-4. *(Optional)* To change a link, click its blue **Edit** button (a pencil), edit the **Edit Entry** dialog and click **Save**.
+4. *(Optional)* To change a link, click its blue pencil button, edit the **Edit Entry** dialog and click **Save**.
 
    <Result>An **Item edited** message appears with the new values in the table.</Result>
 
-5. *(Optional)* To remove a link, click its red **Delete** button (a bin), then **Delete** in the **Delete entry** dialog.
+5. *(Optional)* To remove a link, click its red bin button, then **Delete** in the **Delete entry** dialog.
 
    <Result>An **Item deleted** message appears; the link is gone from the table and sidebar.</Result>
 

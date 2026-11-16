@@ -24,7 +24,7 @@ Three things are set by ConCat, not by you:
 
 - **Country and currency.** A trial starts in US dollars, wherever you signed up from. Your Stripe account is created with your organization's country, and attendees are charged in its currency, so if either is wrong, ask ConCat Support to fix it *before* you connect Stripe.
 - **Test mode.** There's no test or sandbox switch: once Stripe is connected, payments are real. Ask ConCat Support to try payments without charging anyone.
-- **Platform fees.** Shown read-only on the **Platform Info** tab ([Convention settings](./settings.md), section 7).
+- **Platform fees.** Shown read-only on the **Platform Info** tab.
 
 Until a gateway is connected, attendees who try to pay see *This Payment Gateway is not yet configured for use by the event. Please contact customer support.*
 
@@ -42,18 +42,22 @@ You need access to your organization's Stripe account, or the details to create 
 
 3. Click **Yes, I want to enable Stripe Connect.**
 
-   <Result>A **Stripe Connect** dialog shows **Your country code is:** and **Your currency is:**, and its button changes from **Loading...** to **Continue to Stripe**.</Result>
+   <Result>A **Stripe Connect** dialog shows **Your country code is: US** and **Your currency is: USD**, and its button changes from **Loading...** to **Continue to Stripe**.</Result>
 
 4. Check the country code and currency. If either is wrong, click **Cancel** and contact ConCat Support; otherwise click **Continue to Stripe** and complete Stripe's sign-up with your organization's details.
 
    <Result>Back on the **Payment Gateways** tab, a **Status: Connected** badge shows with your Stripe account ID, and the button reads **Open Stripe Connect**.</Result>
+
+:::tip[The country and currency are examples]
+**US** and **USD** are examples. The dialog shows your organization's country code and currency.
+:::
 
 <TableFigure title="Stripe status badges">
 
 | Badge | Meaning |
 | --- | --- |
 | **Status: Connected** (green) | Stripe accepts payments for your event. |
-| **Status: Disabled** (red) | *Your Stripe account is not able to accept payments.* Attendees can't pay by card yet. |
+| **Status: Disabled** (red) | Your Stripe account can't accept payments yet, so attendees can't pay by card. |
 | **More information required** (red) | Stripe needs more details from an organization admin. <small>Shown until you've submitted everything Stripe asks for (section 3).</small> |
 
 </TableFigure>

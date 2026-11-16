@@ -15,7 +15,7 @@ How NFC badges work, turning them on, connecting a reader, programming and print
 ## How NFC badges work
 
 <Sidenote title="Who can do this">
-Programming and revoking need **system:nfc_token:program** (*Program NFC badges*); reading needs **system:nfc_token:password** (*Read password for NFC badges*). The *admin* and *registration* roles have both. The *badgeValidator* role has only the second, for staff who only check badges.
+Programming and revoking need `system:nfc_token:program` (*Program NFC badges*); reading needs `system:nfc_token:password` (*Read password for NFC badges*). The *admin* and *registration* roles have both. The *badgeValidator* role has only the second, for staff who only check badges.
 </Sidenote>
 
 To program a badge, the station reads the chip's unique ID, and ConCat creates the attendee's NFC record: a new password, and a signed record of the attendee, the convention and how many badges they've been issued. The station locks the chip with the password and writes the signed record to it.

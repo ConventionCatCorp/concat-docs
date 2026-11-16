@@ -18,7 +18,7 @@ A transfer moves the *payment* for a registration to another attendee. The recip
 
 A transfer works only when:
 
-- **Enable Registration Transfers** is ticked (section 2).
+- **Enable Registration Transfers** is ticked.
 - The sender's registration is paid, and their badge hasn't been printed.
 - The recipient has an account with the email address the sender enters, and has registered but not paid.
 - The registration wasn't bought with a discount that prevents transfers ([Discounts](../products/discounts.md)).

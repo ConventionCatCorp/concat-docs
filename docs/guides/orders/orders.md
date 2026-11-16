@@ -6,10 +6,10 @@ textbook: true
 
 # Orders
 
-An order holds everything an attendee buys in one checkout: badges, dealer tables, store products and fees. Find, change, settle and cancel orders, hand over goods and correct single items.
+Find, change, settle and cancel orders (everything an attendee buys in one checkout, fees included), hand over goods and correct single items.
 
 :::info[In this guide]
-How orders work, finding an order, unpaid orders, paid orders, and correcting a single item. For refunds, see [Refunds](./refunds.md).
+How orders work, finding an order, unpaid orders, paid orders, and correcting a single item.
 :::
 
 ## How orders work
@@ -18,7 +18,7 @@ How orders work, finding an order, unpaid orders, paid orders, and correcting a 
 An attendee has at most one unpaid order per convention. It's their cart, and staff see the same order in Housekeeping.
 </Sidenote>
 
-An order is created when something first goes into the cart, and stays **Unpaid** until paid in full: by card, by a voucher that covers it, or by staff marking it paid (section 3). A paid order can't be changed or canceled, only refunded.
+An order is created when something first goes into the cart, and stays **Unpaid** until paid in full: by card, by a voucher that covers it, or by staff marking it paid. A paid order can't be changed or canceled, only refunded.
 
 <TableFigure title="Order badges">
 
@@ -38,13 +38,11 @@ An order is created when something first goes into the cart, and stays **Unpaid*
 
 Only if you set **Cart Timeout** (marked experimental), in the **General** card of **Housekeeping › Registration › Settings**: the minutes an attendee has to check out, counted from the first item going into the cart.
 
-When time runs out, ConCat cancels the unpaid order and returns its items to stock, once any card payment still processing has settled. Attendees see a countdown at checkout ([Checkout and payment](./checkout.md)). Products staff add (section 3) are marked **Timeout Override** and don't start the clock.
+When time runs out, ConCat cancels the unpaid order and returns its items to stock, once any card payment still processing has settled. Attendees see a countdown at checkout. Products staff add are marked **Timeout Override** and don't start the clock.
 
 ConCat doesn't email the attendee when an order is canceled, by staff or by timeout.
 
 ### Who can do what
-
-Each action needs its own permission (Table 1.2).
 
 <TableFigure title="Permissions for order actions">
 
@@ -77,7 +75,7 @@ Buttons you lack the permission for are hidden, except in the item menu (section
 
 Orders must match every filter that's on, except that **Paid** and **Unpaid** together show both. **Requires Fulfillment** also matches unpaid orders, so add **Paid** to see only what's ready to hand over.
 
-For one attendee's orders, open their profile ([Users and access](../quickstart/users-and-access.md), section 2) and click the **Orders** tab; **Show details** opens an order.
+For one attendee's orders, open their profile and click the **Orders** tab; **Show details** opens an order.
 
 <TableFigure title="The order page">
 
@@ -93,7 +91,7 @@ For one attendee's orders, open their profile ([Users and access](../quickstart/
 </TableFigure>
 
 :::tip[The numbers are examples]
-Order and refund numbers on this page, such as 13 in **Fulfill Order #13**, are examples. The app shows each order's and refund's own number.
+Order and refund numbers on this page, such as 13 in **Fulfill Order #13** and `WRITEOFF-13`, are examples. The app shows each order's and refund's own number.
 :::
 
 ## Unpaid orders
@@ -157,11 +155,11 @@ Deleting a badge item deletes the attendee's registration, not just the line in 
 | **Write-off** | A payment of the order total with the gateway *writeoff*, for orders you're letting go unpaid. |
 | **Card** | A payment with the gateway *card*, for your own card terminal. |
 | **Cash** | A payment with the gateway *cash*. |
-| **Voucher** | No payment. ConCat creates and applies a voucher for the order total, coded `WRITEOFF-` and the order number. |
+| **Voucher** | No payment. ConCat creates and applies a voucher for the order total, coded with the order number, such as `WRITEOFF-13`. |
 
 </TableFigure>
 
-If vouchers or earlier payments already cover the order, **Mark as Paid** has no choices: click it to close the order.
+If nothing is left to pay, because the order is free or vouchers or earlier payments cover it, **Mark as Paid** has no choices: click it to close the order.
 
 ### Cancel an order
 

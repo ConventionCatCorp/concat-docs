@@ -6,7 +6,7 @@ textbook: true
 
 # Terms and policies
 
-Write the policies attendees read and agree to, from your privacy policy to the messages at registration, login and on the hotel pages, for your whole organization or one convention.
+Write the policies attendees read and agree to, for your whole organization or one convention.
 
 :::info[In this guide]
 How policies work, editing a policy, overriding one for a convention, deleting a policy, what attendees see.
@@ -46,7 +46,7 @@ A new organization starts with organization-wide versions of most policies: plac
 
 </TableFigure>
 
-Child and minor age thresholds are set in [Registration setup](../quickstart/registration-setup.md), section 6. Hotel policies matter only if ConCat has turned hotels on. Dealer and volunteer terms are on the **Terms** tabs of **Dealer Settings** and **Volunteer Settings**.
+Child and minor age thresholds are set in the **Minimum Age and Children** card of **Housekeeping › Registration › Settings**. Hotel policies matter only if ConCat has turned hotels on. Dealer and volunteer terms are on the **Terms** tabs of **Dealer Settings** and **Volunteer Settings**.
 
 ## Edit a policy
 
@@ -92,7 +92,11 @@ Deleting a convention-specific policy brings back the organization-wide version.
 
 1. Under the **Convention-specific Policy** box, click **Delete**.
 
-   <Result>A *Convention-specific policy* … *deleted successfully!* message appears, and the **Organization-wide Policy** box is editable again.</Result>
+   <Result>A *Convention-specific policy Registration Terms deleted successfully!* message appears, and the **Organization-wide Policy** box is editable again.</Result>
+
+:::tip[The policy name is an example]
+*Registration Terms* is an example. The message names the policy you deleted.
+:::
 
 ## What attendees see
 

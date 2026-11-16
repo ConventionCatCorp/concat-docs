@@ -6,7 +6,7 @@ textbook: true
 
 # Languages and wording
 
-ConCat's screens come in four languages, and each person picks their own. See how to switch, what isn't translated, and how to change ConCat's wording.
+Choose the language ConCat's screens appear in, see what isn't translated, and change ConCat's wording.
 
 :::info[In this guide]
 The four languages, choosing a language, what isn't translated, changing ConCat's wording.
@@ -17,8 +17,6 @@ The four languages, choosing a language, what isn't translated, changing ConCat'
 <Sidenote title="Labels in these guides">
 These guides quote the **English (US)** wording. Other languages translate the same words.
 </Sidenote>
-
-Table 1.1 lists the languages as they appear in the language list.
 
 <TableFigure title="Interface languages">
 

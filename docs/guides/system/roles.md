@@ -6,7 +6,7 @@ textbook: true
 
 # Roles and permissions
 
-Roles decide what each person can do in Housekeeping. Create them, set their permissions, and give them to people directly, by invite or through role managers.
+Decide what each person can do in Housekeeping: create roles, set their permissions, and give them to people directly, by invite or through role managers.
 
 :::info[In this guide]
 How roles work, viewing roles, creating a role, its permissions, assigning people, roles on a profile, one person's overrides, invite links, accepting an invite, settings and role managers, history and deleting.
@@ -143,10 +143,17 @@ Lists the current convention and every convention someone has the role for, with
    <Result>A message says *Removed role 'finance' from user 'jdoe'* and the row is gone.</Result>
 
 :::tip[The names and IDs are examples]
-The role name, usernames and IDs in these labels and messages, such as *finance* in **Assign 'finance' Globally?**, are examples. The app shows the role and people you chose.
+The role names, usernames and IDs in this page's labels and messages, such as *finance* in **Assign 'finance' Globally?**, are examples. The app shows the roles and people involved.
 :::
 
 To remove several people at once, choose them in the **Assign** dialog, tick **Remove Users?** and click **Remove**.
+
+:::caution[Watch out]
+Here and on a person's **Roles** tab:
+
+- Nobody can change their own roles. Trying shows *Cannot change your own roles*.
+- Only people with **staff:admin:update**, which the default **admin** role has, can give or take **admin**. Others see *Cannot change admin role as you are not an admin*.
+:::
 
 ## Assign roles from a person's profile
 
@@ -256,9 +263,13 @@ A role manager hands out one role without being an admin, such as a department h
 
 ## A role's history and deleting it
 
+<Sidenote title="History tab">
+The **History** tab needs **audit:read**.
+</Sidenote>
+
 1. On the role's page, click **History**.
 
-   <Result>**Audit Logs** lists this role's entries (see [Audit logs](./audit-logs.md)). This tab needs **audit:read**.</Result>
+   <Result>**Audit Logs** lists this role's entries.</Result>
 
 2. To delete a role, click **Delete**.
 

@@ -28,11 +28,15 @@ An attendee can register when:
 
 1. As an attendee, open **Attendance** in the homepage sidebar.
 
-   <Result>A *Ready to attend* card offers **Start registration** and **Update personal info**. Under **Your registration**, the attendee's card shows **Not registered**.</Result>
+   <Result>A *Ready to attend Star26?* card offers **Start registration** and **Update personal info**. Under **Your registration**, the attendee's card shows **Not registered**.</Result>
 
 2. Click **Start registration**.
 
    <Result>The **Event registration** page opens on the **Registration Type** step, followed by **Additional Information** and **Review**. The address ends in `/event/register/new`.</Result>
+
+:::tip[The names are examples]
+*Star26*, *Starfall Con 2026*, the badge name *Nova* and the code in **Discount: Upgrade Discount (REG-1-13)** are examples. The app shows your convention's short and long names, the attendee's own badge name, and a code made of the old tier's ID and the order number.
+:::
 
 With sub-accounts allowed, the heading reads **Your registrations**, with an **Attendees** box ([Sub-accounts, children and minors](./sub-accounts.md), section 4).
 
@@ -99,10 +103,6 @@ Public paid addons for the tier are offered in a **Product addons** card below t
 
    <Result>**Attendance** opens. The status card says **Complete your registration** (or *You're registered for Star26!*, if nothing was due); the attendee's card shows the tier, **Unpaid** or **Registered**, and the badge name, such as *Nova*.</Result>
 
-:::tip[The names are examples]
-*Star26* and the badge name *Nova* are examples. The app shows your convention's short name and the attendee's own badge name.
-:::
-
 ## Pay
 
 1. On **Attendance**, click **Complete registration**.
@@ -111,7 +111,7 @@ Public paid addons for the tier are offered in a **Product addons** card below t
 
 2. Pay for the order ([Checkout and payment](../orders/checkout.md)).
 
-   <Result>The status card says *You're registered for* your convention's short name, and the attendee's card shows **Registered**.</Result>
+   <Result>The status card says *You're registered for Star26!*, and the attendee's card shows **Registered**.</Result>
 
 With **Cart Timeout** set in Registration settings, an unpaid registration is held only that long, and the status card counts down the time left.
 
@@ -133,7 +133,7 @@ For a paid registration, **Change** lists only the paid tier (with **Continue**)
 
 3. *(Upgrade)* Click **Modify**, **Change**, **Select** on the higher tier, then **Update Registration**.
 
-   <Result>**Product added to cart!** appears. The cart's **Order Summary** has a **Discount: Upgrade Discount** line for what was already paid (none if the old tier was free), so the attendee pays the difference.</Result>
+   <Result>**Product added to cart!** appears. The cart's **Order Summary** has a line such as **Discount: Upgrade Discount (REG-1-13)** for what was already paid (none if the old tier was free), so the attendee pays the difference.</Result>
 
 4. *(Undo an upgrade before paying)* Click **Modify**, **Change**, **Cancel Upgrade** on the paid tier, then **Update Registration**.
 
@@ -145,7 +145,7 @@ In the card's menu (the arrow next to **Modify**), **Delete registration** delet
 
 1. In the **General** card of **Housekeeping › Registration › Settings**, untick **Open Registration** and click **Save**. Then open **Attendance** as an attendee.
 
-   <Result>The card says *Registration for* your convention's name *is closed.*, with an **Update personal info** button. No registration cards are shown.</Result>
+   <Result>The card says *Registration for Starfall Con 2026 is closed.*, with an **Update personal info** button. No registration cards are shown.</Result>
 
 2. As an attendee, go to the registration address directly (ending in `/event/register/new`).
 

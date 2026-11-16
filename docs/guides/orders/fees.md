@@ -6,7 +6,7 @@ textbook: true
 
 # Fees
 
-A fee is an amount you charge an attendee on top of what they buy, such as a replacement badge or a fine. Charge fees, check what the attendee sees, and review or delete them.
+Charge an attendee a fee on top of what they buy, such as for a replacement badge or a fine, and review or delete fees.
 
 :::info[In this guide]
 How fees work, charging a fee, and reviewing or deleting fees.
@@ -32,7 +32,7 @@ A fee goes into the attendee's unpaid order for this convention (their cart), wh
 
 ## Charge a fee
 
-1. Go to **Housekeeping › Attendees › Fee Management** (the menu is explained in [Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Attendees › Fee Management**.
 
    <Result>The **Fee Management** page opens: a searchable list of fees on the left, and a form with **User**, **Amount** and **Reason for Fee** on the right.</Result>
 
@@ -42,7 +42,7 @@ A fee goes into the attendee's unpaid order for this convention (their cart), wh
 
 3. As that attendee, click **Cart** in the homepage sidebar.
 
-   <Result>The **Checkout** page and its **Order Summary** show **Fees, Charges, and Fines** with the fee's amount, such as $25.00. Paying the order pays the fee ([Checkout and payment](./checkout.md)).</Result>
+   <Result>The **Checkout** page and its **Order Summary** show **Fees, Charges, and Fines** with the fee's amount, such as $25.00. Paying the order pays the fee.</Result>
 
 :::tip[The amount is an example]
 The $25.00 is an example. The order summary shows the fee's own amount.

@@ -9,7 +9,7 @@ textbook: true
 Welcome to ConCat! These guides take you through setting up and running your event, one task at a time.
 
 :::info[In this guide]
-Where to start, and how to read the guides.
+How to read the guides.
 :::
 
 ## How to read these guides
@@ -30,7 +30,7 @@ Bold text is an exact label from ConCat: a menu item, button, field or message. 
 
 ### Callouts
 
-Colored boxes hold information outside the steps. Table 2.1 lists each kind.
+Colored boxes hold information outside the steps. Table 1.1 lists each kind.
 
 <TableFigure title="Callouts used in these guides">
 
@@ -55,7 +55,7 @@ If what you see doesn't match a step's result, stop there: the steps after it as
 Notes like this sit in the margin on wide screens and between paragraphs on narrow ones. You can skip them.
 </Sidenote>
 
-Screenshots are numbered figures. Red numbered markers on a screenshot match the numbered notes in its caption. Tables are numbered by section: Table 2.1 is the first table in section 2.
+Screenshots are numbered figures. Red numbered markers on a screenshot match the numbered notes in its caption. Tables are numbered by section: Table 1.1 is the first table in section 1.
 
 :::note[Found a mistake?]
 If a step doesn't match what you see, contact ConCat Support and tell them the guide, section and step.

@@ -6,7 +6,7 @@ textbook: true
 
 # Managing an attendee's registrations and orders
 
-Register someone on their behalf, edit, transfer or delete their registration, and look through their orders. Start on the person's profile: see [Finding attendees](./user-search.md).
+Register someone on their behalf, edit, transfer or delete their registration, and look through their orders.
 
 :::info[In this guide]
 The Registration row; creating a registration; editing one; removing a payment, transferring or deleting; and the **Orders** tab.
@@ -26,10 +26,14 @@ A person has at most one registration per convention, shown in the **Registratio
 | --- | --- |
 | **Not Registered** | No registration for this convention. |
 | **Registration reserved, but not completed.** | Started registering but didn't finish. |
-| **Status:** the badge product, then a green tick | Paid. The tick links to the paying order. |
-| **Status:** the badge product, then a warning sign | Not paid. |
+| **Status: General Admission**, then a green tick | Paid. The tick links to the paying order. |
+| **Status: General Admission**, then a warning sign | Not paid. |
 
 </TableFigure>
+
+:::tip[The names and numbers are examples]
+*General Admission* and the 13 in **Order #13** are examples. The **Registration** row shows the person's own badge product, and each order card its own number.
+:::
 
 Registrations staff create start unpaid: the person pays at checkout, or staff take payment at the [Cashier UI](../registration/cashier/cashier.md).
 
@@ -109,8 +113,6 @@ They need an unpaid registration for this convention first. Create one (section 
 
 The transfer fails if the other person has no registration (*User has not yet registered.*), already has a paid one (*Target user registration already has a grant.*), or the registration was bought with a discount that stops transfers (*This registration is locked and cannot be transferred.*).
 
-Attendees can transfer their own registration when transfers are on: see [Transfer Registration](../registration/transfer.md).
-
 ### Delete an unpaid registration
 
 1. In the **Edit Registration** dialog of an unpaid registration, click **Delete**.
@@ -140,10 +142,6 @@ The tab lists the person's orders for this convention, plus paid orders from you
 3. Go back to the **Orders** tab. If the person has no unpaid order for this convention, click **Create New Order**.
 
    <Result>A new, empty **Unpaid** order appears, and **Create New Order** disappears.</Result>
-
-:::tip[The order number is an example]
-The 13 in **Order #13** is an example. Each card shows the order's own number.
-:::
 
 Order cards can also show a refund message (yellow pending, red denied, green approved with the amount) or blue payment review flags. Ticketed products add **Retrieve Ticket(s)**.
 

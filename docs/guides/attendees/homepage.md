@@ -48,6 +48,7 @@ The sidebar shows only to logged-in people, and most items depend on a feature b
 | **Applications** heading: **Volunteering** | **Enable Volunteers** is on (Volunteer Settings). |
 | **Applications** heading: **Dealing** | **Enable Dealers Module** is on (Dealer Settings). |
 | **Account** heading: **Personal details**, **Account settings**, **Two-factor authentication** | Always. See [Attendee accounts and sign-in](./accounts.md). |
+| **Account** heading: **Social links** | ConCat has turned on social links for your organization. |
 | **Theme Settings** heading: sun and moon buttons | Always. |
 
 </TableFigure>
@@ -81,7 +82,7 @@ The status card at the top of **Attendance** tells the attendee what to do next.
 Names and numbers on this page are examples. The app shows your convention's short name (*Star26*) or long name (*Starfall Con 2026*), the attendee's own name, each order's own number and ConCat's current version.
 :::
 
-With sub-accounts on, the heading reads **Your registrations**, with an **Attendees** counter and buttons to add people: see [Sub-accounts, children and minors](../registration/sub-accounts.md). Attendees with an unconfirmed email see a reminder banner: see [Attendee accounts and sign-in](./accounts.md), section 2.2. Registering is covered in [How attendees register](../registration/registering.md); opening registration in [Registration setup](../quickstart/registration-setup.md), section 7.
+With sub-accounts on, the heading reads **Your registrations**, with an **Attendees** counter and buttons to add people: see [Sub-accounts, children and minors](../registration/sub-accounts.md). Attendees with an unconfirmed email see a reminder banner: see [Attendee accounts and sign-in](./accounts.md), section 2.2. To open registration, see [Registration setup](../quickstart/registration-setup.md), section 7.
 
 ## Your notice to attendees
 
@@ -162,7 +163,7 @@ Each person on the account has a card under **Your registration**, registered pe
 
 </TableFigure>
 
-If the attendee can't register another person yet, a sub-account's **Register** is gray, and clicking it says why, such as *Enter your own registration details first before adding other attendees.* See [Sub-accounts, children and minors](../registration/sub-accounts.md), and [Scanner](../registration/cashier/scanner.md) for the **QR code**. Buyers of ticketed products get a **Tickets** list below the cards: see [Ticketed products](../products/tickets.md).
+If the attendee can't register another person yet, a sub-account's **Register** is gray, and clicking it says why, such as *Enter your own registration details first before adding other attendees.* Buyers of ticketed products get a **Tickets** list below the cards: see [Ticketed products](../products/tickets.md).
 
 ## The footer and changelog
 

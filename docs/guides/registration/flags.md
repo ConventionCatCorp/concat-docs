@@ -80,7 +80,7 @@ The form's **Registration flags** element ([Registration form editor](./form-edi
 
 1. The add (+) button (section 2).
 2. The crossed-out people button, on the `nukeme` row only (section 5).
-3. A flag's **Actions**: **List users** (section 4), edit and delete. `nukeme` has no delete button.
+3. A flag's **Actions**: the people button (section 4), edit and delete. `nukeme` has no delete button.
 
 </Figure>
 
@@ -90,7 +90,7 @@ To stop offering a flag but keep who set it, untick **Make visible to attendees*
 
 ## List the attendees who set a flag
 
-1. In a flag's **Actions**, click the **List users** (people) button.
+1. In a flag's **Actions**, click the people button.
 
    <Result>A **Users with the flag** dialog shows *Total Results: 2* and a numbered list of names, each linked to the attendee's profile.</Result>
 

@@ -6,7 +6,7 @@ textbook: true
 
 # What dealers see when they apply
 
-Follow a dealer application from the dealer's side: profile, application, payment, assistants and neighbors. Use a test attendee account to check your setup before you open applications.
+Walk through a dealer application from the dealer's side to check your setup before you open applications.
 
 :::info[In this guide]
 Opening the application, the dealer profile, applying for space, status and payment, naming assistants, assistant confirmation, and seating preferences.
@@ -45,7 +45,11 @@ The first page is your dealer form ([Dealer settings, policy and form](./setting
 
    <Result>A **Your dealer information has been saved.** message appears, and the space application opens at `/dealer/space`.</Result>
 
-A typed full-name agreement must match the first and last name on the account, or the field shows *Name does not match user profile*.
+A typed full-name agreement must match the first and last name on the account, or the field shows *Name does not match user profile (Alex Smith)*.
+
+:::tip[The names and numbers are examples]
+*Alex Smith*, *approved*, *Main Hall*, 12 and 2 on this page are examples. The app shows the account's first and last name, the application's status, the dealer area, the table number you assign and the table type's **Dealer assistant count limit**.
+:::
 
 To change details later, the dealer clicks **Edit Dealer** on the space page. The policy agreement stays ticked and can't be unticked.
 
@@ -65,7 +69,7 @@ With one enabled area, the dealer goes straight to its application. With several
 
    <Result>A **Your dealer application has been deleted.** message appears.</Result>
 
-A **Pending** application can be updated or deleted. Once your team sets another status, the form is grayed out with *The application is* followed by the status, *and can not be modified.* Full and closed areas show the messages in [Dealer areas and table types](./areas-and-products.md), Table 4.1.
+A **Pending** application can be updated or deleted. Once your team sets another status, the form is grayed out with *The application is approved and can not be modified.* Full and closed areas show the messages in [Dealer areas and table types](./areas-and-products.md), Table 4.1.
 
 ## Status and paying for the table
 
@@ -73,7 +77,7 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 1. After your team approves the application, open **Dealing** as the dealer.
 
-   <Result>An alert says *Your* area *application has been approved and is pending payment.*, with a **Pay for Table** button.</Result>
+   <Result>An alert says *Your Main Hall application has been approved and is pending payment.*, with a **Pay for Table** button.</Result>
 
 2. Click **Pay for Table**.
 
@@ -82,10 +86,6 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 3. Pay ([Checkout and payment](../orders/checkout.md)), then open **Dealing** again.
 
    <Result>A green alert says **Your application has been approved!**, with the table number, such as *Your table assignment for Main Hall* **12**, or *The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention.*</Result>
-
-:::tip[The table number is an example]
-*Main Hall* and 12 are examples. The alert shows the dealer area and table number you assign.
-:::
 
 Once approved, the space page also shows **Seating Preferences** and, if the table type allows assistants, **Manage Assistants**.
 
@@ -97,7 +97,7 @@ From approval, even before payment, if the table type's **Dealer assistant count
 
 1. On the space page, click **Manage Assistants**.
 
-   <Result>The **Add Assistant** card says *You can nominate up to* the limit *other attendees to assist you at the convention.*</Result>
+   <Result>The **Add Assistant** card says *You can nominate up to 2 other attendees to assist you at the convention.*</Result>
 
 2. Enter the assistant's username in **Assistant Username** and click **Add Assistant**.
 

@@ -6,7 +6,7 @@ textbook: true
 
 # Dealers
 
-Review dealer applications in Housekeeping: the dealer dashboard, finding and approving applications, and assistants and seating requests.
+Review and approve dealer applications, and manage dealers' details, assistants and seating requests.
 
 :::info[In this guide]
 How dealing works, the dashboard, finding and reviewing an application, paid applications, other areas, dealer details, assistants and seating, and user profiles.
@@ -15,10 +15,10 @@ How dealing works, the dashboard, finding and reviewing an application, paid app
 ## How dealing works
 
 <Sidenote title="Who can do this">
-Viewing the Dealers module needs the permission to read vendor applications; changing applications, assistants and seating needs the permission to update them. The default *dealersden* role has both.
+Viewing the Dealers module needs `vendor:read`; changing applications, assistants and seating needs `vendor:update`. The default *dealersden* role has both.
 </Sidenote>
 
-A dealer has one **dealer profile** (business details) and one **application** per area, each with a table type, add-ons and a status. For setup, see [Dealer areas and table types](./areas-and-products.md); for the dealer's side, [What dealers see when they apply](./applying.md). An application moves through three steps:
+A dealer has one **dealer profile** (business details) and one **application** per area, each with a table type, add-ons and a status. An application moves through three steps:
 
 - The dealer applies in an area. The application is **Pending**.
 - Your team sets the status. Approving puts the table type and requested add-ons into the dealer's cart.
@@ -28,12 +28,12 @@ A dealer has one **dealer profile** (business details) and one **application** p
 
 | Status | Housekeeping shows | The dealer sees on their **Dealing** page |
 | --- | --- | --- |
-| **Pending** | *pending* | *Your application for* the area *has not been approved yet.* |
-| **Approved**, not paid | *approved*, with a warning icon | *Your* area *application has been approved and is pending payment.*, with **Pay for Table** |
+| **Pending** | *pending* | *Your application for Dealers' Den has not been approved yet.* |
+| **Approved**, not paid | *approved*, with a warning icon | *Your Dealers' Den application has been approved and is pending payment.*, with **Pay for Table** |
 | **Approved**, paid | *approved*, with a tick <small>The applications list shows *approved (Paid)*.</small> | **Your application has been approved!**, with their table number once assigned, such as **12** |
-| **Waitlisted** | *waitlisted* | *Your application for* the area *is waitlisted.* |
-| **Rejected** | *rejected* | *Your application for* the area *was rejected.* |
-| **Cancelled** | *cancelled* | *Your application for* the area *was canceled.* |
+| **Waitlisted** | *waitlisted* | *Your application for Dealers' Den is waitlisted.* |
+| **Rejected** | *rejected* | *Your application for Dealers' Den was rejected.* |
+| **Cancelled** | *cancelled* | *Your application for Dealers' Den was canceled.* |
 
 </TableFigure>
 
@@ -41,15 +41,15 @@ A dealer has one **dealer profile** (business details) and one **application** p
 ConCat doesn't email dealers when their status changes. Tell them yourself, for example with a [Mass email](../attendees/mass-email.md).
 :::
 
-:::tip[The table number is an example]
-The 12 is an example. Dealers see the table number you assign.
+:::tip[The area and table number are examples]
+*Dealers' Den* and 12 are examples. Dealers see the area's name and the table number you assign.
 :::
 
 ConCat assigns two roles automatically: *vendor* to everyone with an application, and *vendorApproved* to everyone with an approved one.
 
 ## The dealer dashboard
 
-1. Go to **Housekeeping › Dealers › Dashboard** (the menu is explained in [Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Dealers › Dashboard**.
 
    <Result>The **Dashboard** shows the cards in Table 2.1 and an **Applications** card with a row per area.</Result>
 
@@ -97,7 +97,7 @@ In the **Applications** card, **Count** is every application in the area, **Conf
 
 ## Review an application
 
-1. On the dealer's page, click the pencil button (**Edit**) on the area's application card.
+1. On the dealer's page, click the pencil button at the top right of the area's application card.
 
    <Result>The card becomes a form with **Status**, **Table**, **Requests**, **Table Number** and **Special Requests**, and **Save** at the top.</Result>
 
@@ -115,7 +115,7 @@ In the **Applications** card, **Count** is every application in the area, **Conf
 
 The **Table** list includes table types marked **(Hidden)** or **(Unlisted)**, which dealers can't choose, so you can assign one that isn't on offer.
 
-:::note[Changing your mind]
+:::caution[Watch out]
 Moving an approved, unpaid application to another status takes its table type and add-ons out of the dealer's cart. Applications can't be deleted from Housekeeping: set them to **Rejected** or **Cancelled**.
 :::
 
@@ -127,7 +127,7 @@ Once the dealer has paid, **Status**, **Table** and **Requests** are locked. To 
 It only unlinks the payment from the application; the order stays paid. To give the money back, refund the order: see [Refunds](../orders/refunds.md).
 :::
 
-1. Click the pencil button (**Edit**) on the paid application's card.
+1. Click the pencil button on the paid application's card.
 
    <Result>**Status**, **Table** and **Requests** are grayed out, with a red bin button next to **Status**.</Result>
 
@@ -143,7 +143,7 @@ It only unlinks the payment from the application; the order stays paid. To give 
 
 Areas the dealer hasn't applied to show **No application.** on their card. You can apply for the dealer, even in an area that isn't open.
 
-1. On the dealer's page, click the plus button (**Add**) on a card that says **No application.**
+1. On the dealer's page, click the plus button at the top right of a card that says **No application.**
 
    <Result>The card shows the area's application form, with **Status** set to **Pending**.</Result>
 
@@ -153,7 +153,7 @@ Areas the dealer hasn't applied to show **No application.** on their card. You c
 
 ## Edit a dealer's details
 
-1. On the dealer's page, click the pencil button (**Edit**) on **Dealer Information**.
+1. On the dealer's page, click the pencil button at the top right of **Dealer Information**.
 
    <Result>The business name, email, address and your dealer form's questions become editable.</Result>
 
@@ -169,7 +169,7 @@ Areas the dealer hasn't applied to show **No application.** on their card. You c
 A table type allows assistants when its **Dealer assistant count limit** is above 0. See [Dealer areas and table types](./areas-and-products.md), section 3.
 </Sidenote>
 
-Assistants of an approved application get the *dealerAssistant* role. When the table type allows them, the application card's **Assistants** section lists each as **Accepted** or **Pending Email Confirmation.**
+Accepted assistants of an approved application get the *dealerAssistant* role. When the table type allows them, the application card's **Assistants** section lists each as **Accepted** or **Pending Email Confirmation.**
 
 1. In the card's **Assistants** section, click **Manage Assistants**.
 
@@ -203,7 +203,7 @@ The dealer's **Seating Requests** card lists their requests to sit next to other
 
    <Result>In the profile's **Information** card, the **Dealer** row shows their business name and each area's status, or **No application.**</Result>
 
-2. *(If they have no dealer profile)* Click the plus button (**Add**) on the **Dealer** row.
+2. *(If they have no dealer profile)* Click the plus button on the **Dealer** row.
 
    <Result>A **Create Dealer Application** dialog opens with the dealer's business fields and your form's questions.</Result>
 
@@ -216,7 +216,7 @@ The dealer's **Seating Requests** card lists their requests to sit next to other
    <Result>The tab shows the dealer form as the dealer sees it, with their answers, or *You are currently banned from dealing at the convention.* for someone banned.</Result>
 
 :::caution[Watch out]
-- Creating a dealer profile, even from Housekeeping, needs **Enable Dealers Module** on in [Dealer settings](./settings.md). Sub-accounts can't be dealers.
+- Creating or editing a dealer profile, even from Housekeeping, needs **Enable Dealers Module** on in [Dealer settings](./settings.md). Sub-accounts can't be dealers.
 - Read answers on the **Dealer** tab, but change them in **Dealer Information** (section 7). **Continue** on the tab saves the form, then opens your own **Dealing** page, not the dealer's.
 :::
 

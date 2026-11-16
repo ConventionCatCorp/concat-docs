@@ -6,7 +6,7 @@ textbook: true
 
 # OAuth applications and webhooks
 
-Webhooks tell another system when something happens, such as an order completing. OAuth applications let it use the ConCat API, on its own or for an attendee who agrees.
+Set up webhooks, which tell another system when something happens, such as an order completing, and OAuth applications, which let it use the ConCat API on its own or for an attendee who agrees.
 
 :::info[In this guide]
 The **Developers** page; creating a webhook; testing, verifying and deleting webhooks; creating an OAuth application; editing or deleting one; what attendees see when authorizing an app; logging out through an app.
@@ -121,7 +121,7 @@ Every request carries an `authorization: Bearer …` header holding a token sign
 Each application has two kinds of permission:
 
 - **Application Permissions**: used when the application calls the API on its own, outside a user's context (OAuth `client_credentials`). You tick them when you create it.
-- **User scopes**: asked for when an attendee signs in through the application; the attendee agrees on the consent screen (section 6).
+- *User scopes*: asked for when an attendee signs in through the application; the attendee agrees on the consent screen (section 6).
 
 1. Go to **Housekeeping › System › Developers** and click the **OAuth Applications** tab.
 
@@ -159,21 +159,21 @@ ConCat checks only the *origin* of the return address (its scheme, host and port
 
 3. To remove an application, click the delete button (the bin icon) in its row.
 
-   <Result>A **Delete Application** dialog asks *Are you sure you want to delete? Data for this option from users will be erased.* and names the application.</Result>
+   <Result>A **Delete Application** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. Star26 Schedule?*</Result>
 
 4. Click **Delete**.
 
    <Result>An **Application deleted!** message appears and the row disappears.</Result>
+
+:::tip[The name is an example]
+*Star26 Schedule* is an example. The dialog and the authorize screen show your application's own name.
+:::
 
 ## What attendees see when they authorize an app
 
 An application sends the attendee to your instance's `/oauth/authorize` page, where they must be logged in. If they already authorized the same application, scopes and return address, ConCat approves without showing the screen.
 
 The screen is titled with the application's name, such as **Authorize: Star26 Schedule**, and lists **Sign In Automatically** and one line per scope. A scope that starts with `admin:` is marked *This is an administrative permission.*, and the **Authorize Application** button turns red.
-
-:::tip[The name is an example]
-*Star26 Schedule* is an example. The screen shows your application's own name.
-:::
 
 To try it, use an application from section 4 that has a callback URI:
 

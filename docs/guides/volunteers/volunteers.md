@@ -18,19 +18,23 @@ How volunteering works, finding applications, reviewing one, assigning departmen
 Viewing applications needs `volunteer:read`. Assigning, staff changes and editing answers need `volunteer:update`; deleting needs `volunteer:delete`. The default *admin* and *hr* roles have all three.
 </Sidenote>
 
-Attendees apply from your homepage (see [What volunteers see when they apply](./applying.md)), saying how they relate to each department. Department leads request volunteers; your volunteer staff assign them. Departments and leads are set up in [Departments and leads](./departments.md).
+Attendees apply from your homepage, saying how they relate to each department. Department leads request volunteers; your volunteer staff assign them.
 
 <TableFigure title="How a volunteer relates to a department">
 
 | Relation | Who sets it | Shown on the application as |
 | --- | --- | --- |
-| Interest | The volunteer. At most 5. | **Interested in** <small>Badge tooltip: *Interested in* and the department</small> |
-| Experience | The volunteer. | **Past experience** <small>Tooltip: *Has past experience with*</small> |
-| Avoid | The volunteer. | **Will not volunteer for** <small>Hidden in the list until you click the red badge (**Show avoid selections**)</small> |
-| Request | A lead, with **Recruit Request** or **Staff Request**. | **Requested by** <small>Tooltip: *Requested by*</small> |
-| Assignment | Your volunteer staff (section 4). | **Assigned to** <small>Tooltip: *Assigned to*</small> |
+| Interest | The volunteer. At most 5. | **Interested in** <small>Badge tooltip in the list: *Interested in Art Show*</small> |
+| Experience | The volunteer. | **Past experience** <small>Tooltip: *Has past experience with Art Show*</small> |
+| Avoid | The volunteer. | **Will not volunteer for** <small>Not shown in the list</small> |
+| Request | A lead, with **Recruit Request** or **Staff Request**. | **Requested by** <small>Tooltip: *Requested by Art Show*</small> |
+| Assignment | Your volunteer staff (section 4). | **Assigned to** <small>Tooltip: *Assigned to Art Show*</small> |
 
 </TableFigure>
+
+:::tip[The names and numbers are examples]
+*Art Show*, *Alex Smith*, *General Admission*, *Order #13* and $50.00 on this page are examples. Tooltips and the assignment email name the department, the staff dialogs name the volunteer, and the **Remove Staff** box names their badge tier, order number and price.
+:::
 
 <TableFigure title="Columns in the Applications list">
 
@@ -87,7 +91,7 @@ The **Status** and **Department(s)** filters combine. **Assigned** plus *Art Sho
 
 1. On **Applications**, click a volunteer's name.
 
-   <Result>A dialog with their application opens. Its footer has **Profile**, **Assign**, **Make Staff** (or **Remove Staff**) and a **…** button (**Options**). The address gains `?user=` and their user ID, so you can share a link to it.</Result>
+   <Result>A dialog with their application opens. Its footer has **Profile**, **Assign**, **Make Staff** (or **Remove Staff**) and a **…** button. The address gains `?user=` and their user ID, so you can share a link to it.</Result>
 
 2. *(If the button is shown)* Click **Previous years**.
 
@@ -97,7 +101,7 @@ The **Status** and **Department(s)** filters combine. **Assigned** plus *Art Sho
 
    <Result>The application is shown again.</Result>
 
-4. Under **Application Answers**, click the pencil (**Edit**) next to a question.
+4. Under **Application Answers**, click the pencil next to a question.
 
    <Result>The answer becomes an input, with **Save** and **Cancel**.</Result>
 
@@ -105,12 +109,12 @@ The **Status** and **Department(s)** filters combine. **Assigned** plus *Art Sho
 
    <Result>The new answer is shown under the question.</Result>
 
-**Previous years** only appears for people who applied to an earlier convention in your organization; **Application Answers** only when your form has questions (see [Volunteer settings and form](./settings.md), section 3).
+**Previous years** only appears for people who applied to an earlier convention in your organization; **Application Answers** only when your form has questions.
 
 ## Assign departments
 
 <Sidenote title="Emails on assignment">
-With **Enable Volunteer Emails** on, an assignment emails the volunteer (*Volunteer Assignment:* and the department), and the department's address and leads (*New Volunteer Assigned*).
+With **Enable Volunteer Emails** on, an assignment emails the volunteer (*Volunteer Assignment: Art Show*), and the department's address and leads (*New Volunteer Assigned*).
 </Sidenote>
 
 Assigning approves the application for that department, and the volunteer sees *Your application has been approved!* A volunteer can have several departments.
@@ -141,7 +145,7 @@ Assigning approves the application for that department, and the volunteer sees *
 
 1. In the application dialog, click **Make Staff**.
 
-   <Result>A **Make Staff:** dialog asks *Are you sure you want to mark this user as staff?*</Result>
+   <Result>A **Make Staff: Alex Smith** dialog asks *Are you sure you want to mark this user as staff?*</Result>
 
 2. Click **Make Staff**.
 
@@ -149,7 +153,7 @@ Assigning approves the application for that department, and the volunteer sees *
 
 3. To undo it later, click **Remove Staff**.
 
-   <Result>A **Remove Staff:** dialog opens. If the person has a paid badge, it shows a ticked *Remove paid* … *registration from* box and a voucher amount set to what they paid.</Result>
+   <Result>A **Remove Staff: Alex Smith** dialog opens. If the person has a paid badge, it shows a ticked *Remove paid General Admission registration fromOrder #13$50.00* box and a voucher amount set to what they paid.</Result>
 
 4. Untick the registration box to let them keep their badge, correct the voucher amount if needed (`0` for no voucher), and click **Remove Staff**.
 
@@ -201,5 +205,3 @@ Staff with `volunteer:read` see a person's application on their profile; with `v
    <Result>*Your volunteer application has been saved!* appears. If the form was empty, the person now has an application on **Applications**.</Result>
 
 Sub-accounts have no **Volunteer** tab. Saving here sends the person no confirmation email.
-
-To email volunteers, see [Mass email](../attendees/mass-email.md).

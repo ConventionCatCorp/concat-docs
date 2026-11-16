@@ -18,7 +18,7 @@ Categories, the product list, creating a product, the product page, clearing unp
 **Store Products** needs `product:read`; managing categories needs `product:category:manage`, and managing products `product:manage`. The default *admin* and *productEditor* roles have all three.
 </Sidenote>
 
-Every store product belongs to a category, and attendees browse the store by category. Badge products are under **Housekeeping › Registration › Badge Products** instead (see [Registration setup](../quickstart/registration-setup.md)). To switch menus, see [Start here](../quickstart/start-here.md), section 2.
+Every store product belongs to a category, and attendees browse the store by category. Badge products are under **Housekeeping › Registration › Badge Products** instead.
 
 1. Go to **Housekeeping › Store Management › Store Products**.
 
@@ -30,7 +30,7 @@ Every store product belongs to a category, and attendees browse the store by cat
 
    <Result>A **New Category** form opens.</Result>
 
-2. Enter a **Name**, tick **Hide this category** to keep it from attendees for now, and click **Create Category**.
+2. Enter a **Name**. *(Optional)* Tick **Hide this category** to keep it from attendees for now. Click **Create Category**.
 
    <Result>**New category has been created.** appears, and the category's page opens.</Result>
 
@@ -99,8 +99,8 @@ Badges under each product's name show its status (Table 2.1).
 
 </TableFigure>
 
-:::tip[The numbers are examples]
-The numbers on this page, such as 40/50 in **In Stock: 40/50 Available** and the price $45.00, are examples. The app shows each product's own stock, limits and prices.
+:::tip[The values are examples]
+The values on this page, such as 40/50 in **In Stock: 40/50 Available**, the name and ID in **Product: T-shirt (ID: 12)** and the price $45.00, are examples. The app shows each product's own stock, limits, name, ID and price.
 :::
 
 ## Create a product
@@ -144,7 +144,7 @@ The numbers on this page, such as 40/50 in **In Stock: 40/50 Available** and the
 
 1. On the category's page, click the product's name.
 
-   <Result>The **Product:** page opens with the tabs **Product**, **Orders** and **Audit Logs**. **Product** has the cards in Table 4.1.</Result>
+   <Result>The product's page opens, titled with its name and ID, such as **Product: T-shirt (ID: 12)**, with the tabs **Product**, **Orders** and **Audit Logs**. **Product** has the cards in Table 4.1.</Result>
 
 <TableFigure title="The cards on a product's page">
 
@@ -220,7 +220,7 @@ Deleting takes the product out of the store and every unpaid cart. Paid orders k
    <Result>A **Deleted / Archived** badge appears, and the page's edit, delete, **Change Price** and add buttons are gone.</Result>
 
 :::caution[Watch out]
-A deleted product can't be restored. The category lists it only after **Show Deleted Products** (section 2, step 3).
+A deleted product can't be restored. It also loses its addons and stops being an addon of other products; the addon products themselves stay. The category lists it only after **Show Deleted Products** (section 2, step 3).
 :::
 
 ## Orders and history
@@ -239,10 +239,8 @@ A grant is ConCat's record that an attendee owns what they paid for. A refund ca
 
 3. Click an order.
 
-   <Result>The order's page opens (see [Orders](../orders/orders.md)).</Result>
+   <Result>The order's page opens.</Result>
 
 4. Click the **Audit Logs** tab.
 
-   <Result>The product's history is listed newest first: edits, price changes and orders, with who did each. It works like a person's audit history ([Managing an attendee's account](../attendees/user-accounts.md), section 4).</Result>
-
-See also [Vouchers](./vouchers.md), [Ticketed products](./tickets.md) and [What attendees see in the store](./store.md).
+   <Result>The product's history is listed newest first: edits, price changes and orders, with who did each.</Result>

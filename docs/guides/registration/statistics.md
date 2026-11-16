@@ -24,7 +24,7 @@ Everything here needs `registration:stats`. Without it, both dashboards show **N
 
 1. Go to **Housekeeping › Attendees › Dashboard**, the page Housekeeping opens on.
 
-   <Result>The **Dashboard** page shows **Total Registrations**, **Total Paid Registrations**, the cards in Table 2.1 that apply, and a card per tier, named with *(Paid)*, counting its paid registrations.</Result>
+   <Result>The **Dashboard** page shows **Total Registrations**, **Total Paid Registrations**, the cards in Table 2.1 that apply, and a card per tier, such as **General Admission (Paid)**, counting its paid registrations.</Result>
 
 2. *(If the card is shown)* On **Accounts Pending Review**, click **View**.
 
@@ -37,9 +37,13 @@ Everything here needs `registration:stats`. Without it, both dashboards show **N
 | **Badges Printed** | At least one badge has been printed. |
 | **Accounts Pending Review** | An account is waiting for review, and you have `user:note:delete`. |
 | **Pending Refund Requests** | A refund request is waiting, and you have `refund:create`. The title links to **Refund Requests**. |
-| **Identity Verifications Left**, and an **Identity:** card per status | ConCat Support has turned on identity verification for your event. |
+| **Identity Verifications Left**, and a card per status, such as **Identity: verified** | ConCat Support has turned on identity verification for your event. |
 
 </TableFigure>
+
+:::tip[The names are examples]
+*General Admission* in **General Admission (Paid)** and *verified* in **Identity: verified** are examples. The app shows each tier's name and each identity verification status.
+:::
 
 ## The registration dashboard
 

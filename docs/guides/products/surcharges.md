@@ -6,7 +6,7 @@ textbook: true
 
 # Surcharges
 
-Add a fee or tax on top of a product's price, such as sales tax or a handling fee. Create the surcharge once, then assign it to products or a whole category.
+Add a fee or tax on top of a product's price, such as sales tax or a handling fee, with a surcharge you create once and assign to products or a whole category.
 
 :::info[In this guide]
 Surcharge types, creating a surcharge, assigning it to a product or a category, the surcharge's page, and the platform fee.
@@ -58,12 +58,12 @@ The **Surcharges** menu item, and creating and assigning surcharges, need `produ
    <Result>**Created new surcharge.** appears and the surcharge's page opens (section 5).</Result>
 
 :::tip[The numbers are examples]
-IDs and rates on this page, such as 3 in **Assign Surcharge #3** and 8.25% in *Tax Rate of 8.25%*, are examples. The app shows your own surcharges and products.
+IDs, names and rates on this page, such as 3 in **Assign Surcharge #3**, *Sales Tax* in **Removed Category Level surcharge: Sales Tax** and 8.25% in *Tax Rate of 8.25%*, are examples. The app shows your own surcharges and products.
 :::
 
 ## Assign a surcharge to a product
 
-1. Open the product's page (see [Products](./products.md), section 4) and click the green **Add** button (<MaterialIcon name="add" />) in **Surcharges**.
+1. Open the product's page (see [Products](./products.md), section 4) and click the green add button (<MaterialIcon name="add" />) in **Surcharges**.
 
    <Result>A **Surcharge Search** field appears.</Result>
 
@@ -105,7 +105,7 @@ A category surcharge applies to every product in the category, including product
 
 4. *(Optional)* To remove a category surcharge, click the delete button (<MaterialIcon name="delete" />) on its row.
 
-   <Result>**Removed Category Level surcharge:** appears with its name. It's also removed from every product in the category.</Result>
+   <Result>**Removed Category Level surcharge: Sales Tax** appears. The surcharge is also removed from every product in the category.</Result>
 
 :::caution[Watch out]
 A category can have one tax rate. A new tax rate replaces the old one, and removes any other tax rate from the category's products.
@@ -127,7 +127,7 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
 
    <Result>**Assigned Surcharge successfully.** appears, and the products are listed under **Associated Products**.</Result>
 
-4. To unassign a product, click the more button (<MaterialIcon name="more_horiz" />, **Options**) on its row in **Associated Products** and choose **Unassign** (Figure 5.1).
+4. To unassign a product, click the more button (<MaterialIcon name="more_horiz" />) on its row in **Associated Products** and choose **Unassign** (Figure 5.1).
 
    <Result>**Removed surcharge from Product #2** appears.</Result>
 
@@ -146,7 +146,7 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
   ]}
 >
 
-1. The more button (**Options**) on the product's row.
+1. The more button on the product's row.
 2. **View Product** and **Unassign**.
 
 </Figure>

@@ -6,7 +6,7 @@ textbook: true
 
 # CNAME Records
 
-Add the `CNAME` records ConCat needs to send email from your domain or serve a convention at your own address. No DNS experience needed.
+Add the `CNAME` records ConCat needs to send email from your domain or serve a convention at your own address.
 
 :::info[In this guide]
 CNAME records and your DNS panel, a custom email domain, a convention on your own domain, when verification doesn't pass.
@@ -29,7 +29,7 @@ If your domain's nameservers were changed, for example so Cloudflare manages DNS
 ## Custom email domain
 
 <Sidenote title="Who can do this">
-The **Email Settings** tab needs the permission to manage email templates; configuring a domain needs the permission to update system settings.
+The **Email Settings** tab needs `email:templates`; configuring a domain also needs `system:settings:update`.
 </Sidenote>
 
 ConCat sends email from `concat.app` by default. To use your domain, request it in ConCat, add the three records it gives you, and verify them.
@@ -60,15 +60,15 @@ The **Name** copy button copies only the part before your domain, such as `abc12
 
 ## A convention on your own domain
 
-A new convention created on the **Conventions** tab gets its own address under the previous convention's domain, so the old one stays reachable. ConCat sets up `concat.app` addresses; on your own domain, the new address works only once you add a `CNAME` record for it.
+Creating a convention on the **Conventions** tab adds an address under the previous convention's domain, such as `2025.example.com`. Either the new convention gets it, or last year's convention moves to it and the new one takes over the main address. ConCat sets up `concat.app` addresses; on your own domain, the new address works only once you add a `CNAME` record for it.
 
-Add it at the new convention's full address, even if your main domain has one: if last year's convention moved to `2025.example.com`, add a record at `2025.example.com`.
+Add the record at the full new address, such as `2025.example.com`, even if your main domain already has one.
 
 1. Go to **Housekeeping › System › Settings** and click the **Conventions** tab.
 
    <Result>A convention on your own domain shows a badge after its domain: **pending** until the address works, **active** once it does.</Result>
 
-2. In your DNS panel, add a `CNAME` record whose name is the new convention's address. Ask ConCat Support for the value to point it to.
+2. In your DNS panel, add a `CNAME` record whose name is the new address. Ask ConCat Support for the value to point it to.
 
    <Result>Your DNS panel lists the new `CNAME` record at the convention's address.</Result>
 
@@ -86,7 +86,7 @@ A warning after **Verify** is normal: DNS providers can be slow, so try again in
 | --- | --- |
 | **Your domain was successfully validated.** | The records are correct. ConCat sends from your domain. |
 | *Your domain was not able to be validated yet. …* | The records aren't visible yet, or don't match. Check them and retry later. |
-| *An error has occurred. Cancel this attempt and try again, or contact support.* | The request failed. Click **Cancel**, then start again from section 2, step 2. |
+| *An error has occurred. Cancel this attempt and try again, or contact support.* | The request failed. Click **Cancel**, then **Confirm**, and start again from section 2, step 2. |
 | *The domain requested was not found, or does not have a valid attempt to verify.* | There's no pending request for this domain. Start again from section 2, step 2. |
 
 </TableFigure>

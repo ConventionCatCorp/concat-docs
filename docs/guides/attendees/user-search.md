@@ -30,7 +30,7 @@ The search covers every account in your organization; registration details are f
 
 3. Replace the text with a badge ID in its printed form, such as `B101`.
 
-   <Result>The person with that badge ID at this convention is listed, with a blue **Badge ID:** badge.</Result>
+   <Result>The person with that badge ID at this convention is listed, with a blue **Badge ID: B101** badge.</Result>
 
 4. Replace the text with a name nobody has, such as `zzzz`.
 
@@ -127,16 +127,14 @@ Blue badges show the field that matched and its value: **Email:**, **Badge Name:
    <Result>A green tick says *This user has an active entitlement that grants this attendance type.* and links to the paying order. A warning sign says *This user does not have an active order correlated with this registration.*: it isn't paid.</Result>
 
 :::tip[The IDs are examples]
-IDs such as 1234 in **ID: #1234** and 7 in **[ID: 7]** are examples. The app shows each person's own user ID.
+IDs such as 1234 in **ID: #1234**, B101 in **Badge ID: B101** and 7 in **[ID: 7]** are examples. The app shows each person's own user ID and badge ID.
 :::
 
 :::tip[Sub-accounts]
 No **Notes**, **Orders**, **Volunteer** or **Dealer** tab; **Owner account** links to the parent. The parent's **Registration** row links each sub-account under **Other Accounts:**.
 :::
 
-The **Information** card can also show **Dealer** (`vendor:read`), **Volunteer** (`volunteer:read`) and **Hotel** rows, and, for a possible duplicate of a banned account, **Possible duplicate account with a ban**: see [User Notes](../usernotes/usernotes.md).
-
-Each tab needs its own permission (Table 4.1).
+The **Information** card can also show **Dealer** (`vendor:read`), **Volunteer** (`volunteer:read`) and **Hotel** (`hotel:view`) rows, and, for a possible duplicate of a banned account, **Possible duplicate account with a ban**: see [User Notes](../usernotes/usernotes.md).
 
 <TableFigure title="Profile tabs">
 
@@ -146,7 +144,7 @@ Each tab needs its own permission (Table 4.1).
 | **Notes** | Notes, restrictions, bans. See [User Notes](../usernotes/usernotes.md). | `user:note:read`, `user:note:read:hr` or `system:login` |
 | **Orders** | Orders. See [Managing an attendee's registrations and orders](./user-registrations.md), section 5. | `order:view` |
 | **Roles** | Convention and global roles. See [Users and access](../quickstart/users-and-access.md), section 3. | `user:roles:update`, or a role manager |
-| **Permissions** | Permissions for this person alone. | `system:permission:read`; changing them needs `system:permission:update` |
+| **Permissions** | Permissions for this person alone. See [Roles and permissions](../system/roles.md), section 7. | `system:permission:read`; changing them needs `system:permission:update` |
 | **Volunteer** | Volunteer application. See [Volunteers](../volunteers/volunteers.md). | `volunteer:read` |
 | **Dealer** | Dealer application. See [Dealers](../dealers/managment.md). | `vendor:read` |
 | **Emergency Contacts** | Contacts given at registration. See [Managing an attendee's account](./user-accounts.md), section 3. | `admin:read:emergencycontacts`, registered people only |
@@ -157,5 +155,3 @@ Each tab needs its own permission (Table 4.1).
 :::note[Icons on the User Profile card]
 A shield after **User Profile**: identity verified with Stripe Identity. A red icon after the email: not confirmed. A warning sign there: an email change waits for the person to click the link sent to the new address.
 :::
-
-**Roles** and **Permissions** are covered in [Roles and permissions](../system/roles.md).

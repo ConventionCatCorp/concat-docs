@@ -6,7 +6,7 @@ textbook: true
 
 # Store and products setup
 
-Set up your event store: categories, products and their extras, and vouchers. Store products are everything you sell besides badges, such as merchandise, meal tickets or donations.
+Set up the event store, where attendees buy everything besides badges, such as merchandise, meal tickets or donations.
 
 :::info[In this guide]
 Turning on the store, categories, products, and vouchers.
@@ -14,17 +14,13 @@ Turning on the store, categories, products, and vouchers.
 
 ## Turn on the store
 
-The store is hidden from attendees until you turn it on, so you can build it first.
+The store is on in a new convention: attendees see **Event store** in the homepage sidebar, with every public product you add. To build it first, turn **Enable Event Store** off, and back on when you're ready.
 
 1. Go to **Housekeeping › System › Settings**. On the **Convention** tab, under **Event store**, turn on **Enable Event Store** and click **Save** in that section.
 
    <Result>An **Event store settings saved** message appears, and attendees see the store in the homepage sidebar, under **Event store**.</Result>
 
 ## Categories
-
-<Sidenote title="Where badges went">
-Badge products are no longer a store category. They have their own module: see [Registration setup](./registration-setup.md).
-</Sidenote>
 
 Every store product belongs to a category, such as *Merchandise* or *Charity*.
 
@@ -56,13 +52,13 @@ Every store product belongs to a category, such as *Merchandise* or *Charity*.
 
    <Result>The product's page opens, with the cards **Product Information**, **Product Images**, **Addons**, **Discounts**, **Options**, **Surcharges**, **Prices** and **Actions**.</Result>
 
-The store's **New Product** form has the same sections as the badge form ([Registration setup](./registration-setup.md), Table 1.1), plus **Maximum purchases per user** under **Stock Control** and **Deliverable** under **Cashier**. Tick **Deliverable** for physical goods that staff hand over and mark as delivered.
+The store's **New Product** form has the same sections as the badge form ([Registration setup](./registration-setup.md), Table 1.1), except that **Stock Control** has **Maximum purchases per user** instead of **Expires On**, and **Cashier** adds **Deliverable**. **Deliverable** is ticked by default, so staff can mark the product as delivered; untick it for anything they don't hand over, such as a donation.
 
 To change the price later, click **Change Price** in the **Prices** card, enter the **New Price** and click **Save New Price**; **Current Price** updates.
 
 ### Images
 
-1. In the **Product Images** card, click the green **Create** button (<i className="material-symbols-outlined">add</i>). Click **Choose or drop images to upload.** and choose an image file, or drag one onto it.
+1. In the **Product Images** card, click the green add button (<MaterialIcon name="add" />). Click **Choose or drop images to upload.** and choose an image file, or drag one onto it.
 
    <Result>An **Upload Complete!** message appears, and the image is shown in the card.</Result>
 
@@ -83,10 +79,10 @@ To change the price later, click **Change Price** in the **Prices** card, enter 
   ]}
 >
 
-1. The green **Create** button, which adds images.
+1. The green add button, which adds images.
 2. The primary image's badge.
 3. Another image's gear menu…
-4. …with **Set Primary**. **Set Badge Art** appears only on badge products.
+4. …with **Set Primary**. On badge products, **Set Badge Art** chooses the image printed on badges.
 
 </Figure>
 
@@ -100,7 +96,7 @@ Addons attach other products, free or at their own price, exactly as for badge p
 
 A discount lowers the price for a set period, such as an early-bird price.
 
-1. In the **Discounts** card, click the green **Add** button.
+1. In the **Discounts** card, click the green add button (<MaterialIcon name="add" />).
 
    <Result>A form shows **Current Price**, **Discounted Price**, **Available From**, **Available Until**, **Limit Discount to Role(s)** and **Name**.</Result>
 
@@ -108,13 +104,13 @@ A discount lowers the price for a set period, such as an early-bird price.
 
    <Result>The discount is listed as **Active** if its period has started, or **Not yet active** if not.</Result>
 
-:::note
+:::note[End date and roles]
 **Available Until** is required, so every discount ends. **Limit Discount to Role(s)** offers the price only to members of the roles you choose, such as staff.
 :::
 
 ### Options
 
-Options ask buyers for details such as a size, and are assigned as for badge products: see [Registration setup](./registration-setup.md), section 2, and [Product Options](../products/options.md).
+Options ask buyers for details such as a size. Create and assign them as for badge products: see [Registration setup](./registration-setup.md), section 2.
 
 ### Surcharges
 
@@ -132,11 +128,11 @@ A surcharge is a fee or tax added to the price. Create it once, then assign it t
 
    <Result>A **Created new surcharge.** message appears, and the surcharge's page opens.</Result>
 
-3. Open the product again, click the green **Add** button in its **Surcharges** card, select the surcharge in **Surcharge Search**, and click **Assign Surcharges**.
+3. Open the product again, click the green add button (<MaterialIcon name="add" />) in its **Surcharges** card, select the surcharge in **Surcharge Search**, and click **Assign Surcharges**.
 
    <Result>The surcharge is listed in the product's **Surcharges** card.</Result>
 
-4. *(Optional: a whole category)* On the category's page (section 3, step 1), click **Category Surcharges**, then **Assign Category Level Surcharge**. Select the surcharge in **Surcharge Search** and click **Assign Surcharges**.
+4. *(Optional: a whole category)* On the category's page, click **Category Surcharges**, then **Assign Category Level Surcharge**. Select the surcharge in **Surcharge Search** and click **Assign Surcharges**.
 
    <Result>The surcharge is listed in the **Category Surcharges** dialog and applies to every product in the category.</Result>
 
@@ -148,7 +144,7 @@ A voucher is a code worth an amount of money, such as a comped registration or a
 
    <Result>A form shows **Voucher Code**, **Display Name**, **Amount**, **Max Uses**, **Available From**, **Available Until**, **Restrict voucher to products** and **Allow Voucher Stacking**.</Result>
 
-2. Enter a **Voucher Code** or click the dice button (**Generate random code**), enter the **Amount** and **Max Uses** (`-1` for unlimited), and click **Create Voucher**.
+2. Enter a **Voucher Code** or click the dice button, enter the **Amount** and **Max Uses** (`-1` for unlimited), and click **Create Voucher**.
 
    <Result>A **New voucher has been created!** message appears, and the voucher's page opens.</Result>
 
@@ -160,8 +156,8 @@ A voucher is a code worth an amount of money, such as a comped registration or a
 The category in **Category: General Store**, and the 3 and 2 in *Voucher #3 has been issued to 2 user(s).*, are examples. The app shows your own category's name, the voucher's own number and how many people you chose.
 :::
 
-:::tip
-**Restrict voucher to products** limits what the voucher pays for, such as only badge products. When issuing, **Attempt to fulfill associated orders automatically.** applies the voucher to the attendees' unpaid orders.
+:::tip[Restricting and issuing vouchers]
+**Restrict voucher to products** limits what the voucher pays for, such as only badge products. Issuing adds the voucher to each person's current order; **Attempt to fulfill associated orders automatically.** also completes that order if the voucher leaves nothing to pay.
 :::
 
 :::tip[In more detail]

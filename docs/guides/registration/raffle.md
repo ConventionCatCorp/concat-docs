@@ -58,7 +58,7 @@ If a product is already in another silo, *Product is already part of another sil
 
 1. On **Gatekeeping**, click **Manage Silo** on a silo.
 
-   <Result>The **Editing Silo:** page opens, with **Update Silo** and **Delete Silo** under **Silo Information**.</Result>
+   <Result>The **Editing Silo: Sponsor Lottery** page opens, with **Update Silo** and **Delete Silo** under **Silo Information**.</Result>
 
 2. Change the name, products, roles or checkboxes, then click **Update Silo**.
 

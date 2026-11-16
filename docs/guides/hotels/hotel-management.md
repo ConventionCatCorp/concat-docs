@@ -71,7 +71,9 @@ The **Hotels** tab also needs `system:settings:update`.
 
    <Result>A **Hotel settings saved** message appears.</Result>
 
-**Open Hotels** opens or closes hotel booking as a whole, whatever the blocks' dates say. While it's off, attendees see a closed notice and your **Hotel Closed Message**, if you wrote one. That policy and the **Hotel Reservation Policy**, which attendees accept before entering a block, are on the **Terms** tab (see [Convention setup](../quickstart/convention-setup.md), section 3).
+If ConCat can't connect with your event details, **Save** in step 3 shows *Could not connect using the provided credentials. Please check them and try again.* Check the details with your provider and save again.
+
+**Open Hotels** opens or closes hotel booking as a whole, whatever the blocks' dates say. While it's off, attendees see a closed notice and your **Hotel Closed Message**, if you wrote one. That policy and the **Hotel Reservation Policy**, which attendees accept before entering a block, are on the **Terms** tab of **Housekeeping › System › Settings**.
 
 <TableFigure title="Sync statuses">
 
@@ -88,12 +90,12 @@ The **Hotels** tab also needs `system:settings:update`.
 **Refresh** updates the status. **Disable** pauses hotel booking: attendees lose the hotel pages and syncing stops, but blocks and reservations are kept. **Enable** resumes it.
 
 :::caution[Watch out]
-**Delete** removes the connection for good and works only before anything has synced; after that, use **Disable**. A convention can have only one connection.
+**Delete** removes the connection for good and works only until hotels, reservations or blocks exist; after that, use **Disable**. A convention can have only one connection.
 :::
 
 ## The dashboard and room inventory
 
-1. Go to **Housekeeping › Attendees › Hotel Management**, under *Module Management* in the sidebar (see [Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Attendees › Hotel Management**, under *Module Management* in the sidebar.
 
    <Result>**Hotel Management** opens on its **Home** tab, showing dashboard totals.</Result>
 
@@ -119,14 +121,14 @@ A day before **Release Start At**, ConCat draws the winners (Random Draw) or sta
 
 3. Fill in the fields in Table 4.1, then click **Submit**.
 
-   <Result>A **Successfully created release group** message appears. The new card shows **Create links task scheduled for:** and **Send emails task scheduled for:** with dates.</Result>
+   <Result>A **Successfully created release group** message appears. The new card shows **Create links task scheduled for: 7/14/2026, 10:00:00 AM (pending)** and **Send emails task scheduled for: 7/15/2026, 10:00:00 AM (pending)**.</Result>
 
 4. When the block is ready for attendees, edit it (section 5) and set **Status** to **Ready**.
 
    <Result>A **Successfully updated release group** message appears. Attendees who can see the block now find it under **Active blocks** on their hotel page.</Result>
 
-:::tip[The name is an example]
-*Riverside Hotel Passkey* is an example. The field shows the name you gave the connection.
+:::tip[The names, dates and numbers are examples]
+*Riverside Hotel Passkey*, the task dates, the 3 in **3 Result(s)** and the name in **Summary for Alex Smith** are examples. The app shows the name you gave the connection, task dates a day before and at your **Release Start At**, your number of reservations and the person's name.
 :::
 
 Without a connection (section 2), the form shows a warning and **Submit** is grayed out.
@@ -191,13 +193,13 @@ Moving **Release Start At** also moves the two scheduled tasks, if they haven't 
 
 1. Click the **Reservations** tab.
 
-   <Result>A card headed with the number of **Result(s)** lists every reservation with its number and status.</Result>
+   <Result>A card headed **3 Result(s)** lists every reservation with its number and status.</Result>
 
 2. Click a reservation.
 
-   <Result>**Summary for** the person's name opens, with a card for each block entry, or a **Reservation** card with a **No release group entry** badge.</Result>
+   <Result>**Summary for Alex Smith** opens, with a card for each block entry, or a **Reservation** card with a **No release group entry** badge.</Result>
 
-A reservation made outside ConCat by someone with no account isn't a link. You can also open a summary from the person's profile ([Finding attendees](../attendees/user-search.md)): the edit button (<MaterialIcon name="edit" />) on the **Hotel** row of the **Information** card, shown only when they have a hotel entry or reservation.
+A reservation made outside ConCat by someone with no account isn't a link. You can also open a summary from the person's profile: the edit button (<MaterialIcon name="edit" />) on the **Hotel** row of the **Information** card, shown only when they have a hotel entry or reservation.
 
 <TableFigure title="Reservation statuses">
 

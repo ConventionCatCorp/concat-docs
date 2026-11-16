@@ -140,7 +140,7 @@ The form is made of sections holding the elements in Table 4.1.
 | --- | --- |
 | **Display Name (optional)** | Shown instead of the question's name. |
 | **Required for submission** | Applicants must answer it. |
-| **Visible to admins only** | Hidden from applicants and from leads without `volunteer:update`. Staff can fill it in (see [Volunteers](./volunteers.md), section 3). |
+| **Visible to admins only** | Hidden from applicants and from leads without `volunteer:update`. Staff can fill it in. |
 | **Disable after approval** | Once assigned, the volunteer can't change the answer. Staff still can. |
 | **Display full width** | The question takes the section's full width. |
 
@@ -165,5 +165,3 @@ The form is made of sections holding the elements in Table 4.1.
 | **Pending** | Volunteers with no assignment anywhere who chose **Interest** for the department. |
 
 </TableFigure>
-
-To email volunteers by department, see [Mass email](../attendees/mass-email.md).

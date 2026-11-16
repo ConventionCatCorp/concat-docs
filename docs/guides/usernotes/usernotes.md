@@ -46,7 +46,7 @@ Notes in a *restricted* category are only visible with `user:note:read:hr`, what
 
 </TableFigure>
 
-A role can also grant reading chosen categories under **User Note Categories** (see [Users and access](../quickstart/users-and-access.md), section 3). Restricted ones still need `user:note:read:hr`.
+A role can also grant reading chosen categories: tick them under **User Note Categories** in the role's dialog. Restricted ones still need `user:note:read:hr`.
 
 ## Notes on a profile
 
@@ -56,7 +56,7 @@ A role can also grant reading chosen categories under **User Note Categories** (
 
 2. Choose a **Note Category**, enter the **Text**, and click **Add New Note** (Figure 2.1).
 
-   <Result>The note appears in the **Notes** card with a gray badge showing the convention's short name, because **Apply only to this convention.** was ticked. A note saved with the box unticked has no badge and is shown in every convention of your organization.</Result>
+   <Result>The note appears in the **Notes** card with a gray badge showing the convention's short name, such as **Star26**, because **Apply only to this convention.** was ticked. A note saved with the box unticked has no badge and is shown in every convention of your organization.</Result>
 
 <Figure
   src="/img/guides/usernotes/add-note.webp"
@@ -85,6 +85,10 @@ A role can also grant reading chosen categories under **User Note Categories** (
    <Result>The note is gone from the list.</Result>
 
 Ban notes have no edit button: delete the ban, which lifts it, and create a new one.
+
+:::tip[The names are examples]
+*Star26*, *Alexander* and *Smith* are examples. The badge shows your **Convention Short Name**, and an account review shows the names on the matching ban.
+:::
 
 ## Search and create notes
 
@@ -153,7 +157,7 @@ A registration ban logs the person out at once, and they can't log back in. Chec
 Each review also emails *Registration Requires Review* to your registration address, set on the **Contact** tab of **Housekeeping › System › Settings**.
 </Sidenote>
 
-When an account or sub-account is created, ConCat compares its name with every ban in your organization, in any ban category. A match marks the account **Pending Review**, so someone can check whether it's the banned person signing up again.
+When an account or sub-account is created, or a person changes their name, ConCat compares the name with every ban in your organization, in any ban category. A match marks the account **Pending Review**, so someone can check whether it's the banned person signing up again.
 
 A name matches when, ignoring capitals, the first name starts with the same three letters as the ban's and the last name with the same letter. If both have a date of birth, the year and month must match too. So a ban on *Alexander Smith* flags *Alex Sanders*.
 
@@ -165,7 +169,7 @@ An account under review can still log in, but the Cashier UI won't issue a badge
 
 2. Click **View**, then click a name in the list.
 
-   <Result>The profile has a yellow **Pending Review** badge. The **Information** card starts with **Possible duplicate account with a ban**, showing the matching names, such as *Alex Smith*, and the ban's text, or **No matching ban** if the ban has since been deleted.</Result>
+   <Result>The profile has a yellow **Pending Review** badge. The **Information** card starts with **Possible duplicate account with a ban**, showing the ban's names, such as **Matching First Name**: Alexander and **Matching Last Name**: Smith, and the ban's text, or **No matching ban** if the ban has since been deleted.</Result>
 
 3. If this is the banned person, ban this account too (section 4).
 
@@ -174,10 +178,6 @@ An account under review can still log in, but the Cashier UI won't issue a badge
 4. Click the green tick button (<MaterialIcon name="check" />) on the **Possible duplicate account with a ban** row, then **Complete review** in the **Complete account review?** dialog.
 
    <Result>The row and the **Pending Review** badge are gone, and the dashboard card no longer counts the account.</Result>
-
-:::tip[The name is an example]
-*Alex Smith* is an example. The card shows the names of the matching accounts.
-:::
 
 ## Note categories
 

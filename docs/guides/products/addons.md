@@ -34,7 +34,7 @@ For complimentary addons:
 - **Hidden in the cart:** **Add-on is hidden and should not appear in users' carts** leaves the free item out of the attendee's cart. Staff still see it in Housekeeping and the Cashier UI.
 - **Stock:** it uses its own product's stock. When that runs out, the product it comes with shows as sold out. A product with a complimentary addon can only be bought one at a time.
 
-Each addon in the card also has a stock badge: **In Stock / Unlimited**, **In Stock:** and the number left, such as **In Stock: 15/20 Available**, or **Out of Stock**.
+Each addon in the card also has a stock badge: **In Stock / Unlimited**, the number left, such as **In Stock: 15/20 Available**, or **Out of Stock**.
 
 :::tip[The values are examples]
 The stock in **In Stock: 15/20 Available** and the tier in **Free addon from General Admission** are examples. The app shows each addon's own stock and the product it came with.
@@ -60,7 +60,7 @@ Addons need `product:manage`, which the default *admin* and *productEditor* role
 
 The steps are the same for store and badge products.
 
-1. Open the product's page (see [Products](./products.md), section 4) and click the green **Add** button (<MaterialIcon name="add" />) in **Addons**.
+1. Open the product's page (see [Products](./products.md), section 4) and click the green add button (<MaterialIcon name="add" />) in **Addons**.
 
    <Result>A **Product Search** field appears, with two checkboxes and **Create Add-On**.</Result>
 

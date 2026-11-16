@@ -22,14 +22,14 @@ The Quickstart sets up the basics: [Convention setup](./quickstart/convention-se
 
 - **Your refund policy.** Put it in your **Convention Policy / Terms & Conditions** ([Convention setup](./quickstart/convention-setup.md), section 3). Attendees can ask for refunds until you tick **Disable refunds** in **Housekeeping › Registration › Settings**; staff can refund after that too. See [Refunds](./orders/refunds.md), section 7.
 - **What happens to people who pay but don't attend.** Decide if they get money back, and say so in your policy.
-- **When pre-registration ends**, or whether registration stays open up to the event. To close it, turn off **Open Registration** in **Housekeeping › Registration › Settings** ([Registration setup](./quickstart/registration-setup.md), section 7).
+- **When pre-registration ends**, or whether registration stays open up to the event. To close it, turn off **Open Registration** in the **General** card of **Housekeeping › Registration › Settings** and click **Save** ([Registration setup](./quickstart/registration-setup.md), section 7).
 - **Pre-registration discounts and their dates.** An early-bird price is a discount with **Available From** and **Available Until** dates ([Discounts](./products/discounts.md)).
 
 ### Settings to check
 
 - **Registration flags**, in **Housekeeping › Registration › Registration Flags**. Check the wording of each flag attendees can tick ([Registration flags](./registration/flags.md)).
   - Be certain when deleting the accounts of attendees who tick the built-in `nukeme` flag (*Please delete my account after the con is over.*) after the event (section 3).
-- **Swag for sponsor-level badges.** Add it as an addon on those badge products ([Addons](./products/addons.md)). 
+- **Swag for sponsor-level badges.** Add it as an addon on those badge products ([Addons](./products/addons.md)).
 - **Payments.** Connect Stripe in **Housekeeping › System › Settings › Payment Gateways** ([Convention setup](./quickstart/convention-setup.md), section 4), then check your payout schedule in Stripe (**Open Stripe Connect** on the same tab). Daily automatic payouts are recommended.
 
 ## Before the first day of the event

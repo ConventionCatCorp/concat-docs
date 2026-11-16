@@ -50,13 +50,13 @@ A badge product is a tier attendees register for, such as *General Admission* or
 
 ## Badge product options
 
-An option asks attendees for an extra detail, such as a T-shirt size. Create it once, then assign it to each tier that should ask it. [Product Options](../products/options.md) covers every option type.
+An option asks attendees for an extra detail, such as a T-shirt size. Create it once, then assign it to each tier that should ask it.
 
 1. Go to **Housekeeping › Registration › Options**, click **Create New Option**, fill in **Name** and **Type**, and click **Create**.
 
    <Result>A **New option has been created** message appears, and the option is listed on **Options**.</Result>
 
-2. Open a badge product (section 1, step 4) and click the green **Add** button in its **Options** card.
+2. On a badge product's page, click the green add button (<MaterialIcon name="add" />) in its **Options** card.
 
    <Result>An **Option Search** field appears, with the checkboxes **Mark selected options as required.** and **Prevent changes to this option after purchase is complete.**</Result>
 
@@ -72,7 +72,7 @@ An addon points to another product, so its price and stock stay in one place. Cr
 
 An addon is a product that comes with a tier, such as a free Sponsor T-shirt or a paid banquet seat.
 
-1. Open a badge product (section 1, step 4) and click the green **Add** button in its **Addons** card.
+1. On a badge product's page, click the green add button (<MaterialIcon name="add" />) in its **Addons** card.
 
    <Result>A **Product Search** field appears, with the checkboxes **Add-on is complimentary and should be provided free** and **Add-on is hidden and should not appear in users' carts**.</Result>
 
@@ -123,7 +123,7 @@ The registration form is the page attendees fill in after choosing a tier. Its s
 
 </Figure>
 
-:::tip
+:::tip[Leaving with unsaved changes]
 Leaving the editor with unsaved changes opens an **Unsaved Changes** dialog with **Save and Exit**, **Exit without Saving** and **Cancel**.
 :::
 
@@ -170,7 +170,7 @@ The tier in **Product: General Admission (ID: 1)** and the 16 in **Register anot
 ConCat uses two age thresholds:
 
 - **Child Age Threshold**: the minimum age to create an account, counted on the convention's start date. Nobody under 13 can create one, whatever the setting. Younger children can only attend as a sub-account (section 5).
-- **Minor Age Threshold**: below this age, an attendee sees the **Minor Registration Warning** policy and needs a parent's consent. Set it equal to the child age threshold to turn this off.
+- **Minor Age Threshold**: below this age, an attendee sees the **Minor Registration Warning** policy and needs a parent's consent. It can't be lower than the child age threshold; set the two equal to turn this off.
 
 1. Go to **Housekeeping › Registration › Settings**. In the **Minimum Age and Children** card, set **Child Age Threshold** and **Minor Age Threshold**, then click **Save**.
 
@@ -179,10 +179,6 @@ ConCat uses two age thresholds:
 2. Go to **Housekeeping › System › Settings › Terms** and write the policies these ages trigger: **Child Registration Error**, **Minor Registration Warning**, **Child Badge Terms** and **Parent agreement for child registration** ([Convention setup](./convention-setup.md), section 3).
 
    <Result>Each policy shows a saved message when you click **Save**.</Result>
-
-:::caution[Watch out]
-The older *Child registration* feature (badge-name-only children on a parent's registration) is deprecated. If **Minimum Age and Children** shows *Child Registrations are going away.*, plan to use sub-accounts instead.
-:::
 
 ## Open registration
 

@@ -64,7 +64,7 @@ Tags describe an entry: **admin** for admin activity, **create**, **edit** or **
 
    <Result>Only entries of that type are listed, under **Type Filter:**, the type and **[remove]**.</Result>
 
-4. Click **[remove]**, and the remove button on each tag filter.
+4. Click **[remove]**, and the × button on each tag filter.
 
    <Result>The filters are gone and the pivot's full list is back.</Result>
 

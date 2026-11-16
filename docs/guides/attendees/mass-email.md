@@ -6,7 +6,7 @@ textbook: true
 
 # Mass email
 
-Send one message to a group of attendees, volunteers or dealers. Four modules have a **Mass Email** page; they share one form and differ only in how you choose recipients.
+Send one message to a group of attendees, volunteers or dealers.
 
 :::info[In this guide]
 How it works, sending, and recipients by module: Attendees, Registration, Volunteers and Dealers.
@@ -18,14 +18,16 @@ How it works, sending, and recipients by module: Attendees, Registration, Volunt
 **From Address** lists the senders under **Email Senders for Mass Email** in **Housekeeping › System › Settings › Email Settings**: see [Convention setup](../quickstart/convention-setup.md), section 5.
 </Sidenote>
 
-You write the email, ConCat works out the recipients, and you review the final list before sending.
+You write the email, ConCat works out the recipients, and you review the final list before sending. The four **Mass Email** pages share one form and differ only in how you choose recipients.
 
 - **The body is Markdown.** ConCat wraps it in the **Mass Email** template, with a greeting and your footer: see [Email Template Overrides](../templates/templates.md).
 - **The subject starts with your Notification Prefix,** as in every email your event sends.
 - **Some people are skipped.** Anyone with an unconfirmed email address or a registration ban doesn't get it. A sub-account without its own address gets it at the parent's.
+
 :::warning[Sent on confirmation]
 **There's no scheduling, test send or sent-mail history.** The email goes as soon as you confirm.
 :::
+
 <TableFigure title="The four Mass Email pages">
 
 | Menu path | Permission | Chooses recipients by |
@@ -37,7 +39,7 @@ You write the email, ConCat works out the recipients, and you review the final l
 
 </TableFigure>
 
-The default *admin* and *hr* roles have `massemail`; *admin* and *dealersden* have `vendor:massemail`.
+The default *admin*, *hr* and *lead* roles have `massemail`; *admin* and *dealersden* have `vendor:massemail`.
 
 ## Send a mass email
 
@@ -147,11 +149,11 @@ A lead without `volunteer:admin` sees only their own departments. Leads named in
 
 1. Go to **Housekeeping › Volunteers › Mass Email**.
 
-   <Result>The form has **Department(s)**, a checkbox per department, and **Filters**: **Only Staff**, **Assigned** (ticked) and **Unassigned**. With `volunteer:admin` you also see **All Departments**.</Result>
+   <Result>The form has **Department(s)**, a checkbox per department, and **Filters**: **Only Staff**, **Assigned** (ticked) and **Unassigned**. With `volunteer:admin` you also see **All Departments**. **From Address** also lists the departments' own addresses.</Result>
 
 2. Tick the departments to email.
 
-   <Result>The preview counts the volunteers assigned to them, and the departments' own addresses are added to **From Address**.</Result>
+   <Result>The preview counts the volunteers assigned to them.</Result>
 
 <TableFigure title="Volunteer filters">
 
@@ -177,4 +179,4 @@ A lead without `volunteer:admin` sees only their own departments. Leads named in
 
    <Result>The count drops to dealers who applied for the ticked types; each type shows its number of applications.</Result>
 
-With no area ticked, every area is included. The first five statuses keep applications in those states; **Paid** and **Unpaid** narrow the list only when just one is ticked. Areas and table types are set up as in [Dealers](../dealers/managment.md).
+With no area ticked, every area is included. The first five statuses keep applications in those states; **Paid** and **Unpaid** narrow the list only when just one is ticked. Areas and table types are set up as in [Dealer areas and table types](../dealers/areas-and-products.md).

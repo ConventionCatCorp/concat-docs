@@ -24,7 +24,7 @@ Each image has a role, shown as a badge under it (Table 1.1).
 
 | Badge | Where it's used |
 | --- | --- |
-| **Primary** | On the product's store card, and first on its page. <small>One per product. The first image uploaded becomes **Primary**.</small> |
+| **Primary** | On the product's store card, and first on its page. <small>One per product. A new image becomes **Primary** if the product has none.</small> |
 | **Image** | On the product's page after the primary, as a slideshow. |
 | **Hidden** | Kept, but not shown to attendees. |
 | **Badge Art** | Not in the store. A badge design can print it for holders of this badge product; see [Badge Designer](../registration/badge_designer.md). <small>At most one per product.</small> |
@@ -45,7 +45,7 @@ ConCat converts any image to PNG and scales it to fit 2048 × 2048 pixels. A pro
 
 3. Click the upload area and choose image files, or drag them onto it.
 
-   <Result>**Upload Complete!** appears and the images are listed. A product's first image is marked **Primary**, the rest **Image**.</Result>
+   <Result>**Upload Complete!** appears and the images are listed. The first is marked **Primary** if the product had no primary image; the rest are marked **Image**.</Result>
 
 :::note[At the limit]
 At 10 images the add button disappears. Delete one (section 4) to make room.
@@ -100,5 +100,5 @@ A **Hidden** or **Badge Art** image can't go back to **Image**. Make it **Primar
    <Result>The image is removed at once, with no confirmation.</Result>
 
 :::caution[Watch out]
-Deleting the primary image doesn't make another one primary. The product's store card has no picture until you use **Set Primary**.
+Deleting the primary image doesn't make another one primary. The product's store card has no picture until you use **Set Primary** or upload a new image.
 :::

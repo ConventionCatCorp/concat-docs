@@ -6,7 +6,7 @@ textbook: true
 
 # Dealer areas and table types
 
-A dealer area is a part of your event where dealers apply for space, such as a dealers' den or an artists' alley. Set up its table types and add-ons, then the area itself.
+Set up the table types, add-ons and dealer areas where dealers apply for space, such as a dealers' den or an artists' alley.
 
 :::info[In this guide]
 How the pieces fit together, the dealer product category, table types and add-ons, creating an area, and editing or deleting one.
@@ -15,7 +15,7 @@ How the pieces fit together, the dealer product category, table types and add-on
 ## How they fit together
 
 <Sidenote title="Who can do this">
-**Areas** needs the permission to update vendor applications; deleting an area needs the permission to add and remove admins. Categories and products need the product permissions, which *dealersden* doesn't have.
+**Areas** needs `vendor:update`; deleting an area also needs `staff:admin:update`, which of the default roles only *admin* has. Categories need `product:category:manage` and products `product:manage`: the default *productEditor* role has both, *dealersden* neither.
 </Sidenote>
 
 Build the pieces in the order of Table 1.1: each needs the one before.
@@ -63,7 +63,7 @@ Approving an application puts the chosen table type and add-ons into the dealer'
 
    <Result>The product's page opens. **Product Information** shows the **Dealer assistant count limit**.</Result>
 
-Dealers see the table type's name, price and description; other fields work as for store products ([Products](../products/products.md)). To change the assistant limit, click the pencil button (**Edit**) on **Product Information**.
+Dealers see the table type's name, price and description; other fields work as for store products ([Products](../products/products.md)). To change the assistant limit, click the pencil button on **Product Information**.
 
 :::tip[Table types only some dealers can have]
 Only **Public** table types are offered to dealers. Make one **Unlisted** or **Hidden** to keep it off their list; your team can still assign it in Housekeeping.
@@ -77,7 +77,7 @@ An add-on is a product in the same dealer category as its table type. Make it **
 
    <Result>A **New product has been created** message appears, and the add-on is listed on the category's page.</Result>
 
-2. Open the table type, and in its **Addons** card click the green **Add** button.
+2. Open the table type, and in its **Addons** card click the green add (+) button.
 
    <Result>The card shows **Product Search**, two checkboxes and **Create Add-On**.</Result>
 
@@ -85,7 +85,7 @@ An add-on is a product in the same dealer category as its table type. Make it **
 
    <Result>The add-on is listed in the **Addons** card. Dealers who choose this table type see it as a checkbox, with its price.</Result>
 
-Repeat steps 2 and 3 for each table type that offers the add-on. A product from another category is refused with *Dealer addon must be in the same category as the product*. See also [Addons](../products/addons.md).
+Repeat steps 2 and 3 for each table type that offers the add-on. A product from another category is refused with *Dealer addon must be in the same category as the product*.
 
 ## Create a dealer area
 
@@ -106,10 +106,14 @@ Repeat steps 2 and 3 for each table type that offers the add-on. A product from 
 | Setting | When ticked | When not ticked |
 | --- | --- | --- |
 | **Enabled** <small>"Display the option to users"</small> | Dealers see the area. | Hidden from dealers. With no area enabled, **Dealing** says *No dealer areas are currently accepting applications.* |
-| **Open** <small>"Allow for additional registrations"</small> | Dealers can apply, and change or delete a pending application. | Marked **CLOSED**; its form says the area *is closed.* Staff can still change applications. |
-| **Full** <small>"Show that registrations is full, but more slots may open in the future."</small> | Dealers can still apply, but see *The* area *is full. Applications can still be made in case a seat becomes available.* | No message. |
+| **Open** <small>"Allow for additional registrations"</small> | Dealers can apply, and change or delete a pending application. | Marked **CLOSED**; its form says *Dealers' Den is closed.* Staff can still change applications. |
+| **Full** <small>"Show that registrations is full, but more slots may open in the future."</small> | Dealers can still apply, but see *The Dealers' Den is full. Applications can still be made in case a seat becomes available.* | No message. |
 
 </TableFigure>
+
+:::tip[The area name is an example]
+*Dealers' Den* is an example. The messages show the area's own name.
+:::
 
 With several areas enabled, dealers choose one first; with one, they go straight to its form.
 

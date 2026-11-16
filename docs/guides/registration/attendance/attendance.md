@@ -36,7 +36,7 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
    <Result>Each tier shows its visibility (**Public / Visible**, **Unlisted** or **Hidden**) and, when they apply, badges such as **In Stock: 40/50 Available**, **Not Yet Available**, **Expired** or **Age Restricted: >= 18**.</Result>
 
-3. *(Optional)* To see deleted tiers, click **Show Deleted Products** below the table.
+3. *(Optional)* If any tier is deleted, click **Show Deleted Products** below the table.
 
    <Result>Deleted tiers appear, marked **Deleted / Archived**.</Result>
 
@@ -88,7 +88,7 @@ Ages are counted on the convention's start date. **Restrict product to grants** 
 
    <Result>Orders containing this tier are listed, with filters such as **Paid**, **Unpaid**, **With grant** and **No grant**.</Result>
 
-The **Audit Logs** tab needs the `audit:read` permission. **Upgrade Paths** is only on badge products (section 5). The other cards, such as **Prices**, **Discounts** and **Options**, work as for store products: see [Products](../../products/products.md).
+The **Audit Logs** tab needs the `audit:read` permission. **Upgrade Paths** is only on badge products. The other cards, such as **Prices**, **Discounts** and **Options**, work as for store products: see [Products](../../products/products.md).
 
 ## Upgrade paths
 
@@ -98,7 +98,7 @@ The new tier goes into the cart with an **Upgrade Discount** equal to what was p
 
 Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let *General Admission* attendees upgrade to *Sponsor*, add *Sponsor* on the *General Admission* page.
 
-1. On the page of the tier attendees upgrade *from*, click the green **Add** button in **Upgrade Paths**.
+1. On the page of the tier attendees upgrade *from*, click the green add (+) button at the top right of **Upgrade Paths**.
 
    <Result>A **Product Search** field and a **Create Upgrades** button appear.</Result>
 
