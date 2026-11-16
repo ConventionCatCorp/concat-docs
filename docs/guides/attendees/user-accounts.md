@@ -50,8 +50,8 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
 - **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is 16 years old.*).
 :::
 
-:::tip[The age is an example]
-The 16 in *User is underage. The minimum age is 16 years old.* is an example. The message shows your **Child Age Threshold**.
+:::tip[The values are examples]
+The 16 in *User is underage. The minimum age is 16 years old.* and the code in **Reset code: K7QX2M9P** are examples. The message shows your **Child Age Threshold**, and each reset gives a new code.
 :::
 
 ## Help someone sign in
@@ -110,7 +110,7 @@ The code lets someone at your registration desk set a new password without email
 
 2. Click **Confirm**.
 
-   <Result>The button now reads **Reset code:** and an 8-character code.</Result>
+   <Result>The button now reads **Reset code: K7QX2M9P**.</Result>
 
 3. Give the code to the person. On the login page they click **Already Got a Reset Code?**, enter the code and a new password, and click **Reset Password**.
 

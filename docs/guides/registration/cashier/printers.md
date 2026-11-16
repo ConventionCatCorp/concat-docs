@@ -30,8 +30,8 @@ The station prints badges in one of two ways:
 | Printer Status shows | Meaning |
 | --- | --- |
 | **OS Controlled** | No Zebra printer is active; badges print through the browser. <small>Also shown when the chosen Zebra printers are unplugged.</small> |
-| **Primary:** and a printer name | Badges print on that Zebra printer. |
-| **Secondary:** and a printer name, after the primary | A second Zebra printer takes the badge types assigned to it in **Badge type printer preferences**. |
+| **Primary: Label (#D4J221801234)** | Badges print on that Zebra printer. |
+| **Secondary: Label (#D4J221805678)**, after the primary | A second Zebra printer takes the badge types assigned to it in **Badge type printer preferences**. |
 | **Primary: None selected**, in red | Only a secondary printer is set. |
 
 </TableFigure>
@@ -62,14 +62,14 @@ Connect the printer to the station computer by USB and load the badge labels fir
 
 5. Click **Set as Primary**.
 
-   <Result>The button reads **Active as Primary**, and **Printer Status** shows **Primary:** and the printer's name.</Result>
+   <Result>The button reads **Active as Primary**, and **Printer Status** shows **Primary: Label (#D4J221801234)**.</Result>
 
 6. *(Optional, second printer)* Add another Zebra printer with steps 2 and 3, then click **Set as Secondary** on it.
 
-   <Result>The button reads **Active as Secondary**, and **Printer Status** adds **Secondary:** and its name.</Result>
+   <Result>The button reads **Active as Secondary**, and **Printer Status** adds **Secondary: Label (#D4J221805678)**.</Result>
 
 :::tip[The serial numbers are examples]
-The serial numbers in **Label (#D4J221801234)** and **Receipt (#X4ZM012345)** are examples. Each printer is listed with its own serial number.
+The serial numbers in **Label (#D4J221801234)**, **Label (#D4J221805678)** and **Receipt (#X4ZM012345)** are examples. Each printer is listed with its own serial number.
 :::
 
 Which badge types go to the secondary is set per station, under **Badge type printer preferences** ([Cashier UI](./cashier.md), section 2). By default, only minor badges do.

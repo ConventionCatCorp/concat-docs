@@ -93,14 +93,14 @@ Badges under each product's name show its status (Table 2.1).
 | **Grant Restriction** | **Restrict product to grants** is set. |
 | **Not Yet Available** | **Available From** is in the future. |
 | **Expired** | **Available Until** has passed. |
-| **Age Restricted:** and the ages | A purchase age limit is set. |
+| **Age Restricted: >= 18** | A purchase age limit is set. |
 | **Addon Stock: 15/20 Available**, **Addon Out of Stock** | A complimentary addon has limited stock ([Addons](./addons.md)). |
 | **Unused Stock: 3** | *Product is using stock, but has no active grant.* <small>Click it to see the orders.</small> |
 
 </TableFigure>
 
 :::tip[The numbers are examples]
-The numbers in these badges, such as 40/50 in **In Stock: 40/50 Available**, are examples. Each badge shows the product's own stock and limits.
+The numbers on this page, such as 40/50 in **In Stock: 40/50 Available** and the price $45.00, are examples. The app shows each product's own stock, limits and prices.
 :::
 
 ## Create a product
@@ -181,7 +181,7 @@ The numbers in these badges, such as 40/50 in **In Stock: 40/50 Available**, are
 
 2. Enter the **New Price** and click **Save New Price**.
 
-   <Result>**Current Price** shows the new amount.</Result>
+   <Result>**Current Price** shows the new amount, such as $45.00.</Result>
 
 :::note[Who pays the new price]
 Unpaid carts always use the current price, so items already in carts change to it. Paid orders and discounts keep their own price. The new price must differ from the current one.

@@ -22,7 +22,7 @@ The sidebar shows only to logged-in people, and most items depend on a feature b
 
 1. Log in as a test attendee.
 
-   <Result>The **Attendance** page opens. The sidebar shows your convention's name and dates, **Welcome back,** with the attendee's preferred name or username and a three-dot **User menu** button, then the items in Table 1.1.</Result>
+   <Result>The **Attendance** page opens. The sidebar shows your convention's name and dates, **Welcome back,** above the attendee's preferred name or username (such as **Alex**) and a three-dot **User menu** button, then the items in Table 1.1.</Result>
 
 2. Make the browser window as narrow as a phone screen, then click **Open Menu** at the top of the page.
 
@@ -62,23 +62,23 @@ The status card at the top of **Attendance** tells the attendee what to do next.
 
 | Card heading | Shown when | Buttons |
 | --- | --- | --- |
-| *Ready to attend test?* | Registration is open and the attendee hasn't registered. | **Start registration**, **Update personal info** |
+| *Ready to attend Starfall?* | Registration is open and the attendee hasn't registered. | **Start registration**, **Update personal info** |
 | *Complete your registration* | Any registration on the account is unpaid. <small>Lists unpaid people when sub-accounts are on; counts down while unpaid items are held in the cart.</small> | **Complete registration**, which opens checkout |
-| *You're registered for test!* | The attendee's own registration is paid and nothing is unpaid. | None |
-| *Registration for testconvention is closed.* | **Open Registration** is off. <small>The rest of the page is hidden.</small> | **Update personal info** |
+| *You're registered for Starfall!* | The attendee's own registration is paid and nothing is unpaid. | None |
+| *Registration for Starfall Con 2026 is closed.* | **Open Registration** is off. <small>The rest of the page is hidden.</small> | **Update personal info** |
 
 </TableFigure>
 
 1. As a test attendee with no registration, while registration is open, click **Attendance** in the sidebar.
 
-   <Result>The *Ready to attend test?* card appears with **Start registration** and **Update personal info**, and the attendee's own card below, under **Your registration**.</Result>
+   <Result>The *Ready to attend Starfall?* card appears with **Start registration** and **Update personal info**, and the attendee's own card below, under **Your registration**.</Result>
 
 2. Click **Start registration**.
 
    <Result>The registration form opens at `/event/register/new`.</Result>
 
 :::tip[The names and numbers are examples]
-Names and numbers on this page are examples. The cards show your convention's short name (*test*) or long name (*testconvention*), and **View order (#13)** shows the order's own number.
+Names and numbers on this page are examples. The app shows your convention's short name (*Starfall*) or long name (*Starfall Con 2026*), the attendee's own name, each order's own number and ConCat's current version.
 :::
 
 With sub-accounts on, the heading reads **Your registrations**, with an **Attendees** counter and buttons to add people: see [Sub-accounts, children and minors](../registration/sub-accounts.md). Attendees with an unconfirmed email see a reminder banner: see [Attendee accounts and sign-in](./accounts.md), section 2.2. Registering is covered in [How attendees register](../registration/registering.md); opening registration in [Registration setup](../quickstart/registration-setup.md), section 7.
@@ -89,7 +89,7 @@ Post a notice, such as a deadline or a venue change, at the top of every attende
 
 1. With a notice saved, open **Attendance** as a test attendee.
 
-   <Result>A card above the **Attendance** heading shows *Notice from* and your convention's name, your title and message, and a **Hide details** button.</Result>
+   <Result>A card above the **Attendance** heading shows *Notice from Starfall Con 2026*, your title and message, and a **Hide details** button.</Result>
 
 2. Click **Hide details**.
 
@@ -168,7 +168,7 @@ If the attendee can't register another person yet, a sub-account's **Register** 
 
 1. Scroll to the bottom of any page.
 
-   <Result>The footer shows the **Powered by ConCat** logo, **Version:** and a number, a **Language** list, and **Terms & Conditions** and **Privacy Policy** links.</Result>
+   <Result>The footer shows the **Powered by ConCat** logo, **Version: f4d531f (2026-11-04)**, a **Language** list, and **Terms & Conditions** and **Privacy Policy** links.</Result>
 
 2. Click the version number.
 

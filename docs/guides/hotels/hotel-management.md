@@ -115,7 +115,7 @@ A day before **Release Start At**, ConCat draws the winners (Random Draw) or sta
 
 2. Click **Create Release Group**.
 
-   <Result>The **Create Release Group** form opens; **Hotel Integration** shows your connection's name.</Result>
+   <Result>The **Create Release Group** form opens; **Hotel Integration** shows your connection's name, such as *Riverside Hotel Passkey*.</Result>
 
 3. Fill in the fields in Table 4.1, then click **Submit**.
 
@@ -124,6 +124,10 @@ A day before **Release Start At**, ConCat draws the winners (Random Draw) or sta
 4. When the block is ready for attendees, edit it (section 5) and set **Status** to **Ready**.
 
    <Result>A **Successfully updated release group** message appears. Attendees who can see the block now find it under **Active blocks** on their hotel page.</Result>
+
+:::tip[The name is an example]
+*Riverside Hotel Passkey* is an example. The field shows the name you gave the connection.
+:::
 
 Without a connection (section 2), the form shows a warning and **Submit** is grayed out.
 

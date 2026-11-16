@@ -81,7 +81,11 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 3. Pay ([Checkout and payment](../orders/checkout.md)), then open **Dealing** again.
 
-   <Result>A green alert says **Your application has been approved!**, with the table number or *The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention.*</Result>
+   <Result>A green alert says **Your application has been approved!**, with the table number, such as *Your table assignment for Main Hall* **12**, or *The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention.*</Result>
+
+:::tip[The table number is an example]
+*Main Hall* and 12 are examples. The alert shows the dealer area and table number you assign.
+:::
 
 Once approved, the space page also shows **Seating Preferences** and, if the table type allows assistants, **Manage Assistants**.
 

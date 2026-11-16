@@ -52,7 +52,11 @@ With **Enable Volunteer Emails** on, the applicant gets a *Volunteer Confirmatio
 
    <Result>A green box says *Your application has been approved!* and lists the assigned departments.</Result>
 
-With **Enable Volunteer Emails** on, the volunteer also gets an email titled *Volunteer Assignment:* and the department's name.
+With **Enable Volunteer Emails** on, the volunteer also gets an email titled *Volunteer Assignment: Art Show*.
+
+:::tip[The department is an example]
+*Art Show* is an example. The email names the volunteer's department.
+:::
 
 ## Change or withdraw the application
 

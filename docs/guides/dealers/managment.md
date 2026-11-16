@@ -30,7 +30,7 @@ A dealer has one **dealer profile** (business details) and one **application** p
 | --- | --- | --- |
 | **Pending** | *pending* | *Your application for* the area *has not been approved yet.* |
 | **Approved**, not paid | *approved*, with a warning icon | *Your* area *application has been approved and is pending payment.*, with **Pay for Table** |
-| **Approved**, paid | *approved*, with a tick <small>The applications list shows *approved (Paid)*.</small> | **Your application has been approved!**, with their table number once assigned |
+| **Approved**, paid | *approved*, with a tick <small>The applications list shows *approved (Paid)*.</small> | **Your application has been approved!**, with their table number once assigned, such as **12** |
 | **Waitlisted** | *waitlisted* | *Your application for* the area *is waitlisted.* |
 | **Rejected** | *rejected* | *Your application for* the area *was rejected.* |
 | **Cancelled** | *cancelled* | *Your application for* the area *was canceled.* |
@@ -39,6 +39,10 @@ A dealer has one **dealer profile** (business details) and one **application** p
 
 :::caution[Watch out]
 ConCat doesn't email dealers when their status changes. Tell them yourself, for example with a [Mass email](../attendees/mass-email.md).
+:::
+
+:::tip[The table number is an example]
+The 12 is an example. Dealers see the table number you assign.
 :::
 
 ConCat assigns two roles automatically: *vendor* to everyone with an application, and *vendorApproved* to everyone with an approved one.

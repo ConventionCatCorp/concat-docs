@@ -64,11 +64,15 @@ One notice at a time, such as a schedule change, appears at the top of every att
 
 3. As an attendee, open **Attendance**.
 
-   <Result>A notice headed *Notice from* and your convention's name tops the page, with the date (if set), title, message and a **Hide details** button.</Result>
+   <Result>A notice headed *Notice from Starfall Con 2026* tops the page, with the date (if set), title, message and a **Hide details** button.</Result>
 
 4. *(Remove the notice)* In the **Attendee Notice** card, untick **Show attendee notice** and click **Save**.
 
    <Result>An **Attendee notice saved** message appears, and attendees no longer see the notice.</Result>
+
+:::tip[The name is an example]
+*Starfall Con 2026* is an example. The notice shows your convention's long name.
+:::
 
 **Message** accepts Markdown. **Date** is for display only: the notice shows whatever the date. Attendees see the notice only while registration is open.
 

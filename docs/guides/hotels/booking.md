@@ -53,7 +53,7 @@ The **Status** badge shows where the attendee stands (Table 2.1).
 | Badge | Text on the card | When |
 | --- | --- | --- |
 | **Not eligible** | *You are not eligible to enter this block.* | Doesn't meet the requirements and hasn't entered. |
-| **Not yet open** | **Entries not yet open** and the opening date. | Before the entry period; a first-come block until the booking period. |
+| **Not yet open** | **Entries not yet open**, then *Entries will open on July 1, 2026.* | Before the entry period; a first-come block until the booking period. |
 | **Entries open** | **Accepting entries**, with **Enter block**. | May enter now. |
 | **Entered** | **Entry received**, with **View my entry**. After a draw's entry period: **Entry period has ended**. | Has entered. |
 | **Ready for booking** (draw) or **Book now** (first come) | **You're ready to book!**, with **Book a room**. | Has a booking link (section 4). |
@@ -80,7 +80,7 @@ Attendees agree to your **Hotel Reservation Policy**, on the **Terms** tab of **
 
 1. On a card showing **Entries open**, click **Enter block**.
 
-   <Result>The block's page opens, titled **Hotel—** and the block's name. It says *You are eligible to enter this block!* above an **Enter block** card with your hotel reservation policy.</Result>
+   <Result>The block's page opens, titled with the block's name, such as **Hotel—Riverside Hotel**. It says *You are eligible to enter this block!* above an **Enter block** card with your hotel reservation policy.</Result>
 
 2. Tick **I have read and agree to the hotel reservation policy.**
 
@@ -124,7 +124,7 @@ When an attendee is picked in a draw, or reaches the front of a first-come queue
 
 4. Click **Proceed to booking platform** and book the room in Passkey or MeetingMax.
 
-   <Result>The provider's booking page opens with the attendee's details filled in. Once the booking reaches ConCat, the block's page says **Booking completed!** with the reservation number.</Result>
+   <Result>The provider's booking page opens with the attendee's details filled in. Once the booking reaches ConCat, the block's page says **Booking completed!** and *You've successfully reserved a room, and your reservation number is #12.*</Result>
 
 Afterwards the card says **Reservation link used**. If the reservation is canceled and the attendee is still eligible, the block's page offers **Re-enter block** for a new link; staff can also use **Reissue Link** ([Hotel management](./hotel-management.md), section 7).
 
@@ -146,8 +146,8 @@ A booking is listed under **My reservation** once it has synced.
 
    <Result>Passkey or MeetingMax opens to change or cancel the booking. Changes reach ConCat on the next sync.</Result>
 
-:::tip[The reservation number is an example]
-The 12 in **Reservation # 12** is an example. The page shows the reservation's own number.
+:::tip[The names and numbers are examples]
+The block name in **Hotel—Riverside Hotel**, the opening date and the reservation number 12 are examples. The app shows your own blocks and dates, and each reservation's own number.
 :::
 
 **Update / Cancel reservation** appears only while **Open Hotels** is on; otherwise the page says *Modifications to existing reservations are no longer being accepted.* A canceled reservation says *This reservation has been canceled and cannot be modified.* Guests are added or removed with the provider, not in ConCat.

@@ -165,7 +165,7 @@ An account under review can still log in, but the Cashier UI won't issue a badge
 
 2. Click **View**, then click a name in the list.
 
-   <Result>The profile has a yellow **Pending Review** badge. The **Information** card starts with **Possible duplicate account with a ban**, showing the matching names and the ban's text, or **No matching ban** if the ban has since been deleted.</Result>
+   <Result>The profile has a yellow **Pending Review** badge. The **Information** card starts with **Possible duplicate account with a ban**, showing the matching names, such as *Alex Smith*, and the ban's text, or **No matching ban** if the ban has since been deleted.</Result>
 
 3. If this is the banned person, ban this account too (section 4).
 
@@ -174,6 +174,10 @@ An account under review can still log in, but the Cashier UI won't issue a badge
 4. Click the green tick button (<MaterialIcon name="check" />) on the **Possible duplicate account with a ban** row, then **Complete review** in the **Complete account review?** dialog.
 
    <Result>The row and the **Pending Review** badge are gone, and the dashboard card no longer counts the account.</Result>
+
+:::tip[The name is an example]
+*Alex Smith* is an example. The card shows the names of the matching accounts.
+:::
 
 ## Note categories
 

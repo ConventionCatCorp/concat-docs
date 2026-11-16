@@ -50,7 +50,7 @@ A silo's status shows next to **Silo Information**: **Open to Entries**, **Close
 
 2. Enter a **Name** and, in **Associated Products**, select the products to gate. *(Optional)* Choose **Role override** roles or tick **Overflow stock silo**. Click **Create Silo**.
 
-   <Result>A **Silo successfully created!!** message appears, and the page becomes **Editing Silo:** and the silo's name, with the tabs **Entrants**, **Wording** and **Run**.</Result>
+   <Result>A **Silo successfully created!!** message appears, and the page title shows the silo's name, such as **Editing Silo: Sponsor Lottery**, with the tabs **Entrants**, **Wording** and **Run**.</Result>
 
 If a product is already in another silo, *Product is already part of another silo.* appears and the silo isn't saved: remove the product from the other silo first.
 
@@ -97,8 +97,8 @@ If a product is already in another silo, *Product is already part of another sil
 
 </TableFigure>
 
-:::tip[The ticket number is an example]
-The 4 in *Marked Ticket #4 as a winner.* is an example. The message shows the ticket's own number.
+:::tip[The names and numbers are examples]
+The silo name in **Editing Silo: Sponsor Lottery** and the 4 in *Marked Ticket #4 as a winner.* are examples. The app shows your own silo's name and each ticket's own number.
 :::
 
 ## Wording

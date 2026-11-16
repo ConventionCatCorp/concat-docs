@@ -36,7 +36,7 @@ A refund does two separate things, both set when you approve it:
 ConCat emails the attendee at each step: *Order #13 - New Refund Request* (copied to your registration address), *Refund Request Approved for Order #13* and *Refund Request Denied for Order #13*.
 
 :::tip[The numbers are examples]
-Numbers on this page, such as the order number 13 and the refund number 2, are examples, as is the amount $10.00. The app shows each order's and refund request's own numbers and amounts.
+Numbers on this page, such as the order number 13 and the refund number 2, are examples, as are the amount $10.00 and the message after *Refunds are disabled:*. The app shows each order's and refund request's own numbers and amounts, and your own message.
 :::
 
 :::note[Chargebacks]
@@ -166,7 +166,7 @@ Stop attendee requests, for example after your refund deadline. Staff can still 
 
 3. As an attendee, open **Transaction history** and click **⋯** on a paid order.
 
-   <Result>**Request refund** is struck through. Clicking it shows *Refunds are disabled:* and your message; no dialog opens.</Result>
+   <Result>**Request refund** is struck through. Clicking it shows your message after *Refunds are disabled:*, such as *Refunds are disabled: Refunds closed on September 15.* No dialog opens.</Result>
 
 To allow requests again, untick **Disable refunds** and click **Save**.
 

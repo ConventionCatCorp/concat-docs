@@ -169,7 +169,11 @@ ConCat checks only the *origin* of the return address (its scheme, host and port
 
 An application sends the attendee to your instance's `/oauth/authorize` page, where they must be logged in. If they already authorized the same application, scopes and return address, ConCat approves without showing the screen.
 
-The screen is titled **Authorize:** and the application's name, and lists **Sign In Automatically** and one line per scope. A scope that starts with `admin:` is marked *This is an administrative permission.*, and the **Authorize Application** button turns red.
+The screen is titled with the application's name, such as **Authorize: Starfall Schedule**, and lists **Sign In Automatically** and one line per scope. A scope that starts with `admin:` is marked *This is an administrative permission.*, and the **Authorize Application** button turns red.
+
+:::tip[The name is an example]
+*Starfall Schedule* is an example. The screen shows your application's own name.
+:::
 
 To try it, use an application from section 4 that has a callback URI:
 

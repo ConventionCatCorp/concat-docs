@@ -40,8 +40,8 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
    <Result>Deleted tiers appear, marked **Deleted / Archived**.</Result>
 
-:::tip[The numbers are examples]
-40/50 in **In Stock: 40/50 Available** and 18 in **Age Restricted: >= 18** are examples. Each badge shows the tier's own stock and ages.
+:::tip[The values are examples]
+40/50 in **In Stock: 40/50 Available**, 18 in **Age Restricted: >= 18** and the name and ID in **Product: General Admission (ID: 1)** are examples. The app shows each tier's own stock, ages, name and ID.
 :::
 
 **Category Surcharges** adds a fee or tax to every tier at once: see [Surcharges](../../products/surcharges.md).
@@ -74,7 +74,7 @@ Ages are counted on the convention's start date. **Restrict product to grants** 
 
 1. On **Badge Products**, click the tier's name.
 
-   <Result>The tier's page opens, titled **Product:** with its name and ID, with **Product**, **Orders** and **Audit Logs** tabs.</Result>
+   <Result>The tier's page opens, titled with its name and ID, such as **Product: General Admission (ID: 1)**, with **Product**, **Orders** and **Audit Logs** tabs.</Result>
 
 2. In **Product Information**, click the edit (pencil) button.
 

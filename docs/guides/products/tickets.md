@@ -37,7 +37,7 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
 2. Buy the product and complete checkout.
 
-   <Result>An email arrives whose subject includes *Your Event Ticket for* and the product's name. It shows the ticket's barcode and **Ticket Group**.</Result>
+   <Result>An email arrives whose subject includes *Your Event Ticket for* and the product's name, such as *Your Event Ticket for Photo Shoot*. It shows the ticket's barcode and **Ticket Group**.</Result>
 
 3. Open **Attendance** in the homepage sidebar.
 
@@ -61,14 +61,14 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
    <Result>The browser's print dialog opens.</Result>
 
-:::tip[The order number is an example]
-The 13 in **Order #13 — Tickets** is an example. The page shows the order's own number.
+:::tip[The values are examples]
+The order number in **Order #13 — Tickets**, the product *Photo Shoot*, the scan time and the user ID 7 are examples. The app shows each order's, product's and attendee's own values.
 :::
 
-A scanned ticket's barcode is marked **REDEEMED**, with **Scanned At** and the time.
+A scanned ticket's barcode is marked **REDEEMED**, with the scan time, such as **Scanned At**: 10/3/2026, 2:15:00 PM.
 
 :::note[Staff viewing a ticket page]
-Staff who open another attendee's ticket page see *You are in staff mode. You are viewing the tickets of UID* and the attendee's user ID.
+Staff who open another attendee's ticket page see *You are in staff mode. You are viewing the tickets of UID 7.*
 :::
 
 ## Scanning tickets at the door

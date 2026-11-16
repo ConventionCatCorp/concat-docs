@@ -113,7 +113,11 @@ While a request waits, a **Pending Requests** card on the **Export Data** page l
 
 5. *(Any admin, from the email)* In the *Data Export Request* email, click the link below *Click below to BLOCK the request*, and sign in if asked.
 
-   <Result>A page says *The data export request* followed by the request's ID and *has been canceled.*</Result>
+   <Result>A page says *The data export request '4' has been canceled.*</Result>
+
+:::tip[The ID is an example]
+The 4 is an example. The page shows the request's own ID.
+:::
 
 ## Dynamic Export
 

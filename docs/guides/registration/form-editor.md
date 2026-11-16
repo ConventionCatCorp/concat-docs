@@ -143,11 +143,15 @@ Keep an **Emergency contacts** element on the form. Minors, PII-free children an
 
 1. Click **Edit** on an element.
 
-   <Result>A dialog titled **Update node:** and the element's name opens with its properties (Table 5.1).</Result>
+   <Result>A dialog titled with the element's name, such as **Update node: Shirt size (Option)**, opens with its properties (Table 5.1).</Result>
 
 2. Change the properties and click **Save**.
 
-   <Result>The dialog closes. For an **Option**, the element's description shows **Option:** and the option's name.</Result>
+   <Result>The dialog closes. For an **Option**, the element's description shows the option's name, such as **Option: Shirt size**.</Result>
+
+:::tip[The name is an example]
+*Shirt size* is an example. The dialog and the description show the name of your own element and option.
+:::
 
 The **Option** dialog lists **Badge Name** and every option by ID and name. **Terms agreement** lists policies by internal key, including `privacy` (**Privacy terms**), `terms` (**Convention Policy / Terms & Conditions**) and `conventionTerms` (**Registration Terms**), which you write in **Housekeeping › System › Settings › Terms**.
 

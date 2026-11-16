@@ -34,7 +34,7 @@ A badge product is a tier attendees register for, such as *General Admission* or
 
 4. Click the tier's name.
 
-   <Result>The product's page opens, titled **Product:** and the tier's name, with tabs **Product**, **Orders** and **Audit Logs**, and cards including **Product Information**, **Product Images**, **Addons**, **Discounts**, **Upgrade Paths**, **Options**, **Surcharges** and **Prices**.</Result>
+   <Result>The product's page opens, titled with the tier's name and ID, such as **Product: General Admission (ID: 1)**, with tabs **Product**, **Orders** and **Audit Logs**, and cards including **Product Information**, **Product Images**, **Addons**, **Discounts**, **Upgrade Paths**, **Options**, **Surcharges** and **Prices**.</Result>
 
 <TableFigure title="Sections of the New Product form">
 
@@ -157,8 +157,8 @@ Once registered themselves, attendees see these options on their **Attendance** 
 
    <Result>Every unpaid attendee under the account is paid for in one checkout.</Result>
 
-:::tip[The age is an example]
-The 16 in **Register another attendee (Ages 16+)** and **Register child (under 16)** is an example. The app shows your **Child Age Threshold**, set in **Housekeeping › Registration › Settings**.
+:::tip[The values are examples]
+The tier in **Product: General Admission (ID: 1)** and the 16 in **Register another attendee (Ages 16+)** and **Register child (under 16)** are examples. The app shows your own tier names and IDs, and your **Child Age Threshold**, set in **Housekeeping › Registration › Settings**.
 :::
 
 :::note[When a dependent grows up]

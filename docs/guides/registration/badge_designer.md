@@ -38,7 +38,11 @@ The Cashier UI prints each badge with the convention's default design, unless th
 
 4. *(Optional)* To delete a design, click its delete button (the bin), then **Delete** in the dialog.
 
-   <Result>The dialog asks *Are you sure you want to delete* and the design's name. After you confirm, the design is no longer listed.</Result>
+   <Result>The dialog asks to confirm with the design's name, such as *Are you sure you want to delete Attendee Badge?* After you confirm, the design is no longer listed.</Result>
+
+:::tip[The name is an example]
+*Attendee Badge* is an example. The dialog names the design you're deleting.
+:::
 
 The history button opens the design's entries in **System › Audit Logs**.
 

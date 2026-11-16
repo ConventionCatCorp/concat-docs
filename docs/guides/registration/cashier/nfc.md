@@ -36,9 +36,13 @@ An attendee has one active NFC badge per convention: programming a new one deact
 | **NFC Serial connected** | A Web Serial reader is connected and answering. |
 | **NFC Card verified** | A valid badge was read while an attendee's page was open. |
 | **Card present (UUID not found). CANNOT USE.** | No active record for this chip: revoked, replaced, or never programmed for this convention. |
-| **NFC badge problem:** and a reason | The badge couldn't be read, for example *Card has invalid signature* or *Cannot read this card (wrong password)*. |
+| **NFC badge problem: Card has invalid signature** | The badge couldn't be read. The reason varies, for example *Cannot read this card (wrong password)*. |
 
 </TableFigure>
+
+:::tip[The reason is an example]
+*Card has invalid signature* is one example. The station names the reason the badge couldn't be read.
+:::
 
 ## Turn on NFC badges
 

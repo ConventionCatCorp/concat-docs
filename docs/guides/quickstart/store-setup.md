@@ -46,7 +46,7 @@ Every store product belongs to a category, such as *Merchandise* or *Charity*.
 
 1. On **Product Categories**, click **View Products** on your category.
 
-   <Result>The page is titled **Category:** and the category's name, with **Create New Product**, **Category Surcharges** and **Back to Categories** buttons.</Result>
+   <Result>The page is titled with the category's name, such as **Category: General Store**, with **Create New Product**, **Category Surcharges** and **Back to Categories** buttons.</Result>
 
 2. Click **Create New Product**, fill in **Name** and **Description**, set **Product visibility** to **Public**, enter the **Base Price**, and click **Create Product**.
 
@@ -156,8 +156,8 @@ A voucher is a code worth an amount of money, such as a comped registration or a
 
    <Result>A message says *Voucher #3 has been issued to 2 user(s).*</Result>
 
-:::tip[The numbers are examples]
-The 3 and 2 in *Voucher #3 has been issued to 2 user(s).* are examples. The message shows the voucher's own number and how many people you chose.
+:::tip[The names and numbers are examples]
+The category in **Category: General Store**, and the 3 and 2 in *Voucher #3 has been issued to 2 user(s).*, are examples. The app shows your own category's name, the voucher's own number and how many people you chose.
 :::
 
 :::tip

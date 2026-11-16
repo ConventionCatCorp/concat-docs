@@ -53,12 +53,12 @@ Once Stripe is connected, payments are real. See [Convention setup](../quickstar
 
 Card payments go through your Stripe account. Stripe can also offer wallet buttons, such as Apple Pay or Google Pay, above the card form.
 
-1. In **Pay by Credit / Debit Card with Stripe**, choose a payment method, enter the details, and click **Pay** followed by the amount.
+1. In **Pay by Credit / Debit Card with Stripe**, choose a payment method, enter the details, and click **Pay** and the amount, such as **Pay $50.00**.
 
    <Result>**Processing Payment...** shows, then a green card says *Your payment has been successful! Thank you!* If any item cost more than zero, the attendee gets the *Order #13 Payment Successful* email, their receipt.</Result>
 
-:::tip[The order number is an example]
-The 13 in *Order #13 Payment Successful* and **Order #13** is an example. The app shows the order's own number.
+:::tip[The order number and amount are examples]
+The 13 in *Order #13 Payment Successful* and **Order #13**, and the amount in **Pay $50.00**, are examples. The app shows the order's own number and total.
 :::
 
 A declined card shows ***Your payment was declined** by our payment processor:* and Stripe's reason; after three failures it adds *If you repeatedly see this message, you may want to contact the event and your financial institution for assistance.* If the cart changed during payment, the attendee sees *The order has changed since loading your cart. Please try again.*
