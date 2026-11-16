@@ -22,12 +22,12 @@ Applications start closed. Turn them on once your departments and form are ready
 
 <TableFigure title="General volunteer settings">
 
-| Setting | What it does | New convention |
-| --- | --- | --- |
-| **Enable Volunteers** | Shows **Volunteering** in the homepage sidebar. <small>When off, the application page says *Volunteer applications for the convention are currently closed.*</small> | Off |
-| **Enable Volunteer Emails** | Sends the confirmation, assignment and staff-removal emails. | On |
-| **Allow Parents to Volunteer** | Lets people with child registrations apply. | Off |
-| **Volunteers Require Emergency Contact** | Applicants must give an emergency contact when registering for a badge. | On |
+| Setting                                  | What it does                                                                                                                                                         | New convention |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| **Enable Volunteers**                    | Shows **Volunteering** in the homepage sidebar. <small>When off, the application page says _Volunteer applications for the convention are currently closed._</small> | Off            |
+| **Enable Volunteer Emails**              | Sends the confirmation, assignment and staff-removal emails.                                                                                                         | On             |
+| **Allow Parents to Volunteer**           | Lets people with child registrations apply.                                                                                                                          | Off            |
+| **Volunteers Require Emergency Contact** | Applicants must give an emergency contact when registering for a badge.                                                                                              | On             |
 
 </TableFigure>
 
@@ -69,7 +69,7 @@ The text can be up to 8,000 characters and supports Markdown. Step 3 needs the f
 Volunteer questions need `volunteer:update`.
 </Sidenote>
 
-Questions are volunteer options, kept apart from product and dealer options. A new convention starts with a set, such as *What convention days will you be available to help?*
+Questions are volunteer options, kept apart from product and dealer options. A new convention starts with a set, such as _What convention days will you be available to help?_
 
 1. Go to **Housekeeping › Volunteers › Options**.
 
@@ -99,14 +99,14 @@ The form is made of sections holding the elements in Table 4.1.
 
 <TableFigure title="Elements in the volunteer form's Toolbox">
 
-| Element | What it adds |
-| --- | --- |
-| **Text block** | Text, with Markdown formatting. |
-| **Divider** | A horizontal line. |
-| **Terms and conditions** | A policy, agreed to with a checkbox or full name. <small>Used for the Code of Conduct.</small> |
-| **Volunteer contacts** | Call, text, email and the other methods you list (Telegram, Discord and Bluesky by default). The applicant picks a preferred one. |
-| **Option** | One question from section 3. |
-| **Volunteer departments** | The department grid with **Experience**, **Interest** and **Avoid** boxes. |
+| Element                   | What it adds                                                                                                                      |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Text block**            | Text, with Markdown formatting.                                                                                                   |
+| **Divider**               | A horizontal line.                                                                                                                |
+| **Terms and conditions**  | A policy, agreed to with a checkbox or full name. <small>Used for the Code of Conduct.</small>                                    |
+| **Volunteer contacts**    | Call, text, email and the other methods you list (Telegram, Discord and Bluesky by default). The applicant picks a preferred one. |
+| **Option**                | One question from section 3.                                                                                                      |
+| **Volunteer departments** | The department grid with **Experience**, **Interest** and **Avoid** boxes.                                                        |
 
 </TableFigure>
 
@@ -128,7 +128,7 @@ The form is made of sections holding the elements in Table 4.1.
 
 5. Click **Save Changes**.
 
-   <Result>A **Saved** message appears. If an element has a problem, *There are errors in your form. Please fix them before saving again.* appears instead, and the element shows **Error(s)**.</Result>
+   <Result>A **Saved** message appears. If an element has a problem, _There are errors in your form. Please fix them before saving again._ appears instead, and the element shows **Error(s)**.</Result>
 
 6. Click the back arrow (**Back**) in the editor's header.
 
@@ -136,13 +136,13 @@ The form is made of sections holding the elements in Table 4.1.
 
 <TableFigure title="Settings of an Option element">
 
-| Setting | Effect |
-| --- | --- |
-| **Display Name (optional)** | Shown instead of the question's name. |
-| **Required for submission** | Applicants must answer it. |
-| **Visible to admins only** | Hidden from applicants and from leads without `volunteer:update`. Staff can fill it in (see [Volunteers](./volunteers.md), section 3). |
-| **Disable after approval** | Once assigned, the volunteer can't change the answer. Staff still can. |
-| **Display full width** | The question takes the section's full width. |
+| Setting                     | Effect                                                                                                                                 |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Display Name (optional)** | Shown instead of the question's name.                                                                                                  |
+| **Required for submission** | Applicants must answer it.                                                                                                             |
+| **Visible to admins only**  | Hidden from applicants and from leads without `volunteer:update`. Staff can fill it in (see [Volunteers](./volunteers.md), section 3). |
+| **Disable after approval**  | Once assigned, the volunteer can't change the answer. Staff still can.                                                                 |
+| **Display full width**      | The question takes the section's full width.                                                                                           |
 
 </TableFigure>
 
@@ -158,11 +158,11 @@ The form is made of sections holding the elements in Table 4.1.
 
 <TableFigure title="Department Stats columns">
 
-| Column | Counts |
-| --- | --- |
-| **Staff** | Assigned volunteers with the *staff* role. |
-| **Assigned** | Volunteers assigned to the department. |
-| **Pending** | Volunteers with no assignment anywhere who chose **Interest** for the department. |
+| Column       | Counts                                                                            |
+| ------------ | --------------------------------------------------------------------------------- |
+| **Staff**    | Assigned volunteers with the _staff_ role.                                        |
+| **Assigned** | Volunteers assigned to the department.                                            |
+| **Pending**  | Volunteers with no assignment anywhere who chose **Interest** for the department. |
 
 </TableFigure>
 

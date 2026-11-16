@@ -22,12 +22,12 @@ A person has at most one registration per convention, shown in the **Registratio
 
 <TableFigure title="The Registration row">
 
-| The row shows | Means |
-| --- | --- |
-| **Not Registered** | No registration for this convention. |
-| **Registration reserved, but not completed.** | Started registering but didn't finish. |
-| **Status:** the badge product, then a green tick | Paid. The tick links to the paying order. |
-| **Status:** the badge product, then a warning sign | Not paid. |
+| The row shows                                      | Means                                     |
+| -------------------------------------------------- | ----------------------------------------- |
+| **Not Registered**                                 | No registration for this convention.      |
+| **Registration reserved, but not completed.**      | Started registering but didn't finish.    |
+| **Status:** the badge product, then a green tick   | Paid. The tick links to the paying order. |
+| **Status:** the badge product, then a warning sign | Not paid.                                 |
 
 </TableFigure>
 
@@ -37,18 +37,18 @@ Registrations staff create start unpaid: the person pays at checkout, or staff t
 
 1. On the **Name** tab, click the pencil button (<MaterialIcon name="edit" />) in the **Registration** row.
 
-   <Result>The **Edit Registration** dialog opens with **Badge Name**, **Attendance Type** (your badge products), flag checkboxes, options and **Create Registration**. With no badge products, it says *No registration products available.*</Result>
+   <Result>The **Edit Registration** dialog opens with **Badge Name**, **Attendance Type** (your badge products), flag checkboxes, options and **Create Registration**. With no badge products, it says _No registration products available._</Result>
 
 2. Enter a **Badge Name** (up to 32 characters), choose the **Attendance Type**, tick any flags, fill in the options, and click **Create Registration**.
 
-   <Result>**Saved successfully** appears. The **Registration** row shows the badge product with a warning sign (unpaid), and the person gets a *Registration Created* email.</Result>
+   <Result>**Saved successfully** appears. The **Registration** row shows the badge product with a warning sign (unpaid), and the person gets a _Registration Created_ email.</Result>
 
 3. If a **Force Registration** dialog opens instead, read it and click **Force Registration** to go ahead.
 
    <Result>The dialog closes, and the **Registration** row shows the new registration.</Result>
 
 :::warning[Force Registration]
-**Force Registration** appears when the badge product can't be sold (sold out, or outside its sale dates), and warns *This will override any product stock limits, expired products, and age restrictions.* If the person fails the product's age rules, there's no dialog: *This product is age restricted and cannot be purchased.* appears, and you need another product.
+**Force Registration** appears when the badge product can't be sold (sold out, or outside its sale dates), and warns _This will override any product stock limits, expired products, and age restrictions._ If the person fails the product's age rules, there's no dialog: _This product is age restricted and cannot be purchased._ appears, and you need another product.
 :::
 
 :::note[Gatekeeping products]
@@ -73,11 +73,11 @@ Extra buttons on the left of **Edit Registration** depend on whether the registr
 
 <TableFigure title="Buttons at the foot of Edit Registration">
 
-| Registration | Buttons | Does |
-| --- | --- | --- |
-| Paid | **Remove Payment** | Removes the paid status. <small>It doesn't refund any money.</small> |
-| Paid | **Transfer** | Moves the paid registration to another person. |
-| Not paid | **Delete** | Deletes the registration. |
+| Registration | Buttons            | Does                                                                 |
+| ------------ | ------------------ | -------------------------------------------------------------------- |
+| Paid         | **Remove Payment** | Removes the paid status. <small>It doesn't refund any money.</small> |
+| Paid         | **Transfer**       | Moves the paid registration to another person.                       |
+| Not paid     | **Delete**         | Deletes the registration.                                            |
 
 </TableFigure>
 
@@ -107,7 +107,7 @@ They need an unpaid registration for this convention first. Create one (section 
 
    <Result>**Transfer completed!** appears. The other person's registration is now paid, with the same badge product; this person's stays, unpaid.</Result>
 
-The transfer fails if the other person has no registration (*User has not yet registered.*), already has a paid one (*Target user registration already has a grant.*), or the registration was bought with a discount that stops transfers (*This registration is locked and cannot be transferred.*).
+The transfer fails if the other person has no registration (_User has not yet registered._), already has a paid one (_Target user registration already has a grant._), or the registration was bought with a discount that stops transfers (_This registration is locked and cannot be transferred._).
 
 Attendees can transfer their own registration when transfers are on: see [Transfer Registration](../registration/transfer.md).
 
@@ -131,7 +131,7 @@ The tab lists the person's orders for this convention, plus paid orders from you
 
 1. On the person's profile, click the **Orders** tab.
 
-   <Result>Each order is a card headed **Order #**, its number and total, with a **Paid in Full** or **Unpaid** badge, the items and **Show details**. With no orders: *There are no orders for this user.*</Result>
+   <Result>Each order is a card headed **Order #**, its number and total, with a **Paid in Full** or **Unpaid** badge, the items and **Show details**. With no orders: _There are no orders for this user._</Result>
 
 2. Click **Show details** on an order.
 

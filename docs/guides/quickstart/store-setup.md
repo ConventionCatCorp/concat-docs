@@ -26,7 +26,7 @@ The store is hidden from attendees until you turn it on, so you can build it fir
 Badge products are no longer a store category. They have their own module: see [Registration setup](./registration-setup.md).
 </Sidenote>
 
-Every store product belongs to a category, such as *Merchandise* or *Charity*.
+Every store product belongs to a category, such as _Merchandise_ or _Charity_.
 
 1. Go to **Housekeeping › Store Management › Store Products**.
 
@@ -136,7 +136,7 @@ A surcharge is a fee or tax added to the price. Create it once, then assign it t
 
    <Result>The surcharge is listed in the product's **Surcharges** card.</Result>
 
-4. *(Optional: a whole category)* On the category's page (section 3, step 1), click **Category Surcharges**, then **Assign Category Level Surcharge**. Select the surcharge in **Surcharge Search** and click **Assign Surcharges**.
+4. _(Optional: a whole category)_ On the category's page (section 3, step 1), click **Category Surcharges**, then **Assign Category Level Surcharge**. Select the surcharge in **Surcharge Search** and click **Assign Surcharges**.
 
    <Result>The surcharge is listed in the **Category Surcharges** dialog and applies to every product in the category.</Result>
 
@@ -152,18 +152,19 @@ A voucher is a code worth an amount of money, such as a comped registration or a
 
    <Result>A **New voucher has been created!** message appears, and the voucher's page opens.</Result>
 
-3. *(Optional)* To give the voucher to particular attendees, click **Issue** on its page, choose the **User(s)** and click **Issue Voucher**.
+3. _(Optional)_ To give the voucher to particular attendees, click **Issue** on its page, choose the **User(s)** and click **Issue Voucher**.
 
-   <Result>A message says *Voucher #… has been issued to … user(s).*</Result>
+   <Result>A message says _Voucher #… has been issued to … user(s)._</Result>
 
 :::tip
 **Restrict voucher to products** limits what the voucher pays for, such as only badge products. When issuing, **Attempt to fulfill associated orders automatically.** applies the voucher to the attendees' unpaid orders.
 :::
 
 :::tip[In more detail]
+
 - [Products](../products/products.md), [Product Images](../products/productimages.md), [Discounts](../products/discounts.md) and [Surcharges](../products/surcharges.md)
 - [Vouchers](../products/vouchers.md)
 - [What attendees see in the store](../products/store.md)
-:::
+  :::
 
 Next: [Users and access](./users-and-access.md), giving your team accounts and access.

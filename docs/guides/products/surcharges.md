@@ -22,10 +22,10 @@ Each surcharge has a **Type** and an **Amount Type** (Table 1.1). Attendees see 
 
 <TableFigure title="Surcharge types">
 
-| Type | What it is | Amount Type |
-| --- | --- | --- |
-| **Surcharge** | Any fixed or percentage charge. | **Fixed Amount** or **Percentage** |
-| **Tax Rate** | A percentage charge required by a government. | Always **Percentage** |
+| Type          | What it is                                    | Amount Type                        |
+| ------------- | --------------------------------------------- | ---------------------------------- |
+| **Surcharge** | Any fixed or percentage charge.               | **Fixed Amount** or **Percentage** |
+| **Tax Rate**  | A percentage charge required by a government. | Always **Percentage**              |
 
 </TableFigure>
 
@@ -47,7 +47,7 @@ The **Surcharges** menu item, and creating and assigning surcharges, need `produ
 
 1. Go to **Housekeeping › Store Management › Surcharges**.
 
-   <Result>The **Surcharges** page lists your surcharges as cards, each with its type and rate, such as *Tax Rate of 8.25%*.</Result>
+   <Result>The **Surcharges** page lists your surcharges as cards, each with its type and rate, such as _Tax Rate of 8.25%_.</Result>
 
 2. Click **Create New Surcharge**.
 
@@ -69,7 +69,7 @@ The **Surcharges** menu item, and creating and assigning surcharges, need `produ
 
 3. Click **Assign Surcharges**.
 
-   <Result>The card lists each surcharge with its type and rate, such as *Surcharge of $2.00*.</Result>
+   <Result>The card lists each surcharge with its type and rate, such as _Surcharge of $2.00_.</Result>
 
 4. To take a surcharge off the product, click the delete button (<MaterialIcon name="delete" />) on its row.
 
@@ -77,7 +77,7 @@ The **Surcharges** menu item, and creating and assigning surcharges, need `produ
 
 Once you type, the search results end with **Create New Surcharge**, even when nothing matches. It creates a surcharge in the card and selects it.
 
-A second tax rate on one product fails with *Products cannot have more than one tax rate assigned.*
+A second tax rate on one product fails with _Products cannot have more than one tax rate assigned._
 
 ## Assign a surcharge to a category
 
@@ -99,7 +99,7 @@ A category surcharge applies to every product in the category, including product
 
    <Result>**Successfully assigned new category level surcharges.** appears, and **Category Surcharges** lists them.</Result>
 
-4. *(Optional)* To remove a category surcharge, click the delete button (<MaterialIcon name="delete" />) on its row.
+4. _(Optional)_ To remove a category surcharge, click the delete button (<MaterialIcon name="delete" />) on its row.
 
    <Result>**Removed Category Level surcharge:** appears with its name. It's also removed from every product in the category.</Result>
 

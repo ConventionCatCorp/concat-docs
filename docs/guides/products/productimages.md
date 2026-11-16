@@ -22,11 +22,11 @@ Each image has a role, shown as a badge under it (Table 1.1).
 
 <TableFigure title="Image roles">
 
-| Badge | Where it's used |
-| --- | --- |
-| **Primary** | On the product's store card, and first on its page. <small>One per product. The first image uploaded becomes **Primary**.</small> |
-| **Image** | On the product's page after the primary, as a slideshow. |
-| **Hidden** | Kept, but not shown to attendees. |
+| Badge         | Where it's used                                                                                                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Primary**   | On the product's store card, and first on its page. <small>One per product. The first image uploaded becomes **Primary**.</small>                                                 |
+| **Image**     | On the product's page after the primary, as a slideshow.                                                                                                                          |
+| **Hidden**    | Kept, but not shown to attendees.                                                                                                                                                 |
 | **Badge Art** | Not in the store. A badge design can print it for holders of this badge product; see [Badge Designer](../registration/badge_designer.md). <small>At most one per product.</small> |
 
 </TableFigure>
@@ -37,7 +37,7 @@ ConCat converts any image to PNG and scales it to fit 2048 × 2048 pixels. A pro
 
 1. Open the product's page (see [Products](./products.md), section 4).
 
-   <Result>The **Product Images** card shows its images, or *There are no images for this product.*</Result>
+   <Result>The **Product Images** card shows its images, or _There are no images for this product._</Result>
 
 2. In **Product Images**, click the green add button (<MaterialIcon name="add" />).
 
@@ -61,11 +61,11 @@ At 10 images the add button disappears. Delete one (section 4) to make room.
 
    <Result>The image is marked **Primary**; the old primary becomes **Image**.</Result>
 
-3. *(Optional)* To keep an image out of sight, choose **Set Hidden** in its gear menu.
+3. _(Optional)_ To keep an image out of sight, choose **Set Hidden** in its gear menu.
 
    <Result>The image is marked **Hidden**.</Result>
 
-4. *(Optional, badge products)* To print an image on badges, choose **Set Badge Art** in its gear menu.
+4. _(Optional, badge products)_ To print an image on badges, choose **Set Badge Art** in its gear menu.
 
    <Result>The image is marked **Badge Art**; any previous badge art becomes **Image**.</Result>
 

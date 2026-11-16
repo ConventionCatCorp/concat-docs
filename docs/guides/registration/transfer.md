@@ -18,7 +18,7 @@ How transfers work, turning transfers on, transferring as an attendee, and trans
 The attendee can't undo a transfer. The sender no longer has a paid registration, and can't edit it.
 </Sidenote>
 
-A transfer moves the *payment* for a registration to another attendee. The recipient's own registration becomes paid, for the sender's tier; they keep their badge name and answers, and anything for the registration in their cart is removed.
+A transfer moves the _payment_ for a registration to another attendee. The recipient's own registration becomes paid, for the sender's tier; they keep their badge name and answers, and anything for the registration in their cart is removed.
 
 A transfer works only when:
 
@@ -39,7 +39,7 @@ First, the recipient creates an account and registers for any tier, without payi
 
 1. As the sender, open **Attendance** in the homepage sidebar, open the menu on the arrow next to **Modify** on your card, and choose **Transfer registration**.
 
-   <Result>A **Transfer registration** dialog says *You can only transfer a registration to an existing user with a verified email address.*, warns that it's **PERMANENT**, and asks for **Target Email** and **Enter Your Password**.</Result>
+   <Result>A **Transfer registration** dialog says _You can only transfer a registration to an existing user with a verified email address._, warns that it's **PERMANENT**, and asks for **Target Email** and **Enter Your Password**.</Result>
 
 2. Enter the recipient's email address and your own password, then click **Transfer registration**.
 
@@ -51,14 +51,14 @@ First, the recipient creates an account and registers for any tier, without payi
 
 <TableFigure title="When a transfer is refused">
 
-| Message | Why |
-| --- | --- |
-| *This registration cannot be transferred, as the badge has already been printed.* <small>Shown in the dialog, in place of the fields.</small> | The sender's badge has been printed. |
-| *This registration cannot be transferred, as it was purchased with a discount that prevents transfers.* <small>Shown in the dialog, in place of the fields.</small> | The registration's discount prevents transfers. |
-| *Target user email not found.* | No account uses that email address. |
-| *User has not yet registered.* | The recipient has no registration. |
-| *Target user registration already has a grant.* | The recipient has already paid for a registration. |
-| *Incorrect password.* | The sender's password was wrong. |
+| Message                                                                                                                                                             | Why                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| _This registration cannot be transferred, as the badge has already been printed._ <small>Shown in the dialog, in place of the fields.</small>                       | The sender's badge has been printed.               |
+| _This registration cannot be transferred, as it was purchased with a discount that prevents transfers._ <small>Shown in the dialog, in place of the fields.</small> | The registration's discount prevents transfers.    |
+| _Target user email not found._                                                                                                                                      | No account uses that email address.                |
+| _User has not yet registered._                                                                                                                                      | The recipient has no registration.                 |
+| _Target user registration already has a grant._                                                                                                                     | The recipient has already paid for a registration. |
+| _Incorrect password._                                                                                                                                               | The sender's password was wrong.                   |
 
 </TableFigure>
 

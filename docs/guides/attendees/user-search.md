@@ -38,14 +38,14 @@ The search covers every account in your organization; registration details are f
 
 <TableFigure title="What you can search for">
 
-| You type | The search finds |
-| --- | --- |
-| A first name, last name, preferred name or username | Names or usernames starting with it. |
-| A first name, a space, then a last name | First name starting with the first word, last name with any later word. <small>Extra words, such as a middle name, don't stop a match.</small> |
-| An email address or phone number | Addresses or numbers starting with it. |
-| A user ID, such as `1234` | That person, listed first with an **ID: #1234** badge. |
-| A badge ID in printed form, such as `B101` | That badge's holder at this convention. |
-| A date of birth as `YYYY-MM-DD` | Alone, everyone born that day. After a name, only matches born that day. |
+| You type                                            | The search finds                                                                                                                               |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| A first name, last name, preferred name or username | Names or usernames starting with it.                                                                                                           |
+| A first name, a space, then a last name             | First name starting with the first word, last name with any later word. <small>Extra words, such as a middle name, don't stop a match.</small> |
+| An email address or phone number                    | Addresses or numbers starting with it.                                                                                                         |
+| A user ID, such as `1234`                           | That person, listed first with an **ID: #1234** badge.                                                                                         |
+| A badge ID in printed form, such as `B101`          | That badge's holder at this convention.                                                                                                        |
+| A date of birth as `YYYY-MM-DD`                     | Alone, everyone born that day. After a name, only matches born that day.                                                                       |
 
 </TableFigure>
 
@@ -82,13 +82,13 @@ A barcode scanner ([Scanner](../registration/cashier/scanner.md)) fills in the s
 
 <TableFigure title="Search filters">
 
-| Switch | Keeps, at this convention |
-| --- | --- |
-| **Only show badge printed users** | People with a printed badge. |
-| **Only show paid users** | People with a paid registration. |
-| **Only show dealers** | People with a dealer application. |
-| **Only show volunteers** | People with a volunteer application. |
-| **Search badge name + UID** | Also matches the start of badge names. |
+| Switch                            | Keeps, at this convention              |
+| --------------------------------- | -------------------------------------- |
+| **Only show badge printed users** | People with a printed badge.           |
+| **Only show paid users**          | People with a paid registration.       |
+| **Only show dealers**             | People with a dealer application.      |
+| **Only show volunteers**          | People with a volunteer application.   |
+| **Search badge name + UID**       | Also matches the start of badge names. |
 
 </TableFigure>
 
@@ -96,17 +96,17 @@ A barcode scanner ([Scanner](../registration/cashier/scanner.md)) fills in the s
 
 <TableFigure title="Status badges">
 
-| Badge | Means |
-| --- | --- |
-| **Registered, Paid** | A paid registration for this convention. |
-| **Registered, Not Paid** | An unpaid registration for this convention. |
-| **Not Registered** | No registration for this convention. |
-| **Sub-account** | Managed from another account, such as a parent's. |
-| **Child** | A child sub-account, or below your **Child Age Threshold** when the convention starts. <small>The age check needs permission to read dates of birth.</small> |
-| **Returning attendee** | Badge printed at your previous convention. |
-| **Banned** | Has a ban note. See [User Notes](../usernotes/usernotes.md). |
-| **Restriction** | Has a restriction note. |
-| **Pending Review** | May duplicate a banned account. <small>Profile only; hover for details.</small> |
+| Badge                    | Means                                                                                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Registered, Paid**     | A paid registration for this convention.                                                                                                                     |
+| **Registered, Not Paid** | An unpaid registration for this convention.                                                                                                                  |
+| **Not Registered**       | No registration for this convention.                                                                                                                         |
+| **Sub-account**          | Managed from another account, such as a parent's.                                                                                                            |
+| **Child**                | A child sub-account, or below your **Child Age Threshold** when the convention starts. <small>The age check needs permission to read dates of birth.</small> |
+| **Returning attendee**   | Badge printed at your previous convention.                                                                                                                   |
+| **Banned**               | Has a ban note. See [User Notes](../usernotes/usernotes.md).                                                                                                 |
+| **Restriction**          | Has a restriction note.                                                                                                                                      |
+| **Pending Review**       | May duplicate a banned account. <small>Profile only; hover for details.</small>                                                                              |
 
 </TableFigure>
 
@@ -124,7 +124,7 @@ Blue badges show the field that matched and its value: **Email:**, **Badge Name:
 
 3. Hover over the icon after the attendance type in the **Registration** row.
 
-   <Result>A green tick says *This user has an active entitlement that grants this attendance type.* and links to the paying order. A warning sign says *This user does not have an active order correlated with this registration.*: it isn't paid.</Result>
+   <Result>A green tick says _This user has an active entitlement that grants this attendance type._ and links to the paying order. A warning sign says _This user does not have an active order correlated with this registration._: it isn't paid.</Result>
 
 :::tip[Sub-accounts]
 No **Notes**, **Orders**, **Volunteer** or **Dealer** tab; **Owner account** links to the parent. The parent's **Registration** row links each sub-account under **Other Accounts:**.
@@ -136,17 +136,17 @@ Each tab needs its own permission (Table 4.1).
 
 <TableFigure title="Profile tabs">
 
-| Tab | Holds | Who sees it |
-| --- | --- | --- |
-| **Name** | Details, registration, applications, account actions. See [Managing an attendee's account](./user-accounts.md) and [Managing an attendee's registrations and orders](./user-registrations.md). | Everyone |
-| **Notes** | Notes, restrictions, bans. See [User Notes](../usernotes/usernotes.md). | `user:note:read`, `user:note:read:hr` or `system:login` |
-| **Orders** | Orders. See [Managing an attendee's registrations and orders](./user-registrations.md), section 5. | `order:view` |
-| **Roles** | Convention and global roles. See [Users and access](../quickstart/users-and-access.md), section 3. | `user:roles:update`, or a role manager |
-| **Permissions** | Permissions for this person alone. | `system:permission:read`; changing them needs `system:permission:update` |
-| **Volunteer** | Volunteer application. See [Volunteers](../volunteers/volunteers.md). | `volunteer:read` |
-| **Dealer** | Dealer application. See [Dealers](../dealers/managment.md). | `vendor:read` |
-| **Emergency Contacts** | Contacts given at registration. See [Managing an attendee's account](./user-accounts.md), section 3. | `admin:read:emergencycontacts`, registered people only |
-| **Audit** | Everything logged about the account. See [Managing an attendee's account](./user-accounts.md), section 4. | `audit:read` |
+| Tab                    | Holds                                                                                                                                                                                          | Who sees it                                                              |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **Name**               | Details, registration, applications, account actions. See [Managing an attendee's account](./user-accounts.md) and [Managing an attendee's registrations and orders](./user-registrations.md). | Everyone                                                                 |
+| **Notes**              | Notes, restrictions, bans. See [User Notes](../usernotes/usernotes.md).                                                                                                                        | `user:note:read`, `user:note:read:hr` or `system:login`                  |
+| **Orders**             | Orders. See [Managing an attendee's registrations and orders](./user-registrations.md), section 5.                                                                                             | `order:view`                                                             |
+| **Roles**              | Convention and global roles. See [Users and access](../quickstart/users-and-access.md), section 3.                                                                                             | `user:roles:update`, or a role manager                                   |
+| **Permissions**        | Permissions for this person alone.                                                                                                                                                             | `system:permission:read`; changing them needs `system:permission:update` |
+| **Volunteer**          | Volunteer application. See [Volunteers](../volunteers/volunteers.md).                                                                                                                          | `volunteer:read`                                                         |
+| **Dealer**             | Dealer application. See [Dealers](../dealers/managment.md).                                                                                                                                    | `vendor:read`                                                            |
+| **Emergency Contacts** | Contacts given at registration. See [Managing an attendee's account](./user-accounts.md), section 3.                                                                                           | `admin:read:emergencycontacts`, registered people only                   |
+| **Audit**              | Everything logged about the account. See [Managing an attendee's account](./user-accounts.md), section 4.                                                                                      | `audit:read`                                                             |
 
 </TableFigure>
 

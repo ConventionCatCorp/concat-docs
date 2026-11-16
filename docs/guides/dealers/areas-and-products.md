@@ -22,12 +22,12 @@ Build the pieces in the order of Table 1.1: each needs the one before.
 
 <TableFigure title="The pieces of a dealer area, in the order you build them">
 
-| Piece | What it is |
-| --- | --- |
-| Dealer product category | Holds one area's table types (section 2). |
-| Table types | Priced products in the category. Dealers choose from its **Public** ones (section 3). |
-| Add-ons | Products, such as electricity or an extra chair, attached through a table type's **Addons** card. Dealers tick the ones they want (section 3). |
-| Dealer area | Names the category its table types come from (section 4). |
+| Piece                   | What it is                                                                                                                                     |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dealer product category | Holds one area's table types (section 2).                                                                                                      |
+| Table types             | Priced products in the category. Dealers choose from its **Public** ones (section 3).                                                          |
+| Add-ons                 | Products, such as electricity or an extra chair, attached through a table type's **Addons** card. Dealers tick the ones they want (section 3). |
+| Dealer area             | Names the category its table types come from (section 4).                                                                                      |
 
 </TableFigure>
 
@@ -43,7 +43,7 @@ Approving an application puts the chosen table type and add-ons into the dealer'
 
    <Result>A **New Category** form opens.</Result>
 
-3. Enter a **Name**, such as *Dealers' Den tables*, leave **Hide this category** unticked (it hides the category and its items from attendees), and click **Create Category**.
+3. Enter a **Name**, such as _Dealers' Den tables_, leave **Hide this category** unticked (it hides the category and its items from attendees), and click **Create Category**.
 
    <Result>A **New category has been created.** message appears, and the category's page opens.</Result>
 
@@ -85,13 +85,13 @@ An add-on is a product in the same dealer category as its table type. Make it **
 
    <Result>The add-on is listed in the **Addons** card. Dealers who choose this table type see it as a checkbox, with its price.</Result>
 
-Repeat steps 2 and 3 for each table type that offers the add-on. A product from another category is refused with *Dealer addon must be in the same category as the product*. See also [Addons](../products/addons.md).
+Repeat steps 2 and 3 for each table type that offers the add-on. A product from another category is refused with _Dealer addon must be in the same category as the product_. See also [Addons](../products/addons.md).
 
 ## Create a dealer area
 
 1. Go to **Housekeeping › Dealers › Areas**.
 
-   <Result>The **Dealer Areas** page opens (*Nothing here yet!* if there are no areas).</Result>
+   <Result>The **Dealer Areas** page opens (_Nothing here yet!_ if there are no areas).</Result>
 
 2. Click **Create New Dealer Area**.
 
@@ -103,11 +103,11 @@ Repeat steps 2 and 3 for each table type that offers the add-on. A product from 
 
 <TableFigure title="Area settings">
 
-| Setting | When ticked | When not ticked |
-| --- | --- | --- |
-| **Enabled** <small>"Display the option to users"</small> | Dealers see the area. | Hidden from dealers. With no area enabled, **Dealing** says *No dealer areas are currently accepting applications.* |
-| **Open** <small>"Allow for additional registrations"</small> | Dealers can apply, and change or delete a pending application. | Marked **CLOSED**; its form says the area *is closed.* Staff can still change applications. |
-| **Full** <small>"Show that registrations is full, but more slots may open in the future."</small> | Dealers can still apply, but see *The* area *is full. Applications can still be made in case a seat becomes available.* | No message. |
+| Setting                                                                                           | When ticked                                                                                                             | When not ticked                                                                                                     |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Enabled** <small>"Display the option to users"</small>                                          | Dealers see the area.                                                                                                   | Hidden from dealers. With no area enabled, **Dealing** says _No dealer areas are currently accepting applications._ |
+| **Open** <small>"Allow for additional registrations"</small>                                      | Dealers can apply, and change or delete a pending application.                                                          | Marked **CLOSED**; its form says the area _is closed._ Staff can still change applications.                         |
+| **Full** <small>"Show that registrations is full, but more slots may open in the future."</small> | Dealers can still apply, but see _The_ area _is full. Applications can still be made in case a seat becomes available._ | No message.                                                                                                         |
 
 </TableFigure>
 
@@ -123,7 +123,7 @@ With several areas enabled, dealers choose one first; with one, they go straight
 
    <Result>An **Updated area.** message appears.</Result>
 
-3. *(Optional)* To delete an area, click **Delete** on it.
+3. _(Optional)_ To delete an area, click **Delete** on it.
 
    <Result>A **Delete Dealer Area** dialog warns **This will delete ALL applications for this area.**</Result>
 

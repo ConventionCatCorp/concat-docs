@@ -23,7 +23,7 @@ A `CNAME` record publishes a name on your domain that points to another name. Co
 You add records in your domain's DNS management panel, usually at the registrar where you bought it, such as GoDaddy, NameCheap or Porkbun.
 
 :::note[Custom nameservers]
-If your domain's nameservers were changed, for example so Cloudflare manages DNS, use *that* service's DNS panel. If you don't know what nameservers are, they probably weren't changed.
+If your domain's nameservers were changed, for example so Cloudflare manages DNS, use _that_ service's DNS panel. If you don't know what nameservers are, they probably weren't changed.
 :::
 
 ## Custom email domain
@@ -36,7 +36,7 @@ ConCat sends email from `concat.app` by default. To use your domain, request it 
 
 1. Go to **Housekeeping › System › Settings** and click the **Email Settings** tab.
 
-   <Result>**Email Sending Domain** says *The domain is currently set to the default,* `concat.app`, with a **Configure a Domain** button.</Result>
+   <Result>**Email Sending Domain** says _The domain is currently set to the default,_ `concat.app`, with a **Configure a Domain** button.</Result>
 
 2. Click **Configure a Domain**.
 
@@ -44,7 +44,7 @@ ConCat sends email from `concat.app` by default. To use your domain, request it 
 
 3. Enter your **Domain**, choose the **Scope** (**Organization** for every convention, **Convention** for this one only), then click **Submit**.
 
-   <Result>A box says *Please add the following CNAME records to your domain.* above three rows of **Name** and **Value**, each with a copy button, and the **Download CSV**, **Cancel** and **Verify** buttons.</Result>
+   <Result>A box says _Please add the following CNAME records to your domain._ above three rows of **Name** and **Value**, each with a copy button, and the **Download CSV**, **Cancel** and **Verify** buttons.</Result>
 
 4. In your DNS panel, add a `CNAME` record for each row, pasting the exact **Name** and **Value**.
 
@@ -52,7 +52,7 @@ ConCat sends email from `concat.app` by default. To use your domain, request it 
 
 5. Wait about 5 minutes for your DNS provider to publish the records, then click **Verify** in ConCat.
 
-   <Result>A **Your domain was successfully validated.** message appears, and the section says *This organization's email domain is:* (or *convention's*) and your domain. If you get a warning instead, see section 4.</Result>
+   <Result>A **Your domain was successfully validated.** message appears, and the section says _This organization's email domain is:_ (or _convention's_) and your domain. If you get a warning instead, see section 4.</Result>
 
 :::tip[Name field and your domain]
 The **Name** copy button copies only the part before your domain, such as `abc123._domainkey`; most DNS panels add the domain for you. If yours wants the full name, add your domain after it, as shown beside the field, or use **Download CSV**, which has the full names.
@@ -78,16 +78,16 @@ Add it at the new convention's full address, even if your main domain has one: i
 
 ## When verification doesn't pass
 
-A warning after **Verify** is normal: DNS providers can be slow, so try again in 30 to 60 minutes. Meanwhile, check the records are on the right domain and match ConCat's values *exactly*. After 24 hours, contact ConCat Support.
+A warning after **Verify** is normal: DNS providers can be slow, so try again in 30 to 60 minutes. Meanwhile, check the records are on the right domain and match ConCat's values _exactly_. After 24 hours, contact ConCat Support.
 
 <TableFigure title="Messages after Verify">
 
-| Message | What it means |
-| --- | --- |
-| **Your domain was successfully validated.** | The records are correct. ConCat sends from your domain. |
-| *Your domain was not able to be validated yet. …* | The records aren't visible yet, or don't match. Check them and retry later. |
-| *An error has occurred. Cancel this attempt and try again, or contact support.* | The request failed. Click **Cancel**, then start again from section 2, step 2. |
-| *The domain requested was not found, or does not have a valid attempt to verify.* | There's no pending request for this domain. Start again from section 2, step 2. |
+| Message                                                                           | What it means                                                                   |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Your domain was successfully validated.**                                       | The records are correct. ConCat sends from your domain.                         |
+| _Your domain was not able to be validated yet. …_                                 | The records aren't visible yet, or don't match. Check them and retry later.     |
+| _An error has occurred. Cancel this attempt and try again, or contact support._   | The request failed. Click **Cancel**, then start again from section 2, step 2.  |
+| _The domain requested was not found, or does not have a valid attempt to verify._ | There's no pending request for this domain. Start again from section 2, step 2. |
 
 </TableFigure>
 

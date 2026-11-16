@@ -49,7 +49,7 @@ A claim ticket uses a badge design: make one in the [Badge Designer](../registra
    <Result>The form closes. Reopening it shows the design selected.</Result>
 
 :::caution[Watch out]
-On a badge product, **Product Label Print Design** replaces that badge's default design (*Override the default badge design layout.*). Claim tickets come only from store products.
+On a badge product, **Product Label Print Design** replaces that badge's default design (_Override the default badge design layout._). Claim tickets come only from store products.
 :::
 
 ## Print claim tickets
@@ -62,7 +62,7 @@ Staff print the badge as usual; see the [Cashier UI](../registration/cashier/cas
 
 2. Click **Print Badge**.
 
-   <Result>The badge prints, then one claim ticket per eligible item. The screen says *Badge has been queued to print. No further action is required!*</Result>
+   <Result>The badge prints, then one claim ticket per eligible item. The screen says _Badge has been queued to print. No further action is required!_</Result>
 
 :::note[When nothing extra prints]
 Claim tickets need a badge design for the attendee: their badge product's design, or your default. They don't print at stations set to check attendees in without printing.
@@ -80,7 +80,7 @@ Once paid for, products with **Deliverable** ticked (see [Products](./products.m
 
    <Result>An **Undelivered products** card lists their deliverable products. Items already handed over are marked **(Delivered)**.</Result>
 
-2. *(Optional)* If the station has a receipt printer, click **Print Pick List** for whoever collects the items.
+2. _(Optional)_ If the station has a receipt printer, click **Print Pick List** for whoever collects the items.
 
    <Result>The receipt printer prints a **PICK LIST** of the items not yet delivered.</Result>
 

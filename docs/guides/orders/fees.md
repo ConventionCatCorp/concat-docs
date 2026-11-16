@@ -22,10 +22,10 @@ A fee goes into the attendee's unpaid order for this convention (their cart), wh
 
 <TableFigure title="Fee statuses">
 
-| Status | Meaning |
-| --- | --- |
-| **Not Yet Paid** | The order holding the fee is unpaid. The fee can be deleted. |
-| **Paid** | The order is paid. The fee can no longer be deleted. |
+| Status                 | Meaning                                                             |
+| ---------------------- | ------------------------------------------------------------------- |
+| **Not Yet Paid**       | The order holding the fee is unpaid. The fee can be deleted.        |
+| **Paid**               | The order is paid. The fee can no longer be deleted.                |
 | **Deleted / Archived** | Deleted by staff before payment. Kept in the list for your records. |
 
 </TableFigure>
@@ -56,7 +56,7 @@ Attendees see only the total of their fees, not your reason, so tell them why yo
 
    <Result>The row opens to show the **Reason**, and **Delete Fee** if the fee is **Not Yet Paid**.</Result>
 
-3. *(Optional)* To remove an unpaid fee, click **Delete Fee**.
+3. _(Optional)_ To remove an unpaid fee, click **Delete Fee**.
 
    <Result>A **Fee has been deleted** message appears. The fee stays listed as **Deleted / Archived** and leaves the attendee's cart.</Result>
 

@@ -1,8 +1,7 @@
 // Refreshes static/openapi/concat.json from a running ConCat instance's Swagger spec.
 // Usage: node scripts/update-openapi.mjs <instance origin, e.g. http://localhost:8082>
-// The instance must run ConCat master. Afterwards regenerate the reference pages:
-//   npx docusaurus clean-api-docs concat && npx docusaurus gen-api-docs concat
-// clean-api-docs also deletes docs/api/endpoints/v0/reference/_category_.json; restore it with git.
+// The instance must run ConCat master. Afterwards regenerate the reference pages with
+// `npm run gen-api-docs`.
 import { writeFileSync } from 'node:fs';
 
 const origin = process.argv[2];

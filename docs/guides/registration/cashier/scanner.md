@@ -18,10 +18,10 @@ The Cashier UI reads the codes in Table 1.1. Anything else a Web Serial scanner 
 
 <TableFigure title="Codes the Cashier UI reads">
 
-| Code | Where it comes from | What the station does |
-| --- | --- | --- |
-| ID barcode (PDF417) | The back of a US-style driver's license or ID card. Starts with `@ANSI`. | Searches by the ID's name and date of birth. If one attendee matches, opens their page and checks the ID ([Cashier UI](./cashier.md), section 7). |
-| Registration QR code | The confirmation email or **Attendance** page, if your event has registration QR codes (section 5). Starts with `@CONCAT;UUID`. | Opens the attendee whose registration it is. |
+| Code                 | Where it comes from                                                                                                             | What the station does                                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID barcode (PDF417)  | The back of a US-style driver's license or ID card. Starts with `@ANSI`.                                                        | Searches by the ID's name and date of birth. If one attendee matches, opens their page and checks the ID ([Cashier UI](./cashier.md), section 7). |
+| Registration QR code | The confirmation email or **Attendance** page, if your event has registration QR codes (section 5). Starts with `@CONCAT;UUID`. | Opens the attendee whose registration it is.                                                                                                      |
 
 </TableFigure>
 
@@ -32,7 +32,7 @@ A scanner connects to the station in one of two ways:
 - **Keyboard mode.** Most scanners' default, with no setup: the scanner types what it reads. A scan that starts with `@ANSI` or `@CONCAT` and ends with Enter starts a new search from any Cashier UI screen, even an attendee's page.
 - **Web Serial mode.** The scanner connects as a serial port; add it to each station once (section 4). On an attendee's page, an ID scan opens the **Verify Attendee ID** check instead of a new search.
 
-Web Serial mode needs a browser with both WebUSB and Web Serial; keyboard mode needs neither. Without WebUSB, **Scanners** in **Configure Devices** has no **Add Manually** button and says *It seems like your browser does not support WebUSB. Please use a supported browser.*
+Web Serial mode needs a browser with both WebUSB and Web Serial; keyboard mode needs neither. Without WebUSB, **Scanners** in **Configure Devices** has no **Add Manually** button and says _It seems like your browser does not support WebUSB. Please use a supported browser._
 
 :::info[Key idea]
 Use Web Serial mode if your desk checks IDs: the cashier can verify an ID from the attendee's page without starting a new search.
@@ -48,14 +48,14 @@ These steps use barcodes from the TEEMI 2D barcode scanner's [manual](/img/cashi
 
 <TableFigure title="TEEMI configuration barcodes, in order">
 
-| Order | Scan this | What it sets |
-| --- | --- | --- |
-| 1 | ![Restore All Factory Defaults barcode](/img/cashier/barcodes/01_factory_reset.PNG) | **Restore All Factory Defaults**. Starts from a known state. |
-| 2 | ![Low volume barcode](/img/cashier/barcodes/02_low_volume.PNG) | **Low**. Turns the beep down. |
-| 3 | ![Disable All Symbologies barcode](/img/cashier/barcodes/03_disable_all.PNG) | **Disable All Symbologies**. Turns every barcode type off. |
-| 4 | ![Enable PDF 417 barcode](/img/cashier/barcodes/04_enable_pdf417.PNG) | **Enable PDF 417**. Turns on ID barcodes. |
-| 5 | The QR code *enable* barcode from the QR Code section of the [manual](/img/cashier/barcodes/TEEMI_2D_Barcode_Scanner_Manual.pdf) | Turns on QR codes. <small>Only for registration QR codes (section 5).</small> |
-| 6 | ![USB COM Port Emulation barcode](/img/cashier/barcodes/05_usb_com.png) | **USB COM Port Emulation**. Makes the scanner a serial device. <small>Skip it to keep keyboard mode.</small> |
+| Order | Scan this                                                                                                                        | What it sets                                                                                                 |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| 1     | ![Restore All Factory Defaults barcode](/img/cashier/barcodes/01_factory_reset.PNG)                                              | **Restore All Factory Defaults**. Starts from a known state.                                                 |
+| 2     | ![Low volume barcode](/img/cashier/barcodes/02_low_volume.PNG)                                                                   | **Low**. Turns the beep down.                                                                                |
+| 3     | ![Disable All Symbologies barcode](/img/cashier/barcodes/03_disable_all.PNG)                                                     | **Disable All Symbologies**. Turns every barcode type off.                                                   |
+| 4     | ![Enable PDF 417 barcode](/img/cashier/barcodes/04_enable_pdf417.PNG)                                                            | **Enable PDF 417**. Turns on ID barcodes.                                                                    |
+| 5     | The QR code _enable_ barcode from the QR Code section of the [manual](/img/cashier/barcodes/TEEMI_2D_Barcode_Scanner_Manual.pdf) | Turns on QR codes. <small>Only for registration QR codes (section 5).</small>                                |
+| 6     | ![USB COM Port Emulation barcode](/img/cashier/barcodes/05_usb_com.png)                                                          | **USB COM Port Emulation**. Makes the scanner a serial device. <small>Skip it to keep keyboard mode.</small> |
 
 </TableFigure>
 
@@ -65,7 +65,7 @@ Plug the scanner into the station computer by USB first.
 
 1. In the Cashier UI, click **Configure Devices**.
 
-   <Result>A **Configure Devices** dialog opens. With no scanner added yet, **Scanners** says *No serial scanners connected, try adding one manually.*</Result>
+   <Result>A **Configure Devices** dialog opens. With no scanner added yet, **Scanners** says _No serial scanners connected, try adding one manually._</Result>
 
 2. Next to **Scanners**, click **Add Manually**, then **Scanner with Web Serial**.
 
@@ -99,16 +99,17 @@ Each registration has its own QR code. With **Enable Registration QR Codes** on,
 
 3. As an attendee, register and pay for a badge.
 
-   <Result>A *Registration Confirmation for* email arrives, headed **Save this email!**, with the QR code.</Result>
+   <Result>A _Registration Confirmation for_ email arrives, headed **Save this email!**, with the QR code.</Result>
 
 4. On the Cashier UI search page, scan the QR code from the email or the **Attendance** page.
 
    <Result>**One Result Found** and **Redirecting...** appear, then the attendee's page opens.</Result>
 
 :::caution[Watch out]
-- **Not retroactive:** registrations completed before the setting was on get no email (*This will not apply retroactively, contact support if you wish to backfill this.*). Those attendees can still show the code on their **Attendance** page.
+
+- **Not retroactive:** registrations completed before the setting was on get no email (_This will not apply retroactively, contact support if you wish to backfill this._). Those attendees can still show the code on their **Attendance** page.
 - **Not an ID check:** a QR code identifies the registration, not the person. A station that requires an ID scan still blocks the attendee until their ID is scanned.
 - **Scanner settings:** a scanner set up for PDF417 only can't read QR codes. On a TEEMI, scan row 5 of Table 3.1.
-:::
+  :::
 
 Ticket QR codes for ticketed products are scanned with the QuikTicket app: see [Devices and QuikTicket](./devices.md).

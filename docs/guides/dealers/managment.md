@@ -26,14 +26,14 @@ A dealer has one **dealer profile** (business details) and one **application** p
 
 <TableFigure title="Application statuses">
 
-| Status | Housekeeping shows | The dealer sees on their **Dealing** page |
-| --- | --- | --- |
-| **Pending** | *pending* | *Your application for* the area *has not been approved yet.* |
-| **Approved**, not paid | *approved*, with a warning icon | *Your* area *application has been approved and is pending payment.*, with **Pay for Table** |
-| **Approved**, paid | *approved*, with a tick <small>The applications list shows *approved (Paid)*.</small> | **Your application has been approved!**, with their table number once assigned |
-| **Waitlisted** | *waitlisted* | *Your application for* the area *is waitlisted.* |
-| **Rejected** | *rejected* | *Your application for* the area *was rejected.* |
-| **Cancelled** | *cancelled* | *Your application for* the area *was canceled.* |
+| Status                 | Housekeeping shows                                                                    | The dealer sees on their **Dealing** page                                                   |
+| ---------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Pending**            | _pending_                                                                             | _Your application for_ the area _has not been approved yet._                                |
+| **Approved**, not paid | _approved_, with a warning icon                                                       | _Your_ area _application has been approved and is pending payment._, with **Pay for Table** |
+| **Approved**, paid     | _approved_, with a tick <small>The applications list shows _approved (Paid)_.</small> | **Your application has been approved!**, with their table number once assigned              |
+| **Waitlisted**         | _waitlisted_                                                                          | _Your application for_ the area _is waitlisted._                                            |
+| **Rejected**           | _rejected_                                                                            | _Your application for_ the area _was rejected._                                             |
+| **Cancelled**          | _cancelled_                                                                           | _Your application for_ the area _was canceled._                                             |
 
 </TableFigure>
 
@@ -41,7 +41,7 @@ A dealer has one **dealer profile** (business details) and one **application** p
 ConCat doesn't email dealers when their status changes. Tell them yourself, for example with a [Mass email](../attendees/mass-email.md).
 :::
 
-ConCat assigns two roles automatically: *vendor* to everyone with an application, and *vendorApproved* to everyone with an approved one.
+ConCat assigns two roles automatically: _vendor_ to everyone with an application, and _vendorApproved_ to everyone with an approved one.
 
 ## The dealer dashboard
 
@@ -59,13 +59,13 @@ ConCat assigns two roles automatically: *vendor* to everyone with an application
 
 <TableFigure title="The dashboard cards">
 
-| Card | What it counts |
-| --- | --- |
-| **Total Dealers** | Dealer profiles saved for this convention. |
-| **Approved Dealers** | Approved applications, in all areas. |
-| **Paid Dealers** | Approved applications whose dealer has paid for their convention registration. <small>The badge, not the table.</small> |
-| **Dealers without Applications** | Dealers with a profile but no application. **View** lists them. |
-| **Confirmed with No Paid Registration** | Approved dealers who haven't paid for their convention registration. **View** lists them. |
+| Card                                    | What it counts                                                                                                          |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Total Dealers**                       | Dealer profiles saved for this convention.                                                                              |
+| **Approved Dealers**                    | Approved applications, in all areas.                                                                                    |
+| **Paid Dealers**                        | Approved applications whose dealer has paid for their convention registration. <small>The badge, not the table.</small> |
+| **Dealers without Applications**        | Dealers with a profile but no application. **View** lists them.                                                         |
+| **Confirmed with No Paid Registration** | Approved dealers who haven't paid for their convention registration. **View** lists them.                               |
 
 </TableFigure>
 
@@ -81,13 +81,13 @@ In the **Applications** card, **Count** is every application in the area, **Conf
 
    <Result>Only matching rows are listed.</Result>
 
-3. *(Optional)* To filter by **Status**, **Registration**, **Area** or **Table Type**, click the filter button in that column's header, untick the values you don't want (or untick **(Select all)** and tick the ones you do), and click **Apply**.
+3. _(Optional)_ To filter by **Status**, **Registration**, **Area** or **Table Type**, click the filter button in that column's header, untick the values you don't want (or untick **(Select all)** and tick the ones you do), and click **Apply**.
 
    <Result>Only matching rows are listed, and the filter button is highlighted. **Clear** in the same filter removes it.</Result>
 
 4. Click the business name in the **Store** column.
 
-   <Result>The dealer's page opens, with **Dealer Information**, **Seating Requests** and an application card for each area, such as *Dealers' Den application*.</Result>
+   <Result>The dealer's page opens, with **Dealer Information**, **Seating Requests** and an application card for each area, such as _Dealers' Den application_.</Result>
 
 **Registration** shows whether the dealer's convention registration is paid; an approved dealer without one gets a warning icon. A **Restriction** badge means the profile has a note in the restriction category.
 
@@ -99,13 +99,13 @@ In the **Applications** card, **Count** is every application in the area, **Conf
 
 2. Choose the new **Status** (**Approved**, **Waitlisted**, **Rejected** or **Cancelled**), check the **Table** and the add-ons ticked under **Requests**, and click **Save**.
 
-   <Result>A **The application has been updated.** message appears. An approved application shows *approved* with a warning icon until the dealer pays.</Result>
+   <Result>A **The application has been updated.** message appears. An approved application shows _approved_ with a warning icon until the dealer pays.</Result>
 
 3. To check the dealer's cart, click their name in the **User** row of **Dealer Information**, then the **Orders** tab.
 
    <Result>The unpaid order lists the table type and each add-on ticked under **Requests**.</Result>
 
-4. *(Optional)* Once you've planned the floor, edit the application again, enter the **Table Number**, and click **Save**.
+4. _(Optional)_ Once you've planned the floor, edit the application again, enter the **Table Number**, and click **Save**.
 
    <Result>A **The application has been updated.** message appears, and the number shows in the applications list's **Table** column.</Result>
 
@@ -165,7 +165,7 @@ Areas the dealer hasn't applied to show **No application.** on their card. You c
 A table type allows assistants when its **Dealer assistant count limit** is above 0. See [Dealer areas and table types](./areas-and-products.md), section 3.
 </Sidenote>
 
-Assistants of an approved application get the *dealerAssistant* role. When the table type allows them, the application card's **Assistants** section lists each as **Accepted** or **Pending Email Confirmation.**
+Assistants of an approved application get the _dealerAssistant_ role. When the table type allows them, the application card's **Assistants** section lists each as **Accepted** or **Pending Email Confirmation.**
 
 1. In the card's **Assistants** section, click **Manage Assistants**.
 
@@ -175,11 +175,11 @@ Assistants of an approved application get the *dealerAssistant* role. When the t
 
    <Result>An **Assistant added.** message appears, and the person is listed as **Accepted**: assistants your team adds don't confirm by email.</Result>
 
-3. *(Optional)* To remove an assistant, click the red bin button next to them.
+3. _(Optional)_ To remove an assistant, click the red bin button next to them.
 
    <Result>An **Assistant removed.** message appears, and they're no longer listed.</Result>
 
-At the table type's limit, adding fails with *Too many assistants.*
+At the table type's limit, adding fails with _Too many assistants._
 
 ### Seating requests
 
@@ -189,7 +189,7 @@ The dealer's **Seating Requests** card lists their requests to sit next to other
 
    <Result>A **Seating preference request approved!** message appears, and the status changes to **Approved**.</Result>
 
-2. *(Optional)* To remove a request, click **Decline** on one the dealer received, or **Cancel** on one they sent.
+2. _(Optional)_ To remove a request, click **Decline** on one the dealer received, or **Cancel** on one they sent.
 
    <Result>A **Seating preference request declined** (or **Seating preference request canceled**) message appears, and the request is gone.</Result>
 
@@ -199,7 +199,7 @@ The dealer's **Seating Requests** card lists their requests to sit next to other
 
    <Result>In the profile's **Information** card, the **Dealer** row shows their business name and each area's status, or **No application.**</Result>
 
-2. *(If they have no dealer profile)* Click the plus button (**Add**) on the **Dealer** row.
+2. _(If they have no dealer profile)_ Click the plus button (**Add**) on the **Dealer** row.
 
    <Result>A **Create Dealer Application** dialog opens with the dealer's business fields and your form's questions.</Result>
 
@@ -209,11 +209,12 @@ The dealer's **Seating Requests** card lists their requests to sit next to other
 
 4. Back on the profile, click the **Dealer** tab.
 
-   <Result>The tab shows the dealer form as the dealer sees it, with their answers, or *You are currently banned from dealing at the convention.* for someone banned.</Result>
+   <Result>The tab shows the dealer form as the dealer sees it, with their answers, or _You are currently banned from dealing at the convention._ for someone banned.</Result>
 
 :::caution[Watch out]
+
 - Creating a dealer profile, even from Housekeeping, needs **Enable Dealers Module** on in [Dealer settings](./settings.md). Sub-accounts can't be dealers.
 - Read answers on the **Dealer** tab, but change them in **Dealer Information** (section 7). **Continue** on the tab saves the form, then opens your own **Dealing** page, not the dealer's.
-:::
+  :::
 
 The pencil button on the profile's **Dealer** row opens the dealer's page in **Dealers › Applications**.

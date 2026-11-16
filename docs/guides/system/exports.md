@@ -20,15 +20,15 @@ Standard exports need **system:export**. Dynamic Export needs **system:export:dy
 
 <TableFigure title="Where to export">
 
-| Where | What it exports |
-| --- | --- |
-| **Housekeeping › System › Export** | The standard exports: users, registrations, volunteers, dealers, order items and orders. |
-| **Housekeeping › Registration › Settings**, **Export Data** card | The registration export. |
-| **Housekeeping › Volunteers › Volunteer Settings**, **General** tab, **Export Data** card | The volunteer export. |
-| **Housekeeping › Dealers › Dealer Settings**, **General** tab, **Export Data** card | The dealer export. |
-| **Housekeeping › System › Dynamic Export** | Your choice of user fields. |
-| **Housekeeping › Registration › Dynamic Export** | Your choice of registration fields. |
-| **Housekeeping › Dealers › Dynamic Export** | Your choice of dealer application fields. |
+| Where                                                                                     | What it exports                                                                          |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Housekeeping › System › Export**                                                        | The standard exports: users, registrations, volunteers, dealers, order items and orders. |
+| **Housekeeping › Registration › Settings**, **Export Data** card                          | The registration export.                                                                 |
+| **Housekeeping › Volunteers › Volunteer Settings**, **General** tab, **Export Data** card | The volunteer export.                                                                    |
+| **Housekeeping › Dealers › Dealer Settings**, **General** tab, **Export Data** card       | The dealer export.                                                                       |
+| **Housekeeping › System › Dynamic Export**                                                | Your choice of user fields.                                                              |
+| **Housekeeping › Registration › Dynamic Export**                                          | Your choice of registration fields.                                                      |
+| **Housekeeping › Dealers › Dynamic Export**                                               | Your choice of dealer application fields.                                                |
 
 </TableFigure>
 
@@ -44,28 +44,28 @@ Exports cover the convention you're signed in to, except the user export, which 
 
    <Result>The export downloads, named after it, such as `registration.csv`.</Result>
 
-3. *(Optional)* On the **Export Data** card of **Housekeeping › Registration › Settings**, click **CSV** or **JSON**.
+3. _(Optional)_ On the **Export Data** card of **Housekeeping › Registration › Settings**, click **CSV** or **JSON**.
 
    <Result>The same registration export downloads.</Result>
 
-4. *(Optional)* On the **Export Data** card of **Housekeeping › Volunteers › Volunteer Settings** (**General** tab), click **CSV** or **JSON**.
+4. _(Optional)_ On the **Export Data** card of **Housekeeping › Volunteers › Volunteer Settings** (**General** tab), click **CSV** or **JSON**.
 
    <Result>The volunteer export downloads.</Result>
 
-5. *(Optional)* On the **Export Data** card of **Housekeeping › Dealers › Dealer Settings** (**General** tab), click **CSV** or **JSON**.
+5. _(Optional)_ On the **Export Data** card of **Housekeeping › Dealers › Dealer Settings** (**General** tab), click **CSV** or **JSON**.
 
    <Result>The dealer export downloads.</Result>
 
 <TableFigure title="The standard exports">
 
-| Card | What it contains |
-| --- | --- |
-| User data | All user data, including address, date of birth, notes and ban status. <small>Shown only while you have approved PII access (section 3).</small> |
-| Registration | Registrations, with user names, address, payment status and badge name. |
-| Volunteer | Volunteers, with names, departments and contact methods. |
-| Dealer | Dealers, with names, approval status, and product and table options. |
-| Order items | Each order item, when its order was finished, and whether it was refunded. |
-| Orders | Each order, with its user, products, refunds and payments. <small>Best read as JSON.</small> |
+| Card         | What it contains                                                                                                                                 |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| User data    | All user data, including address, date of birth, notes and ban status. <small>Shown only while you have approved PII access (section 3).</small> |
+| Registration | Registrations, with user names, address, payment status and badge name.                                                                          |
+| Volunteer    | Volunteers, with names, departments and contact methods.                                                                                         |
+| Dealer       | Dealers, with names, approval status, and product and table options.                                                                             |
+| Order items  | Each order item, when its order was finished, and whether it was refunded.                                                                       |
+| Orders       | Each order, with its user, products, refunds and payments. <small>Best read as JSON.</small>                                                     |
 
 </TableFigure>
 
@@ -81,7 +81,7 @@ Exports leave out personal information (PII) until your PII access is approved, 
 
 1. On the **Export Data** page, click **Request PII access**.
 
-   <Result>The button changes to **Pending PII access approval**. A note below it says the request will be approved automatically after a 24-hour safety delay, and ends with *Auto-approval date/time:* and that date and time. Everyone with the **admin** role globally gets a *Data Export Request* email.</Result>
+   <Result>The button changes to **Pending PII access approval**. A note below it says the request will be approved automatically after a 24-hour safety delay, and ends with _Auto-approval date/time:_ and that date and time. Everyone with the **admin** role globally gets a _Data Export Request_ email.</Result>
 
 2. Ask another admin to approve the request (section 4), or wait 24 hours, then reload the **Export Data** page.
 
@@ -95,7 +95,7 @@ ConCat can set your organization to always include personal information. The **R
 
 While a request waits, a **Pending Requests** card on the **Export Data** page lists it. You can't approve your own request.
 
-1. *(Another admin)* On a request in **Pending Requests**, click **Approve**.
+1. _(Another admin)_ On a request in **Pending Requests**, click **Approve**.
 
    <Result>An **Approve Request** dialog asks you to confirm, naming the requester.</Result>
 
@@ -103,17 +103,17 @@ While a request waits, a **Pending Requests** card on the **Export Data** page l
 
    <Result>A **Request approved!** message appears and the request leaves **Pending Requests**.</Result>
 
-3. *(Instead of approving)* Click **Reject**, then **Reject** in the **Reject Request** dialog.
+3. _(Instead of approving)_ Click **Reject**, then **Reject** in the **Reject Request** dialog.
 
    <Result>A **Request rejected!** message appears and the request leaves the list.</Result>
 
-4. *(The requester)* To withdraw your own request, click **Delete** on it, then **Delete** in the **Delete Request** dialog.
+4. _(The requester)_ To withdraw your own request, click **Delete** on it, then **Delete** in the **Delete Request** dialog.
 
    <Result>A **Request deleted!** message appears and the request leaves the list.</Result>
 
-5. *(Any admin, from the email)* In the *Data Export Request* email, click the link below *Click below to BLOCK the request*, and sign in if asked.
+5. _(Any admin, from the email)_ In the _Data Export Request_ email, click the link below _Click below to BLOCK the request_, and sign in if asked.
 
-   <Result>A page says *The data export request* followed by the request's ID and *has been canceled.*</Result>
+   <Result>A page says _The data export request_ followed by the request's ID and _has been canceled._</Result>
 
 ## Dynamic Export
 
@@ -131,11 +131,11 @@ Pick fields, rename columns, filter rows and change how values are shown. Column
 
    <Result>Each ticked field shows a pencil button; fields that can be configured also show a tune button.</Result>
 
-3. *(Optional)* To rename a column, click the field's pencil button (**Rename column**), type the new name and press Enter.
+3. _(Optional)_ To rename a column, click the field's pencil button (**Rename column**), type the new name and press Enter.
 
    <Result>The field shows the new name, which becomes the column heading. Escape cancels.</Result>
 
-4. *(Optional)* To filter or change a column, click the field's tune button (**Adjust modifiers**), choose a modifier or set a filter in **Field Settings**, and click **Save**. For example, **To Age (convention start)** on `bornAt` exports ages instead of dates of birth.
+4. _(Optional)_ To filter or change a column, click the field's tune button (**Adjust modifiers**), choose a modifier or set a filter in **Field Settings**, and click **Save**. For example, **To Age (convention start)** on `bornAt` exports ages instead of dates of birth.
 
    <Result>The dialog closes and the tune button is highlighted.</Result>
 
@@ -147,21 +147,21 @@ Pick fields, rename columns, filter rows and change how values are shown. Column
 
    <Result>The file downloads, such as `export.csv`.</Result>
 
-7. *(Optional)* To start over, click **Reset Form**, then **Reset** in the dialog.
+7. _(Optional)_ To start over, click **Reset Form**, then **Reset** in the dialog.
 
    <Result>Everything is cleared except `id`.</Result>
 
-8. *(Optional)* In **Housekeeping › Registration › Dynamic Export** or **Housekeeping › Dealers › Dynamic Export**, repeat steps 2 to 6.
+8. _(Optional)_ In **Housekeeping › Registration › Dynamic Export** or **Housekeeping › Dealers › Dynamic Export**, repeat steps 2 to 6.
 
    <Result>The card is titled **Registration Data — Fields** (groups **Registration** and **Badge**) or **Dealer Data — Fields** (groups **Application**, **Business**, **Dealer** and **Option Values**).</Result>
 
 <TableFigure title="Some useful modifiers and filters">
 
-| Export | Field settings |
-| --- | --- |
-| User data | **Convert from ISO to Name** (country and state), **To Age (now)**, **To Age (convention start)**, **Minimum Age** and **Maximum Age**, **Restrict to Account Owners**, **Restrict to Roles** with **Operator:** **Any**, **All** or **None**, **Role Name (default)** or **Role ID**, **Product Name (default)** or **Product ID**. |
-| Registration data | **Full Legal Name**, **Preferred Name**, **Age (today)**, **Age (Convention Start)**, **Filter by User ID**, **Filter by Attendance Tier**, **Filter by Payment Status**. |
-| Dealer data | **Filter by Application Status**, **Filter by Table Payment Status**, **Filter by Dealer Area**, **Filter by Registration Status**, **Area ID**, **Product ID**. |
+| Export            | Field settings                                                                                                                                                                                                                                                                                                                       |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| User data         | **Convert from ISO to Name** (country and state), **To Age (now)**, **To Age (convention start)**, **Minimum Age** and **Maximum Age**, **Restrict to Account Owners**, **Restrict to Roles** with **Operator:** **Any**, **All** or **None**, **Role Name (default)** or **Role ID**, **Product Name (default)** or **Product ID**. |
+| Registration data | **Full Legal Name**, **Preferred Name**, **Age (today)**, **Age (Convention Start)**, **Filter by User ID**, **Filter by Attendance Tier**, **Filter by Payment Status**.                                                                                                                                                            |
+| Dealer data       | **Filter by Application Status**, **Filter by Table Payment Status**, **Filter by Dealer Area**, **Filter by Registration Status**, **Area ID**, **Product ID**.                                                                                                                                                                     |
 
 </TableFigure>
 

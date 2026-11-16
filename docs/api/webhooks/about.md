@@ -21,17 +21,17 @@ An event customer creates webhooks in **Housekeeping › System › Developers**
 
 Each request is a `POST` with a JSON body and these headers:
 
-| Header | Value |
-| --- | --- |
+| Header          | Value                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------ |
 | `authorization` | `Bearer` followed by a JWT signed by ConCat. See [Validating Payloads](/docs/api/webhooks/validating). |
-| `content-type` | `application/json; charset=utf-8` |
-| `user-agent` | `ConCat/AxiosHTTPClient` |
+| `content-type`  | `application/json; charset=utf-8`                                                                      |
+| `user-agent`    | `ConCat/AxiosHTTPClient`                                                                               |
 
 The body has two properties:
 
 ```json
 {
-  "data": { },
+  "data": {},
   "event": "order-complete"
 }
 ```

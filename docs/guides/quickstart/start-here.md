@@ -24,7 +24,7 @@ A private ConCat instance with its own web address and your administrator accoun
 
 2. Tick the reCAPTCHA box and click **Create my trial instance**.
 
-   <Result>The form is replaced by **Check your inbox**, and an email with the subject *Confirm your email to start your ConCat trial* arrives.</Result>
+   <Result>The form is replaced by **Check your inbox**, and an email with the subject _Confirm your email to start your ConCat trial_ arrives.</Result>
 
 3. In that email, click **Confirm email & set password**.
 
@@ -36,15 +36,16 @@ A private ConCat instance with its own web address and your administrator accoun
 
 5. Wait for the steps to finish, usually about a minute.
 
-   <Result>The page says **Your instance is ready**, then opens your Housekeeping **Dashboard**. An email with the subject *Your ConCat trial instance is ready* arrives, linking to your instance, its admin dashboard and its sign-in page.</Result>
+   <Result>The page says **Your instance is ready**, then opens your Housekeeping **Dashboard**. An email with the subject _Your ConCat trial instance is ready_ arrives, linking to your instance, its admin dashboard and its sign-in page.</Result>
 
 :::note[If something goes wrong]
-- *This link is no longer valid*: the confirmation link was already used or is over 7 days old. Start again from step 1.
-- *We hit a snag*: your details and password are saved and ConCat has been told; you'll get an email when the instance is ready. Quote the **Reference** shown if you contact support.
-- *You already have a ConCat trial*: you are only allowed one trial instance per email per organization. Please contact support to request an additional.
-:::
 
-Until the trial ends, every page shows a banner: **Trial instance.** *This trial ends* 30 days after you signed up.
+- _This link is no longer valid_: the confirmation link was already used or is over 7 days old. Start again from step 1.
+- _We hit a snag_: your details and password are saved and ConCat has been told; you'll get an email when the instance is ready. Quote the **Reference** shown if you contact support.
+- _You already have a ConCat trial_: you are only allowed one trial instance per email per organization. Please contact support to request an additional.
+  :::
+
+Until the trial ends, every page shows a banner: **Trial instance.** _This trial ends_ 30 days after you signed up.
 
 ## Find your way around Housekeeping
 
@@ -88,14 +89,14 @@ Housekeeping is split into modules, each with its own sidebar. A menu at the top
 
 <TableFigure title="The Housekeeping modules and their menus">
 
-| Module | Sidebar items |
-| --- | --- |
-| Attendees | **Dashboard**, **Cashier UI**, **Devices** (hidden when QuikTicket is off)<p>Under *Module Management*, when hotels are on: **Hotel Management**; under *Attendee Management*: **User Search**, **User Notes**, **Fee Management**, **Refund Requests**, **Mass Email**, **Event Statistics**</p> |
-| Registration | **Dashboard**, **Registration Statistics**, **Mass Email**, **Settings**, **Dynamic Export**; under *Badges and Tiers*: **Badge Products**, **Options**, **Badge Art**, **Badge Designer**, **Registration Flags** |
-| Store Management | **Store Products**, **Options**, **Surcharges**, **Vouchers**, **Orders**, **Gatekeeping** |
-| Volunteers | **Dashboard**, **Applications**, **My Department(s)** (department leads only) <p>**Mass Email**, **Volunteer Stats**; under *Settings*: **Options**, **Volunteer Settings**</p> |
-| Dealers | **Dashboard**, **Applications**, **Areas**, **Products**, **Mass Email**, **Options**, **Dynamic Export**; under *Settings*: **Dealer Settings** |
-| System | **Dynamic Export**, **Export**, **User Creation**, **Audit Logs**, **Developers**, **Settings**, **Roles** |
+| Module           | Sidebar items                                                                                                                                                                                                                                                                                     |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Attendees        | **Dashboard**, **Cashier UI**, **Devices** (hidden when QuikTicket is off)<p>Under _Module Management_, when hotels are on: **Hotel Management**; under _Attendee Management_: **User Search**, **User Notes**, **Fee Management**, **Refund Requests**, **Mass Email**, **Event Statistics**</p> |
+| Registration     | **Dashboard**, **Registration Statistics**, **Mass Email**, **Settings**, **Dynamic Export**; under _Badges and Tiers_: **Badge Products**, **Options**, **Badge Art**, **Badge Designer**, **Registration Flags**                                                                                |
+| Store Management | **Store Products**, **Options**, **Surcharges**, **Vouchers**, **Orders**, **Gatekeeping**                                                                                                                                                                                                        |
+| Volunteers       | **Dashboard**, **Applications**, **My Department(s)** (department leads only) <p>**Mass Email**, **Volunteer Stats**; under _Settings_: **Options**, **Volunteer Settings**</p>                                                                                                                   |
+| Dealers          | **Dashboard**, **Applications**, **Areas**, **Products**, **Mass Email**, **Options**, **Dynamic Export**; under _Settings_: **Dealer Settings**                                                                                                                                                  |
+| System           | **Dynamic Export**, **Export**, **User Creation**, **Audit Logs**, **Developers**, **Settings**, **Roles**                                                                                                                                                                                        |
 
 </TableFigure>
 
@@ -106,8 +107,9 @@ Menu paths start with **Housekeeping**, then the module, then the sidebar item: 
 :::
 
 :::tip[In more detail]
+
 - [The attendee homepage](../attendees/homepage.md)
 - [Dashboards and statistics](../registration/statistics.md): the Housekeeping **Dashboard** and its cards.
-:::
+  :::
 
 Next: [Convention setup](./convention-setup.md), starting with your event's name and dates.

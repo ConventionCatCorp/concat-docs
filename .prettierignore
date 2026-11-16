@@ -1,7 +1,5 @@
-# Prettier doesn't fully support MDX 3; leave content files to their authors.
-docs/
-*.md
-*.mdx
+# JSON under docs/ is generated or sidebar config; left unformatted for now.
+docs/**/*.json
 
 static/
 package-lock.json

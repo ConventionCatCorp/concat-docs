@@ -6,7 +6,7 @@ textbook: true
 
 # Convention setup
 
-Set your event's identity, venue and dates, policies, payments and email. 
+Set your event's identity, venue and dates, policies, payments and email.
 
 :::info[In this guide]
 Event info, venue and dates, terms and policies, payment and email.
@@ -32,14 +32,14 @@ This page needs the permission to update system settings. Your trial's administr
 
 <TableFigure title="Event info fields">
 
-| Field | What it holds |
-| --- | --- |
-| **Convention Long Type** | Your event's full name, at least 6 characters. <small>Shown in the sidebar on the registration link.</small> |
-| **Convention Short Name** | A short name, at most 6 characters. |
-| **Notification Prefix** | Starts the subject of every email your event sends. |
-| **Convention Legal Name** | The legal name of the organization running the event. |
-| **Convention Legal Type** | Its legal entity type, such as *501(c)7 Not-For-Profit, Ltd., LLP, PLC*. <small>Add a registered charity number if you have one.</small> |
-| **Marketing URL** | Your event's website, shown at the bottom of emails. |
+| Field                     | What it holds                                                                                                                            |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Convention Long Type**  | Your event's full name, at least 6 characters. <small>Shown in the sidebar on the registration link.</small>                             |
+| **Convention Short Name** | A short name, at most 6 characters.                                                                                                      |
+| **Notification Prefix**   | Starts the subject of every email your event sends.                                                                                      |
+| **Convention Legal Name** | The legal name of the organization running the event.                                                                                    |
+| **Convention Legal Type** | Its legal entity type, such as _501(c)7 Not-For-Profit, Ltd., LLP, PLC_. <small>Add a registered charity number if you have one.</small> |
+| **Marketing URL**         | Your event's website, shown at the bottom of emails.                                                                                     |
 
 </TableFigure>
 
@@ -82,7 +82,7 @@ Attendees agree to your policies when they create an account and when they regis
 
 1. Click the **Terms** tab.
 
-   <Result>**Privacy terms** and **Convention Policy / Terms & Conditions** each have an **Organization-wide Policy** box holding the placeholder *To update this value: Go to Housekeeping > Settings > Terms.*</Result>
+   <Result>**Privacy terms** and **Convention Policy / Terms & Conditions** each have an **Organization-wide Policy** box holding the placeholder _To update this value: Go to Housekeeping > Settings > Terms._</Result>
 
 2. Under **Privacy terms**, replace the placeholder with your privacy policy and click **Save** below it.
 
@@ -102,16 +102,16 @@ Most policies start with placeholder or sample text, which attendees see until y
 
 <TableFigure title="The other policies">
 
-| Policy | Where attendees see it |
-| --- | --- |
-| **Registration Terms** | On the registration page, while registering for a badge. |
-| **Login Page Announcement** | On the login page, below your convention's name and logo. |
-| **Child Registration Error** | When they're below the child age threshold, or under 13, whichever is lower. |
-| **Minor Registration Warning** | When they're below the minor age threshold. |
-| **Child Badge Terms** | When a parent registers child badges under their account. |
-| **Parent agreement for child registration** | When a parent confirms they're giving their child's information voluntarily. |
-| **Hotel Reservation Policy**, **Hotel Reservation Additional Info**, **Hotel Closed Message** | On the hotel booking pages, if you use them. |
-| **Opt Out from Stripe Identity** | When they opt out of identity verification, if you use it. |
+| Policy                                                                                        | Where attendees see it                                                       |
+| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Registration Terms**                                                                        | On the registration page, while registering for a badge.                     |
+| **Login Page Announcement**                                                                   | On the login page, below your convention's name and logo.                    |
+| **Child Registration Error**                                                                  | When they're below the child age threshold, or under 13, whichever is lower. |
+| **Minor Registration Warning**                                                                | When they're below the minor age threshold.                                  |
+| **Child Badge Terms**                                                                         | When a parent registers child badges under their account.                    |
+| **Parent agreement for child registration**                                                   | When a parent confirms they're giving their child's information voluntarily. |
+| **Hotel Reservation Policy**, **Hotel Reservation Additional Info**, **Hotel Closed Message** | On the hotel booking pages, if you use them.                                 |
+| **Opt Out from Stripe Identity**                                                              | When they opt out of identity verification, if you use it.                   |
 
 </TableFigure>
 
@@ -123,11 +123,11 @@ The child and minor age thresholds are set in [Registration setup](./registratio
 ConCat connects your organization's own Stripe account through Stripe Connect. One connection covers every convention in your organization.
 </Sidenote>
 
-ConCat takes card payments through Stripe. 
+ConCat takes card payments through Stripe.
 
 1. Click the **Payment Gateways** tab.
 
-   <Result>The **Stripe Connect** section says *You do not have Stripe Connect configured at the moment.* and shows **Connect to Stripe**.</Result>
+   <Result>The **Stripe Connect** section says _You do not have Stripe Connect configured at the moment._ and shows **Connect to Stripe**.</Result>
 
 2. Click **Connect to Stripe**.
 
@@ -139,16 +139,17 @@ ConCat takes card payments through Stripe.
 
 4. If the country or currency is wrong, click **Cancel** and contact ConCat Support. Otherwise, click **Continue to Stripe** and complete Stripe's sign-up for your organization.
 
-   <Result>Stripe returns you to **Payment Gateways**, which shows **Status: Connected** and *This account is configured for all conventions.*</Result>
+   <Result>Stripe returns you to **Payment Gateways**, which shows **Status: Connected** and _This account is configured for all conventions._</Result>
 
 5. If the status shows **More information required**, click **Open Stripe Connect**, give Stripe what it asks for, then come back and click **Refresh**.
 
    <Result>The status changes to **Status: Connected**.</Result>
 
 :::caution[Watch out]
-- **Country and currency:** ConCat sets them for your organization, and a trial starts in US dollars. Ask ConCat Support to change them *before* you connect Stripe.
+
+- **Country and currency:** ConCat sets them for your organization, and a trial starts in US dollars. Ask ConCat Support to change them _before_ you connect Stripe.
 - **Live payments:** Housekeeping has no test-mode switch, so once Stripe is connected, payments are real. To test without charging anyone, ask ConCat Support.
-:::
+  :::
 
 Until Stripe is connected, attendees paying by card see **Credit card payment is not configured** instead of the card form. Staff can still record cash and card payments by hand in the Cashier UI.
 
@@ -162,9 +163,9 @@ Three things shape your email: the domain it's sent from, the mailbox names it's
 
 1. Click the **Email Settings** tab.
 
-   <Result>Three sections are shown: **Email Sending Domain** (*The domain is currently set to the default,* concat.app), **Email Senders for Mass Email** and **Email Templates**.</Result>
+   <Result>Three sections are shown: **Email Sending Domain** (_The domain is currently set to the default,_ concat.app), **Email Senders for Mass Email** and **Email Templates**.</Result>
 
-2. *(Optional: your own domain)* Click **Configure a Domain**, enter your **Domain**, choose the **Scope** (**Organization** for every convention, **Convention** for this one only), and click **Submit**.
+2. _(Optional: your own domain)_ Click **Configure a Domain**, enter your **Domain**, choose the **Scope** (**Organization** for every convention, **Convention** for this one only), and click **Submit**.
 
    <Result>A table of CNAME records appears, with **Verify**, **Download CSV** and **View Documentation** buttons.</Result>
 
@@ -178,7 +179,7 @@ Three things shape your email: the domain it's sent from, the mailbox names it's
 
 5. Back on **Email Settings**, under **Email Senders for Mass Email**, type a mailbox name in **Enter a new sender...** and click the green tick button.
 
-   <Result>An **Added "*name*" to the senders list.** message appears, and the name is listed.</Result>
+   <Result>An **Added "_name_" to the senders list.** message appears, and the name is listed.</Result>
 
 6. Under **Email Templates**, look through the emails ConCat sends.
 
@@ -189,11 +190,12 @@ Mass-email senders are offered only when staff send a mass email. The **Contact*
 :::
 
 :::tip[In more detail]
+
 - [Convention settings](../system/settings.md): every field on the **Convention** tab, plus the **Links** and **Platform Info** tabs.
 - [Conventions and next year](../system/conventions.md)
 - [Terms and policies](../system/terms.md)
 - [Payment gateways](../system/payments.md)
 - [Sending domain, senders and contact addresses](../templates/email-settings.md) and [Email Template Overrides](../templates/templates.md)
-:::
+  :::
 
 Next: [Registration setup](./registration-setup.md), creating the badges attendees buy.

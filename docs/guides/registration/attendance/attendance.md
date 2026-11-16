@@ -6,7 +6,7 @@ textbook: true
 
 # Badge Products
 
-Badge products are the registration tiers attendees choose from, such as *General Admission* or *Sponsor*. Create and edit tiers, and let attendees upgrade between them.
+Badge products are the registration tiers attendees choose from, such as _General Admission_ or _Sponsor_. Create and edit tiers, and let attendees upgrade between them.
 
 :::info[In this guide]
 Badge products, the list, creating a tier, a tier's page, upgrade paths, and addons.
@@ -36,7 +36,7 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
    <Result>Each tier shows its visibility (**Public / Visible**, **Unlisted** or **Hidden**) and, when they apply, badges such as **In Stock: 40/50 Available**, **Not Yet Available**, **Expired** or **Age Restricted: >= 18**.</Result>
 
-3. *(Optional)* To see deleted tiers, click **Show Deleted Products** below the table.
+3. _(Optional)_ To see deleted tiers, click **Show Deleted Products** below the table.
 
    <Result>Deleted tiers appear, marked **Deleted / Archived**.</Result>
 
@@ -54,13 +54,13 @@ Unlike **Store Products**, this page has no categories. **Category Surcharges** 
 
 <TableFigure title="Sections of the New Product form for a badge tier">
 
-| Section | Fields |
-| --- | --- |
-| **Tier** | **Name**, **Display Name** (Optional: the name attendees see, if different.) <p>**Description**, **Product visibility**</p> |
-| **Pricing** | **Base Price** (At creation only; later, use the **Prices** card)<p>**Pass Platform Fee to Customer**</p> |
-| **Stock Control** | **Expires On**, **Limit Available Stock** |
-| **Cashier** | **Product Label Print Design** <small>Prints this tier's badges with the chosen design instead of the default. See [Badge Designer](../badge_designer.md).</small> |
-| **Restrictions** | **Available From**, **Available Until**, **Minimum Purchase Age**, **Maximum Purchase Age**, **Product Role Whitelist**, **Product Role Blacklist**, **Restrict product to grants** |
+| Section           | Fields                                                                                                                                                                              |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Tier**          | **Name**, **Display Name** (Optional: the name attendees see, if different.) <p>**Description**, **Product visibility**</p>                                                         |
+| **Pricing**       | **Base Price** (At creation only; later, use the **Prices** card)<p>**Pass Platform Fee to Customer**</p>                                                                           |
+| **Stock Control** | **Expires On**, **Limit Available Stock**                                                                                                                                           |
+| **Cashier**       | **Product Label Print Design** <small>Prints this tier's badges with the chosen design instead of the default. See [Badge Designer](../badge_designer.md).</small>                  |
+| **Restrictions**  | **Available From**, **Available Until**, **Minimum Purchase Age**, **Maximum Purchase Age**, **Product Role Whitelist**, **Product Role Blacklist**, **Restrict product to grants** |
 
 </TableFigure>
 
@@ -84,7 +84,7 @@ No **Maximum purchases per user** or **Deliverable**: each attendee has one regi
 
    <Result>**Product Information** shows the new values.</Result>
 
-4. *(Optional)* Click the **Orders** tab.
+4. _(Optional)_ Click the **Orders** tab.
 
    <Result>Orders containing this tier are listed, with filters such as **Paid**, **Unpaid**, **With grant** and **No grant**.</Result>
 
@@ -103,13 +103,13 @@ The **Audit Logs** tab needs the `audit:read` permission. The **Upgrade Paths** 
 The new tier goes into the cart with an **Upgrade Discount** equal to what was paid for the old one, so the attendee pays the difference.
 </Sidenote>
 
-Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let *General Admission* attendees upgrade to *Sponsor*, add *Sponsor* on the *General Admission* page. A tier with none shows *There are currently no upgrade paths.*
+Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let _General Admission_ attendees upgrade to _Sponsor_, add _Sponsor_ on the _General Admission_ page. A tier with none shows _There are currently no upgrade paths._
 
-1. Open the tier attendees upgrade *from* (section 4, step 1). In **Upgrade Paths**, click the green **Add** button.
+1. Open the tier attendees upgrade _from_ (section 4, step 1). In **Upgrade Paths**, click the green **Add** button.
 
    <Result>A **Product Search** field and a **Create Upgrades** button appear.</Result>
 
-2. In **Product Search**, select the tier or tiers attendees can upgrade *to*.
+2. In **Product Search**, select the tier or tiers attendees can upgrade _to_.
 
    <Result>Each selected tier appears under the field. Only badge products are offered.</Result>
 
@@ -117,7 +117,7 @@ Once a registration is paid, the **Registration Type** step offers only the paid
 
    <Result>Each tier is listed in **Upgrade Paths** with an **Upgrade** badge and a delete button.</Result>
 
-4. *(Optional)* To remove an upgrade path, click its delete button.
+4. _(Optional)_ To remove an upgrade path, click its delete button.
 
    <Result>The tier is no longer listed.</Result>
 

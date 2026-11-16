@@ -24,13 +24,13 @@ When an attendee registers for a gated tier, or clicks **Enter raffle** on a gat
 
 <TableFigure title="Ticket statuses">
 
-| Status | Meaning |
-| --- | --- |
-| **Entered / Waiting** | Waiting for a draw. |
-| **Winner** | Chosen in a draw: may buy the product. |
-| **Redeemed** | Won, and bought the product with the ticket. |
-| **Rescinded** | Revoked: can't buy the product or enter the silo again. |
-| **Deleted** | Removed from the silo, but may enter again, for example in the next round. |
+| Status                | Meaning                                                                    |
+| --------------------- | -------------------------------------------------------------------------- |
+| **Entered / Waiting** | Waiting for a draw.                                                        |
+| **Winner**            | Chosen in a draw: may buy the product.                                     |
+| **Redeemed**          | Won, and bought the product with the ticket.                               |
+| **Rescinded**         | Revoked: can't buy the product or enter the silo again.                    |
+| **Deleted**           | Removed from the silo, but may enter again, for example in the next round. |
 
 </TableFigure>
 
@@ -48,11 +48,11 @@ A silo's status shows next to **Silo Information**: **Open to Entries**, **Close
 
    <Result>The **Creating Silo** page opens with the cards **Silo Information**, **Associated Products** and **Role override**. **Allow new entries to the silo?** is ticked.</Result>
 
-2. Enter a **Name**, and in **Associated Products** search for and select the products to gate. *(Optional)* In **Role override**, choose roles whose members bypass the silo, and tick **Overflow stock silo**. Then click **Create Silo**.
+2. Enter a **Name**, and in **Associated Products** search for and select the products to gate. _(Optional)_ In **Role override**, choose roles whose members bypass the silo, and tick **Overflow stock silo**. Then click **Create Silo**.
 
    <Result>A **Silo successfully created!!** message appears, and the page becomes **Editing Silo:** and the silo's name, with the tabs **Entrants**, **Wording** and **Run**.</Result>
 
-If a product is already in another silo, *Product is already part of another silo.* appears and the silo isn't saved.
+If a product is already in another silo, _Product is already part of another silo._ appears and the silo isn't saved.
 
 ## Change or delete a silo
 
@@ -70,7 +70,7 @@ If a product is already in another silo, *Product is already part of another sil
 
 4. To delete the silo, click **Delete Silo**, then **Delete Silo** in the dialog.
 
-   <Result>An **Are you sure?** dialog warns *All ticket data will be lost.* After you confirm, a **Successfully deleted silo.** message appears and **Gatekeeping** opens.</Result>
+   <Result>An **Are you sure?** dialog warns _All ticket data will be lost._ After you confirm, a **Successfully deleted silo.** message appears and **Gatekeeping** opens.</Result>
 
 ## Entrants
 
@@ -78,22 +78,22 @@ If a product is already in another silo, *Product is already part of another sil
 
    <Result>Tickets are listed 15 per page, each with a status badge, below a **Search...** box and a status list set to **All status**.</Result>
 
-2. *(Optional)* Choose a status in the status list, or type a name in **Search...**.
+2. _(Optional)_ Choose a status in the status list, or type a name in **Search...**.
 
    <Result>Only matching tickets are listed. The status list uses the internal names `waiting`, `winner`, `redeemed`, `rescinded` and `deleted`.</Result>
 
 3. To change one ticket, open its menu and choose an action from Table 5.1.
 
-   <Result>A message confirms the change, such as *Marked Ticket #* and the number *as a winner.*, and the ticket's badge changes.</Result>
+   <Result>A message confirms the change, such as _Marked Ticket #_ and the number _as a winner._, and the ticket's badge changes.</Result>
 
 <TableFigure title="Actions on one ticket">
 
-| Ticket is | Actions | Message |
-| --- | --- | --- |
-| **Entered / Waiting** | **Revoke / Void ticket**, **Reset ticket to winner** | *Rescinded Ticket #… for* the name, or *Marked Ticket #… as a winner.* |
-| **Winner** | **Reset ticket**, **Revoke / Void ticket** | *Reset Ticket #… to Entered / Waiting.*, or as above |
-| **Redeemed** | **Reset ticket**, **Set ticket to winner** | as above |
-| **Rescinded**, **Deleted** | **Reset ticket** | *Reset Ticket #… to Entered / Waiting.* |
+| Ticket is                  | Actions                                              | Message                                                                |
+| -------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Entered / Waiting**      | **Revoke / Void ticket**, **Reset ticket to winner** | _Rescinded Ticket #… for_ the name, or _Marked Ticket #… as a winner._ |
+| **Winner**                 | **Reset ticket**, **Revoke / Void ticket**           | _Reset Ticket #… to Entered / Waiting._, or as above                   |
+| **Redeemed**               | **Reset ticket**, **Set ticket to winner**           | as above                                                               |
+| **Rescinded**, **Deleted** | **Reset ticket**                                     | _Reset Ticket #… to Entered / Waiting._                                |
 
 </TableFigure>
 
@@ -103,16 +103,16 @@ The **Wording** tab holds eight required texts attendees see about the silo (Tab
 
 <TableFigure title="The silo's wording">
 
-| Field | Shown to the attendee |
-| --- | --- |
-| **Entry confirmation title** | In place of *Product added to cart!* when they enter the silo. <small>Default: *Entered into Raffle Draw!*</small> |
-| **Entry confirmation body** | Below that title. Markdown is allowed. |
-| **Not yet entered message** | Registered but not entered. |
-| **Raffle open message** | Entered, and the silo is open. |
-| **Raffle pending draw message** | Entered, and the silo is closed but not drawn. |
-| **Entry lost message** | After a draw they didn't win. |
-| **Entry winner message** | Once they're a winner. |
-| **Entry rescinded message** | Once their ticket is rescinded. |
+| Field                           | Shown to the attendee                                                                                              |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Entry confirmation title**    | In place of _Product added to cart!_ when they enter the silo. <small>Default: _Entered into Raffle Draw!_</small> |
+| **Entry confirmation body**     | Below that title. Markdown is allowed.                                                                             |
+| **Not yet entered message**     | Registered but not entered.                                                                                        |
+| **Raffle open message**         | Entered, and the silo is open.                                                                                     |
+| **Raffle pending draw message** | Entered, and the silo is closed but not drawn.                                                                     |
+| **Entry lost message**          | After a draw they didn't win.                                                                                      |
+| **Entry winner message**        | Once they're a winner.                                                                                             |
+| **Entry rescinded message**     | Once their ticket is rescinded.                                                                                    |
 
 </TableFigure>
 
@@ -136,22 +136,22 @@ A draw marks the attendees you choose as winners and can also deal with earlier 
 
    <Result>**Run Raffle Draw** becomes available.</Result>
 
-3. Choose what happens to existing winners and non-winners (Table 7.1). *(Optional)* Untick **Close the raffle to new entries** to keep taking entries. Then click **Run Raffle Draw**.
+3. Choose what happens to existing winners and non-winners (Table 7.1). _(Optional)_ Untick **Close the raffle to new entries** to keep taking entries. Then click **Run Raffle Draw**.
 
    <Result>**Raffle Draw Complete!** (or **Test Run Draw Results**) shows **Number of Winners**, **Total Entries**, **Win Percentage** and **Winning User IDs**.</Result>
 
 <TableFigure title="Options for a draw">
 
-| Option | What it does |
-| --- | --- |
-| Existing winners: **Do Nothing** | Earlier winners stay winners and can still buy. |
-| Existing winners: **Revoke existing wins** | Unredeemed winners are rescinded: they can't buy or enter again. |
-| Existing winners: **Reset existing wins** | Unredeemed winners go back to waiting, to be drawn again. |
-| Existing winners: **Delete existing wins** | Unredeemed winning tickets are deleted. |
-| Non-winners: **Do Nothing** | Everyone not chosen keeps their ticket for later draws. |
-| Non-winners: **Revoke tickets** | Everyone not chosen is rescinded and can't enter again. |
-| Non-winners: **Delete tickets** | Everyone not chosen loses their ticket, but may enter again. |
-| **Close the raffle to new entries** | After the draw, the silo is **Recently Drawn** and takes no more entries. |
+| Option                                     | What it does                                                              |
+| ------------------------------------------ | ------------------------------------------------------------------------- |
+| Existing winners: **Do Nothing**           | Earlier winners stay winners and can still buy.                           |
+| Existing winners: **Revoke existing wins** | Unredeemed winners are rescinded: they can't buy or enter again.          |
+| Existing winners: **Reset existing wins**  | Unredeemed winners go back to waiting, to be drawn again.                 |
+| Existing winners: **Delete existing wins** | Unredeemed winning tickets are deleted.                                   |
+| Non-winners: **Do Nothing**                | Everyone not chosen keeps their ticket for later draws.                   |
+| Non-winners: **Revoke tickets**            | Everyone not chosen is rescinded and can't enter again.                   |
+| Non-winners: **Delete tickets**            | Everyone not chosen loses their ticket, but may enter again.              |
+| **Close the raffle to new entries**        | After the draw, the silo is **Recently Drawn** and takes no more entries. |
 
 </TableFigure>
 
@@ -173,9 +173,9 @@ ConCat doesn't notify winners: tell them yourself, for example with a [Mass emai
 
    <Result>The attendee's card shows the **Raffle open message**.</Result>
 
-3. *(Optional, to leave the silo)* Open the menu on the card's arrow and choose **Delete registration**.
+3. _(Optional, to leave the silo)_ Open the menu on the card's arrow and choose **Delete registration**.
 
-   <Result>The registration is deleted, and the ticket becomes **Deleted**. For a rescinded ticket, *This registration cannot be deleted. Please contact the registration team.* appears instead.</Result>
+   <Result>The registration is deleted, and the ticket becomes **Deleted**. For a rescinded ticket, _This registration cannot be deleted. Please contact the registration team._ appears instead.</Result>
 
 4. Mark the attendee as a winner (section 7). Then, as the attendee, open **Attendance**.
 
@@ -191,20 +191,20 @@ While a silo isn't open, its tiers show **Closed Raffle** instead of **Select**,
 
 1. As an attendee, open a gated product in the **Event store**.
 
-   <Result>The page says *This is a raffled product which requires you to enter and win before it can be purchased.*, with an **Enter raffle** button.</Result>
+   <Result>The page says _This is a raffled product which requires you to enter and win before it can be purchased._, with an **Enter raffle** button.</Result>
 
 2. Click **Enter raffle**.
 
-   <Result>The page says *You're in the raffle for this product!*, with a **Leave raffle** button.</Result>
+   <Result>The page says _You're in the raffle for this product!_, with a **Leave raffle** button.</Result>
 
 <TableFigure title="Messages on a gated store product">
 
-| The attendee's ticket and the silo | Message |
-| --- | --- |
-| Winner or redeemed | *You have won in this raffle and are eligible to purchase this product!*, with the usual buy button |
-| Rescinded | *Your ticket has been rescinded and you are ineligible to purchase this product at this time.* |
-| Entered, silo closed | *You're in the raffle for this product!* and *The raffle is now closed to new entries and will be drawn soon.* |
-| Entered, silo drawn | *Unfortunately, you didn't win in this raffle this time.* |
-| Not entered, silo not open | *This raffled product is no longer accepting new entries.* |
+| The attendee's ticket and the silo | Message                                                                                                        |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Winner or redeemed                 | _You have won in this raffle and are eligible to purchase this product!_, with the usual buy button            |
+| Rescinded                          | _Your ticket has been rescinded and you are ineligible to purchase this product at this time._                 |
+| Entered, silo closed               | _You're in the raffle for this product!_ and _The raffle is now closed to new entries and will be drawn soon._ |
+| Entered, silo drawn                | _Unfortunately, you didn't win in this raffle this time._                                                      |
+| Not entered, silo not open         | _This raffled product is no longer accepting new entries._                                                     |
 
 </TableFigure>

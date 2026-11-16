@@ -22,9 +22,9 @@ An addon points to another product, which keeps its own price, stock and options
 
 <TableFigure title="The two kinds of addon">
 
-| Kind | Badge in the Addons card | What happens |
-| --- | --- | --- |
-| Complimentary | **Included / Free** | Added free to the cart whenever the product is. The product's page lists it under **Includes** and asks its options there. |
+| Kind           | Badge in the Addons card          | What happens                                                                                                                           |
+| -------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Complimentary  | **Included / Free**               | Added free to the cart whenever the product is. The product's page lists it under **Includes** and asks its options there.             |
 | Extra purchase | **Not Included / Extra Purchase** | Offered under **Product addons**, at its own price, once the product is in the cart. Only if its **Product visibility** is **Public**. |
 
 </TableFigure>
@@ -42,11 +42,11 @@ Each addon in the card also has a stock badge: **In Stock / Unlimited**, **In St
 
 ConCat refuses these, with the message shown:
 
-- the product itself: *A product can not be its own addon*;
-- a badge product: *Registration products can not be addons*;
-- addons on a product that is itself an addon: *Addon products can not have additional addons*;
-- the same addon twice: *Addon already exists*;
-- on a dealer product, an addon from another category: *Dealer addon must be in the same category as the product*.
+- the product itself: _A product can not be its own addon_;
+- a badge product: _Registration products can not be addons_;
+- addons on a product that is itself an addon: _Addon products can not have additional addons_;
+- the same addon twice: _Addon already exists_;
+- on a dealer product, an addon from another category: _Dealer addon must be in the same category as the product_.
 
 ## Add an addon
 

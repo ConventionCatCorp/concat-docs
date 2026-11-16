@@ -20,7 +20,7 @@ A ticket group is one entry slot, such as *Saturday 2 pm*. It has a number of pl
 
 A ticketed product is a store product with one or more ticket groups.
 
-- **One per person:** there's no **Quantity** field, and once an attendee owns a ticket the page says *You've already purchased one of this product.*
+- **One per person:** there's no **Quantity** field, and once an attendee owns a ticket the page says _You've already purchased one of this product._
 - **No choice of slot:** when an order is paid, the buyer gets a place in the group with the earliest **Valid From** that still has places.
 - **Places:** once every group is full, the product can't be bought and is taken out of unpaid carts. If the product also has limited stock, the groups' places must add up to the stock left.
 - **The ticket:** a QR code tied to the attendee, the product and the group. It's emailed, shown on the attendee's dashboard, and printable.
@@ -33,11 +33,11 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
 1. As an attendee, open the ticketed product in the event store (see [What attendees see in the store](./store.md)).
 
-   <Result>The page says *This is a Ticketed Product.* and has no **Quantity** field.</Result>
+   <Result>The page says _This is a Ticketed Product._ and has no **Quantity** field.</Result>
 
 2. Buy the product and complete checkout.
 
-   <Result>An email arrives whose subject includes *Your Event Ticket for* and the product's name. It shows the ticket's barcode and **Ticket Group**.</Result>
+   <Result>An email arrives whose subject includes _Your Event Ticket for_ and the product's name. It shows the ticket's barcode and **Ticket Group**.</Result>
 
 3. Open **Attendance** in the homepage sidebar.
 
@@ -64,7 +64,7 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 A scanned ticket's barcode is marked **REDEEMED**, with **Scanned At** and the time.
 
 :::note[Staff viewing a ticket page]
-Staff who open another attendee's ticket page see *You are in staff mode. You are viewing the tickets of UID* and the attendee's user ID.
+Staff who open another attendee's ticket page see _You are in staff mode. You are viewing the tickets of UID_ and the attendee's user ID.
 :::
 
 ## Scanning tickets at the door

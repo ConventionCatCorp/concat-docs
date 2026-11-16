@@ -28,12 +28,12 @@ Each discount in the **Discounts** card shows its price and dates, a status badg
 
 <TableFigure title="Discount statuses">
 
-| Badge | Means |
-| --- | --- |
-| **Not yet active** | **Available From** is still to come. |
-| **Active** | The discount applies now. |
-| **Expired** | **Available Until** has passed. |
-| **Deleted** | Deleted (section 4). Stays listed, without edit or delete buttons. |
+| Badge              | Means                                                              |
+| ------------------ | ------------------------------------------------------------------ |
+| **Not yet active** | **Available From** is still to come.                               |
+| **Active**         | The discount applies now.                                          |
+| **Expired**        | **Available Until** has passed.                                    |
+| **Deleted**        | Deleted (section 4). Stays listed, without edit or delete buttons. |
 
 </TableFigure>
 
@@ -43,9 +43,9 @@ Each discount in the **Discounts** card shows its price and dates, a status badg
 
    <Result>A discount form opens, showing the **Current Price**.</Result>
 
-2. Enter the **Discounted Price**, **Available From** and **Available Until**. *(Optional)* Select roles in **Limit Discount to Role(s)** and add a **Name**. Click **Create Discount Price**.
+2. Enter the **Discounted Price**, **Available From** and **Available Until**. _(Optional)_ Select roles in **Limit Discount to Role(s)** and add a **Name**. Click **Create Discount Price**.
 
-   <Result>The discount is listed as *Discounted to* the price *from* the start *until* the end, with its status badge.</Result>
+   <Result>The discount is listed as _Discounted to_ the price _from_ the start _until_ the end, with its status badge.</Result>
 
 :::caution[Watch out]
 **Available From** and **Available Until** both start at the same date: today, or the product's own **Available From** if that's later. Move **Available Until** to the end of your offer, or the discount is **Expired** as soon as you save it.

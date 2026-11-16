@@ -28,8 +28,8 @@ The Quickstart sets up the basics: [Convention setup](./quickstart/convention-se
 ### Settings to check
 
 - **Registration flags**, in **Housekeeping › Registration › Registration Flags**. Check the wording of each flag attendees can tick ([Registration flags](./registration/flags.md)).
-  - Be certain when deleting the accounts of attendees who tick the built-in `nukeme` flag (*Please delete my account after the con is over.*) after the event (section 3).
-- **Swag for sponsor-level badges.** Add it as an addon on those badge products ([Addons](./products/addons.md)). 
+  - Be certain when deleting the accounts of attendees who tick the built-in `nukeme` flag (_Please delete my account after the con is over._) after the event (section 3).
+- **Swag for sponsor-level badges.** Add it as an addon on those badge products ([Addons](./products/addons.md)).
 - **Payments.** Connect Stripe in **Housekeeping › System › Settings › Payment Gateways** ([Convention setup](./quickstart/convention-setup.md), section 4), then check your payout schedule in Stripe (**Open Stripe Connect** on the same tab). Daily automatic payouts are recommended.
 
 ## Before the first day of the event
@@ -37,7 +37,7 @@ The Quickstart sets up the basics: [Convention setup](./quickstart/convention-se
 ### At the registration desk
 
 - **Train your cashiers** on the Cashier UI ([Cashier UI](./registration/cashier/cashier.md)).
-- **A default badge design.** Create one in **Housekeeping › Registration › Badge Designer** and click **Set as default**. Without it, the Cashier UI says *Cannot check-in as no badge design is configured and check-in mode is disabled.* See [Badge Designer](./registration/badge_designer.md).
+- **A default badge design.** Create one in **Housekeeping › Registration › Badge Designer** and click **Set as default**. Without it, the Cashier UI says _Cannot check-in as no badge design is configured and check-in mode is disabled._ See [Badge Designer](./registration/badge_designer.md).
 - **Printers.** Check each badge printer prints from its station, via **Configure Devices** in the Cashier UI ([Badge and receipt printers](./registration/cashier/printers.md)).
 - **Badge labels.** Have labels in the size your badge design and printers use.
 - **ID scanners.** Check the driver's license scanner works at each station ([Scanner](./registration/cashier/scanner.md)).

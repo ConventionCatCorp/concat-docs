@@ -9,7 +9,7 @@ textbook: true
 Registration flags are yes-or-no checkboxes on the registration form, such as joining the newsletter. Create and edit them, see who set one, and clear the data of attendees who asked to be deleted.
 
 :::info[In this guide]
-How flags work, creating a flag, editing and deleting flags, who set a flag, and clearing *nukeme* data.
+How flags work, creating a flag, editing and deleting flags, who set a flag, and clearing _nukeme_ data.
 :::
 
 ## How flags work
@@ -24,14 +24,14 @@ The form's **Registration flags** element ([Registration form editor](./form-edi
 
 <TableFigure title="The flags a new convention starts with">
 
-| Short Name | Description |
-| --- | --- |
-| `fursuits` | *I plan to bring fursuits.* |
-| `mailswag` | *If I don't make it to the con, please mail me the swag.* |
-| `asl` | *I want to request ASL interpreters for panels.* |
-| `newsletter` | *I want to receive the convention e-mail newsletter.* |
-| `picrelease` | *You may use my convention photos for promotional purposes.* |
-| `nukeme` | *Please delete my account after the con is over.* <small>Built in: it can't be deleted, and it's used in section 5.</small> |
+| Short Name   | Description                                                                                                                 |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| `fursuits`   | _I plan to bring fursuits._                                                                                                 |
+| `mailswag`   | _If I don't make it to the con, please mail me the swag._                                                                   |
+| `asl`        | _I want to request ASL interpreters for panels._                                                                            |
+| `newsletter` | _I want to receive the convention e-mail newsletter._                                                                       |
+| `picrelease` | _You may use my convention photos for promotional purposes._                                                                |
+| `nukeme`     | _Please delete my account after the con is over._ <small>Built in: it can't be deleted, and it's used in section 5.</small> |
 
 </TableFigure>
 
@@ -65,7 +65,7 @@ The form's **Registration flags** element ([Registration form editor](./form-edi
 
 3. To delete a flag, click its delete (bin) button, then **Delete** in the dialog.
 
-   <Result>A **Delete entry** dialog asks *Are you sure you want to delete? Data for this option from users will be erased.* After you confirm, an **Item deleted** message appears and the flag is gone.</Result>
+   <Result>A **Delete entry** dialog asks _Are you sure you want to delete? Data for this option from users will be erased._ After you confirm, an **Item deleted** message appears and the flag is gone.</Result>
 
 <Figure
   src="/img/guides/registration/flags-table.webp"
@@ -90,7 +90,7 @@ To stop offering a flag but keep who set it, untick **Make visible to attendees*
 
 1. In a flag's **Actions**, click the **List users** (people) button.
 
-   <Result>A **Users with the flag** dialog shows *Total Results:* and a numbered list of names, each linked to the attendee's profile.</Result>
+   <Result>A **Users with the flag** dialog shows _Total Results:_ and a numbered list of names, each linked to the attendee's profile.</Result>
 
 2. Click **Close**.
 
@@ -108,15 +108,15 @@ Attendees who tick `nukeme` ask for their account to be deleted after the conven
 
    <Result>A **Clear "nukeme" PII?** dialog warns that the PII will be cleared in 24 hours unless canceled, and that this is irreversible.</Result>
 
-2. *(Optional)* Tick **Delete Dealer Data** or **Delete Volunteer Data** to also clear these attendees' dealer or volunteer applications. Tick **Exclude specific users?** and choose attendees to leave out. Then click **Request to Clear PII**.
+2. _(Optional)_ Tick **Delete Dealer Data** or **Delete Volunteer Data** to also clear these attendees' dealer or volunteer applications. Tick **Exclude specific users?** and choose attendees to leave out. Then click **Request to Clear PII**.
 
-   <Result>A **Request successfully created.** message appears. Before the convention's end date, *You cannot clear all PII before the convention has ended.* appears instead; if a request is already waiting, *A pending deletion request already exists.*</Result>
+   <Result>A **Request successfully created.** message appears. Before the convention's end date, _You cannot clear all PII before the convention has ended._ appears instead; if a request is already waiting, _A pending deletion request already exists._</Result>
 
 3. Go to **Housekeeping › System › Settings**.
 
    <Result>The **Convention** tab shows a red notice of the active request, with the date and time the PII will be cleared and a **Cancel Request** button.</Result>
 
-4. *(Optional, to cancel)* Click **Cancel Request**, then **Confirm Cancellation**.
+4. _(Optional, to cancel)_ Click **Cancel Request**, then **Confirm Cancellation**.
 
    <Result>A **Request was successfully canceled.** message appears, and the notice is gone.</Result>
 

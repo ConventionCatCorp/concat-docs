@@ -5,15 +5,15 @@ Evidence base: the master extract only (a clean `git archive` extract of ConCat 
 
 Path abbreviations used for master evidence (all relative to the extract root):
 
-| Abbrev | Path |
-| --- | --- |
-| `v0/` | `src/backend/app/server/routes/public/v0/` |
-| `api/` | `src/backend/app/server/routes/api/` |
-| `svc/` | `src/backend/app/services/` |
-| `perm.ts` | `src/backend/defaults/permissions.ts` |
-| `err.ts` | `src/shared/error.ts` |
-| `server.ts` | `src/backend/app/server/server.ts` |
-| `rv.ts` | `src/backend/app/server/plugins/routeValidation.ts` |
+| Abbrev      | Path                                                |
+| ----------- | --------------------------------------------------- |
+| `v0/`       | `src/backend/app/server/routes/public/v0/`          |
+| `api/`      | `src/backend/app/server/routes/api/`                |
+| `svc/`      | `src/backend/app/services/`                         |
+| `perm.ts`   | `src/backend/defaults/permissions.ts`               |
+| `err.ts`    | `src/shared/error.ts`                               |
+| `server.ts` | `src/backend/app/server/server.ts`                  |
+| `rv.ts`     | `src/backend/app/server/plugins/routeValidation.ts` |
 
 Docs paths are relative to `docs/api/`.
 
@@ -21,20 +21,20 @@ Docs paths are relative to `docs/api/`.
 
 ## 1. Summary
 
-| Page | Class | One-line reason |
-| --- | --- | --- |
-| `intro.md` | Accurate | v0 is master's only versioned API, and the `/api/docs` Swagger UI it points to exists (`server.ts:441-443`). It mentions an "API Release Notes page" that doesn't exist in this repo. |
-| `gettingstarted/gettingstarted.md` | Needs update | Service integrations already write data (`user:create`, `user:roles:update`, `order:manage`), and OAuth apps are self-service in Housekeeping › Developers. |
-| `gettingstarted/oauth.md` | Needs update | The token `scope` is an array, not a string. PKCE, HTTP Basic client auth, origin-only redirect checks, 10-minute codes and `error=access_denied` aren't documented. The page uses lowercase MDX tags, which don't render. |
-| `gettingstarted/scopes.md` | Needs update | Lists 4 of 11 service scopes and 8 of 9 OBO scopes. The "requires administrator permission" note isn't what master's consent check enforces. |
-| `errors/errors.mdx` | Needs update | `logic` is an array of objects, not an object. `code` (access) and `args` (logic) are missing, `serviceUnavailable` is missing, and 6 of 10 error categories are undescribed. |
-| `errors/logicerrorcodes.mdx` | Needs update | Codes 1–7 match, but master defines 238 codes, and none of the codes the documented endpoints return are listed. |
-| `endpoints/legacy/users.mdx` | Needs update (minor) | Path, method, scope and PII gating all match. Six response fields are missing. |
-| `endpoints/v0/users.mdx` | Needs update | The address sub-field names are wrong, `phone` is typed boolean, 3 fields are missing, the limit is documented as 100 (master: 1000), 3 of 4 filters and `hasMore` are missing, and `POST /api/v0/users` isn't covered. |
-| `endpoints/v0/roles.mdx` | Needs update | `hasMore` is missing, `scope` is shown as required but is optional, `POST /api/v0/roles/{roleId}/users` isn't covered, and one anchor is broken. |
-| `endpoints/v0/registration.mdx` + `_registrationModel.mdx` | Needs update | The model is missing `uuid`, `badgeId`, `badgePrinted`, `order`, option `id` and `profilePictureURL`. `userIds` is typed as number, `paidProductId` is missing, and the model is listed under "Request". |
-| `endpoints/v0/volunteers.mdx` + `_volunteerModel.mdx` | Needs update | The search response wrapper and `hasMore` are missing. `user.isStaff`, `profilePictureURL` and option `id` are missing. The department `name`/`email` descriptions are wrong. |
-| `endpoints/v0/dealers.mdx` | Needs update (closest to master) | The limit max is 1000. `filter` is optional, and master's handler ignores it. `email` is required. The address fields are nullable. `phone` is typed boolean. The example header shows the wrong path. |
+| Page                                                       | Class                            | One-line reason                                                                                                                                                                                                            |
+| ---------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `intro.md`                                                 | Accurate                         | v0 is master's only versioned API, and the `/api/docs` Swagger UI it points to exists (`server.ts:441-443`). It mentions an "API Release Notes page" that doesn't exist in this repo.                                      |
+| `gettingstarted/gettingstarted.md`                         | Needs update                     | Service integrations already write data (`user:create`, `user:roles:update`, `order:manage`), and OAuth apps are self-service in Housekeeping › Developers.                                                                |
+| `gettingstarted/oauth.md`                                  | Needs update                     | The token `scope` is an array, not a string. PKCE, HTTP Basic client auth, origin-only redirect checks, 10-minute codes and `error=access_denied` aren't documented. The page uses lowercase MDX tags, which don't render. |
+| `gettingstarted/scopes.md`                                 | Needs update                     | Lists 4 of 11 service scopes and 8 of 9 OBO scopes. The "requires administrator permission" note isn't what master's consent check enforces.                                                                               |
+| `errors/errors.mdx`                                        | Needs update                     | `logic` is an array of objects, not an object. `code` (access) and `args` (logic) are missing, `serviceUnavailable` is missing, and 6 of 10 error categories are undescribed.                                              |
+| `errors/logicerrorcodes.mdx`                               | Needs update                     | Codes 1–7 match, but master defines 238 codes, and none of the codes the documented endpoints return are listed.                                                                                                           |
+| `endpoints/legacy/users.mdx`                               | Needs update (minor)             | Path, method, scope and PII gating all match. Six response fields are missing.                                                                                                                                             |
+| `endpoints/v0/users.mdx`                                   | Needs update                     | The address sub-field names are wrong, `phone` is typed boolean, 3 fields are missing, the limit is documented as 100 (master: 1000), 3 of 4 filters and `hasMore` are missing, and `POST /api/v0/users` isn't covered.    |
+| `endpoints/v0/roles.mdx`                                   | Needs update                     | `hasMore` is missing, `scope` is shown as required but is optional, `POST /api/v0/roles/{roleId}/users` isn't covered, and one anchor is broken.                                                                           |
+| `endpoints/v0/registration.mdx` + `_registrationModel.mdx` | Needs update                     | The model is missing `uuid`, `badgeId`, `badgePrinted`, `order`, option `id` and `profilePictureURL`. `userIds` is typed as number, `paidProductId` is missing, and the model is listed under "Request".                   |
+| `endpoints/v0/volunteers.mdx` + `_volunteerModel.mdx`      | Needs update                     | The search response wrapper and `hasMore` are missing. `user.isStaff`, `profilePictureURL` and option `id` are missing. The department `name`/`email` descriptions are wrong.                                              |
+| `endpoints/v0/dealers.mdx`                                 | Needs update (closest to master) | The limit max is 1000. `filter` is optional, and master's handler ignores it. `email` is required. The address fields are nullable. `phone` is typed boolean. The example header shows the wrong path.                     |
 
 No page is "Not in master": every endpoint and feature the docs describe exists on master. All "Needs update" pages are dominated by field-level drift plus missing endpoints.
 
@@ -66,36 +66,36 @@ No page is "Not in master": every endpoint and feature the docs describe exists 
 
 ### 3.2 `gettingstarted/gettingstarted.md`: Needs update
 
-| Claim | Master | Evidence |
-| --- | --- | --- |
-| "Service-level integration … will allow modification of data **in the future**" | Service tokens can already write: create users, grant/remove roles, remove/revoke order items | `v0/user.ts:402-406` (`user:create`), `v0/roles.ts:295-299, 367-371` (`user:roles:update`), `v0/orders.ts:357-361, 436-440` (`order:manage`) |
-| "OBO integration will remain read-only" | The OBO scope `admin:ticket:scan` drives a write route | `api/tickets.ts:252-273` (`PATCH /api/tickets/{id}/scan`, OAuth only) |
-| "Developer registration is by invitation only … you will be given a unique API ID and secret key" | Event-customer admins with `oauth:manage` create OAuth apps themselves in Housekeeping › Developers › OAuth applications. The secret is returned once and stored as a SHA-256 hash. Whether third-party developers still go through an invitation is a business process: unverified. | `src/frontend/containers/housekeeping/developers/index.tsx:33-40`; `api/oauth.ts:87-122` (`POST /api/oauth` returns `{id, secret}`) |
-| "Permissions for a service integration are granted … at the time the integration is created" | Correct: `applicationPermissions` on the app, editable later | `api/oauth.ts:113-118, 146-151` |
-| HTTPS / TLS 1.2 minimum | Not enforced in app code. Unverified (infrastructure). | — |
+| Claim                                                                                             | Master                                                                                                                                                                                                                                                                               | Evidence                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| "Service-level integration … will allow modification of data **in the future**"                   | Service tokens can already write: create users, grant/remove roles, remove/revoke order items                                                                                                                                                                                        | `v0/user.ts:402-406` (`user:create`), `v0/roles.ts:295-299, 367-371` (`user:roles:update`), `v0/orders.ts:357-361, 436-440` (`order:manage`) |
+| "OBO integration will remain read-only"                                                           | The OBO scope `admin:ticket:scan` drives a write route                                                                                                                                                                                                                               | `api/tickets.ts:252-273` (`PATCH /api/tickets/{id}/scan`, OAuth only)                                                                        |
+| "Developer registration is by invitation only … you will be given a unique API ID and secret key" | Event-customer admins with `oauth:manage` create OAuth apps themselves in Housekeeping › Developers › OAuth applications. The secret is returned once and stored as a SHA-256 hash. Whether third-party developers still go through an invitation is a business process: unverified. | `src/frontend/containers/housekeeping/developers/index.tsx:33-40`; `api/oauth.ts:87-122` (`POST /api/oauth` returns `{id, secret}`)          |
+| "Permissions for a service integration are granted … at the time the integration is created"      | Correct: `applicationPermissions` on the app, editable later                                                                                                                                                                                                                         | `api/oauth.ts:113-118, 146-151`                                                                                                              |
+| HTTPS / TLS 1.2 minimum                                                                           | Not enforced in app code. Unverified (infrastructure).                                                                                                                                                                                                                               | —                                                                                                                                            |
 
 ### 3.3 `gettingstarted/oauth.md`: Needs update
 
 Endpoints: frontend `GET /oauth/authorize` (`src/frontend/containers/corecontainer.tsx:182`) and `POST /api/oauth/token` (`api/oauth/token/post.ts:64-174`). Both exist.
 
-| # | Docs | Master | Evidence |
-| --- | --- | --- | --- |
-| 1 | Token response `"scope": "pii:basic"` (string) | `scope` is a **string array** | `src/shared/oauth.ts:37-43`; `svc/OAuthService.ts:528, 595` |
-| 2 | Examples show `expires_in: 3600` | Default access-token life is **900 s** (config minimum 300) | `config/default.js:94-96`; `svc/Config.ts:318` |
-| 3 | Query params: client_id, response_type, redirect_uri, scope, state | Also **`code_challenge`** (PKCE, 43–128 chars, verified as base64url SHA-256, i.e. S256 only). The token endpoint then needs **`code_verifier`**. | `src/frontend/containers/oauth/authorize/index.tsx:118, 130`; `api/oauth/{clientId}/authorize/post.ts:72`; `svc/OAuthService.ts:445-454`; `api/oauth/token/post.ts:163` |
-| 4 | Client credentials only as form fields | Also accepted as **HTTP Basic** (`Authorization: Basic base64(id:secret)`) | `api/oauth/token/post.ts:34-55, 69-72` |
-| 5 | "redirect_uri … must be the same URL that you provided when registering" | Only the **origin** is checked against registered URIs. The token exchange requires `redirect_uri` to equal the one used at authorization. | `svc/OAuthService.ts:686-703, 441-443` |
-| 6 | Code lifetime not stated | Authorization codes expire after **10 minutes** and are single-use | `svc/OAuthService.ts:337-351, 456-457` |
-| 7 | Deny path not described | On "Cancel" the user is redirected to `redirect_uri?error=access_denied&state=…` | `src/frontend/containers/oauth/authorize/components/Denied.tsx:25-26` |
-| 8 | Successful redirect `?code=…&state=…` | Correct | `.../authorize/components/Authorized.tsx:24-26` |
-| 9 | "User must have access to all requested scopes" | Enforced only for scopes with a `requiredPermission`. In master's seed that is **only `dashboard:read`**. | `svc/OAuthService.ts:641-672`; `src/backend/app/db/migrations/20170903T133604892-user.ts:2918-2920` |
-| 10 | Sensitive scopes highlighted red with "This is an administrative permission" | Correct for scopes whose names start with `admin:`. The button turns red. | `.../components/OAuthPermission.tsx:15, 27`; `authorize/index.tsx:109, 189`; `src/shared/translations/en-US.json:2037` |
-| 11 | Refresh: new refresh token, optional `scope` subset, no new scopes | Correct. Refresh tokens rotate (the old one is deleted), and `UnauthorizedOAuthScopes` (access error 26) is returned for a superset. | `svc/OAuthService.ts:420-426, 459-491`; `api/oauth/token/post.ts:110-112` |
-| 12 | Refresh example sends `redirect_uri` | Ignored for refresh grants (harmless) | `svc/OAuthService.ts:428-443` |
-| 13 | Service: "requesting OBO-only scopes will result in an error" | Correct: logic error 116 `ApplicationNotGranted`, also returned for scopes not granted to the app. Unknown scope: 31 `OAuthInvalidScope`. | `svc/OAuthService.ts:544-562`; `api/oauth/token/post.ts:125-131` |
-| 14 | Token endpoint content type `application/x-www-form-urlencoded` | Correct (only type allowed) | `api/oauth/token/post.ts:138-140` |
-| 15 | Expired or invalid token behavior not documented | 401 `authentication` error, code 2000 Invalid / 2001 Expired | `src/backend/app/server/plugins/auth/oAuth.ts:116-121`; `err.ts` `AuthError` |
-| 16 | Not documented | RP-initiated logout: `/oauth/logout?client_id=&access_token=&next=` revokes the app's tokens for the user and redirects to `next` if its origin is registered | `src/frontend/containers/oauth/logout.tsx:18-52`; `api/users/logout/get.ts:48-110` |
+| #   | Docs                                                                         | Master                                                                                                                                                        | Evidence                                                                                                                                                                |
+| --- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Token response `"scope": "pii:basic"` (string)                               | `scope` is a **string array**                                                                                                                                 | `src/shared/oauth.ts:37-43`; `svc/OAuthService.ts:528, 595`                                                                                                             |
+| 2   | Examples show `expires_in: 3600`                                             | Default access-token life is **900 s** (config minimum 300)                                                                                                   | `config/default.js:94-96`; `svc/Config.ts:318`                                                                                                                          |
+| 3   | Query params: client_id, response_type, redirect_uri, scope, state           | Also **`code_challenge`** (PKCE, 43–128 chars, verified as base64url SHA-256, i.e. S256 only). The token endpoint then needs **`code_verifier`**.             | `src/frontend/containers/oauth/authorize/index.tsx:118, 130`; `api/oauth/{clientId}/authorize/post.ts:72`; `svc/OAuthService.ts:445-454`; `api/oauth/token/post.ts:163` |
+| 4   | Client credentials only as form fields                                       | Also accepted as **HTTP Basic** (`Authorization: Basic base64(id:secret)`)                                                                                    | `api/oauth/token/post.ts:34-55, 69-72`                                                                                                                                  |
+| 5   | "redirect_uri … must be the same URL that you provided when registering"     | Only the **origin** is checked against registered URIs. The token exchange requires `redirect_uri` to equal the one used at authorization.                    | `svc/OAuthService.ts:686-703, 441-443`                                                                                                                                  |
+| 6   | Code lifetime not stated                                                     | Authorization codes expire after **10 minutes** and are single-use                                                                                            | `svc/OAuthService.ts:337-351, 456-457`                                                                                                                                  |
+| 7   | Deny path not described                                                      | On "Cancel" the user is redirected to `redirect_uri?error=access_denied&state=…`                                                                              | `src/frontend/containers/oauth/authorize/components/Denied.tsx:25-26`                                                                                                   |
+| 8   | Successful redirect `?code=…&state=…`                                        | Correct                                                                                                                                                       | `.../authorize/components/Authorized.tsx:24-26`                                                                                                                         |
+| 9   | "User must have access to all requested scopes"                              | Enforced only for scopes with a `requiredPermission`. In master's seed that is **only `dashboard:read`**.                                                     | `svc/OAuthService.ts:641-672`; `src/backend/app/db/migrations/20170903T133604892-user.ts:2918-2920`                                                                     |
+| 10  | Sensitive scopes highlighted red with "This is an administrative permission" | Correct for scopes whose names start with `admin:`. The button turns red.                                                                                     | `.../components/OAuthPermission.tsx:15, 27`; `authorize/index.tsx:109, 189`; `src/shared/translations/en-US.json:2037`                                                  |
+| 11  | Refresh: new refresh token, optional `scope` subset, no new scopes           | Correct. Refresh tokens rotate (the old one is deleted), and `UnauthorizedOAuthScopes` (access error 26) is returned for a superset.                          | `svc/OAuthService.ts:420-426, 459-491`; `api/oauth/token/post.ts:110-112`                                                                                               |
+| 12  | Refresh example sends `redirect_uri`                                         | Ignored for refresh grants (harmless)                                                                                                                         | `svc/OAuthService.ts:428-443`                                                                                                                                           |
+| 13  | Service: "requesting OBO-only scopes will result in an error"                | Correct: logic error 116 `ApplicationNotGranted`, also returned for scopes not granted to the app. Unknown scope: 31 `OAuthInvalidScope`.                     | `svc/OAuthService.ts:544-562`; `api/oauth/token/post.ts:125-131`                                                                                                        |
+| 14  | Token endpoint content type `application/x-www-form-urlencoded`              | Correct (only type allowed)                                                                                                                                   | `api/oauth/token/post.ts:138-140`                                                                                                                                       |
+| 15  | Expired or invalid token behavior not documented                             | 401 `authentication` error, code 2000 Invalid / 2001 Expired                                                                                                  | `src/backend/app/server/plugins/auth/oAuth.ts:116-121`; `err.ts` `AuthError`                                                                                            |
+| 16  | Not documented                                                               | RP-initiated logout: `/oauth/logout?client_id=&access_token=&next=` revokes the app's tokens for the user and redirects to `next` if its origin is registered | `src/frontend/containers/oauth/logout.tsx:18-52`; `api/users/logout/get.ts:48-110`                                                                                      |
 
 Docs-side rendering bug: `oauth.md` uses lowercase `<attribute>` (lines 24-38), `<exampleBox>` (43, 88, 102, 113, 144, 154, 197, 206) and `<splitColumn>` (184, 215). `src/theme/MDXComponents.tsx:21-43` registers only PascalCase names, so these render as unknown HTML elements. The 2026-04 MDX 3 migration (PR #69, see §6.2) missed this file.
 
@@ -105,42 +105,42 @@ Master's scope flags come from `perm.ts`: `oAuthApplication: true` means the sco
 
 **Service integration scopes** (docs list 4; master has 11):
 
-| Scope | In docs | `perm.ts` | Used by an OAuth-reachable route |
-| --- | --- | --- | --- |
-| `user:read` | yes | 203-204 | `v0/user.ts:205, 269`; `v0/roles.ts:56, 132, 212` |
-| `user:roles:update` | yes | 132-133 | `v0/roles.ts:299, 371` |
-| `registration:read` | yes | 106-108 (also selfScoped, default) | `v0/registration.ts:321, 407` |
-| `volunteer:read` | yes | 231-232 | `v0/volunteers.ts:141, 212, 286` |
-| `user:create` | **no** | 177-178 | `v0/user.ts:406` |
-| `user:note:read` | **no** | 190-191 | `v0/userNotes.ts:101` |
-| `vendor:read` | **no** | 210-211 | `v0/dealer.ts:222` |
-| `order:view` | **no** | 264-265 | `v0/orders.ts:209`; `v0/vouchers.ts:113`; `api/tickets.ts:317` |
-| `order:manage` | **no** | 277-278 | `v0/orders.ts:361, 440` |
-| `system:export:sqlite` | **no** | 328-329 | `v0/export.ts:797` (route not tagged `api`) |
-| `user:note:categories:manage` | **no** | 396-398 | none: its routes (`api/userNotes.ts:286, 339, 385, 398`) use the default cookie/support strategies |
+| Scope                         | In docs | `perm.ts`                          | Used by an OAuth-reachable route                                                                   |
+| ----------------------------- | ------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `user:read`                   | yes     | 203-204                            | `v0/user.ts:205, 269`; `v0/roles.ts:56, 132, 212`                                                  |
+| `user:roles:update`           | yes     | 132-133                            | `v0/roles.ts:299, 371`                                                                             |
+| `registration:read`           | yes     | 106-108 (also selfScoped, default) | `v0/registration.ts:321, 407`                                                                      |
+| `volunteer:read`              | yes     | 231-232                            | `v0/volunteers.ts:141, 212, 286`                                                                   |
+| `user:create`                 | **no**  | 177-178                            | `v0/user.ts:406`                                                                                   |
+| `user:note:read`              | **no**  | 190-191                            | `v0/userNotes.ts:101`                                                                              |
+| `vendor:read`                 | **no**  | 210-211                            | `v0/dealer.ts:222`                                                                                 |
+| `order:view`                  | **no**  | 264-265                            | `v0/orders.ts:209`; `v0/vouchers.ts:113`; `api/tickets.ts:317`                                     |
+| `order:manage`                | **no**  | 277-278                            | `v0/orders.ts:361, 440`                                                                            |
+| `system:export:sqlite`        | **no**  | 328-329                            | `v0/export.ts:797` (route not tagged `api`)                                                        |
+| `user:note:categories:manage` | **no**  | 396-398                            | none: its routes (`api/userNotes.ts:286, 339, 385, 398`) use the default cookie/support strategies |
 
 The Swagger `securityDefinitions` list the first 10 of these, not the last (`server.ts:471-482`).
 
 **OBO scopes** (docs list 8; master has 9):
 
-| Scope | In docs | `perm.ts` | Notes |
-| --- | --- | --- | --- |
-| `pii:basic`, `pii:email`, `pii:phone`, `pii:address` | yes | 57-58, 72-73, 79-80, 42-43 | Consumed by `GET /api/users/current` (`api/users/current/get.ts:50, 64-79`) |
-| `pii:finance:read` | yes | 64-65 | No OAuth-reachable route consumes it. `GET /api/users/{id}/orders` checks `pii:finance:read:{id}` but uses the default strategies (`api/users/{userId}/orders/get.ts:18-25`). |
-| `con:read` | yes | 24-25 | Only `GET /api/users/{id}/registration/emergencycontacts` (`.../emergencycontacts/get.ts:51-52`) |
-| `admin:ticket:read`, `admin:ticket:scan` | yes ("Requires administrator permission") | 85-86, 91-92 | In master's seed these have **no** `requiredPermission`, so the consent check doesn't require an admin permission. Only `dashboard:read` is gated (migration `:2918-2920`; tests cover only `dashboard:read`, `src/backend/test/e2e/api/oauth.test.ts:223-226`). Production DB state is unverified. Worth raising with the platform team as a possible authorization gap. |
-| `dashboard:read` | **no** | 298-299 | Gated by `requiredPermission`. No route in master consumes it. |
+| Scope                                                | In docs                                   | `perm.ts`                  | Notes                                                                                                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------------------- | ----------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `pii:basic`, `pii:email`, `pii:phone`, `pii:address` | yes                                       | 57-58, 72-73, 79-80, 42-43 | Consumed by `GET /api/users/current` (`api/users/current/get.ts:50, 64-79`)                                                                                                                                                                                                                                                                                               |
+| `pii:finance:read`                                   | yes                                       | 64-65                      | No OAuth-reachable route consumes it. `GET /api/users/{id}/orders` checks `pii:finance:read:{id}` but uses the default strategies (`api/users/{userId}/orders/get.ts:18-25`).                                                                                                                                                                                             |
+| `con:read`                                           | yes                                       | 24-25                      | Only `GET /api/users/{id}/registration/emergencycontacts` (`.../emergencycontacts/get.ts:51-52`)                                                                                                                                                                                                                                                                          |
+| `admin:ticket:read`, `admin:ticket:scan`             | yes ("Requires administrator permission") | 85-86, 91-92               | In master's seed these have **no** `requiredPermission`, so the consent check doesn't require an admin permission. Only `dashboard:read` is gated (migration `:2918-2920`; tests cover only `dashboard:read`, `src/backend/test/e2e/api/oauth.test.ts:223-226`). Production DB state is unverified. Worth raising with the platform team as a possible authorization gap. |
+| `dashboard:read`                                     | **no**                                    | 298-299                    | Gated by `requiredPermission`. No route in master consumes it.                                                                                                                                                                                                                                                                                                            |
 
 ### 3.5 `errors/errors.mdx`: Needs update
 
-| Docs | Master | Evidence |
-| --- | --- | --- |
-| Base format shows `"logic": {}` | `logic` is an **array** of `{ code, message, args? }` | `err.ts:437-441, 472-474`; `rv.ts:198-209` |
-| Access error attributes: `message`, `permissions` | Also a required **`code`** (`AccessError` enum, 1–31) | `err.ts:443-447, 247-279` |
-| Logic error attributes: `code`, `message` | Also optional **`args`** (e.g. `{scopes}` for 31/116/139) | `err.ts:438`; `api/oauth/token/post.ts:126, 130` |
-| Base format lists 9 categories | Master has 10. **`serviceUnavailable`** (string array, 503) is missing. | `err.ts:504-506`; `rv.ts:265-267, 302` |
-| Describes server, access and logic only | `validation` (array of `{source, message, path, type, context}`, 400), `authentication` (`{code, message}`, 401), `resource` (`{name, message?}`, 404), `usage` (`"No such route."`, 404), `rateLimit` (`{expiresAt, message}`, 429), `internal` (string or string[], 500) aren't described | `err.ts:429-506`; `rv.ts:282-303` (status → shape map: 400 validation/logic, 401 authentication, 403 access, 404 usage/resource, 413 logic, 429 rateLimit, 500 internal/server, 503 serviceUnavailable) |
-| — | Each response carries exactly **one** category | `rv.ts:269-280` |
+| Docs                                              | Master                                                                                                                                                                                                                                                                                      | Evidence                                                                                                                                                                                                |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Base format shows `"logic": {}`                   | `logic` is an **array** of `{ code, message, args? }`                                                                                                                                                                                                                                       | `err.ts:437-441, 472-474`; `rv.ts:198-209`                                                                                                                                                              |
+| Access error attributes: `message`, `permissions` | Also a required **`code`** (`AccessError` enum, 1–31)                                                                                                                                                                                                                                       | `err.ts:443-447, 247-279`                                                                                                                                                                               |
+| Logic error attributes: `code`, `message`         | Also optional **`args`** (e.g. `{scopes}` for 31/116/139)                                                                                                                                                                                                                                   | `err.ts:438`; `api/oauth/token/post.ts:126, 130`                                                                                                                                                        |
+| Base format lists 9 categories                    | Master has 10. **`serviceUnavailable`** (string array, 503) is missing.                                                                                                                                                                                                                     | `err.ts:504-506`; `rv.ts:265-267, 302`                                                                                                                                                                  |
+| Describes server, access and logic only           | `validation` (array of `{source, message, path, type, context}`, 400), `authentication` (`{code, message}`, 401), `resource` (`{name, message?}`, 404), `usage` (`"No such route."`, 404), `rateLimit` (`{expiresAt, message}`, 429), `internal` (string or string[], 500) aren't described | `err.ts:429-506`; `rv.ts:282-303` (status → shape map: 400 validation/logic, 401 authentication, 403 access, 404 usage/resource, 413 logic, 429 rateLimit, 500 internal/server, 503 serviceUnavailable) |
+| —                                                 | Each response carries exactly **one** category                                                                                                                                                                                                                                              | `rv.ts:269-280`                                                                                                                                                                                         |
 
 Docs-side: the `Attribute` id `access-errors-attr-message` is used twice (lines 58 and 76).
 
@@ -175,26 +175,26 @@ Docs-side: the `Attribute` id `access-errors-attr-message` is used twice (lines 
 
 **GET `/api/v0/users/{id}`** (`v0/user.ts:259-292`). Method, path and scope `user:read` match. The docs call the path parameter `{userId}`; master calls it `{id}` (cosmetic).
 
-| Field | Docs | Master (`v0/user.ts:85-108`) |
-| --- | --- | --- |
-| `address.*` | `addressCity`, `addressCountry`, `addressLine1`, `addressLine2`, `addressState`, `addressZipcode` | **`city`, `country`, `line1`, `line2`, `state`, `zipcode`**, all nullable (`:98-105`, `:29-36`) |
-| `phone` | type **boolean** | string or null, E.164 (`:93`) |
-| `bornAt` | missing | `YYYY-MM-DD` string or null (`:94-97`) |
-| `profilePictureURL` | missing | required string (`:106`) |
-| `ownerUserId` | missing | string or null, required. Set for sub-accounts. (`:107`, `:38`) |
-| `email`, `firstName`, `lastName`, `username` | non-null strings | nullable (`:87-91`) |
+| Field                                        | Docs                                                                                              | Master (`v0/user.ts:85-108`)                                                                    |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `address.*`                                  | `addressCity`, `addressCountry`, `addressLine1`, `addressLine2`, `addressState`, `addressZipcode` | **`city`, `country`, `line1`, `line2`, `state`, `zipcode`**, all nullable (`:98-105`, `:29-36`) |
+| `phone`                                      | type **boolean**                                                                                  | string or null, E.164 (`:93`)                                                                   |
+| `bornAt`                                     | missing                                                                                           | `YYYY-MM-DD` string or null (`:94-97`)                                                          |
+| `profilePictureURL`                          | missing                                                                                           | required string (`:106`)                                                                        |
+| `ownerUserId`                                | missing                                                                                           | string or null, required. Set for sub-accounts. (`:107`, `:38`)                                 |
+| `email`, `firstName`, `lastName`, `username` | non-null strings                                                                                  | nullable (`:87-91`)                                                                             |
 
 The description text (line 24) is copied from Search ("Search for users…").
 
 **POST `/api/v0/users/search`** (`v0/user.ts:110-257`). Method, path and scope match.
 
-| Item | Docs | Master |
-| --- | --- | --- |
-| `limit` | 1–100, default 100 | **1–1000, default 1000** (`:237-243`) |
-| `filter` | `roleId` only | `roleId`, **`email`** (valid email), **`search`** (free text), **`ownerUserId`** (`:244-251`). `search` can't be combined with others: logic error 174 (`:118-121`). With `search`, `nextPage` is a page counter, not an id cursor (`:123-151`). |
-| `hasMore` | missing | required boolean (`:210`) |
-| `nextPage` when no more | example shows `null` | omitted (`:197`) |
-| `data[]` | same field drift as GET | `userModel` (`:212`) |
+| Item                    | Docs                    | Master                                                                                                                                                                                                                                           |
+| ----------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `limit`                 | 1–100, default 100      | **1–1000, default 1000** (`:237-243`)                                                                                                                                                                                                            |
+| `filter`                | `roleId` only           | `roleId`, **`email`** (valid email), **`search`** (free text), **`ownerUserId`** (`:244-251`). `search` can't be combined with others: logic error 174 (`:118-121`). With `search`, `nextPage` is a page counter, not an id cursor (`:123-151`). |
+| `hasMore`               | missing                 | required boolean (`:210`)                                                                                                                                                                                                                        |
+| `nextPage` when no more | example shows `null`    | omitted (`:197`)                                                                                                                                                                                                                                 |
+| `data[]`                | same field drift as GET | `userModel` (`:212`)                                                                                                                                                                                                                             |
 
 **Not covered:** POST `/api/v0/users` (create user, scope `user:create`, `v0/user.ts:301-467`). Body fields: `username` (required); `firstName`, `lastName`, `preferredName`, `bornAt`, `phone` (E.164), `address*`, `newsletter`, `email`, `id` (reserved-range numeric string), `password`, `reason` (min 10, audited), `sendEmail` (default false). Returns `{id}`. A duplicate unique field returns a validation error of type `custom.unique` (`:385-397`). An `id` above the org's last id returns `number.max` (`:313-339`).
 
@@ -202,59 +202,61 @@ Docs-side: "first and ast name" typo (lines 39, 144).
 
 ### 3.9 `endpoints/v0/roles.mdx`: Needs update
 
-| Endpoint | Method/path/scope | Mismatches |
-| --- | --- | --- |
-| `GET /api/v0/roles` (`v0/roles.ts:34-89`) | match | Response lacks `hasMore` (always `false`, `:47-50, 62`). Example `"nextPage": null`, but master omits it. Not paginated. |
-| `GET /api/v0/users/{userId}/roles` (`:177-256`) | match | Response lacks `hasMore` (`:218`). `scope` values are `convention` or `global` (`:227`); the docs give none. Expired grants are excluded (`:191`). |
-| `PUT /api/v0/users/{userId}/roles/{roleId}` (`:258-333`) | match | Body `scope` is **optional**. Anything but `global` means convention (`:283, 318-322`); the docs present it as required. Already has the role: logic error 10 (`:274-276`). Internal role: logic error 138 (`:286-288`). Returns an empty body (null). |
-| `DELETE /api/v0/users/{userId}/roles/{roleId}` (`:335-415`) | match | 404 `resource` if the user lacks the role (`:347-349`). Logic error 138 for automation-managed roles (`:357-360, 392-408`). Neither is documented. |
-| **Not covered**: `POST /api/v0/roles/{roleId}/users` (`:91-175`) | scope `user:read` | Paginated list of `{userId}` holding the role (convention or global, unexpired). Body: `nextPage`, `limit` 1–1000 (default 1000). |
+| Endpoint                                                         | Method/path/scope | Mismatches                                                                                                                                                                                                                                             |
+| ---------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `GET /api/v0/roles` (`v0/roles.ts:34-89`)                        | match             | Response lacks `hasMore` (always `false`, `:47-50, 62`). Example `"nextPage": null`, but master omits it. Not paginated.                                                                                                                               |
+| `GET /api/v0/users/{userId}/roles` (`:177-256`)                  | match             | Response lacks `hasMore` (`:218`). `scope` values are `convention` or `global` (`:227`); the docs give none. Expired grants are excluded (`:191`).                                                                                                     |
+| `PUT /api/v0/users/{userId}/roles/{roleId}` (`:258-333`)         | match             | Body `scope` is **optional**. Anything but `global` means convention (`:283, 318-322`); the docs present it as required. Already has the role: logic error 10 (`:274-276`). Internal role: logic error 138 (`:286-288`). Returns an empty body (null). |
+| `DELETE /api/v0/users/{userId}/roles/{roleId}` (`:335-415`)      | match             | 404 `resource` if the user lacks the role (`:347-349`). Logic error 138 for automation-managed roles (`:357-360, 392-408`). Neither is documented.                                                                                                     |
+| **Not covered**: `POST /api/v0/roles/{roleId}/users` (`:91-175`) | scope `user:read` | Paginated list of `{userId}` holding the role (convention or global, unexpired). Body: `nextPage`, `limit` 1–1000 (default 1000).                                                                                                                      |
 
 Docs-side: the RestList anchor `'list roles'` (line 14) has a space, so it doesn't match slug `list-roles`. Attribute ids `su-resp-data` and `su-resp-id` repeat across endpoints.
 
 ### 3.10 `endpoints/v0/registration.mdx` + `_registrationModel.mdx`: Needs update
 
 **GET `/api/v0/users/{id}/registration`** (`v0/registration.ts:298-348`). Method, path and scope match. Not documented:
+
 - 404 `resource` if the user has no registration (`:308-310`).
 - Users can read their own registration without the scope (`grantOwnerScope`, `:331-334`).
 - Docs-side: the model is placed under an `<h4>Request</h4>` heading (line 33); it is the response.
 
 **POST `/api/v0/registration/search`** (`:350-439`). Method, path and scope match.
 
-| Item | Docs | Master |
-| --- | --- | --- |
-| `limit` | 1–100, default 100 | matches (`:426`) |
-| `filter.userIds` | type **number** ("The ID of the user") | **array of numeric strings**, max 100 (`:428-432`) |
-| `filter.paidProductId` | missing | numeric string. Only registrations paid with that product (`:433, 369-378`). |
-| `hasMore` | missing | required (`:400`) |
-| `data` type | "Array of User" | Array of Registration (`:402`) |
+| Item                   | Docs                                   | Master                                                                       |
+| ---------------------- | -------------------------------------- | ---------------------------------------------------------------------------- |
+| `limit`                | 1–100, default 100                     | matches (`:426`)                                                             |
+| `filter.userIds`       | type **number** ("The ID of the user") | **array of numeric strings**, max 100 (`:428-432`)                           |
+| `filter.paidProductId` | missing                                | numeric string. Only registrations paid with that product (`:433, 369-378`). |
+| `hasMore`              | missing                                | required (`:400`)                                                            |
+| `data` type            | "Array of User"                        | Array of Registration (`:402`)                                               |
 
 **Registration model** (`:265-296` vs `_registrationModel.mdx`):
 
-| Field | Docs | Master |
-| --- | --- | --- |
-| `uuid` | missing | required string (`:266`) |
-| `badgeId` | missing | required integer (`:270`) |
-| `badgeName` | string | string, may be `""` (`:271`) |
-| `badgePrinted` | missing | string or null (`:272, 240`) |
-| `order` | missing | `{orderId, orderItemId}`. Present only when paid. (`:277-280, 241-246`) |
-| `productDisplayName` | string | nullable (`:275`) |
-| `options[].id` | missing | present (`:290-295`; `v0/util.ts:91-96`) |
-| `options[].type` values | select, multi, text, number | plus address, currency, file, phone (`src/shared/options/index.ts:47-48`) |
-| `user.profilePictureURL` | missing | required (`v0/util.ts:59`) |
-| `user.email` etc. | non-null | nullable (`v0/util.ts:53-58`) |
+| Field                    | Docs                        | Master                                                                    |
+| ------------------------ | --------------------------- | ------------------------------------------------------------------------- |
+| `uuid`                   | missing                     | required string (`:266`)                                                  |
+| `badgeId`                | missing                     | required integer (`:270`)                                                 |
+| `badgeName`              | string                      | string, may be `""` (`:271`)                                              |
+| `badgePrinted`           | missing                     | string or null (`:272, 240`)                                              |
+| `order`                  | missing                     | `{orderId, orderItemId}`. Present only when paid. (`:277-280, 241-246`)   |
+| `productDisplayName`     | string                      | nullable (`:275`)                                                         |
+| `options[].id`           | missing                     | present (`:290-295`; `v0/util.ts:91-96`)                                  |
+| `options[].type` values  | select, multi, text, number | plus address, currency, file, phone (`src/shared/options/index.ts:47-48`) |
+| `user.profilePictureURL` | missing                     | required (`v0/util.ts:59`)                                                |
+| `user.email` etc.        | non-null                    | nullable (`v0/util.ts:53-58`)                                             |
 
 Docs-side: the options description says "provided by the volunteer" (copy-paste). Attribute id `ruvr-usr-id` is used for both `flags[].id` and `user.id`.
 
 ### 3.11 `endpoints/v0/volunteers.mdx` + `_volunteerModel.mdx`: Needs update
 
-| Endpoint | Method/path/scope | Mismatches |
-| --- | --- | --- |
-| `POST /api/v0/volunteers/search` (`v0/volunteers.ts:174-243`) | match; limit 1–100 default 100 matches (`:238`) | The Response section renders the bare model. The real response is `{hasMore, nextPage?, data: Volunteer[]}` (`:216-220`), so `hasMore` and `data` are undocumented. |
-| `GET /api/v0/users/{id}/volunteer` (`:122-172`) | match | 404 if no application (`:129-131`). Own record readable without the scope (`:155-158`). Hidden departments included (`showHidden`, `:126`). |
-| `GET /api/v0/volunteers/departments` (`:245-313`) | match; bare array matches | The `name` and `email` attribute descriptions say "The date the volunteer record was created/last updated" (`volunteers.mdx:167-172`). `leads[]` lack `profilePictureURL`. Hidden departments included (`:301`). |
+| Endpoint                                                      | Method/path/scope                               | Mismatches                                                                                                                                                                                                       |
+| ------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `POST /api/v0/volunteers/search` (`v0/volunteers.ts:174-243`) | match; limit 1–100 default 100 matches (`:238`) | The Response section renders the bare model. The real response is `{hasMore, nextPage?, data: Volunteer[]}` (`:216-220`), so `hasMore` and `data` are undocumented.                                              |
+| `GET /api/v0/users/{id}/volunteer` (`:122-172`)               | match                                           | 404 if no application (`:129-131`). Own record readable without the scope (`:155-158`). Hidden departments included (`showHidden`, `:126`).                                                                      |
+| `GET /api/v0/volunteers/departments` (`:245-313`)             | match; bare array matches                       | The `name` and `email` attribute descriptions say "The date the volunteer record was created/last updated" (`volunteers.mdx:167-172`). `leads[]` lack `profilePictureURL`. Hidden departments included (`:301`). |
 
 **Volunteer model** (`:92-120` vs `_volunteerModel.mdx`):
+
 - `user.isStaff` (required boolean) is missing (`:116-118`).
 - `user.profilePictureURL` is missing.
 - `options[].id` is missing (`v0/util.ts:65`); option types are incomplete as in §3.10.
@@ -265,19 +267,19 @@ Docs-side: the options description says "provided by the volunteer" (copy-paste)
 
 **POST `/api/v0/dealers/search`** (`v0/dealer.ts:78-253`). Method, path and scope `vendor:read` match.
 
-| Item | Docs | Master |
-| --- | --- | --- |
-| `limit` | 1–100, default 100 | **1–1000**, default 100 (`:240`) |
-| `filter` | shown as required | optional object. `userIds` is required inside it (`:241-248`). |
-| `filter.userIds` effect | "IDs of the users to filter by" | **Ignored.** The handler only reads `nextPage` and `limit` (`:80`), and the query has no user filter (`:86-96`). This is a master bug, or the docs should drop it. |
-| `email` | optional | required string (`:209`) |
-| `addressLine1/City/Zipcode/State/Country` | non-null strings | **nullable**, required (`:210-215`) |
-| `user.phone` | type boolean | string or null |
-| `user.profilePictureURL` | missing | required (`:189` → `v0/util.ts:59`) |
-| `applications[].status` | no values | `approved`, `pending`, `rejected`, `waitlisted` (`:21`; schema accepts any string, `:197`) |
-| `tableType.paid` | "paid for" | `true` iff the application has a paid order item (`:159`) |
-| option `type` values | 4 or 6 values | 8 values (see §2) |
-| `hasMore` | documented | matches (`:182`) |
+| Item                                      | Docs                            | Master                                                                                                                                                             |
+| ----------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `limit`                                   | 1–100, default 100              | **1–1000**, default 100 (`:240`)                                                                                                                                   |
+| `filter`                                  | shown as required               | optional object. `userIds` is required inside it (`:241-248`).                                                                                                     |
+| `filter.userIds` effect                   | "IDs of the users to filter by" | **Ignored.** The handler only reads `nextPage` and `limit` (`:80`), and the query has no user filter (`:86-96`). This is a master bug, or the docs should drop it. |
+| `email`                                   | optional                        | required string (`:209`)                                                                                                                                           |
+| `addressLine1/City/Zipcode/State/Country` | non-null strings                | **nullable**, required (`:210-215`)                                                                                                                                |
+| `user.phone`                              | type boolean                    | string or null                                                                                                                                                     |
+| `user.profilePictureURL`                  | missing                         | required (`:189` → `v0/util.ts:59`)                                                                                                                                |
+| `applications[].status`                   | no values                       | `approved`, `pending`, `rejected`, `waitlisted` (`:21`; schema accepts any string, `:197`)                                                                         |
+| `tableType.paid`                          | "paid for"                      | `true` iff the application has a paid order item (`:159`)                                                                                                          |
+| option `type` values                      | 4 or 6 values                   | 8 values (see §2)                                                                                                                                                  |
+| `hasMore`                                 | documented                      | matches (`:182`)                                                                                                                                                   |
 
 Docs-side: the example header says `/api/v0/users/search` (line 425). The example JSON is invalid (missing comma after `"id": "12"`, line 481) and shows `"nextPage": null`.
 
@@ -292,44 +294,46 @@ Docs-side: the example header says `/api/v0/users/search` (line 425). The exampl
 ## 4. Master API endpoints the docs don't cover
 
 **How public vs internal was decided:**
+
 1. **Public** = tagged `api` (published by hapi-swagger, enforced by `rv.ts:113-154`).
 2. **De-facto external** = accepts the `OAuth` strategy but isn't tagged `api`. These are used by bearer-token clients such as QuikTicket devices.
 3. **Internal** = default `cookie`/`support` strategies only (SPA routes). Excluded except where an OAuth flow depends on them.
 
 ### 4.1 Public (`api`-tagged), not documented (8 of 20)
 
-| Method | Path | Scope | Evidence |
-| --- | --- | --- | --- |
-| POST | `/api/v0/users` | `user:create` | `v0/user.ts:301-467` |
-| POST | `/api/v0/roles/{roleId}/users` | `user:read` | `v0/roles.ts:91-175` |
-| POST | `/api/v0/users/notes/search` | `user:note:read` | `v0/userNotes.ts:26-130` |
-| POST | `/api/v0/orders/search` | `order:view` | `v0/orders.ts:108-331` |
-| DELETE | `/api/v0/orders/items/{orderItemId}` | `order:manage` | `v0/orders.ts:333-404` |
-| POST | `/api/v0/orders/items/{orderItemId}/revoke` | `order:manage` | `v0/orders.ts:406-485` |
-| POST | `/api/v0/vouchers/search` | `order:view` | `v0/vouchers.ts:41-176` |
-| GET | `/.well-known/jwks.json` | none | `api/signing.ts:14-45` |
+| Method | Path                                        | Scope            | Evidence                 |
+| ------ | ------------------------------------------- | ---------------- | ------------------------ |
+| POST   | `/api/v0/users`                             | `user:create`    | `v0/user.ts:301-467`     |
+| POST   | `/api/v0/roles/{roleId}/users`              | `user:read`      | `v0/roles.ts:91-175`     |
+| POST   | `/api/v0/users/notes/search`                | `user:note:read` | `v0/userNotes.ts:26-130` |
+| POST   | `/api/v0/orders/search`                     | `order:view`     | `v0/orders.ts:108-331`   |
+| DELETE | `/api/v0/orders/items/{orderItemId}`        | `order:manage`   | `v0/orders.ts:333-404`   |
+| POST   | `/api/v0/orders/items/{orderItemId}/revoke` | `order:manage`   | `v0/orders.ts:406-485`   |
+| POST   | `/api/v0/vouchers/search`                   | `order:view`     | `v0/vouchers.ts:41-176`  |
+| GET    | `/.well-known/jwks.json`                    | none             | `api/signing.ts:14-45`   |
 
 Master quirks that docs written for these endpoints should either avoid copying or report as master bugs:
+
 - `users/notes/search` validates `filter.ids` but ignores it (`v0/userNotes.ts:28, 118-125`). Its response schema types `id`, `userId` and `authorId` as numbers, but the handler returns strings (`:90-92` vs `:59-61`).
 - `vouchers/search` with `voucherIds` skips cursor pagination (`v0/vouchers.ts:51-60`).
 - `revoke` documents 201 in Swagger but returns null (empty body) (`v0/orders.ts:464` vs `:434`).
 
 ### 4.2 OAuth-reachable, not in Swagger, not documented
 
-| Method | Path | Scope(s) | Strategies | Evidence |
-| --- | --- | --- | --- | --- |
-| GET | `/api/v0/export/sqlite` | `system:export:sqlite` (service) | cookie, OAuth, support | `v0/export.ts:793-807` |
-| GET | `/api/users/{id}/registration` | `registration:read` | cookie, OAuth, support | `api/users/{userId}/registration/get.ts:110-130` |
-| GET | `/api/users/{id}/registration/emergencycontacts` | `admin:read:emergencycontacts` or `con:read` | cookie, OAuth, support | `.../emergencycontacts/get.ts:47-60` |
-| GET | `/api/products/{id}/tickets` | `product:read` or `admin:ticket:read` | cookie, OAuth, support | `api/tickets.ts:29-42` |
-| GET | `/api/tickets/{id}` | `registration:read` | cookie, OAuth, support | `api/tickets.ts:73-95` |
-| PATCH | `/api/tickets/{id}/scan` | `admin:ticket:scan` | OAuth | `api/tickets.ts:252-273` |
-| GET | `/api/users/{id}/tickets` | `order:view` | OAuth | `api/tickets.ts:313-326` |
-| GET | `/api/tickets/events` | `admin:ticket:scan` or `admin:ticket:read` | OAuth | `api/tickets.ts:348-359` |
-| GET | `/api/tickets/events/{productId}/invalidated` | `product:read` or `admin:ticket:*` | cookie, OAuth, support | `api/tickets.ts:367-383` |
-| GET | `/api/tickets/events/{productId}/all` | `product:read` or `admin:ticket:read` | cookie, OAuth, support | `api/tickets.ts:391-407` |
-| GET | `/api/devices/{deviceId}` | any authenticated | cookie, OAuth | `api/devices.ts:105-117` |
-| PUT | `/api/devices` | `admin:ticket:scan`, `admin:ticket:read` or `system:devices:manage` | OAuth | `api/devices.ts:140-160` |
+| Method | Path                                             | Scope(s)                                                            | Strategies             | Evidence                                         |
+| ------ | ------------------------------------------------ | ------------------------------------------------------------------- | ---------------------- | ------------------------------------------------ |
+| GET    | `/api/v0/export/sqlite`                          | `system:export:sqlite` (service)                                    | cookie, OAuth, support | `v0/export.ts:793-807`                           |
+| GET    | `/api/users/{id}/registration`                   | `registration:read`                                                 | cookie, OAuth, support | `api/users/{userId}/registration/get.ts:110-130` |
+| GET    | `/api/users/{id}/registration/emergencycontacts` | `admin:read:emergencycontacts` or `con:read`                        | cookie, OAuth, support | `.../emergencycontacts/get.ts:47-60`             |
+| GET    | `/api/products/{id}/tickets`                     | `product:read` or `admin:ticket:read`                               | cookie, OAuth, support | `api/tickets.ts:29-42`                           |
+| GET    | `/api/tickets/{id}`                              | `registration:read`                                                 | cookie, OAuth, support | `api/tickets.ts:73-95`                           |
+| PATCH  | `/api/tickets/{id}/scan`                         | `admin:ticket:scan`                                                 | OAuth                  | `api/tickets.ts:252-273`                         |
+| GET    | `/api/users/{id}/tickets`                        | `order:view`                                                        | OAuth                  | `api/tickets.ts:313-326`                         |
+| GET    | `/api/tickets/events`                            | `admin:ticket:scan` or `admin:ticket:read`                          | OAuth                  | `api/tickets.ts:348-359`                         |
+| GET    | `/api/tickets/events/{productId}/invalidated`    | `product:read` or `admin:ticket:*`                                  | cookie, OAuth, support | `api/tickets.ts:367-383`                         |
+| GET    | `/api/tickets/events/{productId}/all`            | `product:read` or `admin:ticket:read`                               | cookie, OAuth, support | `api/tickets.ts:391-407`                         |
+| GET    | `/api/devices/{deviceId}`                        | any authenticated                                                   | cookie, OAuth          | `api/devices.ts:105-117`                         |
+| PUT    | `/api/devices`                                   | `admin:ticket:scan`, `admin:ticket:read` or `system:devices:manage` | OAuth                  | `api/devices.ts:140-160`                         |
 
 These are the endpoints the documented OBO scopes `admin:ticket:*` and `con:read` actually unlock. Whether they're meant to be public is unverified; the absence of the `api` tag suggests not.
 
@@ -343,6 +347,7 @@ These are the endpoints the documented OBO scopes `admin:ticket:*` and `con:read
 ### 4.4 Webhooks (feature undocumented on main)
 
 Master's webhooks:
+
 - **15 event types** (`svc/WebHooksService.ts:12-28`).
 - Body `{data, event}` with a signed JWT bearer, described in §6.1.
 - Retries: 5 attempts with exponential back-off from 500 ms (`:126-127, 237-252`).
@@ -372,16 +377,17 @@ The diff also changes one typo in `v0/users.mdx` and a margin in `src/components
 
 **`validating.md` vs master:**
 
-| Branch claim | Master | Evidence |
-| --- | --- | --- |
-| `int` = base64 SHA-256 of the **`data` property** | SHA-256 (base64) of the **entire body** `JSON.stringify({data, event})` | `svc/WebHooksService.ts:254-256, 263-274` |
-| `aud` = "The URL of the webhook" | **host** of the webhook URL (`new URL(url).host`) | `:277` |
-| `iss` = always `concat.app` | the configured `domain` (`new SigningService(config.domain, …)`). Default config value is `localhost:8081`; the production value is unverified. | `src/backend/app/providers.ts:953`; `config/default.js:66` |
-| `sub` = `webhook`, `exp` = 120 s | correct | `svc/WebHooksService.ts:278-279` |
+| Branch claim                                                       | Master                                                                                                                                           | Evidence                                                                                |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| `int` = base64 SHA-256 of the **`data` property**                  | SHA-256 (base64) of the **entire body** `JSON.stringify({data, event})`                                                                          | `svc/WebHooksService.ts:254-256, 263-274`                                               |
+| `aud` = "The URL of the webhook"                                   | **host** of the webhook URL (`new URL(url).host`)                                                                                                | `:277`                                                                                  |
+| `iss` = always `concat.app`                                        | the configured `domain` (`new SigningService(config.domain, …)`). Default config value is `localhost:8081`; the production value is unverified.  | `src/backend/app/providers.ts:953`; `config/default.js:66`                              |
+| `sub` = `webhook`, `exp` = 120 s                                   | correct                                                                                                                                          | `svc/WebHooksService.ts:278-279`                                                        |
 | Key at `/api/webhooks/key` is "a PEM-encoded X.509 RSA public key" | `/api/webhooks/key` returns a **JWK** (JSON). The full set is at `/.well-known/jwks.json`, and the UI tells integrators to fetch and cache that. | `api/webhooks.ts:196-200`; `api/signing.ts:44`; `developers/webhooks/KeyView.tsx:31-36` |
-| (implied RS512 from code) | `sign()` overrides the requested `RS512` with the active key's `alg` (default RS256) and sets `kid` | `svc/SigningService.ts:110-119` |
+| (implied RS512 from code)                                          | `sign()` overrides the requested `RS512` with the active key's `alg` (default RS256) and sets `kid`                                              | `svc/SigningService.ts:110-119`                                                         |
 
 **`events.md` vs master:**
+
 - Branch documents 7 events. Master has 15 (`svc/WebHooksService.ts:12-28`). Missing from the branch:
   - `test`: `{test:123}`, `api/webhooks.ts:225-230`
   - `order-complete`: `{orderId, status, user{id,email}, orderItems, breakdown, conventionId}`, `svc/OrderService.ts:1180-1193`
@@ -398,6 +404,7 @@ The diff also changes one typo in `v0/users.mdx` and a margin in `src/components
 - Markup: lowercase `<attribute>`, `<parentAttribute>`, `<splitColumn>`, `<exampleBox>` and `<link>` are MDX 2 era tags that won't render under the current mapper (`src/theme/MDXComponents.tsx`). Example JSON has trailing commas.
 
 **Verdict: reuse after edits (substantial).**
+
 - Keep `about.md`, `_category_.json` and the three-page split.
 - Rewrite `validating.md` with the six corrections above.
 - Rebuild `events.md` from master's payload builders (most existing payload content is wrong); add the 8 missing events, or document `registration-created` as reserved.
@@ -418,11 +425,13 @@ The diff also changes one typo in `v0/users.mdx` and a margin in `src/components
 ### 6.3 `origin/feat/openapi-docs` (2026-10-29, Nican, co-authored by Cursor)
 
 What it does:
+
 - Adds `static/openapi/concat.json` (Swagger 2.0, 2,796 lines, `host: demo.concat.app`).
 - Adds 71 generated files under `docs/api-reference/`: `*.api.mdx`, `*.RequestSchema.json`, `*.StatusCodes.json`, `*.ParamsDetails.json`, `concat-api-documentation.info.mdx`, `sidebar.ts`.
 - Deletes all hand-written v0 pages and the `v0/_category_.json`.
 
 **Spec vs master routes:**
+
 - The spec has 20 operations, the same method+path set as master's 20 `api`-tagged routes (19 `/api/v0` + `/.well-known/jwks.json`). No extras, nothing missing.
 - Request bodies match master's Joi schemas, e.g. users/search limit 1–1000 with filters `roleId`/`email`/`search`/`ownerUserId`, dealers 1–1000/100, the registration and orders filters, and `stockReturn`.
 - The response models include `profilePictureURL`, `ownerUserId`, `uuid` and similar fields. Shape coverage is far better than the hand-written pages.
@@ -439,6 +448,7 @@ What it does:
   - userNotes ids are typed number but are strings.
 
 **Generation and plugin:**
+
 - The branch ships generated output only: no generator script, no config.
 - The file layout (`.api.mdx` with `api:` deflated front matter, `info_path`, `hide_send_button`, `@theme/ApiExplorer/MethodEndpoint`, `@theme/ParamsDetails`, `@theme/RequestSchema`, `@theme/StatusCodes`, `@theme/ApiLogo`, generated `sidebar.ts`) is the output of **`docusaurus-plugin-openapi-docs` + `docusaurus-theme-openapi-docs`** (PaloAltoNetworks), 4.x. The exact version is unverified because nothing pins it.
 - **The branch doesn't add either package** (`package.json` unchanged; `package-lock.json` contains no "openapi"). It also doesn't configure the plugin, `themes`, or `docItemComponent: '@theme/ApiItem'` in `docusaurus.config.js`. `npm run build` is therefore expected to fail on unresolved `@theme/ApiExplorer/*` imports. Not run, per the read-only constraint.
@@ -449,6 +459,7 @@ What it does:
   - Prettier is unaffected (`.prettierignore` covers `docs/` and `static/`). `npm run typecheck` doesn't cover `docs/`.
 
 **Verdict: reuse after edits.** The direction (generated reference from master's own Swagger) is right, and its endpoint set matches master. Required edits:
+
 1. Regenerate `concat.json` from master's `/api/swagger.json`. Ideally add a reproducible export script (fetch from an instance, or a headless `makeServer` + `inject` in the ConCat repo) instead of a hand-downloaded demo snapshot.
 2. Add and pin `docusaurus-plugin-openapi-docs` and `docusaurus-theme-openapi-docs` after confirming React 19 / Docusaurus 3.10 support. Configure the plugin (`specPath`, `outputDir`, `sidebarOptions`), `themes`, and `docItemComponent: '@theme/ApiItem'`.
 3. Generate into `docs/api/…` (or splice the generated sidebar into `apiSidebar`) so the reference stays in the API sidebar. Keep the hand-written intro, getting-started/OAuth/scopes, errors and legacy pages, and fix them per §3.

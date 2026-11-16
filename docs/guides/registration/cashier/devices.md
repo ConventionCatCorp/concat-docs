@@ -20,7 +20,7 @@ Authorizing needs **admin:ticket:scan** (*Mark issued tickets as scanned*) or **
 
 QuikTicket scans the QR codes on tickets for ticketed products ([Ticketed products](../../products/tickets.md)). Attendees find theirs on their **Attendance** page, under **Tickets**, with **Show details**.
 
-A device acts as the account that authorized it, with that account's ticket permissions: scanning, reading, or both. *Devices are authorized for 6 hours before requiring reauthorization with a new code.*
+A device acts as the account that authorized it, with that account's ticket permissions: scanning, reading, or both. _Devices are authorized for 6 hours before requiring reauthorization with a new code._
 
 Badge pickup by registration QR code happens at the Cashier UI, not in QuikTicket: see [Scanner](./scanner.md), section 5.
 
@@ -34,7 +34,7 @@ QuikTicket is on by default. Turning it off hides the **Devices** page, so no ne
 
 2. Reload Housekeeping and open the **Attendees** module.
 
-   <Result>With **Disable QuikTicket** ticked, **Devices** is gone from the sidebar. Its address shows *Device authorization has been disabled for this convention. Please contact convention staff for assistance.*</Result>
+   <Result>With **Disable QuikTicket** ticked, **Devices** is gone from the sidebar. Its address shows _Device authorization has been disabled for this convention. Please contact convention staff for assistance._</Result>
 
 ## Authorize a device
 
@@ -54,7 +54,7 @@ QuikTicket is on by default. Turning it off hides the **Devices** page, so no ne
 
    <Result>The QR code is hidden, and **Request Code** is back for the next device.</Result>
 
-Without either ticket permission, the card says *You do not have permission to authorize a new device.* Devices can't be removed here; an authorization ends on its own after 6 hours.
+Without either ticket permission, the card says _You do not have permission to authorize a new device._ Devices can't be removed here; an authorization ends on its own after 6 hours.
 
 ## Authorize a device for someone else
 
@@ -68,4 +68,4 @@ With **system:devices:manage**, the **Authorize New Device** card also has **Adm
 
    <Result>The device is authorized to that person's account, with their ticket permissions.</Result>
 
-Left blank, **Admin Authorize for User** authorizes to your own account. The person must have **admin:ticket:scan** or **admin:ticket:read**, or an error says *Missing at least one required permission for QuikTicket device*.
+Left blank, **Admin Authorize for User** authorizes to your own account. The person must have **admin:ticket:scan** or **admin:ticket:read**, or an error says _Missing at least one required permission for QuikTicket device_.

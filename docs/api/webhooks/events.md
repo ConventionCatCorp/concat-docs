@@ -7,23 +7,23 @@ displayed_sidebar: apiSidebar
 
 A webhook subscribes to one or more of the events on this page. Each request's body is `{"data": …, "event": "<event name>"}`; this page describes `data` for each event.
 
-| Event | Sent when |
-| --- | --- |
-| [`test`](#test) | Someone clicks **Test** on the webhook in Housekeeping. |
-| [`volunteer-submitted`](#volunteer-submitted) | A volunteer application is created. |
-| [`volunteer-updated`](#volunteer-updated) | A volunteer application changes. |
-| [`volunteer-assigned`](#volunteer-assigned) | A volunteer is assigned to a department. |
+| Event                                           | Sent when                                                       |
+| ----------------------------------------------- | --------------------------------------------------------------- |
+| [`test`](#test)                                 | Someone clicks **Test** on the webhook in Housekeeping.         |
+| [`volunteer-submitted`](#volunteer-submitted)   | A volunteer application is created.                             |
+| [`volunteer-updated`](#volunteer-updated)       | A volunteer application changes.                                |
+| [`volunteer-assigned`](#volunteer-assigned)     | A volunteer is assigned to a department.                        |
 | [`volunteer-unassigned`](#volunteer-unassigned) | A volunteer is removed from a department they were assigned to. |
-| [`volunteer-deleted`](#volunteer-deleted) | A volunteer application is deleted. |
-| [`registration-created`](#registration-created) | Never sent. |
-| [`registration-updated`](#registration-updated) | A registration is created or changes. |
-| [`user-updated`](#user-updated) | A user account is created or changes. |
-| [`order-complete`](#order-complete) | An order is completed. |
-| [`order-canceled`](#order-canceled) | An order is canceled. |
-| [`dealer-upsert`](#dealer-upsert) | A dealer profile is created or changes. |
-| [`application-upsert`](#application-upsert) | A dealer application is created or changes. |
-| [`application-deleted`](#application-deleted) | A dealer application is deleted. |
-| [`nfc-badge-scanned`](#nfc-badge-scanned) | An NFC badge is scanned. |
+| [`volunteer-deleted`](#volunteer-deleted)       | A volunteer application is deleted.                             |
+| [`registration-created`](#registration-created) | Never sent.                                                     |
+| [`registration-updated`](#registration-updated) | A registration is created or changes.                           |
+| [`user-updated`](#user-updated)                 | A user account is created or changes.                           |
+| [`order-complete`](#order-complete)             | An order is completed.                                          |
+| [`order-canceled`](#order-canceled)             | An order is canceled.                                           |
+| [`dealer-upsert`](#dealer-upsert)               | A dealer profile is created or changes.                         |
+| [`application-upsert`](#application-upsert)     | A dealer application is created or changes.                     |
+| [`application-deleted`](#application-deleted)   | A dealer application is deleted.                                |
+| [`nfc-badge-scanned`](#nfc-badge-scanned)       | An NFC badge is scanned.                                        |
 
 ## Payload conventions
 

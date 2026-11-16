@@ -27,18 +27,18 @@ The station prints badges in one of two ways:
 
 <TableFigure title="Printer Status in the station header">
 
-| Printer Status shows | Meaning |
-| --- | --- |
-| **OS Controlled** | No Zebra printer is active; badges print through the browser. <small>Also shown when the chosen Zebra printers are unplugged.</small> |
-| **Primary:** and a printer name | Badges print on that Zebra printer. |
-| **Secondary:** and a printer name, after the primary | A second Zebra printer takes the badge types assigned to it in **Badge type printer preferences**. |
-| **Primary: None selected**, in red | Only a secondary printer is set. |
+| Printer Status shows                                 | Meaning                                                                                                                               |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **OS Controlled**                                    | No Zebra printer is active; badges print through the browser. <small>Also shown when the chosen Zebra printers are unplugged.</small> |
+| **Primary:** and a printer name                      | Badges print on that Zebra printer.                                                                                                   |
+| **Secondary:** and a printer name, after the primary | A second Zebra printer takes the badge types assigned to it in **Badge type printer preferences**.                                    |
+| **Primary: None selected**, in red                   | Only a secondary printer is set.                                                                                                      |
 
 </TableFigure>
 
-Zebra and receipt printers need a browser with WebUSB. Without it, **Add zebra printer** does nothing, and **Receipt Printers** says *It seems like your browser does not support WebUSB. Please use a supported browser.*
+Zebra and receipt printers need a browser with WebUSB. Without it, **Add zebra printer** does nothing, and **Receipt Printers** says _It seems like your browser does not support WebUSB. Please use a supported browser._
 
-When the event checks attendees in without printing ([Cashier UI](./cashier.md), section 3), **Configure Devices** shows *Badge printing is disabled.* and points to the setting that turns printing back on.
+When the event checks attendees in without printing ([Cashier UI](./cashier.md), section 3), **Configure Devices** shows _Badge printing is disabled._ and points to the setting that turns printing back on.
 
 ## Add a Zebra badge printer
 
@@ -46,7 +46,7 @@ Connect the printer to the station computer by USB and load the badge labels fir
 
 1. In the Cashier UI, click **Configure Devices**.
 
-   <Result>A **Configure Devices** dialog opens. With no Zebra printer yet, **Available Badge Printers** says *No other badge printers available, try adding one manually.*</Result>
+   <Result>A **Configure Devices** dialog opens. With no Zebra printer yet, **Available Badge Printers** says _No other badge printers available, try adding one manually._</Result>
 
 2. Next to **Available Badge Printers**, click **Add Manually**, then **Add zebra printer**.
 
@@ -64,7 +64,7 @@ Connect the printer to the station computer by USB and load the badge labels fir
 
    <Result>The button reads **Active as Primary**, and **Printer Status** shows **Primary:** and the printer's name.</Result>
 
-6. *(Optional, second printer)* Add another Zebra printer with steps 2 and 3, then click **Set as Secondary** on it.
+6. _(Optional, second printer)_ Add another Zebra printer with steps 2 and 3, then click **Set as Secondary** on it.
 
    <Result>The button reads **Active as Secondary**, and **Printer Status** adds **Secondary:** and its name.</Result>
 
@@ -86,7 +86,7 @@ The test printer lets you try the printing workflow without a printer.
 
 2. On an attendee's page, click **Print Badge**.
 
-   <Result>Nothing prints. A message says *This is just a test for* and the attendee's badge type.</Result>
+   <Result>Nothing prints. A message says _This is just a test for_ and the attendee's badge type.</Result>
 
 3. To remove the test printer, click its gear button, then **Remove**.
 
@@ -118,8 +118,8 @@ The browser offers only Epson USB devices here. The station uses the first recei
 
 A receipt printer prints:
 
-- a *CASH PAYMENT* receipt after **Cash Payment** ([Cashier UI](./cashier.md), section 4.2), with your event's name and venue, the registration level, the amount, and the attendee's user ID and email address; then the cash drawer opens. **Card Payment** prints nothing.
-- a *PICK LIST* of undelivered items, from **Print Pick List** under **Undelivered products**. The button appears only when a receipt printer is connected.
+- a _CASH PAYMENT_ receipt after **Cash Payment** ([Cashier UI](./cashier.md), section 4.2), with your event's name and venue, the registration level, the amount, and the attendee's user ID and email address; then the cash drawer opens. **Card Payment** prints nothing.
+- a _PICK LIST_ of undelivered items, from **Print Pick List** under **Undelivered products**. The button appears only when a receipt printer is connected.
 
 Connect the receipt printer to the station computer by USB, and the cash drawer to the receipt printer, first.
 
@@ -139,4 +139,4 @@ Connect the receipt printer to the station computer by USB, and the cash drawer 
 
    <Result>The cash drawer opens.</Result>
 
-If the printer reports a problem with a receipt or pick list, a message starting *Printer reported an error:* says what it was.
+If the printer reports a problem with a receipt or pick list, a message starting _Printer reported an error:_ says what it was.

@@ -28,18 +28,18 @@ Every error response has an `errors` object with **exactly one** of the followin
 }
 ```
 
-| Category | HTTP status | Value |
-| --- | --- | --- |
-| [`validation`](#validation-errors) | <Highlight color="#c7620a">400</Highlight> | Array of validation errors |
-| [`logic`](#logic-errors) | <Highlight color="#c7620a">400</Highlight>, <Highlight color="#c7620a">413</Highlight> | Array of logic errors |
-| [`authentication`](#authentication-errors) | <Highlight color="#c7620a">401</Highlight> | Object |
-| [`access`](#access-errors) | <Highlight color="#c7620a">403</Highlight> | Object |
-| [`resource`](#resource-errors) | <Highlight color="#c7620a">404</Highlight> | Object |
-| [`usage`](#usage-errors) | <Highlight color="#c7620a">404</Highlight> | String |
-| [`rateLimit`](#rate-limit-errors) | <Highlight color="#c7620a">429</Highlight> | Object |
-| [`server`](#server-errors) | <Highlight color="#c70a0a">500</Highlight> | Object |
-| [`internal`](#internal-errors) | <Highlight color="#c70a0a">500</Highlight> | String or array of strings |
-| [`serviceUnavailable`](#service-unavailable-errors) | <Highlight color="#c70a0a">503</Highlight> | Array of strings |
+| Category                                            | HTTP status                                                                            | Value                      |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------- |
+| [`validation`](#validation-errors)                  | <Highlight color="#c7620a">400</Highlight>                                             | Array of validation errors |
+| [`logic`](#logic-errors)                            | <Highlight color="#c7620a">400</Highlight>, <Highlight color="#c7620a">413</Highlight> | Array of logic errors      |
+| [`authentication`](#authentication-errors)          | <Highlight color="#c7620a">401</Highlight>                                             | Object                     |
+| [`access`](#access-errors)                          | <Highlight color="#c7620a">403</Highlight>                                             | Object                     |
+| [`resource`](#resource-errors)                      | <Highlight color="#c7620a">404</Highlight>                                             | Object                     |
+| [`usage`](#usage-errors)                            | <Highlight color="#c7620a">404</Highlight>                                             | String                     |
+| [`rateLimit`](#rate-limit-errors)                   | <Highlight color="#c7620a">429</Highlight>                                             | Object                     |
+| [`server`](#server-errors)                          | <Highlight color="#c70a0a">500</Highlight>                                             | Object                     |
+| [`internal`](#internal-errors)                      | <Highlight color="#c70a0a">500</Highlight>                                             | String or array of strings |
+| [`serviceUnavailable`](#service-unavailable-errors) | <Highlight color="#c70a0a">503</Highlight>                                             | Array of strings           |
 
 ### Validation Errors
 
@@ -60,7 +60,8 @@ Validation Errors indicate that the request didn't match the endpoint's schema: 
 </Attribute>
 
 <Attribute id="validation-errors-attr-type" name="type" type="string" response>
-  The rule that failed, for example <code>any.required</code>, <code>number.max</code> or <code>string.email</code>. ConCat also uses <code>custom.unique</code> when a value, such as an email address, is already in use.
+  The rule that failed, for example <code>any.required</code>, <code>number.max</code> or <code>string.email</code>.
+  ConCat also uses <code>custom.unique</code> when a value, such as an email address, is already in use.
 </Attribute>
 
 <Attribute id="validation-errors-attr-context" name="context" type="object" response>
@@ -92,7 +93,8 @@ Logic Errors indicate an issue with the data provided in the request or some oth
 #### Attributes
 
 <Attribute id="logic-errors-attr-code" name="code" type="number" response>
-  A code indicating the specific logic error. See [Logic Error Codes](/docs/api/errors/logicerrorcodes) for possible values.
+  A code indicating the specific logic error. See [Logic Error Codes](/docs/api/errors/logicerrorcodes) for possible
+  values.
 </Attribute>
 
 <Attribute id="logic-errors-attr-message" name="message" type="string" response>
@@ -100,7 +102,8 @@ Logic Errors indicate an issue with the data provided in the request or some oth
 </Attribute>
 
 <Attribute id="logic-errors-attr-args" name="args" type="object" optional response>
-  Values that explain the error. For example, logic errors <code>31</code>, <code>116</code> and <code>139</code> carry the offending scopes in <code>args.scopes</code>.
+  Values that explain the error. For example, logic errors <code>31</code>, <code>116</code> and <code>139</code> carry
+  the offending scopes in <code>args.scopes</code>.
 </Attribute>
 
 #### Example
@@ -148,7 +151,8 @@ Access Errors indicate an API authentication or permission restriction preventin
 </Attribute>
 
 <Attribute id="access-errors-attr-permissions" name="permissions" type="array of string" optional response>
-  The scopes or permissions that are required to access the resource. Not provided if the error is not related to permissions. A token that lacks the endpoint's scope gets code <code>18</code> with the missing scope here.
+  The scopes or permissions that are required to access the resource. Not provided if the error is not related to
+  permissions. A token that lacks the endpoint's scope gets code <code>18</code> with the missing scope here.
 </Attribute>
 
 #### Example
@@ -169,13 +173,13 @@ Access Errors indicate an API authentication or permission restriction preventin
 
 The codes most relevant to API clients:
 
-| Code | Name | Message |
-| ---: | --- | --- |
-| 1 | `MissingCredentials` | Missing OAuth credentials |
-| 2 | `InvalidAuthHeader` | Invalid Authorization header, must be Basic |
-| 3 | `InvalidCredentials` | Invalid OAuth credentials |
-| 18 | `MissingPermissions` | Missing permissions |
-| 26 | `UnauthorizedOAuthScopes` | Unauthorized OAuth scope(s) |
+| Code | Name                      | Message                                     |
+| ---: | ------------------------- | ------------------------------------------- |
+|    1 | `MissingCredentials`      | Missing OAuth credentials                   |
+|    2 | `InvalidAuthHeader`       | Invalid Authorization header, must be Basic |
+|    3 | `InvalidCredentials`      | Invalid OAuth credentials                   |
+|   18 | `MissingPermissions`      | Missing permissions                         |
+|   26 | `UnauthorizedOAuthScopes` | Unauthorized OAuth scope(s)                 |
 
 ### Resource Errors
 

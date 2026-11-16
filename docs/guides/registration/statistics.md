@@ -26,20 +26,20 @@ The Housekeeping dashboard is the first page you see in Housekeeping.
 
 1. Go to **Housekeeping › Attendees › Dashboard** ([Start here](../quickstart/start-here.md), section 2).
 
-   <Result>The **Dashboard** page shows **Total Registrations**, **Total Paid Registrations**, the cards in Table 2.1 that apply, and a card per tier, named with *(Paid)*, counting its paid registrations.</Result>
+   <Result>The **Dashboard** page shows **Total Registrations**, **Total Paid Registrations**, the cards in Table 2.1 that apply, and a card per tier, named with _(Paid)_, counting its paid registrations.</Result>
 
-2. *(If the card is shown)* On **Accounts Pending Review**, click **View**.
+2. _(If the card is shown)_ On **Accounts Pending Review**, click **View**.
 
    <Result>An **Accounts Pending Review** dialog lists the accounts, each linked to its profile.</Result>
 
 <TableFigure title="Cards shown only when they apply">
 
-| Card | Shown when |
-| --- | --- |
-| **Badges Printed** | At least one badge has been printed. |
-| **Accounts Pending Review** | An account is waiting for review, and you have `user:note:delete`. |
-| **Pending Refund Requests** | A refund request is waiting, and you have `refund:create`. The title links to **Refund Requests**. |
-| **Identity Verifications Left**, and an **Identity:** card per status | ConCat Support has turned on identity verification for your event. |
+| Card                                                                  | Shown when                                                                                         |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Badges Printed**                                                    | At least one badge has been printed.                                                               |
+| **Accounts Pending Review**                                           | An account is waiting for review, and you have `user:note:delete`.                                 |
+| **Pending Refund Requests**                                           | A refund request is waiting, and you have `refund:create`. The title links to **Refund Requests**. |
+| **Identity Verifications Left**, and an **Identity:** card per status | ConCat Support has turned on identity verification for your event.                                 |
 
 </TableFigure>
 
@@ -49,7 +49,7 @@ The Housekeeping dashboard is the first page you see in Housekeeping.
 
    <Result>The **Dashboard** page shows two cards: **Registration Breakdown by Tier** and **Count of Registrations per Tier**.</Result>
 
-**Registration Breakdown by Tier** has a row per tier and a **Total** row, with the columns **Product**, **Total Registrations**, **Paid**, **Printed** and **Picked Up**. If your event still uses the old child registration, child badges are added in brackets, such as *(+2)*, and the **Paid** and **Printed** headings end in **(Children)**.
+**Registration Breakdown by Tier** has a row per tier and a **Total** row, with the columns **Product**, **Total Registrations**, **Paid**, **Printed** and **Picked Up**. If your event still uses the old child registration, child badges are added in brackets, such as _(+2)_, and the **Paid** and **Printed** headings end in **(Children)**.
 
 **Count of Registrations per Tier** is a stacked bar chart, **Registrations**, of **Paid**, **Unpaid** and **Refunds** per tier.
 
@@ -107,8 +107,8 @@ Payouts are listed only when automatic Stripe payouts to your bank account are s
 
    <Result>The charts update to that option and those orders.</Result>
 
-3. *(Optional)* Under **Download**, click **CSV** or **JSON**.
+3. _(Optional)_ Under **Download**, click **CSV** or **JSON**.
 
    <Result>The browser downloads the option's answers in that format.</Result>
 
-**Download** needs `product:manage`. With no options, the tab says *No options found.*; for an option nobody has answered, *No products have been ordered with this option.*
+**Download** needs `product:manage`. With no options, the tab says _No options found._; for an option nobody has answered, _No products have been ordered with this option._

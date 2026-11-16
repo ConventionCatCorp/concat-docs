@@ -28,16 +28,16 @@ You write the email, ConCat works out the recipients, and you review the final l
 :::
 <TableFigure title="The four Mass Email pages">
 
-| Menu path | Permission | Chooses recipients by |
-| --- | --- | --- |
-| **Housekeeping › Attendees › Mass Email** | `massemail` | **Email Target**: picked people, a role, a gatekeeping silo, or a ready-made group (section 3) |
-| **Housekeeping › Registration › Mass Email** | `massemail`, plus `registration:update` to load recipients | Badge product and payment status (section 4) |
-| **Housekeeping › Volunteers › Mass Email** | `massemail` <small>Department leads have it through their lead role.</small> | Department and assignment (section 5) |
-| **Housekeeping › Dealers › Mass Email** | `vendor:massemail` | Area, table type and application status (section 6) |
+| Menu path                                    | Permission                                                                   | Chooses recipients by                                                                          |
+| -------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Housekeeping › Attendees › Mass Email**    | `massemail`                                                                  | **Email Target**: picked people, a role, a gatekeeping silo, or a ready-made group (section 3) |
+| **Housekeeping › Registration › Mass Email** | `massemail`, plus `registration:update` to load recipients                   | Badge product and payment status (section 4)                                                   |
+| **Housekeeping › Volunteers › Mass Email**   | `massemail` <small>Department leads have it through their lead role.</small> | Department and assignment (section 5)                                                          |
+| **Housekeeping › Dealers › Mass Email**      | `vendor:massemail`                                                           | Area, table type and application status (section 6)                                            |
 
 </TableFigure>
 
-The default *admin* and *hr* roles have `massemail`; *admin* and *dealersden* have `vendor:massemail`.
+The default _admin_ and _hr_ roles have `massemail`; _admin_ and _dealersden_ have `vendor:massemail`.
 
 ## Send a mass email
 
@@ -61,15 +61,15 @@ These steps use a hand-picked list, which is also how to send yourself a test fi
 
 5. Click **Prepare Email**.
 
-   <Result>A **Review Email** card replaces the form: *The email will be sent to … individual(s).* If anyone was skipped, it adds *… users were disqualified for not having their emails verified, or for being banned.*</Result>
+   <Result>A **Review Email** card replaces the form: _The email will be sent to … individual(s)._ If anyone was skipped, it adds _… users were disqualified for not having their emails verified, or for being banned._</Result>
 
 6. Click **View List** on the preview.
 
-   <Result>An **Email Recipients** dialog lists everyone and says *This list is definitive and not an estimate.* Click **Close**.</Result>
+   <Result>An **Email Recipients** dialog lists everyone and says _This list is definitive and not an estimate._ Click **Close**.</Result>
 
 7. Click **Send Email**.
 
-   <Result>An **Email Sent** card says *Your email has been queued to be sent to … individual(s).*, with a **Reset Form** button.</Result>
+   <Result>An **Email Sent** card says _Your email has been queued to be sent to … individual(s)._, with a **Reset Form** button.</Result>
 
 8. Click **Reset Form**.
 
@@ -85,19 +85,19 @@ Targets that need a permission are listed only if you have it. The ready-made gr
 
 <TableFigure title="Email targets">
 
-| Target | Sends to | Needs |
-| --- | --- | --- |
-| **Custom (Individual Users)** | People you pick in **Individual User(s)**. | — |
-| **Attendees** | Registered attendees, chosen as on the Registration page (section 4). | `registration:update` and `product:manage` |
-| **Gatekeeping** | Ticket holders in one gatekeeping silo, by **Ticket status**. | `raffle:manage` |
-| **Roles** | Everyone with one **Role**, for this convention or globally. | `system:permission:read` |
-| **Newsletter Subscribers** | Every account in your organization that ticked the newsletter box. | — |
-| **Unpaid Newsletter Subscribers** | Subscribers with an unpaid registration for this convention. | — |
-| **All Unpaid Users** | Accounts in your organization with a confirmed email and no registration, or an unpaid one at any of your conventions. | — |
-| **Fursuiters (all)** | People whose registration for this convention has the flag with the short name `fursuits`. | — |
-| **Requesting ASL Interpreters** | People whose registration for this convention has the flag with the short name `asl`. | — |
-| **with a Badge Printed** | People whose badge for this convention has been printed. | — |
-| **Leads Only** | This convention's department leads. | — |
+| Target                            | Sends to                                                                                                               | Needs                                      |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| **Custom (Individual Users)**     | People you pick in **Individual User(s)**.                                                                             | —                                          |
+| **Attendees**                     | Registered attendees, chosen as on the Registration page (section 4).                                                  | `registration:update` and `product:manage` |
+| **Gatekeeping**                   | Ticket holders in one gatekeeping silo, by **Ticket status**.                                                          | `raffle:manage`                            |
+| **Roles**                         | Everyone with one **Role**, for this convention or globally.                                                           | `system:permission:read`                   |
+| **Newsletter Subscribers**        | Every account in your organization that ticked the newsletter box.                                                     | —                                          |
+| **Unpaid Newsletter Subscribers** | Subscribers with an unpaid registration for this convention.                                                           | —                                          |
+| **All Unpaid Users**              | Accounts in your organization with a confirmed email and no registration, or an unpaid one at any of your conventions. | —                                          |
+| **Fursuiters (all)**              | People whose registration for this convention has the flag with the short name `fursuits`.                             | —                                          |
+| **Requesting ASL Interpreters**   | People whose registration for this convention has the flag with the short name `asl`.                                  | —                                          |
+| **with a Badge Printed**          | People whose badge for this convention has been printed.                                                               | —                                          |
+| **Leads Only**                    | This convention's department leads.                                                                                    | —                                          |
 
 </TableFigure>
 
@@ -151,11 +151,11 @@ A lead without `volunteer:admin` sees only their own departments. Leads named in
 
 <TableFigure title="Volunteer filters">
 
-| Filter | Adds or keeps |
-| --- | --- |
-| **Assigned** | Adds volunteers assigned to a ticked department. |
+| Filter         | Adds or keeps                                             |
+| -------------- | --------------------------------------------------------- |
+| **Assigned**   | Adds volunteers assigned to a ticked department.          |
 | **Unassigned** | Adds volunteers with no department, whichever are ticked. |
-| **Only Staff** | Keeps only volunteers who are staff members. |
+| **Only Staff** | Keeps only volunteers who are staff members.              |
 
 </TableFigure>
 
