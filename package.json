@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "prestart": "npm run gen-api-docs",
     "start": "docusaurus start",
+    "prebuild": "npm run gen-api-docs",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -15,7 +17,7 @@
     "typecheck": "tsc",
     "format": "eslint --fix . && prettier --write .",
     "format:check": "eslint . && prettier --check .",
-    "gen-api-docs": "docusaurus clean-api-docs concat && docusaurus gen-api-docs concat && git checkout docs/api/endpoints/v0/reference/_category_.json && eslint --fix docs/api/endpoints/v0/reference && prettier --write docs/api/endpoints/v0/reference"
+    "gen-api-docs": "node scripts/gen-api-docs.mjs"
   },
   "engines": {
     "node": "^26"

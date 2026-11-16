@@ -39,7 +39,7 @@ const config = {
         id: 'openapi',
         docsPluginId: 'classic',
         config: {
-          // The v0 API reference, generated from ConCat master's Swagger spec (scripts/update-openapi.mjs).
+          // The v0 API reference, generated from a ConCat instance's Swagger spec (scripts/gen-api-docs.mjs).
           concat: {
             specPath: 'static/openapi/concat.json',
             outputDir: 'docs/api/endpoints/v0/reference',

@@ -5,7 +5,7 @@ import stylistic from '@stylistic/eslint-plugin';
 import * as mdx from 'eslint-plugin-mdx';
 
 export default [
-  { ignores: ['build/', '.docusaurus/', 'node_modules/', 'static/'] },
+  { ignores: ['build/', '.docusaurus/', 'node_modules/', 'static/', 'docs/api/endpoints/v0/reference/'] },
   {
     ...mdx.flat,
     // Only docs/ is compiled as MDX; READMEs and docs-style/ are plain Markdown.

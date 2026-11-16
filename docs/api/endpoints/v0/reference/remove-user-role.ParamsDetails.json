@@ -1,1 +1,0 @@
-{"parameters":[{"name":"userId","in":"path","required":true,"schema":{"type":"integer","minimum":0}},{"name":"roleId","in":"path","required":true,"schema":{"type":"integer","minimum":0}}]}
