@@ -133,7 +133,7 @@ Each application has two kinds of permission:
 
 3. Enter a **Name** and **Description**. Under **Callback URIs**, type each address the application returns users to and click **+** after each. Tick the **Application Permissions** it needs, then click **Save**.
 
-   <Result>An **Application created!** message appears, and a **New secret** dialog shows the **ID:** and **Secret:**.</Result>
+   <Result>An **Application created!** message appears, and a **New secret** dialog shows the application's ID and secret, such as **ID:5** and **Secret: 3f9a1c7e5b2d48a0c6e1f7b39d2a5c84**.</Result>
 
 4. Copy the **ID** and **Secret** somewhere safe, then click **Close**.
 
@@ -165,8 +165,8 @@ ConCat checks only the *origin* of the return address (its scheme, host and port
 
    <Result>An **Application deleted!** message appears and the row disappears.</Result>
 
-:::tip[The name is an example]
-*Star26 Schedule* is an example. The dialog and the authorize screen show your application's own name.
+:::tip[The values are examples]
+*Star26 Schedule*, the ID 5 and the secret in **Secret: 3f9a1c7e5b2d48a0c6e1f7b39d2a5c84** are examples. The app shows your application's own name, ID and secret.
 :::
 
 ## What attendees see when they authorize an app

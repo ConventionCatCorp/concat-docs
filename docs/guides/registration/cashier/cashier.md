@@ -103,7 +103,7 @@ Station settings and devices are saved in the browser, not in ConCat. Set up eac
 | **Print separate staff badge** | Off | Two badges for staff and volunteers: one with their attendance type, one with STAFF. <small>Off: one badge with both, separated by a slash.</small> |
 | **Print separate dealer badge** | Off | The same for dealers, with DEALER. |
 | **Show reprint modal** | On | Reprints ask for a reason (section 5). <small>Off: **Re-print Badge** prints at once, with no reason or design override. Locked on if the event forces a reprint reason (section 3).</small> |
-| Design override <small>The unlabeled list of badge designs</small> | (Default) | Prints every badge here with the chosen design, whatever the attendance level. |
+| The list of badge designs after **Show reprint modal** | (Default) | Prints every badge here with the chosen design, whatever the attendance level. |
 | **Badge type printer preferences** | Minor badges on the secondary, the rest on the primary | Zebra printer for each badge type (step 4). With no secondary printer, all print on the primary. |
 
 </TableFigure>

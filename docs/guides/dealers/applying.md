@@ -48,7 +48,7 @@ The first page is your dealer form ([Dealer settings, policy and form](./setting
 A typed full-name agreement must match the first and last name on the account, or the field shows *Name does not match user profile (Alex Smith)*.
 
 :::tip[The names and numbers are examples]
-*Alex Smith*, *approved*, *Main Hall*, 12 and 2 on this page are examples. The app shows the account's first and last name, the application's status, the dealer area, the table number you assign and the table type's **Dealer assistant count limit**.
+*Alex Smith*, *approved*, *Dealers' Den*, 12 and 2 on this page are examples. The app shows the account's first and last name, the application's status, the dealer area, the table number you assign and the table type's **Dealer assistant count limit**.
 :::
 
 To change details later, the dealer clicks **Edit Dealer** on the space page. The policy agreement stays ticked and can't be unticked.
@@ -77,7 +77,7 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 1. After your team approves the application, open **Dealing** as the dealer.
 
-   <Result>An alert says *Your Main Hall application has been approved and is pending payment.*, with a **Pay for Table** button.</Result>
+   <Result>An alert says *Your Dealers' Den application has been approved and is pending payment.*, with a **Pay for Table** button.</Result>
 
 2. Click **Pay for Table**.
 
@@ -85,7 +85,7 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 3. Pay ([Checkout and payment](../orders/checkout.md)), then open **Dealing** again.
 
-   <Result>A green alert says **Your application has been approved!**, with the table number, such as *Your table assignment for Main Hall* **12**, or *The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention.*</Result>
+   <Result>A green alert says **Your application has been approved!**, with the table number, such as *Your table assignment for Dealers' Den* **12**, or *The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention.*</Result>
 
 Once approved, the space page also shows **Seating Preferences** and, if the table type allows assistants, **Manage Assistants**.
 

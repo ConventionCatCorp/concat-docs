@@ -216,7 +216,7 @@ The dealer's **Seating Requests** card lists their requests to sit next to other
    <Result>The tab shows the dealer form as the dealer sees it, with their answers, or *You are currently banned from dealing at the convention.* for someone banned.</Result>
 
 :::caution[Watch out]
-- Creating or editing a dealer profile, even from Housekeeping, needs **Enable Dealers Module** on in [Dealer settings](./settings.md). Sub-accounts can't be dealers.
+- Creating a dealer profile, even from Housekeeping, needs **Enable Dealers Module** on in [Dealer settings](./settings.md). Sub-accounts can't be dealers.
 - Read answers on the **Dealer** tab, but change them in **Dealer Information** (section 7). **Continue** on the tab saves the form, then opens your own **Dealing** page, not the dealer's.
 :::
 

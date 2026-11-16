@@ -52,13 +52,17 @@ These emails come from your **Registration Email** address.
 
 | Template | Sent when | Sent to | Can be turned off |
 | --- | --- | --- | --- |
-| `paymentSuccess` <small>Order #*n* Payment Successful</small> | An order is completed with at least one item priced above zero. Staff can resend it from the order. | The order's owner | No |
-| `ticketIssued` <small>Your Event Ticket for *product*</small> | An order is completed: one per ticketed product in it. | The buyer | Yes |
-| `registrationQR` <small>Registration Confirmation for *name*</small> | A badge (not an upgrade) is paid for, with **Enable Registration QR Codes** on in **Registration › Settings**. | The registrant | Yes |
+| `paymentSuccess` <small>Order #13 Payment Successful</small> | An order is completed with at least one item priced above zero. Staff can resend it from the order. | The order's owner | No |
+| `ticketIssued` <small>Your Event Ticket for Photo Shoot</small> | An order is completed: one per ticketed product in it. | The buyer | Yes |
+| `registrationQR` <small>Registration Confirmation for Alex Smith</small> | A badge (not an upgrade) is paid for, with **Enable Registration QR Codes** on in **Registration › Settings**. | The registrant | Yes |
 | `forcedRegistration` <small>Registration Created</small> | Staff create a registration for someone. | The person | Yes |
-| `disputeCreated` <small>Order #*n* - Payment Dispute Opened</small> | A card payment is disputed in Stripe. | Global admins | No |
+| `disputeCreated` <small>Order #13 - Payment Dispute Opened</small> | A card payment is disputed in Stripe. | Global admins | No |
 
 </TableFigure>
+
+:::tip[The values in subjects are examples]
+The 13, *Photo Shoot*, *Alex Smith* and *Art Show* in subjects on this page are examples. Each email fills in its own order number, product, person or department.
+:::
 
 ## Refunds
 
@@ -68,9 +72,9 @@ These emails come from your **Registration Email** address.
 
 | Template | Sent when | Sent to | Can be turned off |
 | --- | --- | --- | --- |
-| `refundRequested` <small>Order #*n* - New Refund Request</small> | An attendee requests a refund. | The order's owner, and your **Registration Email** address | No |
-| `refundCompleted` <small>Refund Request Approved for Order #*n*</small> | Staff refund an order. | The order's owner | No |
-| `refundDenied` <small>Refund Request Denied for Order #*n*</small> | Staff deny a refund request. | The order's owner | No |
+| `refundRequested` <small>Order #13 - New Refund Request</small> | An attendee requests a refund. | The order's owner, and your **Registration Email** address | No |
+| `refundCompleted` <small>Refund Request Approved for Order #13</small> | Staff refund an order. | The order's owner | No |
+| `refundDenied` <small>Refund Request Denied for Order #13</small> | Staff deny a refund request. | The order's owner | No |
 
 </TableFigure>
 
@@ -83,7 +87,7 @@ Sent only while **Enable Volunteer Emails** is on in **Volunteers › Volunteer 
 | Template | Sent when | Sent to | Can be turned off |
 | --- | --- | --- | --- |
 | `volunteerConfirm` <small>Volunteer Confirmation</small> | A volunteer submits or changes their own application. | The volunteer | No <small>Stops when **Enable Volunteer Emails** is off</small> |
-| `volunteerAssignedToVolunteer` <small>Volunteer Assignment: *department*</small> | Staff assign a volunteer to a department. | The volunteer | Yes |
+| `volunteerAssignedToVolunteer` <small>Volunteer Assignment: Art Show</small> | Staff assign a volunteer to a department. | The volunteer | Yes |
 | `volunteerAssignedToLead` <small>New Volunteer Assigned</small> | Staff assign a volunteer to a department. | The department's email address and each of its leads | Yes |
 | `undoAdmin` <small>Staff status have been removed</small> | Staff use **Remove Staff** on a volunteer. | The person | Yes |
 

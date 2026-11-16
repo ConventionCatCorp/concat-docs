@@ -151,14 +151,14 @@ Without a connection (section 2), the form shows a warning and **Submit** is gra
 | **Require Not Won** | Leaves out anyone already picked, with a booking, in another block. |
 | **Show Room Availability** | Adds a **View room availability** button for attendees. |
 | **Visibility** | **Hidden** (not on the hotel page), **Always Visible** (everyone) or **Eligible Only** (attendees who may enter). |
-| **Restrict to Roles**, **Restrict to Products** | Only people with one of these roles or products may enter. Both empty: everyone. |
+| **Restrict to Roles**, **Restrict to Products** | Only people with one of these roles or products may enter. With both set, they need one of the roles and one of the products. Both empty: everyone. |
 | **Meeting Max Group Code** | MeetingMax only. The rooms' group; blank for a main block with no group code. |
 | **Passkey Attendee / Access Code** | Passkey only. Your rooms' access or attendee code, one per block. |
 
 </TableFigure>
 
 :::note[Who may enter]
-An attendee may enter when they meet **Require Registration** and **Require Not Won** and, if you chose roles or products, have one of them.
+An attendee may enter when they meet **Require Registration** and **Require Not Won** and have one of the roles you chose and one of the products you chose, for each list you set.
 :::
 
 ## Edit a block

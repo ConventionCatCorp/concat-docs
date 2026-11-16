@@ -42,7 +42,7 @@ The stock in **In Stock: 15/20 Available** and the tier in **Free addon from Gen
 
 ## Which products can be addons
 
-**Product Search** finds any product in this convention, including badge and dealer products, by **Name** or ID (not display name). A **Hidden** product can be an addon: that's how you give away an item nobody can buy on its own.
+**Product Search** finds any product in this convention, including badge and dealer products, by **Name**, **Display Name** or ID. A **Hidden** product can be an addon: that's how you give away an item nobody can buy on its own.
 
 ConCat refuses these, with the message shown:
 

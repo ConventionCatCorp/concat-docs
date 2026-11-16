@@ -34,7 +34,7 @@ Needs `vendor:update`, which the default *dealersden* role has.
 
 | Setting | What it does |
 | --- | --- |
-| **Enable Dealers Module** | Shows **Dealing** in the attendee sidebar and opens the application. <small>While off, nobody, not even staff, can create or edit a dealer profile. **Housekeeping › Dealers** stays available.</small> |
+| **Enable Dealers Module** | Shows **Dealing** in the attendee sidebar and opens the application. <small>While off, nobody, not even staff, can create a dealer profile. **Housekeeping › Dealers** stays available.</small> |
 | **Force Dealer Registration** | Dealers must register for the convention before paying for a table. <small>Until then, checkout shows **Convention Registration Needed**; the badge can share the cart with the table. While **Open Registration** is off, dealers can't pay for tables at all.</small> |
 | **Dealers Email** | The part before the @ of the address dealer emails come from, also shown to dealers as the contact. <small>Letters, numbers, dots and dashes only. Same setting as **Dealers Email** on the **Contact** tab of **System › Settings**.</small> |
 
