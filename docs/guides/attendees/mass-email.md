@@ -61,7 +61,7 @@ These steps use a hand-picked list, which is also how to send yourself a test fi
 
 5. Click **Prepare Email**.
 
-   <Result>A **Review Email** card replaces the form: *The email will be sent to … individual(s).* If anyone was skipped, it adds *… users were disqualified for not having their emails verified, or for being banned.*</Result>
+   <Result>A **Review Email** card replaces the form: *The email will be sent to 2 individual(s).* If anyone was skipped, it adds *1 users were disqualified for not having their emails verified, or for being banned.*</Result>
 
 6. Click **View List** on the preview.
 
@@ -69,11 +69,15 @@ These steps use a hand-picked list, which is also how to send yourself a test fi
 
 7. Click **Send Email**.
 
-   <Result>An **Email Sent** card says *Your email has been queued to be sent to … individual(s).*, with a **Reset Form** button.</Result>
+   <Result>An **Email Sent** card says *Your email has been queued to be sent to 2 individual(s).*, with a **Reset Form** button.</Result>
 
 8. Click **Reset Form**.
 
    <Result>The form is empty again.</Result>
+
+:::tip[The counts are examples]
+The counts in **Preview — 2 Estimated Recipients** and in the messages after it are examples. The app counts the people you chose.
+:::
 
 :::caution[Watch out]
 **Send Email** can't be undone. Check the subject, body and recipient count on the **Review Email** card first; to change something, click **Cancel** there.

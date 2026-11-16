@@ -116,7 +116,7 @@ Blue badges show the field that matched and its value: **Email:**, **Badge Name:
 
 1. Click a person in the results.
 
-   <Result>Their profile opens on the **Name** tab, with **[ID: …]** and status badges in the header. The address ends in `/housekeeping/attendees/user/` and the ID.</Result>
+   <Result>Their profile opens on the **Name** tab, with **[ID: 7]** and status badges in the header. The address ends in `/housekeeping/attendees/user/` and the ID.</Result>
 
 2. Look over the **Name** tab.
 
@@ -125,6 +125,10 @@ Blue badges show the field that matched and its value: **Email:**, **Badge Name:
 3. Hover over the icon after the attendance type in the **Registration** row.
 
    <Result>A green tick says *This user has an active entitlement that grants this attendance type.* and links to the paying order. A warning sign says *This user does not have an active order correlated with this registration.*: it isn't paid.</Result>
+
+:::tip[The IDs are examples]
+IDs such as 1234 in **ID: #1234** and 7 in **[ID: 7]** are examples. The app shows each person's own user ID.
+:::
 
 :::tip[Sub-accounts]
 No **Notes**, **Orders**, **Volunteer** or **Dealer** tab; **Owner account** links to the parent. The parent's **Registration** row links each sub-account under **Other Accounts:**.

@@ -46,6 +46,10 @@ The first number is how many registrations use the image; the second is its limi
 
    <Result>A **Badge art has been updated** message appears, and the card shows the limit, such as *Limit: 0 / 100*.</Result>
 
+:::tip[The limit is an example]
+The 100 in *Limit: 0 / 100* is an example. The card shows how many badges have used the image, and the limit you set.
+:::
+
 To remove a limit, untick **Enable limit** in **Configure limit** and click **Update**; the card shows *∞* again.
 
 ## Delete an image

@@ -55,7 +55,11 @@ Card payments go through your Stripe account. Stripe can also offer wallet butto
 
 1. In **Pay by Credit / Debit Card with Stripe**, choose a payment method, enter the details, and click **Pay** followed by the amount.
 
-   <Result>**Processing Payment...** shows, then a green card says *Your payment has been successful! Thank you!* If any item cost more than zero, the attendee gets the *Order #… Payment Successful* email, their receipt.</Result>
+   <Result>**Processing Payment...** shows, then a green card says *Your payment has been successful! Thank you!* If any item cost more than zero, the attendee gets the *Order #13 Payment Successful* email, their receipt.</Result>
+
+:::tip[The order number is an example]
+The 13 in *Order #13 Payment Successful* and **Order #13** is an example. The app shows the order's own number.
+:::
 
 A declined card shows ***Your payment was declined** by our payment processor:* and Stripe's reason; after three failures it adds *If you repeatedly see this message, you may want to contact the event and your financial institution for assistance.* If the cart changed during payment, the attendee sees *The order has changed since loading your cart. Please try again.*
 
@@ -81,7 +85,7 @@ With nothing to pay, there's no card form: a free order shows a **Confirm Order*
 
 1. On a checkout with nothing left to pay, click **Confirm Order**.
 
-   <Result>A green card says *Your payment has been successful! Thank you!*, and the order is paid. The *Order #… Payment Successful* email is sent only if an item cost more than zero.</Result>
+   <Result>A green card says *Your payment has been successful! Thank you!*, and the order is paid. The *Order #13 Payment Successful* email is sent only if an item cost more than zero.</Result>
 
 ## What stops a payment
 
@@ -111,7 +115,7 @@ An unpaid order shows **Payment error** with *The payment is not complete, but n
 
 1. As an attendee, click **Transaction history** under **Event store** in the homepage sidebar.
 
-   <Result>The **Transaction history** page lists the attendee's orders as cards, newest first, each with **Order #**, the total, the items and an **Order Summary**.</Result>
+   <Result>The **Transaction history** page lists the attendee's orders as cards, newest first, each with its number, such as **Order #13**, the total, the items and an **Order Summary**.</Result>
 
 Orders from your organization's other conventions are listed too, with that convention's short name after the order number. An order with tickets has a **Retrieve Ticket(s)** button: see [Ticketed products](../products/tickets.md).
 

@@ -84,7 +84,7 @@ If a product is already in another silo, *Product is already part of another sil
 
 3. To change one ticket, open its menu and choose an action from Table 5.1.
 
-   <Result>A message confirms the change, such as *Marked Ticket #* and the number *as a winner.*, and the ticket's badge changes.</Result>
+   <Result>A message confirms the change, such as *Marked Ticket #4 as a winner.*, and the ticket's badge changes.</Result>
 
 <TableFigure title="Actions on one ticket">
 
@@ -96,6 +96,10 @@ If a product is already in another silo, *Product is already part of another sil
 | **Revoke / Void ticket** | **Rescinded** | **Entered / Waiting** or **Winner** |
 
 </TableFigure>
+
+:::tip[The ticket number is an example]
+The 4 in *Marked Ticket #4 as a winner.* is an example. The message shows the ticket's own number.
+:::
 
 ## Wording
 

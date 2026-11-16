@@ -145,17 +145,21 @@ Sub-accounts let one account register a group or family and pay for everyone in 
 
 Once registered themselves, attendees see these options on their **Attendance** page, under **Your registrations**.
 
-1. As an attendee, click **Register another attendee** (**Register another attendee (Ages** *age***+)** when PII-free children are allowed).
+1. As an attendee, click **Register another attendee** (**Register another attendee (Ages 16+)** when PII-free children are allowed).
 
    <Result>A **New user** step asks for the person's name and date of birth, and uses the account holder's address unless **Use different mailing address** is ticked. **Registration Type**, **Additional Information** and **Review** follow.</Result>
 
-2. *(If PII-free children are allowed)* As an attendee, click **Register child (under** *age***)**.
+2. *(If PII-free children are allowed)* As an attendee, click **Register child (under 16)**.
 
    <Result>There's no personal-details step. The attendee ticks your child-registration terms, chooses a tier and fills in the form, where an emergency contact is required.</Result>
 
 3. As an attendee, click **Complete registration**.
 
    <Result>Every unpaid attendee under the account is paid for in one checkout.</Result>
+
+:::tip[The age is an example]
+The 16 in **Register another attendee (Ages 16+)** and **Register child (under 16)** is an example. The app shows your **Child Age Threshold**, set in **Housekeeping › Registration › Settings**.
+:::
 
 :::note[When a dependent grows up]
 **Migrate Sub-Account**, on a sub-account's card, turns it into a full account: the account holder enters their own password and the dependent's email, and the dependent sets a username and password from the email they receive. It isn't available for PII-free children, anyone under 13, or anyone under the child age threshold.

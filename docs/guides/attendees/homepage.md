@@ -62,20 +62,24 @@ The status card at the top of **Attendance** tells the attendee what to do next.
 
 | Card heading | Shown when | Buttons |
 | --- | --- | --- |
-| *Ready to attend …?* | Registration is open and the attendee hasn't registered. | **Start registration**, **Update personal info** |
+| *Ready to attend test?* | Registration is open and the attendee hasn't registered. | **Start registration**, **Update personal info** |
 | *Complete your registration* | Any registration on the account is unpaid. <small>Lists unpaid people when sub-accounts are on; counts down while unpaid items are held in the cart.</small> | **Complete registration**, which opens checkout |
-| *You're registered for …!* | The attendee's own registration is paid and nothing is unpaid. | None |
-| *Registration for … is closed.* | **Open Registration** is off. <small>The rest of the page is hidden.</small> | **Update personal info** |
+| *You're registered for test!* | The attendee's own registration is paid and nothing is unpaid. | None |
+| *Registration for testconvention is closed.* | **Open Registration** is off. <small>The rest of the page is hidden.</small> | **Update personal info** |
 
 </TableFigure>
 
 1. As a test attendee with no registration, while registration is open, click **Attendance** in the sidebar.
 
-   <Result>The *Ready to attend …?* card appears with **Start registration** and **Update personal info**, and the attendee's own card below, under **Your registration**.</Result>
+   <Result>The *Ready to attend test?* card appears with **Start registration** and **Update personal info**, and the attendee's own card below, under **Your registration**.</Result>
 
 2. Click **Start registration**.
 
    <Result>The registration form opens at `/event/register/new`.</Result>
+
+:::tip[The names and numbers are examples]
+Names and numbers on this page are examples. The cards show your convention's short name (*test*) or long name (*testconvention*), and **View order (#13)** shows the order's own number.
+:::
 
 With sub-accounts on, the heading reads **Your registrations**, with an **Attendees** counter and buttons to add people: see [Sub-accounts, children and minors](../registration/sub-accounts.md). Attendees with an unconfirmed email see a reminder banner: see [Attendee accounts and sign-in](./accounts.md), section 2.2. Registering is covered in [How attendees register](../registration/registering.md); opening registration in [Registration setup](../quickstart/registration-setup.md), section 7.
 
@@ -150,7 +154,7 @@ Each person on the account has a card under **Your registration**, registered pe
 | Item | Shown | Does |
 | --- | --- | --- |
 | **Edit personal details** | Every card except a child's | Own card: opens **Personal details**. Sub-account: opens an **Edit Personal Details** dialog; **Update** saves with *Personal details updated*. |
-| **View order (#…)** | Paid registrations | Opens **Transaction history** at that order. |
+| **View order (#13)** | Paid registrations | Opens **Transaction history** at that order. |
 | **Delete registration** | Unpaid registrations | Deletes it, with no confirmation. |
 | **Transfer registration** | Paid, with **Enable Registration Transfers** on | Gives it to another person: see [Transfer Registration](../registration/transfer.md). |
 | **Migrate Sub-Account** | Sub-accounts | Turns the sub-account into the dependent's own account. |
@@ -176,4 +180,4 @@ The changelog covers ConCat itself, not your event. The policy links open your *
 
 For a rush when registration opens, ConCat can queue attendees. There's no Housekeeping setting, and staff can't let people through: ask ConCat to set it up and admit attendees.
 
-While it's on, attendees who open **Attendance** or the registration pages see a *You're in line* card instead, asking them to keep the tab open until they're admitted automatically. It checks again every 30 seconds (*Checking your status in … seconds.*). Your notice (section 3) still shows above it.
+While it's on, attendees who open **Attendance** or the registration pages see a *You're in line* card instead, asking them to keep the tab open until they're admitted automatically. It checks again every 30 seconds (*Checking your status in 30 seconds.*). Your notice (section 3) still shows above it.

@@ -82,11 +82,15 @@ Station settings and devices are saved in the browser, not in ConCat. Set up eac
 
 3. *(Optional)* To limit the badge products this station checks in, turn on **Restrict Product Check-in** and select them in the list that appears (Ctrl-click, or Cmd-click on a Mac, for several).
 
-   <Result>The selected products are highlighted. Any other badge product gets *This registration station is not configured to print … badges.*</Result>
+   <Result>The selected products are highlighted. Any other badge product gets *This registration station is not configured to print General Admission badges.*</Result>
 
 4. *(Optional)* Under **Badge type printer preferences**, select a badge type and click the arrow toward the other list, **Primary Printer** or **Secondary Printer**.
 
    <Result>The badge type moves to that list, and **Saved!** appears.</Result>
+
+:::tip[The names and numbers are examples]
+*General Admission* and the 1 in **Print Next Badge (1 badge remaining)** are examples. The app shows the badge product's own name and how many badges are left to print.
+:::
 
 <TableFigure title="Station settings">
 

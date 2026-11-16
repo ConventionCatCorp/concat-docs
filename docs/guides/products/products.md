@@ -86,18 +86,22 @@ Badges under each product's name show its status (Table 2.1).
 | --- | --- |
 | **Public / Visible**, **Unlisted** or **Hidden** | The **Product visibility** (Table 3.1). |
 | **Deleted / Archived** | Deleted (section 6). |
-| **In Stock:** *x*/*y* **Available** | *x* of *y* limited stock left. |
-| **Out of Stock** | Limited stock used up. <small>**Out of Stock - Exceeded by** *n*: *n* sold over the limit.</small> |
-| **Limit per user:** *n* | **Maximum purchases per user** is set. |
+| **In Stock: 40/50 Available** | Limited stock left, out of the total. |
+| **Out of Stock** | Limited stock used up. <small>**Out of Stock - Exceeded by 2**: 2 sold over the limit.</small> |
+| **Limit per user: 4** | **Maximum purchases per user** is set. |
 | **Role Restriction**, **Product Role Blacklist** | A role whitelist or blacklist is set. |
 | **Grant Restriction** | **Restrict product to grants** is set. |
 | **Not Yet Available** | **Available From** is in the future. |
 | **Expired** | **Available Until** has passed. |
 | **Age Restricted:** and the ages | A purchase age limit is set. |
-| **Addon Stock:** *x*/*y* **Available**, **Addon Out of Stock** | A complimentary addon has limited stock ([Addons](./addons.md)). |
-| **Unused Stock:** *n* | *Product is using stock, but has no active grant.* <small>Click it to see the orders.</small> |
+| **Addon Stock: 15/20 Available**, **Addon Out of Stock** | A complimentary addon has limited stock ([Addons](./addons.md)). |
+| **Unused Stock: 3** | *Product is using stock, but has no active grant.* <small>Click it to see the orders.</small> |
 
 </TableFigure>
+
+:::tip[The numbers are examples]
+The numbers in these badges, such as 40/50 in **In Stock: 40/50 Available**, are examples. Each badge shows the product's own stock and limits.
+:::
 
 ## Create a product
 

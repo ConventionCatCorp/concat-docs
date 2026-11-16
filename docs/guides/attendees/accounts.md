@@ -50,7 +50,7 @@ The age buttons come from the **Child Age Threshold** and **Minor Age Threshold*
 
 1. On the login page, click **Create Your Account**.
 
-   <Result>The **Account Creation** page opens on an **Age check** card, with a button per age band, such as **I was born before** a date **(Over 18)**. A middle band appears when the child threshold is below the minor threshold.</Result>
+   <Result>The **Account Creation** page opens on an **Age check** card, with a button per age band, such as **I was born before October 1, 2008 (Over 18)**. A middle band appears when the child threshold is below the minor threshold.</Result>
 
 2. Click the first button (born before the date).
 
@@ -63,6 +63,10 @@ The age buttons come from the **Child Age Threshold** and **Minor Age Threshold*
 4. Fill in the form and click **Create Your Account**.
 
    <Result>A **Confirm your email address!** card appears, and an *Account Creation Confirmation* email arrives with a confirmation link.</Result>
+
+:::tip[The date and age are examples]
+The date and age in **I was born before October 1, 2008 (Over 18)** are examples. The buttons use your **Minor Age Threshold** and **Child Age Threshold**, counted back from your convention's start date.
+:::
 
 The form checks usernames and email addresses as they're typed, for example *This username is already in use.* or *That username is invalid. Usernames must be between 4 and 64 characters.*
 

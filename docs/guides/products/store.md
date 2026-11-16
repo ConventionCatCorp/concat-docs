@@ -54,7 +54,11 @@ Table 2.1 lists what decides whether a product appears.
 
 A product with an age limit is still listed, with an **Age Restricted Product** badge.
 
-With nothing to list, the store says *There are no items available.* With **All Products** hidden, it first shows *Welcome to the … Store!* and asks attendees to browse the categories.
+With nothing to list, the store says *There are no items available.* With **All Products** hidden, it first shows *Welcome to the test Store!* and asks attendees to browse the categories.
+
+:::tip[The name is an example]
+*test* in *Welcome to the test Store!* is an example. The heading shows your convention's short name.
+:::
 
 ## A product's page
 

@@ -40,6 +40,10 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
    <Result>Deleted tiers appear, marked **Deleted / Archived**.</Result>
 
+:::tip[The numbers are examples]
+40/50 in **In Stock: 40/50 Available** and 18 in **Age Restricted: >= 18** are examples. Each badge shows the tier's own stock and ages.
+:::
+
 **Category Surcharges** adds a fee or tax to every tier at once: see [Surcharges](../../products/surcharges.md).
 
 ## Create a tier

@@ -131,7 +131,7 @@ The tab lists the person's orders for this convention, plus paid orders from you
 
 1. On the person's profile, click the **Orders** tab.
 
-   <Result>Each order is a card headed **Order #**, its number and total, with a **Paid in Full** or **Unpaid** badge, the items and **Show details**. With no orders: *There are no orders for this user.*</Result>
+   <Result>Each order is a card headed with its number, such as **Order #13**, and its total, with a **Paid in Full** or **Unpaid** badge, the items and **Show details**. With no orders: *There are no orders for this user.*</Result>
 
 2. Click **Show details** on an order.
 
@@ -140,6 +140,10 @@ The tab lists the person's orders for this convention, plus paid orders from you
 3. Go back to the **Orders** tab. If the person has no unpaid order for this convention, click **Create New Order**.
 
    <Result>A new, empty **Unpaid** order appears, and **Create New Order** disappears.</Result>
+
+:::tip[The order number is an example]
+The 13 in **Order #13** is an example. Each card shows the order's own number.
+:::
 
 Order cards can also show a refund message (yellow pending, red denied, green approved with the amount) or blue payment review flags. Ticketed products add **Retrieve Ticket(s)**.
 

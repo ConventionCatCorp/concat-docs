@@ -83,7 +83,7 @@ For one attendee's orders, open their profile ([Users and access](../quickstart/
 
 | Part | What it shows |
 | --- | --- |
-| Item cards | **Pending payment** for an unpaid order. For a paid one: **Fulfilled** (handed over, or nothing to hand over), **Unfulfilled** and **Canceled**. <small>Refunds appear in the same cards as **Refund #** and their status.</small> |
+| Item cards | **Pending payment** for an unpaid order. For a paid one: **Fulfilled** (handed over, or nothing to hand over), **Unfulfilled** and **Canceled**. <small>Refunds appear in the same cards as **Refund #2** and their status.</small> |
 | **Customer Info** | Name, ID, address and email. <small>The address needs PII access.</small> |
 | **Payments** | **Amount**, **Status**, **Gateway**, **Reference ID** and **Date** of each payment. <small>With `refund:create`, a Stripe reference links to the payment in Stripe.</small> |
 | **Vouchers** | Vouchers applied. See [Vouchers](../products/vouchers.md). |
@@ -91,6 +91,10 @@ For one attendee's orders, open their profile ([Users and access](../quickstart/
 | **Customer Profile**, **Transaction history** | Open the attendee's profile and, with `audit:read`, the order's audit history. |
 
 </TableFigure>
+
+:::tip[The numbers are examples]
+Order and refund numbers on this page, such as 13 in **Fulfill Order #13**, are examples. The app shows each order's and refund's own number.
+:::
 
 ## Unpaid orders
 
@@ -116,7 +120,7 @@ Staff can force-add a product even when it's sold out, outside its sale dates or
 
 1. On an unpaid order, click **+** on the **Pending payment** card.
 
-   <Result>An **Add product to Order #** dialog opens with a **Product Search** field.</Result>
+   <Result>An **Add product to Order #13** dialog opens with a **Product Search** field.</Result>
 
 2. In **Product Search**, type part of the product's name and select it, fill in any options, tick any confirmation shown in red, and click **Add**.
 
@@ -144,7 +148,7 @@ Deleting a badge item deletes the attendee's registration, not just the line in 
 
 1. On an unpaid order, click **Mark as Paid**, then choose **Write-off**, **Card**, **Cash** or **Voucher** (Table 3.1).
 
-   <Result>A **Successfully marked order as paid.** message appears, the status becomes **Paid**, and the **Payments** card lists the payment. If any item cost more than zero, the attendee gets the *Order #… Payment Successful* email.</Result>
+   <Result>A **Successfully marked order as paid.** message appears, the status becomes **Paid**, and the **Payments** card lists the payment. If any item cost more than zero, the attendee gets the *Order #13 Payment Successful* email.</Result>
 
 <TableFigure title="Mark as Paid choices">
 
@@ -181,9 +185,9 @@ Only items whose product has **Deliverable** ticked need fulfilling, which recor
 
 1. Open a paid order with a **Requires Fulfillment** or **Requires Partial Fulfillment** badge, then click **Mark as Fulfilled**.
 
-   <Result>A **Fulfill Order #** dialog lists the items still to hand over, each with a **Fulfilled?** checkbox.</Result>
+   <Result>A **Fulfill Order #13** dialog lists the items still to hand over, each with a **Fulfilled?** checkbox.</Result>
 
-2. Tick **Fulfilled?** for each item you've handed over, then click the **Fulfill Order #** button.
+2. Tick **Fulfilled?** for each item you've handed over, then click the **Fulfill Order #13** button.
 
    <Result>The items move to the **Fulfilled** card. Once nothing is left, **Mark as Fulfilled** goes away and the list badge becomes **Fulfilled?**.</Result>
 
@@ -199,7 +203,7 @@ The payment confirmation email is the attendee's receipt; only staff can resend 
 
 2. Click **Resend**.
 
-   <Result>A **The user will receive an email in their inbox shortly.** message appears, and the attendee gets the *Order #… Payment Successful* email again.</Result>
+   <Result>A **The user will receive an email in their inbox shortly.** message appears, and the attendee gets the *Order #13 Payment Successful* email again.</Result>
 
 **Resend Email** shows only while the status is **Paid**, so not after a partial refund.
 

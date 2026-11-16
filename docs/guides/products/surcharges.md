@@ -57,6 +57,10 @@ The **Surcharges** menu item, and creating and assigning surcharges, need `produ
 
    <Result>**Created new surcharge.** appears and the surcharge's page opens (section 5).</Result>
 
+:::tip[The numbers are examples]
+IDs and rates on this page, such as 3 in **Assign Surcharge #3** and 8.25% in *Tax Rate of 8.25%*, are examples. The app shows your own surcharges and products.
+:::
+
 ## Assign a surcharge to a product
 
 1. Open the product's page (see [Products](./products.md), section 4) and click the green **Add** button (<MaterialIcon name="add" />) in **Surcharges**.
@@ -117,7 +121,7 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
 
 2. Click **Assign to Product**.
 
-   <Result>An **Assign Surcharge #** dialog opens with a **Product Search** field.</Result>
+   <Result>An **Assign Surcharge #3** dialog opens with a **Product Search** field.</Result>
 
 3. Select the products in **Product Search** and click **Assign Surcharge**.
 
@@ -125,7 +129,7 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
 
 4. To unassign a product, click the more button (<MaterialIcon name="more_horiz" />, **Options**) on its row in **Associated Products** and choose **Unassign** (Figure 5.1).
 
-   <Result>**Removed surcharge from Product #** appears, with the product's ID.</Result>
+   <Result>**Removed surcharge from Product #2** appears.</Result>
 
 5. To delete the surcharge, click **Delete**.
 

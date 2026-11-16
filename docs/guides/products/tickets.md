@@ -55,11 +55,15 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
 2. Click **Retrieve Ticket(s)**.
 
-   <Result>A page titled **Order #** and the order's number, **— Tickets**, shows each ticket's barcode, group, validity and **Issued To**, with a **Print** button.</Result>
+   <Result>A page titled **Order #13 — Tickets** shows each ticket's barcode, group, validity and **Issued To**, with a **Print** button.</Result>
 
 3. Click **Print**.
 
    <Result>The browser's print dialog opens.</Result>
+
+:::tip[The order number is an example]
+The 13 in **Order #13 — Tickets** is an example. The page shows the order's own number.
+:::
 
 A scanned ticket's barcode is marked **REDEEMED**, with **Scanned At** and the time.
 

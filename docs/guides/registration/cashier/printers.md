@@ -54,7 +54,7 @@ Connect the printer to the station computer by USB and load the badge labels fir
 
 3. Choose the printer and allow the connection.
 
-   <Result>The printer is listed as **Label (#…)**, with a gear button, **Set as Primary** and **Set as Secondary**.</Result>
+   <Result>The printer is listed as **Label (#D4J221801234)**, with a gear button, **Set as Primary** and **Set as Secondary**.</Result>
 
 4. Click the printer's gear button, then **Test Print**.
 
@@ -67,6 +67,10 @@ Connect the printer to the station computer by USB and load the badge labels fir
 6. *(Optional, second printer)* Add another Zebra printer with steps 2 and 3, then click **Set as Secondary** on it.
 
    <Result>The button reads **Active as Secondary**, and **Printer Status** adds **Secondary:** and its name.</Result>
+
+:::tip[The serial numbers are examples]
+The serial numbers in **Label (#D4J221801234)** and **Receipt (#X4ZM012345)** are examples. Each printer is listed with its own serial number.
+:::
 
 Which badge types go to the secondary is set per station, under **Badge type printer preferences** ([Cashier UI](./cashier.md), section 2). By default, only minor badges do.
 
@@ -129,7 +133,7 @@ Connect the receipt printer to the station computer by USB, and the cash drawer 
 
 2. Choose the receipt printer and allow the connection.
 
-   <Result>The printer is listed under **Receipt Printers** as **Receipt (#…)**, with **Test Print** and **Kick Cash Drawer** buttons.</Result>
+   <Result>The printer is listed under **Receipt Printers** as **Receipt (#X4ZM012345)**, with **Test Print** and **Kick Cash Drawer** buttons.</Result>
 
 3. Click **Test Print**.
 

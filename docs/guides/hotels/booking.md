@@ -140,11 +140,15 @@ A booking is listed under **My reservation** once it has synced.
 
 2. As the primary guest, click **Manage reservation**.
 
-   <Result>The reservation page opens, titled **Reservation #** and the number, with the room, rates, guests and policies.</Result>
+   <Result>The reservation page opens, titled with its number, such as **Reservation # 12**, with the room, rates, guests and policies.</Result>
 
 3. Click **Update / Cancel reservation**.
 
    <Result>Passkey or MeetingMax opens to change or cancel the booking. Changes reach ConCat on the next sync.</Result>
+
+:::tip[The reservation number is an example]
+The 12 in **Reservation # 12** is an example. The page shows the reservation's own number.
+:::
 
 **Update / Cancel reservation** appears only while **Open Hotels** is on; otherwise the page says *Modifications to existing reservations are no longer being accepted.* A canceled reservation says *This reservation has been canceled and cannot be modified.* Guests are added or removed with the provider, not in ConCat.
 

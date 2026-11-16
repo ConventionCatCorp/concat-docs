@@ -154,7 +154,11 @@ A voucher is a code worth an amount of money, such as a comped registration or a
 
 3. *(Optional)* To give the voucher to particular attendees, click **Issue** on its page, choose the **User(s)** and click **Issue Voucher**.
 
-   <Result>A message says *Voucher #… has been issued to … user(s).*</Result>
+   <Result>A message says *Voucher #3 has been issued to 2 user(s).*</Result>
+
+:::tip[The numbers are examples]
+The 3 and 2 in *Voucher #3 has been issued to 2 user(s).* are examples. The message shows the voucher's own number and how many people you chose.
+:::
 
 :::tip
 **Restrict voucher to products** limits what the voucher pays for, such as only badge products. When issuing, **Attempt to fulfill associated orders automatically.** applies the voucher to the attendees' unpaid orders.
