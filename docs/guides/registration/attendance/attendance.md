@@ -15,7 +15,7 @@ Badge products, the list, creating a tier, a tier's page, upgrade paths, and add
 ## What a badge product is
 
 <Sidenote title="Who can do this">
-Viewing needs `product:read`; creating and editing needs `product:manage`. The default *admin* and *productEditor* roles have both.
+Viewing needs `product:read`; creating, editing and deleting need `product:manage`. The default *admin* and *productEditor* roles have both.
 </Sidenote>
 
 A badge product works like a store product, with price, stock, options, addons and discounts, but attendees pick it in the registration wizard, not the event store. Its **Product visibility** decides who can get it:
@@ -41,7 +41,7 @@ All tiers share one registration form ([Registration form editor](../form-editor
    <Result>Deleted tiers appear, marked **Deleted / Archived**.</Result>
 
 :::tip[The values are examples]
-40/50 in **In Stock: 40/50 Available**, 18 in **Age Restricted: >= 18** and the name and ID in **Product: General Admission (ID: 1)** are examples. The app shows each tier's own stock, ages, name and ID.
+40/50 in **In Stock: 40/50 Available**, 18 in **Age Restricted: >= 18**, the name and ID in **Product: General Admission (ID: 1)** and the name in the delete question are examples. The app shows each tier's own stock, ages, name and ID.
 :::
 
 **Category Surcharges** adds a fee or tax to every tier at once: see [Surcharges](../../products/surcharges.md).
@@ -87,6 +87,18 @@ Ages are counted on the convention's start date. **Restrict product to grants** 
 4. *(Optional)* Click the **Orders** tab.
 
    <Result>Orders containing this tier are listed, with filters such as **Paid**, **Unpaid**, **With grant** and **No grant**.</Result>
+
+5. *(Optional)* To delete the tier, click the **Product** tab, then the delete button (<MaterialIcon name="delete" />) in **Product Information**.
+
+   <Result>A **Delete product?** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. General Admission?*</Result>
+
+6. Click **Delete**.
+
+   <Result>The page shows a **Deleted / Archived** badge, and its edit, delete, **Change Price** and add buttons are gone. **Badge Products** lists the tier only after **Show Deleted Products**.</Result>
+
+:::caution[Watch out]
+Deleting a tier can't be undone. Attendees can no longer choose it, and it's taken out of every unpaid cart. Paid registrations and orders keep it. Its addon links are removed; the addon products themselves stay.
+:::
 
 The **Audit Logs** tab needs the `audit:read` permission. **Upgrade Paths** is only on badge products. The other cards, such as **Prices**, **Discounts** and **Options**, work as for store products: see [Products](../../products/products.md).
 
