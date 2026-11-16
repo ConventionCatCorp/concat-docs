@@ -95,7 +95,7 @@ Each registration has its own QR code. With **Enable Registration QR Codes** on,
 
 3. As an attendee, register and pay for a badge.
 
-   <Result>A *Registration Confirmation for* email arrives, headed **Save this email!**, with the QR code.</Result>
+   <Result>A *ConCat - Registration Confirmation for Alex* email arrives, headed **Save this email!**, with the QR code.</Result>
 
 4. On the Cashier UI search page, scan the QR code from the email or the **Attendance** page.
 
@@ -105,4 +105,8 @@ Each registration has its own QR code. With **Enable Registration QR Codes** on,
 - **Not retroactive:** registrations completed before the setting was on get no email. Those attendees can still show the code on their **Attendance** page; to email them their codes, contact ConCat Support.
 - **Not an ID check:** a QR code identifies the registration, not the person. A station that requires an ID scan still blocks the attendee until their ID is scanned.
 - **Scanner settings:** a scanner set up for PDF417 only can't read QR codes. On a TEEMI, scan row 5 of Table 3.1.
+:::
+
+:::tip[The values are examples]
+*Alex* is an example: the subject shows the attendee's preferred name, or their first name if they have none. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::

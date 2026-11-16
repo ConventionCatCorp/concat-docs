@@ -37,7 +37,7 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
 2. Buy the product and complete checkout.
 
-   <Result>An email arrives whose subject includes *Your Event Ticket for* and the product's name, such as *Your Event Ticket for Photo Shoot*. It shows the ticket's barcode and **Ticket Group**.</Result>
+   <Result>An email arrives whose subject includes *Your Event Ticket for* and the product's name, such as *ConCat - Your Event Ticket for Photo Shoot*. It shows the ticket's barcode and **Ticket Group**.</Result>
 
 3. Open **Attendance** in the homepage sidebar.
 
@@ -62,7 +62,7 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
    <Result>The browser's print dialog opens.</Result>
 
 :::tip[The values are examples]
-The order number in **Order #13 — Tickets**, the product *Photo Shoot*, the scan time and the user ID 7 are examples. The app shows each order's, product's and attendee's own values.
+The order number in **Order #13 — Tickets**, the product *Photo Shoot*, the scan time and the user ID 7 are examples. The app shows each order's, product's and attendee's own values. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 A scanned ticket's barcode is marked **REDEEMED**, with the scan time, such as **Scanned At**: 10/3/2026, 2:15:00 PM.

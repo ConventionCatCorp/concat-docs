@@ -33,7 +33,7 @@ Attendees apply from your homepage, saying how they relate to each department. D
 </TableFigure>
 
 :::tip[The names and numbers are examples]
-*Art Show*, *Alex Smith*, *General Admission*, *Order #13* and $50.00 on this page are examples. Tooltips and the assignment email name the department, the staff dialogs name the volunteer, and the **Remove Staff** box names their badge tier, order number and price.
+*Art Show*, *Alex Smith*, *General Admission*, *Order #13* and $50.00 on this page are examples. Tooltips and the assignment email name the department, the staff dialogs name the volunteer, and the **Remove Staff** box names their badge tier, order number and price. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 <TableFigure title="Columns in the Applications list">
@@ -114,7 +114,7 @@ The **Status** and **Department(s)** filters combine. **Assigned** plus *Art Sho
 ## Assign departments
 
 <Sidenote title="Emails on assignment">
-With **Enable Volunteer Emails** on, an assignment emails the volunteer (*Volunteer Assignment: Art Show*), and the department's address and leads (*New Volunteer Assigned*).
+With **Enable Volunteer Emails** on, an assignment emails the volunteer (*ConCat - Volunteer Assignment: Art Show*), and the department's address and leads (*ConCat - New Volunteer Assigned*).
 </Sidenote>
 
 Assigning approves the application for that department, and the volunteer sees *Your application has been approved!* A volunteer can have several departments.
@@ -160,7 +160,7 @@ Assigning approves the application for that department, and the volunteer sees *
    <Result>The **Staff** badge is gone, and the button reads **Make Staff** again.</Result>
 
 :::caution[Watch out]
-With the registration box ticked, **Remove Staff** unlinks their paid badge and puts it back in their cart, unpaid. An amount above 0 issues a single-use voucher named *Remove staff Voucher*. With **Enable Volunteer Emails** on, they also get the email *Staff status have been removed*.
+With the registration box ticked, **Remove Staff** unlinks their paid badge and puts it back in their cart, unpaid. An amount above 0 issues a single-use voucher named *Remove staff Voucher*. With **Enable Volunteer Emails** on, they also get the email *ConCat - Staff status have been removed*.
 :::
 
 To give staff a lower badge price, add a discount limited to the *staff* role. See [Discounts](../products/discounts.md).

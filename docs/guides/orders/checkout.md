@@ -44,7 +44,7 @@ An empty cart shows *Nothing in your cart... yet!*
 </TableFigure>
 
 :::tip[The values are examples]
-The time in the countdown, the product in **Free addon from General Admission**, the order numbers 13 and 9, the amount in **Pay $50.00** and the short name Star25 in **Order #9 (Star25)** are examples. The app shows the time left, the addon's own product, and each order's own number, total and convention.
+The time in the countdown, the product in **Free addon from General Admission**, the order numbers 13 and 9, the amount in **Pay $50.00** and the short name Star25 in **Order #9 (Star25)** are examples. The app shows the time left, the addon's own product, and each order's own number, total and convention. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 For an organization that uses PagSeguro, a Brazilian billing **Country** switches the payment options to PagSeguro.
@@ -59,7 +59,7 @@ Card payments go through your Stripe account. Stripe can also offer wallet butto
 
 1. In **Pay by Credit / Debit Card with Stripe**, choose a payment method, enter the details, and click **Pay $50.00**.
 
-   <Result>**Processing Payment...** shows, then a green card says *Your payment has been successful! Thank you!* If any item cost more than zero, the attendee gets the *Order #13 Payment Successful* email, their receipt.</Result>
+   <Result>**Processing Payment...** shows, then a green card says *Your payment has been successful! Thank you!* If any item cost more than zero, the attendee gets the *ConCat - Order #13 Payment Successful* email, their receipt.</Result>
 
 A declined card shows ***Your payment was declined** by our payment processor:* and Stripe's reason; after three failures it adds *If you repeatedly see this message, you may want to contact the event and your financial institution for assistance.* If the cart changed during payment, the attendee sees *The order has changed since loading your cart. Please try again.*
 
@@ -85,7 +85,7 @@ With nothing to pay, there's no card form: a free order shows a **Confirm Order*
 
 1. On a checkout with nothing left to pay, click **Confirm Order**.
 
-   <Result>A green card says *Your payment has been successful! Thank you!*, and the order is paid. The *Order #13 Payment Successful* email is sent only if an item cost more than zero.</Result>
+   <Result>A green card says *Your payment has been successful! Thank you!*, and the order is paid. The *ConCat - Order #13 Payment Successful* email is sent only if an item cost more than zero.</Result>
 
 ## What stops a payment
 
@@ -119,4 +119,4 @@ An unpaid order shows **Payment error** with *The payment is not complete, but n
 
 Orders from your organization's other conventions are listed too, with that convention's short name after the order number, such as **Order #9 (Star25)**. An order with tickets has a **Retrieve Ticket(s)** button.
 
-There's no receipt page: the *Payment Successful* email is the receipt, and only staff can resend it. Attendees ask for refunds from the **⋯** menu on an order card.
+There's no receipt page: the *ConCat - Order #13 Payment Successful* email is the receipt, and only staff can resend it. Attendees ask for refunds from the **⋯** menu on an order card.

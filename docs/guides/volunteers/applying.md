@@ -44,7 +44,7 @@ The form is the one you build in [Volunteer settings and form](./settings.md), s
 
    <Result>*Your volunteer application has been saved!* appears, and the top of the page says *Your application is awaiting assignment.*</Result>
 
-With **Enable Volunteer Emails** on, the applicant gets a *Volunteer Confirmation* email. Staff see the application on **Housekeeping › Volunteers › Applications**.
+With **Enable Volunteer Emails** on, the applicant gets a *ConCat - Volunteer Confirmation* email. Staff see the application on **Housekeeping › Volunteers › Applications**.
 
 ## Application status
 
@@ -52,17 +52,17 @@ With **Enable Volunteer Emails** on, the applicant gets a *Volunteer Confirmatio
 
    <Result>A green box says *Your application has been approved!* and lists the assigned departments.</Result>
 
-With **Enable Volunteer Emails** on, the volunteer also gets an email titled *Volunteer Assignment: Art Show*.
+With **Enable Volunteer Emails** on, the volunteer also gets an email titled *ConCat - Volunteer Assignment: Art Show*.
 
-:::tip[The department and address are examples]
-*Art Show* and hr@example.com on this page are examples. The email names the volunteer's department, and the messages show your **HR Email** address, set on the **Contact** tab of **Housekeeping › System › Settings**.
+:::tip[The values are examples]
+*Art Show* and hr@example.com on this page are examples. The email names the volunteer's department, and the messages show your **HR Email** address, set on the **Contact** tab of **Housekeeping › System › Settings**. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 ## Change or withdraw the application
 
 1. On **Volunteering**, change an answer and click **Submit**.
 
-   <Result>*Your volunteer application has been saved!* appears, and, with **Enable Volunteer Emails** on, another *Volunteer Confirmation* email is sent.</Result>
+   <Result>*Your volunteer application has been saved!* appears, and, with **Enable Volunteer Emails** on, another *ConCat - Volunteer Confirmation* email is sent.</Result>
 
 2. Click **Delete Application**.
 

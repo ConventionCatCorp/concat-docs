@@ -87,7 +87,7 @@ A role can also grant reading chosen categories: tick them under **User Note Cat
 Ban notes have no edit button: delete the ban, which lifts it, and create a new one.
 
 :::tip[The names are examples]
-*Star26*, *Alexander* and *Smith* are examples. The badge shows your **Convention Short Name**, and an account review shows the names on the matching ban.
+*Star26*, *Alexander* and *Smith* are examples. The badge shows your **Convention Short Name**, and an account review shows the names on the matching ban. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 ## Search and create notes
@@ -154,7 +154,7 @@ A registration ban logs the person out at once, and they can't log back in. Chec
 ## Account reviews
 
 <Sidenote title="The email">
-When someone signs up and their new account goes into review, ConCat also emails *Registration Requires Review* to your registration address, set on the **Contact** tab of **Housekeeping › System › Settings**. Reviews of accounts staff create, of sub-accounts and of name changes send no email.
+When someone signs up and their new account goes into review, a *ConCat - Registration Requires Review* email also goes to your registration address, set on the **Contact** tab of **Housekeeping › System › Settings**. Reviews of accounts staff create, of sub-accounts and of name changes send no email.
 </Sidenote>
 
 When an account or sub-account is created, or a person changes their name, ConCat compares the name with every ban in your organization, in any ban category. A match marks the account **Pending Review**, so someone can check whether it's the banned person signing up again.

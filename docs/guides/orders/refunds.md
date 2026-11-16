@@ -33,10 +33,10 @@ A refund does two separate things, both set when you approve it:
 
 </TableFigure>
 
-ConCat emails the attendee at each step: *Order #13 - New Refund Request* (copied to your registration address), *Refund Request Approved for Order #13* and *Refund Request Denied for Order #13*.
+ConCat emails the attendee at each step: *ConCat - Order #13 - New Refund Request* (copied to your registration address), *ConCat - Refund Request Approved for Order #13* and *ConCat - Refund Request Denied for Order #13*.
 
 :::tip[The numbers are examples]
-Numbers on this page, such as the order number 13 and the refund number 2, are examples, as are the amount $10.00 in the approval banner and the partial-refund warning, and the message after *Refunds are disabled:*. The app shows each order's and refund request's own numbers and amounts, and your own message.
+Numbers on this page, such as the order number 13 and the refund number 2, are examples, as are the amount $10.00 in the approval banner and the partial-refund warning, and the message after *Refunds are disabled:*. The app shows each order's and refund request's own numbers and amounts, and your own message. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 :::note[Chargebacks]
@@ -98,7 +98,7 @@ The list includes decided refunds too; narrow it with **Search...** or the **Rea
 
 2. Check the fields in Table 4.1, write a **Reason for Approval** of at least 10 characters and, if you like, a **Message to Customer**, then click **Approve Refund**.
 
-   <Result>A **Refund request has been approved.** message appears, and the queue shows the request as **Approved**. The attendee gets the *Refund Request Approved for Order #13* email with the amount and your message.</Result>
+   <Result>A **Refund request has been approved.** message appears, and the queue shows the request as **Approved**. The attendee gets the *ConCat - Refund Request Approved for Order #13* email with the amount and your message.</Result>
 
 <TableFigure title="The approval dialog">
 
@@ -128,7 +128,7 @@ If a payment can't be refunded through its gateway, a warning stays until you cl
 
 2. Write a **Reason for Rejection** of at least 10 characters and, if you like, a **Message to Customer**, then click **Reject Refund**.
 
-   <Result>A **Refund request has been rejected.** message appears, and the request's **Status** is **Denied**. The attendee gets the *Refund Request Denied for Order #13* email with your message, and a red banner on their order.</Result>
+   <Result>A **Refund request has been rejected.** message appears, and the request's **Status** is **Denied**. The attendee gets the *ConCat - Refund Request Denied for Order #13* email with your message, and a red banner on their order.</Result>
 
 ## Refund an order without a request
 

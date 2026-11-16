@@ -48,7 +48,7 @@ The first page is your dealer form ([Dealer settings, policy and form](./setting
 A typed full-name agreement must match the first and last name on the account, or the field shows *Name does not match user profile (Alex Smith)*.
 
 :::tip[The names and numbers are examples]
-*Alex Smith*, *approved*, *Dealers' Den*, 12 and 2 on this page are examples. The app shows the account's first and last name, the application's status, the dealer area, the table number you assign and the table type's **Dealer assistant count limit**.
+*Alex Smith*, *approved*, *Dealers' Den*, 12 and 2 on this page are examples. The app shows the account's first and last name, the application's status, the dealer area, the table number you assign and the table type's **Dealer assistant count limit**. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 To change details later, the dealer clicks **Edit Dealer** on the space page. The policy agreement stays ticked and can't be unticked.
@@ -115,7 +115,7 @@ The assistant needs their own account; help under **Assistant Username** says wh
 
 ## Confirm as an assistant
 
-The assistant gets an email with *Dealer Assistant Confirmation* in the subject, naming the dealer, with a confirmation link.
+The assistant gets a *ConCat - Dealer Assistant Confirmation* email naming the dealer, with a confirmation link.
 
 1. Signed in as the assistant, click the link in the email.
 

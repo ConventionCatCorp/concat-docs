@@ -88,7 +88,7 @@ Attendees agree to your **Hotel Reservation Policy**, on the **Terms** tab of **
 
 3. Click **Enter block**.
 
-   <Result>*You have successfully entered this block.* appears and the page shows **You've entered this block!** A confirmation email follows: *Hotel Raffle Entry Confirmation* (draw) or *Hotel Entry Confirmation* (first come).</Result>
+   <Result>*You have successfully entered this block.* appears and the page shows **You've entered this block!** A confirmation email follows: *ConCat - Hotel Raffle Entry Confirmation* (draw) or *ConCat - Hotel Entry Confirmation* (first come).</Result>
 
 A draw's page then shows **Entry received** and how long winners will have to book. A first-come block in its booking period refreshes every 30 seconds until the link is ready.
 
@@ -147,7 +147,7 @@ A booking is listed under **My reservation** once it has synced.
    <Result>Passkey or MeetingMax opens to change or cancel the booking. Changes reach ConCat on the next sync.</Result>
 
 :::tip[The names and numbers are examples]
-The block name in **Hotel—Riverside Hotel**, the opening date, the reservation number 12 and the hotel name are examples. The app shows your own blocks, dates and hotels, and each reservation's own number.
+The block name in **Hotel—Riverside Hotel**, the opening date, the reservation number 12 and the hotel name are examples. The app shows your own blocks, dates and hotels, and each reservation's own number. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 While **Open Hotels** is off, **Update / Cancel reservation** is grayed out and the page says *Modifications to existing reservations are no longer being accepted.* A canceled reservation says *This reservation has been canceled and cannot be modified.* Guests are added or removed with the provider, not in ConCat.

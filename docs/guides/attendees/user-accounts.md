@@ -51,7 +51,7 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
 :::
 
 :::tip[The values are examples]
-The 16 in *User is underage. The minimum age is 16 years old.*, the code in **Reset code: K7QX2M9P**, and the 7 in **Export for User ID 7** and `user_7_export.json` are examples. The message shows your **Child Age Threshold**, each reset gives a new code, and the export uses the person's own user ID.
+The 16 in *User is underage. The minimum age is 16 years old.*, the code in **Reset code: K7QX2M9P**, and the 7 in **Export for User ID 7** and `user_7_export.json` are examples. The message shows your **Child Age Threshold**, each reset gives a new code, and the export uses the person's own user ID. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 ## Help someone sign in
@@ -92,7 +92,7 @@ They still get no ConCat email until they confirm their address, which they can 
 
 2. Click **Confirm**.
 
-   <Result>**Successfully sent password reset email!** appears, and the person gets a *Password Reset* email with a link that works for 24 hours.</Result>
+   <Result>**Successfully sent password reset email!** appears, and the person gets a *ConCat - Password Reset* email with a link that works for 24 hours.</Result>
 
 Setting a new password from the link also confirms the email address.
 

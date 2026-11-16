@@ -54,14 +54,14 @@ These emails come from your **Registration Email** address.
 | --- | --- | --- | --- |
 | `paymentSuccess` <small>Order #13 Payment Successful</small> | An order is completed with at least one item priced above zero. Staff can resend it from the order. | The order's owner | No |
 | `ticketIssued` <small>Your Event Ticket for Photo Shoot</small> | An order is completed: one per ticketed product in it. | The buyer | Yes |
-| `registrationQR` <small>Registration Confirmation for Alex Smith</small> | A badge (not an upgrade) is paid for, with **Enable Registration QR Codes** on in **Registration › Settings**. | The registrant | Yes |
+| `registrationQR` <small>Registration Confirmation for Alex</small> | A badge (not an upgrade) is paid for, with **Enable Registration QR Codes** on in **Registration › Settings**. | The registrant | Yes |
 | `forcedRegistration` <small>Registration Created</small> | Staff create a registration for someone. | The person | Yes |
 | `disputeCreated` <small>Order #13 - Payment Dispute Opened</small> | A card payment is disputed in Stripe. | Global admins | No |
 
 </TableFigure>
 
 :::tip[The values in subjects are examples]
-The 13, *Photo Shoot*, *Alex Smith* and *Art Show* in subjects on this page are examples. Each email fills in its own order number, product, person or department.
+The 13, *Photo Shoot*, *Alex* and *Art Show* in subjects on this page are examples. Each email fills in its own order number, product, person's preferred or first name, or department.
 :::
 
 ## Refunds

@@ -91,7 +91,7 @@ For one attendee's orders, open their profile and click the **Orders** tab; **Sh
 </TableFigure>
 
 :::tip[The numbers are examples]
-Order and refund numbers on this page, such as 13 in **Fulfill Order #13** and `WRITEOFF-13`, are examples. The app shows each order's and refund's own number.
+Order and refund numbers on this page, such as 13 in **Fulfill Order #13** and `WRITEOFF-13`, are examples. The app shows each order's and refund's own number. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
 :::
 
 ## Unpaid orders
@@ -146,7 +146,7 @@ Deleting a badge item deletes the attendee's registration, not just the line in 
 
 1. On an unpaid order, click **Mark as Paid**, then choose **Write-off**, **Card**, **Cash** or **Voucher** (Table 3.1).
 
-   <Result>A **Successfully marked order as paid.** message appears, the status becomes **Paid**, and the **Payments** card lists the payment. If any item cost more than zero, the attendee gets the *Order #13 Payment Successful* email.</Result>
+   <Result>A **Successfully marked order as paid.** message appears, the status becomes **Paid**, and the **Payments** card lists the payment. If any item cost more than zero, the attendee gets the *ConCat - Order #13 Payment Successful* email.</Result>
 
 <TableFigure title="Mark as Paid choices">
 
@@ -201,7 +201,7 @@ The payment confirmation email is the attendee's receipt; only staff can resend 
 
 2. Click **Resend**.
 
-   <Result>A **The user will receive an email in their inbox shortly.** message appears, and the attendee gets the *Order #13 Payment Successful* email again.</Result>
+   <Result>A **The user will receive an email in their inbox shortly.** message appears, and the attendee gets the *ConCat - Order #13 Payment Successful* email again.</Result>
 
 **Resend Email** shows only while the status is **Paid**, so not after a partial refund.
 
