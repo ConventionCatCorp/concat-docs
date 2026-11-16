@@ -6,7 +6,7 @@ textbook: true
 
 # Badge Products
 
-Badge products are the registration tiers attendees choose from, such as *General Admission* or *Sponsor*. Create and edit tiers, and let attendees upgrade between them.
+Create the registration tiers attendees choose from, such as *General Admission* or *Sponsor*, and let attendees upgrade between them.
 
 :::info[In this guide]
 Badge products, the list, creating a tier, a tier's page, upgrade paths, and addons.
@@ -28,7 +28,7 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
 ## The list of badge products
 
-1. Go to **Housekeeping › Registration › Badge Products** (see [Start here](../../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Registration › Badge Products**.
 
    <Result>The **Badge Products** page lists your tiers, with **Create New Product** and **Category Surcharges** above. The address ends in `/housekeeping/registration/products`.</Result>
 
@@ -40,7 +40,7 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
    <Result>Deleted tiers appear, marked **Deleted / Archived**.</Result>
 
-Unlike **Store Products**, this page has no categories. **Category Surcharges** adds a fee or tax to every tier at once: see [Surcharges](../../products/surcharges.md).
+**Category Surcharges** adds a fee or tax to every tier at once: see [Surcharges](../../products/surcharges.md).
 
 ## Create a tier
 
@@ -66,10 +66,6 @@ Unlike **Store Products**, this page has no categories. **Category Surcharges** 
 
 Ages are counted on the convention's start date. **Restrict product to grants** offers the tier only to attendees who have, or are buying, a product you choose.
 
-:::note[What tiers don't have]
-No **Maximum purchases per user** or **Deliverable**: each attendee has one registration, and the Cashier UI hands out badges.
-:::
-
 ## A tier's page
 
 1. On **Badge Products**, click the tier's name.
@@ -88,14 +84,7 @@ No **Maximum purchases per user** or **Deliverable**: each attendee has one regi
 
    <Result>Orders containing this tier are listed, with filters such as **Paid**, **Unpaid**, **With grant** and **No grant**.</Result>
 
-The **Audit Logs** tab needs the `audit:read` permission. The **Upgrade Paths** card, only on badge products, is covered in section 5. The other cards work as for store products:
-
-- **Product Images**: [Product Images](../../products/productimages.md)
-- **Addons**: section 6 and [Addons](../../products/addons.md)
-- **Discounts**: [Discounts](../../products/discounts.md)
-- **Options**: [Product Options](../../products/options.md)
-- **Surcharges**: [Surcharges](../../products/surcharges.md)
-- **Prices**, **Actions** and deleting a product: [Products](../../products/products.md)
+The **Audit Logs** tab needs the `audit:read` permission. **Upgrade Paths** is only on badge products (section 5). The other cards, such as **Prices**, **Discounts** and **Options**, work as for store products: see [Products](../../products/products.md).
 
 ## Upgrade paths
 
@@ -103,9 +92,9 @@ The **Audit Logs** tab needs the `audit:read` permission. The **Upgrade Paths** 
 The new tier goes into the cart with an **Upgrade Discount** equal to what was paid for the old one, so the attendee pays the difference.
 </Sidenote>
 
-Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let *General Admission* attendees upgrade to *Sponsor*, add *Sponsor* on the *General Admission* page. A tier with none shows *There are currently no upgrade paths.*
+Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let *General Admission* attendees upgrade to *Sponsor*, add *Sponsor* on the *General Admission* page.
 
-1. Open the tier attendees upgrade *from* (section 4, step 1). In **Upgrade Paths**, click the green **Add** button.
+1. On the page of the tier attendees upgrade *from*, click the green **Add** button in **Upgrade Paths**.
 
    <Result>A **Product Search** field and a **Create Upgrades** button appear.</Result>
 
@@ -120,8 +109,6 @@ Once a registration is paid, the **Registration Type** step offers only the paid
 4. *(Optional)* To remove an upgrade path, click its delete button.
 
    <Result>The tier is no longer listed.</Result>
-
-[How attendees register](../registering.md), section 7, shows the attendee's side.
 
 ## Addons on a tier
 

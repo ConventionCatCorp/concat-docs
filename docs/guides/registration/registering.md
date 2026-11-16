@@ -21,7 +21,7 @@ Use an ordinary attendee account in a private window: your staff account may see
 An attendee can register when:
 
 - They're signed in to an account.
-- **Open Registration** is ticked in **Housekeeping › Registration › Settings** ([Registration settings](./settings.md), section 2).
+- **Open Registration** is ticked in **Housekeeping › Registration › Settings**.
 - At least one [badge product](./attendance/attendance.md) is **Public**, on sale (between its **Available From** and **Available Until**), and allowed for their age and roles.
 
 ## Start a registration
@@ -52,7 +52,7 @@ Each tier the attendee may buy is a card with a **Select** button. A tier is hid
 
    <Result>**Registration Type** opens again; the chosen tier shows **Continue** instead of **Select**.</Result>
 
-When attendees select a tier for themselves, one of its stock is held in their cart, so it can't sell out while they fill in the form.
+When attendees select a tier for themselves, one is held in their cart so it can't sell out while they fill in the form. A tier gated by a silo isn't held.
 
 <TableFigure title="Messages on the Registration Type step">
 
@@ -76,7 +76,7 @@ When attendees select a tier for themselves, one of its stock is held in their c
 
 2. Click **Register** at the bottom of the form.
 
-   <Result>The **Review** step opens with the result (section 5). If something is missing, a message names it, such as *Emergency Contact Info is required.*</Result>
+   <Result>The **Review** step opens with the result. If something is missing, a message names it, such as *Emergency Contact Info is required.*</Result>
 
 An emergency contact is required when the form's **Emergency contacts** element is set as required, and always for minors, PII-free children and, if your volunteer settings ask for it, volunteers.
 
@@ -95,7 +95,7 @@ An emergency contact is required when the form's **Emergency contacts** element 
 
 Public paid addons for the tier are offered in a **Product addons** card below the result.
 
-1. On the result, click **Go to dashboard**.
+1. On the result, click **Go to dashboard**. After **Order completed!**, open **Attendance** in the homepage sidebar instead.
 
    <Result>**Attendance** opens. The status card says **Complete your registration** (or *You're registered for* your convention, if nothing was due); the attendee's card shows the tier, **Unpaid** or **Registered**, and the badge name.</Result>
 
@@ -105,11 +105,11 @@ Public paid addons for the tier are offered in a **Product addons** card below t
 
    <Result>The checkout page opens with an **Order Summary**.</Result>
 
-2. Pay for the order.
+2. Pay for the order ([Checkout and payment](../orders/checkout.md)).
 
    <Result>The status card says *You're registered for* your convention's short name, and the attendee's card shows **Registered**.</Result>
 
-With **Cart Timeout** set ([Registration settings](./settings.md)), an unpaid registration is held only that long, and the status card counts down the time left. Checkout and vouchers: [Checkout and payment](../orders/checkout.md).
+With **Cart Timeout** set in Registration settings, an unpaid registration is held only that long, and the status card counts down the time left.
 
 ## Change or upgrade a registration
 
@@ -139,7 +139,7 @@ In the card's menu (the arrow next to **Modify**), **Delete registration** delet
 
 ## When registration is closed
 
-1. Untick **Open Registration** ([Registration settings](./settings.md), section 2), then open **Attendance** as an attendee.
+1. In the **General** card of **Housekeeping › Registration › Settings**, untick **Open Registration** and click **Save**. Then open **Attendance** as an attendee.
 
    <Result>The card says *Registration for* your convention's name *is closed.*, with an **Update personal info** button. No registration cards are shown.</Result>
 
@@ -147,7 +147,7 @@ In the card's menu (the arrow next to **Modify**), **Delete registration** delet
 
    <Result>The page says *Registration for the convention is currently closed.*</Result>
 
-If registration is open but no tier can be offered, the wizard says *There are no products available for registration.*, then *Check the Event Store for other available items.* when your store is on and has public products, or *Please check back later.* otherwise.
+If registration is open but no tier can be offered, the wizard says *There are no products available for registration.*, and points to your Event Store if it's on and has public products.
 
 :::caution[Watch out]
 While registration is closed, attendees can't see or change their registrations on **Attendance**, and the attendee notice is hidden. Close registration only when you mean it.

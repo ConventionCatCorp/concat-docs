@@ -6,7 +6,7 @@ textbook: true
 
 # NFC badges
 
-The Cashier UI writes a signed record to the NFC chip in each attendee's badge before printing its label. A programmed badge on the reader opens its holder, and other systems can check badges against ConCat.
+Program each attendee's NFC badge at the Cashier UI, find attendees by placing their badge on a reader, and revoke lost badges.
 
 :::info[In this guide]
 How NFC badges work, turning them on, connecting a reader, programming and printing, finding an attendee by badge, and revoking a badge.
@@ -15,7 +15,7 @@ How NFC badges work, turning them on, connecting a reader, programming and print
 ## How NFC badges work
 
 <Sidenote title="Who can do this">
-Programming and revoking need **system:nfc_token:program** (*Program NFC badges*); reading needs **system:nfc_token:password** (*Read password for NFC badges*). The *admin* and *registration* roles have both. The *badgeValidator* role (*Allows the user to validate NFC badges*) has only the second, for staff who only check badges.
+Programming and revoking need **system:nfc_token:program** (*Program NFC badges*); reading needs **system:nfc_token:password** (*Read password for NFC badges*). The *admin* and *registration* roles have both. The *badgeValidator* role has only the second, for staff who only check badges.
 </Sidenote>
 
 To program a badge, the station reads the chip's unique ID, and ConCat creates the attendee's NFC record: a new password, and a signed record of the attendee, the convention and how many badges they've been issued. The station locks the chip with the password and writes the signed record to it.
@@ -50,12 +50,12 @@ An attendee has one active NFC badge per convention: programming a new one deact
 
    <Result>The header shows **NFC Card Status:**, reading **unknown** until you connect a reader, and **Configure Devices** has an **NFC Tag Interfaces** section.</Result>
 
-The setting's description says a badge must be programmed before its label prints, but cashiers can still print a label without programming a chip, with **Print Only** (section 4).
+Cashiers can still print a label without programming a chip, with **Print Only** (section 4).
 
 ## Connect an NFC reader
 
 <Sidenote title="Installed separately">
-The NFC proxy program and the Web Serial reader's firmware aren't part of the ConCat website. Install them on each station computer first.
+The NFC proxy program and the Web Serial reader's firmware don't come with ConCat. Set them up for each station first.
 </Sidenote>
 
 A station uses one interface from Table 3.1 at a time, and saves the choice in the browser.
@@ -64,7 +64,7 @@ A station uses one interface from Table 3.1 at a time, and saves the choice in t
 
 | Interface | What it is |
 | --- | --- |
-| **Local HTTP Proxy** <small>Listed as **HTTP Interface**</small> | A program on the station computer that drives a USB NFC reader, reached at `localhost`, port 7070. Always listed; can't be removed. |
+| **Local HTTP Proxy** <small>With **HTTP Interface** below it</small> | A program on the station computer that drives a USB NFC reader, reached at `localhost`, port 7070. Always listed; can't be removed. |
 | **NFC Tag Interface with Web Serial** | A USB reader whose firmware answers ConCat's NFC commands over a serial port. Needs a browser with Web Serial. |
 
 </TableFigure>
@@ -83,9 +83,7 @@ A station uses one interface from Table 3.1 at a time, and saves the choice in t
 
 ## Program and print a badge
 
-The label prints like any badge ([Badge and receipt printers](./printers.md)).
-
-1. Open the attendee's page ([Cashier UI](./cashier.md), section 1).
+1. Open the attendee's page.
 
    <Result>Below the status card are **Program & Print Badge** (**Program & Re-print Badge** after an earlier print) and **Print Only**.</Result>
 
@@ -103,7 +101,7 @@ On a reprint with **Show reprint modal** on, **Program & Re-print Badge** first 
 
 :::caution[Watch out]
 - **Use a blank badge every time.** A locked chip can't be programmed again, even for the same attendee; the station stops with an **NFC badge problem** message.
-- **No active interface:** **Program & Print Badge** does nothing.
+- **No active interface:** **Program & Print Badge** does nothing. Set a reader as primary first (section 3).
 - **Failed writes:** if the station can't lock or write the chip, it shows *NFC badge problem: Failed to set NFC badge password* or *NFC badge problem: Failed to write badge data:* and the reason, and removes the new record. A replacement has already deactivated the old badge, so program a new blank one.
 :::
 

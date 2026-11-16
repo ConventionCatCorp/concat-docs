@@ -18,15 +18,15 @@ How badge art works, uploading images, limiting an image, and deleting an image.
 **Badge Art** needs both `asset:create` and `system:badgeart:update`. The default *admin* role has them.
 </Sidenote>
 
-Attendees choose their art on the registration form, if it has a **Badge art selector** element ([Registration form editor](./form-editor.md), section 5), with **Select** on an image. If they don't choose, an available image is picked at random. With no art uploaded, the element says *There is currently no badge art to choose. Check back closer to the convention.*
+Attendees choose their art on the registration form, if it has a **Badge art selector** element ([Registration form editor](./form-editor.md), section 5), with **Select** on an image. If they don't choose, an available image is picked at random. With no art uploaded, the element tells attendees there's none to choose yet.
 
 A limit caps how many registrations can use an image. Once it's reached, the image is offered only to attendees who already have it.
 
-To print the art, use an **Image** element with **Source** `badgeDesign` in the [Badge Designer](./badge_designer.md). The designer's **Pre-Printed Canvas** can also show badge art behind your design, for pre-printed badges.
+To print the art, use an **Image** element with **Source** `badgeDesign` in the [Badge Designer](./badge_designer.md).
 
 ## Upload badge art
 
-1. Go to **Housekeeping › Registration › Badge Art** ([Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Registration › Badge Art**.
 
    <Result>The **Badge Art Settings** page opens with an upload box for images up to 5 MB, converted to PNG.</Result>
 

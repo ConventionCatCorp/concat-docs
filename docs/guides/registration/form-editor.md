@@ -40,7 +40,7 @@ Needs `registration:form:manage`, which only the default *admin* role has. Witho
 ## The editor's layout
 
 - **Toolbox**: the elements you can add (Table 5.1).
-- **Form Editor**: your sections in order, with **Add New Section** below. Each element has a drag handle, a pencil button for its display name, **Edit** if it has properties, and **Delete**.
+- **Form Editor**: your sections in order, with **Add New Section** below.
 - **View Preview** (section 7) and **Save Changes** (section 8).
 
 <Figure
@@ -129,7 +129,11 @@ To get back a section deleted by mistake, leave with **Exit without Saving** (se
 
 </TableFigure>
 
-The form always ends with a **Register** button (**Update Registration** when modifying), so a **Submit button** is optional. For the badge name, use an **Option** element set to **Badge Name**, not **Personal information**. **Badge preview** is hidden until you set a default design in the [Badge Designer](./badge_designer.md).
+The form always ends with a **Register** button (**Update Registration** when modifying), so a **Submit button** is optional. **Badge preview** is hidden until you set a default design in the [Badge Designer](./badge_designer.md).
+
+:::tip[Badge name]
+For the badge name, use an **Option** element set to **Badge Name**, not **Personal information**.
+:::
 
 :::caution[Watch out]
 Keep an **Emergency contacts** element on the form. Minors, PII-free children and, if your volunteer settings require it, volunteers must give an emergency contact: without the element they can't register, and see *Emergency Contact Info is required.*
@@ -145,9 +149,9 @@ Keep an **Emergency contacts** element on the form. Minors, PII-free children an
 
    <Result>The dialog closes. For an **Option**, the element's description shows **Option:** and the option's name.</Result>
 
-The **Option** dialog lists **Badge Name** and every option by ID and name. **Terms agreement** lists policies by internal key: `privacy` (**Privacy terms**), `terms` (**Convention Policy / Terms & Conditions**) and `conventionTerms` (**Registration Terms**). You write them in **Housekeeping › System › Settings › Terms** ([Convention setup](../quickstart/convention-setup.md), section 3).
+The **Option** dialog lists **Badge Name** and every option by ID and name. **Terms agreement** lists policies by internal key, including `privacy` (**Privacy terms**), `terms` (**Convention Policy / Terms & Conditions**) and `conventionTerms` (**Registration Terms**), which you write in **Housekeeping › System › Settings › Terms**.
 
-If an element's properties are wrong when you save, **There are errors in your form. Please fix them before saving again.** appears, and the element shows **Error(s):** and the problem.
+If an element's properties are wrong when you save, **There are errors in your form. Please fix them before saving again.** appears, and the element shows **Error(s):** and the problem. Click **Edit** on that element, fix it, and save again.
 
 ## Preview the form
 
@@ -172,7 +176,3 @@ With no badge products, the preview says *Add a product to this convention befor
    <Result>The **Registration Settings** page opens.</Result>
 
 With unsaved changes, the back arrow opens an **Unsaved Changes** dialog: choose **Save and Exit**, **Exit without Saving** or **Cancel** to stay.
-
-:::note[Dealer and volunteer forms]
-The dealer and volunteer application forms use the same editor, with their own toolbox; see [Dealer settings, policy and form](../dealers/settings.md) and [Volunteer settings and form](../volunteers/settings.md).
-:::

@@ -15,16 +15,14 @@ The settings page, the **General** card, the attendee notice, banned words, and 
 ## The settings page
 
 <Sidenote title="Who can do this">
-Needs `system:settings:update`; saving the attendee notice also needs `registration:update`. The default *admin* role has both.
+Needs `system:settings:update`. The attendee notice also needs `registration:update`, and the **Form Editor** card `registration:form:manage`. The default *admin* role has all three.
 </Sidenote>
 
-Each card has its own **Save** button, which saves that card only. **Housekeeping › System › Settings** is a separate page; no setting appears on both.
+Each card has its own **Save** button, which saves that card only.
 
-1. Go to **Housekeeping › Registration › Settings** ([Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Registration › Settings**.
 
    <Result>The **Registration Settings** page opens, with the **General** card first. The address ends in `/housekeeping/registration/settings`.</Result>
-
-The **Form Editor** card appears only with the `registration:form:manage` permission. A setting marked **Experimental** may still change; one marked **Deprecated** will be removed.
 
 ## General
 
@@ -35,9 +33,9 @@ The **Form Editor** card appears only with the `registration:form:manage` permis
 | **Enable Registration Transfers** | Attendees can give a paid registration to another attendee. See [Transfer Registration](./transfer.md). |
 | **Enable NFC Badges** | A badge's label prints only once its NFC badge is programmed. See [NFC badges](./cashier/nfc.md). |
 | **Open Registration** | Attendees can register. While it's off, **Attendance** only says registration is closed. |
-| **Enable Registration QR Codes** | A completed registration's QR code is emailed to the attendee and shown on their card on **Attendance**. <small>Not for registrations completed before you turn it on.</small> |
+| **Enable Registration QR Codes** | A completed registration's QR code is emailed to the attendee and shown on their card on **Attendance**. <small>Not emailed for registrations completed before you turn it on; ConCat Support can send those.</small> |
 | **Disable refunds** | Enter the message attendees see when they try to request a refund. <small>Staff can still refund orders.</small> |
-| **Limit attendance count** (**Deprecated**) | Read-only; shown only if set before. Otherwise a *Looking for "Limit attendance count"?* note suggests a hidden addon with a quantity limit. |
+| **Limit attendance count** (**Deprecated**) | Read-only, and shown only if it was set before. To cap attendance, use a hidden addon with a quantity limit. |
 | **Cart Timeout** (**Experimental**) | The minutes an attendee has to check out before their unpaid registration stops being held. |
 
 </TableFigure>
@@ -50,11 +48,11 @@ The **Form Editor** card appears only with the `registration:form:manage` permis
 
    <Result>With **Open Registration** ticked, an attendee who hasn't registered is offered **Start registration**. Unticked, the page says *Registration for* your convention's name *is closed.*</Result>
 
-Registration starts closed, so you can set up first. For what attendees see while it's closed, see [How attendees register](./registering.md), section 8.
+Registration starts closed, so you can set up first.
 
 ## Attendee notice
 
-One notice at a time appears at the top of every attendee's **Attendance** page, such as a schedule change. **Importance** sets its colors: **Critical** for urgent alerts, **High** for announcements, **Normal** for reminders. **Show attendee notice** is **Experimental**.
+One notice at a time, such as a schedule change, appears at the top of every attendee's **Attendance** page. **Importance** sets its colors: **Critical** for urgent alerts, **High** for announcements, **Normal** for reminders.
 
 1. In the **Attendee Notice** card, tick **Show attendee notice**.
 
@@ -80,7 +78,7 @@ One notice at a time appears at the top of every attendee's **Attendance** page,
 Every convention in your organization shares the list. New organizations start with a default list.
 </Sidenote>
 
-Banned words don't block attendees. When staff open an attendee in the Cashier UI, a warning names the field and the banned words found, so staff can ask for a change before printing. ConCat checks the **Badge Name** and free-text options such as *Species*, matching anywhere in the text, in any case.
+Banned words don't block attendees. When staff open an attendee in the Cashier UI, a warning names the field and the banned words found. ConCat checks the **Badge Name** and free-text options such as *Species*, matching anywhere in the text, in any case.
 
 1. In the **Banned Words** card, enter one word per line, then click **Save** in that card.
 

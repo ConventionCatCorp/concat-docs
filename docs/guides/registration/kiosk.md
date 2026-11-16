@@ -14,10 +14,6 @@ What the kiosk is, the **Kiosk** settings card, starting a kiosk, registering at
 
 ## What the kiosk is
 
-<Sidenote title="Not a check-in">
-Attendees still collect their badge at the Cashier UI. Scanning tickets on staff devices is QuikTicket; see [Devices and QuikTicket](./cashier/devices.md).
-</Sidenote>
-
 The kiosk is the page at your instance's address followed by `/kiosk`. Nothing links to it: staff open it on the device. It takes each attendee through **Policies**, **User info**, **Badge Info** and **Payment**, then signs them out and resets.
 
 It uses your registration form ([Registration form editor](./form-editor.md)) and public badge tiers, and needs registration to be open.
@@ -88,9 +84,9 @@ Do these steps on the kiosk, as an attendee.
 
    <Result>A **You are now logged out.** message appears, and the kiosk is back at the **Age check**.</Result>
 
-An attendee who doesn't tick **I would like to create an account.** gets an account with a generated username and password, which they can't sign in to. *If you choose not to register an account, your information will be deleted after the end of the convention.* If the **Email Address** is already in use, the field tells the attendee to go to the registration desk.
+An attendee who doesn't tick **I would like to create an account.** gets an account with a generated username and password, which they can't sign in to, and the kiosk tells them their information will be deleted after the convention. Help under **Email Address** tells attendees whose address is already in use to go to the registration desk.
 
-If ConCat Support has turned on identity verification for your instance, the kiosk asks for it after the age check.
+If ConCat Support has made identity verification required for your event, the kiosk asks for it after the age check.
 
 ## Automatic reset
 
@@ -104,4 +100,4 @@ With **Kiosk mode timeout** ticked, after 45 seconds without input (120 seconds 
 
    <Result>A **You are now logged out.** message appears, and the kiosk is back at the **Age check**.</Result>
 
-Any key press or mouse movement during the countdown closes the box and continues the registration. If something goes wrong on the kiosk, an error page offers **Reset Kiosk**.
+Any touch, key press or mouse movement during the countdown closes the box and continues the registration. If something goes wrong on the kiosk, an error page offers **Reset Kiosk**.

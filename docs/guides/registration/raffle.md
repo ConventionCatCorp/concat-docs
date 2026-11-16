@@ -6,7 +6,7 @@ textbook: true
 
 # Gatekeeping
 
-Gatekeeping limits who can buy a product, often a badge tier: attendees enter a **silo** instead of buying, and you choose who may buy. Use it for events with limited space, or a sponsor tier for only some people.
+Limit who can buy a product, such as a badge tier: attendees enter a **silo** instead of buying, and you choose who may buy.
 
 :::info[In this guide]
 How gatekeeping works, the list of silos, creating a silo, changing or deleting a silo, entrants, wording, running a draw, and what attendees see.
@@ -15,10 +15,10 @@ How gatekeeping works, the list of silos, creating a silo, changing or deleting 
 ## How gatekeeping works
 
 <Sidenote title="Who can do this">
-Needs `raffle:manage` (*Allows for managing raffles*), which only the default *admin* role has. Setting **Role override** also needs `system:permission:read`.
+Needs `raffle:manage`, which only the default *admin* role has. Setting **Role override** also needs `system:permission:read`.
 </Sidenote>
 
-Attendees still see the old name, raffle (**Enter raffle**, **Leave raffle**), but there's no random draw: you pick the winners yourself with **Select users to win** (section 7).
+Attendees see the old name, raffle, but there's no random draw: you choose the winners yourself.
 
 When an attendee registers for a gated tier, or clicks **Enter raffle** on a gated store product, they get a **ticket** in the silo, and nothing goes in their cart. Once you mark them as a winner, they can buy the product. A product can be in only one silo.
 
@@ -34,11 +34,11 @@ When an attendee registers for a gated tier, or clicks **Enter raffle** on a gat
 
 </TableFigure>
 
-A silo's status shows next to **Silo Information**: **Open to Entries**, **Closed to Entries**, or **Recently Drawn** after a draw that closed it. Members of a **Role override** role, such as staff, skip the silo and buy directly, even when it's closed. An **Overflow stock silo** collects attendees for later selection when the product is out of stock; its entrants become winners as soon as they enter.
+A silo's status shows next to **Silo Information**: **Open to Entries**, **Closed to Entries**, or **Recently Drawn** after a draw that closed it. Members of a **Role override** role, such as staff, skip the silo and buy directly, even when it's closed. In an **Overflow stock silo**, entrants become winners as soon as they enter and can buy while there's stock; once the product is out of stock, new entrants wait in the silo for later selection.
 
 ## The list of silos
 
-1. Go to **Housekeeping › Store Management › Gatekeeping** ([Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Store Management › Gatekeeping**.
 
    <Result>The **Gatekeeping** page shows a **Create New Silo** button and a card per silo with its name, ID and a **Manage Silo** button. The address ends in `/housekeeping/store/gatekeeping`.</Result>
 
@@ -48,11 +48,11 @@ A silo's status shows next to **Silo Information**: **Open to Entries**, **Close
 
    <Result>The **Creating Silo** page opens with the cards **Silo Information**, **Associated Products** and **Role override**. **Allow new entries to the silo?** is ticked.</Result>
 
-2. Enter a **Name**, and in **Associated Products** search for and select the products to gate. *(Optional)* In **Role override**, choose roles whose members bypass the silo, and tick **Overflow stock silo**. Then click **Create Silo**.
+2. Enter a **Name** and, in **Associated Products**, select the products to gate. *(Optional)* Choose **Role override** roles or tick **Overflow stock silo**. Click **Create Silo**.
 
    <Result>A **Silo successfully created!!** message appears, and the page becomes **Editing Silo:** and the silo's name, with the tabs **Entrants**, **Wording** and **Run**.</Result>
 
-If a product is already in another silo, *Product is already part of another silo.* appears and the silo isn't saved.
+If a product is already in another silo, *Product is already part of another silo.* appears and the silo isn't saved: remove the product from the other silo first.
 
 ## Change or delete a silo
 
@@ -80,7 +80,7 @@ If a product is already in another silo, *Product is already part of another sil
 
 2. *(Optional)* Choose a status in the status list, or type a name in **Search...**.
 
-   <Result>Only matching tickets are listed. The status list uses the internal names `waiting`, `winner`, `redeemed`, `rescinded` and `deleted`.</Result>
+   <Result>Only matching tickets are listed. The status list uses the internal names `deleted`, `redeemed`, `rescinded`, `waiting` and `winner`.</Result>
 
 3. To change one ticket, open its menu and choose an action from Table 5.1.
 
@@ -88,18 +88,18 @@ If a product is already in another silo, *Product is already part of another sil
 
 <TableFigure title="Actions on one ticket">
 
-| Ticket is | Actions | Message |
+| Action | The ticket becomes | Offered when the ticket is |
 | --- | --- | --- |
-| **Entered / Waiting** | **Revoke / Void ticket**, **Reset ticket to winner** | *Rescinded Ticket #… for* the name, or *Marked Ticket #… as a winner.* |
-| **Winner** | **Reset ticket**, **Revoke / Void ticket** | *Reset Ticket #… to Entered / Waiting.*, or as above |
-| **Redeemed** | **Reset ticket**, **Set ticket to winner** | as above |
-| **Rescinded**, **Deleted** | **Reset ticket** | *Reset Ticket #… to Entered / Waiting.* |
+| **Reset ticket to winner** | **Winner** | **Entered / Waiting** |
+| **Set ticket to winner** | **Winner** | **Redeemed** |
+| **Reset ticket** | **Entered / Waiting** | **Winner**, **Redeemed**, **Rescinded** or **Deleted** |
+| **Revoke / Void ticket** | **Rescinded** | **Entered / Waiting** or **Winner** |
 
 </TableFigure>
 
 ## Wording
 
-The **Wording** tab holds eight required texts attendees see about the silo (Table 6.1). The other six appear on the attendee's registration card, in the situation shown.
+The **Wording** tab holds eight required texts (Table 6.1). The first two replace the cart message when an attendee enters the silo; the other six appear on their registration card.
 
 <TableFigure title="The silo's wording">
 
@@ -155,11 +155,13 @@ A draw marks the attendees you choose as winners and can also deal with earlier 
 
 </TableFigure>
 
-:::tip
-For several rounds, leave non-winners on **Do Nothing**, and untick **Close the raffle to new entries** to take entries between rounds.
+:::tip[Several rounds]
+Leave non-winners on **Do Nothing**, and untick **Close the raffle to new entries** to take entries between rounds.
 :::
 
-ConCat doesn't notify winners: tell them yourself, for example with a [Mass email](../attendees/mass-email.md) to the silo's entrants.
+:::tip[Tell the winners]
+ConCat doesn't notify winners. Send a [Mass email](../attendees/mass-email.md) to the silo's entrants.
+:::
 
 ## What attendees see
 
@@ -175,7 +177,7 @@ ConCat doesn't notify winners: tell them yourself, for example with a [Mass emai
 
 3. *(Optional, to leave the silo)* Open the menu on the card's arrow and choose **Delete registration**.
 
-   <Result>The registration is deleted, and the ticket becomes **Deleted**. For a rescinded ticket, *This registration cannot be deleted. Please contact the registration team.* appears instead.</Result>
+   <Result>The registration is deleted, and the ticket becomes **Deleted**. Once the silo is closed, or the ticket is a winner or rescinded, *This registration cannot be deleted. Please contact the registration team.* appears instead; staff can still delete it from the attendee's profile.</Result>
 
 4. Mark the attendee as a winner (section 7). Then, as the attendee, open **Attendance**.
 

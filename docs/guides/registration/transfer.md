@@ -14,18 +14,18 @@ How transfers work, turning transfers on, transferring as an attendee, and trans
 
 ## How transfers work
 
-<Sidenote title="Permanent">
-The attendee can't undo a transfer. The sender no longer has a paid registration, and can't edit it.
-</Sidenote>
-
 A transfer moves the *payment* for a registration to another attendee. The recipient's own registration becomes paid, for the sender's tier; they keep their badge name and answers, and anything for the registration in their cart is removed.
 
 A transfer works only when:
 
-- **Enable Registration Transfers** is ticked in **Housekeeping › Registration › Settings** (section 2).
+- **Enable Registration Transfers** is ticked (section 2).
 - The sender's registration is paid, and their badge hasn't been printed.
 - The recipient has an account with the email address the sender enters, and has registered but not paid.
 - The registration wasn't bought with a discount that prevents transfers ([Discounts](../products/discounts.md)).
+
+:::caution[Watch out]
+The attendee can't undo a transfer. The sender no longer has a paid registration, and can't edit it.
+:::
 
 ## Turn on transfers
 
@@ -51,14 +51,14 @@ First, the recipient creates an account and registers for any tier, without payi
 
 <TableFigure title="When a transfer is refused">
 
-| Message | Why |
-| --- | --- |
-| *This registration cannot be transferred, as the badge has already been printed.* <small>Shown in the dialog, in place of the fields.</small> | The sender's badge has been printed. |
-| *This registration cannot be transferred, as it was purchased with a discount that prevents transfers.* <small>Shown in the dialog, in place of the fields.</small> | The registration's discount prevents transfers. |
-| *Target user email not found.* | No account uses that email address. |
-| *User has not yet registered.* | The recipient has no registration. |
-| *Target user registration already has a grant.* | The recipient has already paid for a registration. |
-| *Incorrect password.* | The sender's password was wrong. |
+| Message | Why | What to do |
+| --- | --- | --- |
+| *This registration cannot be transferred, as the badge has already been printed.* <small>Shown in the dialog, in place of the fields.</small> | The sender's badge has been printed. | Staff can still transfer it (section 4). |
+| *This registration cannot be transferred, as it was purchased with a discount that prevents transfers.* <small>Shown in the dialog, in place of the fields.</small> | The registration's discount prevents transfers. | Nothing: even staff can't transfer it. |
+| *Target user email not found.* | No account uses that email address. | Check the address with the recipient, who may need to create an account. |
+| *User has not yet registered.* | The recipient has no registration. | The recipient registers for any tier, without paying. |
+| *Target user registration already has a grant.* | The recipient has already paid for a registration. | Choose a recipient who hasn't paid. |
+| *Incorrect password.* | The sender's password was wrong. | Enter the sender's own password again. |
 
 </TableFigure>
 

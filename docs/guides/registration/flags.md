@@ -6,7 +6,7 @@ textbook: true
 
 # Registration flags
 
-Registration flags are yes-or-no checkboxes on the registration form, such as joining the newsletter. Create and edit them, see who set one, and clear the data of attendees who asked to be deleted.
+Create registration flags (yes-or-no checkboxes on the registration form, such as joining the newsletter), see who ticked one, and clear the data of attendees who asked to be deleted.
 
 :::info[In this guide]
 How flags work, creating a flag, editing and deleting flags, who set a flag, and clearing *nukeme* data.
@@ -18,9 +18,9 @@ How flags work, creating a flag, editing and deleting flags, who set a flag, and
 **Registration Flags** needs `registration:update`, which the default *admin* and *registration* roles have.
 </Sidenote>
 
-The form's **Registration flags** element ([Registration form editor](./form-editor.md), section 5) shows each flag as a checkbox labeled with its **Description**. Once ticked, its **Enabled description** appears below, for example to thank the attendee. Flags appear in **Sort order**, and only if **Make visible to attendees** is ticked.
+The form's **Registration flags** element ([Registration form editor](./form-editor.md), section 5) shows each flag as a checkbox labeled with its **Description**. Once ticked, its **Enabled description** appears below. Flags appear in **Sort order**, and only if **Make visible to attendees** is ticked.
 
-**Short Name** identifies the flag inside ConCat and can't be changed later. A new convention starts with the flags in Table 1.1.
+**Short Name** identifies the flag inside ConCat and can't be changed later.
 
 <TableFigure title="The flags a new convention starts with">
 
@@ -31,17 +31,17 @@ The form's **Registration flags** element ([Registration form editor](./form-edi
 | `asl` | *I want to request ASL interpreters for panels.* |
 | `newsletter` | *I want to receive the convention e-mail newsletter.* |
 | `picrelease` | *You may use my convention photos for promotional purposes.* |
-| `nukeme` | *Please delete my account after the con is over.* <small>Built in: it can't be deleted, and it's used in section 5.</small> |
+| `nukeme` | *Please delete my account after the con is over.* <small>Built in: it can't be deleted.</small> |
 
 </TableFigure>
 
 ## Create a flag
 
-1. Go to **Housekeeping › Registration › Registration Flags** ([Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Registration › Registration Flags**.
 
-   <Result>The **Registration Flags** page shows a table of flags and a green **Create** (+) button.</Result>
+   <Result>The **Registration Flags** page shows a table of flags, with a green add (+) button at the top right.</Result>
 
-2. Click the green **Create** (+) button.
+2. Click the green add (+) button.
 
    <Result>An **Edit Entry** dialog opens with **Short Name**, **Description**, **Enabled description**, **Sort order** and **Make visible to attendees**.</Result>
 
@@ -57,7 +57,7 @@ The form's **Registration flags** element ([Registration form editor](./form-edi
 
 1. In a flag's **Actions**, click the edit (pencil) button (Figure 3.1).
 
-   <Result>**Edit Entry** opens with the flag's values; **Short Name** can't be changed.</Result>
+   <Result>**Edit Entry** opens with the flag's values, and **Short Name** grayed out.</Result>
 
 2. Change the fields and click **Save**.
 
@@ -78,13 +78,15 @@ The form's **Registration flags** element ([Registration form editor](./form-edi
   ]}
 >
 
-1. **Create** (section 2).
-2. **Clear "nukeme" PII?**, on the `nukeme` row only (section 5).
+1. The add (+) button (section 2).
+2. The crossed-out people button, on the `nukeme` row only (section 5).
 3. A flag's **Actions**: **List users** (section 4), edit and delete. `nukeme` has no delete button.
 
 </Figure>
 
-To stop offering a flag but keep who set it, untick **Make visible to attendees** instead of deleting it.
+:::tip[Hide a flag instead of deleting it]
+To stop offering a flag but keep who set it, untick **Make visible to attendees**.
+:::
 
 ## List the attendees who set a flag
 
@@ -102,15 +104,15 @@ To stop offering a flag but keep who set it, untick **Make visible to attendees*
 Requesting the clear also needs `system:export`. Canceling it needs `staff:admin:update`, `pii:admin:read`, `pii:admin:delete` and `system:settings:update`. The default *admin* role has them all.
 </Sidenote>
 
-Attendees who tick `nukeme` ask for their account to be deleted after the convention. Once it has ended, you can request that ConCat clear the personal data (PII) of all of them. The clear runs 24 hours after the request, leaving time to cancel.
+Attendees who tick `nukeme` ask for their account to be deleted after the convention. Once it has ended, you can have ConCat clear their personal data (PII). The clear runs 24 hours after your request, so you can still cancel.
 
-1. On the `nukeme` row, click the **Clear "nukeme" PII?** button (a crossed-out people icon).
+1. On the `nukeme` row, click the red crossed-out people button.
 
    <Result>A **Clear "nukeme" PII?** dialog warns that the PII will be cleared in 24 hours unless canceled, and that this is irreversible.</Result>
 
 2. *(Optional)* Tick **Delete Dealer Data** or **Delete Volunteer Data** to also clear these attendees' dealer or volunteer applications. Tick **Exclude specific users?** and choose attendees to leave out. Then click **Request to Clear PII**.
 
-   <Result>A **Request successfully created.** message appears. Before the convention's end date, *You cannot clear all PII before the convention has ended.* appears instead; if a request is already waiting, *A pending deletion request already exists.*</Result>
+   <Result>A **Request successfully created.** message appears. Before the convention's end date, *You cannot clear all PII before the convention has ended.* appears instead; if a request is already waiting, *A pending deletion request already exists.* To change a waiting request, cancel it (step 4) and request again.</Result>
 
 3. Go to **Housekeeping › System › Settings**.
 

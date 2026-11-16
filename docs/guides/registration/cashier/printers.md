@@ -46,7 +46,7 @@ Connect the printer to the station computer by USB and load the badge labels fir
 
 1. In the Cashier UI, click **Configure Devices**.
 
-   <Result>A **Configure Devices** dialog opens. With no Zebra printer yet, **Available Badge Printers** says *No other badge printers available, try adding one manually.*</Result>
+   <Result>A **Configure Devices** dialog opens, with an **Available Badge Printers** section.</Result>
 
 2. Next to **Available Badge Printers**, click **Add Manually**, then **Add zebra printer**.
 
@@ -72,8 +72,8 @@ Which badge types go to the secondary is set per station, under **Badge type pri
 
 Click **Active as Primary** or **Active as Secondary** again to clear that slot. A printer fills one slot at a time: setting it as secondary takes it out of the primary slot. A Zebra printer can't be removed from the list; it stays while it's connected.
 
-:::note[Fonts]
-Each Zebra badge print downloads its fonts from Google Fonts, so the station needs internet access to them. If a font fails to load, the badge prints in a fallback font.
+:::caution[Watch out]
+Each Zebra badge print downloads its fonts from Google Fonts, so the station needs internet access. If a font fails to load, the badge prints in a fallback font.
 :::
 
 ## The test printer
@@ -118,7 +118,7 @@ The browser offers only Epson USB devices here. The station uses the first recei
 
 A receipt printer prints:
 
-- a *CASH PAYMENT* receipt after **Cash Payment** ([Cashier UI](./cashier.md), section 4.2), with your event's name and venue, the registration level, the amount, and the attendee's user ID and email address; then the cash drawer opens. **Card Payment** prints nothing.
+- a *CASH PAYMENT* receipt after **Cash Payment** ([Cashier UI](./cashier.md), section 4.2), then opens the cash drawer. **Card Payment** prints nothing.
 - a *PICK LIST* of undelivered items, from **Print Pick List** under **Undelivered products**. The button appears only when a receipt printer is connected.
 
 Connect the receipt printer to the station computer by USB, and the cash drawer to the receipt printer, first.

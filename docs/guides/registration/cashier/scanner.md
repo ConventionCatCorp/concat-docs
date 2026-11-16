@@ -6,15 +6,13 @@ textbook: true
 
 # Scanner
 
-Scan an attendee's driver's license or registration QR code, and the Cashier UI looks them up for you.
+Set up a barcode scanner so the Cashier UI finds attendees from their driver's license or registration QR code.
 
 :::info[In this guide]
 Codes the station reads, scanner modes, TEEMI setup, adding a Web Serial scanner, and registration QR codes.
 :::
 
 ## What the station reads
-
-The Cashier UI reads the codes in Table 1.1. Anything else a Web Serial scanner reads becomes an ordinary search.
 
 <TableFigure title="Codes the Cashier UI reads">
 
@@ -25,6 +23,8 @@ The Cashier UI reads the codes in Table 1.1. Anything else a Web Serial scanner 
 
 </TableFigure>
 
+Anything else a Web Serial scanner reads becomes an ordinary search.
+
 ## Keyboard and Web Serial scanners
 
 A scanner connects to the station in one of two ways:
@@ -34,13 +34,13 @@ A scanner connects to the station in one of two ways:
 
 Web Serial mode needs a browser with both WebUSB and Web Serial; keyboard mode needs neither. Without WebUSB, **Scanners** in **Configure Devices** has no **Add Manually** button and says *It seems like your browser does not support WebUSB. Please use a supported browser.*
 
-:::info[Key idea]
-Use Web Serial mode if your desk checks IDs: the cashier can verify an ID from the attendee's page without starting a new search.
+:::tip[Desks that check IDs]
+Use Web Serial mode: the cashier can verify an ID from the attendee's page without starting a new search.
 :::
 
 ## Set up a TEEMI scanner
 
-These steps use barcodes from the TEEMI 2D barcode scanner's [manual](/img/cashier/barcodes/TEEMI_2D_Barcode_Scanner_Manual.pdf). For another scanner, use its own manual to turn on PDF417, QR codes if you use registration QR codes, and serial (USB COM) mode.
+The barcodes come from the TEEMI 2D barcode scanner's [manual](/img/cashier/barcodes/TEEMI_2D_Barcode_Scanner_Manual.pdf). For another scanner, use its manual to turn on PDF417, QR codes (for registration QR codes) and serial (USB COM) mode.
 
 1. Scan the barcodes in Table 3.1, in order from the top.
 
@@ -65,7 +65,7 @@ Plug the scanner into the station computer by USB first.
 
 1. In the Cashier UI, click **Configure Devices**.
 
-   <Result>A **Configure Devices** dialog opens. With no scanner added yet, **Scanners** says *No serial scanners connected, try adding one manually.*</Result>
+   <Result>A **Configure Devices** dialog opens, with a **Scanners** section.</Result>
 
 2. Next to **Scanners**, click **Add Manually**, then **Scanner with Web Serial**.
 
@@ -83,11 +83,7 @@ The station remembers the scanner in this browser. It reconnects when the Cashie
 
 ## Registration QR codes
 
-<Sidenote title="What attendees see">
-Under the QR code, the email shows **Registration for User#** and the attendee's user ID.
-</Sidenote>
-
-Each registration has its own QR code. With **Enable Registration QR Codes** on, ConCat emails it when a registration is completed and shows it on the attendee's **Attendance** page. Scanning it at the desk opens the attendee, quicker than a name search.
+Each registration has its own QR code. With **Enable Registration QR Codes** on, ConCat emails it when a registration is completed and shows it on the attendee's **Attendance** page. Scanning it at the desk opens the attendee.
 
 1. Go to **Housekeeping › Registration › Settings**. In the **General** card, tick **Enable Registration QR Codes**, then click **Save** in that card.
 
@@ -106,9 +102,7 @@ Each registration has its own QR code. With **Enable Registration QR Codes** on,
    <Result>**One Result Found** and **Redirecting...** appear, then the attendee's page opens.</Result>
 
 :::caution[Watch out]
-- **Not retroactive:** registrations completed before the setting was on get no email (*This will not apply retroactively, contact support if you wish to backfill this.*). Those attendees can still show the code on their **Attendance** page.
+- **Not retroactive:** registrations completed before the setting was on get no email. Those attendees can still show the code on their **Attendance** page; to email them their codes, contact ConCat Support.
 - **Not an ID check:** a QR code identifies the registration, not the person. A station that requires an ID scan still blocks the attendee until their ID is scanned.
 - **Scanner settings:** a scanner set up for PDF417 only can't read QR codes. On a TEEMI, scan row 5 of Table 3.1.
 :::
-
-Ticket QR codes for ticketed products are scanned with the QuikTicket app: see [Devices and QuikTicket](./devices.md).

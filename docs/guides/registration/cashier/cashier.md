@@ -9,16 +9,16 @@ textbook: true
 The Cashier UI is the registration desk station: find an attendee, see whether they can check in, take any balance due, and print their badge.
 
 :::info[In this guide]
-Finding an attendee, station setup, event-wide settings, check-in and payment, reprints, check-in without printing, ID checks, the **Actions** menu and child badges. Hardware: [Scanner](./scanner.md), [Badge and receipt printers](./printers.md), [NFC badges](./nfc.md), [Devices and QuikTicket](./devices.md).
+Finding an attendee, station setup, event-wide settings, check-in and payment, reprints, check-in without printing, ID checks, the **Actions** menu and child badges.
 :::
 
 ## Open the station and find an attendee
 
 <Sidenote title="Who can do this">
-Needs **registration:cashier** (*Allows using the cash register*), which the default *admin* and *registration* roles have. See [Users and access](../../quickstart/users-and-access.md), section 3.
+Needs `registration:cashier`, which the default *admin* and *registration* roles have.
 </Sidenote>
 
-1. Go to **Housekeeping › Attendees › Cashier UI** (see [Start here](../../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Attendees › Cashier UI**.
 
    <Result>The station opens without the Housekeeping sidebar, with a **Search users...** box and **Enable Auto Navigate** ticked. The address ends in `/housekeeping/cashier`.</Result>
 
@@ -34,7 +34,7 @@ Needs **registration:cashier** (*Allows using the cash register*), which the def
 
    <Result>The search page opens, ready for the next attendee.</Result>
 
-**Enable Auto Navigate** skips step 3 when exactly one attendee matches a scanned registration QR code, a scanned ID (name and date of birth), or a typed first and last name: **One Result Found** and **Redirecting...** appear, then their page opens. A first name alone always shows the list.
+**Enable Auto Navigate** skips step 3 and opens the attendee's page when exactly one attendee matches a scanned registration QR code, a scanned ID (name and date of birth), or a typed first and last name. A first name alone always shows the list.
 
 You can also open an attendee by:
 
@@ -43,8 +43,8 @@ You can also open an attendee by:
 - placing their NFC badge on the reader ([NFC badges](./nfc.md));
 - clicking **Open Cashier Interface** in the **Actions** card of their Housekeeping profile.
 
-:::tip
-In a full-screen browser, ESC leaves full screen; use BACKSPACE for **Back to user search** instead, as the line under the button says.
+:::tip[Full screen]
+In a full-screen browser, ESC leaves full screen: press BACKSPACE for **Back to user search** instead.
 :::
 
 **Exit Registration Station**, on the search page, opens the Registration **Dashboard**.
@@ -99,8 +99,8 @@ Station settings and devices are saved in the browser, not in ConCat. Set up eac
 | **Print separate staff badge** | Off | Two badges for staff and volunteers: one with their attendance type, one with STAFF. <small>Off: one badge with both, separated by a slash.</small> |
 | **Print separate dealer badge** | Off | The same for dealers, with DEALER. |
 | **Show reprint modal** | On | Reprints ask for a reason (section 5). <small>Off: **Re-print Badge** prints at once, with no reason or design override. Locked on if the event forces a reprint reason (section 3).</small> |
-| **Override badge design** | (Default) | Prints every badge here with the chosen design, whatever the attendance level. The station calls this dangerous. |
-| **Badge type printer preferences** | Minor badges on the secondary, the rest on the primary | Zebra printer for each badge type (step 4). With no secondary printer, all print on the primary. See [Badge and receipt printers](./printers.md). |
+| **Override badge design** | (Default) | Prints every badge here with the chosen design, whatever the attendance level. |
+| **Badge type printer preferences** | Minor badges on the secondary, the rest on the primary | Zebra printer for each badge type (step 4). With no secondary printer, all print on the primary. |
 
 </TableFigure>
 
@@ -109,8 +109,6 @@ Station settings and devices are saved in the browser, not in ConCat. Set up eac
 <Sidenote title="Who can do this">
 Needs **system:settings:update**, which the *admin* role has.
 </Sidenote>
-
-These two settings apply to every station (Table 3.1).
 
 1. Go to **Housekeeping › Registration › Settings**.
 
@@ -133,7 +131,7 @@ These two settings apply to every station (Table 3.1).
 
 </TableFigure>
 
-With printing off, stations say *Badge printing is disabled.* and point to this setting, in **Housekeeping › Registration › Settings**.
+With printing off, attendee pages show *Badge printing is disabled.* To print badges again, clear **Disable badge prints and check-in users instead**.
 
 ## Check an attendee in
 
@@ -174,7 +172,7 @@ Banned words come from the **Banned Words** card in **Housekeeping › Registrat
 **Cash Payment** and **Card Payment** record a payment taken at the desk. ConCat doesn't charge the card.
 </Sidenote>
 
-A balance due blocks check-in. Only a station with **Enable payment acceptance** on (section 2) takes payment; others say *This registration station is not configured to accept payments.* and *Please direct the attendee to another registration station.*
+A balance due blocks check-in. Only a station with **Enable payment acceptance** on (section 2) takes payment; other stations tell staff to send the attendee to one that does.
 
 1. At a station that accepts payments, open an attendee who owes money.
 
@@ -186,7 +184,9 @@ A balance due blocks check-in. Only a station with **Enable payment acceptance**
 
 ### Print the badge
 
-Printing needs a default badge design. Without one, the page says *Cannot check-in as no badge design is configured and check-in mode is disabled.* Create one in **Housekeeping › Registration › Badge Designer** and click **Set as default** ([Badge Designer](../badge_designer.md)). Badges go to a Zebra printer if one is set up, otherwise to the browser's print dialog ([Badge and receipt printers](./printers.md)).
+:::caution[Needs a default badge design]
+Printing needs a default badge design. Without one, the page says *Cannot check-in as no badge design is configured and check-in mode is disabled.* Create one in **Housekeeping › Registration › Badge Designer** and click **Set as default** ([Badge Designer](../badge_designer.md)).
+:::
 
 1. Open the attendee and check the **Badge Print Preview**.
 
@@ -196,7 +196,7 @@ Printing needs a default badge design. Without one, the page says *Cannot check-
 
    <Result>A Zebra printer prints the badge. Without one, the browser's print dialog opens; print to your badge printer.</Result>
 
-3. If the button now reads **Print Next Badge (1 badge remaining)**, or more, click it for each remaining badge.
+3. With a Zebra printer, if the button now reads **Print Next Badge (1 badge remaining)** or more, click it for each remaining badge.
 
    <Result>After the last badge, the status card shows **Check-In Complete** if nothing else is flagged, and the button reads **Re-print Badge**.</Result>
 
@@ -228,7 +228,7 @@ Each reprint's reason is saved in the attendee's print log (section 8).
 
 ## Check in without printing
 
-For fully pre-printed badges, turn on **Disable badge prints and check-in users instead** (section 3). Staff hand over the badge and record the check-in.
+For fully pre-printed badges, turn on **Disable badge prints and check-in users instead** (section 3).
 
 1. Open the attendee.
 
@@ -250,7 +250,7 @@ An attendee with errors can't be checked in: a message starting *Registration ha
 The first name, last name and date of birth on the ID against the attendee's account, and the ID's expiry date.
 </Sidenote>
 
-Scanning a driver's license or ID card (PDF417 barcode) on the search page finds the attendee and checks the ID in one go. On an attendee's page, a Web Serial scanner opens a check of its own. Scanner setup: [Scanner](./scanner.md).
+Scanning a driver's license or ID card (PDF417 barcode) on the search page finds the attendee and checks the ID in one go. On an attendee's page, a Web Serial scanner ([Scanner](./scanner.md)) opens a check of its own.
 
 1. Open the attendee by searching for their name.
 
@@ -282,15 +282,13 @@ Scanning a driver's license or ID card (PDF417 barcode) on the search page finds
 
 </TableFigure>
 
-A registration QR code doesn't prove identity. Scanned here, it shows *Registration QR codes are not valid for ID validation. Please scan a valid PDF417 drivers license barcode.*
+A registration QR code doesn't prove identity, so the check refuses it: scan the PDF417 barcode on the ID instead.
 
 ## The Actions menu
 
 <Sidenote title="Who can do this">
-**Update personal details** needs **user:update** and is grayed out without it. Saving a registration needs **registration:update**. The *admin* and *registration* roles have both.
+**Update personal details** needs `user:update` and is grayed out without it. Saving a registration needs `registration:update`. The *admin* and *registration* roles have both.
 </Sidenote>
-
-The **Actions** menu opens the tools in Table 8.1 without leaving the station.
 
 <TableFigure title="The Actions menu">
 

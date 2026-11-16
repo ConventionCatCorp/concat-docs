@@ -6,7 +6,7 @@ textbook: true
 
 # Badge Designer
 
-Lay out the label printed on each attendee's badge, from positioned layers that suit a wide range of printers and badge stock.
+Lay out the label printed on each attendee's badge.
 
 :::info[In this guide]
 How badge designs work; the list of designs; creating a design; text elements; images and containers; previewing and test printing; and pre-printed badges, export and import.
@@ -20,35 +20,35 @@ Opening the Badge Designer needs `system:badgedesign:read`; the sidebar item and
 
 A badge design is a label layout in inches, built as a tree of elements: **text** (badge name, number, tier), **images** (badge art, profile picture, logo) and **nodes**, containers that group and position other elements. Text can show attendee details or the answer to a [product option](../products/options.md).
 
-The Cashier UI prints each badge with the convention's **default design**, unless the tier has its own **Product Label Print Design** ([Badge Products](./attendance/attendance.md), section 3). Badges print through the browser's print dialog or straight to a Zebra printer ([Cashier UI](./cashier/cashier.md)). Set a default design before badge pickup opens.
+The Cashier UI prints each badge with the convention's default design, unless the tier has its own **Product Label Print Design** ([Badge Products](./attendance/attendance.md), section 3). Set a default design before badge pickup opens.
 
 ## The list of designs
 
-1. Go to **Housekeeping › Registration › Badge Designer** ([Start here](../quickstart/start-here.md), section 2).
+1. Go to **Housekeeping › Registration › Badge Designer**.
 
-   <Result>The **Badge Designer** page lists your designs, each with **Set as default** (a star), **Copy** and **Delete**, and **See history** if you have `audit:read`.</Result>
+   <Result>The **Badge Designer** page lists your designs. Each row ends with a history button (with `audit:read`), a star, a copy button and a delete button.</Result>
 
-2. Click **Set as default** on a design.
+2. Click the star on a design.
 
    <Result>That design's star is filled; the others are empty.</Result>
 
-3. *(Optional)* To copy a design, click **Copy**, enter a **Name** in the **Duplicate** dialog, and click **Duplicate**.
+3. *(Optional)* To copy a design, click its copy button, enter a **Name** in the **Duplicate** dialog, and click **Duplicate**.
 
    <Result>The copy is listed under its new name.</Result>
 
-4. *(Optional)* To delete a design, click **Delete**, then **Delete** in the dialog.
+4. *(Optional)* To delete a design, click its delete button (the bin), then **Delete** in the dialog.
 
    <Result>The dialog asks *Are you sure you want to delete* and the design's name. After you confirm, the design is no longer listed.</Result>
 
-**See history** opens the design's entries in **System › Audit Logs**.
+The history button opens the design's entries in **System › Audit Logs**.
 
 ## Create a design
 
-1. On **Badge Designer**, click the green **New** (+) button (Figure 3.1).
+1. On **Badge Designer**, click the green + button at the top right of the list.
 
-   <Result>The editor opens with a starter layout: the **Render tree** and properties on the left, a preview on the right, and **Save**, **Export**, **Import**, **Print** and **Load users** in the top bar.</Result>
+   <Result>The editor opens with a starter layout (Figure 3.1): the **Render tree** and properties on the left, a preview on the right, and **Save**, **Export**, **Import**, **Print** and **Load users** in the top bar.</Result>
 
-2. With **Root** selected in the **Render tree**, enter a **Display Name** in the **Root** group, and set the label's **X**, **Y**, **Width** and **Height** in inches under **Details**.
+2. With the top node of the **Render tree** selected, enter a **Display Name** in the **Root** group, and set the label's **X**, **Y**, **Width** and **Height** in inches under **Details**.
 
    <Result>The preview resizes to the label size.</Result>
 
@@ -56,13 +56,13 @@ The Cashier UI prints each badge with the convention's **default design**, unles
 
    <Result>The element appears under that node in the tree and in the preview. Click it in the tree to show its properties.</Result>
 
-4. Set each element's properties (sections 4 and 5). Drag an element in the **Render tree** to reorder it, or click its **Delete Node?** button to remove it and everything inside it.
+4. Set each element's properties (sections 4 and 5). Drag an element in the **Render tree** to reorder it, or click its bin button to remove it and everything inside it at once.
 
    <Result>The preview updates as you go, with the selected element outlined.</Result>
 
-5. Click **Save**.
+5. Click **Save**, which is available once you've changed something.
 
-   <Result>**Save** is unavailable until you change something. The address ends in `/housekeeping/registration/badgedesigner/edit/` and the design's ID, and **Badge Designer** lists the design under its display name.</Result>
+   <Result>The address ends in `/housekeeping/registration/badgedesigner/edit/` and the design's ID, and **Badge Designer** lists the design under its display name.</Result>
 
 Every field in the property groups needs a value, placeholders included. If one is empty, the browser marks it and the design isn't saved.
 
@@ -96,7 +96,7 @@ Every field in the property groups needs a value, placeholders included. If one 
 2. The property groups of the selected element (Table 3.1).
 3. The preview, with the selected element outlined.
 4. **Add Text**, **Add Node** and **Add Image** on a node.
-5. **Delete Node?**
+5. The bin button, which deletes an element.
 
 </Figure>
 
@@ -118,8 +118,8 @@ A text element shows a fixed **Placeholder**, or an attendee value chosen with *
 
 The **Text** group also has **Transform** (such as `uppercase`), **Font Weight**, **Text Color** and **Prefix padding**, which pads a number with a character to a set length, for example `00042`. The **Font** group sets **Font Size** (inches), **Horizontal Binding**, **Vertical Binding**, **Text Align** and the **Font**: `Krona One`, `Armata`, `datamatrix` (a 2D barcode), or `custom` with a **Custom Font** name. **Text Autoscale** fits text to its box, between **Grow Min** and **Grow Max**.
 
-:::note[Badge ID or user ID]
-Choosing `badgeId` shows a warning: the badge ID isn't the user ID, and is printed with a B in front, such as *B101*, which can confuse staff.
+:::tip[Badge ID or user ID]
+Use `badgeId` only if staff know it isn't the user ID: it prints with a B in front, such as *B101*. The editor warns you when you choose it.
 :::
 
 ## Images and nodes
@@ -145,15 +145,15 @@ A node's **Node** group has **Rotate**, which turns its contents 90 degrees, and
 
    <Result>The browser's print dialog opens with the loaded attendees' labels.</Result>
 
-:::tip
+:::tip[Print settings]
 Set the print dialog's paper size and scaling to match your labels, and turn off headers and footers. The browser usually remembers these.
 :::
 
 ## Pre-printed badges, export and import
 
-For badges pre-printed with background art by a third party, **Pre-Printed Canvas** shows the art behind your design, so you can check the label doesn't print over it. It needs at least one [badge art](./badge-art.md) image.
+For badges pre-printed with background art by a third party, **Pre-Printed Canvas** shows the art behind your design, so you can check the label doesn't print over it. To show art, upload at least one [badge art](./badge-art.md) image.
 
-1. With **Root** selected, tick **Pre-Printed Canvas**, then **Preview**; choose a **Preview Art Id** and set the pre-printed badge's **Width**, **Height** and **From Bottom** in inches.
+1. With the top node selected, tick **Pre-Printed Canvas**, then **Preview**; choose a **Preview Art Id** and set the pre-printed badge's **Width**, **Height** and **From Bottom** in inches.
 
    <Result>The preview shows your label over the chosen badge art, at that position.</Result>
 
@@ -163,4 +163,6 @@ For badges pre-printed with background art by a third party, **Pre-Printed Canva
 
 3. To use a shared design, open a new or existing design, click **Import** and choose a JSON file.
 
-   <Result>The editor loads the imported design. Click **Save** to keep it.</Result>
+   <Result>The editor loads the imported design.</Result>
+
+An imported design isn't kept until you click **Save**.
