@@ -2,15 +2,15 @@
 
 The textbook style formats the body of a guide like a college textbook: numbered sections, a margin column for side notes and figure captions, numbered figures and tables, and shaded callouts. It applies to docs whose front matter has `textbook: true`. The navbar, sidebar, breadcrumbs and pagination around the article keep their layout.
 
-Colours, fonts and shapes come from the ConCat platform (`ConventionCatCorp/ConCat`, `src/frontend/styles/variables.scss` and `src/frontend/index.html`) and apply to the whole site. The layout and hierarchy come from the reference document `concat-oauth-proposal.docx`.
+Colors, fonts and shapes come from the ConCat platform (`ConventionCatCorp/ConCat`, `src/frontend/styles/variables.scss` and `src/frontend/index.html`) and apply to the whole site. The layout and hierarchy come from the reference document `concat-oauth-proposal.docx`.
 
 Implementation: tokens in `src/css/_tokens.scss` (ramps in `src/css/_variables.scss`), article styles in `src/css/_textbook.scss`, components in `src/components/`, and the `textbook` switch in `src/theme/DocItem/Content/index.tsx`.
 
 ## Tokens
 
-### Colour
+### Color
 
-| Token                     | Light            | Dark             | Colours                                                                            |
+| Token                     | Light            | Dark             | Colors                                                                             |
 | ------------------------- | ---------------- | ---------------- | ---------------------------------------------------------------------------------- |
 | `--ifm-color-primary`     | `#0670ad`        | `#60c6e6`        | Links and active navigation. Infima's six hover/active shades are derived from it. |
 | `--cc-color-text`         | `#212529`        | `#dee2e6`        | Body text                                                                          |
@@ -31,7 +31,7 @@ Implementation: tokens in `src/css/_tokens.scss` (ramps in `src/css/_variables.s
 | `--cc-color-tooltip`      | `#0670ad`        | `#0670ad`        | Sample value tooltip bubble                                                        |
 | `--cc-color-on-tooltip`   | `#ffffff`        | `#ffffff`        | Sample value tooltip text                                                          |
 
-Callouts use a tinted background, a left rule and a label colour per kind (light theme shown; dark uses the same ramps at low opacity):
+Callouts use a tinted background, a left rule and a label color per kind (light theme shown; dark uses the same ramps at low opacity):
 
 | Kind                 | Background | Rule      | Label     |
 | -------------------- | ---------- | --------- | --------- |
@@ -48,7 +48,7 @@ Callouts use a tinted background, a left rule and a label colour per kind (light
 | `--cc-font-text`    | Armata, then the system sans-serif stack. All text.                     |
 | `--cc-font-display` | Krona One. The site wordmark, guide titles, section numbers and labels. |
 
-Both faces have one weight (400). Headings use size and colour for rank and are never bold.
+Both faces have one weight (400). Headings use size and color for rank and are never bold.
 
 | Role                         | Size / line height                | Face                    |
 | ---------------------------- | --------------------------------- | ----------------------- |

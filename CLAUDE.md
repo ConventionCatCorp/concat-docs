@@ -56,7 +56,7 @@ Follow the pattern in `docs/api/endpoints/v0/*.mdx` (e.g. `dealers.mdx`):
 - The page opens with a `<SplitColumn>`: a description on the left and a `<RestList>` of `<RestElement method path anchor>` on the right. Each `anchor` must match the slug of a `###` heading further down.
 - Each endpoint is a `###` heading followed by a `<SplitColumn>`: the left side has Authentication (link to `/docs/api/gettingstarted/oauth` plus the required scope), then the Request and Response fields as `<Attribute>`/`<ParentAttribute>`; the right side has `<EndpointRequest>`/`<EndpointResponse>` JSON examples.
 - `Attribute` `id`s must be unique within the page, so they use a short per-endpoint prefix (e.g. `su-`, `su-resp-`).
-- Shared object models live in underscore-prefixed partials (`_registrationModel.mdx`, `_volunteerModel.mdx`). Docusaurus doesn't render these as pages; import them with `import X from './_xModel.mdx'`.
+- There are no shared model partials. Each v0 page describes its object once, in a `## The <name> object` section (e.g. "The dealer object"), and each endpoint links to its generated page for the full request and response schemas: `[Full reference](/docs/api/endpoints/v0/reference/<operation>)`.
 
 ## Trial signup page
 
