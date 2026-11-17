@@ -13,6 +13,15 @@
 /docs/api/endpoints/v0/reference/*
 !/docs/api/endpoints/v0/reference/_category_.json
 
+# Working files from writing the docs: audits, reports, outlines and scratch copies.
+# Commit only the pages, the images they use, and site source and config.
+/docs-style/audit/
+/docs-style/AUDIT-AND-OUTLINE.md
+*.orig
+*.rej
+*.bak
+*~
+
 # Misc
 .DS_Store
 .env.local
