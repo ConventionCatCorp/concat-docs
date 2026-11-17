@@ -1,6 +1,8 @@
 import Layout from '@theme/Layout';
 import React from 'react';
 
+import { COMPANY_NAME } from '@site/src/data/company';
+
 import styles from './policy.module.scss';
 
 export default function Terms(): React.JSX.Element {
@@ -11,7 +13,7 @@ export default function Terms(): React.JSX.Element {
         <div className={styles.subtitle}>Effective date: February 16, 2022</div>
         <p>
           Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the concat.app
-          website (the "Service") operated by Convention Cat Event Systems, Inc. ("us", "we", or "our").
+          website (the "Service") operated by {COMPANY_NAME} ("us", "we", or "our").
         </p>
 
         <p>
@@ -91,22 +93,19 @@ export default function Terms(): React.JSX.Element {
           such Content on and through the Service. You agree that this license includes the right for us to make your
           Content available to other users of the Service, who may also use your Content subject to these Terms.
         </p>
+        <p>{COMPANY_NAME} has the right but not the obligation to monitor and edit all Content provided by users.</p>
         <p>
-          Convention Cat Event Systems, Inc. has the right but not the obligation to monitor and edit all Content
-          provided by users.
-        </p>
-        <p>
-          In addition, Content found on or through this Service are the property of Convention Cat Event Systems, Inc.
-          or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said
-          Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance
-          written permission from us.
+          In addition, Content found on or through this Service are the property of {COMPANY_NAME} or used with
+          permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said Content,
+          whether in whole or in part, for commercial purposes or for personal gain, without express advance written
+          permission from us.
         </p>
 
         <h2>Customer Data</h2>
         <p>
-          Our Service allows you to collect data for the purposes of conducting day to day business for your event.
-          Convention Cat Event Systems, Inc. holds a limited non-exclusive license to this data for the reasons of
-          providing our Service to you, and your customers. Such data may include:
+          Our Service allows you to collect data for the purposes of conducting day to day business for your event.{' '}
+          {COMPANY_NAME} holds a limited non-exclusive license to this data for the reasons of providing our Service to
+          you, and your customers. Such data may include:
         </p>
         <ul>
           <li>User order status.</li>
@@ -227,27 +226,26 @@ export default function Terms(): React.JSX.Element {
         <h2>Intellectual Property</h2>
         <p>
           The Service and its original content (excluding Content and Data provided by users), features and
-          functionality are and will remain the exclusive property of Convention Cat Event Systems, Inc. and its
-          licensors. The Service is protected by copyright, trademark, and other laws of both the United States and
-          foreign countries. Our trademarks and trade dress may not be used in connection with any product or service
-          without the prior written consent of Convention Cat Event Systems, Inc..
+          functionality are and will remain the exclusive property of {COMPANY_NAME} and its licensors. The Service is
+          protected by copyright, trademark, and other laws of both the United States and foreign countries. Our
+          trademarks and trade dress may not be used in connection with any product or service without the prior written
+          consent of {COMPANY_NAME}.
         </p>
 
         <h2>Links To Other Web Sites</h2>
         <p>
-          Our Service may contain links to third party web sites or services that are not owned or controlled by
-          Convention Cat Event Systems, Inc.
+          Our Service may contain links to third party web sites or services that are not owned or controlled by{' '}
+          {COMPANY_NAME}
         </p>
         <p>
-          Convention Cat Event Systems, Inc. has no control over, and assumes no responsibility for the content, privacy
-          policies, or practices of any third party web sites or services. We do not warrant the offerings of any of
-          these entities/individuals or their websites.
+          {COMPANY_NAME} has no control over, and assumes no responsibility for the content, privacy policies, or
+          practices of any third party web sites or services. We do not warrant the offerings of any of these
+          entities/individuals or their websites.
         </p>
         <p>
-          You acknowledge and agree that Convention Cat Event Systems, Inc. shall not be responsible or liable, directly
-          or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or
-          reliance on any such content, goods or services available on or through any such third party web sites or
-          services.
+          You acknowledge and agree that {COMPANY_NAME} shall not be responsible or liable, directly or indirectly, for
+          any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such
+          content, goods or services available on or through any such third party web sites or services.
         </p>
         <p>
           We strongly advise you to read the terms and conditions and privacy policies of any third party web sites or
@@ -269,23 +267,23 @@ export default function Terms(): React.JSX.Element {
 
         <h2>Indemnification</h2>
         <p>
-          You agree to defend, indemnify and hold harmless Convention Cat Event Systems, Inc. and its licensee and
-          licensors, and their employees, contractors, agents, officers and directors, from and against any and all
-          claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to
-          attorney's fees), resulting from or arising out of a) your use and access of the Service, by you or any person
-          using your account and password; b) a breach of these Terms, or c) Content posted on the Service.
+          You agree to defend, indemnify and hold harmless {COMPANY_NAME} and its licensee and licensors, and their
+          employees, contractors, agents, officers and directors, from and against any and all claims, damages,
+          obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees),
+          resulting from or arising out of a) your use and access of the Service, by you or any person using your
+          account and password; b) a breach of these Terms, or c) Content posted on the Service.
         </p>
 
         <h2>Limitation Of Liability</h2>
         <p>
-          In no event shall Convention Cat Event Systems, Inc., nor its directors, employees, partners, agents,
-          suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages,
-          including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from
-          (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any
-          third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or
-          alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence)
-          or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if
-          a remedy set forth herein is found to have failed of its essential purpose.
+          In no event shall {COMPANY_NAME}, nor its directors, employees, partners, agents, suppliers, or affiliates, be
+          liable for any indirect, incidental, special, consequential or punitive damages, including without limitation,
+          loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of
+          or inability to access or use the Service; (ii) any conduct or content of any third party on the Service;
+          (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your
+          transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal
+          theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth
+          herein is found to have failed of its essential purpose.
         </p>
 
         <h2>Disclaimer</h2>
@@ -296,10 +294,10 @@ export default function Terms(): React.JSX.Element {
           performance.
         </p>
         <p>
-          Convention Cat Event Systems, Inc. its subsidiaries, affiliates, and its licensors do not warrant that a) the
-          Service will function uninterrupted, secure or available at any particular time or location; b) any errors or
-          defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of
-          using the Service will meet your requirements.
+          {COMPANY_NAME} its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will
+          function uninterrupted, secure or available at any particular time or location; b) any errors or defects will
+          be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the
+          Service will meet your requirements.
         </p>
 
         <h2>Exclusions</h2>
