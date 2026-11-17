@@ -56,6 +56,6 @@ The Quickstart sets up the basics: [Convention setup](./quickstart/convention-se
 ## After the event
 
 - **Outstanding refund requests.** Answer them in **Housekeeping › Attendees › Refund Requests** ([Refunds](./orders/refunds.md), section 3).
-- **Refunds for people who didn't attend.** There's no bulk refund: refund each order separately ([Refunds](./orders/refunds.md), section 6), or contact ConCat support for a large number.
+- **Refunds for people who didn't attend.** There's no bulk refund: refund each order separately ([Refunds](./orders/refunds.md), section 6), or contact ConCat Support for a large number.
 - **Personal data of `nukeme` attendees.** On the `nukeme` row in **Housekeeping › Registration › Registration Flags**, request that ConCat clears it. It's cleared 24 hours later, unless you cancel ([Registration flags](./registration/flags.md), section 5).
-- **Next year's convention.** Create it with **Next Year** on the **Conventions** tab of **Housekeeping › System › Settings**. It copies most of this year's settings, including the Stripe connection ([Convention setup](./quickstart/convention-setup.md), section 2).
+- **Next year's convention.** On the **Conventions** tab of **Housekeeping › System › Settings**, click the add button (<MaterialIcon name="add" />) and choose **Next Year**. It copies most of this year's settings, including the Stripe connection ([Convention setup](./quickstart/convention-setup.md), section 2).

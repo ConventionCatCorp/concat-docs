@@ -37,7 +37,7 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
 2. Buy the product and complete checkout.
 
-   <Result>An email arrives whose subject includes *Your Event Ticket for* and the product's name, such as *ConCat - Your Event Ticket for Photo Shoot*. It shows the ticket's barcode and **Ticket Group**.</Result>
+   <Result>An email titled *ConCat - Your Event Ticket for Photo Shoot* arrives. It shows the ticket's barcode and **Ticket Group**.</Result>
 
 3. Open **Attendance** in the homepage sidebar.
 

@@ -54,7 +54,7 @@ ConCat sends the first that exists: **convention override, then organization ove
 
 ## Write an override
 
-Templates are HTML with [Handlebars](https://handlebarsjs.com/) expressions in double braces, such as `{{convention.name.long}}` (section 5).
+Templates are HTML with [Handlebars](https://handlebarsjs.com/) expressions in double braces, such as `{{convention.name.long}}`.
 
 1. On the **Level Convention Override** card, click **Create Override**. (Use **Level Organization Override** for every convention.)
 
@@ -64,11 +64,11 @@ Templates are HTML with [Handlebars](https://handlebarsjs.com/) expressions in d
 
    <Result>About a second after you stop typing, the **Preview** shows your change. **Submit** can't be clicked until the preview has updated.</Result>
 
-3. *(Optional)* Enter a **Subject Override (optional)**, then click **Submit**.
+3. To change the subject too, enter it in **Subject Override (optional)**. Click **Submit**.
 
-   <Result>*New override has been created.* appears. The **Level Convention Override** card shows your version, marked **Current**, with a pencil button (**Edit**) and a trash button (**Delete**). On **Email Settings**, the badge reads **Overridden**.</Result>
+   <Result>*New override has been created.* appears. The **Level Convention Override** card shows your version, marked **Current**, with a blue pencil button and a red trash button. On **Email Settings**, the badge reads **Overridden**.</Result>
 
-4. To change the override, click its pencil button (**Edit**).
+4. To change the override, click its pencil button.
 
    <Result>The **Modifying Convention Level Override** editor opens with your text.</Result>
 
@@ -76,7 +76,7 @@ Templates are HTML with [Handlebars](https://handlebarsjs.com/) expressions in d
 
    <Result>*Override has been modified.* appears, and the card's preview shows the change.</Result>
 
-6. To go back to the default, click the override's trash button (**Delete**).
+6. To go back to the default, click the override's trash button.
 
    <Result>A **Delete override?** dialog asks *Are you sure you want to delete this template override?*</Result>
 

@@ -246,7 +246,7 @@ For fully pre-printed badges, turn on **Disable badge prints and check-in users 
 
    <Result>The button reads **Check-in Registration** again.</Result>
 
-An attendee with errors can't be checked in: a message starting *Registration has issues:* lists them.
+An attendee with errors can't be checked in. If **Check-in Registration** shows for one, clicking it gives a message starting *Registration has issues:* that lists the errors.
 
 ## Verify an attendee's ID
 

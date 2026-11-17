@@ -82,7 +82,7 @@ When **Require e-mail confirmation before login** is on (the default), a new acc
 
    <Result>**Success! That user has verified, reloading.** appears, and **Allow user to login** disappears.</Result>
 
-They still get no ConCat email until they confirm their address, which they can resend from their homepage: see [Attendee accounts and sign-in](./accounts.md), section 2.2.
+They still get no ConCat email until they confirm their address. They can resend the confirmation email from their homepage: see [Attendee accounts and sign-in](./accounts.md), section 2.2.
 
 ### Send a password reset email
 
@@ -154,7 +154,7 @@ The audit history records sign-ins, changes, staff actions and views of personal
 
 1. On the person's profile, click the **Audit** tab.
 
-   <Result>The account's entries are listed with date, time and description, below a **Search all tags...** box. ConCat support's entries are shaded pink, with a support-agent icon.</Result>
+   <Result>The account's entries are listed with date, time and description, below a **Search all tags...** box. ConCat Support's entries are shaded pink, with a support-agent icon.</Result>
 
 2. Click the arrow (**Toggle details**) at the start of an entry (Figure 4.1).
 

@@ -9,7 +9,7 @@ textbook: true
 See the hotel pages attendees use, from entering a block to managing their reservation.
 
 :::caution[Before you start]
-Hotel booking is off until ConCat support turns it on for your convention, and it needs a working **Passkey** or **MeetingMax** connection ([Hotel management](./hotel-management.md), section 2). Without both, attendees have no hotel pages.
+Hotel booking is off until ConCat Support turns it on for your convention, and it needs a working **Passkey** or **MeetingMax** connection ([Hotel management](./hotel-management.md), section 2). Without both, attendees have no hotel pages.
 :::
 
 :::info[In this guide]
@@ -62,6 +62,10 @@ The **Status** badge shows where the attendee stands (Table 2.1).
 
 </TableFigure>
 
+:::tip[The names and numbers are examples]
+The opening date, the block name in **Hotel—Riverside Main Block**, the reservation number 12 and the hotel name are examples. The app shows your own dates, blocks and hotels, and each reservation's own number. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::
+
 ### Room availability
 
 1. On a block card, click **View room availability**.
@@ -80,7 +84,7 @@ Attendees agree to your **Hotel Reservation Policy**, on the **Terms** tab of **
 
 1. On a card showing **Entries open**, click **Enter block**.
 
-   <Result>The block's page opens, titled with the block's name, such as **Hotel—Riverside Hotel**. It says *You are eligible to enter this block!* above an **Enter block** card with your hotel reservation policy.</Result>
+   <Result>The block's page opens, titled with the block's name, such as **Hotel—Riverside Main Block**. It says *You are eligible to enter this block!* above an **Enter block** card with your hotel reservation policy.</Result>
 
 2. Tick **I have read and agree to the hotel reservation policy.**
 
@@ -145,10 +149,6 @@ A booking is listed under **My reservation** once it has synced.
 3. Click **Update / Cancel reservation**.
 
    <Result>Passkey or MeetingMax opens to change or cancel the booking. Changes reach ConCat on the next sync.</Result>
-
-:::tip[The names and numbers are examples]
-The block name in **Hotel—Riverside Hotel**, the opening date, the reservation number 12 and the hotel name are examples. The app shows your own blocks, dates and hotels, and each reservation's own number. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
-:::
 
 While **Open Hotels** is off, **Update / Cancel reservation** is grayed out and the page says *Modifications to existing reservations are no longer being accepted.* A canceled reservation says *This reservation has been canceled and cannot be modified.* Guests are added or removed with the provider, not in ConCat.
 

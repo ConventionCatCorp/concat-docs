@@ -14,7 +14,7 @@ Turning on the store, categories, products, and vouchers.
 
 ## Turn on the store
 
-The store is on in a new convention: attendees see **Event store** in the homepage sidebar, with every public product you add. To build it first, turn **Enable Event Store** off, and back on when you're ready.
+The store is on in a new convention: attendees see **Event store** in the homepage sidebar, with every public product you add. To set it up before attendees see it, turn **Enable Event Store** off, and back on when you're ready.
 
 1. Go to **Housekeeping › System › Settings**. On the **Convention** tab, under **Event store**, turn on **Enable Event Store** and click **Save** in that section.
 

@@ -113,7 +113,7 @@ A category can have one tax rate. A new tax rate replaces the old one, and remov
 
 ## The surcharge's page
 
-A surcharge's page shows where it's used, and lets you assign it to several products at once. It has no edit form.
+A surcharge's page shows where it's used, and lets you assign it to several products at once. It has no edit form. **Associated Order Items** needs `order:view`.
 
 1. On **Surcharges**, click **View / Edit Details** on a surcharge.
 
@@ -129,7 +129,7 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
 
 4. To unassign a product, click the more button (<MaterialIcon name="more_horiz" />) on its row in **Associated Products** and choose **Unassign** (Figure 5.1).
 
-   <Result>**Removed surcharge from Product #2** appears.</Result>
+   <Result>**Removed surcharge from Product #1** appears.</Result>
 
 5. To delete the surcharge, click **Delete**.
 
@@ -152,7 +152,7 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
 </Figure>
 
 :::caution[Watch out]
-**Delete** acts at once, with no confirmation, and a deleted surcharge can't be restored. Check **Associated Order Items** first: each row has **View order**.
+**Delete** acts at once, with no confirmation, and a deleted surcharge can't be restored. Check **Associated Order Items** first: each row's more button (<MaterialIcon name="more_horiz" />) offers **View order**.
 :::
 
 ## The platform fee

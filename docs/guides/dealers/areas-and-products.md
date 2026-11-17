@@ -31,7 +31,7 @@ Build the pieces in the order of Table 1.1: each needs the one before.
 
 </TableFigure>
 
-Approving an application puts the chosen table type and add-ons into the dealer's cart ([Dealers](./managment.md), section 4).
+Approving an application puts the chosen table type and add-ons into the dealer's cart.
 
 ## Create a dealer product category
 
@@ -139,4 +139,4 @@ With several areas enabled, dealers choose one first; with one, they go straight
 Every application in the area is deleted with it. To stop new applications but keep existing ones, untick **Open** instead.
 :::
 
-**View applications** opens the **Dealers** page filtered to the area ([Dealers](./managment.md), section 3).
+**View applications** opens the **Dealers** page filtered to the area.

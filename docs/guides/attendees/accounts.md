@@ -14,10 +14,6 @@ The login page, creating an account, email login links, forgotten passwords, two
 
 ## The login page
 
-<Sidenote title="Emails">
-Email subjects start with your **Notification Prefix**.
-</Sidenote>
-
 Anyone not logged in is sent to the login page, then back to the page they wanted.
 
 1. Open your instance's address in a private browser window, so you aren't logged in as yourself.
@@ -131,7 +127,7 @@ An attendee who can't remember their password can ask for a link that logs them 
 
 2. Enter the email address or username and click **Send login link**.
 
-   <Result>A confirmation message appears, and a *ConCat - Your Login Link* email arrives with a **Log In** button.</Result>
+   <Result>*If your email is registered to an account, you should receive a login link shortly.* appears, and a *ConCat - Your Login Link* email arrives with a **Log In** button.</Result>
 
 3. In the email, click **Log In**.
 

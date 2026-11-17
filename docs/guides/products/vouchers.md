@@ -51,7 +51,7 @@ A voucher that allows stacking also shows **Can Be Stacked**.
 
    <Result>A form opens with a random code in **Voucher Code**.</Result>
 
-2. Keep the code, type your own, or click the dice button (**Generate random code**). Fill in the fields in Table 3.1 and click **Create Voucher**.
+2. Keep the code, type your own, or click the dice button (<MaterialIcon name="casino" />) for a new one. Fill in the fields in Table 3.1 and click **Create Voucher**.
 
    <Result>**New voucher has been created!** appears, and the voucher's page opens (section 4).</Result>
 
@@ -59,7 +59,7 @@ A voucher that allows stacking also shows **Can Be Stacked**.
 
 | Field | What it holds |
 | --- | --- |
-| **Voucher Code** | What attendees type. Can't be changed later. <small>Not case-sensitive at checkout.</small> |
+| **Voucher Code** | What attendees type, up to 32 characters. Can't be changed later. <small>Not case-sensitive at checkout.</small> |
 | **Display Name** (Optional) | Shown with the code, such as in the order summary. |
 | **Amount** | Comes off the order's total. Can't be zero or changed later. |
 | **Max Uses** | How many orders may use it. `-1`, the default, is unlimited. |

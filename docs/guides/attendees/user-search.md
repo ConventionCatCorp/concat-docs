@@ -110,7 +110,7 @@ A barcode scanner ([Scanner](../registration/cashier/scanner.md)) fills in the s
 
 </TableFigure>
 
-Blue badges show the field that matched and its value: **Email:**, **Badge Name:**, **ID:**, **Badge ID:** or **DoB:**.
+Blue badges show the field that matched and its value: **Email: alex@example.com**, **Badge Name: Alex**, **ID: #1234**, **Badge ID: B101** or **DoB: 4/12/1990**.
 
 ## Open a profile
 
@@ -122,12 +122,12 @@ Blue badges show the field that matched and its value: **Email:**, **Badge Name:
 
    <Result>It has a **User Profile** card (names, username, date of birth, email, phone, address), an **Information** card with a **Registration** row, and, if you can manage the account, an **Actions** card.</Result>
 
-3. Hover over the icon after the attendance type in the **Registration** row.
+3. Hover over the icon after the badge product in the **Registration** row.
 
    <Result>A green tick says *This user has an active entitlement that grants this attendance type.* and links to the paying order. A warning sign says *This user does not have an active order correlated with this registration.*: it isn't paid.</Result>
 
-:::tip[The IDs are examples]
-IDs such as 1234 in **ID: #1234**, B101 in **Badge ID: B101** and 7 in **[ID: 7]** are examples. The app shows each person's own user ID and badge ID.
+:::tip[The values are examples]
+The 1234 in **ID: #1234**, B101 in **Badge ID: B101**, 7 in **[ID: 7]**, and the email address, badge name and date in the other blue badges are examples. The app shows each person's own details.
 :::
 
 :::tip[Sub-accounts]

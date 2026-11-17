@@ -62,7 +62,7 @@ Do these steps on the kiosk, as an attendee.
 
 1. Choose the age option that applies.
 
-   <Result>The **Convention Policies** step shows your convention policy and two agreement checkboxes. If the attendee is too young, an error is shown and the kiosk resets after 10 seconds.</Result>
+   <Result>The **Convention Policies** step shows your convention policy and two agreement checkboxes. If the attendee is too young, a **We're sorry** card appears instead, and the kiosk resets after 10 seconds.</Result>
 
 2. Tick both checkboxes and click **Continue**.
 
@@ -84,7 +84,7 @@ Do these steps on the kiosk, as an attendee.
 
    <Result>A **You are now logged out.** message appears, and the kiosk is back at the **Age check**.</Result>
 
-An attendee who doesn't tick **I would like to create an account.** gets an account with a generated username and password, which they can't sign in to, and the kiosk tells them their information will be deleted after the convention. Help under **Email Address** tells attendees whose address is already in use to go to the registration desk.
+An attendee who doesn't tick **I would like to create an account.** gets an account with a generated username and password, which they can't sign in to. The kiosk tells them their information will be deleted after the convention. Help under **Email Address** tells attendees whose address is already in use to go to the registration desk.
 
 If ConCat Support has made identity verification required for your event, the kiosk asks for it after the age check.
 

@@ -50,7 +50,7 @@ A role can also grant reading chosen categories: tick them under **User Note Cat
 
 ## Notes on a profile
 
-1. Open the person's profile (see [Finding attendees](../attendees/user-search.md), section 4) and click the **Notes** tab.
+1. Open the person's profile from **Housekeeping › Attendees › User Search** and click the **Notes** tab.
 
    <Result>A **Notes** card lists their notes, or says *There are no notes for this user.* If you can create notes, an **Add Note** card is beside it.</Result>
 

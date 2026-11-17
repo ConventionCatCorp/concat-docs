@@ -72,11 +72,11 @@ These senders don't change automated emails, which come from the contact address
 
 Staff pick a mass email's **From Address** from this list of mailbox names, shared by every convention in your organization. It starts as `bazaar`, `registration`, `events`, `hr`, `dealers`, `artshow` and `noreply`.
 
-1. Under **Email Senders for Mass Email**, type a mailbox name (the part before the @), such as `info`, in **Enter a new sender...**, and click the green tick button (**Save**) next to it (Figure 2.1).
+1. Under **Email Senders for Mass Email**, type a mailbox name (the part before the @), such as `info`, in **Enter a new sender...**, and click the green tick button next to it (Figure 2.1).
 
    <Result>An *Added "info" to the senders list.* message appears, and the name is listed.</Result>
 
-2. *(Optional)* Click the red trash button (**Delete**) next to a name.
+2. *(Optional)* Click the red trash button next to a name.
 
    <Result>A *Removed "info" from the senders list.* message appears, and the name is no longer listed.</Result>
 
@@ -92,8 +92,8 @@ Staff pick a mass email's **From Address** from this list of mailbox names, shar
 >
 
 1. **Enter a new sender...**
-2. The green tick (**Save**).
-3. A name's red trash button (**Delete**).
+2. The green tick button.
+3. A name's red trash button.
 
 </Figure>
 

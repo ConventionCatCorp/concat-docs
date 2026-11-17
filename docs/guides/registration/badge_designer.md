@@ -20,7 +20,7 @@ Opening the Badge Designer needs `system:badgedesign:read`; the sidebar item and
 
 A badge design is a label layout in inches, built as a tree of elements: **text** (badge name, number, tier), **images** (badge art, profile picture, logo) and **nodes**, containers that group and position other elements. Text can show attendee details or the answer to a [product option](../products/options.md).
 
-The Cashier UI prints each badge with the convention's default design, unless the tier has its own **Product Label Print Design** ([Badge Products](./attendance/attendance.md), section 3). Set a default design before badge pickup opens.
+The Cashier UI prints each badge with the convention's default design, unless the station is set to another design or the tier has its own **Product Label Print Design** ([Badge Products](./attendance/attendance.md), section 3). Set a default design before badge pickup opens.
 
 ## The list of designs
 
@@ -56,7 +56,7 @@ The history button opens the design's entries in **System › Audit Logs**.
 
    <Result>The preview resizes to the label size.</Result>
 
-3. Add elements with the buttons on a node in the **Render tree**: **Add Text**, **Add Node** or **Add Image**.
+3. Add elements with the three buttons on a node in the **Render tree**: add text (<MaterialIcon name="post_add" />), add node (<MaterialIcon name="add_box" />) and add image (<MaterialIcon name="image" />).
 
    <Result>The element appears under that node in the tree and in the preview. Click it in the tree to show its properties.</Result>
 
@@ -99,7 +99,7 @@ Every field in the property groups needs a value, placeholders included. If one 
 1. The top bar.
 2. The property groups of the selected element (Table 3.1).
 3. The preview, with the selected element outlined.
-4. **Add Text**, **Add Node** and **Add Image** on a node.
+4. The add text, add node and add image buttons on a node.
 5. The bin button, which deletes an element.
 
 </Figure>

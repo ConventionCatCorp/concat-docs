@@ -130,7 +130,7 @@ The form is made of sections holding the elements in Table 4.1.
 
    <Result>A **Saved** message appears. If an element has a problem, *There are errors in your form. Please fix them before saving again.* appears instead, and the element shows **Error(s)**.</Result>
 
-6. Click the back arrow (**Back**) in the editor's header.
+6. Click the back arrow at the top left of the editor.
 
    <Result>**Volunteer Settings** opens, after an **Unsaved Changes** dialog if you have unsaved changes.</Result>
 

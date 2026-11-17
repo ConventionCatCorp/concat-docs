@@ -42,6 +42,8 @@ A silo's status shows next to **Silo Information**: **Open to Entries**, **Close
 
    <Result>The **Gatekeeping** page shows a **Create New Silo** button and a card per silo with its name, ID and a **Manage Silo** button. The address ends in `/housekeeping/store/gatekeeping`.</Result>
 
+Silos belong to your organization, so the list also shows those of your other conventions.
+
 ## Create a silo
 
 1. On **Gatekeeping**, click **Create New Silo**.
@@ -53,6 +55,8 @@ A silo's status shows next to **Silo Information**: **Open to Entries**, **Close
    <Result>A **Silo successfully created!!** message appears, and the page title shows the silo's name, such as **Editing Silo: Sponsor Lottery**, with the tabs **Entrants**, **Wording** and **Run**.</Result>
 
 If a product is already in another silo, *Product is already part of another silo.* appears and the silo isn't saved: remove the product from the other silo first.
+
+By default, an organization can have up to 10 silos. Past that, **Create Silo** shows *Raffle is at or over capacity and cannot create more resources. Contact support to change this limit.*
 
 ## Change or delete a silo
 
@@ -140,7 +144,7 @@ A draw marks the attendees you choose as winners and can also deal with earlier 
 
    <Result>**Run Raffle Draw** becomes available.</Result>
 
-3. Choose what happens to existing winners and non-winners (Table 7.1). *(Optional)* Untick **Close the raffle to new entries** to keep taking entries. Then click **Run Raffle Draw**.
+3. Choose an option in **What should happen to existing winners?** and in **What should happen to non-winners in this draw?** (Table 7.1). *(Optional)* Untick **Close the raffle to new entries** to keep taking entries. Then click **Run Raffle Draw**.
 
    <Result>**Raffle Draw Complete!** (or **Test Run Draw Results**) shows **Number of Winners**, **Total Entries**, **Win Percentage** and **Winning User IDs**.</Result>
 

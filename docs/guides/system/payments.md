@@ -22,7 +22,7 @@ ConCat connects your organization's own Stripe account through Stripe Connect, a
 
 Three things are set by ConCat, not by you:
 
-- **Country and currency.** A trial starts in US dollars, wherever you signed up from. Your Stripe account is created with your organization's country, and attendees are charged in its currency, so if either is wrong, ask ConCat Support to fix it *before* you connect Stripe.
+- **Country and currency.** A trial starts in US dollars, wherever you signed up from. Your Stripe account is created with your organization's country, and attendees are charged in your organization's currency. If either is wrong, ask ConCat Support to fix it *before* you connect Stripe.
 - **Test mode.** There's no test or sandbox switch: once Stripe is connected, payments are real. Ask ConCat Support to try payments without charging anyone.
 - **Platform fees.** Shown read-only on the **Platform Info** tab.
 

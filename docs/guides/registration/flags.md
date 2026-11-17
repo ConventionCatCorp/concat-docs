@@ -114,7 +114,7 @@ Attendees who tick `nukeme` ask for their account to be deleted after the conven
 
    <Result>A **Clear "nukeme" PII?** dialog warns that the PII will be cleared in 24 hours unless canceled, and that this is irreversible.</Result>
 
-2. *(Optional)* Tick **Delete Dealer Data** or **Delete Volunteer Data** to also clear these attendees' dealer or volunteer applications. Tick **Exclude specific users?** and choose attendees to leave out. Then click **Request to Clear PII**.
+2. To also clear these attendees' dealer or volunteer applications, tick **Delete Dealer Data** or **Delete Volunteer Data**. To leave some attendees out, tick **Exclude specific users?** and choose them. Then click **Request to Clear PII**.
 
    <Result>A **Request successfully created.** message appears. Before the convention's end date, *You cannot clear all PII before the convention has ended.* appears instead; if a request is already waiting, *A pending deletion request already exists.* To change a waiting request, cancel it (step 4) and request again.</Result>
 

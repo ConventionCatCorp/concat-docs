@@ -73,8 +73,6 @@ For a paid registration, the **Registration** row names the product paid for, wh
 
 ## Remove a payment, transfer or delete a registration
 
-Extra buttons on the left of **Edit Registration** depend on whether the registration is paid.
-
 <TableFigure title="Buttons at the foot of Edit Registration">
 
 | Registration | Buttons | Does |

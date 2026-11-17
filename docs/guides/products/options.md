@@ -38,7 +38,7 @@ An option's **Type** sets what the attendee fills in. Three types also have a **
 ## Creating an option
 
 <Sidenote title="Option missing from the menu?">
-**Options** only appears for roles that can manage products.
+**Options** only appears with `product:manage`, which the default *admin* and *productEditor* roles have.
 </Sidenote>
 
 1. Go to **Housekeeping › Registration › Options** (under **Badges and Tiers**).

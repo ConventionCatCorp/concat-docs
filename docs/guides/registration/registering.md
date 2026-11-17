@@ -74,7 +74,7 @@ When attendees select a tier for themselves, one is held in their cart so it can
 
 **Additional Information** shows your form from the [Registration form editor](./form-editor.md), typically a **Badge Name**, the tier's options, registration flags and an emergency contact.
 
-1. Fill in the form. *(Optional)* Click **Randomize**, if your form has it, for a random badge name.
+1. Fill in the form. *(Optional)* Click **Randomize**, if your form has it, for a random badge name and species.
 
    <Result>Each form section is a card. Sections with nothing to show, such as **Other options** for a tier with none, are hidden.</Result>
 

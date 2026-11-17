@@ -92,7 +92,7 @@ Exclusions can't be set up from Housekeeping: the product form has no field for 
 
 1. On the product's page, answer the options, set the **Quantity** and click **Add to cart**.
 
-   <Result>**Product added to cart!** appears, with **View cart**. Any extra-purchase addons are listed in a **Product addons** card.</Result>
+   <Result>**Product added to cart!** appears, with **View cart**. Any **Public** extra-purchase addons are listed in a **Product addons** card.</Result>
 
 2. Click **View cart**.
 

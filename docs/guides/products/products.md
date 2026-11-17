@@ -22,7 +22,7 @@ Every store product belongs to a category, and attendees browse the store by cat
 
 1. Go to **Housekeeping › Store Management › Store Products**.
 
-   <Result>The **Product Categories** page (`/housekeeping/store/products`) shows each category as a card, with **View Products** and a **…** menu.</Result>
+   <Result>The **Product Categories** page (`/housekeeping/store/products`) shows each category as a card, with **View Products** and a more button (<MaterialIcon name="more_horiz" />).</Result>
 
 ### Create a category
 
@@ -38,7 +38,7 @@ Every store product belongs to a category, and attendees browse the store by cat
 
 A hidden category, with all its products, is left out of the event store.
 
-1. On **Product Categories**, open the category's **…** menu and choose **Hide Category**.
+1. On **Product Categories**, click the category's more button (<MaterialIcon name="more_horiz" />) and choose **Hide Category**.
 
    <Result>The card shows a **Hidden** badge.</Result>
 
@@ -50,7 +50,7 @@ A hidden category, with all its products, is left out of the event store.
 
 A category's products must be deleted with it or moved to another category.
 
-1. Open the category's **…** menu and choose **Delete Category**.
+1. Click the category's more button (<MaterialIcon name="more_horiz" />) and choose **Delete Category**.
 
    <Result>The card warns *Deleting a category is a PERMANENT action and cannot be undone.*, with **Delete all existing items** and **New Category**.</Result>
 
@@ -62,7 +62,7 @@ A category's products must be deleted with it or moved to another category.
 There's no confirmation, and a deleted category can't be restored. **Delete all existing items** deletes every product in it.
 :::
 
-With `audit:read`, the **…** menu also has **View History**.
+With `audit:read`, the category's menu also has **View History**.
 
 ## The product list
 
@@ -130,7 +130,7 @@ The values on this page, such as 40/50 in **In Stock: 40/50 Available**, the nam
 | **Maximum purchases per user** | The most one attendee can buy. <small>**Stock Control**.</small> |
 | **Limit Available Stock** | The total that can be sold. <small>**Stock Control**. *Maximum stock can only be decreased by the remaining stock available.*</small> |
 | **Product Label Print Design** | Prints a claim ticket for each one bought. <small>**Cashier**. See [Claim Tickets](./claimtickets.md).</small> |
-| **Deliverable** | On by default. Lets cashiers and admins mark it delivered; for physical goods. <small>**Cashier**.</small> |
+| **Deliverable** | On by default. For physical goods: the Cashier UI lists it so staff can mark it delivered. <small>**Cashier**.</small> |
 | **Available From** | When sales start. Defaults to the start of today. <small>**Restrictions**.</small> |
 | **Available Until** | When sales end. <small>**Restrictions**.</small> |
 | **Minimum Purchase Age**, **Maximum Purchase Age** (Optional) | Buyer ages allowed, on the convention's start date. <small>**Restrictions**.</small> |
@@ -161,7 +161,7 @@ The values on this page, such as 40/50 in **In Stock: 40/50 Available**, the nam
 
 </TableFigure>
 
-**Audit Logs** needs `audit:read`.
+The **Orders** tab needs `order:view`, and **Audit Logs** needs `audit:read`.
 
 ### Change the product's details
 

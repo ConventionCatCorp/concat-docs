@@ -14,7 +14,7 @@ How transfers work, turning transfers on, transferring as an attendee, and trans
 
 ## How transfers work
 
-A transfer moves the *payment* for a registration to another attendee. The recipient's own registration becomes paid, for the sender's tier; they keep their badge name and answers, and anything for the registration in their cart is removed.
+A transfer moves the *payment* for a registration to another attendee. The recipient's own registration becomes paid, for the sender's tier. They keep their badge name and answers, and anything for the registration in their cart is removed.
 
 A transfer works only when:
 
@@ -24,7 +24,7 @@ A transfer works only when:
 - The registration wasn't bought with a discount that prevents transfers ([Discounts](../products/discounts.md)).
 
 :::caution[Watch out]
-The attendee can't undo a transfer. The sender no longer has a paid registration, and can't edit it.
+The attendee can't undo a transfer. The sender's registration becomes unpaid, and the payment stays with the recipient.
 :::
 
 ## Turn on transfers

@@ -70,7 +70,7 @@ At 10 images the add button disappears. Delete one (section 4) to make room.
    <Result>The image is marked **Badge Art**; any previous badge art becomes **Image**.</Result>
 
 :::caution[Watch out]
-A **Hidden** or **Badge Art** image can't go back to **Image**. Make it **Primary**, or delete it and upload it again.
+A **Hidden** image can't be set back to **Image**: make it **Primary**, or delete it and upload it again. **Primary** and **Badge Art** images go back to **Image** only when another image takes their role.
 :::
 
 <Figure
@@ -89,7 +89,7 @@ A **Hidden** or **Badge Art** image can't go back to **Image**. Make it **Primar
 1. The green add button (section 2).
 2. The image's role: **Primary** here.
 3. The gear menu of an image…
-4. …listing the roles it doesn't have yet, and **Delete**. This is a badge product, so **Set Badge Art** is offered.
+4. …listing the roles it doesn't have yet, and **Delete**.
 
 </Figure>
 

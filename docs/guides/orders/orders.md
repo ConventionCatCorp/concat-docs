@@ -81,7 +81,7 @@ For one attendee's orders, open their profile and click the **Orders** tab; **Sh
 
 | Part | What it shows |
 | --- | --- |
-| Item cards | **Pending payment** for an unpaid order. For a paid one: **Fulfilled** (handed over, or nothing to hand over), **Unfulfilled** and **Canceled**. <small>Refunds appear in the same cards as **Refund #2** and their status.</small> |
+| Item cards | **Pending payment** for an unpaid order, **Canceled** for a canceled one. For a paid one: **Fulfilled** (handed over, or nothing to hand over) and **Unfulfilled**. <small>Refunds appear in the same cards as **Refund #2** and their status.</small> |
 | **Customer Info** | Name, ID, address and email. <small>The address needs PII access.</small> |
 | **Payments** | **Amount**, **Status**, **Gateway**, **Reference ID** and **Date** of each payment. <small>With `refund:create`, a Stripe reference links to the payment in Stripe.</small> |
 | **Vouchers** | Vouchers applied. See [Vouchers](../products/vouchers.md). |
@@ -211,7 +211,7 @@ A paid order has **Refund Order**, or **Approve Refund** and **Reject Refund** w
 
 ## Correct a single item
 
-Items can have a **⋯** menu, labeled **Options**, with corrections for that item (Table 5.1). It appears only when at least one applies.
+Items can have a **⋯** button at their right, with a menu of corrections for that item (Table 5.1). The button appears only when at least one correction applies.
 
 <TableFigure title="The item menu">
 
@@ -235,7 +235,7 @@ Items can have a **⋯** menu, labeled **Options**, with corrections for that it
   ]}
 >
 
-1. The item's **⋯** button (**Options**).
+1. The item's **⋯** button.
 2. The corrections that apply to this item: here, only **Set as active registration**.
 
 </Figure>

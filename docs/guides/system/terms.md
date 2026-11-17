@@ -33,9 +33,9 @@ A new organization starts with organization-wide versions of most policies: plac
 | --- | --- |
 | **Privacy terms** | When creating an account, and on the **Privacy Policy** page. |
 | **Convention Policy / Terms & Conditions** | When creating an account, and on the **Terms & Conditions** page. |
-| **Child Registration Error** | Below the child age threshold, or under 13, whichever is lower. |
+| **Child Registration Error** | Below the child age threshold or under 13. |
 | **Minor Registration Warning** | Below the minor age threshold. |
-| **Child Badge Terms** | When a parent registers child badges under their account. |
+| **Child Badge Terms** | When a parent adds child badges with the older *Child registration* feature. |
 | **Registration Terms** | On the registration page, while registering. |
 | **Login Page Announcement** | On the login page, below your convention's name and logo. |
 | **Hotel Reservation Policy** | On the hotel reservation dashboard, wave entry page and reservation page. |

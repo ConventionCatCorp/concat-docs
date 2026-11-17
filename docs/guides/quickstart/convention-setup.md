@@ -34,7 +34,7 @@ This page needs the permission to update system settings. Your trial's administr
 
 | Field | What it holds |
 | --- | --- |
-| **Convention Long Type** | Your event's full name, at least 6 characters. <small>Shown in the sidebar on the registration link.</small> |
+| **Convention Long Type** | Your event's full name, at least 6 characters. <small>Shown as a heading in the homepage sidebar.</small> |
 | **Convention Short Name** | A short name, at most 6 characters. |
 | **Notification Prefix** | Starts the subject of every email your event sends. |
 | **Convention Legal Name** | The legal name of the organization running the event. |
@@ -69,7 +69,7 @@ This page needs the permission to update system settings. Your trial's administr
 </Figure>
 
 :::note[One organization, several conventions]
-Your organization can run several conventions, each at its own address. To start next year's event, click the add button (<MaterialIcon name="add" />) above this table and choose **Next Year**, which copies most settings from this one.
+Your organization can run several conventions, each at its own address. To start next year's event, click the add button (<MaterialIcon name="add" />) in the table's header row and choose **Next Year**, which copies most settings from this one.
 :::
 
 ## Terms and policies
@@ -106,9 +106,9 @@ Most policies start with placeholder or sample text, which attendees see until y
 | --- | --- |
 | **Registration Terms** | On the registration page, while registering for a badge. |
 | **Login Page Announcement** | On the login page, below your convention's name and logo. |
-| **Child Registration Error** | When they're below the child age threshold, or under 13, whichever is lower. |
+| **Child Registration Error** | When they're below the child age threshold or under 13. |
 | **Minor Registration Warning** | When they're below the minor age threshold. |
-| **Child Badge Terms** | When a parent registers child badges under their account. |
+| **Child Badge Terms** | When a parent adds child badges with the older *Child registration* feature. |
 | **Parent agreement for child registration** | When a parent confirms they're giving their child's information voluntarily. |
 | **Hotel Reservation Policy**, **Hotel Reservation Additional Info**, **Hotel Closed Message** | On the hotel booking pages, if you use them. |
 | **Opt Out from Stripe Identity** | When they opt out of identity verification, if you use it. |

@@ -15,7 +15,7 @@ How refunds work, what attendees see, the request queue, approving a request, re
 ## How refunds work
 
 <Sidenote title="Who can do this">
-Refunds need `refund:create`, which the default *admin* and *finance* roles have. It also shows **Refund Requests** in the Attendees menu.
+Refunds need `refund:create`, which the default *admin* and *finance* roles have. The same permission shows **Refund Requests** in the Attendees menu.
 </Sidenote>
 
 A refund does two separate things, both set when you approve it:
@@ -51,7 +51,7 @@ Use an attendee account that has a paid order.
 
    <Result>The **Transaction history** page lists the attendee's orders as cards.</Result>
 
-2. On a paid order, click the **⋯** button (**Options**) at the top right of the card, then **Request refund**.
+2. On a paid order, click the **⋯** button at the top right of the card, then **Request refund**.
 
    <Result>A **Request Refund: Order #13** dialog lists the items, with **Reason for Refund** and **Additional info** below.</Result>
 

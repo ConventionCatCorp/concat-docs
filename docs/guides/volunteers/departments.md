@@ -124,6 +124,6 @@ A lead sees volunteers who chose **Interest** or **Experience** for one of their
 
    <Result>The department shows both **Recruit Request** and **Staff Request** again.</Result>
 
-Staff then see **Pending Request** on **Volunteers › Applications** and a yellow-outlined button in the **Assign** view. Clicking it assigns the volunteer.
+Staff then see **Pending Request** on **Housekeeping › Volunteers › Applications** and a yellow-outlined button in the **Assign** view. Clicking it assigns the volunteer.
 
 Leads can also use **Mass Email** for their own departments' volunteers. They don't see answers to questions marked **Visible to admins only** unless they have `volunteer:update`.

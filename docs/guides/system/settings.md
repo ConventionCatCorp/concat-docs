@@ -120,7 +120,7 @@ If no one in your organization has **system:maintenance**, turning maintenance m
 
    <Result>A **Danger zone settings saved** message appears, and **Enable rate limit** keeps its new value after you reload the page.</Result>
 
-**Enable rate limit** prevents abuse by limiting how quickly people can use ConCat. People with the `ratelimit:bypass` permission aren't limited.
+**Enable rate limit** prevents abuse by limiting how quickly people can use ConCat. People with **ratelimit:bypass** aren't limited.
 
 ## Cancel a pending PII clear
 

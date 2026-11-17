@@ -52,7 +52,7 @@ For the **Export Data** card and **Dealers › Dynamic Export**, see [Exports](.
 Needs `system:settings:update`, or the **Terms** tab doesn't load.
 </Sidenote>
 
-The Dealer Policy is what dealers agree to when they apply. Like the policies in [Convention setup](../quickstart/convention-setup.md), section 3, it can be organization-wide or for this convention only.
+The Dealer Policy is what dealers agree to when they apply. It can be organization-wide or for this convention only.
 
 1. On **Dealer Settings**, click the **Terms** tab.
 

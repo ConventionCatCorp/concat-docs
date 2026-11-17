@@ -107,7 +107,7 @@ Payouts are listed only when automatic Stripe payouts to your bank account are s
 
 1. Click the **Options** tab.
 
-   <Result>The **Option**, **Product** and **Order Status** lists appear above charts of the first option's answers, including **By Paid Status** and **Totals**.</Result>
+   <Result>The **Option**, **Product** and **Order Status** lists appear above charts of the first option's answers, including **By Paid Status**, **By Grant Status** and **By product**, and **Totals** for a **Currency** option.</Result>
 
 2. Choose an option in **Option**, and narrow it with **Product** and **Order Status** (**All**, **Paid**, **Unpaid** or **With Grant (not refunded)**).
 

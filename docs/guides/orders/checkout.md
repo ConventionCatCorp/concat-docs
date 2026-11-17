@@ -105,7 +105,7 @@ Until the cause is fixed, checkout shows one of the cards in Table 5.1 instead o
 
 Attendees land here when they come back from their bank or from PagSeguro.
 
-1. As an attendee with a paid order, open `/cart/complete/` followed by its number, such as `https://your-event.concat.app/cart/complete/123`.
+1. As an attendee with a paid order, open `/cart/complete/` followed by its number, such as `https://your-event.concat.app/cart/complete/13`.
 
    <Result>The page says **Payment success!**, with a **Go Home** button.</Result>
 

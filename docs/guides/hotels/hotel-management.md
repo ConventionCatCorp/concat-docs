@@ -9,7 +9,7 @@ textbook: true
 Connect ConCat to Passkey or MeetingMax, set up the room blocks attendees enter for a booking link, and follow and fix entries and reservations.
 
 :::caution[Before you start]
-Hotel booking is off until ConCat support turns it on for your convention. Until then, nothing in this guide appears in Housekeeping.
+Hotel booking is off until ConCat Support turns it on for your convention. Until then, nothing in this guide appears in Housekeeping.
 
 You also need a **Passkey** or **MeetingMax** account for your event. ConCat doesn't sell rooms: it gives attendees a personal link to book in Passkey or MeetingMax, and reads the bookings back.
 :::
@@ -31,7 +31,7 @@ You release rooms in *blocks*, which Housekeeping calls **Release Groups**. Each
 - **Random Draw**: attendees enter during an entry period; ConCat then picks up to the number of winners you set and gives each a booking link.
 - **First Come First Serve**: attendees join a queue, and booking links go out in entry order.
 
-For the attendee side, see [What attendees see when booking](./booking.md). A block's dates move it through the stages in Table 1.1.
+A block's dates move it through the stages in Table 1.1.
 
 <TableFigure title="Block stages">
 
@@ -61,7 +61,7 @@ The **Hotels** tab also needs `system:settings:update`.
 
 3. Enter a **Name** and your event details (**Passkey Event ID**, or **MeetingMax Event ID**, **MeetingMax API Key** and **MeetingMax System Identifier**), then click **Save**.
 
-   <Result>A **Save Callback URL** dialog shows, this one time only, an address ending in `/api/hotel/gateways/passkey/` and a code, with a copy button.</Result>
+   <Result>A **Save Callback URL** dialog shows, this one time only, an address that ends in `/api/hotel/gateways/passkey/` followed by a code, with a copy button.</Result>
 
 4. Copy the address for your Passkey configuration, then click **Close**.
 
@@ -181,7 +181,7 @@ Moving **Release Start At** also moves the two scheduled tasks, if they haven't 
 
 2. Look over the **Release Entries** table.
 
-   <Result>Each row shows the **User**, **Selected?**, **Notified?** and **Reservation**. A search box filters the rows.</Result>
+   <Result>Each row shows the **User ID**, **User**, **Selected?**, **Notified?** and **Reservation**. A search box filters the rows.</Result>
 
 3. *(Optional: remove an entry)* Click the delete button (<MaterialIcon name="delete" />) in the entry's **Actions** column, then **Delete** in the **Delete Entry** dialog.
 

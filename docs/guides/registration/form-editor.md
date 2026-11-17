@@ -161,13 +161,13 @@ If an element's properties are wrong when you save, **There are errors in your f
 
 1. Click **View Preview**.
 
-   <Result>The form appears as attendees see it for your first badge product, unsaved changes included, with a **Back to Editor** button.</Result>
+   <Result>The form appears as attendees see it for your first **Public** badge product on sale, unsaved changes included, with a **Back to Editor** button.</Result>
 
 2. Click **Back to Editor**.
 
    <Result>The editor returns, with your changes in place.</Result>
 
-With no badge products, the preview says *Add a product to this convention before you can preview the registration form.* To test a particular tier, register as an attendee ([How attendees register](./registering.md)).
+With no **Public** badge product on sale, the preview says *Add a product to this convention before you can preview the registration form.* To test a particular tier, register as an attendee ([How attendees register](./registering.md)).
 
 ## Save and leave
 

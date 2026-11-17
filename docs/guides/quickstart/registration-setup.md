@@ -161,10 +161,6 @@ Once registered themselves, attendees see these options on their **Attendance** 
 The tier in **Product: General Admission (ID: 1)** and the 16 in **Register another attendee (Ages 16+)** and **Register child (under 16)** are examples. The app shows your own tier names and IDs, and your **Child Age Threshold**, set in **Housekeeping › Registration › Settings**.
 :::
 
-:::note[When a dependent grows up]
-**Migrate Sub-Account**, on a sub-account's card, turns it into a full account: the account holder enters their own password and the dependent's email, and the dependent sets a username and password from the email they receive. It isn't available for PII-free children, anyone under 13, or anyone under the child age threshold.
-:::
-
 ## Minors and dependents
 
 ConCat uses two age thresholds:
@@ -176,7 +172,7 @@ ConCat uses two age thresholds:
 
    <Result>A **Registration settings saved** message appears.</Result>
 
-2. Go to **Housekeeping › System › Settings › Terms** and write the policies these ages trigger: **Child Registration Error**, **Minor Registration Warning**, **Child Badge Terms** and **Parent agreement for child registration** ([Convention setup](./convention-setup.md), section 3).
+2. Go to **Housekeeping › System › Settings › Terms** and write the policies these ages trigger: **Child Registration Error**, **Minor Registration Warning** and **Parent agreement for child registration** ([Convention setup](./convention-setup.md), section 3).
 
    <Result>Each policy shows a saved message when you click **Save**.</Result>
 

@@ -93,13 +93,13 @@ In the **Applications** card, **Count** is every application in the area, **Conf
 
    <Result>The dealer's page opens, with **Dealer Information**, **Seating Requests** and an application card for each area, such as *Dealers' Den application*.</Result>
 
-**Registration** shows whether the dealer's convention registration is paid; an approved dealer without one gets a warning icon. A **Restriction** badge means the profile has a note in the restriction category.
+**Registration** shows whether the dealer's convention registration is paid; an approved dealer whose registration isn't paid gets a warning icon. A **Restriction** badge means the profile has a note in the restriction category.
 
 ## Review an application
 
 1. On the dealer's page, click the pencil button at the top right of the area's application card.
 
-   <Result>The card becomes a form with **Status**, **Table**, **Requests**, **Table Number** and **Special Requests**, and **Save** at the top.</Result>
+   <Result>The card becomes a form with **Special Requests**, **Table Number**, **Status**, **Table** and **Requests**, and **Save** at the top.</Result>
 
 2. Choose the new **Status** (**Approved**, **Waitlisted**, **Rejected** or **Cancelled**), check the **Table** and the add-ons ticked under **Requests**, and click **Save**.
 
@@ -201,7 +201,7 @@ The dealer's **Seating Requests** card lists their requests to sit next to other
 
 1. Go to **Housekeeping › Attendees › User Search**, search for the person and click them.
 
-   <Result>In the profile's **Information** card, the **Dealer** row shows their business name and each area's status, or **No application.**</Result>
+   <Result>In the profile's **Information** card, the **Dealer** row shows their business name and the area and status of each application, or **No application.** if they have no dealer profile.</Result>
 
 2. *(If they have no dealer profile)* Click the plus button on the **Dealer** row.
 

@@ -157,7 +157,7 @@ ConCat checks only the *origin* of the return address (its scheme, host and port
 
    <Result>An **Application updated!** message appears. The secret is unchanged.</Result>
 
-3. To remove an application, click the delete button (the bin icon) in its row.
+3. To remove an application, click the red bin button in its row.
 
    <Result>A **Delete Application** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. Star26 Schedule?*</Result>
 

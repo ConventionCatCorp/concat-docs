@@ -144,7 +144,7 @@ Silos are explained in [Gatekeeping](../registration/raffle.md).
 ## Recipients in the Volunteers module
 
 <Sidenote title="Department leads">
-A lead without `volunteer:admin` sees only their own departments. Leads named in Volunteer Settings get `massemail` through the *lead* role.
+A lead without `volunteer:admin` sees only their own departments.
 </Sidenote>
 
 1. Go to **Housekeeping › Volunteers › Mass Email**.
@@ -160,7 +160,7 @@ A lead without `volunteer:admin` sees only their own departments. Leads named in
 | Filter | Adds or keeps |
 | --- | --- |
 | **Assigned** | Adds volunteers assigned to a ticked department. |
-| **Unassigned** | Adds volunteers with no department, whichever are ticked. |
+| **Unassigned** | Adds volunteers not assigned to any department, whichever departments are ticked. |
 | **Only Staff** | Keeps only volunteers who are staff members. |
 
 </TableFigure>

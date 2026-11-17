@@ -53,7 +53,7 @@ The sidebar shows only to logged-in people, and most items depend on a feature b
 
 </TableFigure>
 
-To add your own links under **Attendance**, **Event store** or **Applications**, see [Convention settings](../system/settings.md). **Log out** is in the **User menu**: see [Attendee accounts and sign-in](./accounts.md), section 9.
+To add your own links under **Attendance**, **Event store** or **Applications**, see [Convention settings](../system/settings.md). **Log out** is in the **User menu**.
 
 ## The Attendance dashboard
 
@@ -109,7 +109,7 @@ Each person on the account has a card under **Your registration**, registered pe
 | **Not registered** | No registration yet. The button is **Register**. |
 | **Unpaid** | Registered, not paid. The button is **Modify**. |
 | **Registered** | Registered and paid. The button is **Modify**. |
-| **Refund requested** | Paid, with a refund request waiting for staff. |
+| **Refund requested** | Paid, with a refund request waiting for staff. The button is **Modify**. |
 
 </TableFigure>
 

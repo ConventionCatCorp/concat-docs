@@ -22,7 +22,7 @@ Each table gives the template's name, as on **System › Settings › Email Sett
 
 - **Subject:** every subject starts with your **Notification Prefix** and a dash, except the hotel raffle results.
 - **Sender:** named in each section. The addresses are set on the **Contact** tab of **System › Settings**.
-- **Who receives it:** only people with a confirmed email address who aren't banned from registration, except for password reset, sign-in link, account confirmation, account migration, email-change request, refund, hotel entry and hotel guest-removed emails, which are always sent.
+- **Who receives it:** only people with a confirmed email address who aren't banned from registration. Password reset, sign-in link, account confirmation, account migration, email-change request, refund, hotel entry and hotel guest-removed emails are always sent.
 - **Sub-accounts:** without their own address, the account owner gets the email.
 - **Language:** emails are sent as written, not translated.
 
@@ -125,7 +125,7 @@ These emails come from your **HR Email** address, except `registerNewReview` (fr
 
 ## Hotels
 
-ConCat turns on hotel booking. These emails come from the `hotel` mailbox at your sending domain, which can't be renamed.
+Hotel booking is turned on by ConCat Support. These emails come from the `hotel` mailbox at your sending domain, which can't be renamed.
 
 <TableFigure title="Hotel emails">
 
