@@ -50,7 +50,25 @@ const config = {
       },
     ],
   ],
-  themes: ['docusaurus-theme-openapi-docs'],
+  themes: [
+    'docusaurus-theme-openapi-docs',
+    [
+      // Offline search: the build generates a local index of the docs (no search service needed).
+      // The search bar sits at the top of the docs view (src/theme/DocRoot/Layout/Main).
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        docsRouteBasePath: '/docs',
+        indexBlog: false,
+        indexPages: false,
+        searchBarPosition: 'left',
+        searchResultLimits: 8,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
 
   presets: [
     [
