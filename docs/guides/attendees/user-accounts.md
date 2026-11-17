@@ -47,7 +47,7 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
 
 :::caution[Watch out]
 - **Email address:** the change waits until the person clicks the link sent to the new address; until then the card shows the old one with a warning sign. One change per 24 hours.
-- **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is 16 years old.*).
+- **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is 16 years old.*). You can't change your own here.
 :::
 
 :::tip[The values are examples]

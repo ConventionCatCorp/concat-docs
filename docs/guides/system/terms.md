@@ -15,7 +15,7 @@ How policies work, editing a policy, overriding one for a convention, deleting a
 ## How policies work
 
 <Sidenote title="Who can do this">
-The **Terms** tab needs **system:settings:update**, which the default **admin** role has.
+The **Terms** tab needs `system:settings:update`, which the default **admin** role has.
 </Sidenote>
 
 Each policy can have two versions:

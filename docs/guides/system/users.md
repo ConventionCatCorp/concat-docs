@@ -15,7 +15,7 @@ When to create an account by hand, creating an account, creating a sub-account.
 ## When to create an account by hand
 
 <Sidenote title="Who can do this">
-**User Creation** needs **user:create**, which the default **admin** and **registration** roles have.
+**User Creation** needs `user:create`, which the default **admin** and **registration** roles have.
 </Sidenote>
 
 Create an account by hand for someone with no email address, who can't use the sign-up form, or who is at the desk. It's the same as a signed-up account, with no roles.

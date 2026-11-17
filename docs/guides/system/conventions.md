@@ -15,7 +15,7 @@ Organizations and conventions, Next Year or New Convention, creating next year's
 ## Organizations and conventions
 
 <Sidenote title="Who can do this">
-The **Conventions** tab needs **system:settings:update**, which the default **admin** role has.
+The **Conventions** tab needs `system:settings:update`, which the default **admin** role has.
 </Sidenote>
 
 Your *organization* is your ConCat account. Each *convention* is one event, with its own address, dates, settings, badges and products. People's accounts belong to the organization, so attendees keep one account every year.

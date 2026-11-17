@@ -15,7 +15,7 @@ The System Settings tabs; logo and event info; venue, dates, store and user opti
 ## The System Settings page
 
 <Sidenote title="Who can do this">
-The page needs **system:settings:update**, which the default **admin** role has. Some tabs need more (Table 1.1).
+The page needs `system:settings:update`, which the default **admin** role has. Some tabs need more (Table 1.1).
 </Sidenote>
 
 The **Convention** tab applies to the convention you're signed in to; some other tabs apply to your whole organization.
@@ -35,9 +35,9 @@ The **Convention** tab applies to the convention you're signed in to; some other
 | **Platform Info** | ConCat's fees, read-only. | Section 7 |
 | **Conventions** | Your organization's conventions, and next year's. | [Conventions and next year](./conventions.md) |
 | **Payment Gateways** | Stripe Connect and PagSeguro. | [Payment gateways](./payments.md) |
-| **Hotels** | Hotel reservations. <small>Only if ConCat has turned hotels on and you have **hotel:manage**.</small> | Not covered here |
-| **Email Settings** | Sending domain, mass-email senders, email templates. <small>Needs **email:templates**.</small> | [Sending domain, senders and contact addresses](../templates/email-settings.md) and [Email Template Overrides](../templates/templates.md) |
-| **Note Categories** | Note categories for attendee profiles. <small>Needs **user:note:categories:manage**.</small> | [User Notes](../usernotes/usernotes.md) |
+| **Hotels** | Hotel reservations. <small>Only if ConCat has turned hotels on and you have `hotel:manage`.</small> | Not covered here |
+| **Email Settings** | Sending domain, mass-email senders, email templates. <small>Needs `email:templates`.</small> | [Sending domain, senders and contact addresses](../templates/email-settings.md) and [Email Template Overrides](../templates/templates.md) |
+| **Note Categories** | Note categories for attendee profiles. <small>Needs `user:note:categories:manage`.</small> | [User Notes](../usernotes/usernotes.md) |
 
 </TableFigure>
 
@@ -95,13 +95,13 @@ Each section of the **Convention** tab has its own **Save** button, which saves 
 ## Maintenance mode
 
 <Sidenote title="Who still gets in">
-People with **system:maintenance**. The default **admin** and **user** roles both grant it, so staff with the **user** role keep access.
+People with `system:maintenance`. The default **admin** and **user** roles both grant it, so staff with the **user** role keep access.
 </Sidenote>
 
-Maintenance mode closes your instance while you fix something: everyone without **system:maintenance**, staff included, is locked out.
+Maintenance mode closes your instance while you fix something: everyone without `system:maintenance`, staff included, is locked out.
 
 :::caution[Watch out]
-If no one in your organization has **system:maintenance**, turning maintenance mode on locks everyone out, and only ConCat engineers can restore access.
+If no one in your organization has `system:maintenance`, turning maintenance mode on locks everyone out, and only ConCat engineers can restore access.
 :::
 
 1. Under **Danger zone**, tick **Enable maintenance mode** and click the red **Save**.
@@ -120,12 +120,12 @@ If no one in your organization has **system:maintenance**, turning maintenance m
 
    <Result>A **Danger zone settings saved** message appears, and **Enable rate limit** keeps its new value after you reload the page.</Result>
 
-**Enable rate limit** prevents abuse by limiting how quickly people can use ConCat. People with **ratelimit:bypass** aren't limited.
+**Enable rate limit** prevents abuse by limiting how quickly people can use ConCat. People with `ratelimit:bypass` aren't limited.
 
 ## Cancel a pending PII clear
 
 <Sidenote title="Who can do this">
-Needs **staff:admin:update**, **pii:admin:read**, **pii:admin:delete** and **system:settings:update**. The default **admin** role has all four.
+Needs `staff:admin:update`, `pii:admin:read`, `pii:admin:delete` and `system:settings:update`. The default **admin** role has all four.
 </Sidenote>
 
 Attendees who don't want their details kept can choose the *nukeme* registration flag. After the convention ends, staff can ask ConCat to clear those accounts' personal information (PII), in [Registration flags](../registration/flags.md) or when creating next year's convention ([Conventions and next year](./conventions.md)). The clear runs one day after the request.

@@ -15,7 +15,7 @@ What the audit log records, browsing it, filtering by tag and type, jumping to a
 ## What the audit log records
 
 <Sidenote title="Who can do this">
-The audit log needs **audit:read**, which the default **admin** and **hr** roles have.
+The audit log needs `audit:read`, which the default **admin** and **hr** roles have.
 </Sidenote>
 
 Each entry records when an action happened, who did it and what changed. Entries are grouped by what they're about, called a *pivot*, such as users, roles or conventions; within a pivot you can view one object, such as one user.

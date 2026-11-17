@@ -15,37 +15,37 @@ How roles work, viewing roles, creating a role, its permissions, assigning peopl
 ## How roles work
 
 <Sidenote title="Who can do what">
-Viewing roles needs **system:permission:read**; creating, editing and deleting them, **system:permission:update**; giving them to people, **user:roles:update**. The default **admin** role has all three.
+Viewing roles needs `system:permission:read`; creating, editing and deleting them, `system:permission:update`; giving them to people, `user:roles:update`. The default **admin** role has all three.
 </Sidenote>
 
-A *permission* allows one action, such as **order:view**. A *role*, such as **finance**, is a named set of permissions, so everyone doing the same job gets the same access.
+A *permission* allows one action, such as `order:view`. A *role*, such as **finance**, is a named set of permissions, so everyone doing the same job gets the same access.
 
 For each permission, a role says **Allow**, **Deny** or **Default** (no say: the person needs another role to allow it). **Deny** always wins: if any of a person's roles, or their own override (section 7), denies a permission, they don't have it.
 
 A role is given for one convention or **globally**, for every convention in your organization. Only a global role carries over to next year's convention.
 
-**vendor:read** is the parent of **vendor:massemail**, **vendor:stats** and **vendor:update**. Allowing a child also allows **vendor:read**; setting **vendor:read** to **Default** or **Deny** clears **Allow** on its children.
+`vendor:read` is the parent of `vendor:massemail`, `vendor:stats` and `vendor:update`. Allowing a child also allows `vendor:read`; setting `vendor:read` to **Default** or **Deny** clears **Allow** on its children.
 
 <TableFigure title="The roles ConCat creates for your organization">
 
 | Role | What it's for | Main permissions |
 | --- | --- | --- |
-| **admin** | Managing convention settings; almost every permission. | Everything except **system:devices:manage** and a few OAuth-only scopes |
-| **user** | Access to Housekeeping. <small>Every staff member needs it.</small> | **system:login**, **system:maintenance**, **registration:read**, **user:note:read**, other people's names and usernames |
-| **registration** | Managing and registering attendees, and the Cashier UI. | **registration:cashier**, **registration:update**, **user:create**, **user:update**, **order:view**, NFC badges, attendees' personal details |
-| **finance** | Financial transactions. | **order:view**, **refund:create**, **fee:create**, **fee:read**, **comp:create** |
-| **hr** | Staff and volunteers. | All **volunteer** permissions, **user:roles:update**, **audit:read**, **massemail**, user notes including HR notes |
-| **productEditor** | Products and categories. | **product:manage**, **product:read**, **product:category:manage**, **product:discount:manage** |
-| **dealersden** | Dealer applications. | **vendor:read**, **vendor:update**, **vendor:massemail**, **vendor:stats** |
-| **hotel** | The hotel system. | **hotel:manage**, **hotel:view** |
-| **staff** | Marks staff members. | **system:staff**, **user:note:create**, **user:note:edit** |
-| **staffAlumni** | Marks trusted former staff. <small>Given to last year's staff when you create next year's convention.</small> | **system:staffalumni** |
-| **badgeValidator** | Validating NFC badges. | **system:nfc_token:password** |
+| **admin** | Managing convention settings; almost every permission. | Everything except `system:devices:manage` and a few OAuth-only scopes |
+| **user** | Access to Housekeeping. <small>Every staff member needs it.</small> | `system:login`, `system:maintenance`, `registration:read`, `user:note:read`, other people's names and usernames |
+| **registration** | Managing and registering attendees, and the Cashier UI. | `registration:cashier`, `registration:update`, `user:create`, `user:update`, `order:view`, NFC badges, attendees' personal details |
+| **finance** | Financial transactions. | `order:view`, `refund:create`, `fee:create`, `fee:read`, `comp:create` |
+| **hr** | Staff and volunteers. | All **volunteer** permissions, `user:roles:update`, `audit:read`, **massemail**, user notes including HR notes |
+| **productEditor** | Products and categories. | `product:manage`, `product:read`, `product:category:manage`, `product:discount:manage` |
+| **dealersden** | Dealer applications. | `vendor:read`, `vendor:update`, `vendor:massemail`, `vendor:stats` |
+| **hotel** | The hotel system. | `hotel:manage`, `hotel:view` |
+| **staff** | Marks staff members. | `system:staff`, `user:note:create`, `user:note:edit` |
+| **staffAlumni** | Marks trusted former staff. <small>Given to last year's staff when you create next year's convention.</small> | `system:staffalumni` |
+| **badgeValidator** | Validating NFC badges. | `system:nfc_token:password` |
 | **cashCarrier**, **vip** | Labels for people trusted with large sums of money, and VIPs. | None |
-| **vendor**, **vendorApproved** | Mark dealers and approved dealers. <small>Kept in step with dealer applications automatically.</small> | **system:vendor** (vendor only) |
+| **vendor**, **vendorApproved** | Mark dealers and approved dealers. <small>Kept in step with dealer applications automatically.</small> | `system:vendor` (vendor only) |
 | **lead** | Department leads. <small>Internal: given when someone is made a lead in Volunteer Settings.</small> | **massemail**, people's personal details |
 | **dealerAssistant** | Dealer assistants. <small>Internal: given when a dealer adds an assistant.</small> | None |
-| **roleManager** | Role managers (section 10). <small>Internal: given when someone is made a role manager.</small> | **system:login**, **system:permission:read**, people's names and usernames |
+| **roleManager** | Role managers (section 10). <small>Internal: given when someone is made a role manager.</small> | `system:login`, `system:permission:read`, people's names and usernames |
 
 </TableFigure>
 
@@ -79,7 +79,7 @@ ConCat gives **lead**, **dealerAssistant** and **roleManager** itself (Table 1.1
 | --- | --- |
 | **Cashier message** | Shown in the Cashier UI when checking in someone with this role. |
 | **Role Managers:** | Up to 16 people who may give this role and take it away (section 10). |
-| **User Note Categories** | Note categories people with this role can read on attendee profiles. <small>Categories under **Restricted Categories** also need **user:note:read:hr**.</small> |
+| **User Note Categories** | Note categories people with this role can read on attendee profiles. <small>Categories under **Restricted Categories** also need `user:note:read:hr`.</small> |
 
 </TableFigure>
 
@@ -152,7 +152,7 @@ To remove several people at once, choose them in the **Assign** dialog, tick **R
 Here and on a person's **Roles** tab:
 
 - Nobody can change their own roles. Trying shows *Cannot change your own roles*.
-- Only people with **staff:admin:update**, which the default **admin** role has, can give or take **admin**. Others see *Cannot change admin role as you are not an admin*.
+- Only people with `staff:admin:update`, which the default **admin** role has, can give or take **admin**. Others see *Cannot change admin role as you are not an admin*.
 :::
 
 ## Assign roles from a person's profile
@@ -192,7 +192,7 @@ The default **hr** role can give roles but can't open **System › Roles**, so H
 ## Override one person's permissions
 
 <Sidenote title="Who can do this">
-The **Permissions** tab needs **system:permission:read**; changing overrides needs **system:permission:update**.
+The **Permissions** tab needs `system:permission:read`; changing overrides needs `system:permission:update`.
 </Sidenote>
 
 An override allows or denies one permission for one person, on top of their roles. Use it for exceptions; for more than a couple of people, use a role.
@@ -264,7 +264,7 @@ A role manager hands out one role without being an admin, such as a department h
 ## A role's history and deleting it
 
 <Sidenote title="History tab">
-The **History** tab needs **audit:read**.
+The **History** tab needs `audit:read`.
 </Sidenote>
 
 1. On the role's page, click **History**.

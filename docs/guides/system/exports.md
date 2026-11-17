@@ -15,7 +15,7 @@ Where to export; standard exports; personal information and its approval; approv
 ## Ways to export
 
 <Sidenote title="Who can do this">
-Standard exports need **system:export**. Dynamic Export needs **system:export:dynamic:full**, marked *DANGEROUS.* in Roles because it can export any data. The default **admin** role has both.
+Standard exports need `system:export`. Dynamic Export needs `system:export:dynamic:full`, marked *DANGEROUS.* in Roles because it can export any data. The default **admin** role has both.
 </Sidenote>
 
 <TableFigure title="Where to export">
@@ -69,7 +69,7 @@ Exports cover the convention you're signed in to, except the user export, which 
 
 </TableFigure>
 
-The **Export Data** cards on settings pages also need **system:export**, unlike the rest of those pages.
+The **Export Data** cards on settings pages also need `system:export`, unlike the rest of those pages.
 
 ## Personal information and its approval
 

@@ -15,7 +15,7 @@ How payments work, connecting Stripe, finishing or updating Stripe details, PagS
 ## How payments work
 
 <Sidenote title="Who can do this">
-The **Payment Gateways** tab needs **system:settings:update**, which the default **admin** role has.
+The **Payment Gateways** tab needs `system:settings:update`, which the default **admin** role has.
 </Sidenote>
 
 ConCat connects your organization's own Stripe account through Stripe Connect, and card payments go to it. One connection covers every convention.
