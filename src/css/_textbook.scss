@@ -202,6 +202,21 @@
       font-size: 0.75rem;
       color: var(--cc-color-text-muted);
     }
+
+    // A callout shown as a sample in a cell, such as each kind in the Introduction's table of
+    // callouts: the callout's own colors, rule and label, without its spacing between paragraphs.
+    td .theme-admonition {
+      margin: 0;
+    }
+
+    td [class^='admonitionHeading']:last-child {
+      margin-bottom: 0;
+    }
+
+    // The other cells in its row line up with the callout's label.
+    tr:has(td .theme-admonition) > td {
+      vertical-align: middle;
+    }
   }
 
   // Plain Markdown images: screenshot frame with the platform's card shape.
