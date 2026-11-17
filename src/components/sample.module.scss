@@ -1,0 +1,37 @@
+// An example value, marked inline: a light brand tint, a dotted underline and a small "e.g."
+// It inherits the weight, style and font of its context (bold labels, italic messages, code).
+.sample {
+  padding: 0 0.1em;
+  border-radius: 0.2em;
+  background-color: var(--cc-color-sample);
+  cursor: help;
+  box-decoration-break: clone;
+}
+
+.value {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--cc-color-sample-rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.marker {
+  margin-right: 0.2em;
+  font-family: var(--cc-font-display);
+  font-size: 0.55em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  vertical-align: 0.35em;
+  color: var(--cc-color-label);
+  user-select: none;
+}
+
+// The marker on its own, right after a web address or code.
+.after {
+  margin-right: 0;
+  margin-left: 0.25em;
+  cursor: help;
+}

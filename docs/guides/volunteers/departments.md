@@ -49,7 +49,7 @@ A new convention starts with common departments, such as *Art Show* and *Gophers
 
    <Result>The **Edit Entry** dialog opens with the department's values.</Result>
 
-5. In **Leads**, type part of a person's name and select them, shown with their user ID, such as **#5 - Alex Smith**. Repeat for each lead, then click **Save**.
+5. In **Leads**, type part of a person's name and select them, shown with their user ID, such as **#<Sample>5 - Alex Smith</Sample>**. Repeat for each lead, then click **Save**.
 
    <Result>An **Item edited** message appears, and the **Leads** column lists each lead.</Result>
 
@@ -86,10 +86,6 @@ A new convention starts with common departments, such as *Art Show* and *Gophers
 
 :::caution[Watch out]
 Deleting a department also removes its leads and every volunteer's interest, experience, avoid, request and assignment for it. It can't be undone.
-:::
-
-:::tip[The lead is an example]
-**#5 - Alex Smith** is an example. The list shows each person's user ID and name.
 :::
 
 ## What leads see and do

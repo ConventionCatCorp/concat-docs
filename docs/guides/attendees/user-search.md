@@ -28,11 +28,11 @@ The search covers every account in your organization; registration details are f
 
    <Result>Matching people are listed, 15 to a page, with their status badges (Table 3.1) and badge name.</Result>
 
-3. Replace the text with a badge ID in its printed form, such as `B101`.
+3. Replace the text with a badge ID in its printed form, such as `B101`<Sample />.
 
-   <Result>The person with that badge ID at this convention is listed, with a blue **Badge ID: B101** badge.</Result>
+   <Result>The person with that badge ID at this convention is listed, with a blue **Badge ID: <Sample>B101</Sample>** badge.</Result>
 
-4. Replace the text with a name nobody has, such as `zzzz`.
+4. Replace the text with a name nobody has, such as `zzzz`<Sample />.
 
    <Result>**No results found.** appears.</Result>
 
@@ -43,8 +43,8 @@ The search covers every account in your organization; registration details are f
 | A first name, last name, preferred name or username | Names or usernames starting with it. |
 | A first name, a space, then a last name | First name starting with the first word, last name with any later word. <small>Extra words, such as a middle name, don't stop a match.</small> |
 | An email address or phone number | Addresses or numbers starting with it. |
-| A user ID, such as `1234` | That person, listed first with an **ID: #1234** badge. |
-| A badge ID in printed form, such as `B101` | That badge's holder at this convention. |
+| A user ID, such as `1234`<Sample /> | That person, listed first with an **ID: #<Sample noMarker>1234</Sample>** badge. |
+| A badge ID in printed form, such as `B101`<Sample /> | That badge's holder at this convention. |
 | A date of birth as `YYYY-MM-DD` | Alone, everyone born that day. After a name, only matches born that day. |
 
 </TableFigure>
@@ -110,13 +110,13 @@ A barcode scanner ([Scanner](../registration/cashier/scanner.md)) fills in the s
 
 </TableFigure>
 
-Blue badges show the field that matched and its value: **Email: alex@example.com**, **Badge Name: Alex**, **ID: #1234**, **Badge ID: B101** or **DoB: 4/12/1990**.
+Blue badges show the field that matched and its value: **Email: <Sample>alex@example.com</Sample>**, **Badge Name: <Sample noMarker>Alex</Sample>**, **ID: #<Sample noMarker>1234</Sample>**, **Badge ID: <Sample noMarker>B101</Sample>** or **DoB: <Sample noMarker>4/12/1990</Sample>**.
 
 ## Open a profile
 
 1. Click a person in the results.
 
-   <Result>Their profile opens on the **Name** tab, with **[ID: 7]** and status badges in the header. The address ends in `/housekeeping/attendees/user/` and the ID.</Result>
+   <Result>Their profile opens on the **Name** tab, with **[ID: <Sample>7</Sample>]** and status badges in the header. The address ends in `/housekeeping/attendees/user/` and the ID.</Result>
 
 2. Look over the **Name** tab.
 
@@ -125,10 +125,6 @@ Blue badges show the field that matched and its value: **Email: alex@example.com
 3. Hover over the icon after the badge product in the **Registration** row.
 
    <Result>A green tick says *This user has an active entitlement that grants this attendance type.* and links to the paying order. A warning sign says *This user does not have an active order correlated with this registration.*: it isn't paid.</Result>
-
-:::tip[The values are examples]
-The 1234 in **ID: #1234**, B101 in **Badge ID: B101**, 7 in **[ID: 7]**, and the email address, badge name and date in the other blue badges are examples. The app shows each person's own details.
-:::
 
 :::tip[Sub-accounts]
 No **Notes**, **Orders**, **Volunteer** or **Dealer** tab; **Owner account** links to the parent. The parent's **Registration** row links each sub-account under **Other Accounts:**.

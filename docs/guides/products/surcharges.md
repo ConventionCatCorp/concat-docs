@@ -47,7 +47,7 @@ The **Surcharges** menu item, and creating and assigning surcharges, need `produ
 
 1. Go to **Housekeeping › Store Management › Surcharges**.
 
-   <Result>The **Surcharges** page lists your surcharges as cards, each with its type and rate, such as *Tax Rate of 8.25%*.</Result>
+   <Result>The **Surcharges** page lists your surcharges as cards, each with its type and rate, such as *Tax Rate of <Sample>8.25%</Sample>*.</Result>
 
 2. Click **Create New Surcharge**.
 
@@ -56,10 +56,6 @@ The **Surcharges** menu item, and creating and assigning surcharges, need `produ
 3. Enter a **Name** and a **Display Name** (both required), choose the **Type** and **Amount Type**, enter the **Amount**, and click **Create Surcharge**.
 
    <Result>**Created new surcharge.** appears and the surcharge's page opens (section 5).</Result>
-
-:::tip[The numbers are examples]
-IDs, names and rates on this page, such as 3 in **Assign Surcharge #3**, *Sales Tax* in **Removed Category Level surcharge: Sales Tax** and 8.25% in *Tax Rate of 8.25%*, are examples. The app shows your own surcharges and products.
-:::
 
 ## Assign a surcharge to a product
 
@@ -73,7 +69,7 @@ IDs, names and rates on this page, such as 3 in **Assign Surcharge #3**, *Sales 
 
 3. Click **Assign Surcharges**.
 
-   <Result>The card lists each surcharge with its type and rate, such as *Surcharge of $2.00*.</Result>
+   <Result>The card lists each surcharge with its type and rate, such as *Surcharge of <Sample>$2.00</Sample>*.</Result>
 
 4. To take a surcharge off the product, click the delete button (<MaterialIcon name="delete" />) on its row.
 
@@ -105,7 +101,7 @@ A category surcharge applies to every product in the category, including product
 
 4. *(Optional)* To remove a category surcharge, click the delete button (<MaterialIcon name="delete" />) on its row.
 
-   <Result>**Removed Category Level surcharge: Sales Tax** appears. The surcharge is also removed from every product in the category.</Result>
+   <Result>**Removed Category Level surcharge: <Sample>Sales Tax</Sample>** appears. The surcharge is also removed from every product in the category.</Result>
 
 :::caution[Watch out]
 A category can have one tax rate. A new tax rate replaces the old one, and removes any other tax rate from the category's products.
@@ -121,7 +117,7 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
 
 2. Click **Assign to Product**.
 
-   <Result>An **Assign Surcharge #3** dialog opens with a **Product Search** field.</Result>
+   <Result>An **Assign Surcharge #<Sample>3</Sample>** dialog opens with a **Product Search** field.</Result>
 
 3. Select the products in **Product Search** and click **Assign Surcharge**.
 
@@ -129,7 +125,7 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
 
 4. To unassign a product, click the more button (<MaterialIcon name="more_horiz" />) on its row in **Associated Products** and choose **Unassign** (Figure 5.1).
 
-   <Result>**Removed surcharge from Product #1** appears.</Result>
+   <Result>**Removed surcharge from Product #<Sample>1</Sample>** appears.</Result>
 
 5. To delete the surcharge, click **Delete**.
 

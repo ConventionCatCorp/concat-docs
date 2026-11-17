@@ -18,7 +18,7 @@ Badge products, badge product options, addons, the registration form, sub-accoun
 Badge products, the registration tiers, live in the Registration module. Everything else you sell lives in Store Management ([Store and products setup](./store-setup.md)).
 </Sidenote>
 
-A badge product is a tier attendees register for, such as *General Admission* or *Sponsor*.
+A badge product is a tier attendees register for, such as *<Sample>General Admission</Sample>* or *<Sample noMarker>Sponsor</Sample>*.
 
 1. Go to **Housekeeping › Registration › Badge Products**.
 
@@ -34,7 +34,7 @@ A badge product is a tier attendees register for, such as *General Admission* or
 
 4. Click the tier's name.
 
-   <Result>The product's page opens, titled with the tier's name and ID, such as **Product: General Admission (ID: 1)**, with tabs **Product**, **Orders** and **Audit Logs**, and cards including **Product Information**, **Product Images**, **Addons**, **Discounts**, **Upgrade Paths**, **Options**, **Surcharges** and **Prices**.</Result>
+   <Result>The product's page opens, titled with the tier's name and ID, such as **Product: <Sample>General Admission (ID: 1)</Sample>**, with tabs **Product**, **Orders** and **Audit Logs**, and cards including **Product Information**, **Product Images**, **Addons**, **Discounts**, **Upgrade Paths**, **Options**, **Surcharges** and **Prices**.</Result>
 
 <TableFigure title="Sections of the New Product form">
 
@@ -145,11 +145,11 @@ Sub-accounts let one account register a group or family and pay for everyone in 
 
 Once registered themselves, attendees see these options on their **Attendance** page, under **Your registrations**.
 
-1. As an attendee, click **Register another attendee** (**Register another attendee (Ages 16+)** when PII-free children are allowed).
+1. As an attendee, click **Register another attendee** (**Register another attendee (Ages <Sample>16</Sample>+)** when PII-free children are allowed).
 
    <Result>A **New user** step asks for the person's name and date of birth, and uses the account holder's address unless **Use different mailing address** is ticked. **Registration Type**, **Additional Information** and **Review** follow.</Result>
 
-2. *(If PII-free children are allowed)* As an attendee, click **Register child (under 16)**.
+2. *(If PII-free children are allowed)* As an attendee, click **Register child (under <Sample>16</Sample>)**.
 
    <Result>There's no personal-details step. The attendee ticks your child-registration terms, chooses a tier and fills in the form, where an emergency contact is required.</Result>
 
@@ -157,8 +157,8 @@ Once registered themselves, attendees see these options on their **Attendance** 
 
    <Result>Every unpaid attendee under the account is paid for in one checkout.</Result>
 
-:::tip[The values are examples]
-The tier in **Product: General Admission (ID: 1)** and the 16 in **Register another attendee (Ages 16+)** and **Register child (under 16)** are examples. The app shows your own tier names and IDs, and your **Child Age Threshold**, set in **Housekeeping › Registration › Settings**.
+:::tip[Where the age comes from]
+The app shows your **Child Age Threshold**, set in **Housekeeping › Registration › Settings**.
 :::
 
 ## Minors and dependents

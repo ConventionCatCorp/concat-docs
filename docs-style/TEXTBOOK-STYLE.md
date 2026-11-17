@@ -26,6 +26,8 @@ Implementation: tokens in `src/css/_tokens.scss` (ramps in `src/css/_variables.s
 | `--cc-color-surface-tint` | `#f7f8f9` | white at 4% | Banded table rows |
 | `--cc-color-marker` | `#bc1d28` | `#bc1d28` | Figure markers and their caption numbers |
 | `--cc-color-result` | `#0e8012` | `#67d04c` | Result label |
+| `--cc-color-sample` | `#0670ad` at 9% | `#60c6e6` at 16% | Sample value tint |
+| `--cc-color-sample-rule` | `#0670ad` at 70% | `#60c6e6` at 75% | Sample value's dotted underline |
 
 Callouts use a tinted background, a left rule and a label colour per kind (light theme shown; dark uses the same ramps at low opacity):
 
@@ -108,6 +110,7 @@ At `$textbook-wide` and above, the article has a main column and a margin column
 | Procedure | Lists steps to do in order, each in a numbered badge | A top-level `1.` list | `.markdown > ol`, counter `tb-step` |
 | Result | States what the reader should see once a step has worked | `<Result>…</Result>`, indented under its step after a blank line | `Result.tsx` |
 | On-screen label | Gives the exact text of a menu item, button, field or message | `**Label**` | `strong` |
+| Sample value | Marks an example value that differs on the reader's screen, such as a name, number, date or email subject value: a light brand tint, a dotted underline and a small "e.g." marker, with the hover text *Example value; yours will differ*. One marker per source line; never inside a web address or code | `<Sample>Star26</Sample>`; later values on the same line `<Sample noMarker>…</Sample>`; right after a web address or code span, `<Sample />` | `Sample.tsx` |
 | Menu path | Gives the items to click in turn | `**Housekeeping › Registration › Options**` (`›` is U+203A) | `strong` |
 | Margin note | Adds a side detail beside the text that follows it | `<Sidenote title="…">…</Sidenote>`, placed before that text | `Sidenote.tsx` |
 | Key idea | States the idea to take away from a section | `:::info[Key idea]` | `.theme-admonition` |

@@ -30,8 +30,8 @@ The station prints badges in one of two ways:
 | Printer Status shows | Meaning |
 | --- | --- |
 | **OS Controlled** | No Zebra printer is active; badges print through the browser. <small>Also shown when the chosen Zebra printers are unplugged.</small> |
-| **Primary: Label (#D4J221801234)** | Badges print on that Zebra printer. |
-| **Secondary: Label (#D4J221805678)**, after the primary | A second Zebra printer takes the badge types assigned to it in **Badge type printer preferences**. |
+| **Primary: Label (#<Sample>D4J221801234</Sample>)** | Badges print on that Zebra printer. |
+| **Secondary: Label (#<Sample>D4J221805678</Sample>)**, after the primary | A second Zebra printer takes the badge types assigned to it in **Badge type printer preferences**. |
 | **Primary: None selected**, in red | Only a secondary printer is set. |
 
 </TableFigure>
@@ -54,7 +54,7 @@ Connect the printer to the station computer by USB and load the badge labels fir
 
 3. Choose the printer and allow the connection.
 
-   <Result>The printer is listed as **Label (#D4J221801234)**, with a gear button, **Set as Primary** and **Set as Secondary**.</Result>
+   <Result>The printer is listed as **Label (#<Sample>D4J221801234</Sample>)**, with a gear button, **Set as Primary** and **Set as Secondary**.</Result>
 
 4. Click the printer's gear button, then **Test Print**.
 
@@ -62,15 +62,11 @@ Connect the printer to the station computer by USB and load the badge labels fir
 
 5. Click **Set as Primary**.
 
-   <Result>The button reads **Active as Primary**, and **Printer Status** shows **Primary: Label (#D4J221801234)**.</Result>
+   <Result>The button reads **Active as Primary**, and **Printer Status** shows **Primary: Label (#<Sample>D4J221801234</Sample>)**.</Result>
 
 6. *(Optional, second printer)* Add another Zebra printer with steps 2 and 3, then click **Set as Secondary** on it.
 
-   <Result>The button reads **Active as Secondary**, and **Printer Status** adds **Secondary: Label (#D4J221805678)**.</Result>
-
-:::tip[The serial numbers and badge product are examples]
-The serial numbers in **Label (#D4J221801234)**, **Label (#D4J221805678)** and **Receipt (#X4ZM012345)**, and *General Admission* in the test printer's message, are examples. Each printer is listed with its own serial number, and the message names the attendee's badge product.
-:::
+   <Result>The button reads **Active as Secondary**, and **Printer Status** adds **Secondary: Label (#<Sample>D4J221805678</Sample>)**.</Result>
 
 Which badge types go to the secondary is set per station, under **Badge type printer preferences** ([Cashier UI](./cashier.md), section 2). By default, only minor badges do.
 
@@ -90,7 +86,7 @@ The test printer lets you try the printing workflow without a printer.
 
 2. On an attendee's page, click **Print Badge**.
 
-   <Result>Nothing prints. A message says *This is just a test for General Admission.*</Result>
+   <Result>Nothing prints. A message says *This is just a test for <Sample>General Admission</Sample>.*</Result>
 
 3. To remove the test printer, click its gear button, then **Remove**.
 
@@ -133,7 +129,7 @@ Connect the receipt printer to the station computer by USB, and the cash drawer 
 
 2. Choose the receipt printer and allow the connection.
 
-   <Result>The printer is listed under **Receipt Printers** as **Receipt (#X4ZM012345)**, with **Test Print** and **Kick Cash Drawer** buttons.</Result>
+   <Result>The printer is listed under **Receipt Printers** as **Receipt (#<Sample>X4ZM012345</Sample>)**, with **Test Print** and **Kick Cash Drawer** buttons.</Result>
 
 3. Click **Test Print**.
 

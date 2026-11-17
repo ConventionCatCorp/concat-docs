@@ -92,15 +92,11 @@ To stop offering a flag but keep who set it, untick **Make visible to attendees*
 
 1. In a flag's **Actions**, click the people button.
 
-   <Result>A **Users with the flag** dialog shows *Total Results: 2* and a numbered list of names, each linked to the attendee's profile.</Result>
+   <Result>A **Users with the flag** dialog shows *Total Results: <Sample>2</Sample>* and a numbered list of names, each linked to the attendee's profile.</Result>
 
 2. Click **Close**.
 
    <Result>The dialog closes.</Result>
-
-:::tip[The count is an example]
-The 2 in *Total Results: 2* is an example. The dialog counts the attendees who ticked the flag.
-:::
 
 ## Clear the data of nukeme attendees
 

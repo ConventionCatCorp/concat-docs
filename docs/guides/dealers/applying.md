@@ -45,10 +45,10 @@ The first page is your dealer form ([Dealer settings, policy and form](./setting
 
    <Result>A **Your dealer information has been saved.** message appears, and the space application opens at `/dealer/space`.</Result>
 
-A typed full-name agreement must match the first and last name on the account, or the field shows *Name does not match user profile (Alex Smith)*.
+A typed full-name agreement must match the first and last name on the account, or the field shows *Name does not match user profile (<Sample>Alex Smith</Sample>)*.
 
-:::tip[The names and numbers are examples]
-*Alex Smith*, *approved*, *Dealers' Den*, 12 and 2 on this page are examples. The app shows the account's first and last name, the application's status, the dealer area, the table number you assign and the table type's **Dealer assistant count limit**. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Assistant limit and email subjects]
+The number of assistants a dealer can nominate is the table type's **Dealer assistant count limit**. Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 To change details later, the dealer clicks **Edit Dealer** on the space page. The policy agreement stays ticked and can't be unticked.
@@ -69,7 +69,7 @@ With one enabled area, the dealer goes straight to its application. With several
 
    <Result>A **Your dealer application has been deleted.** message appears.</Result>
 
-A **Pending** application can be updated or deleted. Once your team sets another status, the form is grayed out with *The application is approved and can not be modified.* Full and closed areas show the messages in [Dealer areas and table types](./areas-and-products.md), Table 4.1.
+A **Pending** application can be updated or deleted. Once your team sets another status, the form is grayed out with *The application is <Sample>approved</Sample> and can not be modified.* Full and closed areas show the messages in [Dealer areas and table types](./areas-and-products.md), Table 4.1.
 
 ## Status and paying for the table
 
@@ -77,7 +77,7 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 1. After your team approves the application, open **Dealing** as the dealer.
 
-   <Result>An alert says *Your Dealers' Den application has been approved and is pending payment.*, with a **Pay for Table** button.</Result>
+   <Result>An alert says *Your <Sample>Dealers' Den</Sample> application has been approved and is pending payment.*, with a **Pay for Table** button.</Result>
 
 2. Click **Pay for Table**.
 
@@ -85,7 +85,7 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 3. Pay ([Checkout and payment](../orders/checkout.md)), then open **Dealing** again.
 
-   <Result>A green alert says **Your application has been approved!**, with the table number, such as *Your table assignment for Dealers' Den* **12**, or *The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention.*</Result>
+   <Result>A green alert says **Your application has been approved!**, with the table number, such as *Your table assignment for <Sample>Dealers' Den</Sample>* **<Sample noMarker>12</Sample>**, or *The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention.*</Result>
 
 Once approved, the space page also shows **Seating Preferences** and, if the table type allows assistants, **Manage Assistants**.
 
@@ -97,7 +97,7 @@ From approval, even before payment, if the table type's **Dealer assistant count
 
 1. On the space page, click **Manage Assistants**.
 
-   <Result>The **Add Assistant** card says *You can nominate up to 2 other attendees to assist you at the convention.*</Result>
+   <Result>The **Add Assistant** card says *You can nominate up to <Sample>2</Sample> other attendees to assist you at the convention.*</Result>
 
 2. Enter the assistant's username in **Assistant Username** and click **Add Assistant**.
 
@@ -115,7 +115,7 @@ The assistant needs their own account; help under **Assistant Username** says wh
 
 ## Confirm as an assistant
 
-The assistant gets a *ConCat - Dealer Assistant Confirmation* email naming the dealer, with a confirmation link.
+The assistant gets a *<Sample>ConCat</Sample> - Dealer Assistant Confirmation* email naming the dealer, with a confirmation link.
 
 1. Signed in as the assistant, click the link in the email.
 

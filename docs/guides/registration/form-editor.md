@@ -102,7 +102,7 @@ To get back a section deleted by mistake, click the back arrow at the top left a
 
 3. *(Optional)* To name an element, click its pencil button, type in **Display Name (optional)**, and click the tick button.
 
-   <Result>The element shows your name and its type in brackets, such as *Shirt size (Option)*.</Result>
+   <Result>The element shows your name and its type in brackets, such as *<Sample>Shirt size</Sample> (Option)*.</Result>
 
 4. To remove an element, click its **Delete** button, then **Delete** in the dialog.
 
@@ -143,15 +143,11 @@ Keep an **Emergency contacts** element on the form. Minors, PII-free children an
 
 1. Click **Edit** on an element.
 
-   <Result>A dialog titled with the element's name, such as **Update node: Shirt size (Option)**, opens with its properties (Table 5.1).</Result>
+   <Result>A dialog titled with the element's name, such as **Update node: <Sample>Shirt size</Sample> (Option)**, opens with its properties (Table 5.1).</Result>
 
 2. Change the properties and click **Save**.
 
-   <Result>The dialog closes. For an **Option**, the element's description shows the option's name, such as **Option: Shirt size**.</Result>
-
-:::tip[The name is an example]
-*Shirt size* is an example. The dialog and the description show the name of your own element and option.
-:::
+   <Result>The dialog closes. For an **Option**, the element's description shows the option's name, such as **Option: <Sample>Shirt size</Sample>**.</Result>
 
 The **Option** dialog lists **Badge Name** and every option by ID and name. **Terms agreement** lists policies by internal key, including `privacy` (**Privacy terms**), `terms` (**Convention Policy / Terms & Conditions**) and `conventionTerms` (**Registration Terms**), which you write in **Housekeeping › System › Settings › Terms**.
 

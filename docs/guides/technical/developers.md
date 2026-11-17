@@ -133,7 +133,7 @@ Each application has two kinds of permission:
 
 3. Enter a **Name** and **Description**. Under **Callback URIs**, type each address the application returns users to and click **+** after each. Tick the **Application Permissions** it needs, then click **Save**.
 
-   <Result>An **Application created!** message appears, and a **New secret** dialog shows the application's ID and secret, such as **ID:5** and **Secret: 3f9a1c7e5b2d48a0c6e1f7b39d2a5c84**.</Result>
+   <Result>An **Application created!** message appears, and a **New secret** dialog shows the application's ID and secret, such as **ID:<Sample>5</Sample>** and **Secret: <Sample noMarker>3f9a1c7e5b2d48a0c6e1f7b39d2a5c84</Sample>**.</Result>
 
 4. Copy the **ID** and **Secret** somewhere safe, then click **Close**.
 
@@ -159,21 +159,17 @@ ConCat checks only the *origin* of the return address (its scheme, host and port
 
 3. To remove an application, click the red bin button in its row.
 
-   <Result>A **Delete Application** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. Star26 Schedule?*</Result>
+   <Result>A **Delete Application** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. <Sample>Star26 Schedule</Sample>?*</Result>
 
 4. Click **Delete**.
 
    <Result>An **Application deleted!** message appears and the row disappears.</Result>
 
-:::tip[The values are examples]
-*Star26 Schedule*, the ID 5 and the secret in **Secret: 3f9a1c7e5b2d48a0c6e1f7b39d2a5c84** are examples. The app shows your application's own name, ID and secret.
-:::
-
 ## What attendees see when they authorize an app
 
 An application sends the attendee to your instance's `/oauth/authorize` page, where they must be logged in. If they already authorized the same application, scopes and return address, ConCat approves without showing the screen.
 
-The screen is titled with the application's name, such as **Authorize: Star26 Schedule**, and lists **Sign In Automatically** and one line per scope. A scope that starts with `admin:` is marked *This is an administrative permission.*, and the **Authorize Application** button turns red.
+The screen is titled with the application's name, such as **Authorize: <Sample>Star26 Schedule</Sample>**, and lists **Sign In Automatically** and one line per scope. A scope that starts with `admin:` is marked *This is an administrative permission.*, and the **Authorize Application** button turns red.
 
 To try it, use an application from section 4 that has a callback URI:
 

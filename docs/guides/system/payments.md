@@ -42,15 +42,11 @@ You need access to your organization's Stripe account, or the details to create 
 
 3. Click **Yes, I want to enable Stripe Connect.**
 
-   <Result>A **Stripe Connect** dialog shows **Your country code is: US** and **Your currency is: USD**, and its button changes from **Loading...** to **Continue to Stripe**.</Result>
+   <Result>A **Stripe Connect** dialog shows **Your country code is: <Sample>US</Sample>** and **Your currency is: <Sample noMarker>USD</Sample>**, and its button changes from **Loading...** to **Continue to Stripe**.</Result>
 
 4. Check the country code and currency. If either is wrong, click **Cancel** and contact ConCat Support; otherwise click **Continue to Stripe** and complete Stripe's sign-up with your organization's details.
 
    <Result>Back on the **Payment Gateways** tab, a **Status: Connected** badge shows with your Stripe account ID, and the button reads **Open Stripe Connect**.</Result>
-
-:::tip[The country and currency are examples]
-**US** and **USD** are examples. The dialog shows your organization's country code and currency.
-:::
 
 <TableFigure title="Stripe status badges">
 

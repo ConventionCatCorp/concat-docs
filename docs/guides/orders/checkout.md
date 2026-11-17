@@ -34,18 +34,14 @@ An empty cart shows *Nothing in your cart... yet!*
 
 | Part | What it shows |
 | --- | --- |
-| Countdown | *You have 14 minute(s) remaining to checkout.* <small>Only when **Cart Timeout** is set ([Orders](./orders.md), section 1). At zero, the page reloads.</small> |
-| Items | Each item with its price, or **Free**. Items the attendee can buy several of have a quantity box; most have a delete button. <small>A free addon names its product, such as **Free addon from General Admission**. An item still needing details is marked **Incomplete**.</small> |
+| Countdown | *You have <Sample>14</Sample> minute(s) remaining to checkout.* <small>Only when **Cart Timeout** is set ([Orders](./orders.md), section 1). At zero, the page reloads.</small> |
+| Items | Each item with its price, or **Free**. Items the attendee can buy several of have a quantity box; most have a delete button. <small>A free addon names its product, such as **Free addon from <Sample>General Admission</Sample>**. An item still needing details is marked **Incomplete**.</small> |
 | Taxes and surcharges | Under each item, a **Tax** or **Fee / Surcharge** line per surcharge, then **Total w/ Surcharges**. |
 | **Fees, Charges, and Fines** | The total of fees charged to the attendee. |
 | **Order Summary** | A total per product category, the fees, **Taxes & Surcharges**, any voucher **Discount**, and the **Order Total**. <small>After a part payment, the last line is **Remaining Balance**.</small> |
 | **Have a voucher to redeem?** | A code field and **Redeem Voucher**. |
 
 </TableFigure>
-
-:::tip[The values are examples]
-The time in the countdown, the product in **Free addon from General Admission**, the order numbers 13 and 9, the amount in **Pay $50.00** and the short name Star25 in **Order #9 (Star25)** are examples. The app shows the time left, the addon's own product, and each order's own number, total and convention. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
-:::
 
 For an organization that uses PagSeguro, a Brazilian billing **Country** switches the payment options to PagSeguro.
 
@@ -57,9 +53,13 @@ Once Stripe is connected, payments are real.
 
 Card payments go through your Stripe account. Stripe can also offer wallet buttons, such as Apple Pay or Google Pay, above the card form.
 
-1. In **Pay by Credit / Debit Card with Stripe**, choose a payment method, enter the details, and click **Pay $50.00**.
+1. In **Pay by Credit / Debit Card with Stripe**, choose a payment method, enter the details, and click **Pay <Sample>$50.00</Sample>**.
 
-   <Result>**Processing Payment...** shows, then a green card says *Your payment has been successful! Thank you!* If any item cost more than zero, the attendee gets the *ConCat - Order #13 Payment Successful* email, their receipt.</Result>
+   <Result>**Processing Payment...** shows, then a green card says *Your payment has been successful! Thank you!* If any item cost more than zero, the attendee gets the *<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> Payment Successful* email, their receipt.</Result>
+
+:::tip[Email subjects]
+Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+:::
 
 A declined card shows ***Your payment was declined** by our payment processor:* and Stripe's reason; after three failures it adds *If you repeatedly see this message, you may want to contact the event and your financial institution for assistance.* If the cart changed during payment, the attendee sees *The order has changed since loading your cart. Please try again.*
 
@@ -85,7 +85,7 @@ With nothing to pay, there's no card form: a free order shows a **Confirm Order*
 
 1. On a checkout with nothing left to pay, click **Confirm Order**.
 
-   <Result>A green card says *Your payment has been successful! Thank you!*, and the order is paid. The *ConCat - Order #13 Payment Successful* email is sent only if an item cost more than zero.</Result>
+   <Result>A green card says *Your payment has been successful! Thank you!*, and the order is paid. The *<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> Payment Successful* email is sent only if an item cost more than zero.</Result>
 
 ## What stops a payment
 
@@ -105,7 +105,7 @@ Until the cause is fixed, checkout shows one of the cards in Table 5.1 instead o
 
 Attendees land here when they come back from their bank or from PagSeguro.
 
-1. As an attendee with a paid order, open `/cart/complete/` followed by its number, such as `https://your-event.concat.app/cart/complete/13`.
+1. As an attendee with a paid order, open `/cart/complete/` followed by its number, such as `https://your-event.concat.app/cart/complete/13`<Sample />.
 
    <Result>The page says **Payment success!**, with a **Go Home** button.</Result>
 
@@ -115,8 +115,8 @@ An unpaid order shows **Payment error** with *The payment is not complete, but n
 
 1. As an attendee, click **Transaction history** under **Event store** in the homepage sidebar.
 
-   <Result>The **Transaction history** page lists the attendee's orders as cards, newest first, each with its number, such as **Order #13**, the total, the items and an **Order Summary**.</Result>
+   <Result>The **Transaction history** page lists the attendee's orders as cards, newest first, each with its number, such as **Order #<Sample>13</Sample>**, the total, the items and an **Order Summary**.</Result>
 
-Orders from your organization's other conventions are listed too, with that convention's short name after the order number, such as **Order #9 (Star25)**. An order with tickets has a **Retrieve Ticket(s)** button.
+Orders from your organization's other conventions are listed too, with that convention's short name after the order number, such as **Order #<Sample>9</Sample> (<Sample noMarker>Star25</Sample>)**. An order with tickets has a **Retrieve Ticket(s)** button.
 
-There's no receipt page: the *ConCat - Order #13 Payment Successful* email is the receipt, and only staff can resend it. Attendees ask for refunds from the **⋯** menu on an order card.
+There's no receipt page: the *<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> Payment Successful* email is the receipt, and only staff can resend it. Attendees ask for refunds from the **⋯** menu on an order card.

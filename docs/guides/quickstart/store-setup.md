@@ -22,7 +22,7 @@ The store is on in a new convention: attendees see **Event store** in the homepa
 
 ## Categories
 
-Every store product belongs to a category, such as *Merchandise* or *Charity*.
+Every store product belongs to a category, such as *<Sample>Merchandise</Sample>* or *<Sample noMarker>Charity</Sample>*.
 
 1. Go to **Housekeeping › Store Management › Store Products**.
 
@@ -42,7 +42,7 @@ Every store product belongs to a category, such as *Merchandise* or *Charity*.
 
 1. On **Product Categories**, click **View Products** on your category.
 
-   <Result>The page is titled with the category's name, such as **Category: General Store**, with **Create New Product**, **Category Surcharges** and **Back to Categories** buttons.</Result>
+   <Result>The page is titled with the category's name, such as **Category: <Sample>General Store</Sample>**, with **Create New Product**, **Category Surcharges** and **Back to Categories** buttons.</Result>
 
 2. Click **Create New Product**, fill in **Name** and **Description**, set **Product visibility** to **Public**, enter the **Base Price**, and click **Create Product**.
 
@@ -150,11 +150,7 @@ A voucher is a code worth an amount of money, such as a comped registration or a
 
 3. *(Optional)* To give the voucher to particular attendees, click **Issue** on its page, choose the **User(s)** and click **Issue Voucher**.
 
-   <Result>A message says *Voucher #3 has been issued to 2 user(s).*</Result>
-
-:::tip[The names and numbers are examples]
-The category in **Category: General Store**, and the 3 and 2 in *Voucher #3 has been issued to 2 user(s).*, are examples. The app shows your own category's name, the voucher's own number and how many people you chose.
-:::
+   <Result>A message says *Voucher #<Sample>3</Sample> has been issued to <Sample noMarker>2</Sample> user(s).*</Result>
 
 :::tip[Restricting and issuing vouchers]
 **Restrict voucher to products** limits what the voucher pays for, such as only badge products. Issuing adds the voucher to each person's current order; **Attempt to fulfill associated orders automatically.** also completes that order if the voucher leaves nothing to pay.

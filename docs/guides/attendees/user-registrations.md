@@ -26,13 +26,13 @@ A person has at most one registration per convention, shown in the **Registratio
 | --- | --- |
 | **Not Registered** | No registration for this convention. |
 | **Registration reserved, but not completed.** | Started registering but didn't finish. |
-| **Status: General Admission**, then a green tick | Paid. The tick links to the paying order. |
-| **Status: General Admission**, then a warning sign | Not paid. |
+| **Status: <Sample>General Admission</Sample>**, then a green tick | Paid. The tick links to the paying order. |
+| **Status: <Sample>General Admission</Sample>**, then a warning sign | Not paid. |
 
 </TableFigure>
 
-:::tip[The names and numbers are examples]
-*General Admission* and the 13 in **Order #13** are examples. The **Registration** row shows the person's own badge product, and each order card its own number. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Email subjects]
+Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 Registrations staff create start unpaid: the person pays at checkout, or staff take payment at the [Cashier UI](../registration/cashier/cashier.md).
@@ -45,7 +45,7 @@ Registrations staff create start unpaid: the person pays at checkout, or staff t
 
 2. Enter a **Badge Name** (up to 32 characters), choose the **Attendance Type**, tick any flags, fill in the options, and click **Create Registration**.
 
-   <Result>**Saved successfully** appears. The **Registration** row shows the badge product with a warning sign (unpaid), and the person gets a *ConCat - Registration Created* email.</Result>
+   <Result>**Saved successfully** appears. The **Registration** row shows the badge product with a warning sign (unpaid), and the person gets a *<Sample>ConCat</Sample> - Registration Created* email.</Result>
 
 3. If a **Force Registration** dialog opens instead, read it and click **Force Registration** to go ahead.
 
@@ -131,7 +131,7 @@ The tab lists the person's orders for this convention, plus paid orders from you
 
 1. On the person's profile, click the **Orders** tab.
 
-   <Result>Each order is a card headed with its number, such as **Order #13**, and its total, with a **Paid in Full** or **Unpaid** badge, the items and **Show details**. With no orders: *There are no orders for this user.*</Result>
+   <Result>Each order is a card headed with its number, such as **Order #<Sample>13</Sample>**, and its total, with a **Paid in Full** or **Unpaid** badge, the items and **Show details**. With no orders: *There are no orders for this user.*</Result>
 
 2. Click **Show details** on an order.
 

@@ -40,15 +40,11 @@ The first number is how many registrations use the image; the second is its limi
 
 1. On an image's card, click **Configure limit**.
 
-   <Result>A dialog titled with the image's ID, such as **Set a limit for 3**, opens with an **Enable limit** checkbox.</Result>
+   <Result>A dialog titled with the image's ID, such as **Set a limit for <Sample>3</Sample>**, opens with an **Enable limit** checkbox.</Result>
 
 2. Tick **Enable limit**, enter the number of badges allowed, and click **Update**.
 
-   <Result>A **Badge art has been updated** message appears, and the card shows the limit, such as *Limit:0 / 100*.</Result>
-
-:::tip[The numbers are examples]
-The 100 in *Limit:0 / 100* and the image ID in **Set a limit for 3** and **Delete 3** are examples. The app shows how many badges have used each image, the limit you set, and the image's own ID.
-:::
+   <Result>A **Badge art has been updated** message appears, and the card shows the limit, such as *Limit:0 / <Sample>100</Sample>*.</Result>
 
 To remove a limit, untick **Enable limit** in **Configure limit** and click **Update**; the card shows *∞* again.
 
@@ -56,7 +52,7 @@ To remove a limit, untick **Enable limit** in **Configure limit** and click **Up
 
 1. On an image's card, click the delete button.
 
-   <Result>A dialog titled with the image's ID, such as **Delete 3**, asks *Are you sure you want to delete 3?*</Result>
+   <Result>A dialog titled with the image's ID, such as **Delete <Sample>3</Sample>**, asks *Are you sure you want to delete <Sample noMarker>3</Sample>?*</Result>
 
 2. Click **Delete**.
 

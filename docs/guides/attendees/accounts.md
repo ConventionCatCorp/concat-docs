@@ -46,7 +46,7 @@ The age buttons come from the **Child Age Threshold** and **Minor Age Threshold*
 
 1. On the login page, click **Create Your Account**.
 
-   <Result>The **Account Creation** page opens on an **Age check** card, with a button per age band, such as **I was born before October 1, 2008 (Over 18)**. A middle band appears when the child threshold is below the minor threshold.</Result>
+   <Result>The **Account Creation** page opens on an **Age check** card, with a button per age band, such as **I was born before <Sample>October 1, 2008</Sample> (Over <Sample noMarker>18</Sample>)**. A middle band appears when the child threshold is below the minor threshold.</Result>
 
 2. Click the first button (born before the date).
 
@@ -58,10 +58,10 @@ The age buttons come from the **Child Age Threshold** and **Minor Age Threshold*
 
 4. Fill in the form and click **Create Your Account**.
 
-   <Result>A **Confirm your email address!** card appears, and a *ConCat - Account Creation Confirmation* email arrives with a confirmation link.</Result>
+   <Result>A **Confirm your email address!** card appears, and a *<Sample>ConCat</Sample> - Account Creation Confirmation* email arrives with a confirmation link.</Result>
 
-:::tip[The values are examples]
-The date and age in **I was born before October 1, 2008 (Over 18)** are examples. The buttons use your **Minor Age Threshold** and **Child Age Threshold**, counted back from your convention's start date. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Where the ages come from]
+The buttons use your **Minor Age Threshold** and **Child Age Threshold**, counted back from your convention's start date. Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 The form checks usernames and email addresses as they're typed, for example *This username is already in use.* or *That username is invalid. Usernames must be between 4 and 64 characters.*
@@ -75,7 +75,7 @@ The youngest age button ends at a **We're sorry** card showing your **Child Regi
 
 ### Confirm the email address
 
-1. In the *ConCat - Account Creation Confirmation* email, click the link.
+1. In the *<Sample>ConCat</Sample> - Account Creation Confirmation* email, click the link.
 
    <Result>An **Account Creation** page shows **Account Activated!**, with a **Go back to Login** link.</Result>
 
@@ -91,7 +91,7 @@ Attendees whose email isn't confirmed see a reminder on their homepage once logg
 
 2. Click **Resend verification email**.
 
-   <Result>*A new verification email has been sent and will arrive shortly.* appears, and a new *ConCat - Account Creation Confirmation* email arrives.</Result>
+   <Result>*A new verification email has been sent and will arrive shortly.* appears, and a new *<Sample>ConCat</Sample> - Account Creation Confirmation* email arrives.</Result>
 
 The same reminder, headed **Email verification required**, appears on the volunteer and dealer application pages.
 
@@ -127,7 +127,7 @@ An attendee who can't remember their password can ask for a link that logs them 
 
 2. Enter the email address or username and click **Send login link**.
 
-   <Result>*If your email is registered to an account, you should receive a login link shortly.* appears, and a *ConCat - Your Login Link* email arrives with a **Log In** button.</Result>
+   <Result>*If your email is registered to an account, you should receive a login link shortly.* appears, and a *<Sample>ConCat</Sample> - Your Login Link* email arrives with a **Log In** button.</Result>
 
 3. In the email, click **Log In**.
 
@@ -145,7 +145,7 @@ An attendee who can't remember their password can ask for a link that logs them 
 
 2. Enter the account's email address and click **Reset Password**.
 
-   <Result>*Your password reset request has been submitted.* appears, and a *ConCat - Password Reset* email arrives with a link.</Result>
+   <Result>*Your password reset request has been submitted.* appears, and a *<Sample>ConCat</Sample> - Password Reset* email arrives with a link.</Result>
 
 3. In the email, click the link.
 
@@ -203,7 +203,7 @@ Each factor has a **Delete** button (*Second factor deleted*). An account with o
 
    <Result>*Your account information has been updated successfully.* appears.</Result>
 
-Changing the password sends a *ConCat - Password Changed* email and logs the account out everywhere else.
+Changing the password sends a *<Sample>ConCat</Sample> - Password Changed* email and logs the account out everywhere else.
 
 ### Change the email address
 
@@ -213,11 +213,11 @@ Changing the password sends a *ConCat - Password Changed* email and logs the acc
 
 2. Enter the **Current Password** and click **Update**.
 
-   <Result>The success message appears and the email field grays out. A *ConCat - Request email change* email arrives at the new address.</Result>
+   <Result>The success message appears and the email field grays out. A *<Sample>ConCat</Sample> - Request email change* email arrives at the new address.</Result>
 
 3. In that email, click the link.
 
-   <Result>An **Account change email** page shows **Email updated!**, and a *ConCat - E-Mail Address Updated* email goes to both the old and the new address.</Result>
+   <Result>An **Account change email** page shows **Email updated!**, and a *<Sample>ConCat</Sample> - E-Mail Address Updated* email goes to both the old and the new address.</Result>
 
 The account keeps its old address until the link is clicked. Only one change can be requested in 24 hours.
 
@@ -243,9 +243,9 @@ Attendees can set their date of birth once; after that, only staff can change it
 
 ### Finish an account migration
 
-When a parent turns a sub-account into the dependent's own account ([Sub-accounts, children and minors](../registration/sub-accounts.md)), the dependent gets a *ConCat - Account Migration Confirmation* email.
+When a parent turns a sub-account into the dependent's own account ([Sub-accounts, children and minors](../registration/sub-accounts.md)), the dependent gets a *<Sample>ConCat</Sample> - Account Migration Confirmation* email.
 
-1. In the *ConCat - Account Migration Confirmation* email, click the link.
+1. In the *<Sample>ConCat</Sample> - Account Migration Confirmation* email, click the link.
 
    <Result>The **Account Migration** page opens with **Almost Done!** and **Username**, **Password** and **Confirm password** fields.</Result>
 

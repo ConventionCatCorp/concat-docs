@@ -42,11 +42,7 @@ A fee goes into the attendee's unpaid order for this convention (their cart), wh
 
 3. As that attendee, click **Cart** in the homepage sidebar.
 
-   <Result>The **Checkout** page and its **Order Summary** show **Fees, Charges, and Fines** with the fee's amount, such as $25.00. Paying the order pays the fee.</Result>
-
-:::tip[The amount is an example]
-The $25.00 is an example. The order summary shows the fee's own amount.
-:::
+   <Result>The **Checkout** page and its **Order Summary** show **Fees, Charges, and Fines** with the fee's amount, such as <Sample>$25.00</Sample>. Paying the order pays the fee.</Result>
 
 Attendees see only the total of their fees, not your reason, so tell them why you've charged it.
 

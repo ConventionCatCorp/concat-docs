@@ -56,7 +56,7 @@ A role can also grant reading chosen categories: tick them under **User Note Cat
 
 2. Choose a **Note Category**, enter the **Text**, and click **Add New Note** (Figure 2.1).
 
-   <Result>The note appears in the **Notes** card with a gray badge showing the convention's short name, such as **Star26**, because **Apply only to this convention.** was ticked. A note saved with the box unticked has no badge and is shown in every convention of your organization.</Result>
+   <Result>The note appears in the **Notes** card with a gray badge showing the convention's short name, such as **<Sample>Star26</Sample>**, because **Apply only to this convention.** was ticked. A note saved with the box unticked has no badge and is shown in every convention of your organization.</Result>
 
 <Figure
   src="/img/guides/usernotes/add-note.webp"
@@ -86,8 +86,8 @@ A role can also grant reading chosen categories: tick them under **User Note Cat
 
 Ban notes have no edit button: delete the ban, which lifts it, and create a new one.
 
-:::tip[The names are examples]
-*Star26*, *Alexander* and *Smith* are examples. The badge shows your **Convention Short Name**, and an account review shows the names on the matching ban. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Badges and email subjects]
+The badge shows your **Convention Short Name**. Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 ## Search and create notes
@@ -154,12 +154,12 @@ A registration ban logs the person out at once, and they can't log back in. Chec
 ## Account reviews
 
 <Sidenote title="The email">
-When someone signs up and their new account goes into review, a *ConCat - Registration Requires Review* email also goes to your registration address, set on the **Contact** tab of **Housekeeping › System › Settings**. Reviews of accounts staff create, of sub-accounts and of name changes send no email.
+When someone signs up and their new account goes into review, a *<Sample>ConCat</Sample> - Registration Requires Review* email also goes to your registration address, set on the **Contact** tab of **Housekeeping › System › Settings**. Reviews of accounts staff create, of sub-accounts and of name changes send no email.
 </Sidenote>
 
 When an account or sub-account is created, or a person changes their name, ConCat compares the name with every ban in your organization, in any ban category. A match marks the account **Pending Review**, so someone can check whether it's the banned person signing up again.
 
-A name matches when, ignoring capitals, the first name starts with the same three letters as the ban's and the last name with the same letter. If both have a date of birth, the year and month must match too. So a ban on *Alexander Smith* flags *Alex Sanders*.
+A name matches when, ignoring capitals, the first name starts with the same three letters as the ban's and the last name with the same letter. If both have a date of birth, the year and month must match too. So a ban on *<Sample>Alexander Smith</Sample>* flags *<Sample noMarker>Alex Sanders</Sample>*.
 
 An account under review can still log in, but the Cashier UI won't issue a badge: *Attendee is currently under review. A badge cannot be issued until this is cleared.*
 
@@ -169,7 +169,7 @@ An account under review can still log in, but the Cashier UI won't issue a badge
 
 2. Click **View**, then click a name in the list.
 
-   <Result>The profile has a yellow **Pending Review** badge. The **Information** card starts with **Possible duplicate account with a ban**, showing the ban's names, such as **Matching First Name**: Alexander and **Matching Last Name**: Smith, and the ban's text, or **No matching ban** if the ban has since been deleted.</Result>
+   <Result>The profile has a yellow **Pending Review** badge. The **Information** card starts with **Possible duplicate account with a ban**, showing the ban's names, such as **Matching First Name**: <Sample>Alexander</Sample> and **Matching Last Name**: <Sample noMarker>Smith</Sample>, and the ban's text, or **No matching ban** if the ban has since been deleted.</Result>
 
 3. If this is the banned person, ban this account too (section 4).
 

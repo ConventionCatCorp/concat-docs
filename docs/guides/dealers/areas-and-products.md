@@ -43,7 +43,7 @@ Approving an application puts the chosen table type and add-ons into the dealer'
 
    <Result>A **New Category** form opens.</Result>
 
-3. Enter a **Name**, such as *Dealers' Den tables*, leave **Hide this category** unticked (it hides the category and its items from attendees), and click **Create Category**.
+3. Enter a **Name**, such as *<Sample>Dealers' Den tables</Sample>*, leave **Hide this category** unticked (it hides the category and its items from attendees), and click **Create Category**.
 
    <Result>A **New category has been created.** message appears, and the category's page opens.</Result>
 
@@ -106,14 +106,10 @@ Repeat steps 2 and 3 for each table type that offers the add-on. A product from 
 | Setting | When ticked | When not ticked |
 | --- | --- | --- |
 | **Enabled** <small>"Display the option to users"</small> | Dealers see the area. | Hidden from dealers. With no area enabled, **Dealing** says *No dealer areas are currently accepting applications.* |
-| **Open** <small>"Allow for additional registrations"</small> | Dealers can apply, and change or delete a pending application. | Marked **CLOSED**; its form says *Dealers' Den is closed.* Staff can still change applications. |
-| **Full** <small>"Show that registrations is full, but more slots may open in the future."</small> | Dealers can still apply, but see *The Dealers' Den is full. Applications can still be made in case a seat becomes available.* | No message. |
+| **Open** <small>"Allow for additional registrations"</small> | Dealers can apply, and change or delete a pending application. | Marked **CLOSED**; its form says *<Sample>Dealers' Den</Sample> is closed.* Staff can still change applications. |
+| **Full** <small>"Show that registrations is full, but more slots may open in the future."</small> | Dealers can still apply, but see *The <Sample>Dealers' Den</Sample> is full. Applications can still be made in case a seat becomes available.* | No message. |
 
 </TableFigure>
-
-:::tip[The area name is an example]
-*Dealers' Den* is an example. The messages show the area's own name.
-:::
 
 With several areas enabled, dealers choose one first; with one, they go straight to its form.
 

@@ -29,7 +29,7 @@ Use **npm** (`package-lock.json` is committed). Node `^26` is required.
 
 ## MDX components
 
-`src/theme/MDXComponents.tsx` swizzles the MDX mapper so these components are usable in any `.md`/`.mdx` file **without importing them**: `Highlight`, `Attribute`, `ParentAttribute`, `MaterialIcon`, `Link`, `RestElement`, `RestList`, `EndpointRequest`, `EndpointResponse`, `ExampleBox`, `SplitColumn`, `Card`, `BigButton`, `Admonition`, `Figure`, `TableFigure`, `Sidenote`, `Result`. A new component meant for docs must be registered there. Tags are case-sensitive: a lowercase tag such as `<splitColumn>` compiles to an unknown HTML element, not the component.
+`src/theme/MDXComponents.tsx` swizzles the MDX mapper so these components are usable in any `.md`/`.mdx` file **without importing them**: `Highlight`, `Attribute`, `ParentAttribute`, `MaterialIcon`, `Link`, `RestElement`, `RestList`, `EndpointRequest`, `EndpointResponse`, `ExampleBox`, `SplitColumn`, `Card`, `BigButton`, `Admonition`, `Figure`, `TableFigure`, `Sidenote`, `Result`, `Sample`. A new component meant for docs must be registered there. Tags are case-sensitive: a lowercase tag such as `<splitColumn>` compiles to an unknown HTML element, not the component.
 
 `MaterialIcon` relies on the Material Symbols font loaded in `docusaurus.config.js` `stylesheets`, which also loads the platform fonts (Armata, Krona One).
 

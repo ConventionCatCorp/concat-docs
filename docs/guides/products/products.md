@@ -86,22 +86,18 @@ Badges under each product's name show its status (Table 2.1).
 | --- | --- |
 | **Public / Visible**, **Unlisted** or **Hidden** | The **Product visibility** (Table 3.1). |
 | **Deleted / Archived** | Deleted (section 6). |
-| **In Stock: 40/50 Available** | Limited stock left, out of the total. |
-| **Out of Stock** | Limited stock used up. <small>**Out of Stock - Exceeded by 2**: 2 sold over the limit.</small> |
-| **Limit per user: 4** | **Maximum purchases per user** is set. |
+| **In Stock: <Sample>40/50</Sample> Available** | Limited stock left, out of the total. |
+| **Out of Stock** | Limited stock used up. <small>**Out of Stock - Exceeded by <Sample>2</Sample>**: <Sample noMarker>2</Sample> sold over the limit.</small> |
+| **Limit per user: <Sample>4</Sample>** | **Maximum purchases per user** is set. |
 | **Role Restriction**, **Product Role Blacklist** | A role whitelist or blacklist is set. |
 | **Grant Restriction** | **Restrict product to grants** is set. |
 | **Not Yet Available** | **Available From** is in the future. |
 | **Expired** | **Available Until** has passed. |
-| **Age Restricted: >= 18** | A purchase age limit is set. |
-| **Addon Stock: 15/20 Available**, **Addon Out of Stock** | A complimentary addon has limited stock ([Addons](./addons.md)). |
-| **Unused Stock: 3** | *Product is using stock, but has no active grant.* <small>Click it to see the orders.</small> |
+| **Age Restricted: >= <Sample>18</Sample>** | A purchase age limit is set. |
+| **Addon Stock: <Sample>15/20</Sample> Available**, **Addon Out of Stock** | A complimentary addon has limited stock ([Addons](./addons.md)). |
+| **Unused Stock: <Sample>3</Sample>** | *Product is using stock, but has no active grant.* <small>Click it to see the orders.</small> |
 
 </TableFigure>
-
-:::tip[The values are examples]
-The values on this page, such as 40/50 in **In Stock: 40/50 Available**, the name and ID in **Product: T-shirt (ID: 12)** and the price $45.00, are examples. The app shows each product's own stock, limits, name, ID and price.
-:::
 
 ## Create a product
 
@@ -144,7 +140,7 @@ The values on this page, such as 40/50 in **In Stock: 40/50 Available**, the nam
 
 1. On the category's page, click the product's name.
 
-   <Result>The product's page opens, titled with its name and ID, such as **Product: T-shirt (ID: 12)**, with the tabs **Product**, **Orders** and **Audit Logs**. **Product** has the cards in Table 4.1.</Result>
+   <Result>The product's page opens, titled with its name and ID, such as **Product: <Sample>T-shirt (ID: 12)</Sample>**, with the tabs **Product**, **Orders** and **Audit Logs**. **Product** has the cards in Table 4.1.</Result>
 
 <TableFigure title="The cards on a product's page">
 
@@ -181,7 +177,7 @@ The **Orders** tab needs `order:view`, and **Audit Logs** needs `audit:read`.
 
 2. Enter the **New Price** and click **Save New Price**.
 
-   <Result>**Current Price** shows the new amount, such as $45.00.</Result>
+   <Result>**Current Price** shows the new amount, such as <Sample>$45.00</Sample>.</Result>
 
 :::note[Who pays the new price]
 Unpaid carts always use the current price, so items already in carts change to it. Paid orders and discounts keep their own price. The new price must differ from the current one.

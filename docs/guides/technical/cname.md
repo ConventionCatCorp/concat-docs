@@ -55,14 +55,14 @@ ConCat sends email from `concat.app` by default. To use your domain, request it 
    <Result>A **Your domain was successfully validated.** message appears, and the section says *This organization's email domain is:* (or *convention's*) and your domain. If you get a warning instead, see section 4.</Result>
 
 :::tip[Name field and your domain]
-The **Name** copy button copies only the part before your domain, such as `abc123._domainkey`; most DNS panels add the domain for you. If yours wants the full name, add your domain after it, as shown beside the field, or use **Download CSV**, which has the full names.
+The **Name** copy button copies only the part before your domain, such as `abc123._domainkey`<Sample />; most DNS panels add the domain for you. If yours wants the full name, add your domain after it, as shown beside the field, or use **Download CSV**, which has the full names.
 :::
 
 ## A convention on your own domain
 
-Creating a convention on the **Conventions** tab adds an address under the previous convention's domain, such as `2025.example.com`. Either the new convention gets it, or last year's convention moves to it and the new one takes over the main address. ConCat sets up `concat.app` addresses; on your own domain, the new address works only once you add a `CNAME` record for it.
+Creating a convention on the **Conventions** tab adds an address under the previous convention's domain, such as `2025.example.com`<Sample />. Either the new convention gets it, or last year's convention moves to it and the new one takes over the main address. ConCat sets up `concat.app` addresses; on your own domain, the new address works only once you add a `CNAME` record for it.
 
-Add the record at the full new address, such as `2025.example.com`, even if your main domain already has one.
+Add the record at the full new address, such as `2025.example.com`<Sample />, even if your main domain already has one.
 
 1. Go to **Housekeeping › System › Settings** and click the **Conventions** tab.
 

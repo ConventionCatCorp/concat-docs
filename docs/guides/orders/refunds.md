@@ -33,10 +33,10 @@ A refund does two separate things, both set when you approve it:
 
 </TableFigure>
 
-ConCat emails the attendee at each step: *ConCat - Order #13 - New Refund Request* (copied to your registration address), *ConCat - Refund Request Approved for Order #13* and *ConCat - Refund Request Denied for Order #13*.
+ConCat emails the attendee at each step: *<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> - New Refund Request* (copied to your registration address), *<Sample noMarker>ConCat</Sample> - Refund Request Approved for Order #<Sample noMarker>13</Sample>* and *<Sample noMarker>ConCat</Sample> - Refund Request Denied for Order #<Sample noMarker>13</Sample>*.
 
-:::tip[The numbers are examples]
-Numbers on this page, such as the order number 13 and the refund number 2, are examples, as are the amount $10.00 in the approval banner and the partial-refund warning, and the message after *Refunds are disabled:*. The app shows each order's and refund request's own numbers and amounts, and your own message. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Email subjects]
+Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 :::note[Chargebacks]
@@ -53,7 +53,7 @@ Use an attendee account that has a paid order.
 
 2. On a paid order, click the **⋯** button at the top right of the card, then **Request refund**.
 
-   <Result>A **Request Refund: Order #13** dialog lists the items, with **Reason for Refund** and **Additional info** below.</Result>
+   <Result>A **Request Refund: Order #<Sample>13</Sample>** dialog lists the items, with **Reason for Refund** and **Additional info** below.</Result>
 
 3. Choose a **Quantity** for each item to refund, pick a **Reason for Refund**, add any **Additional info**, and click **Request refund**.
 
@@ -61,11 +61,11 @@ Use an attendee account that has a paid order.
 
 4. After staff have decided, open the **⋯** menu again and click **View Refund History**.
 
-   <Result>A **Refund History: Order #13** dialog lists each refund, such as **Refund #2**, with its status and the amount **Refunded**.</Result>
+   <Result>A **Refund History: Order #<Sample>13</Sample>** dialog lists each refund, such as **Refund #<Sample noMarker>2</Sample>**, with its status and the amount **Refunded**.</Result>
 
 The reasons offered are *I purchased this by accident.*, *I can no longer / don't want to attend.*, *I have changed my mind*, *Item is damaged or not as described.* and **Other**.
 
-An approved request shows a green banner on the card: *Your refund request has been approved. You should receive a refund of $10.00. Processing may take a few days.* A denied one shows a red banner.
+An approved request shows a green banner on the card: *Your refund request has been approved. You should receive a refund of <Sample>$10.00</Sample>. Processing may take a few days.* A denied one shows a red banner.
 
 What attendees can't request:
 
@@ -82,7 +82,7 @@ What attendees can't request:
 
 2. Click a request.
 
-   <Result>A **Refund #2** dialog shows **Products**, **Request Info** and **Related Payments**, with **Profile** and, while pending, **Approve** and **Reject**.</Result>
+   <Result>A **Refund #<Sample>2</Sample>** dialog shows **Products**, **Request Info** and **Related Payments**, with **Profile** and, while pending, **Approve** and **Reject**.</Result>
 
 The list includes decided refunds too; narrow it with **Search...** or the **Reason for Request** and **Status** filters. **Profile** opens the attendee's profile in a new tab.
 
@@ -94,11 +94,11 @@ The list includes decided refunds too; narrow it with **Search...** or the **Rea
 
 1. In the request's dialog, click **Approve**.
 
-   <Result>The approval dialog opens with the fields in Table 4.1 and the requested quantities filled in. Its title is **Refund #13 — Approve**, with the order's number, not the request's.</Result>
+   <Result>The approval dialog opens with the fields in Table 4.1 and the requested quantities filled in. Its title is **Refund #<Sample>13</Sample> — Approve**, with the order's number, not the request's.</Result>
 
 2. Check the fields in Table 4.1, write a **Reason for Approval** of at least 10 characters and, if you like, a **Message to Customer**, then click **Approve Refund**.
 
-   <Result>A **Refund request has been approved.** message appears, and the queue shows the request as **Approved**. The attendee gets the *ConCat - Refund Request Approved for Order #13* email with the amount and your message.</Result>
+   <Result>A **Refund request has been approved.** message appears, and the queue shows the request as **Approved**. The attendee gets the *<Sample>ConCat</Sample> - Refund Request Approved for Order #<Sample noMarker>13</Sample>* email with the amount and your message.</Result>
 
 <TableFigure title="The approval dialog">
 
@@ -118,17 +118,17 @@ The list includes decided refunds too; narrow it with **Search...** or the **Rea
 - A refund can't be undone. For cash, card-terminal, write-off and PagSeguro payments, ConCat only records it: you hand the money back yourself.
 :::
 
-If a payment can't be refunded through its gateway, a warning stays until you close it: *Refund request was only partially refunded $10.00 due to gateway errors. Please review the Related Payments tab for information.* If every payment fails, *The refund operation failed as all gateways returned an error.* appears and nothing is refunded.
+If a payment can't be refunded through its gateway, a warning stays until you close it: *Refund request was only partially refunded <Sample>$10.00</Sample> due to gateway errors. Please review the Related Payments tab for information.* If every payment fails, *The refund operation failed as all gateways returned an error.* appears and nothing is refunded.
 
 ## Reject a request
 
 1. In the request's dialog, click **Reject**.
 
-   <Result>A dialog titled **Refund #2 — Reject**, with the request's number, says *Your reason for rejecting this refund request will be stored in the audit log and will not be shown to the user.*</Result>
+   <Result>A dialog titled **Refund #<Sample>2</Sample> — Reject**, with the request's number, says *Your reason for rejecting this refund request will be stored in the audit log and will not be shown to the user.*</Result>
 
 2. Write a **Reason for Rejection** of at least 10 characters and, if you like, a **Message to Customer**, then click **Reject Refund**.
 
-   <Result>A **Refund request has been rejected.** message appears, and the request's **Status** is **Denied**. The attendee gets the *ConCat - Refund Request Denied for Order #13* email with your message, and a red banner on their order.</Result>
+   <Result>A **Refund request has been rejected.** message appears, and the request's **Status** is **Denied**. The attendee gets the *<Sample>ConCat</Sample> - Refund Request Denied for Order #<Sample noMarker>13</Sample>* email with your message, and a red banner on their order.</Result>
 
 ## Refund an order without a request
 
@@ -144,7 +144,7 @@ Staff can refund a paid order at any time, or decide a pending request from the 
 
 3. Fill in the dialog as in section 4, step 2, then click **Approve Refund**.
 
-   <Result>A **Refund request has been approved.** message appears. If you returned money, the status becomes **Paid, but Partially Refunded** or **Paid, but Refunded**. The refund appears in the item cards as **Refund #3**, and in **Refund Requests** as **Approved** with the reason **Other**.</Result>
+   <Result>A **Refund request has been approved.** message appears. If you returned money, the status becomes **Paid, but Partially Refunded** or **Paid, but Refunded**. The refund appears in the item cards as **Refund #<Sample>3</Sample>**, and in **Refund Requests** as **Approved** with the reason **Other**.</Result>
 
 Once everything paid has been refunded, the refund buttons go away.
 
@@ -166,7 +166,7 @@ Stop attendee requests, for example after your refund deadline. Staff can still 
 
 3. As an attendee, open **Transaction history** and click **⋯** on a paid order.
 
-   <Result>**Request refund** is struck through. Clicking it shows your message after *Refunds are disabled:*, such as *Refunds are disabled: Refunds closed on September 15.* No dialog opens.</Result>
+   <Result>**Request refund** is struck through. Clicking it shows your message after *Refunds are disabled:*, such as *Refunds are disabled: <Sample>Refunds closed on September 15.</Sample>* No dialog opens.</Result>
 
 To allow requests again, untick **Disable refunds** and click **Save**.
 

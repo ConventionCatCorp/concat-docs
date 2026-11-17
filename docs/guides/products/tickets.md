@@ -15,7 +15,7 @@ How ticketed products work, setting one up, what attendees see, printable ticket
 ## How ticketed products work
 
 <Sidenote title="Ticket groups">
-A ticket group is one entry slot, such as *Saturday 2 pm*. It has a number of places, an optional **Valid From** and **Valid Until**, and optional information for ticket holders.
+A ticket group is one entry slot, such as *<Sample>Saturday 2 pm</Sample>*. It has a number of places, an optional **Valid From** and **Valid Until**, and optional information for ticket holders.
 </Sidenote>
 
 A ticketed product is a store product with one or more ticket groups.
@@ -37,7 +37,7 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
 2. Buy the product and complete checkout.
 
-   <Result>An email titled *ConCat - Your Event Ticket for Photo Shoot* arrives. It shows the ticket's barcode and **Ticket Group**.</Result>
+   <Result>An email titled *<Sample>ConCat</Sample> - Your Event Ticket for <Sample noMarker>Photo Shoot</Sample>* arrives. It shows the ticket's barcode and **Ticket Group**.</Result>
 
 3. Open **Attendance** in the homepage sidebar.
 
@@ -55,20 +55,20 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
 2. Click **Retrieve Ticket(s)**.
 
-   <Result>A page titled **Order #13 — Tickets** shows each ticket's barcode, group, validity and **Issued To**, with a **Print** button.</Result>
+   <Result>A page titled **Order #<Sample>13</Sample> — Tickets** shows each ticket's barcode, group, validity and **Issued To**, with a **Print** button.</Result>
 
 3. Click **Print**.
 
    <Result>The browser's print dialog opens.</Result>
 
-:::tip[The values are examples]
-The order number in **Order #13 — Tickets**, the product *Photo Shoot*, the scan time and the user ID 7 are examples. The app shows each order's, product's and attendee's own values. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Email subjects]
+Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
-A scanned ticket's barcode is marked **REDEEMED**, with the scan time, such as **Scanned At**: 10/3/2026, 2:15:00 PM.
+A scanned ticket's barcode is marked **REDEEMED**, with the scan time, such as **Scanned At**: <Sample>10/3/2026, 2:15:00 PM</Sample>.
 
 :::note[Staff viewing a ticket page]
-Staff who open another attendee's ticket page see *You are in staff mode. You are viewing the tickets of UID7.*
+Staff who open another attendee's ticket page see *You are in staff mode. You are viewing the tickets of UID<Sample>7</Sample>.*
 :::
 
 ## Scanning tickets at the door

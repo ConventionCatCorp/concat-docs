@@ -22,7 +22,7 @@ Needs `registration:cashier`, which the default *admin* and *registration* roles
 
    <Result>The station opens without the Housekeeping sidebar, with a **Search users...** box and **Enable Auto Navigate** ticked. The address ends in `/housekeeping/cashier`.</Result>
 
-2. In the search box, type the attendee's badge ID (for example, B101), username, name, phone number or email address.
+2. In the search box, type the attendee's badge ID (for example, <Sample>B101</Sample>), username, name, phone number or email address.
 
    <Result>Matching attendees are listed, or **No results found.**</Result>
 
@@ -82,15 +82,11 @@ Station settings and devices are saved in the browser, not in ConCat. Set up eac
 
 3. *(Optional)* To limit the badge products this station checks in, turn on **Restrict Product Check-in** and select them in the list that appears (Ctrl-click, or Cmd-click on a Mac, for several).
 
-   <Result>The selected products are highlighted. Any other badge product gets *This registration station is not configured to print General Admission badges.*</Result>
+   <Result>The selected products are highlighted. Any other badge product gets *This registration station is not configured to print <Sample>General Admission</Sample> badges.*</Result>
 
 4. *(Optional)* Under **Badge type printer preferences**, select a badge type and click the arrow toward the other list, **Primary Printer** or **Secondary Printer**.
 
    <Result>The badge type moves to that list, and **Saved!** appears.</Result>
-
-:::tip[The names and numbers are examples]
-*General Admission* and the 1 in **Print Next Badge (1 badge remaining)** are examples. The app shows the badge product's own name and how many badges are left to print.
-:::
 
 <TableFigure title="Station settings">
 
@@ -200,7 +196,7 @@ Printing needs a default badge design. Without one, the page says *Cannot check-
 
    <Result>A Zebra printer prints the badge. Without one, the browser's print dialog opens; print to your badge printer.</Result>
 
-3. With a Zebra printer, if the button now reads **Print Next Badge (1 badge remaining)** or more, click it for each remaining badge.
+3. With a Zebra printer, if the button now reads **Print Next Badge (<Sample>1</Sample> badge remaining)** or more, click it for each remaining badge.
 
    <Result>After the last badge, the status card shows **Check-In Complete** if nothing else is flagged, and the button reads **Re-print Badge**.</Result>
 

@@ -47,11 +47,11 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
 
 :::caution[Watch out]
 - **Email address:** the change waits until the person clicks the link sent to the new address; until then the card shows the old one with a warning sign. One change per 24 hours.
-- **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is 16 years old.*). You can't change your own here.
+- **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is <Sample>16</Sample> years old.*). You can't change your own here.
 :::
 
-:::tip[The values are examples]
-The 16 in *User is underage. The minimum age is 16 years old.*, the code in **Reset code: K7QX2M9P**, and the 7 in **Export for User ID 7** and `user_7_export.json` are examples. The message shows your **Child Age Threshold**, each reset gives a new code, and the export uses the person's own user ID. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Email subjects]
+Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 ## Help someone sign in
@@ -92,7 +92,7 @@ They still get no ConCat email until they confirm their address. They can resend
 
 2. Click **Confirm**.
 
-   <Result>**Successfully sent password reset email!** appears, and the person gets a *ConCat - Password Reset* email with a link that works for 24 hours.</Result>
+   <Result>**Successfully sent password reset email!** appears, and the person gets a *<Sample>ConCat</Sample> - Password Reset* email with a link that works for 24 hours.</Result>
 
 Setting a new password from the link also confirms the email address.
 
@@ -110,7 +110,7 @@ The code lets someone at your registration desk set a new password without email
 
 2. Click **Confirm**.
 
-   <Result>The button now reads **Reset code: K7QX2M9P**.</Result>
+   <Result>The button now reads **Reset code: <Sample>K7QX2M9P</Sample>**.</Result>
 
 3. Give the code to the person. On the login page they click **Already Got a Reset Code?**, enter the code and a new password, and click **Reset Password**.
 
@@ -196,11 +196,11 @@ Use this when a person asks for a copy of their data.
 
 1. On the person's profile, click the download button (<MaterialIcon name="download" />) in the **User Profile** card.
 
-   <Result>An **Export for User ID 7** dialog warns **This export will contain PII, and be logged. Handle with care.**</Result>
+   <Result>An **Export for User ID <Sample>7</Sample>** dialog warns **This export will contain PII, and be logged. Handle with care.**</Result>
 
 2. To leave out audit entries for a much smaller file, turn on **Do not include audit log entries.** Then click **Download**.
 
-   <Result>Stay on the page until **Export successful.** appears; your browser saves `user_7_export.json`.</Result>
+   <Result>Stay on the page until **Export successful.** appears; your browser saves `user_7_export.json`<Sample />.</Result>
 
 ## Delete an account
 

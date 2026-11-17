@@ -66,7 +66,7 @@ The Dealer Policy is what dealers agree to when they apply. It can be organizati
 
    <Result>A **Convention-specific policy saved** (or **Organization-wide policy saved**) message appears.</Result>
 
-4. Open `/policy/vendor` on your instance, such as `https://your-event.concat.app/policy/vendor`.
+4. Open `/policy/vendor` on your instance, such as `https://your-event.concat.app/policy/vendor`<Sample />.
 
    <Result>A **Dealer Policy** page shows your text.</Result>
 

@@ -136,15 +136,11 @@ Lists the current convention and every convention someone has the role for, with
 
 3. Choose up to 16 people. Tick **Assign 'finance' Globally?** for every convention, or leave it unticked for this one only. Click **Add**.
 
-   <Result>A message says *user(s) [7] assigned to 'finance' successfully* and they're listed in the table.</Result>
+   <Result>A message says *user(s) [<Sample>7</Sample>] assigned to 'finance' successfully* and they're listed in the table.</Result>
 
 4. *(Optional)* To take the role from one person, click **Remove Role** in their row.
 
-   <Result>A message says *Removed role 'finance' from user 'alex'* and the row is gone.</Result>
-
-:::tip[The names and IDs are examples]
-The role names, usernames and IDs in this page's labels and messages, such as *finance* in **Assign 'finance' Globally?**, are examples. The app shows the roles and people involved.
-:::
+   <Result>A message says *Removed role 'finance' from user '<Sample>alex</Sample>'* and the row is gone.</Result>
 
 To remove several people at once, choose them in the **Assign** dialog, tick **Remove Users?** and click **Remove**.
 

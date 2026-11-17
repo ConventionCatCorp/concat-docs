@@ -24,16 +24,16 @@ Attendees apply from your homepage, saying how they relate to each department. D
 
 | Relation | Who sets it | Shown on the application as |
 | --- | --- | --- |
-| Interest | The volunteer. At most 5. | **Interested in** <small>Badge tooltip in the list: *Interested in Art Show*</small> |
-| Experience | The volunteer. | **Past experience** <small>Tooltip: *Has past experience with Art Show*</small> |
+| Interest | The volunteer. At most 5. | **Interested in** <small>Badge tooltip in the list: *Interested in <Sample>Art Show</Sample>*</small> |
+| Experience | The volunteer. | **Past experience** <small>Tooltip: *Has past experience with <Sample>Art Show</Sample>*</small> |
 | Avoid | The volunteer. | **Will not volunteer for** <small>Not shown in the list</small> |
-| Request | A lead, with **Recruit Request** or **Staff Request**. | **Requested by** <small>Tooltip: *Requested by Art Show*</small> |
-| Assignment | Your volunteer staff (section 4). | **Assigned to** <small>Tooltip: *Assigned to Art Show*</small> |
+| Request | A lead, with **Recruit Request** or **Staff Request**. | **Requested by** <small>Tooltip: *Requested by <Sample>Art Show</Sample>*</small> |
+| Assignment | Your volunteer staff (section 4). | **Assigned to** <small>Tooltip: *Assigned to <Sample>Art Show</Sample>*</small> |
 
 </TableFigure>
 
-:::tip[The names and numbers are examples]
-*Art Show*, *Alex Smith*, *General Admission*, *Order #13* and $50.00 on this page are examples. Tooltips and the assignment email name the department, the staff dialogs name the volunteer, and the **Remove Staff** box names their badge tier, order number and price. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Email subjects]
+Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 <TableFigure title="Columns in the Applications list">
@@ -84,7 +84,7 @@ Attendees apply from your homepage, saying how they relate to each department. D
 </Figure>
 
 :::note[Filtering by department and status together]
-The **Status** and **Department(s)** filters combine. **Assigned** plus *Art Show* lists volunteers assigned to Art Show, not volunteers assigned anywhere who are interested in it.
+The **Status** and **Department(s)** filters combine. **Assigned** plus *<Sample>Art Show</Sample>* lists volunteers assigned to <Sample noMarker>Art Show</Sample>, not volunteers assigned anywhere who are interested in it.
 :::
 
 ## Review an application
@@ -114,7 +114,7 @@ The **Status** and **Department(s)** filters combine. **Assigned** plus *Art Sho
 ## Assign departments
 
 <Sidenote title="Emails on assignment">
-With **Enable Volunteer Emails** on, an assignment emails the volunteer (*ConCat - Volunteer Assignment: Art Show*), and the department's address and leads (*ConCat - New Volunteer Assigned*).
+With **Enable Volunteer Emails** on, an assignment emails the volunteer (*<Sample>ConCat</Sample> - Volunteer Assignment: <Sample noMarker>Art Show</Sample>*), and the department's address and leads (*<Sample noMarker>ConCat</Sample> - New Volunteer Assigned*).
 </Sidenote>
 
 Assigning approves the application for that department, and the volunteer sees *Your application has been approved!* A volunteer can have several departments.
@@ -145,7 +145,7 @@ Assigning approves the application for that department, and the volunteer sees *
 
 1. In the application dialog, click **Make Staff**.
 
-   <Result>A **Make Staff: Alex Smith** dialog asks *Are you sure you want to mark this user as staff?*</Result>
+   <Result>A **Make Staff: <Sample>Alex Smith</Sample>** dialog asks *Are you sure you want to mark this user as staff?*</Result>
 
 2. Click **Make Staff**.
 
@@ -153,14 +153,14 @@ Assigning approves the application for that department, and the volunteer sees *
 
 3. To undo it later, click **Remove Staff**.
 
-   <Result>A **Remove Staff: Alex Smith** dialog opens. If the person has a paid badge, it shows a ticked *Remove paid General Admission registration fromOrder #13$50.00* box and a voucher amount set to what they paid.</Result>
+   <Result>A **Remove Staff: <Sample>Alex Smith</Sample>** dialog opens. If the person has a paid badge, it shows a ticked *Remove paid <Sample noMarker>General Admission</Sample> registration fromOrder #<Sample noMarker>13</Sample><Sample noMarker>$50.00</Sample>* box and a voucher amount set to what they paid.</Result>
 
 4. Untick the registration box to let them keep their badge, correct the voucher amount if needed (`0` for no voucher), and click **Remove Staff**.
 
    <Result>The **Staff** badge is gone, and the button reads **Make Staff** again.</Result>
 
 :::caution[Watch out]
-With the registration box ticked, **Remove Staff** unlinks their paid badge and puts it back in their cart, unpaid. An amount above 0 issues a single-use voucher named *Remove staff Voucher*. With **Enable Volunteer Emails** on, they also get the email *ConCat - Staff status have been removed*.
+With the registration box ticked, **Remove Staff** unlinks their paid badge and puts it back in their cart, unpaid. An amount above 0 issues a single-use voucher named *Remove staff Voucher*. With **Enable Volunteer Emails** on, they also get the email *<Sample>ConCat</Sample> - Staff status have been removed*.
 :::
 
 To give staff a lower badge price, add a discount limited to the *staff* role. See [Discounts](../products/discounts.md).

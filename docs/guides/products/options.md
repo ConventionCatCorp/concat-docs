@@ -129,7 +129,7 @@ Changes apply everywhere the option is assigned.
 
 1. On **Housekeeping › Registration › Options** (or **Store Management › Options**), click the option in the table.
 
-   <Result>The option's page opens, headed with its name, such as **Editing Option: Pronouns**. The **Type** can't be changed.</Result>
+   <Result>The option's page opens, headed with its name, such as **Editing Option: <Sample>Pronouns</Sample>**. The **Type** can't be changed.</Result>
 
 2. Change the fields you need and click **Save Changes**.
 
@@ -141,8 +141,4 @@ Changes apply everywhere the option is assigned.
 
 :::danger[Deleting erases answers]
 The **Delete Option** dialog warns that *Data for this option from users will be erased.* To stop asking on one product but keep past answers, remove the option from that product's **Options** card instead.
-:::
-
-:::tip[The name is an example]
-*Pronouns* in **Editing Option: Pronouns** is an example. The heading shows the option's own **Name**.
 :::

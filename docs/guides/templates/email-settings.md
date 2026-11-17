@@ -18,7 +18,7 @@ The sending domain, senders for mass email, and contact addresses.
 **System › Settings** needs `system:settings:update`, and its **Email Settings** tab also needs `email:templates`. The default *admin* role has both.
 </Sidenote>
 
-ConCat sends all your email, so there's no mail server to set up. Every address is a mailbox name, such as `registration`, followed by your sending domain, `concat.app` by default. To use your own domain, such as `example.com`, you prove you own it with DNS records.
+ConCat sends all your email, so there's no mail server to set up. Every address is a mailbox name, such as `registration`, followed by your sending domain, `concat.app` by default. To use your own domain, such as `example.com`<Sample />, you prove you own it with DNS records.
 
 A domain can be set for the organization, covering every convention, or for one convention, which then uses it instead.
 
@@ -32,7 +32,7 @@ A domain can be set for the organization, covering every convention, or for one 
 
 3. Enter your **Domain**, choose the **Scope**, and click **Submit**.
 
-   <Result>A notice says *There is a pending domain validation request for this organization.* (or *convention*) and lists CNAME records: each **Name** ends in `._domainkey.example.com`, and each **Value** in `.dkim.amazonses.com`.</Result>
+   <Result>A notice says *There is a pending domain validation request for this organization.* (or *convention*) and lists CNAME records: each **Name** ends in `._domainkey.example.com`<Sample />, and each **Value** in `.dkim.amazonses.com`.</Result>
 
 4. *(Optional)* Click **Download CSV**.
 
@@ -40,7 +40,7 @@ A domain can be set for the organization, covering every convention, or for one 
 
 5. Add each record at your domain's DNS provider, as [CNAME Records](../technical/cname.md#custom-email-domain) explains, then click **Verify**.
 
-   <Result>*Your domain was successfully validated.* appears, and the card says *This organization's email domain is:* `example.com` (or *convention's*). If DNS hasn't updated yet, *Your domain was not able to be validated yet.* appears instead; wait, then click **Verify** again.</Result>
+   <Result>*Your domain was successfully validated.* appears, and the card says *This organization's email domain is:* `example.com`<Sample /> (or *convention's*). If DNS hasn't updated yet, *Your domain was not able to be validated yet.* appears instead; wait, then click **Verify** again.</Result>
 
 6. *(Optional: a domain for the other scope)* Click **Set for Convention** (or **Set for Organization**).
 
@@ -60,10 +60,6 @@ A domain can be set for the organization, covering every convention, or for one 
 - If verification takes more than 24 hours, contact ConCat Support.
 :::
 
-:::tip[The domain and sender are examples]
-`example.com` and the `info` in *Added "info" to the senders list.* are examples. The app shows the domain you entered and the sender you added or deleted.
-:::
-
 ## Senders for mass email
 
 <Sidenote title="Mass email only">
@@ -72,13 +68,13 @@ These senders don't change automated emails, which come from the contact address
 
 Staff pick a mass email's **From Address** from this list of mailbox names, shared by every convention in your organization. It starts as `bazaar`, `registration`, `events`, `hr`, `dealers`, `artshow` and `noreply`.
 
-1. Under **Email Senders for Mass Email**, type a mailbox name (the part before the @), such as `info`, in **Enter a new sender...**, and click the green tick button next to it (Figure 2.1).
+1. Under **Email Senders for Mass Email**, type a mailbox name (the part before the @), such as `info`<Sample />, in **Enter a new sender...**, and click the green tick button next to it (Figure 2.1).
 
-   <Result>An *Added "info" to the senders list.* message appears, and the name is listed.</Result>
+   <Result>An *Added "<Sample>info</Sample>" to the senders list.* message appears, and the name is listed.</Result>
 
 2. *(Optional)* Click the red trash button next to a name.
 
-   <Result>A *Removed "info" from the senders list.* message appears, and the name is no longer listed.</Result>
+   <Result>A *Removed "<Sample>info</Sample>" from the senders list.* message appears, and the name is no longer listed.</Result>
 
 <Figure
   src="/img/guides/templates/email-senders.webp"

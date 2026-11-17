@@ -92,11 +92,7 @@ Deleting a convention-specific policy brings back the organization-wide version.
 
 1. Under the **Convention-specific Policy** box, click **Delete**.
 
-   <Result>A *Convention-specific policy Registration Terms deleted successfully!* message appears, and the **Organization-wide Policy** box is editable again.</Result>
-
-:::tip[The policy name is an example]
-*Registration Terms* is an example. The message names the policy you deleted.
-:::
+   <Result>A *Convention-specific policy <Sample>Registration Terms</Sample> deleted successfully!* message appears, and the **Organization-wide Policy** box is editable again.</Result>
 
 ## What attendees see
 

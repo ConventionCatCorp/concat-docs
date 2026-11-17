@@ -24,7 +24,7 @@ Discounts need `product:discount:manage`, which the default *admin* and *product
 - **Several discounts:** the buyer gets the lowest price.
 - **Unpaid and paid orders:** unpaid carts always use the discounts active now, gaining or losing them as discounts start, end or are deleted. Paid orders keep the price paid.
 
-Each discount in the **Discounts** card shows its price and dates, a status badge (Table 1.1) and, if it's limited to a role, a badge such as **Restricted to role "staff"**.
+Each discount in the **Discounts** card shows its price and dates, a status badge (Table 1.1) and, if it's limited to a role, a badge such as **Restricted to role "<Sample>staff</Sample>"**.
 
 <TableFigure title="Discount statuses">
 
@@ -37,8 +37,8 @@ Each discount in the **Discounts** card shows its price and dates, a status badg
 
 </TableFigure>
 
-:::tip[The values are examples]
-The price and dates in *Discounted to $35.00 from 8/1/2026, 12:00:00 AM PDT until 9/1/2026, 12:00:00 AM PDT*, and the role in **Restricted to role "staff"**, are examples. The app shows each discount's own price, its dates in your convention's time zone, and its role's name.
+:::tip[Time zone of the dates]
+The app shows each discount's dates in your convention's time zone.
 :::
 
 ## Create a discount
@@ -49,7 +49,7 @@ The price and dates in *Discounted to $35.00 from 8/1/2026, 12:00:00 AM PDT unti
 
 2. Enter the **Discounted Price**, **Available From** and **Available Until**. *(Optional)* Select roles in **Limit Discount to Role(s)** and add a **Name**. Click **Create Discount Price**.
 
-   <Result>The discount is listed with its price and dates, such as *Discounted to $35.00 from 8/1/2026, 12:00:00 AM PDT until 9/1/2026, 12:00:00 AM PDT*, and its status badge.</Result>
+   <Result>The discount is listed with its price and dates, such as *Discounted to <Sample>$35.00</Sample> from <Sample noMarker>8/1/2026, 12:00:00 AM PDT</Sample> until <Sample noMarker>9/1/2026, 12:00:00 AM PDT</Sample>*, and its status badge.</Result>
 
 :::caution[Watch out]
 **Available From** and **Available Until** both start at the same date: today, or the product's own **Available From** if that's later. Move **Available Until** to the end of your offer, or the discount is **Expired** as soon as you save it.

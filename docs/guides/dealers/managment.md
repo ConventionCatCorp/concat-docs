@@ -28,21 +28,17 @@ A dealer has one **dealer profile** (business details) and one **application** p
 
 | Status | Housekeeping shows | The dealer sees on their **Dealing** page |
 | --- | --- | --- |
-| **Pending** | *pending* | *Your application for Dealers' Den has not been approved yet.* |
-| **Approved**, not paid | *approved*, with a warning icon | *Your Dealers' Den application has been approved and is pending payment.*, with **Pay for Table** |
-| **Approved**, paid | *approved*, with a tick <small>The applications list shows *approved (Paid)*.</small> | **Your application has been approved!**, with their table number once assigned, such as **12** |
-| **Waitlisted** | *waitlisted* | *Your application for Dealers' Den is waitlisted.* |
-| **Rejected** | *rejected* | *Your application for Dealers' Den was rejected.* |
-| **Cancelled** | *cancelled* | *Your application for Dealers' Den was canceled.* |
+| **Pending** | *pending* | *Your application for <Sample>Dealers' Den</Sample> has not been approved yet.* |
+| **Approved**, not paid | *approved*, with a warning icon | *Your <Sample>Dealers' Den</Sample> application has been approved and is pending payment.*, with **Pay for Table** |
+| **Approved**, paid | *approved*, with a tick <small>The applications list shows *approved (Paid)*.</small> | **Your application has been approved!**, with their table number once assigned, such as **<Sample>12</Sample>** |
+| **Waitlisted** | *waitlisted* | *Your application for <Sample>Dealers' Den</Sample> is waitlisted.* |
+| **Rejected** | *rejected* | *Your application for <Sample>Dealers' Den</Sample> was rejected.* |
+| **Cancelled** | *cancelled* | *Your application for <Sample>Dealers' Den</Sample> was canceled.* |
 
 </TableFigure>
 
 :::caution[Watch out]
 ConCat doesn't email dealers when their status changes. Tell them yourself, for example with a [Mass email](../attendees/mass-email.md).
-:::
-
-:::tip[The area and table number are examples]
-*Dealers' Den* and 12 are examples. Dealers see the area's name and the table number you assign.
 :::
 
 ConCat assigns two roles automatically: *vendor* to everyone with an application, and *vendorApproved* to everyone with an approved one.
@@ -91,7 +87,7 @@ In the **Applications** card, **Count** is every application in the area, **Conf
 
 4. Click the business name in the **Store** column.
 
-   <Result>The dealer's page opens, with **Dealer Information**, **Seating Requests** and an application card for each area, such as *Dealers' Den application*.</Result>
+   <Result>The dealer's page opens, with **Dealer Information**, **Seating Requests** and an application card for each area, such as *<Sample>Dealers' Den</Sample> application*.</Result>
 
 **Registration** shows whether the dealer's convention registration is paid; an approved dealer whose registration isn't paid gets a warning icon. A **Restriction** badge means the profile has a note in the restriction category.
 

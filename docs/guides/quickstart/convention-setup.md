@@ -178,7 +178,7 @@ Three things shape your email: the domain it's sent from, the mailbox names it's
 
 5. Back on **Email Settings**, under **Email Senders for Mass Email**, type a mailbox name in **Enter a new sender...** and click the green tick button.
 
-   <Result>An **Added "news" to the senders list.** message appears, and the name is listed.</Result>
+   <Result>An **Added "<Sample>news</Sample>" to the senders list.** message appears, and the name is listed.</Result>
 
 6. Under **Email Templates**, look through the emails ConCat sends.
 
@@ -186,10 +186,6 @@ Three things shape your email: the domain it's sent from, the mailbox names it's
 
 :::note[Senders and templates]
 Mass-email senders are offered only when staff send a mass email. The **Contact** addresses send registration, volunteer and dealer emails. Templates can be changed for one convention or the whole organization.
-:::
-
-:::tip[The sender name is an example]
-The *news* in **Added "news" to the senders list.** is an example. The message shows the mailbox name you typed.
 :::
 
 :::tip[In more detail]

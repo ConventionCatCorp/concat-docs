@@ -44,7 +44,7 @@ The form is the one you build in [Volunteer settings and form](./settings.md), s
 
    <Result>*Your volunteer application has been saved!* appears, and the top of the page says *Your application is awaiting assignment.*</Result>
 
-With **Enable Volunteer Emails** on, the applicant gets a *ConCat - Volunteer Confirmation* email. Staff see the application on **Housekeeping › Volunteers › Applications**.
+With **Enable Volunteer Emails** on, the applicant gets a *<Sample>ConCat</Sample> - Volunteer Confirmation* email. Staff see the application on **Housekeeping › Volunteers › Applications**.
 
 ## Application status
 
@@ -52,17 +52,17 @@ With **Enable Volunteer Emails** on, the applicant gets a *ConCat - Volunteer Co
 
    <Result>A green box says *Your application has been approved!* and lists the assigned departments.</Result>
 
-With **Enable Volunteer Emails** on, the volunteer also gets an email titled *ConCat - Volunteer Assignment: Art Show*.
+With **Enable Volunteer Emails** on, the volunteer also gets an email titled *<Sample>ConCat</Sample> - Volunteer Assignment: <Sample noMarker>Art Show</Sample>*.
 
-:::tip[The values are examples]
-*Art Show* and hr@example.com on this page are examples. The email names the volunteer's department, and the messages show your **HR Email** address, set on the **Contact** tab of **Housekeeping › System › Settings**. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Where the HR address comes from]
+The messages show your **HR Email** address, set on the **Contact** tab of **Housekeeping › System › Settings**. Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 ## Change or withdraw the application
 
 1. On **Volunteering**, change an answer and click **Submit**.
 
-   <Result>*Your volunteer application has been saved!* appears, and, with **Enable Volunteer Emails** on, another *ConCat - Volunteer Confirmation* email is sent.</Result>
+   <Result>*Your volunteer application has been saved!* appears, and, with **Enable Volunteer Emails** on, another *<Sample>ConCat</Sample> - Volunteer Confirmation* email is sent.</Result>
 
 2. Click **Delete Application**.
 
@@ -70,7 +70,7 @@ With **Enable Volunteer Emails** on, the volunteer also gets an email titled *Co
 
 3. Click **Delete**.
 
-   <Result>*Your volunteer application has been deleted.* appears, and the homepage opens. An assigned volunteer's application stays instead, with *You are currently assigned to a department. Please contact hr@example.com if you no longer wish to volunteer.*</Result>
+   <Result>*Your volunteer application has been deleted.* appears, and the homepage opens. An assigned volunteer's application stays instead, with *You are currently assigned to a department. Please contact <Sample>hr@example.com</Sample> if you no longer wish to volunteer.*</Result>
 
 Answers to questions set to **Disable after approval** can't be changed once the volunteer is assigned.
 
@@ -84,7 +84,7 @@ Instead of the form, the page can show a message from Table 5.1.
 | --- | --- | --- |
 | *Volunteer applications for the convention are currently closed.* | **Enable Volunteers** is off. The sidebar item is hidden too. | Turn it on (see [Volunteer settings and form](./settings.md), section 1). |
 | **Email verification required** <small>*Please verify your email address before applying.*</small> | The attendee hasn't confirmed their email address. | They click **Resend verification email** and follow the link in the email. |
-| *You are currently banned from volunteering at the convention.* <small>*Please contact hr@example.com if you think this is in error.*</small> | The attendee has a **Ban** note with **Ban Category** set to **Volunteer**. | To lift the ban, delete the note ([User Notes](../usernotes/usernotes.md)). |
+| *You are currently banned from volunteering at the convention.* <small>*Please contact <Sample>hr@example.com</Sample> if you think this is in error.*</small> | The attendee has a **Ban** note with **Ban Category** set to **Volunteer**. | To lift the ban, delete the note ([User Notes](../usernotes/usernotes.md)). |
 | *Volunteering while chaperoning a child is not allowed at this event.* <small>*Thanks for offering, but your kids are more important.*</small> | The attendee has their own registration and child registrations, and **Allow Parents to Volunteer** is off. | Turn on **Allow Parents to Volunteer** if parents may volunteer. |
 
 </TableFigure>

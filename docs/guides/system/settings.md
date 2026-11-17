@@ -152,14 +152,14 @@ Menu links add your own entries, such as a schedule or survey, to signed-in atte
 | **URL** | Where the link goes. <small>`{{user.id}}` and `{{user.username}}` are replaced with the attendee's ID and username.</small> |
 | **Icon** | A Material icon name, such as `event`. <small>**Icon References** opens the list.</small> |
 | **Order** | Sorts links of the same type, lowest first. |
-| **Type** | Where the link appears: **Application** (under *Applications*), your convention's name, such as **Starfall Con 2026** (under it, after *Attendance*), or **Event Store** (under *Event store*). |
+| **Type** | Where the link appears: **Application** (under *Applications*), your convention's name, such as **<Sample>Starfall Con 2026</Sample>** (under it, after *Attendance*), or **Event Store** (under *Event store*). |
 | **Open in a new tab** | Opens the link in a new browser tab. |
 | **Only show to users with a paid registration** | Hides the link until the attendee has paid for a registration. |
 
 </TableFigure>
 
-:::tip[The name is an example]
-**Starfall Con 2026** is an example. The **Type** list shows your convention's name, from **Convention Long Type** under **Event info**.
+:::tip[Where the convention's name comes from]
+The **Type** list shows your convention's name, from **Convention Long Type** under **Event info**.
 :::
 
 1. Click the **Links** tab.

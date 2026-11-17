@@ -80,7 +80,7 @@ The **Domain Action** decides which convention keeps your current address:
 - **Replace** (the first choice): the new, empty convention takes your current address, and the previous one moves to the new address. If the previous one was your main convention, the new one becomes main.
 - **New** (the second choice): the new convention gets the new address; the previous one keeps its own.
 
-**Domain** starts as the current convention's start year plus the first part of its address, such as `2026.myevent`; the rest of the address stays the same.
+**Domain** starts as the current convention's start year plus the first part of its address, such as `2026.myevent`<Sample />; the rest of the address stays the same.
 
 1. On the **Conventions** tab, click the green **+** button.
 

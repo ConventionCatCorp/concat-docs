@@ -15,6 +15,7 @@ import Figure from '@site/src/components/Figure';
 import TableFigure from '@site/src/components/TableFigure';
 import Sidenote from '@site/src/components/Sidenote';
 import Result from '@site/src/components/Result';
+import Sample from '@site/src/components/Sample';
 import Link from '@docusaurus/Link';
 import Admonition from '@theme/Admonition';
 
@@ -40,4 +41,5 @@ export default {
   TableFigure: TableFigure,
   Sidenote: Sidenote,
   Result: Result,
+  Sample: Sample,
 };

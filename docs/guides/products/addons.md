@@ -34,11 +34,7 @@ For complimentary addons:
 - **Hidden in the cart:** **Add-on is hidden and should not appear in users' carts** leaves the free item out of the attendee's cart. Staff still see it in Housekeeping and the Cashier UI.
 - **Stock:** it uses its own product's stock. When that runs out, the product it comes with shows as sold out. A product with a complimentary addon can only be bought one at a time.
 
-Each addon in the card also has a stock badge: **In Stock / Unlimited**, the number left, such as **In Stock: 15/20 Available**, or **Out of Stock**.
-
-:::tip[The values are examples]
-The stock in **In Stock: 15/20 Available** and the tier in **Free addon from General Admission** are examples. The app shows each addon's own stock and the product it came with.
-:::
+Each addon in the card also has a stock badge: **In Stock / Unlimited**, the number left, such as **In Stock: <Sample>15/20</Sample> Available**, or **Out of Stock**.
 
 ## Which products can be addons
 
@@ -98,4 +94,4 @@ The row's other button (<MaterialIcon name="visibility" />) opens the addon prod
 
 3. Click **View cart**.
 
-   <Result>Each complimentary addon that isn't hidden is in the cart at no charge, marked with the product it came with, such as **Free addon from General Admission**.</Result>
+   <Result>Each complimentary addon that isn't hidden is in the cart at no charge, marked with the product it came with, such as **Free addon from <Sample>General Admission</Sample>**.</Result>

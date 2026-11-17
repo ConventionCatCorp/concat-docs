@@ -52,10 +52,10 @@ These settings need `system:settings:update`, which the default *admin* role has
 
 A product with an age limit is still listed, with an **Age Restricted Product** badge.
 
-With nothing to list, the store says *There are no items available.* With **All Products** hidden, it first shows *Welcome to the Star26 Store!* and asks attendees to browse the categories.
+With nothing to list, the store says *There are no items available.* With **All Products** hidden, it first shows *Welcome to the <Sample>Star26</Sample> Store!* and asks attendees to browse the categories.
 
-:::tip[The values are examples]
-*Star26* in *Welcome to the Star26 Store!*, and the age, date, limit and product names in Table 4.1, are examples. The app shows your convention's short name and start date, and each product's own settings.
+:::tip[Where the values come from]
+The welcome message shows your convention's short name, and the age message in Table 4.1 your convention's start date.
 :::
 
 ## A product's page
@@ -74,13 +74,13 @@ A product in a Gatekeeping silo first asks attendees to enter a draw with **Ente
 
 | Message | Shown when |
 | --- | --- |
-| **Age Restricted Product** badge. Its help says, for example, *You must be at least 18 on 10/1/2026, 12:00:00 AM PDT to purchase this product.* | **Minimum Purchase Age** or **Maximum Purchase Age** is set. <small>Someone outside the range can't add it to their cart.</small> |
-| *To purchase this product, you must have already purchased one of the following:Sponsor.* | **Restrict product to grants** is set and the attendee has none of them. **Add to cart** is disabled. |
-| *You are eligible to purchase this product because you have purchased the following product: Sponsor.Sponsor.* | **Restrict product to grants** is set and the attendee has one of them. |
-| *There is a limit of 4 per customer for this product.* | **Maximum purchases per user** is set. <small>**Quantity** can't go above what's left for them.</small> |
+| **Age Restricted Product** badge. Its help says, for example, *You must be at least <Sample>18</Sample> on <Sample noMarker>10/1/2026, 12:00:00 AM PDT</Sample> to purchase this product.* | **Minimum Purchase Age** or **Maximum Purchase Age** is set. <small>Someone outside the range can't add it to their cart.</small> |
+| *To purchase this product, you must have already purchased one of the following:<Sample>Sponsor</Sample>.* | **Restrict product to grants** is set and the attendee has none of them. **Add to cart** is disabled. |
+| *You are eligible to purchase this product because you have purchased the following product: <Sample>Sponsor</Sample>.<Sample noMarker>Sponsor</Sample>.* | **Restrict product to grants** is set and the attendee has one of them. |
+| *There is a limit of <Sample>4</Sample> per customer for this product.* | **Maximum purchases per user** is set. <small>**Quantity** can't go above what's left for them.</small> |
 | *You have already reached the purchase limit for this product.* | The attendee has bought the maximum. **Add to cart** is disabled. |
-| *This product cannot be combined with: Day Pass* | The product excludes other products. |
-| *You cannot purchase this product because you have already purchased, or have in your cart, the following product: Day Pass.* | The attendee has an excluded product. **Add to cart** is disabled. |
+| *This product cannot be combined with: <Sample>Day Pass</Sample>* | The product excludes other products. |
+| *You cannot purchase this product because you have already purchased, or have in your cart, the following product: <Sample>Day Pass</Sample>.* | The attendee has an excluded product. **Add to cart** is disabled. |
 | *This is a Ticketed Product.* | The product is ticketed; see [Ticketed products](./tickets.md). |
 | *You've already purchased one of this product.* | The attendee already has this ticket. |
 

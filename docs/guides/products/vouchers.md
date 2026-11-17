@@ -96,7 +96,7 @@ Issuing puts the voucher on each person's current unpaid order for this conventi
 
 2. Choose up to 250 people in **User(s)**. Tick **Attempt to fulfill associated orders automatically.** to complete the orders the voucher covers. Click **Issue Voucher**.
 
-   <Result>*Voucher #3 has been issued to 2 user(s).* appears.</Result>
+   <Result>*Voucher #<Sample>3</Sample> has been issued to <Sample noMarker>2</Sample> user(s).* appears.</Result>
 
 :::note[Completing orders automatically]
 With the checkbox ticked, ConCat tries to complete each person's latest order. It doesn't if something is left to pay or the cart is empty.
@@ -104,10 +104,6 @@ With the checkbox ticked, ConCat tries to complete each person's latest order. I
 
 :::caution[Watch out]
 Issuing skips the checkout checks: the voucher is added even if it's outside its dates, used up, or restricted to products that aren't in the order.
-:::
-
-:::tip[The numbers are examples]
-Voucher and order numbers on this page, such as 3 in *Voucher #3 has been issued to 2 user(s).*, are examples. The app shows the voucher's or order's own number and how many people you chose.
 :::
 
 ## Edit or delete a voucher
@@ -142,15 +138,15 @@ On an unpaid order, you can create a voucher only that order can use, for exampl
 
 2. In the **Vouchers** card, click **+**.
 
-   <Result>A **Create voucher #13** dialog opens.</Result>
+   <Result>A **Create voucher #<Sample>13</Sample>** dialog opens.</Result>
 
-3. Enter the **Amount** and, if you like, a **Display Name**, such as *Comp from the registration desk*, then click **Create**.
+3. Enter the **Amount** and, if you like, a **Display Name**, such as *<Sample>Comp from the registration desk</Sample>*, then click **Create**.
 
    <Result>The **Vouchers** card lists the voucher, with a **-** button.</Result>
 
 4. To remove it, click **-** on its row.
 
-   <Result>A **Delete voucher for #13** dialog asks you to confirm.</Result>
+   <Result>A **Delete voucher for #<Sample>13</Sample>** dialog asks you to confirm.</Result>
 
 5. Click **Delete**.
 

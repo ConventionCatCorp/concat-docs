@@ -24,7 +24,7 @@ Everything here needs `registration:stats`. Without it, both dashboards show **N
 
 1. Go to **Housekeeping › Attendees › Dashboard**, the page Housekeeping opens on.
 
-   <Result>The **Dashboard** page shows **Total Registrations**, **Total Paid Registrations**, the cards in Table 2.1 that apply, and a card per tier, such as **General Admission (Paid)**, counting its paid registrations.</Result>
+   <Result>The **Dashboard** page shows **Total Registrations**, **Total Paid Registrations**, the cards in Table 2.1 that apply, and a card per tier, such as **<Sample>General Admission</Sample> (Paid)**, counting its paid registrations.</Result>
 
 2. *(If the card is shown)* On **Accounts Pending Review**, click **View**.
 
@@ -41,8 +41,8 @@ Everything here needs `registration:stats`. Without it, both dashboards show **N
 
 </TableFigure>
 
-:::tip[The names are examples]
-*General Admission* in **General Admission (Paid)**, and *verified* and *requires_input* in the identity cards, are examples. The app shows each tier's name, and each identity verification status as ConCat stores it: *canceled*, *processing*, *processing_test*, *requires_input* or *verified*.
+:::tip[Identity statuses]
+The identity cards show each identity verification status as ConCat stores it: *canceled*, *processing*, *processing_test*, *requires_input* or *verified*.
 :::
 
 ## The registration dashboard

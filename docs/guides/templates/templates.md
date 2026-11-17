@@ -161,7 +161,7 @@ The editor checks your template as you type. **Submit** can't be clicked while t
 
 2. Delete `{{notAVariable}}`, then type `{{` with no closing braces.
 
-   <Result>A red **Parse Error** badge appears. The **Preview** shows *Template was unable to be parsed.* and *A parsing error occurred. View the error below and remove or fix the offending expression.*, then the error, such as *Parse error on line 14:* with a pointer to the problem.</Result>
+   <Result>A red **Parse Error** badge appears. The **Preview** shows *Template was unable to be parsed.* and *A parsing error occurred. View the error below and remove or fix the offending expression.*, then the error, such as *Parse error on line <Sample>14</Sample>:* with a pointer to the problem.</Result>
 
 3. Delete the `{{`.
 

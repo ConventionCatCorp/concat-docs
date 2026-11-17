@@ -117,19 +117,15 @@ A day before **Release Start At**, ConCat draws the winners (Random Draw) or sta
 
 2. Click **Create Release Group**.
 
-   <Result>The **Create Release Group** form opens; **Hotel Integration** shows your connection's name, such as *Riverside Hotel Passkey*.</Result>
+   <Result>The **Create Release Group** form opens; **Hotel Integration** shows your connection's name, such as *<Sample>Riverside Hotel Passkey</Sample>*.</Result>
 
 3. Fill in the fields in Table 4.1, then click **Submit**.
 
-   <Result>A **Successfully created release group** message appears. The new card shows **Create links task scheduled for: 7/14/2026, 10:00:00 AM (pending)** and **Send emails task scheduled for: 7/15/2026, 10:00:00 AM (pending)**.</Result>
+   <Result>A **Successfully created release group** message appears. The new card shows **Create links task scheduled for: <Sample>7/14/2026, 10:00:00 AM</Sample> (pending)** and **Send emails task scheduled for: <Sample noMarker>7/15/2026, 10:00:00 AM</Sample> (pending)**.</Result>
 
 4. When the block is ready for attendees, edit it (section 5) and set **Status** to **Ready**.
 
    <Result>A **Successfully updated release group** message appears. Attendees who can see the block now find it under **Active blocks** on their hotel page.</Result>
-
-:::tip[The names, dates and numbers are examples]
-*Riverside Hotel Passkey*, the task dates, the 3 in **3 Result(s)** and the name in **Summary for Alex Smith** are examples. The app shows the name you gave the connection, task dates a day before and at your **Release Start At**, your number of reservations and the person's name.
-:::
 
 Without a connection (section 2), the form shows a warning and **Submit** is grayed out.
 
@@ -193,11 +189,11 @@ Moving **Release Start At** also moves the two scheduled tasks, if they haven't 
 
 1. Click the **Reservations** tab.
 
-   <Result>A card headed **3 Result(s)** lists every reservation with its number and status.</Result>
+   <Result>A card headed **<Sample>3</Sample> Result(s)** lists every reservation with its number and status.</Result>
 
 2. Click a reservation.
 
-   <Result>**Summary for Alex Smith** opens, with a card for each block entry, or a **Reservation** card with a **No release group entry** badge.</Result>
+   <Result>**Summary for <Sample>Alex Smith</Sample>** opens, with a card for each block entry, or a **Reservation** card with a **No release group entry** badge.</Result>
 
 A reservation made outside ConCat by someone with no account isn't a link. You can also open a summary from the person's profile: the edit button (<MaterialIcon name="edit" />) on the **Hotel** row of the **Information** card, shown only when they have a hotel entry or reservation.
 

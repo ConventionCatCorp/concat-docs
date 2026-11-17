@@ -81,7 +81,7 @@ Exports leave out personal information (PII) until your PII access is approved, 
 
 1. On the **Export Data** page, click **Request PII access**.
 
-   <Result>The button changes to **Pending PII access approval**. A note below it says the request will be approved automatically after a 24-hour safety delay, and ends with *Auto-approval date/time:* and that date and time. Everyone with the **admin** role globally gets a *ConCat - Data Export Request* email.</Result>
+   <Result>The button changes to **Pending PII access approval**. A note below it says the request will be approved automatically after a 24-hour safety delay, and ends with *Auto-approval date/time:* and that date and time. Everyone with the **admin** role globally gets a *<Sample>ConCat</Sample> - Data Export Request* email.</Result>
 
 2. Ask another admin to approve the request (section 4), or wait 24 hours, then reload the **Export Data** page.
 
@@ -111,12 +111,12 @@ While a request waits, a **Pending Requests** card on the **Export Data** page l
 
    <Result>A **Request deleted!** message appears and the request leaves the list.</Result>
 
-5. *(Any admin, from the email)* In the *ConCat - Data Export Request* email, click the link below *Click below to BLOCK the request*, and sign in if asked.
+5. *(Any admin, from the email)* In the *<Sample>ConCat</Sample> - Data Export Request* email, click the link below *Click below to BLOCK the request*, and sign in if asked.
 
-   <Result>A page says *The data export request '4' has been canceled.*</Result>
+   <Result>A page says *The data export request '<Sample>4</Sample>' has been canceled.*</Result>
 
-:::tip[The values are examples]
-The 4 is an example. The page shows the request's own ID. Email subjects start with your **Notification Prefix**, here its default, *ConCat*.
+:::tip[Email subjects]
+Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
 :::
 
 ## Dynamic Export

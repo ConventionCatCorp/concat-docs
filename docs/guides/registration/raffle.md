@@ -52,7 +52,7 @@ Silos belong to your organization, so the list also shows those of your other co
 
 2. Enter a **Name** and, in **Associated Products**, select the products to gate. *(Optional)* Choose **Role override** roles or tick **Overflow stock silo**. Click **Create Silo**.
 
-   <Result>A **Silo successfully created!!** message appears, and the page title shows the silo's name, such as **Editing Silo: Sponsor Lottery**, with the tabs **Entrants**, **Wording** and **Run**.</Result>
+   <Result>A **Silo successfully created!!** message appears, and the page title shows the silo's name, such as **Editing Silo: <Sample>Sponsor Lottery</Sample>**, with the tabs **Entrants**, **Wording** and **Run**.</Result>
 
 If a product is already in another silo, *Product is already part of another silo.* appears and the silo isn't saved: remove the product from the other silo first.
 
@@ -62,7 +62,7 @@ By default, an organization can have up to 10 silos. Past that, **Create Silo** 
 
 1. On **Gatekeeping**, click **Manage Silo** on a silo.
 
-   <Result>The **Editing Silo: Sponsor Lottery** page opens, with **Update Silo** and **Delete Silo** under **Silo Information**.</Result>
+   <Result>The **Editing Silo: <Sample>Sponsor Lottery</Sample>** page opens, with **Update Silo** and **Delete Silo** under **Silo Information**.</Result>
 
 2. Change the name, products, roles or checkboxes, then click **Update Silo**.
 
@@ -88,7 +88,7 @@ By default, an organization can have up to 10 silos. Past that, **Create Silo** 
 
 3. To change one ticket, open its menu and choose an action from Table 5.1.
 
-   <Result>A message confirms the change, such as *Marked Ticket #4 as a winner.*, and the ticket's badge changes.</Result>
+   <Result>A message confirms the change, such as *Marked Ticket #<Sample>4</Sample> as a winner.*, and the ticket's badge changes.</Result>
 
 <TableFigure title="Actions on one ticket">
 
@@ -100,10 +100,6 @@ By default, an organization can have up to 10 silos. Past that, **Create Silo** 
 | **Revoke / Void ticket** | **Rescinded** | **Entered / Waiting** or **Winner** |
 
 </TableFigure>
-
-:::tip[The names and numbers are examples]
-The silo name in **Editing Silo: Sponsor Lottery** and the 4 in *Marked Ticket #4 as a winner.* are examples. The app shows your own silo's name and each ticket's own number.
-:::
 
 ## Wording
 

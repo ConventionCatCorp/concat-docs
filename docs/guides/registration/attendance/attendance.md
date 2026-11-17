@@ -6,7 +6,7 @@ textbook: true
 
 # Badge Products
 
-Create the registration tiers attendees choose from, such as *General Admission* or *Sponsor*, and let attendees upgrade between them.
+Create the registration tiers attendees choose from, such as *<Sample>General Admission</Sample>* or *<Sample noMarker>Sponsor</Sample>*, and let attendees upgrade between them.
 
 :::info[In this guide]
 Badge products, the list, creating a tier, a tier's page, upgrade paths, and addons.
@@ -34,15 +34,11 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
 2. Read the badges under each tier's name.
 
-   <Result>Each tier shows its visibility (**Public / Visible**, **Unlisted** or **Hidden**) and, when they apply, badges such as **In Stock: 40/50 Available**, **Not Yet Available**, **Expired** or **Age Restricted: >= 18**.</Result>
+   <Result>Each tier shows its visibility (**Public / Visible**, **Unlisted** or **Hidden**) and, when they apply, badges such as **In Stock: <Sample>40/50</Sample> Available**, **Not Yet Available**, **Expired** or **Age Restricted: >= <Sample noMarker>18</Sample>**.</Result>
 
 3. *(Optional)* If any tier is deleted, click **Show Deleted Products** below the table.
 
    <Result>Deleted tiers appear, marked **Deleted / Archived**.</Result>
-
-:::tip[The values are examples]
-40/50 in **In Stock: 40/50 Available**, 18 in **Age Restricted: >= 18**, the name and ID in **Product: General Admission (ID: 1)** and the name in the delete question are examples. The app shows each tier's own stock, ages, name and ID.
-:::
 
 **Category Surcharges** adds a fee or tax to every tier at once: see [Surcharges](../../products/surcharges.md).
 
@@ -74,7 +70,7 @@ Ages are counted on the convention's start date. **Restrict product to grants** 
 
 1. On **Badge Products**, click the tier's name.
 
-   <Result>The tier's page opens, titled with its name and ID, such as **Product: General Admission (ID: 1)**, with **Product**, **Orders** and **Audit Logs** tabs.</Result>
+   <Result>The tier's page opens, titled with its name and ID, such as **Product: <Sample>General Admission (ID: 1)</Sample>**, with **Product**, **Orders** and **Audit Logs** tabs.</Result>
 
 2. In **Product Information**, click the edit (pencil) button.
 
@@ -90,7 +86,7 @@ Ages are counted on the convention's start date. **Restrict product to grants** 
 
 5. *(Optional)* To delete the tier, click the **Product** tab, then the delete button (<MaterialIcon name="delete" />) in **Product Information**.
 
-   <Result>A **Delete product?** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. General Admission?*</Result>
+   <Result>A **Delete product?** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. <Sample>General Admission</Sample>?*</Result>
 
 6. Click **Delete**.
 
@@ -108,7 +104,7 @@ The **Audit Logs** tab needs the `audit:read` permission. **Upgrade Paths** is o
 The new tier goes into the cart with an **Upgrade Discount** equal to what was paid for the old one, so the attendee pays the difference.
 </Sidenote>
 
-Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let *General Admission* attendees upgrade to *Sponsor*, add *Sponsor* on the *General Admission* page.
+Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let *<Sample>General Admission</Sample>* attendees upgrade to *<Sample noMarker>Sponsor</Sample>*, add *<Sample noMarker>Sponsor</Sample>* on the *<Sample noMarker>General Admission</Sample>* page.
 
 1. On the page of the tier attendees upgrade *from*, click the green add (+) button at the top right of **Upgrade Paths**.
 
