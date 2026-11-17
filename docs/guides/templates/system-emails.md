@@ -32,15 +32,15 @@ These emails come from your **Registration Email** address.
 
 <TableFigure title="Account emails">
 
-| Template | Sent when | Sent to | Can be turned off |
-| --- | --- | --- | --- |
-| `register` <small>Account Creation Confirmation</small> | Someone creates an account or asks for a new confirmation email, or staff create one with **Send the user an account confirmation email.** ticked. | The new account | No <small>Locked unless ConCat enables editing</small> |
-| `emailLogin` <small>Your Login Link</small> | Someone asks for a one-time sign-in link. | The person | No |
-| `passwordReset` <small>Password Reset</small> | Someone asks to reset their password, or staff send them a reset email. | The person | No |
-| `passwordChange` <small>Password Changed</small> | Someone changes their password. | The person | No |
-| `requestChangeEmail` <small>Request email change</small> | Someone changes their email address. It holds the confirmation link. | The new address | No |
-| `emailChange` <small>E-Mail Address Updated</small> | The new email address is confirmed. | The new and the old address | No |
-| `migrationConfirmation` <small>Account Migration Confirmation</small> | An account owner asks to make a sub-account a full account with its own email. | The sub-account's new address | No |
+| Template                                                              | Sent when                                                                                                                                          | Sent to                       | Can be turned off                                      |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ------------------------------------------------------ |
+| `register` <small>Account Creation Confirmation</small>               | Someone creates an account or asks for a new confirmation email, or staff create one with **Send the user an account confirmation email.** ticked. | The new account               | No <small>Locked unless ConCat enables editing</small> |
+| `emailLogin` <small>Your Login Link</small>                           | Someone asks for a one-time sign-in link.                                                                                                          | The person                    | No                                                     |
+| `passwordReset` <small>Password Reset</small>                         | Someone asks to reset their password, or staff send them a reset email.                                                                            | The person                    | No                                                     |
+| `passwordChange` <small>Password Changed</small>                      | Someone changes their password.                                                                                                                    | The person                    | No                                                     |
+| `requestChangeEmail` <small>Request email change</small>              | Someone changes their email address. It holds the confirmation link.                                                                               | The new address               | No                                                     |
+| `emailChange` <small>E-Mail Address Updated</small>                   | The new email address is confirmed.                                                                                                                | The new and the old address   | No                                                     |
+| `migrationConfirmation` <small>Account Migration Confirmation</small> | An account owner asks to make a sub-account a full account with its own email.                                                                     | The sub-account's new address | No                                                     |
 
 </TableFigure>
 
@@ -50,13 +50,13 @@ These emails come from your **Registration Email** address.
 
 <TableFigure title="Order emails">
 
-| Template | Sent when | Sent to | Can be turned off |
-| --- | --- | --- | --- |
-| `paymentSuccess` <small>Order #<Sample>13</Sample> Payment Successful</small> | An order is completed with at least one item priced above zero. Staff can resend it from the order. | The order's owner | No |
-| `ticketIssued` <small>Your Event Ticket for <Sample>Photo Shoot</Sample></small> | An order is completed: one per ticketed product in it. | The buyer | Yes |
-| `registrationQR` <small>Registration Confirmation for <Sample>Alex</Sample></small> | A badge (not an upgrade) is paid for, with **Enable Registration QR Codes** on in **Registration › Settings**. | The registrant | Yes |
-| `forcedRegistration` <small>Registration Created</small> | Staff create a registration for someone. | The person | Yes |
-| `disputeCreated` <small>Order #<Sample>13</Sample> - Payment Dispute Opened</small> | A card payment is disputed in Stripe. | Global admins | No |
+| Template                                                                            | Sent when                                                                                                      | Sent to           | Can be turned off |
+| ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------- | ----------------- |
+| `paymentSuccess` <small>Order #<Sample>13</Sample> Payment Successful</small>       | An order is completed with at least one item priced above zero. Staff can resend it from the order.            | The order's owner | No                |
+| `ticketIssued` <small>Your Event Ticket for <Sample>Photo Shoot</Sample></small>    | An order is completed: one per ticketed product in it.                                                         | The buyer         | Yes               |
+| `registrationQR` <small>Registration Confirmation for <Sample>Alex</Sample></small> | A badge (not an upgrade) is paid for, with **Enable Registration QR Codes** on in **Registration › Settings**. | The registrant    | Yes               |
+| `forcedRegistration` <small>Registration Created</small>                            | Staff create a registration for someone.                                                                       | The person        | Yes               |
+| `disputeCreated` <small>Order #<Sample>13</Sample> - Payment Dispute Opened</small> | A card payment is disputed in Stripe.                                                                          | Global admins     | No                |
 
 </TableFigure>
 
@@ -70,11 +70,11 @@ These emails come from your **Registration Email** address.
 
 <TableFigure title="Refund emails">
 
-| Template | Sent when | Sent to | Can be turned off |
-| --- | --- | --- | --- |
-| `refundRequested` <small>Order #<Sample>13</Sample> - New Refund Request</small> | An attendee requests a refund. | The order's owner, and your **Registration Email** address | No |
-| `refundCompleted` <small>Refund Request Approved for Order #<Sample>13</Sample></small> | Staff refund an order. | The order's owner | No |
-| `refundDenied` <small>Refund Request Denied for Order #<Sample>13</Sample></small> | Staff deny a refund request. | The order's owner | No |
+| Template                                                                                | Sent when                      | Sent to                                                    | Can be turned off |
+| --------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------- | ----------------- |
+| `refundRequested` <small>Order #<Sample>13</Sample> - New Refund Request</small>        | An attendee requests a refund. | The order's owner, and your **Registration Email** address | No                |
+| `refundCompleted` <small>Refund Request Approved for Order #<Sample>13</Sample></small> | Staff refund an order.         | The order's owner                                          | No                |
+| `refundDenied` <small>Refund Request Denied for Order #<Sample>13</Sample></small>      | Staff deny a refund request.   | The order's owner                                          | No                |
 
 </TableFigure>
 
@@ -84,12 +84,12 @@ Sent only while **Enable Volunteer Emails** is on in **Volunteers › Volunteer 
 
 <TableFigure title="Volunteer emails">
 
-| Template | Sent when | Sent to | Can be turned off |
-| --- | --- | --- | --- |
-| `volunteerConfirm` <small>Volunteer Confirmation</small> | A volunteer submits or changes their own application. | The volunteer | No <small>Stops when **Enable Volunteer Emails** is off</small> |
-| `volunteerAssignedToVolunteer` <small>Volunteer Assignment: <Sample>Art Show</Sample></small> | Staff assign a volunteer to a department. | The volunteer | Yes |
-| `volunteerAssignedToLead` <small>New Volunteer Assigned</small> | Staff assign a volunteer to a department. | The department's email address and each of its leads | Yes |
-| `undoAdmin` <small>Staff status have been removed</small> | Staff use **Remove Staff** on a volunteer. | The person | Yes |
+| Template                                                                                      | Sent when                                             | Sent to                                              | Can be turned off                                               |
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| `volunteerConfirm` <small>Volunteer Confirmation</small>                                      | A volunteer submits or changes their own application. | The volunteer                                        | No <small>Stops when **Enable Volunteer Emails** is off</small> |
+| `volunteerAssignedToVolunteer` <small>Volunteer Assignment: <Sample>Art Show</Sample></small> | Staff assign a volunteer to a department.             | The volunteer                                        | Yes                                                             |
+| `volunteerAssignedToLead` <small>New Volunteer Assigned</small>                               | Staff assign a volunteer to a department.             | The department's email address and each of its leads | Yes                                                             |
+| `undoAdmin` <small>Staff status have been removed</small>                                     | Staff use **Remove Staff** on a volunteer.            | The person                                           | Yes                                                             |
 
 </TableFigure>
 
@@ -99,9 +99,9 @@ This email comes from your **Dealers Email** address.
 
 <TableFigure title="Dealer emails">
 
-| Template | Sent when | Sent to | Can be turned off |
-| --- | --- | --- | --- |
-| `dealerAssistant` <small>Dealer Assistant Confirmation</small> | A dealer adds an assistant by username. | The assistant | No |
+| Template                                                       | Sent when                               | Sent to       | Can be turned off |
+| -------------------------------------------------------------- | --------------------------------------- | ------------- | ----------------- |
+| `dealerAssistant` <small>Dealer Assistant Confirmation</small> | A dealer adds an assistant by username. | The assistant | No                |
 
 </TableFigure>
 
@@ -111,15 +111,15 @@ These emails come from your **HR Email** address, except `registerNewReview` (fr
 
 <TableFigure title="Administration emails">
 
-| Template | Sent when | Sent to | Can be turned off |
-| --- | --- | --- | --- |
-| `registerNewReview` <small>Registration Requires Review</small> | Someone signs up, and the new account needs review, for example because it looks like a banned person's. | Your **Registration Email** address | Yes |
-| `exportRequest` <small>Data Export Request</small> | An admin requests access to personal data in exports. | Global admins | No |
-| `exportRequestApproved` <small>Data export request approved</small> | Another admin approves the request. | Global admins | No |
-| `exportRequestRejected` <small>Data export request rejected</small> | Another admin rejects the request. | Global admins | Yes |
-| `exportRequestDeleted` <small>Data export request deleted</small> | The request is deleted. | Global admins | Yes |
-| `clearPiiRequest` <small>PII Clear Requested</small> | Someone requests that personal data be cleared from the accounts that asked for it. | Global admins | No |
-| `massEmail` <small>The subject staff write</small> | Staff send a mass email. This template frames their message. | The recipients staff choose | No |
+| Template                                                            | Sent when                                                                                                | Sent to                             | Can be turned off |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------- |
+| `registerNewReview` <small>Registration Requires Review</small>     | Someone signs up, and the new account needs review, for example because it looks like a banned person's. | Your **Registration Email** address | Yes               |
+| `exportRequest` <small>Data Export Request</small>                  | An admin requests access to personal data in exports.                                                    | Global admins                       | No                |
+| `exportRequestApproved` <small>Data export request approved</small> | Another admin approves the request.                                                                      | Global admins                       | No                |
+| `exportRequestRejected` <small>Data export request rejected</small> | Another admin rejects the request.                                                                       | Global admins                       | Yes               |
+| `exportRequestDeleted` <small>Data export request deleted</small>   | The request is deleted.                                                                                  | Global admins                       | Yes               |
+| `clearPiiRequest` <small>PII Clear Requested</small>                | Someone requests that personal data be cleared from the accounts that asked for it.                      | Global admins                       | No                |
+| `massEmail` <small>The subject staff write</small>                  | Staff send a mass email. This template frames their message.                                             | The recipients staff choose         | No                |
 
 </TableFigure>
 
@@ -129,13 +129,13 @@ Hotel booking is turned on by ConCat Support. These emails come from the `hotel`
 
 <TableFigure title="Hotel emails">
 
-| Template | Sent when | Sent to | Can be turned off |
-| --- | --- | --- | --- |
-| `hotelRaffleConfirmation` <small>Hotel Raffle Entry Confirmation</small> | An attendee enters a hotel room raffle. | The attendee | No |
-| `hotelFCFSConfirmation` <small>Hotel Entry Confirmation</small> | An attendee enters a first-come, first-served room pool. | The attendee | No |
-| `hotelRaffleWinner` <small>Hotel Raffle Winner</small> | Booking opens for a hotel block: one per selected entry, with a booking link. | The attendee | No |
-| `hotelRaffleLoser` <small>Hotel Raffle Not a Winner</small> | Booking opens for a raffle block: one per entry that wasn't selected. | The attendee | Yes |
-| `hotelGuestRemoved` <small>Hotel Reservation Update: Guest Removed</small> | A sync with the hotel's booking system removes a guest from a reservation. | The removed guest | Yes |
-| `hotelGroupOpen` <small>Reservation Group Open</small> | Not sent at present. | — | No |
+| Template                                                                   | Sent when                                                                     | Sent to           | Can be turned off |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------- | ----------------- |
+| `hotelRaffleConfirmation` <small>Hotel Raffle Entry Confirmation</small>   | An attendee enters a hotel room raffle.                                       | The attendee      | No                |
+| `hotelFCFSConfirmation` <small>Hotel Entry Confirmation</small>            | An attendee enters a first-come, first-served room pool.                      | The attendee      | No                |
+| `hotelRaffleWinner` <small>Hotel Raffle Winner</small>                     | Booking opens for a hotel block: one per selected entry, with a booking link. | The attendee      | No                |
+| `hotelRaffleLoser` <small>Hotel Raffle Not a Winner</small>                | Booking opens for a raffle block: one per entry that wasn't selected.         | The attendee      | Yes               |
+| `hotelGuestRemoved` <small>Hotel Reservation Update: Guest Removed</small> | A sync with the hotel's booking system removes a guest from a reservation.    | The removed guest | Yes               |
+| `hotelGroupOpen` <small>Reservation Group Open</small>                     | Not sent at present.                                                          | —                 | No                |
 
 </TableFigure>

@@ -8,21 +8,24 @@ hide_table_of_contents: true
 
 <SplitColumn>
   <div>
-    This object represents an end-user within an event organization. Users can be attendees, vendors, performers, staff, etc.
+    This object represents an end-user within an event organization. Users can be attendees, vendors, performers, staff,
+    etc.
   </div>
   <RestList>
-    <RestElement method='GET' path='/api/users/current' anchor='retrieve-current-user' />
+    <RestElement method="GET" path="/api/users/current" anchor="retrieve-current-user" />
   </RestList>
 </SplitColumn>
 
 ### Retrieve Current User
+
 Returns the user object for the currently authenticated user.
 
 <SplitColumn>
   <div>
     <h4>Authentication</h4>
     <div>
-      [On Behalf Of (OBO)](/docs/api/gettingstarted/oauth) with <code>pii:basic</code> scope. Other permissions are required to access additional information, such as PII and order history.
+      [On Behalf Of (OBO)](/docs/api/gettingstarted/oauth) with <code>pii:basic</code> scope. Other permissions are
+      required to access additional information, such as PII and order history.
     </div>
     <div style={{ marginBottom: '1.5rem' }} />
     <h4>Response</h4>
@@ -60,7 +63,8 @@ Returns the user object for the currently authenticated user.
       An optional preferred name for the user. This will be displayed first on the user's profile.
     </Attribute>
     <Attribute id="user-current-retrieve-resp-supportAgent" name="supportAgent" type="object" optional response>
-      Details of a ConCat support session when the request comes from a ConCat support agent; otherwise <code>null</code>.
+      Details of a ConCat support session when the request comes from a ConCat support agent; otherwise{' '}
+      <code>null</code>.
     </Attribute>
     <Attribute id="user-current-retrieve-resp-updatedAt" name="updatedAt" type="string" response>
       The date the account was last updated, in ISO 8601 format.
@@ -100,39 +104,88 @@ Returns the user object for the currently authenticated user.
     <details>
       <summary>Scope Restricted Attributes</summary>
       <div>
-        <Attribute id="user-current-retrieve-resp-addressCity" name="addressCity" type="string" response permissions={['pii:address']}>
+        <Attribute
+          id="user-current-retrieve-resp-addressCity"
+          name="addressCity"
+          type="string"
+          response
+          permissions={['pii:address']}
+        >
           City, town, or village of the user's address.
         </Attribute>
-        <Attribute id="user-current-retrieve-resp-addressCountry" name="addressCountry" type="string" response permissions={['pii:address']}>
+        <Attribute
+          id="user-current-retrieve-resp-addressCountry"
+          name="addressCountry"
+          type="string"
+          response
+          permissions={['pii:address']}
+        >
           Two-letter ISO 3166-1 alpha-2 country code.
         </Attribute>
-        <Attribute id="user-current-retrieve-resp-addressLine1" name="addressLine1" type="string" response permissions={['pii:address']}>
+        <Attribute
+          id="user-current-retrieve-resp-addressLine1"
+          name="addressLine1"
+          type="string"
+          response
+          permissions={['pii:address']}
+        >
           First line of the user's address. (e.g. 1234 Main St)
         </Attribute>
-        <Attribute id="user-current-retrieve-resp-addressLine2" name="addressLine2" type="string" response permissions={['pii:address']} optional>
+        <Attribute
+          id="user-current-retrieve-resp-addressLine2"
+          name="addressLine2"
+          type="string"
+          response
+          permissions={['pii:address']}
+          optional
+        >
           Optional second line of the user's address. (e.g. Suite 100, Apt 2B)
         </Attribute>
-        <Attribute id="user-current-retrieve-resp-addressState" name="addressState" type="string" response permissions={['pii:address']}>
+        <Attribute
+          id="user-current-retrieve-resp-addressState"
+          name="addressState"
+          type="string"
+          response
+          permissions={['pii:address']}
+        >
           State or province of the user's address.
         </Attribute>
-        <Attribute id="user-current-retrieve-resp-addressZipcode" name="addressZipcode" type="string" response permissions={['pii:address']}>
+        <Attribute
+          id="user-current-retrieve-resp-addressZipcode"
+          name="addressZipcode"
+          type="string"
+          response
+          permissions={['pii:address']}
+        >
           ZIP or postal code of the user's address.
         </Attribute>
-        <Attribute id="user-current-retrieve-resp-email" name="email" type="string" response permissions={['pii:email']}>
+        <Attribute
+          id="user-current-retrieve-resp-email"
+          name="email"
+          type="string"
+          response
+          permissions={['pii:email']}
+        >
           The user's email address.
         </Attribute>
-        <Attribute id="user-current-retrieve-resp-phone" name="phone" type="string" response permissions={['pii:phone']}>
+        <Attribute
+          id="user-current-retrieve-resp-phone"
+          name="phone"
+          type="string"
+          response
+          permissions={['pii:phone']}
+        >
           Phone number in international format. (e.g. +15555555555)
         </Attribute>
       </div>
     </details>
   </div>
   <div>
-    <ExampleBox method='GET' header='/api/users/current' headerSubText='cURL'>
+    <ExampleBox method="GET" header="/api/users/current" headerSubText="cURL">
       {`curl https://reg.cces.dev/api/users/current \\
   -H "Authorization: Bearer <token>"`}
     </ExampleBox>
-    <ExampleBox header='Response' headerSubText='application/json'>
+    <ExampleBox header="Response" headerSubText="application/json">
       {`{
   "sub": "1234",
   "addressCity": "New York",

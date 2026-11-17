@@ -32,11 +32,11 @@ Needs `vendor:update`, which the default *dealersden* role has.
 
 <TableFigure title="General dealer settings">
 
-| Setting | What it does |
-| --- | --- |
-| **Enable Dealers Module** | Shows **Dealing** in the attendee sidebar and opens the application. <small>While off, nobody, not even staff, can create a dealer profile. **Housekeeping › Dealers** stays available.</small> |
+| Setting                       | What it does                                                                                                                                                                                                                                                            |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Enable Dealers Module**     | Shows **Dealing** in the attendee sidebar and opens the application. <small>While off, nobody, not even staff, can create a dealer profile. **Housekeeping › Dealers** stays available.</small>                                                                         |
 | **Force Dealer Registration** | Dealers must register for the convention before paying for a table. <small>Until then, checkout shows **Convention Registration Needed**; the badge can share the cart with the table. While **Open Registration** is off, dealers can't pay for tables at all.</small> |
-| **Dealers Email** | The part before the @ of the address dealer emails come from, also shown to dealers as the contact. <small>Letters, numbers, dots and dashes only. Same setting as **Dealers Email** on the **Contact** tab of **System › Settings**.</small> |
+| **Dealers Email**             | The part before the @ of the address dealer emails come from, also shown to dealers as the contact. <small>Letters, numbers, dots and dashes only. Same setting as **Dealers Email** on the **Contact** tab of **System › Settings**.</small>                           |
 
 </TableFigure>
 
@@ -60,9 +60,9 @@ The Dealer Policy is what dealers agree to when they apply. It can be organizati
 
 2. Click **Create Convention-specific Policy**, or **Create Organization-wide Policy** to use it at all your conventions.
 
-   <Result>A text box appears, containing *TBC*.</Result>
+   <Result>A text box appears, containing _TBC_.</Result>
 
-3. Replace *TBC* with your policy and click **Save**.
+3. Replace _TBC_ with your policy and click **Save**.
 
    <Result>A **Convention-specific policy saved** (or **Organization-wide policy saved**) message appears.</Result>
 
@@ -71,9 +71,10 @@ The Dealer Policy is what dealers agree to when they apply. It can be organizati
    <Result>A **Dealer Policy** page shows your text.</Result>
 
 :::caution[Watch out]
-- The policy is live as soon as you create it, reading *TBC*. Replace it before dealers apply.
+
+- The policy is live as soon as you create it, reading _TBC_. Replace it before dealers apply.
 - No menu or footer links to `/policy/vendor`, and the default form's **Dealer Policy** box doesn't show the text. To show it, turn on **Show Preview of Terms** (section 4, step 4), or link to `/policy/vendor` in the agreement line.
-:::
+  :::
 
 ## Custom questions
 
@@ -117,7 +118,7 @@ The dealer form is the application's first page. A new convention starts with th
 
    <Result>The **Preview** pane shows the question.</Result>
 
-4. *(Optional)* In the **Dealer Policy** section, click **Edit** on **Terms and conditions**, tick **Show Preview of Terms** and click **Save**.
+4. _(Optional)_ In the **Dealer Policy** section, click **Edit** on **Terms and conditions**, tick **Show Preview of Terms** and click **Save**.
 
    <Result>The **Preview** pane shows the policy text above the agreement checkbox.</Result>
 
@@ -127,18 +128,18 @@ The dealer form is the application's first page. A new convention starts with th
 
 <TableFigure title="Dealer form elements">
 
-| Element | What it adds |
-| --- | --- |
-| **Text block** | Text, with Markdown formatting. |
-| **Divider** | A horizontal line. |
-| **Terms and conditions** | Agreement to one of your policies, by checkbox or typed full name. <small>**Require Agreement To Submit** stops the dealer continuing without it.</small> |
-| **Dealer PII** | One business detail, with **Type** `name` (business name), `email` (business email), `addressLine1`, `addressLine2`, `addressCity`, `addressState`, `addressZipcode` or `addressCountry`. |
-| **Option** | One of the dealer options from section 3. |
+| Element                  | What it adds                                                                                                                                                                              |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Text block**           | Text, with Markdown formatting.                                                                                                                                                           |
+| **Divider**              | A horizontal line.                                                                                                                                                                        |
+| **Terms and conditions** | Agreement to one of your policies, by checkbox or typed full name. <small>**Require Agreement To Submit** stops the dealer continuing without it.</small>                                 |
+| **Dealer PII**           | One business detail, with **Type** `name` (business name), `email` (business email), `addressLine1`, `addressLine2`, `addressCity`, `addressState`, `addressZipcode` or `addressCountry`. |
+| **Option**               | One of the dealer options from section 3.                                                                                                                                                 |
 
 </TableFigure>
 
 :::caution[Watch out]
-The form must keep a **Dealer PII** element of type `name` and one of type `email`, or **Save Changes** fails with *At least one field must be of type 'Dealer PII' with subtype 'name'.* (or `'email'`). Dealers see both as **Required**.
+The form must keep a **Dealer PII** element of type `name` and one of type `email`, or **Save Changes** fails with _At least one field must be of type 'Dealer PII' with subtype 'name'._ (or `'email'`). Dealers see both as **Required**.
 :::
 
 Leaving with unsaved changes opens an **Unsaved Changes** dialog: **Save and Exit**, **Exit without Saving** or **Cancel**.

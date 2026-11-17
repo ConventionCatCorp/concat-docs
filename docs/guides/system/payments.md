@@ -22,11 +22,11 @@ ConCat connects your organization's own Stripe account through Stripe Connect, a
 
 Three things are set by ConCat, not by you:
 
-- **Country and currency.** A trial starts in US dollars, wherever you signed up from. Your Stripe account is created with your organization's country, and attendees are charged in your organization's currency. If either is wrong, ask ConCat Support to fix it *before* you connect Stripe.
+- **Country and currency.** A trial starts in US dollars, wherever you signed up from. Your Stripe account is created with your organization's country, and attendees are charged in your organization's currency. If either is wrong, ask ConCat Support to fix it _before_ you connect Stripe.
 - **Test mode.** There's no test or sandbox switch: once Stripe is connected, payments are real. Ask ConCat Support to try payments without charging anyone.
 - **Platform fees.** Shown read-only on the **Platform Info** tab.
 
-Until a gateway is connected, attendees who try to pay see *This Payment Gateway is not yet configured for use by the event. Please contact customer support.*
+Until a gateway is connected, attendees who try to pay see _This Payment Gateway is not yet configured for use by the event. Please contact customer support._
 
 ## Connect Stripe
 
@@ -34,11 +34,11 @@ You need access to your organization's Stripe account, or the details to create 
 
 1. Go to **Housekeeping › System › Settings** and click the **Payment Gateways** tab.
 
-   <Result>Under **Stripe Connect**, the page says *You do not have Stripe Connect configured at the moment.* and shows **Connect to Stripe**.</Result>
+   <Result>Under **Stripe Connect**, the page says _You do not have Stripe Connect configured at the moment._ and shows **Connect to Stripe**.</Result>
 
 2. Click **Connect to Stripe**.
 
-   <Result>An **Enable Stripe Connect** dialog asks *Are you sure you want to enable Stripe Connect?*</Result>
+   <Result>An **Enable Stripe Connect** dialog asks _Are you sure you want to enable Stripe Connect?_</Result>
 
 3. Click **Yes, I want to enable Stripe Connect.**
 
@@ -50,10 +50,10 @@ You need access to your organization's Stripe account, or the details to create 
 
 <TableFigure title="Stripe status badges">
 
-| Badge | Meaning |
-| --- | --- |
-| **Status: Connected** (green) | Stripe accepts payments for your event. |
-| **Status: Disabled** (red) | Your Stripe account can't accept payments yet, so attendees can't pay by card. |
+| Badge                               | Meaning                                                                                                                                   |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Status: Connected** (green)       | Stripe accepts payments for your event.                                                                                                   |
+| **Status: Disabled** (red)          | Your Stripe account can't accept payments yet, so attendees can't pay by card.                                                            |
 | **More information required** (red) | Stripe needs more details from an organization admin. <small>Shown until you've submitted everything Stripe asks for (section 3).</small> |
 
 </TableFigure>
@@ -86,7 +86,7 @@ Stripe isn't well supported in Brazil, so PagSeguro can run alongside it for att
 
    <Result>**Base** shows the hostname and **Token** its first and last four characters, with a **Remove Credentials** button.</Result>
 
-2. *(Optional)* To disconnect PagSeguro, click **Remove Credentials**.
+2. _(Optional)_ To disconnect PagSeguro, click **Remove Credentials**.
 
    <Result>The empty **Add Token** form appears again. There's no confirmation.</Result>
 

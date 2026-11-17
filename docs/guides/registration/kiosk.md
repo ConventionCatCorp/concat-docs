@@ -26,11 +26,11 @@ The **Kiosk** card is on **Registration Settings**, which needs `system:settings
 
 <TableFigure title="Settings in the Kiosk card">
 
-| Setting | What it does |
-| --- | --- |
-| **Disable QuikTicket** | Hides **Devices** from the Attendees module's sidebar. <small>Not a kiosk setting, but it's on this card.</small> |
+| Setting                                 | What it does                                                                                                                                                                        |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Disable QuikTicket**                  | Hides **Devices** from the Attendees module's sidebar. <small>Not a kiosk setting, but it's on this card.</small>                                                                   |
 | **Allow Online Payments in Kiosk Mode** | Attendees can pay by card at the kiosk. Without it, the payment step is skipped and they pay at the cashier desk. <small>Leave it off on shared devices that aren't secure.</small> |
-| **Kiosk mode timeout** | Resets the kiosk when nobody uses it for a while (section 5). |
+| **Kiosk mode timeout**                  | Resets the kiosk when nobody uses it for a while (section 5).                                                                                                                       |
 
 </TableFigure>
 
@@ -48,11 +48,11 @@ If the kiosk can't start, it shows **Kiosk Unavailable** and the reasons in Tabl
 
 <TableFigure title="Why a kiosk won't start">
 
-| Reason shown | What to do |
-| --- | --- |
-| *System is currently in maintenance mode.* | Turn off maintenance mode in **Housekeeping › System › Settings**. |
-| *No attendance types are available for registration.* | Create at least one badge tier ([Badge Products](./attendance/attendance.md)). |
-| *Kiosk registration is not supported while captcha is enabled.* | ConCat sets captcha for your instance: contact ConCat Support. |
+| Reason shown                                                    | What to do                                                                     |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| _System is currently in maintenance mode._                      | Turn off maintenance mode in **Housekeeping › System › Settings**.             |
+| _No attendance types are available for registration._           | Create at least one badge tier ([Badge Products](./attendance/attendance.md)). |
+| _Kiosk registration is not supported while captcha is enabled._ | ConCat sets captcha for your instance: contact ConCat Support.                 |
 
 </TableFigure>
 
@@ -68,7 +68,7 @@ Do these steps on the kiosk, as an attendee.
 
    <Result>The **User info** step shows a login form and, below it, a sign-up form starting with **Email Address**.</Result>
 
-3. Log in with an existing account, or fill in the sign-up form and click **Continue**. *(Optional)* To keep the account after the event, tick **I would like to create an account.** and choose a **Username** and password.
+3. Log in with an existing account, or fill in the sign-up form and click **Continue**. _(Optional)_ To keep the account after the event, tick **I would like to create an account.** and choose a **Username** and password.
 
    <Result>The **Badge Info** step shows your badge tiers and registration form.</Result>
 

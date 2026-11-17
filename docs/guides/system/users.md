@@ -38,18 +38,18 @@ Saved to the audit log with the account. If you fill it in, use at least 10 char
 
 <TableFigure title="Manual Account Creation fields">
 
-| Field | What to enter |
-| --- | --- |
-| **Owner account** | Empty for an ordinary account. <small>Choosing one makes a sub-account (section 3).</small> |
-| **Reason for manual creation** | Why you're creating the account. |
-| **Username** | 4 to 64 characters: letters, digits, dots, hyphens and underscores, starting with a letter or digit. <small>Required unless you chose an **Owner account**.</small> |
-| **Email Address** | Their email address. <small>Not already used by another account.</small> |
-| **First Name**, **Last Name** | The legal names on their government ID. |
-| **Preferred Name** | The name they'd like used, if different. |
-| **Date of birth** | Their date of birth. |
-| **Address Line 1**, **Address Line 2 (Optional)**, **City**, **Zip / postal code**, **Country**, **State / province** | Their address. <small>Choose **Country** first; **State / province** then lists its regions.</small> |
-| **Phone number** | Their phone number. |
-| **Send the user an account confirmation email.** | Emails a link to confirm the account. <small>Otherwise *The user will not receive additional emails until their password is reset.*</small> |
+| Field                                                                                                                 | What to enter                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Owner account**                                                                                                     | Empty for an ordinary account. <small>Choosing one makes a sub-account (section 3).</small>                                                                         |
+| **Reason for manual creation**                                                                                        | Why you're creating the account.                                                                                                                                    |
+| **Username**                                                                                                          | 4 to 64 characters: letters, digits, dots, hyphens and underscores, starting with a letter or digit. <small>Required unless you chose an **Owner account**.</small> |
+| **Email Address**                                                                                                     | Their email address. <small>Not already used by another account.</small>                                                                                            |
+| **First Name**, **Last Name**                                                                                         | The legal names on their government ID.                                                                                                                             |
+| **Preferred Name**                                                                                                    | The name they'd like used, if different.                                                                                                                            |
+| **Date of birth**                                                                                                     | Their date of birth.                                                                                                                                                |
+| **Address Line 1**, **Address Line 2 (Optional)**, **City**, **Zip / postal code**, **Country**, **State / province** | Their address. <small>Choose **Country** first; **State / province** then lists its regions.</small>                                                                |
+| **Phone number**                                                                                                      | Their phone number.                                                                                                                                                 |
+| **Send the user an account confirmation email.**                                                                      | Emails a link to confirm the account. <small>Otherwise _The user will not receive additional emails until their password is reset._</small>                         |
 
 </TableFigure>
 
@@ -57,7 +57,7 @@ A username or email address already in use is flagged next to the field, and the
 
 ## Create a sub-account
 
-A sub-account belongs to another account, its *owner*, as when a parent registers a child.
+A sub-account belongs to another account, its _owner_, as when a parent registers a child.
 
 1. In **Housekeeping › System › User Creation**, type the owner's name or username in **Owner account** and choose them.
 
@@ -68,5 +68,5 @@ A sub-account belongs to another account, its *owner*, as when a parent register
    <Result>An **Account created.** message appears and the sub-account's profile opens, with no **Notes**, **Orders**, **Volunteer** or **Dealer** tab.</Result>
 
 :::caution[Watch out]
-The owner must be an ordinary account. Choosing a sub-account fails with *The targetted user is a sub-account, and therefore cannot own another sub-account. Migrate that user first, or use another account.*
+The owner must be an ordinary account. Choosing a sub-account fails with _The targetted user is a sub-account, and therefore cannot own another sub-account. Migrate that user first, or use another account._
 :::

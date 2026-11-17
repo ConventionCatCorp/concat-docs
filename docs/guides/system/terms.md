@@ -29,20 +29,20 @@ A new organization starts with organization-wide versions of most policies: plac
 
 <TableFigure title="The policies on the Terms tab">
 
-| Policy | Where attendees see it |
-| --- | --- |
-| **Privacy terms** | When creating an account, and on the **Privacy Policy** page. |
-| **Convention Policy / Terms & Conditions** | When creating an account, and on the **Terms & Conditions** page. |
-| **Child Registration Error** | Below the child age threshold or under 13. |
-| **Minor Registration Warning** | Below the minor age threshold. |
-| **Child Badge Terms** | When a parent adds child badges with the older *Child registration* feature. |
-| **Registration Terms** | On the registration page, while registering. |
-| **Login Page Announcement** | On the login page, below your convention's name and logo. |
-| **Hotel Reservation Policy** | On the hotel reservation dashboard, wave entry page and reservation page. |
-| **Hotel Reservation Additional Info** | At the top of the *My Reservation* page. |
-| **Hotel Closed Message** | Under the "hotel reservations closed" message. <small>Leave it empty to show nothing.</small> |
-| **Parent agreement for child registration** | When a parent or guardian confirms they're providing their child's information voluntarily. |
-| **Opt Out from Stripe Identity** | When they choose not to verify their identity. <small>Listed only if your event uses identity verification.</small> |
+| Policy                                      | Where attendees see it                                                                                              |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Privacy terms**                           | When creating an account, and on the **Privacy Policy** page.                                                       |
+| **Convention Policy / Terms & Conditions**  | When creating an account, and on the **Terms & Conditions** page.                                                   |
+| **Child Registration Error**                | Below the child age threshold or under 13.                                                                          |
+| **Minor Registration Warning**              | Below the minor age threshold.                                                                                      |
+| **Child Badge Terms**                       | When a parent adds child badges with the older _Child registration_ feature.                                        |
+| **Registration Terms**                      | On the registration page, while registering.                                                                        |
+| **Login Page Announcement**                 | On the login page, below your convention's name and logo.                                                           |
+| **Hotel Reservation Policy**                | On the hotel reservation dashboard, wave entry page and reservation page.                                           |
+| **Hotel Reservation Additional Info**       | At the top of the _My Reservation_ page.                                                                            |
+| **Hotel Closed Message**                    | Under the "hotel reservations closed" message. <small>Leave it empty to show nothing.</small>                       |
+| **Parent agreement for child registration** | When a parent or guardian confirms they're providing their child's information voluntarily.                         |
+| **Opt Out from Stripe Identity**            | When they choose not to verify their identity. <small>Listed only if your event uses identity verification.</small> |
 
 </TableFigure>
 
@@ -60,10 +60,10 @@ Child and minor age thresholds are set in the **Minimum Age and Children** card 
 
 3. For a policy with no version yet, click **Create Organization-wide Policy** under **Create Policies**, then repeat step 2.
 
-   <Result>An **Organization-wide Policy** box appears containing *TBC*.</Result>
+   <Result>An **Organization-wide Policy** box appears containing _TBC_.</Result>
 
 :::caution[Watch out]
-A policy takes effect as soon as it exists, placeholder included (*TBC*, or *Go to Housekeeping > Settings > Terms* in a new organization). Replace and save it before attendees see it.
+A policy takes effect as soon as it exists, placeholder included (_TBC_, or _Go to Housekeeping > Settings > Terms_ in a new organization). Replace and save it before attendees see it.
 :::
 
 ## Override a policy for one convention
@@ -72,13 +72,13 @@ Override a policy when one convention needs different wording, such as this year
 
 1. Under the policy, click **Create Convention-specific Policy**.
 
-   <Result>A **Convention-specific Policy** box appears containing *TBC*. The **Organization-wide Policy** box is replaced by a yellow warning: *This policy is overridden by a convention-specific policy.*</Result>
+   <Result>A **Convention-specific Policy** box appears containing _TBC_. The **Organization-wide Policy** box is replaced by a yellow warning: _This policy is overridden by a convention-specific policy._</Result>
 
-2. Replace *TBC* with this convention's text, then click **Save** under it.
+2. Replace _TBC_ with this convention's text, then click **Save** under it.
 
    <Result>A **Convention-specific policy saved** message appears.</Result>
 
-3. *(Optional)* To edit the organization-wide version anyway, click **I understand, but I want to edit this policy anyway.**
+3. _(Optional)_ To edit the organization-wide version anyway, click **I understand, but I want to edit this policy anyway.**
 
    <Result>The **Organization-wide Policy** box returns. Changes to it apply to your other conventions, not this one.</Result>
 
@@ -92,7 +92,7 @@ Deleting a convention-specific policy brings back the organization-wide version.
 
 1. Under the **Convention-specific Policy** box, click **Delete**.
 
-   <Result>A *Convention-specific policy <Sample>Registration Terms</Sample> deleted successfully!* message appears, and the **Organization-wide Policy** box is editable again.</Result>
+   <Result>A _Convention-specific policy <Sample>Registration Terms</Sample> deleted successfully!_ message appears, and the **Organization-wide Policy** box is editable again.</Result>
 
 ## What attendees see
 
@@ -110,6 +110,6 @@ Add `?conventionId=` and a convention's ID to the Terms & Conditions or Privacy 
 
    <Result>**Privacy Policy** shows your **Privacy terms** text.</Result>
 
-3. *(If you created one)* Sign out and open the login page.
+3. _(If you created one)_ Sign out and open the login page.
 
    <Result>Your **Login Page Announcement** appears below the card with your convention's name, dates and venue.</Result>

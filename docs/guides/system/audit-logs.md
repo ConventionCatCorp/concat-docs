@@ -18,7 +18,7 @@ What the audit log records, browsing it, filtering by tag and type, jumping to a
 The audit log needs `audit:read`, which the default **admin** and **hr** roles have.
 </Sidenote>
 
-Each entry records when an action happened, who did it and what changed. Entries are grouped by what they're about, called a *pivot*, such as users, roles or conventions; within a pivot you can view one object, such as one user.
+Each entry records when an action happened, who did it and what changed. Entries are grouped by what they're about, called a _pivot_, such as users, roles or conventions; within a pivot you can view one object, such as one user.
 
 Entries made by ConCat Support staff while helping you are shaded pink and marked with a support agent icon.
 
@@ -28,7 +28,7 @@ Audit entries also appear on a role's **History** tab, a person's **Audit** tab,
 
 1. Go to **Housekeeping › System › Audit Logs**.
 
-   <Result>The page says *Select a pivot to browse logs by:* above pivot names such as **User** and **Role**.</Result>
+   <Result>The page says _Select a pivot to browse logs by:_ above pivot names such as **User** and **Role**.</Result>
 
 2. Click a pivot.
 
@@ -38,7 +38,7 @@ Audit entries also appear on a role's **History** tab, a person's **Audit** tab,
 
    <Result>The entry opens with a **Show Raw** button, its type as a link, and its tags, each with **+** and **−** buttons.</Result>
 
-4. *(Optional)* Click **Show Raw**.
+4. _(Optional)_ Click **Show Raw**.
 
    <Result>The entry's full data shows as JSON, and the button reads **Hide Raw**.</Result>
 

@@ -22,15 +22,15 @@ An order is created when something first goes into the cart, and stays **Unpaid*
 
 <TableFigure title="Order badges">
 
-| Badge | Meaning |
-| --- | --- |
-| **Unpaid** | Still a cart; can be changed. |
-| **Paid** | Paid, and nothing refunded. |
-| **Canceled** | Canceled before it was paid. <small>The list's filter is spelled **Cancelled**.</small> |
-| **Partially Refunded**, **Refunded** | Some or all of the money paid has been refunded. |
-| **Requires Fulfillment** | Every item in the paid order is still to hand over. |
-| **Requires Partial Fulfillment** | Some items are still to hand over. |
-| **Fulfilled?** | Nothing in the paid order is left to hand over. <small>The question mark is part of the label.</small> |
+| Badge                                | Meaning                                                                                                |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Unpaid**                           | Still a cart; can be changed.                                                                          |
+| **Paid**                             | Paid, and nothing refunded.                                                                            |
+| **Canceled**                         | Canceled before it was paid. <small>The list's filter is spelled **Cancelled**.</small>                |
+| **Partially Refunded**, **Refunded** | Some or all of the money paid has been refunded.                                                       |
+| **Requires Fulfillment**             | Every item in the paid order is still to hand over.                                                    |
+| **Requires Partial Fulfillment**     | Some items are still to hand over.                                                                     |
+| **Fulfilled?**                       | Nothing in the paid order is left to hand over. <small>The question mark is part of the label.</small> |
 
 </TableFigure>
 
@@ -46,14 +46,14 @@ ConCat doesn't email the attendee when an order is canceled, by staff or by time
 
 <TableFigure title="Permissions for order actions">
 
-| Action | Permission | Default roles |
-| --- | --- | --- |
-| See and open orders, resend the confirmation email | `order:view` | admin, finance, registration |
-| Mark as paid, add or remove items, edit option values, remove unused stock | `registration:cashier` | admin, registration |
-| Cancel an unpaid order | `order:delete` | admin |
-| Mark items as fulfilled, undo a delivery | `order:fulfill` | admin |
-| Refund, set an item as the active registration | `refund:create` | admin, finance |
-| Add a voucher to an unpaid order | `comp:create` | admin, finance, hr |
+| Action                                                                     | Permission             | Default roles                |
+| -------------------------------------------------------------------------- | ---------------------- | ---------------------------- |
+| See and open orders, resend the confirmation email                         | `order:view`           | admin, finance, registration |
+| Mark as paid, add or remove items, edit option values, remove unused stock | `registration:cashier` | admin, registration          |
+| Cancel an unpaid order                                                     | `order:delete`         | admin                        |
+| Mark items as fulfilled, undo a delivery                                   | `order:fulfill`        | admin                        |
+| Refund, set an item as the active registration                             | `refund:create`        | admin, finance               |
+| Add a voucher to an unpaid order                                           | `comp:create`          | admin, finance, hr           |
 
 </TableFigure>
 
@@ -79,19 +79,19 @@ For one attendee's orders, open their profile and click the **Orders** tab; **Sh
 
 <TableFigure title="The order page">
 
-| Part | What it shows |
-| --- | --- |
-| Item cards | **Pending payment** for an unpaid order, **Canceled** for a canceled one. For a paid one: **Fulfilled** (handed over, or nothing to hand over) and **Unfulfilled**. <small>Refunds appear in the same cards as **Refund #<Sample>2</Sample>** and their status.</small> |
-| **Customer Info** | Name, ID, address and email. <small>The address needs PII access.</small> |
-| **Payments** | **Amount**, **Status**, **Gateway**, **Reference ID** and **Date** of each payment. <small>With `refund:create`, a Stripe reference links to the payment in Stripe.</small> |
-| **Vouchers** | Vouchers applied. See [Vouchers](../products/vouchers.md). |
-| **PagSeguro Checkouts** | Only if your organization uses PagSeguro and the attendee started a PagSeguro checkout. |
-| **Customer Profile**, **Transaction history** | Open the attendee's profile and, with `audit:read`, the order's audit history. |
+| Part                                          | What it shows                                                                                                                                                                                                                                                           |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Item cards                                    | **Pending payment** for an unpaid order, **Canceled** for a canceled one. For a paid one: **Fulfilled** (handed over, or nothing to hand over) and **Unfulfilled**. <small>Refunds appear in the same cards as **Refund #<Sample>2</Sample>** and their status.</small> |
+| **Customer Info**                             | Name, ID, address and email. <small>The address needs PII access.</small>                                                                                                                                                                                               |
+| **Payments**                                  | **Amount**, **Status**, **Gateway**, **Reference ID** and **Date** of each payment. <small>With `refund:create`, a Stripe reference links to the payment in Stripe.</small>                                                                                             |
+| **Vouchers**                                  | Vouchers applied. See [Vouchers](../products/vouchers.md).                                                                                                                                                                                                              |
+| **PagSeguro Checkouts**                       | Only if your organization uses PagSeguro and the attendee started a PagSeguro checkout.                                                                                                                                                                                 |
+| **Customer Profile**, **Transaction history** | Open the attendee's profile and, with `audit:read`, the order's audit history.                                                                                                                                                                                          |
 
 </TableFigure>
 
 :::tip[Email subjects]
-Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
 :::
 
 ## Unpaid orders
@@ -124,15 +124,15 @@ Staff can force-add a product even when it's sold out, outside its sale dates or
 
    <Result>The product is listed in the **Pending payment** card, with a **Timeout Override** badge if **Cart Timeout** is set.</Result>
 
-3. *(Optional)* To change the quantity, type the new number in the item's quantity box.
+3. _(Optional)_ To change the quantity, type the new number in the item's quantity box.
 
    <Result>After a moment the quantity is saved and the price updates.</Result>
 
 4. To remove an item, click its red delete button.
 
-   <Result>The item disappears. For a badge item, a **Delete Registration** dialog first asks *Are you sure you want to delete this registration?*; click **Delete**, and a **Registration deleted!** message appears.</Result>
+   <Result>The item disappears. For a badge item, a **Delete Registration** dialog first asks _Are you sure you want to delete this registration?_; click **Delete**, and a **Registration deleted!** message appears.</Result>
 
-Badges, dealer tables, ticketed products and some others have no quantity box. A product can be in an order only once (*This product is already in the order*). Add badges as a registration from the customer's profile, not here. A dealer table type can be added only for a dealer approved in that area ([Dealers](../dealers/managment.md)).
+Badges, dealer tables, ticketed products and some others have no quantity box. A product can be in an order only once (_This product is already in the order_). Add badges as a registration from the customer's profile, not here. A dealer table type can be added only for a dealer approved in that area ([Dealers](../dealers/managment.md)).
 
 :::caution[Watch out]
 Deleting a badge item deletes the attendee's registration, not just the line in the cart.
@@ -146,16 +146,16 @@ Deleting a badge item deletes the attendee's registration, not just the line in 
 
 1. On an unpaid order, click **Mark as Paid**, then choose **Write-off**, **Card**, **Cash** or **Voucher** (Table 3.1).
 
-   <Result>A **Successfully marked order as paid.** message appears, the status becomes **Paid**, and the **Payments** card lists the payment. If any item cost more than zero, the attendee gets the *<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> Payment Successful* email.</Result>
+   <Result>A **Successfully marked order as paid.** message appears, the status becomes **Paid**, and the **Payments** card lists the payment. If any item cost more than zero, the attendee gets the _<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> Payment Successful_ email.</Result>
 
 <TableFigure title="Mark as Paid choices">
 
-| Choice | What ConCat records |
-| --- | --- |
-| **Write-off** | A payment of the order total with the gateway *writeoff*, for orders you're letting go unpaid. |
-| **Card** | A payment with the gateway *card*, for your own card terminal. |
-| **Cash** | A payment with the gateway *cash*. |
-| **Voucher** | No payment. ConCat creates and applies a voucher for the order total, coded with the order number, such as `WRITEOFF-13`<Sample />. |
+| Choice        | What ConCat records                                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Write-off** | A payment of the order total with the gateway _writeoff_, for orders you're letting go unpaid.                                      |
+| **Card**      | A payment with the gateway _card_, for your own card terminal.                                                                      |
+| **Cash**      | A payment with the gateway _cash_.                                                                                                  |
+| **Voucher**   | No payment. ConCat creates and applies a voucher for the order total, coded with the order number, such as `WRITEOFF-13`<Sample />. |
 
 </TableFigure>
 
@@ -201,7 +201,7 @@ The payment confirmation email is the attendee's receipt; only staff can resend 
 
 2. Click **Resend**.
 
-   <Result>A **The user will receive an email in their inbox shortly.** message appears, and the attendee gets the *<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> Payment Successful* email again.</Result>
+   <Result>A **The user will receive an email in their inbox shortly.** message appears, and the attendee gets the _<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> Payment Successful_ email again.</Result>
 
 **Resend Email** shows only while the status is **Paid**, so not after a partial refund.
 
@@ -215,12 +215,12 @@ Items can have a **⋯** button at their right, with a menu of corrections for t
 
 <TableFigure title="The item menu">
 
-| Menu item | Shown for | What it does | Permission |
-| --- | --- | --- | --- |
-| **Set as active registration** | A badge item in a paid order that isn't currently giving the attendee their badge. | Makes this item the one that grants the badge. | `refund:create` |
-| **Remove Unused Stock** | An item marked **Unused Stock**: it holds stock but grants nothing. | Gives the stock back for someone else to buy. | `registration:cashier` |
-| **Edit Option Values** | An unfulfilled item with options. Not badge items. | Changes the answers to the product's options. | `registration:cashier` |
-| **Undo Delivery** | A fulfilled item. | Marks it as not yet handed over. | `order:fulfill` |
+| Menu item                      | Shown for                                                                          | What it does                                   | Permission             |
+| ------------------------------ | ---------------------------------------------------------------------------------- | ---------------------------------------------- | ---------------------- |
+| **Set as active registration** | A badge item in a paid order that isn't currently giving the attendee their badge. | Makes this item the one that grants the badge. | `refund:create`        |
+| **Remove Unused Stock**        | An item marked **Unused Stock**: it holds stock but grants nothing.                | Gives the stock back for someone else to buy.  | `registration:cashier` |
+| **Edit Option Values**         | An unfulfilled item with options. Not badge items.                                 | Changes the answers to the product's options.  | `registration:cashier` |
+| **Undo Delivery**              | A fulfilled item.                                                                  | Marks it as not yet handed over.               | `order:fulfill`        |
 
 </TableFigure>
 

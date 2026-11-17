@@ -22,27 +22,27 @@ Every note has a category. Your organization starts with the eight in Table 1.1.
 
 <TableFigure title="Default note categories">
 
-| Category | What it does |
-| --- | --- |
-| **Commendation**, **Feedback**, **Misc.**, **Reprimand**, **Request** | Nothing special. |
-| **Cashier** | Shown at the Cashier UI under **User Notes** when the person checks in. |
-| **Restriction** | A *shadow ban*: the person isn't told, but staff see a red **Restriction** badge next to them in User Search. <small>Restricted category.</small> |
-| **Ban** | Stops the person from doing something, such as registering or dealing (section 4). They see a generic banned message. <small>Restricted category.</small> |
+| Category                                                              | What it does                                                                                                                                              |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Commendation**, **Feedback**, **Misc.**, **Reprimand**, **Request** | Nothing special.                                                                                                                                          |
+| **Cashier**                                                           | Shown at the Cashier UI under **User Notes** when the person checks in.                                                                                   |
+| **Restriction**                                                       | A _shadow ban_: the person isn't told, but staff see a red **Restriction** badge next to them in User Search. <small>Restricted category.</small>         |
+| **Ban**                                                               | Stops the person from doing something, such as registering or dealing (section 4). They see a generic banned message. <small>Restricted category.</small> |
 
 </TableFigure>
 
-Notes in a *restricted* category are only visible with `user:note:read:hr`, whatever other roles a person has. **Ban** and **Restriction** notes always cover the whole organization.
+Notes in a _restricted_ category are only visible with `user:note:read:hr`, whatever other roles a person has. **Ban** and **Restriction** notes always cover the whole organization.
 
 <TableFigure title="Who can do what">
 
-| Action | Permission | Default roles with it |
-| --- | --- | --- |
-| Read notes in unrestricted categories | `user:note:read` | admin, hr, user |
-| Read notes in restricted categories (**Ban**, **Restriction**) | `user:note:read:hr` | admin, hr |
-| Create a note, including a ban | `user:note:create` | admin, hr, registration, staff |
-| Edit a note | `user:note:edit` | admin, hr, registration, staff |
-| Delete a note; complete an account review | `user:note:delete` | admin, hr |
-| Manage categories; read every note | `user:note:categories:manage` | admin |
+| Action                                                         | Permission                    | Default roles with it          |
+| -------------------------------------------------------------- | ----------------------------- | ------------------------------ |
+| Read notes in unrestricted categories                          | `user:note:read`              | admin, hr, user                |
+| Read notes in restricted categories (**Ban**, **Restriction**) | `user:note:read:hr`           | admin, hr                      |
+| Create a note, including a ban                                 | `user:note:create`            | admin, hr, registration, staff |
+| Edit a note                                                    | `user:note:edit`              | admin, hr, registration, staff |
+| Delete a note; complete an account review                      | `user:note:delete`            | admin, hr                      |
+| Manage categories; read every note                             | `user:note:categories:manage` | admin                          |
 
 </TableFigure>
 
@@ -52,7 +52,7 @@ A role can also grant reading chosen categories: tick them under **User Note Cat
 
 1. Open the person's profile from **Housekeeping › Attendees › User Search** and click the **Notes** tab.
 
-   <Result>A **Notes** card lists their notes, or says *There are no notes for this user.* If you can create notes, an **Add Note** card is beside it.</Result>
+   <Result>A **Notes** card lists their notes, or says _There are no notes for this user._ If you can create notes, an **Add Note** card is beside it.</Result>
 
 2. Choose a **Note Category**, enter the **Text**, and click **Add New Note** (Figure 2.1).
 
@@ -76,18 +76,18 @@ A role can also grant reading chosen categories: tick them under **User Note Cat
 
 </Figure>
 
-3. *(Optional: edit)* Click the note's edit button (<MaterialIcon name="edit" />), change it in the **Edit User Note** dialog, and click **Edit**.
+3. _(Optional: edit)_ Click the note's edit button (<MaterialIcon name="edit" />), change it in the **Edit User Note** dialog, and click **Edit**.
 
    <Result>A **Note has been edited** message appears. The note keeps its convention badge, or lack of one, unless you changed **Apply only to this convention.**</Result>
 
-4. *(Optional: delete)* Click the note's delete button (<MaterialIcon name="delete" />), then **Delete** in the **Delete note?** dialog.
+4. _(Optional: delete)_ Click the note's delete button (<MaterialIcon name="delete" />), then **Delete** in the **Delete note?** dialog.
 
    <Result>The note is gone from the list.</Result>
 
 Ban notes have no edit button: delete the ban, which lifts it, and create a new one.
 
 :::tip[Badges and email subjects]
-The badge shows your **Convention Short Name**. Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+The badge shows your **Convention Short Name**. Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
 :::
 
 ## Search and create notes
@@ -110,7 +110,7 @@ The **User Notes** page lists everyone's notes, including bans on people with no
 
    <Result>A **Note has been added** message appears, and the note is listed.</Result>
 
-Untick **Hide Notes for Other Conventions** to see notes kept to other conventions. Every note except a ban needs a person, or **Create** shows *User must be selected*.
+Untick **Hide Notes for Other Conventions** to see notes kept to other conventions. Every note except a ban needs a person, or **Create** shows _User must be selected_.
 
 ## Ban someone
 
@@ -122,12 +122,12 @@ A ban is a **Ban** note whose **Ban Category** sets what the person can't do (Ta
 
 <TableFigure title="Ban categories">
 
-| Ban Category | Effect |
-| --- | --- |
-| **Registration** | *Registration bans prevent the user from logging in.* The person is logged out at once. At the Cashier UI their page says *Attendee is currently banned from attending the convention.* |
-| **Dealer** | *Dealer bans prevent the user from dealing.* |
-| **Volunteer** | *Volunteer bans prevent the user from creating a volunteer application.* |
-| **Other** | *User is not prevented from performing any actions.* Records a ban ConCat doesn't enforce. |
+| Ban Category     | Effect                                                                                                                                                                                  |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Registration** | _Registration bans prevent the user from logging in._ The person is logged out at once. At the Cashier UI their page says _Attendee is currently banned from attending the convention._ |
+| **Dealer**       | _Dealer bans prevent the user from dealing._                                                                                                                                            |
+| **Volunteer**    | _Volunteer bans prevent the user from creating a volunteer application._                                                                                                                |
+| **Other**        | _User is not prevented from performing any actions._ Records a ban ConCat doesn't enforce.                                                                                              |
 
 </TableFigure>
 
@@ -159,9 +159,9 @@ When someone signs up and their new account goes into review, a *<Sample>ConCat<
 
 When an account or sub-account is created, or a person changes their name, ConCat compares the name with every ban in your organization, in any ban category. A match marks the account **Pending Review**, so someone can check whether it's the banned person signing up again.
 
-A name matches when, ignoring capitals, the first name starts with the same three letters as the ban's and the last name with the same letter. If both have a date of birth, the year and month must match too. So a ban on *<Sample>Alexander Smith</Sample>* flags *<Sample noMarker>Alex Sanders</Sample>*.
+A name matches when, ignoring capitals, the first name starts with the same three letters as the ban's and the last name with the same letter. If both have a date of birth, the year and month must match too. So a ban on _<Sample>Alexander Smith</Sample>_ flags _<Sample noMarker>Alex Sanders</Sample>_.
 
-An account under review can still log in, but the Cashier UI won't issue a badge: *Attendee is currently under review. A badge cannot be issued until this is cleared.*
+An account under review can still log in, but the Cashier UI won't issue a badge: _Attendee is currently under review. A badge cannot be issued until this is cleared._
 
 1. Go to **Housekeeping › Attendees › Dashboard**.
 
@@ -197,11 +197,11 @@ The **Note Categories** tab needs `user:note:categories:manage`, which only *adm
 
    <Result>A **New category has been created.** message appears, and the category is listed.</Result>
 
-4. *(Optional: edit)* Click **Modify** on a category, change it in the **Edit Category** dialog, and click **Submit**.
+4. _(Optional: edit)_ Click **Modify** on a category, change it in the **Edit Category** dialog, and click **Submit**.
 
    <Result>A **Category successfully updated.** message appears. **Category Name** can't be changed after creation.</Result>
 
-5. *(Optional: delete)* Click **Delete** on a category you added. In the **Delete Category** dialog, tick **Delete all notes?** to delete the category's notes as well, then click **Delete**. **Cancel** closes the dialog without deleting.
+5. _(Optional: delete)_ Click **Delete** on a category you added. In the **Delete Category** dialog, tick **Delete all notes?** to delete the category's notes as well, then click **Delete**. **Cancel** closes the dialog without deleting.
 
    <Result>A **Category deleted.** message appears, and the category is no longer listed or offered under **Note Category**.</Result>
 

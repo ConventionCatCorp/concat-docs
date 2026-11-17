@@ -22,33 +22,33 @@ The application is open when **Enable Dealers Module** is on ([Dealer settings, 
 
 1. As an attendee, click **Dealing** under **Applications** in the homepage sidebar.
 
-   <Result>The **Dealer Application** page opens at `/dealer` with the dealer form and *You haven't yet submitted an application this year.*</Result>
+   <Result>The **Dealer Application** page opens at `/dealer` with the dealer form and _You haven't yet submitted an application this year._</Result>
 
 If the dealer can't apply, the page says why (Table 1.1).
 
 <TableFigure title="When a dealer can't apply">
 
-| Situation | The page says |
-| --- | --- |
-| **Enable Dealers Module** is off | *We are not currently accepting applications.* and *Please check back later.* <small>**Dealing** is hidden too, so this shows only at `/dealer`.</small> |
-| No dealer area is enabled | *No dealer areas are currently accepting applications.* and *Please check back later.* |
-| Email address not confirmed | **Email verification required**, with a **Resend verification email** button. |
-| Banned from dealing | *You are currently banned from dealing at the convention.* |
+| Situation                        | The page says                                                                                                                                            |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Enable Dealers Module** is off | _We are not currently accepting applications._ and _Please check back later._ <small>**Dealing** is hidden too, so this shows only at `/dealer`.</small> |
+| No dealer area is enabled        | _No dealer areas are currently accepting applications._ and _Please check back later._                                                                   |
+| Email address not confirmed      | **Email verification required**, with a **Resend verification email** button.                                                                            |
+| Banned from dealing              | _You are currently banned from dealing at the convention._                                                                                               |
 
 </TableFigure>
 
 ## The dealer profile
 
-The first page is your dealer form ([Dealer settings, policy and form](./settings.md), section 4). Dealers who applied at one of your earlier conventions find it filled in, with *We've automatically filled in some of the details from a previous application.*
+The first page is your dealer form ([Dealer settings, policy and form](./settings.md), section 4). Dealers who applied at one of your earlier conventions find it filled in, with _We've automatically filled in some of the details from a previous application._
 
 1. Fill in the form, tick the **Dealer Policy** agreement, and click **Continue** (grayed out until every required agreement is ticked).
 
    <Result>A **Your dealer information has been saved.** message appears, and the space application opens at `/dealer/space`.</Result>
 
-A typed full-name agreement must match the first and last name on the account, or the field shows *Name does not match user profile (<Sample>Alex Smith</Sample>)*.
+A typed full-name agreement must match the first and last name on the account, or the field shows _Name does not match user profile (<Sample>Alex Smith</Sample>)_.
 
 :::tip[Assistant limit and email subjects]
-The number of assistants a dealer can nominate is the table type's **Dealer assistant count limit**. Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+The number of assistants a dealer can nominate is the table type's **Dealer assistant count limit**. Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
 :::
 
 To change details later, the dealer clicks **Edit Dealer** on the space page. The policy agreement stays ticked and can't be unticked.
@@ -57,7 +57,7 @@ To change details later, the dealer clicks **Edit Dealer** on the space page. Th
 
 With one enabled area, the dealer goes straight to its application. With several, each area has a card with the application's status (such as **Pending approval**, **Approved** and **Pending payment**, **Waitlisted**, **Rejected** or **Canceled**) and a button: **Create**, **Select** for an existing application, **Full**, or **CLOSED** (can't be clicked).
 
-1. *(Several areas)* Click **Create** on an area's card.
+1. _(Several areas)_ Click **Create** on an area's card.
 
    <Result>The area's **Space Information** card is shown.</Result>
 
@@ -65,11 +65,11 @@ With one enabled area, the dealer goes straight to its application. With several
 
    <Result>A **Your application has been updated.** message and a **Next Steps** card appear. **Submit** becomes **Update**, with **Delete Application** below it.</Result>
 
-3. *(Optional)* To withdraw a pending application, click **Delete Application**.
+3. _(Optional)_ To withdraw a pending application, click **Delete Application**.
 
    <Result>A **Your dealer application has been deleted.** message appears.</Result>
 
-A **Pending** application can be updated or deleted. Once your team sets another status, the form is grayed out with *The application is <Sample>approved</Sample> and can not be modified.* Full and closed areas show the messages in [Dealer areas and table types](./areas-and-products.md), Table 4.1.
+A **Pending** application can be updated or deleted. Once your team sets another status, the form is grayed out with _The application is <Sample>approved</Sample> and can not be modified._ Full and closed areas show the messages in [Dealer areas and table types](./areas-and-products.md), Table 4.1.
 
 ## Status and paying for the table
 
@@ -77,7 +77,7 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 1. After your team approves the application, open **Dealing** as the dealer.
 
-   <Result>An alert says *Your <Sample>Dealers' Den</Sample> application has been approved and is pending payment.*, with a **Pay for Table** button.</Result>
+   <Result>An alert says _Your <Sample>Dealers' Den</Sample> application has been approved and is pending payment._, with a **Pay for Table** button.</Result>
 
 2. Click **Pay for Table**.
 
@@ -85,7 +85,7 @@ Your team sets the status in Housekeeping ([Dealers](./managment.md), section 4)
 
 3. Pay ([Checkout and payment](../orders/checkout.md)), then open **Dealing** again.
 
-   <Result>A green alert says **Your application has been approved!**, with the table number, such as *Your table assignment for <Sample>Dealers' Den</Sample>* **<Sample noMarker>12</Sample>**, or *The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention.*</Result>
+   <Result>A green alert says **Your application has been approved!**, with the table number, such as _Your table assignment for <Sample>Dealers' Den</Sample>_ **<Sample noMarker>12</Sample>**, or _The Dealer's Den team have not yet assigned you a table. This will be confirmed closer to the convention._</Result>
 
 Once approved, the space page also shows **Seating Preferences** and, if the table type allows assistants, **Manage Assistants**.
 
@@ -97,31 +97,31 @@ From approval, even before payment, if the table type's **Dealer assistant count
 
 1. On the space page, click **Manage Assistants**.
 
-   <Result>The **Add Assistant** card says *You can nominate up to <Sample>2</Sample> other attendees to assist you at the convention.*</Result>
+   <Result>The **Add Assistant** card says _You can nominate up to <Sample>2</Sample> other attendees to assist you at the convention._</Result>
 
 2. Enter the assistant's username in **Assistant Username** and click **Add Assistant**.
 
-   <Result>**Current Assistants** lists them with *Pending Email Confirmation. Please ask your assistant to check their email.*</Result>
+   <Result>**Current Assistants** lists them with _Pending Email Confirmation. Please ask your assistant to check their email._</Result>
 
-3. *(Optional)* If the dealer has sub-accounts, click **Add** next to one in **Your Sub-accounts**.
+3. _(Optional)_ If the dealer has sub-accounts, click **Add** next to one in **Your Sub-accounts**.
 
    <Result>An **Assistant added.** message appears, and the sub-account is **Accepted** without confirming.</Result>
 
-4. *(Optional)* To remove an assistant, click the red bin button next to them.
+4. _(Optional)_ To remove an assistant, click the red bin button next to them.
 
    <Result>An **Assistant removed.** message appears.</Result>
 
-The assistant needs their own account; help under **Assistant Username** says where they find their username. Before approval, `/dealer/assistants` says *As your dealer application has not yet been approved, you can't access this feature.*
+The assistant needs their own account; help under **Assistant Username** says where they find their username. Before approval, `/dealer/assistants` says _As your dealer application has not yet been approved, you can't access this feature._
 
 ## Confirm as an assistant
 
-The assistant gets a *<Sample>ConCat</Sample> - Dealer Assistant Confirmation* email naming the dealer, with a confirmation link.
+The assistant gets a _<Sample>ConCat</Sample> - Dealer Assistant Confirmation_ email naming the dealer, with a confirmation link.
 
 1. Signed in as the assistant, click the link in the email.
 
    <Result>The page says **Confirmed!**, and the dealer's **Current Assistants** shows them as **Accepted**.</Result>
 
-A used or wrong link shows **Invalid Confirmation Code**. Accepted assistants of an approved application get the *dealerAssistant* role.
+A used or wrong link shows **Invalid Confirmation Code**. Accepted assistants of an approved application get the _dealerAssistant_ role.
 
 ## Seating preferences
 
@@ -139,4 +139,4 @@ Dealers who want to sit together exchange dealer IDs. One adds the other, and th
 
    <Result>A **Seating preference request approved!** message appears, and both dealers see the request as **Approved**.</Result>
 
-A dealer removes a request with **Cancel** (sent) or **Decline** (received). Entering their own ID gives *Cannot run action on self.* Your team sees the requests in Housekeeping ([Dealers](./managment.md), section 8). As the **How it Works** card tells dealers, not every request can be honored.
+A dealer removes a request with **Cancel** (sent) or **Decline** (received). Entering their own ID gives _Cannot run action on self._ Your team sees the requests in Housekeeping ([Dealers](./managment.md), section 8). As the **How it Works** card tells dealers, not every request can be honored.

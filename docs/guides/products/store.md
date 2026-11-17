@@ -24,7 +24,7 @@ These settings need `system:settings:update`, which the default *admin* role has
 
    <Result>**Event store settings saved** appears, and attendees see **Event store** in the homepage sidebar.</Result>
 
-2. *(Optional)* To make attendees pick a category before seeing products, turn on **Event Store: Hide 'All Products' Tab** and click **Save**.
+2. _(Optional)_ To make attendees pick a category before seeing products, turn on **Event Store: Hide 'All Products' Tab** and click **Save**.
 
    <Result>**Event store settings saved** appears. This setting can only be turned on while the store is enabled.</Result>
 
@@ -40,19 +40,19 @@ These settings need `system:settings:update`, which the default *admin* role has
 
 <TableFigure title="Which products the store lists">
 
-| A product is listed if | Set in |
-| --- | --- |
-| Its **Product visibility** is **Public**. <small>An **Unlisted** product only opens from its link; a **Hidden** one never does.</small> | The product form ([Products](./products.md), Table 3.1) |
-| Its category isn't hidden. | **Hide Category** ([Products](./products.md), section 1) |
-| It's after **Available From** and before **Available Until**. | The product form |
-| The attendee has a role on the **Product Role Whitelist**, if there is one, and none on the **Product Role Blacklist**. | The product form |
-| It isn't deleted. | **Product Information** ([Products](./products.md), section 6) |
+| A product is listed if                                                                                                                  | Set in                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Its **Product visibility** is **Public**. <small>An **Unlisted** product only opens from its link; a **Hidden** one never does.</small> | The product form ([Products](./products.md), Table 3.1)        |
+| Its category isn't hidden.                                                                                                              | **Hide Category** ([Products](./products.md), section 1)       |
+| It's after **Available From** and before **Available Until**.                                                                           | The product form                                               |
+| The attendee has a role on the **Product Role Whitelist**, if there is one, and none on the **Product Role Blacklist**.                 | The product form                                               |
+| It isn't deleted.                                                                                                                       | **Product Information** ([Products](./products.md), section 6) |
 
 </TableFigure>
 
 A product with an age limit is still listed, with an **Age Restricted Product** badge.
 
-With nothing to list, the store says *There are no items available.* With **All Products** hidden, it first shows *Welcome to the <Sample>Star26</Sample> Store!* and asks attendees to browse the categories.
+With nothing to list, the store says _There are no items available._ With **All Products** hidden, it first shows _Welcome to the <Sample>Star26</Sample> Store!_ and asks attendees to browse the categories.
 
 :::tip[Where the values come from]
 The welcome message shows your convention's short name, and the age message in Table 4.1 your convention's start date.
@@ -72,17 +72,17 @@ A product in a Gatekeeping silo first asks attendees to enter a draw with **Ente
 
 <TableFigure title="Messages on a product's page">
 
-| Message | Shown when |
-| --- | --- |
-| **Age Restricted Product** badge. Its help says, for example, *You must be at least <Sample>18</Sample> on <Sample noMarker>10/1/2026, 12:00:00 AM PDT</Sample> to purchase this product.* | **Minimum Purchase Age** or **Maximum Purchase Age** is set. <small>Someone outside the range can't add it to their cart.</small> |
-| *To purchase this product, you must have already purchased one of the following:<Sample>Sponsor</Sample>.* | **Restrict product to grants** is set and the attendee has none of them. **Add to cart** is disabled. |
-| *You are eligible to purchase this product because you have purchased the following product: <Sample>Sponsor</Sample>.<Sample noMarker>Sponsor</Sample>.* | **Restrict product to grants** is set and the attendee has one of them. |
-| *There is a limit of <Sample>4</Sample> per customer for this product.* | **Maximum purchases per user** is set. <small>**Quantity** can't go above what's left for them.</small> |
-| *You have already reached the purchase limit for this product.* | The attendee has bought the maximum. **Add to cart** is disabled. |
-| *This product cannot be combined with: <Sample>Day Pass</Sample>* | The product excludes other products. |
-| *You cannot purchase this product because you have already purchased, or have in your cart, the following product: <Sample>Day Pass</Sample>.* | The attendee has an excluded product. **Add to cart** is disabled. |
-| *This is a Ticketed Product.* | The product is ticketed; see [Ticketed products](./tickets.md). |
-| *You've already purchased one of this product.* | The attendee already has this ticket. |
+| Message                                                                                                                                                                                    | Shown when                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Age Restricted Product** badge. Its help says, for example, _You must be at least <Sample>18</Sample> on <Sample noMarker>10/1/2026, 12:00:00 AM PDT</Sample> to purchase this product._ | **Minimum Purchase Age** or **Maximum Purchase Age** is set. <small>Someone outside the range can't add it to their cart.</small> |
+| _To purchase this product, you must have already purchased one of the following:<Sample>Sponsor</Sample>._                                                                                 | **Restrict product to grants** is set and the attendee has none of them. **Add to cart** is disabled.                             |
+| _You are eligible to purchase this product because you have purchased the following product: <Sample>Sponsor</Sample>.<Sample noMarker>Sponsor</Sample>._                                  | **Restrict product to grants** is set and the attendee has one of them.                                                           |
+| _There is a limit of <Sample>4</Sample> per customer for this product._                                                                                                                    | **Maximum purchases per user** is set. <small>**Quantity** can't go above what's left for them.</small>                           |
+| _You have already reached the purchase limit for this product._                                                                                                                            | The attendee has bought the maximum. **Add to cart** is disabled.                                                                 |
+| _This product cannot be combined with: <Sample>Day Pass</Sample>_                                                                                                                          | The product excludes other products.                                                                                              |
+| _You cannot purchase this product because you have already purchased, or have in your cart, the following product: <Sample>Day Pass</Sample>._                                             | The attendee has an excluded product. **Add to cart** is disabled.                                                                |
+| _This is a Ticketed Product._                                                                                                                                                              | The product is ticketed; see [Ticketed products](./tickets.md).                                                                   |
+| _You've already purchased one of this product._                                                                                                                                            | The attendee already has this ticket.                                                                                             |
 
 </TableFigure>
 

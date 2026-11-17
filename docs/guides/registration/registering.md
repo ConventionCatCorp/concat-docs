@@ -28,7 +28,7 @@ An attendee can register when:
 
 1. As an attendee, open **Attendance** in the homepage sidebar.
 
-   <Result>A *Ready to attend <Sample>Star26</Sample>?* card offers **Start registration** and **Update personal info**. Under **Your registration**, the attendee's card shows **Not registered**.</Result>
+   <Result>A _Ready to attend <Sample>Star26</Sample>?_ card offers **Start registration** and **Update personal info**. Under **Your registration**, the attendee's card shows **Not registered**.</Result>
 
 2. Click **Start registration**.
 
@@ -48,7 +48,7 @@ Each tier the attendee may buy is a card with a **Select** button. A tier is hid
 
    <Result>The **Additional Information** step opens, with the tier in a bar at the top and a **Change** button.</Result>
 
-2. *(Optional)* Click **Change**.
+2. _(Optional)_ Click **Change**.
 
    <Result>**Registration Type** opens again; the chosen tier shows **Continue** instead of **Select**.</Result>
 
@@ -56,13 +56,13 @@ When attendees select a tier for themselves, one is held in their cart so it can
 
 <TableFigure title="Messages on the Registration Type step">
 
-| Message or button | Why |
-| --- | --- |
-| **Sold Out!** (in place of **Select**) | The tier's **Limit Available Stock** is reached. |
-| **Closed Raffle** (in place of **Select**) | A silo gates the tier and no longer takes entries. See [Gatekeeping](./raffle.md). |
-| *Sorry, that item went out of stock while you were making a selection. Try a different tier.* | The last one sold while the attendee was choosing. |
-| *No products available for this age range. Please contact the event organizers for more information.* | No tier allows the attendee's age, roles or grants. |
-| *You are currently assigned a special attendance type which cannot be changed. Please contact the registration team for more information.* | Staff gave the attendee a tier that isn't **Public**; only that tier is shown. |
+| Message or button                                                                                                                          | Why                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| **Sold Out!** (in place of **Select**)                                                                                                     | The tier's **Limit Available Stock** is reached.                                   |
+| **Closed Raffle** (in place of **Select**)                                                                                                 | A silo gates the tier and no longer takes entries. See [Gatekeeping](./raffle.md). |
+| _Sorry, that item went out of stock while you were making a selection. Try a different tier._                                              | The last one sold while the attendee was choosing.                                 |
+| _No products available for this age range. Please contact the event organizers for more information._                                      | No tier allows the attendee's age, roles or grants.                                |
+| _You are currently assigned a special attendance type which cannot be changed. Please contact the registration team for more information._ | Staff gave the attendee a tier that isn't **Public**; only that tier is shown.     |
 
 </TableFigure>
 
@@ -70,13 +70,13 @@ When attendees select a tier for themselves, one is held in their cart so it can
 
 **Additional Information** shows your form from the [Registration form editor](./form-editor.md), typically a **Badge Name**, the tier's options, registration flags and an emergency contact.
 
-1. Fill in the form. *(Optional)* Click **Randomize**, if your form has it, for a random badge name and species.
+1. Fill in the form. _(Optional)_ Click **Randomize**, if your form has it, for a random badge name and species.
 
    <Result>Each form section is a card. Sections with nothing to show, such as **Other options** for a tier with none, are hidden.</Result>
 
 2. Click **Register** at the bottom of the form.
 
-   <Result>The **Review** step opens with the result. If something is missing, a message names it, such as *Emergency Contact Info is required.*</Result>
+   <Result>The **Review** step opens with the result. If something is missing, a message names it, such as _Emergency Contact Info is required._</Result>
 
 An emergency contact is required when the form's **Emergency contacts** element is set as required, and always for minors, PII-free children and, if your volunteer settings ask for it, volunteers.
 
@@ -84,12 +84,12 @@ An emergency contact is required when the form's **Emergency contacts** element 
 
 <TableFigure title="Results of submitting the registration form">
 
-| Title | When | Buttons |
-| --- | --- | --- |
-| **Product added to cart!** | The registration needs paying for. | **View cart**, **Go to dashboard** |
-| **Order completed!** | Nothing was due, so the order completed at once. | **View transaction history** |
-| **Registration Saved!** | A paid registration was changed, keeping its tier. | **View cart**, **Go to dashboard** |
-| Your silo's entry title, *Entered into Raffle Draw!* by default | The tier is gated: the attendee enters the silo and nothing goes in the cart. See [Gatekeeping](./raffle.md). | **View cart**, **Go to dashboard** |
+| Title                                                           | When                                                                                                          | Buttons                            |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| **Product added to cart!**                                      | The registration needs paying for.                                                                            | **View cart**, **Go to dashboard** |
+| **Order completed!**                                            | Nothing was due, so the order completed at once.                                                              | **View transaction history**       |
+| **Registration Saved!**                                         | A paid registration was changed, keeping its tier.                                                            | **View cart**, **Go to dashboard** |
+| Your silo's entry title, _Entered into Raffle Draw!_ by default | The tier is gated: the attendee enters the silo and nothing goes in the cart. See [Gatekeeping](./raffle.md). | **View cart**, **Go to dashboard** |
 
 </TableFigure>
 
@@ -97,7 +97,7 @@ Public paid addons for the tier are offered in a **Product addons** card below t
 
 1. On the result, click **Go to dashboard**. After **Order completed!**, open **Attendance** in the homepage sidebar instead.
 
-   <Result>**Attendance** opens. The status card says **Complete your registration** (or *You're registered for <Sample>Star26</Sample>!*, if nothing was due); the attendee's card shows the tier, **Unpaid** or **Registered**, and the badge name, such as *<Sample noMarker>Nova</Sample>*.</Result>
+   <Result>**Attendance** opens. The status card says **Complete your registration** (or _You're registered for <Sample>Star26</Sample>!_, if nothing was due); the attendee's card shows the tier, **Unpaid** or **Registered**, and the badge name, such as _<Sample noMarker>Nova</Sample>_.</Result>
 
 ## Pay
 
@@ -107,7 +107,7 @@ Public paid addons for the tier are offered in a **Product addons** card below t
 
 2. Pay for the order ([Checkout and payment](../orders/checkout.md)).
 
-   <Result>The status card says *You're registered for <Sample>Star26</Sample>!*, and the attendee's card shows **Registered**.</Result>
+   <Result>The status card says _You're registered for <Sample>Star26</Sample>!_, and the attendee's card shows **Registered**.</Result>
 
 With **Cart Timeout** set in Registration settings, an unpaid registration is held only that long, and the status card counts down the time left.
 
@@ -127,11 +127,11 @@ For a paid registration, **Change** lists only the paid tier (with **Continue**)
 
    <Result>**Review** shows **Registration Saved!** if the registration was paid and the tier didn't change.</Result>
 
-3. *(Upgrade)* Click **Modify**, **Change**, **Select** on the higher tier, then **Update Registration**.
+3. _(Upgrade)_ Click **Modify**, **Change**, **Select** on the higher tier, then **Update Registration**.
 
    <Result>**Product added to cart!** appears. The cart's **Order Summary** has a line such as **Discount: Upgrade Discount (REG-<Sample>1-13</Sample>)** for what was already paid (none if the old tier was free), so the attendee pays the difference.</Result>
 
-4. *(Undo an upgrade before paying)* Click **Modify**, **Change**, **Cancel Upgrade** on the paid tier, then **Update Registration**.
+4. _(Undo an upgrade before paying)_ Click **Modify**, **Change**, **Cancel Upgrade** on the paid tier, then **Update Registration**.
 
    <Result>The registration is back on the paid tier.</Result>
 
@@ -145,13 +145,13 @@ In the card's menu (the arrow next to **Modify**), **Delete registration** delet
 
 1. In the **General** card of **Housekeeping › Registration › Settings**, untick **Open Registration** and click **Save**. Then open **Attendance** as an attendee.
 
-   <Result>The card says *Registration for <Sample>Starfall Con 2026</Sample> is closed.*, with an **Update personal info** button. No registration cards are shown.</Result>
+   <Result>The card says _Registration for <Sample>Starfall Con 2026</Sample> is closed._, with an **Update personal info** button. No registration cards are shown.</Result>
 
 2. As an attendee, go to the registration address directly (ending in `/event/register/new`).
 
-   <Result>The page says *Registration for the convention is currently closed.*</Result>
+   <Result>The page says _Registration for the convention is currently closed._</Result>
 
-If registration is open but no tier can be offered, the wizard says *There are no products available for registration.*, and points to your Event Store if it's on and has public products.
+If registration is open but no tier can be offered, the wizard says _There are no products available for registration._, and points to your Event Store if it's on and has public products.
 
 :::caution[Watch out]
 While registration is closed, attendees can't see or change their registrations on **Attendance**, and the attendee notice is hidden. Close registration only when you mean it.

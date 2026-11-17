@@ -22,7 +22,7 @@ The store is on in a new convention: attendees see **Event store** in the homepa
 
 ## Categories
 
-Every store product belongs to a category, such as *<Sample>Merchandise</Sample>* or *<Sample noMarker>Charity</Sample>*.
+Every store product belongs to a category, such as _<Sample>Merchandise</Sample>_ or _<Sample noMarker>Charity</Sample>_.
 
 1. Go to **Housekeeping › Store Management › Store Products**.
 
@@ -132,7 +132,7 @@ A surcharge is a fee or tax added to the price. Create it once, then assign it t
 
    <Result>The surcharge is listed in the product's **Surcharges** card.</Result>
 
-4. *(Optional: a whole category)* On the category's page, click **Category Surcharges**, then **Assign Category Level Surcharge**. Select the surcharge in **Surcharge Search** and click **Assign Surcharges**.
+4. _(Optional: a whole category)_ On the category's page, click **Category Surcharges**, then **Assign Category Level Surcharge**. Select the surcharge in **Surcharge Search** and click **Assign Surcharges**.
 
    <Result>The surcharge is listed in the **Category Surcharges** dialog and applies to every product in the category.</Result>
 
@@ -148,18 +148,19 @@ A voucher is a code worth an amount of money, such as a comped registration or a
 
    <Result>A **New voucher has been created!** message appears, and the voucher's page opens.</Result>
 
-3. *(Optional)* To give the voucher to particular attendees, click **Issue** on its page, choose the **User(s)** and click **Issue Voucher**.
+3. _(Optional)_ To give the voucher to particular attendees, click **Issue** on its page, choose the **User(s)** and click **Issue Voucher**.
 
-   <Result>A message says *Voucher #<Sample>3</Sample> has been issued to <Sample noMarker>2</Sample> user(s).*</Result>
+   <Result>A message says _Voucher #<Sample>3</Sample> has been issued to <Sample noMarker>2</Sample> user(s)._</Result>
 
 :::tip[Restricting and issuing vouchers]
 **Restrict voucher to products** limits what the voucher pays for, such as only badge products. Issuing adds the voucher to each person's current order; **Attempt to fulfill associated orders automatically.** also completes that order if the voucher leaves nothing to pay.
 :::
 
 :::tip[In more detail]
+
 - [Products](../products/products.md), [Product Images](../products/productimages.md), [Discounts](../products/discounts.md) and [Surcharges](../products/surcharges.md)
 - [Vouchers](../products/vouchers.md)
 - [What attendees see in the store](../products/store.md)
-:::
+  :::
 
 Next: [Users and access](./users-and-access.md), giving your team accounts and access.

@@ -28,12 +28,12 @@ Each discount in the **Discounts** card shows its price and dates, a status badg
 
 <TableFigure title="Discount statuses">
 
-| Badge | Means |
-| --- | --- |
-| **Not yet active** | **Available From** is still to come. |
-| **Active** | The discount applies now. |
-| **Expired** | **Available Until** has passed. |
-| **Deleted** | Deleted (section 4). Stays listed, without edit or delete buttons. |
+| Badge              | Means                                                              |
+| ------------------ | ------------------------------------------------------------------ |
+| **Not yet active** | **Available From** is still to come.                               |
+| **Active**         | The discount applies now.                                          |
+| **Expired**        | **Available Until** has passed.                                    |
+| **Deleted**        | Deleted (section 4). Stays listed, without edit or delete buttons. |
 
 </TableFigure>
 
@@ -47,9 +47,9 @@ The app shows each discount's dates in your convention's time zone.
 
    <Result>A discount form opens, showing the **Current Price**.</Result>
 
-2. Enter the **Discounted Price**, **Available From** and **Available Until**. *(Optional)* Select roles in **Limit Discount to Role(s)** and add a **Name**. Click **Create Discount Price**.
+2. Enter the **Discounted Price**, **Available From** and **Available Until**. _(Optional)_ Select roles in **Limit Discount to Role(s)** and add a **Name**. Click **Create Discount Price**.
 
-   <Result>The discount is listed with its price and dates, such as *Discounted to <Sample>$35.00</Sample> from <Sample noMarker>8/1/2026, 12:00:00 AM PDT</Sample> until <Sample noMarker>9/1/2026, 12:00:00 AM PDT</Sample>*, and its status badge.</Result>
+   <Result>The discount is listed with its price and dates, such as _Discounted to <Sample>$35.00</Sample> from <Sample noMarker>8/1/2026, 12:00:00 AM PDT</Sample> until <Sample noMarker>9/1/2026, 12:00:00 AM PDT</Sample>_, and its status badge.</Result>
 
 :::caution[Watch out]
 **Available From** and **Available Until** both start at the same date: today, or the product's own **Available From** if that's later. Move **Available Until** to the end of your offer, or the discount is **Expired** as soon as you save it.

@@ -32,13 +32,13 @@ The Cashier UI prints each badge with the convention's default design, unless th
 
    <Result>That design's star is filled; the others are empty.</Result>
 
-3. *(Optional)* To copy a design, click its copy button. In the dialog titled with the design's name, such as **Duplicate: <Sample>Attendee Badge</Sample>**, enter a **Name** and click **Duplicate**.
+3. _(Optional)_ To copy a design, click its copy button. In the dialog titled with the design's name, such as **Duplicate: <Sample>Attendee Badge</Sample>**, enter a **Name** and click **Duplicate**.
 
    <Result>The copy is listed under its new name.</Result>
 
-4. *(Optional)* To delete a design, click its delete button (the bin), then **Delete** in the dialog.
+4. _(Optional)_ To delete a design, click its delete button (the bin), then **Delete** in the dialog.
 
-   <Result>The dialog asks to confirm with the design's name, such as *Are you sure you want to delete <Sample>Attendee Badge</Sample>?* After you confirm, the design is no longer listed.</Result>
+   <Result>The dialog asks to confirm with the design's name, such as _Are you sure you want to delete <Sample>Attendee Badge</Sample>?_ After you confirm, the design is no longer listed.</Result>
 
 The history button opens the design's entries in **System › Audit Logs**.
 
@@ -68,14 +68,14 @@ Every field in the property groups needs a value, placeholders included. If one 
 
 <TableFigure title="Property groups">
 
-| Group | Shown for | Fields |
-| --- | --- | --- |
-| **Root** | The root node | **Display Name**; **Page break** <small>Uses the printer's own page break between labels.</small>; **Y spacing**, **X Start**, **Y Start** <small>Only without **Page break**.</small> |
-| **Pre-Printed Canvas** | The root node | Section 7 |
-| **Details** | Every element | **X**, **Y**, **Width**, **Height**, in inches |
-| **Text**, **Font**, **Text Autoscale** | Text elements | Section 4 |
-| **Image** | Image elements | Section 5 |
-| **Node** | Nodes | Section 5 |
+| Group                                  | Shown for      | Fields                                                                                                                                                                                 |
+| -------------------------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Root**                               | The root node  | **Display Name**; **Page break** <small>Uses the printer's own page break between labels.</small>; **Y spacing**, **X Start**, **Y Start** <small>Only without **Page break**.</small> |
+| **Pre-Printed Canvas**                 | The root node  | Section 7                                                                                                                                                                              |
+| **Details**                            | Every element  | **X**, **Y**, **Width**, **Height**, in inches                                                                                                                                         |
+| **Text**, **Font**, **Text Autoscale** | Text elements  | Section 4                                                                                                                                                                              |
+| **Image**                              | Image elements | Section 5                                                                                                                                                                              |
+| **Node**                               | Nodes          | Section 5                                                                                                                                                                              |
 
 </TableFigure>
 
@@ -106,20 +106,20 @@ A text element shows a fixed **Placeholder**, or an attendee value chosen with *
 
 <TableFigure title="Variable types">
 
-| Variable Type | Shows |
-| --- | --- |
-| `registration` | From the registration: `attendanceType` (the tier), `badgeArt`, `badgeId`, `badgeName` or `species` |
-| `user` | From the account: `id`, `username`, `email`, `firstName`, `lastName`, `preferredName`, `bornAt`, `addressCity`, `addressCountry`, `addressState` or `addressCityState` |
-| `option` | The attendee's answer to a product option, by its number in **Option Id** |
-| `special` | Status words, such as the tier's name, *Dealer*, *Staff*, *Minor* or *Guardian*, ticked under **Conditionals** |
-| `placeholder` | The **Placeholder** text, the same on every badge |
+| Variable Type  | Shows                                                                                                                                                                  |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `registration` | From the registration: `attendanceType` (the tier), `badgeArt`, `badgeId`, `badgeName` or `species`                                                                    |
+| `user`         | From the account: `id`, `username`, `email`, `firstName`, `lastName`, `preferredName`, `bornAt`, `addressCity`, `addressCountry`, `addressState` or `addressCityState` |
+| `option`       | The attendee's answer to a product option, by its number in **Option Id**                                                                                              |
+| `special`      | Status words, such as the tier's name, _Dealer_, _Staff_, _Minor_ or _Guardian_, ticked under **Conditionals**                                                         |
+| `placeholder`  | The **Placeholder** text, the same on every badge                                                                                                                      |
 
 </TableFigure>
 
 The **Text** group also has **Transform** (such as `uppercase`), **Font Weight**, **Text Color** and **Prefix padding**, which pads a number with a character to a set length, for example `00042`<Sample />. The **Font** group sets **Font Size** (inches), **Horizontal Binding**, **Vertical Binding**, **Text Align** and the **Font**: `Krona One`, `Armata`, `datamatrix` (a 2D barcode), or `custom` with a **Custom Font** name. With **Enable Autoscale** ticked, **Text Autoscale** fits text to its box, between **Grow Min** and **Grow Max**.
 
 :::tip[Badge ID or user ID]
-Use `badgeId` only if staff know it isn't the user ID: it prints with a B in front, such as *B<Sample>101</Sample>*. The editor warns you when you choose it.
+Use `badgeId` only if staff know it isn't the user ID: it prints with a B in front, such as _B<Sample>101</Sample>_. The editor warns you when you choose it.
 :::
 
 ## Images and nodes

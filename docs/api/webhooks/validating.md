@@ -11,14 +11,14 @@ Each webhook request carries a JWT, signed by ConCat, in its `authorization` hea
 
 The JWT header names the signing key in `kid`, and the algorithm in `alg`. The payload contains these claims:
 
-| Claim | Description |
-| --- | --- |
-| `int` | The base64-encoded SHA-256 hash of the **entire request body**, exactly as sent: the JSON text of `{"data": …, "event": …}`. |
+| Claim | Description                                                                                                                                           |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `int` | The base64-encoded SHA-256 hash of the **entire request body**, exactly as sent: the JSON text of `{"data": …, "event": …}`.                          |
 | `aud` | The **host** of the webhook's URL: the host name, plus the port if the URL has one. For `https://hooks.example.com/concat`, it's `hooks.example.com`. |
-| `iss` | The domain ConCat is configured with. It's the same on every request, so note it from a test event and check it. |
-| `sub` | Always `webhook`. |
-| `iat` | When the JWT was created. |
-| `exp` | When the JWT expires: 120 seconds after it was created. |
+| `iss` | The domain ConCat is configured with. It's the same on every request, so note it from a test event and check it.                                      |
+| `sub` | Always `webhook`.                                                                                                                                     |
+| `iat` | When the JWT was created.                                                                                                                             |
+| `exp` | When the JWT expires: 120 seconds after it was created.                                                                                               |
 
 ## The signing key
 

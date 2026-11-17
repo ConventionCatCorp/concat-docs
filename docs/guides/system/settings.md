@@ -26,18 +26,18 @@ The **Convention** tab applies to the convention you're signed in to; some other
 
 <TableFigure title="The System Settings tabs">
 
-| Tab | What it holds | Covered in |
-| --- | --- | --- |
-| **Convention** | Logo, event info, venue, dates, store, user options, maintenance mode. | Sections 2 to 5 |
-| **Terms** | The policies attendees agree to. | [Terms and policies](./terms.md) |
-| **Links** | Extra links in the attendee sidebar. | Section 6 |
-| **Contact** | Mailbox names that registration, HR and dealer email comes from. | [Sending domain, senders and contact addresses](../templates/email-settings.md) |
-| **Platform Info** | ConCat's fees, read-only. | Section 7 |
-| **Conventions** | Your organization's conventions, and next year's. | [Conventions and next year](./conventions.md) |
-| **Payment Gateways** | Stripe Connect and PagSeguro. | [Payment gateways](./payments.md) |
-| **Hotels** | Hotel reservations. <small>Only if ConCat has turned hotels on and you have `hotel:manage`.</small> | Not covered here |
-| **Email Settings** | Sending domain, mass-email senders, email templates. <small>Needs `email:templates`.</small> | [Sending domain, senders and contact addresses](../templates/email-settings.md) and [Email Template Overrides](../templates/templates.md) |
-| **Note Categories** | Note categories for attendee profiles. <small>Needs `user:note:categories:manage`.</small> | [User Notes](../usernotes/usernotes.md) |
+| Tab                  | What it holds                                                                                       | Covered in                                                                                                                                |
+| -------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Convention**       | Logo, event info, venue, dates, store, user options, maintenance mode.                              | Sections 2 to 5                                                                                                                           |
+| **Terms**            | The policies attendees agree to.                                                                    | [Terms and policies](./terms.md)                                                                                                          |
+| **Links**            | Extra links in the attendee sidebar.                                                                | Section 6                                                                                                                                 |
+| **Contact**          | Mailbox names that registration, HR and dealer email comes from.                                    | [Sending domain, senders and contact addresses](../templates/email-settings.md)                                                           |
+| **Platform Info**    | ConCat's fees, read-only.                                                                           | Section 7                                                                                                                                 |
+| **Conventions**      | Your organization's conventions, and next year's.                                                   | [Conventions and next year](./conventions.md)                                                                                             |
+| **Payment Gateways** | Stripe Connect and PagSeguro.                                                                       | [Payment gateways](./payments.md)                                                                                                         |
+| **Hotels**           | Hotel reservations. <small>Only if ConCat has turned hotels on and you have `hotel:manage`.</small> | Not covered here                                                                                                                          |
+| **Email Settings**   | Sending domain, mass-email senders, email templates. <small>Needs `email:templates`.</small>        | [Sending domain, senders and contact addresses](../templates/email-settings.md) and [Email Template Overrides](../templates/templates.md) |
+| **Note Categories**  | Note categories for attendee profiles. <small>Needs `user:note:categories:manage`.</small>          | [User Notes](../usernotes/usernotes.md)                                                                                                   |
 
 </TableFigure>
 
@@ -55,14 +55,14 @@ Each section of the **Convention** tab has its own **Save** button, which saves 
 
 <TableFigure title="Event info fields">
 
-| Field | What it holds |
-| --- | --- |
-| **Convention Long Type** | Your event's full name, at least 6 characters. <small>It heads the attendee sidebar.</small> |
-| **Convention Short Name** | At most 6 characters. |
-| **Notification Prefix** | The prefix on notifications from this convention. |
-| **Convention Legal Name** | The legal name of the organization running the event. |
-| **Convention Legal Type** | Its legal entity type, such as *501(c)7 Not-For-Profit, Ltd., LLP, PLC*. <small>Add a registered charity number if you have one.</small> |
-| **Marketing URL** | Your event's website, shown at the bottom of emails. |
+| Field                     | What it holds                                                                                                                            |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Convention Long Type**  | Your event's full name, at least 6 characters. <small>It heads the attendee sidebar.</small>                                             |
+| **Convention Short Name** | At most 6 characters.                                                                                                                    |
+| **Notification Prefix**   | The prefix on notifications from this convention.                                                                                        |
+| **Convention Legal Name** | The legal name of the organization running the event.                                                                                    |
+| **Convention Legal Type** | Its legal entity type, such as _501(c)7 Not-For-Profit, Ltd., LLP, PLC_. <small>Add a registered charity number if you have one.</small> |
+| **Marketing URL**         | Your event's website, shown at the bottom of emails.                                                                                     |
 
 </TableFigure>
 
@@ -82,13 +82,13 @@ Each section of the **Convention** tab has its own **Save** button, which saves 
 
 <TableFigure title="Event store and Users options">
 
-| Option | What it does |
-| --- | --- |
-| **Enable Event Store** | Shows **Event store** in the attendee sidebar. <small>Products stay in Housekeeping while it's off.</small> |
-| **Event Store: Hide 'All Products' Tab** | Hides the store's *All Products* tab. <small>Only while the store is enabled.</small> |
-| **Require e-mail confirmation before login.** | Attendees must confirm their email to sign in; unconfirmed users get no further email. |
-| **Show 'Returning Attendee' badge on the user profile.** | Marks people who attended the year before. |
-| **Enable Attendees to Edit Order Options** | Attendees can change option values on orders that aren't registrations. |
+| Option                                                   | What it does                                                                                                |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Enable Event Store**                                   | Shows **Event store** in the attendee sidebar. <small>Products stay in Housekeeping while it's off.</small> |
+| **Event Store: Hide 'All Products' Tab**                 | Hides the store's _All Products_ tab. <small>Only while the store is enabled.</small>                       |
+| **Require e-mail confirmation before login.**            | Attendees must confirm their email to sign in; unconfirmed users get no further email.                      |
+| **Show 'Returning Attendee' badge on the user profile.** | Marks people who attended the year before.                                                                  |
+| **Enable Attendees to Edit Order Options**               | Attendees can change option values on orders that aren't registrations.                                     |
 
 </TableFigure>
 
@@ -116,7 +116,7 @@ If no one in your organization has `system:maintenance`, turning maintenance mod
 
    <Result>A **Danger zone settings saved** message appears, and the login page shows the sign-in form again.</Result>
 
-4. *(Optional)* To change rate limiting, tick or untick **Enable rate limit**, in the same section, and click **Save**.
+4. _(Optional)_ To change rate limiting, tick or untick **Enable rate limit**, in the same section, and click **Save**.
 
    <Result>A **Danger zone settings saved** message appears, and **Enable rate limit** keeps its new value after you reload the page.</Result>
 
@@ -128,13 +128,13 @@ If no one in your organization has `system:maintenance`, turning maintenance mod
 Needs `staff:admin:update`, `pii:admin:read`, `pii:admin:delete` and `system:settings:update`. The default **admin** role has all four.
 </Sidenote>
 
-Attendees who don't want their details kept can choose the *nukeme* registration flag. After the convention ends, staff can ask ConCat to clear those accounts' personal information (PII), in [Registration flags](../registration/flags.md) or when creating next year's convention ([Conventions and next year](./conventions.md)). The clear runs one day after the request.
+Attendees who don't want their details kept can choose the _nukeme_ registration flag. After the convention ends, staff can ask ConCat to clear those accounts' personal information (PII), in [Registration flags](../registration/flags.md) or when creating next year's convention ([Conventions and next year](./conventions.md)). The clear runs one day after the request.
 
 While a clear is pending, a red banner on the **Convention** tab shows its date.
 
 1. In the red banner, click **Cancel Request**.
 
-   <Result>A **Cancel Request** dialog warns *This cannot be undone, and a new request will need to be made in order to clear PII.*</Result>
+   <Result>A **Cancel Request** dialog warns _This cannot be undone, and a new request will need to be made in order to clear PII._</Result>
 
 2. Click **Confirm Cancellation**.
 
@@ -146,15 +146,15 @@ Menu links add your own entries, such as a schedule or survey, to signed-in atte
 
 <TableFigure title="Menu link fields">
 
-| Field | What it does |
-| --- | --- |
-| **Name** | The text shown in the sidebar. |
-| **URL** | Where the link goes. <small>`{{user.id}}` and `{{user.username}}` are replaced with the attendee's ID and username.</small> |
-| **Icon** | A Material icon name, such as `event`. <small>**Icon References** opens the list.</small> |
-| **Order** | Sorts links of the same type, lowest first. |
-| **Type** | Where the link appears: **Application** (under *Applications*), your convention's name, such as **<Sample>Starfall Con 2026</Sample>** (under it, after *Attendance*), or **Event Store** (under *Event store*). |
-| **Open in a new tab** | Opens the link in a new browser tab. |
-| **Only show to users with a paid registration** | Hides the link until the attendee has paid for a registration. |
+| Field                                           | What it does                                                                                                                                                                                                     |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**                                        | The text shown in the sidebar.                                                                                                                                                                                   |
+| **URL**                                         | Where the link goes. <small>`{{user.id}}` and `{{user.username}}` are replaced with the attendee's ID and username.</small>                                                                                      |
+| **Icon**                                        | A Material icon name, such as `event`. <small>**Icon References** opens the list.</small>                                                                                                                        |
+| **Order**                                       | Sorts links of the same type, lowest first.                                                                                                                                                                      |
+| **Type**                                        | Where the link appears: **Application** (under _Applications_), your convention's name, such as **<Sample>Starfall Con 2026</Sample>** (under it, after _Attendance_), or **Event Store** (under _Event store_). |
+| **Open in a new tab**                           | Opens the link in a new browser tab.                                                                                                                                                                             |
+| **Only show to users with a paid registration** | Hides the link until the attendee has paid for a registration.                                                                                                                                                   |
 
 </TableFigure>
 
@@ -174,11 +174,11 @@ The **Type** list shows your convention's name, from **Convention Long Type** un
 
    <Result>The link appears with its icon, under the heading set by **Type**.</Result>
 
-4. *(Optional)* To change a link, click its blue pencil button, edit the **Edit Entry** dialog and click **Save**.
+4. _(Optional)_ To change a link, click its blue pencil button, edit the **Edit Entry** dialog and click **Save**.
 
    <Result>An **Item edited** message appears with the new values in the table.</Result>
 
-5. *(Optional)* To remove a link, click its red bin button, then **Delete** in the **Delete entry** dialog.
+5. _(Optional)_ To remove a link, click its red bin button, then **Delete** in the **Delete entry** dialog.
 
    <Result>An **Item deleted** message appears; the link is gone from the table and sidebar.</Result>
 

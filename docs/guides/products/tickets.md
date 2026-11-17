@@ -20,7 +20,7 @@ A ticket group is one entry slot, such as *<Sample>Saturday 2 pm</Sample>*. It h
 
 A ticketed product is a store product with one or more ticket groups.
 
-- **One per person:** there's no **Quantity** field, and once an attendee owns a ticket the page says *You've already purchased one of this product.*
+- **One per person:** there's no **Quantity** field, and once an attendee owns a ticket the page says _You've already purchased one of this product._
 - **No choice of slot:** when an order is paid, the buyer gets a place in the group with the earliest **Valid From** that still has places.
 - **Places:** once every group is full, the product can't be bought and is taken out of unpaid carts. If the product also has limited stock, the groups' places must add up to the stock left.
 - **The ticket:** a QR code tied to the attendee, the product and the group. It's emailed, shown on the attendee's dashboard, and printable.
@@ -33,11 +33,11 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
 
 1. As an attendee, open the ticketed product in the event store (see [What attendees see in the store](./store.md)).
 
-   <Result>The page says *This is a Ticketed Product.* and has no **Quantity** field.</Result>
+   <Result>The page says _This is a Ticketed Product._ and has no **Quantity** field.</Result>
 
 2. Buy the product and complete checkout.
 
-   <Result>An email titled *<Sample>ConCat</Sample> - Your Event Ticket for <Sample noMarker>Photo Shoot</Sample>* arrives. It shows the ticket's barcode and **Ticket Group**.</Result>
+   <Result>An email titled _<Sample>ConCat</Sample> - Your Event Ticket for <Sample noMarker>Photo Shoot</Sample>_ arrives. It shows the ticket's barcode and **Ticket Group**.</Result>
 
 3. Open **Attendance** in the homepage sidebar.
 
@@ -62,13 +62,13 @@ Housekeeping has no screen for making a product ticketed or managing its ticket 
    <Result>The browser's print dialog opens.</Result>
 
 :::tip[Email subjects]
-Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
 :::
 
 A scanned ticket's barcode is marked **REDEEMED**, with the scan time, such as **Scanned At**: <Sample>10/3/2026, 2:15:00 PM</Sample>.
 
 :::note[Staff viewing a ticket page]
-Staff who open another attendee's ticket page see *You are in staff mode. You are viewing the tickets of UID<Sample>7</Sample>.*
+Staff who open another attendee's ticket page see _You are in staff mode. You are viewing the tickets of UID<Sample>7</Sample>._
 :::
 
 ## Scanning tickets at the door

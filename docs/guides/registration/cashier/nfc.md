@@ -28,15 +28,15 @@ An attendee has one active NFC badge per convention: programming a new one deact
 
 <TableFigure title="NFC Card Status messages">
 
-| Status | Meaning |
-| --- | --- |
-| **unknown** | No NFC interface is active yet (section 3). |
-| **NFC Proxy connected** | The station can reach the local NFC proxy. |
-| **NFC Proxy not running** | The station can't reach the local NFC proxy. It retries every second. |
-| **NFC Serial connected** | A Web Serial reader is connected and answering. |
-| **NFC Card verified** | A valid badge was read while an attendee's page was open. |
-| **Card present (UUID not found). CANNOT USE.** | No active record for this chip: revoked, replaced, or never programmed for this convention. |
-| **NFC badge problem: <Sample>Card has invalid signature</Sample>** | The badge couldn't be read. The reason varies, for example *<Sample noMarker>Cannot read this card (wrong password)</Sample>*. |
+| Status                                                             | Meaning                                                                                                                        |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| **unknown**                                                        | No NFC interface is active yet (section 3).                                                                                    |
+| **NFC Proxy connected**                                            | The station can reach the local NFC proxy.                                                                                     |
+| **NFC Proxy not running**                                          | The station can't reach the local NFC proxy. It retries every second.                                                          |
+| **NFC Serial connected**                                           | A Web Serial reader is connected and answering.                                                                                |
+| **NFC Card verified**                                              | A valid badge was read while an attendee's page was open.                                                                      |
+| **Card present (UUID not found). CANNOT USE.**                     | No active record for this chip: revoked, replaced, or never programmed for this convention.                                    |
+| **NFC badge problem: <Sample>Card has invalid signature</Sample>** | The badge couldn't be read. The reason varies, for example _<Sample noMarker>Cannot read this card (wrong password)</Sample>_. |
 
 </TableFigure>
 
@@ -62,10 +62,10 @@ A station uses one interface from Table 3.1 at a time, and saves the choice in t
 
 <TableFigure title="NFC interfaces">
 
-| Interface | What it is |
-| --- | --- |
+| Interface                                                            | What it is                                                                                                                          |
+| -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | **Local HTTP Proxy** <small>With **HTTP Interface** below it</small> | A program on the station computer that drives a USB NFC reader, reached at `localhost`, port 7070. Always listed; can't be removed. |
-| **NFC Tag Interface with Web Serial** | A USB reader whose firmware answers ConCat's NFC commands over a serial port. Needs a browser with Web Serial. |
+| **NFC Tag Interface with Web Serial**                                | A USB reader whose firmware answers ConCat's NFC commands over a serial port. Needs a browser with Web Serial.                      |
 
 </TableFigure>
 
@@ -77,7 +77,7 @@ A station uses one interface from Table 3.1 at a time, and saves the choice in t
 
    <Result>The button reads **Active as Primary**. The header shows **NFC Card Status: NFC Proxy connected**, or **NFC Proxy not running** if the station can't reach the proxy.</Result>
 
-3. *(Web Serial reader instead of the proxy)* Next to **NFC Tag Interfaces**, click **Add Manually**, then **NFC Tag Interface with Web Serial**, and choose the reader's port when the browser asks.
+3. _(Web Serial reader instead of the proxy)_ Next to **NFC Tag Interfaces**, click **Add Manually**, then **NFC Tag Interface with Web Serial**, and choose the reader's port when the browser asks.
 
    <Result>The reader is listed with **Active as Primary** and **Remove**. Once it answers, the header shows **NFC Card Status: NFC Serial connected**.</Result>
 
@@ -91,7 +91,7 @@ A station uses one interface from Table 3.1 at a time, and saves the choice in t
 
    <Result>A **Success** message appears and the label prints: on the primary Zebra printer if one is active, otherwise through the browser's print dialog.</Result>
 
-3. If a **Warning** dialog says *This attendee already has an NFC badge issued. Issuing a new one will deactivate the old one. Are you sure?*, click **Yes** to replace the old badge, or **No** to stop.
+3. If a **Warning** dialog says _This attendee already has an NFC badge issued. Issuing a new one will deactivate the old one. Are you sure?_, click **Yes** to replace the old badge, or **No** to stop.
 
    <Result>With **Yes**, the new badge is programmed and printed as in step 2, and the old badge now reads **Card present (UUID not found). CANNOT USE.**</Result>
 
@@ -100,10 +100,11 @@ On a reprint with **Show reprint modal** on, **Program & Re-print Badge** first 
 **Print Only** prints the label without touching the chip. With a Zebra printer, an NFC station prints one label on the primary printer: separate staff and dealer badges and the badge type printer preferences don't apply.
 
 :::caution[Watch out]
+
 - **Use a blank badge every time.** A locked chip can't be programmed again, even for the same attendee; the station stops with an **NFC badge problem** message.
 - **No active interface:** **Program & Print Badge** does nothing. Set a reader as primary first (section 3).
-- **Failed writes:** if the station can't lock or write the chip, it shows *NFC badge problem: Failed to set NFC badge password* or *NFC badge problem: Failed to write badge data:* and the reason, and removes the new record. A replacement has already deactivated the old badge, so program a new blank one.
-:::
+- **Failed writes:** if the station can't lock or write the chip, it shows _NFC badge problem: Failed to set NFC badge password_ or _NFC badge problem: Failed to write badge data:_ and the reason, and removes the new record. A replacement has already deactivated the old badge, so program a new blank one.
+  :::
 
 ## Find an attendee by their badge
 
@@ -125,7 +126,7 @@ Revoke a lost or stolen badge so it can't be used.
 
 2. Click **Revoke NFC Badge**.
 
-   <Result>A **Confirm Badge Revocation** dialog asks *Are you sure you want to revoke this badge? This cannot be undone.*</Result>
+   <Result>A **Confirm Badge Revocation** dialog asks _Are you sure you want to revoke this badge? This cannot be undone._</Result>
 
 3. Click **Revoke NFC Badge** in the dialog.
 

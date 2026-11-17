@@ -32,7 +32,7 @@ QuikTicket is off by default, which hides the **Devices** page, so no devices ca
 
 2. Reload Housekeeping and open the **Attendees** module.
 
-   <Result>With **Disable QuikTicket** cleared, **Devices** is in the sidebar. With it ticked, **Devices** is gone, and its address shows *Device authorization has been disabled for this convention. Please contact convention staff for assistance.*</Result>
+   <Result>With **Disable QuikTicket** cleared, **Devices** is in the sidebar. With it ticked, **Devices** is gone, and its address shows _Device authorization has been disabled for this convention. Please contact convention staff for assistance._</Result>
 
 ## Authorize a device
 
@@ -52,7 +52,7 @@ QuikTicket is off by default, which hides the **Devices** page, so no devices ca
 
    <Result>The QR code is hidden, and **Request Code** is back for the next device.</Result>
 
-Without `admin:ticket:scan`, `admin:ticket:read` or `system:devices:manage`, the card says *You do not have permission to authorize a new device.* Ask an administrator for a role with a ticket permission.
+Without `admin:ticket:scan`, `admin:ticket:read` or `system:devices:manage`, the card says _You do not have permission to authorize a new device._ Ask an administrator for a role with a ticket permission.
 
 :::caution[Watch out]
 A device can't be signed out from Housekeeping. Its authorization ends on its own, 6 hours after its code was requested.
@@ -70,4 +70,4 @@ With `system:devices:manage`, the **Authorize New Device** card also has **Admin
 
    <Result>The device is authorized to that person's account, with their ticket permissions.</Result>
 
-Left blank, **Admin Authorize for User** authorizes to your own account. The person must have `admin:ticket:scan` or `admin:ticket:read`, or an error says *Missing at least one required permission for QuikTicket device*: give them a role with one of these permissions, then request a new code.
+Left blank, **Admin Authorize for User** authorizes to your own account. The person must have `admin:ticket:scan` or `admin:ticket:read`, or an error says _Missing at least one required permission for QuikTicket device_: give them a role with one of these permissions, then request a new code.

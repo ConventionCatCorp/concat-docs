@@ -68,7 +68,7 @@ Attendees see no change until you click **Save Changes**.
 
 1. Click **Add New Section** below the last section.
 
-   <Result>A section called *New section* appears at the bottom.</Result>
+   <Result>A section called _New section_ appears at the bottom.</Result>
 
 2. To rename a section, click the pencil next to its name, type the name, and click **Save** next to it.
 
@@ -94,38 +94,38 @@ To get back a section deleted by mistake, click the back arrow at the top left a
 
 1. Drag an element from the **Toolbox** into a section.
 
-   <Result>Held over an empty section, the section says *Release to add this component*. Dropped, the element appears in the section.</Result>
+   <Result>Held over an empty section, the section says _Release to add this component_. Dropped, the element appears in the section.</Result>
 
 2. To move an element, drag it by its handle, within its section or to another.
 
    <Result>The element moves to where you drop it.</Result>
 
-3. *(Optional)* To name an element, click its pencil button, type in **Display Name (optional)**, and click the tick button.
+3. _(Optional)_ To name an element, click its pencil button, type in **Display Name (optional)**, and click the tick button.
 
-   <Result>The element shows your name and its type in brackets, such as *<Sample>Shirt size</Sample> (Option)*.</Result>
+   <Result>The element shows your name and its type in brackets, such as _<Sample>Shirt size</Sample> (Option)_.</Result>
 
 4. To remove an element, click its **Delete** button, then **Delete** in the dialog.
 
-   <Result>A **Delete Node?** dialog asks *Are you sure you want to delete this node?* After you confirm, the element is gone.</Result>
+   <Result>A **Delete Node?** dialog asks _Are you sure you want to delete this node?_ After you confirm, the element is gone.</Result>
 
 <TableFigure title="The registration form elements">
 
-| Element | What attendees see | Properties (section 6) |
-| --- | --- | --- |
-| **Text block** | Markdown text | The text |
-| **Divider** | A horizontal line | None |
-| **Option** | One option, or the **Badge Name** field | Which option; **Display full width** |
-| **Terms agreement** | A policy, with a checkbox attendees must tick | **Input type** (the policy); **Text to be displayed by the checkbox** <small>Default: *I have read and agree to the policies above.*</small> |
-| **Link to terms page** | A checkbox attendees must tick, with text linking to your terms | The text, in Markdown <small>The default, *Do you agree to the terms?*, links to concat.app: change it to your terms page.</small> |
-| **Registration flags** | A checkbox per [registration flag](./flags.md) visible to attendees | None |
-| **Emergency contacts** | **Contact Name** and **Contact Phone** | **Required?** |
-| **Badge preview** | The attendee's badge in your default badge design | None |
-| **Submit button** | An extra **Submit** button | None |
-| **Randomize button** | A **Randomize** button for a random badge name and species | None |
-| **Badge art selector** | Your [badge art](./badge-art.md), to choose a background | None |
-| **Other options** | The tier's options not placed with an **Option** element | None |
-| **Profile picture** | A profile picture upload | **Title**; **Ignore Gravatar default image** |
-| **Personal information** | One kind of the attendee's account details <small>Names, date of birth, phone and address appear only if your instance asks for them at sign-up, which ConCat Support sets.</small> | **Input type**: **Real Name**, **Date of Birth**, **Phone**, **Address**, **Email** or **Badge Name**; a Markdown label (not for **Phone**) |
+| Element                  | What attendees see                                                                                                                                                                  | Properties (section 6)                                                                                                                       |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Text block**           | Markdown text                                                                                                                                                                       | The text                                                                                                                                     |
+| **Divider**              | A horizontal line                                                                                                                                                                   | None                                                                                                                                         |
+| **Option**               | One option, or the **Badge Name** field                                                                                                                                             | Which option; **Display full width**                                                                                                         |
+| **Terms agreement**      | A policy, with a checkbox attendees must tick                                                                                                                                       | **Input type** (the policy); **Text to be displayed by the checkbox** <small>Default: _I have read and agree to the policies above._</small> |
+| **Link to terms page**   | A checkbox attendees must tick, with text linking to your terms                                                                                                                     | The text, in Markdown <small>The default, _Do you agree to the terms?_, links to concat.app: change it to your terms page.</small>           |
+| **Registration flags**   | A checkbox per [registration flag](./flags.md) visible to attendees                                                                                                                 | None                                                                                                                                         |
+| **Emergency contacts**   | **Contact Name** and **Contact Phone**                                                                                                                                              | **Required?**                                                                                                                                |
+| **Badge preview**        | The attendee's badge in your default badge design                                                                                                                                   | None                                                                                                                                         |
+| **Submit button**        | An extra **Submit** button                                                                                                                                                          | None                                                                                                                                         |
+| **Randomize button**     | A **Randomize** button for a random badge name and species                                                                                                                          | None                                                                                                                                         |
+| **Badge art selector**   | Your [badge art](./badge-art.md), to choose a background                                                                                                                            | None                                                                                                                                         |
+| **Other options**        | The tier's options not placed with an **Option** element                                                                                                                            | None                                                                                                                                         |
+| **Profile picture**      | A profile picture upload                                                                                                                                                            | **Title**; **Ignore Gravatar default image**                                                                                                 |
+| **Personal information** | One kind of the attendee's account details <small>Names, date of birth, phone and address appear only if your instance asks for them at sign-up, which ConCat Support sets.</small> | **Input type**: **Real Name**, **Date of Birth**, **Phone**, **Address**, **Email** or **Badge Name**; a Markdown label (not for **Phone**)  |
 
 </TableFigure>
 
@@ -136,7 +136,7 @@ For the badge name, use an **Option** element set to **Badge Name**, not **Perso
 :::
 
 :::caution[Watch out]
-Keep an **Emergency contacts** element on the form. Minors, PII-free children and, if your volunteer settings require it, volunteers must give an emergency contact: without the element they can't register, and see *Emergency Contact Info is required.*
+Keep an **Emergency contacts** element on the form. Minors, PII-free children and, if your volunteer settings require it, volunteers must give an emergency contact: without the element they can't register, and see _Emergency Contact Info is required._
 :::
 
 ## Element properties
@@ -163,7 +163,7 @@ If an element's properties are wrong when you save, **There are errors in your f
 
    <Result>The editor returns, with your changes in place.</Result>
 
-With no **Public** badge product on sale, the preview says *Add a product to this convention before you can preview the registration form.* To test a particular tier, register as an attendee ([How attendees register](./registering.md)).
+With no **Public** badge product on sale, the preview says _Add a product to this convention before you can preview the registration form._ To test a particular tier, register as an attendee ([How attendees register](./registering.md)).
 
 ## Save and leave
 

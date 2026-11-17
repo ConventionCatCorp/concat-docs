@@ -32,7 +32,7 @@ To print the art, use an **Image** element with **Source** `badgeDesign` in the 
 
 2. Click the upload box and choose one or more images, or drop them on it.
 
-   <Result>An **Upload Complete!** message appears. Each image gets a card with *Limit:0 / ∞*, a **Configure limit** button and a delete button.</Result>
+   <Result>An **Upload Complete!** message appears. Each image gets a card with _Limit:0 / ∞_, a **Configure limit** button and a delete button.</Result>
 
 The first number is how many registrations use the image; the second is its limit.
 
@@ -44,15 +44,15 @@ The first number is how many registrations use the image; the second is its limi
 
 2. Tick **Enable limit**, enter the number of badges allowed, and click **Update**.
 
-   <Result>A **Badge art has been updated** message appears, and the card shows the limit, such as *Limit:0 / <Sample>100</Sample>*.</Result>
+   <Result>A **Badge art has been updated** message appears, and the card shows the limit, such as _Limit:0 / <Sample>100</Sample>_.</Result>
 
-To remove a limit, untick **Enable limit** in **Configure limit** and click **Update**; the card shows *∞* again.
+To remove a limit, untick **Enable limit** in **Configure limit** and click **Update**; the card shows _∞_ again.
 
 ## Delete an image
 
 1. On an image's card, click the delete button.
 
-   <Result>A dialog titled with the image's ID, such as **Delete <Sample>3</Sample>**, asks *Are you sure you want to delete <Sample noMarker>3</Sample>?*</Result>
+   <Result>A dialog titled with the image's ID, such as **Delete <Sample>3</Sample>**, asks _Are you sure you want to delete <Sample noMarker>3</Sample>?_</Result>
 
 2. Click **Delete**.
 

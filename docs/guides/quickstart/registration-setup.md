@@ -18,7 +18,7 @@ Badge products, badge product options, addons, the registration form, sub-accoun
 Badge products, the registration tiers, live in the Registration module. Everything else you sell lives in Store Management ([Store and products setup](./store-setup.md)).
 </Sidenote>
 
-A badge product is a tier attendees register for, such as *<Sample>General Admission</Sample>* or *<Sample noMarker>Sponsor</Sample>*.
+A badge product is a tier attendees register for, such as _<Sample>General Admission</Sample>_ or _<Sample noMarker>Sponsor</Sample>_.
 
 1. Go to **Housekeeping › Registration › Badge Products**.
 
@@ -38,13 +38,13 @@ A badge product is a tier attendees register for, such as *<Sample>General Admis
 
 <TableFigure title="Sections of the New Product form">
 
-| Section | Fields |
-| --- | --- |
-| **Product** | **Name**, **Display Name** (optional), **Description**, **Product visibility**: **Public** (listed to anyone who meets the restrictions), **Unlisted** (for sale through its link, but not listed in the registration tier list) or **Hidden** (not for sale; only given automatically) |
-| **Pricing** | **Base Price**, **Pass Platform Fee to Customer** |
-| **Stock Control** | **Expires On**, **Limit Available Stock** |
-| **Cashier** | **Product Label Print Design** <small>Overrides the default badge design for this tier.</small> |
-| **Restrictions** | **Available From**, **Available Until**, **Minimum Purchase Age**, **Maximum Purchase Age**, **Product Role Whitelist**, **Product Role Blacklist**, **Restrict product to grants** |
+| Section           | Fields                                                                                                                                                                                                                                                                                  |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Product**       | **Name**, **Display Name** (optional), **Description**, **Product visibility**: **Public** (listed to anyone who meets the restrictions), **Unlisted** (for sale through its link, but not listed in the registration tier list) or **Hidden** (not for sale; only given automatically) |
+| **Pricing**       | **Base Price**, **Pass Platform Fee to Customer**                                                                                                                                                                                                                                       |
+| **Stock Control** | **Expires On**, **Limit Available Stock**                                                                                                                                                                                                                                               |
+| **Cashier**       | **Product Label Print Design** <small>Overrides the default badge design for this tier.</small>                                                                                                                                                                                         |
+| **Restrictions**  | **Available From**, **Available Until**, **Minimum Purchase Age**, **Maximum Purchase Age**, **Product Role Whitelist**, **Product Role Blacklist**, **Restrict product to grants**                                                                                                     |
 
 </TableFigure>
 
@@ -139,7 +139,7 @@ Sub-accounts let one account register a group or family and pay for everyone in 
 
    <Result>The **Registration Settings** page opens, with a **Sub-accounts** card.</Result>
 
-2. In the **Sub-accounts** card, set **Max Sub-Accounts Registration** to the number of *additional* attendees one account may register (0 turns sub-accounts off). *(Optional)* Tick **Allow PII-free child registration** to let parents add a child with no name, email, username or date of birth; then you can also tick **Only allow child sub-accounts**, so every additional attendee must be such a child. Click **Save** in the card.
+2. In the **Sub-accounts** card, set **Max Sub-Accounts Registration** to the number of _additional_ attendees one account may register (0 turns sub-accounts off). _(Optional)_ Tick **Allow PII-free child registration** to let parents add a child with no name, email, username or date of birth; then you can also tick **Only allow child sub-accounts**, so every additional attendee must be such a child. Click **Save** in the card.
 
    <Result>A **Sub-account settings saved** message appears.</Result>
 
@@ -149,7 +149,7 @@ Once registered themselves, attendees see these options on their **Attendance** 
 
    <Result>A **New user** step asks for the person's name and date of birth, and uses the account holder's address unless **Use different mailing address** is ticked. **Registration Type**, **Additional Information** and **Review** follow.</Result>
 
-2. *(If PII-free children are allowed)* As an attendee, click **Register child (under <Sample>16</Sample>)**.
+2. _(If PII-free children are allowed)_ As an attendee, click **Register child (under <Sample>16</Sample>)**.
 
    <Result>There's no personal-details step. The attendee ticks your child-registration terms, chooses a tier and fills in the form, where an emergency contact is required.</Result>
 
@@ -189,12 +189,13 @@ Registration stays closed until you open it, so attendees can't register while y
    <Result>The page offers **Start registration**.</Result>
 
 :::tip[In more detail]
+
 - [Badge Products](../registration/attendance/attendance.md)
 - [Product Options](../products/options.md) and [Addons](../products/addons.md)
 - [Registration form editor](../registration/form-editor.md)
 - [Sub-accounts, children and minors](../registration/sub-accounts.md)
 - [Registration settings](../registration/settings.md)
 - [How attendees register](../registration/registering.md)
-:::
+  :::
 
 Next: [Store and products setup](./store-setup.md), for everything else you sell.

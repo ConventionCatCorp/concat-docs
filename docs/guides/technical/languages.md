@@ -20,12 +20,12 @@ These guides quote the **English (US)** wording. Other languages translate the s
 
 <TableFigure title="Interface languages">
 
-| Language | Code |
-| --- | --- |
-| **English (US)** | `en-US` |
+| Language               | Code    |
+| ---------------------- | ------- |
+| **English (US)**       | `en-US` |
 | **Português (Brasil)** | `pt-BR` |
-| **English (UK)** | `en-GB` |
-| **日本語 (Japan)** | `ja-JP` |
+| **English (UK)**       | `en-GB` |
+| **日本語 (Japan)**     | `ja-JP` |
 
 </TableFigure>
 

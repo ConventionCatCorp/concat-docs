@@ -35,20 +35,20 @@ A webhook listens for one or more of the events in Table 2.1.
 
 <TableFigure title="Webhook events">
 
-| Event | Sent when |
-| --- | --- |
-| `test` | You click **Test** on the webhook (section 3). |
-| `volunteer-submitted` | A volunteer application is submitted. |
-| `volunteer-updated` | A volunteer application changes. |
-| `volunteer-assigned`, `volunteer-unassigned` | A volunteer is assigned to, or removed from, a department. |
-| `volunteer-deleted` | A volunteer application is deleted. |
-| `registration-created` | Not sent. New registrations are sent as `registration-updated`. |
-| `registration-updated` | A registration is created or changes. |
-| `user-updated` | A user's account details change. <small>Only sent to webhooks that fire for every convention.</small> |
-| `order-complete`, `order-canceled` | An order is completed or canceled. |
-| `dealer-upsert` | A dealer is created or changes. |
-| `application-upsert`, `application-deleted` | A dealer application is created, changes or is deleted. |
-| `nfc-badge-scanned` | An NFC badge is scanned. |
+| Event                                        | Sent when                                                                                             |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `test`                                       | You click **Test** on the webhook (section 3).                                                        |
+| `volunteer-submitted`                        | A volunteer application is submitted.                                                                 |
+| `volunteer-updated`                          | A volunteer application changes.                                                                      |
+| `volunteer-assigned`, `volunteer-unassigned` | A volunteer is assigned to, or removed from, a department.                                            |
+| `volunteer-deleted`                          | A volunteer application is deleted.                                                                   |
+| `registration-created`                       | Not sent. New registrations are sent as `registration-updated`.                                       |
+| `registration-updated`                       | A registration is created or changes.                                                                 |
+| `user-updated`                               | A user's account details change. <small>Only sent to webhooks that fire for every convention.</small> |
+| `order-complete`, `order-canceled`           | An order is completed or canceled.                                                                    |
+| `dealer-upsert`                              | A dealer is created or changes.                                                                       |
+| `application-upsert`, `application-deleted`  | A dealer application is created, changes or is deleted.                                               |
+| `nfc-badge-scanned`                          | An NFC badge is scanned.                                                                              |
 
 </TableFigure>
 
@@ -65,9 +65,10 @@ A webhook listens for one or more of the events in Table 2.1.
    <Result>A **Webhook created!** message appears and the new webhook is listed.</Result>
 
 :::caution[Watch out]
+
 - The **URL** must start with `https://`. Any other address is refused.
 - A webhook can't be edited. To change one, delete it and create it again.
-:::
+  :::
 
 ConCat sends requests in the background and, if your server doesn't accept one, tries up to 5 times, waiting longer each time. Housekeeping has no delivery log.
 
@@ -121,7 +122,7 @@ Every request carries an `authorization: Bearer …` header holding a token sign
 Each application has two kinds of permission:
 
 - **Application Permissions**: used when the application calls the API on its own, outside a user's context (OAuth `client_credentials`). You tick them when you create it.
-- *User scopes*: asked for when an attendee signs in through the application; the attendee agrees on the consent screen (section 6).
+- _User scopes_: asked for when an attendee signs in through the application; the attendee agrees on the consent screen (section 6).
 
 1. Go to **Housekeeping › System › Developers** and click the **OAuth Applications** tab.
 
@@ -144,7 +145,7 @@ ConCat stores only a hash of the secret, so it can't show it again. If you lose 
 :::
 
 :::note[Callback URIs]
-ConCat checks only the *origin* of the return address (its scheme, host and port), not its path. Addresses must start with `http://` or `https://`.
+ConCat checks only the _origin_ of the return address (its scheme, host and port), not its path. Addresses must start with `http://` or `https://`.
 :::
 
 ## Edit or delete an OAuth application
@@ -159,7 +160,7 @@ ConCat checks only the *origin* of the return address (its scheme, host and port
 
 3. To remove an application, click the red bin button in its row.
 
-   <Result>A **Delete Application** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. <Sample>Star26 Schedule</Sample>?*</Result>
+   <Result>A **Delete Application** dialog asks _Are you sure you want to delete? Data for this option from users will be erased. <Sample>Star26 Schedule</Sample>?_</Result>
 
 4. Click **Delete**.
 
@@ -169,7 +170,7 @@ ConCat checks only the *origin* of the return address (its scheme, host and port
 
 An application sends the attendee to your instance's `/oauth/authorize` page, where they must be logged in. If they already authorized the same application, scopes and return address, ConCat approves without showing the screen.
 
-The screen is titled with the application's name, such as **Authorize: <Sample>Star26 Schedule</Sample>**, and lists **Sign In Automatically** and one line per scope. A scope that starts with `admin:` is marked *This is an administrative permission.*, and the **Authorize Application** button turns red.
+The screen is titled with the application's name, such as **Authorize: <Sample>Star26 Schedule</Sample>**, and lists **Sign In Automatically** and one line per scope. A scope that starts with `admin:` is marked _This is an administrative permission._, and the **Authorize Application** button turns red.
 
 To try it, use an application from section 4 that has a callback URI:
 
@@ -197,7 +198,7 @@ To try it, use an application from section 4 that has a callback URI:
 
 An application can log an attendee out by sending them to your instance's `/oauth/logout` page with its credentials. ConCat also uses this page when someone logs out on another convention's address.
 
-If ConCat can verify the request, the attendee sees *Logging you out...* and goes on to the application's address. If not, the attendee is asked first:
+If ConCat can verify the request, the attendee sees _Logging you out..._ and goes on to the application's address. If not, the attendee is asked first:
 
 1. Logged in to your instance, open `https://<your instance>/oauth/logout`.
 

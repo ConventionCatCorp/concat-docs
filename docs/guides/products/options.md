@@ -22,16 +22,16 @@ An option's **Type** sets what the attendee fills in. Three types also have a **
 
 <TableFigure title="Option types and their styles">
 
-| Type | What the attendee does | Styles |
-| --- | --- | --- |
-| Single Select | Selects one choice from your list. | Radio, Dropdown |
-| Multi Select | Selects any number of choices from your list. | Checkboxes, Blocks |
-| Free text Field | Types any text. | Text, Textarea |
-| Number | Enters a whole number. | None |
-| Currency | Enters an amount of money. | None |
-| Phone Number | Enters a valid phone number. | None |
-| Address | Enters a valid address. | None |
-| Files | Uploads files. | None |
+| Type            | What the attendee does                        | Styles             |
+| --------------- | --------------------------------------------- | ------------------ |
+| Single Select   | Selects one choice from your list.            | Radio, Dropdown    |
+| Multi Select    | Selects any number of choices from your list. | Checkboxes, Blocks |
+| Free text Field | Types any text.                               | Text, Textarea     |
+| Number          | Enters a whole number.                        | None               |
+| Currency        | Enters an amount of money.                    | None               |
+| Phone Number    | Enters a valid phone number.                  | None               |
+| Address         | Enters a valid address.                       | None               |
+| Files           | Uploads files.                                | None               |
 
 </TableFigure>
 
@@ -96,7 +96,7 @@ Each assigned option has a lock button that turns **Prevent changes to this opti
 
    <Result>Each selected option appears under the field.</Result>
 
-4. *(Optional)* Tick **Mark selected options as required.** to make an answer compulsory, and **Prevent changes to this option after purchase is complete.** to lock answers once paid. Click **Assign Options**.
+4. _(Optional)_ Tick **Mark selected options as required.** to make an answer compulsory, and **Prevent changes to this option after purchase is complete.** to lock answers once paid. Click **Assign Options**.
 
    <Result>The options are listed in the card, marked **Required** or **Immutable** if you ticked those boxes.</Result>
 
@@ -140,5 +140,5 @@ Changes apply everywhere the option is assigned.
    <Result>**Option has been deleted!** appears, and the option is gone from **Options**.</Result>
 
 :::danger[Deleting erases answers]
-The **Delete Option** dialog warns that *Data for this option from users will be erased.* To stop asking on one product but keep past answers, remove the option from that product's **Options** card instead.
+The **Delete Option** dialog warns that _Data for this option from users will be erased._ To stop asking on one product but keep past answers, remove the option from that product's **Options** card instead.
 :::

@@ -16,11 +16,13 @@ There are two ways to integrate with the ConCat APIs: On Behalf Of (OBO) a user,
 ## Which method should I use?
 
 #### On Behalf Of (OBO) a user
+
 The OBO method is intended primarily for authenticating a user to a third-party service and providing metadata about the user, such as their name, email address, and any roles or permissions they have.
 
 OBO requires the service to redirect the user to an authentication page displaying the requested permission scopes, a basic description of the service, and the ability to grant or deny access.
 
 #### As a service
+
 The as a service method is intended for allowing a third-party service to retrieve and modify data within the ConCat platform. This is useful for micro-services that need to perform automated actions based on webhooks, or that need to perform actions that require elevated permissions.
 
 Permissions for a service integration are granted by the event customer as **Application Permissions** on the OAuth application, and they can change them later. There is no additional approval or authentication step. If your service requires additional permissions, you will need to contact the event customer to request them. See [Scopes](/docs/api/gettingstarted/scopes) for what each one allows.
@@ -42,9 +44,11 @@ The Authorization header should always be provided even if the request is not au
 :::
 
 ## Revoking access
+
 If there's no activity by your integration for a year or more, we reserve the right to revoke your API credentials to prevent abuse. You can reach back out to us to re-activate at any time.
 
 If you're no longer planning to use the ConCat APIs, we ask that you reach out to us to let us know. We'll revoke your API credentials and remove your integration from our systems.
 
 ### Handling revocations
+
 In the event your integration is revoked, you'll receive a revocation email and will no longer be able to authenticate to the APIs. You **must** delete all associated event data stored by your application within 30 days of receiving the revocation email.

@@ -46,12 +46,13 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
 </Figure>
 
 :::caution[Watch out]
+
 - **Email address:** the change waits until the person clicks the link sent to the new address; until then the card shows the old one with a warning sign. One change per 24 hours.
-- **Date of birth:** a main account can't be set below your **Child Age Threshold** (*User is underage. The minimum age is <Sample>16</Sample> years old.*). You can't change your own here.
-:::
+- **Date of birth:** a main account can't be set below your **Child Age Threshold** (_User is underage. The minimum age is <Sample>16</Sample> years old._). You can't change your own here.
+  :::
 
 :::tip[Email subjects]
-Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
 :::
 
 ## Help someone sign in
@@ -60,13 +61,13 @@ The **Actions** card on the **Name** tab holds the sign-in tools, for staff with
 
 <TableFigure title="The Actions card">
 
-| Button | Does | Shown when |
-| --- | --- | --- |
-| **Open Cashier Interface** | Opens the person in the [Cashier UI](../registration/cashier/cashier.md). | You have `registration:cashier`. |
-| **Allow user to login** | Lets them log in before confirming their email (section 2.1). | You have `user:update`; account unconfirmed. Not for sub-accounts. |
-| **Send password reset email** | Emails a reset link (section 2.2). | You have `user:update`. Not for sub-accounts. |
-| **At-Con Password Reset** | Makes a reset code to give in person (section 2.3). | You have `user:update`. Not for sub-accounts. |
-| **Reset 2FA** | Removes two-factor authentication (section 2.4). | The person has set it up. Removing it needs `user:update`. |
+| Button                        | Does                                                                      | Shown when                                                         |
+| ----------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Open Cashier Interface**    | Opens the person in the [Cashier UI](../registration/cashier/cashier.md). | You have `registration:cashier`.                                   |
+| **Allow user to login**       | Lets them log in before confirming their email (section 2.1).             | You have `user:update`; account unconfirmed. Not for sub-accounts. |
+| **Send password reset email** | Emails a reset link (section 2.2).                                        | You have `user:update`. Not for sub-accounts.                      |
+| **At-Con Password Reset**     | Makes a reset code to give in person (section 2.3).                       | You have `user:update`. Not for sub-accounts.                      |
+| **Reset 2FA**                 | Removes two-factor authentication (section 2.4).                          | The person has set it up. Removing it needs `user:update`.         |
 
 </TableFigure>
 
@@ -76,7 +77,7 @@ When **Require e-mail confirmation before login** is on (the default), a new acc
 
 1. In the **Actions** card, click **Allow user to login**.
 
-   <Result>A **Verify user** dialog asks *Are you sure you want to verify this user?*</Result>
+   <Result>A **Verify user** dialog asks _Are you sure you want to verify this user?_</Result>
 
 2. Click **Verify**.
 
@@ -88,11 +89,11 @@ They still get no ConCat email until they confirm their address. They can resend
 
 1. In the **Actions** card, click **Send password reset email**.
 
-   <Result>A **Password Reset** dialog asks *Are you sure you want to send a password reset email to this user?*</Result>
+   <Result>A **Password Reset** dialog asks _Are you sure you want to send a password reset email to this user?_</Result>
 
 2. Click **Confirm**.
 
-   <Result>**Successfully sent password reset email!** appears, and the person gets a *<Sample>ConCat</Sample> - Password Reset* email with a link that works for 24 hours.</Result>
+   <Result>**Successfully sent password reset email!** appears, and the person gets a _<Sample>ConCat</Sample> - Password Reset_ email with a link that works for 24 hours.</Result>
 
 Setting a new password from the link also confirms the email address.
 
@@ -114,7 +115,7 @@ The code lets someone at your registration desk set a new password without email
 
 3. Give the code to the person. On the login page they click **Already Got a Reset Code?**, enter the code and a new password, and click **Reset Password**.
 
-   <Result>They see **Success** and *Your password has been successfully reset and you can now login.*</Result>
+   <Result>They see **Success** and _Your password has been successfully reset and you can now login._</Result>
 
 ### Reset two-factor authentication
 
@@ -122,7 +123,7 @@ Use this when someone has lost their authenticator app and backup codes.
 
 1. In the **Actions** card, click **Reset 2FA**.
 
-   <Result>A **Remove Second Factor** dialog asks *Are you sure you want to remove second factor authentication from the user?*</Result>
+   <Result>A **Remove Second Factor** dialog asks _Are you sure you want to remove second factor authentication from the user?_</Result>
 
 2. Click **Remove**.
 
@@ -138,11 +139,11 @@ Attendees give up to two emergency contacts when registering. Viewing them is lo
 
 1. On the person's profile, click the **Emergency Contacts** tab.
 
-   <Result>A **PII Access Warning** card says *This access will be logged for auditing purposes.*, with a **Continue** button.</Result>
+   <Result>A **PII Access Warning** card says _This access will be logged for auditing purposes._, with a **Continue** button.</Result>
 
 2. Click **Continue**.
 
-   <Result>Two **Emergency Contact Info** cards show a **Name** and **Phone** each, or *Contact information was not provided.*</Result>
+   <Result>Two **Emergency Contact Info** cards show a **Name** and **Phone** each, or _Contact information was not provided._</Result>
 
 ## Audit history
 
@@ -222,7 +223,7 @@ You can't delete your own account this way or another administrator's.
 
    <Result>**Deletion of user has been requested.** appears, and a red banner on the **Name** tab gives the deletion date and time, with a **Cancel Request** button.</Result>
 
-3. *(To cancel)* Click **Cancel Request** in the banner.
+3. _(To cancel)_ Click **Cancel Request** in the banner.
 
    <Result>A **Cancel Request** dialog warns this can't be undone; deleting later needs a new request.</Result>
 

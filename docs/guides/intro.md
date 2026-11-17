@@ -34,14 +34,14 @@ Colored boxes hold information outside the steps. Table 1.1 lists each kind.
 
 <TableFigure title="Callouts used in these guides">
 
-| Label | Color | What it holds |
-| --- | --- | --- |
-| In this guide | Blue | What the guide covers. |
-| Key idea | Blue | The one idea to take from a section. |
-| Watch out | Amber | Something that can go wrong or can't be undone. |
-| Tip | Green | A quicker or better way. |
-| Note | Gray | Extra detail you can skip. |
-| Danger | Red | A step that can lose data or money. |
+| Label         | Color | What it holds                                   |
+| ------------- | ----- | ----------------------------------------------- |
+| In this guide | Blue  | What the guide covers.                          |
+| Key idea      | Blue  | The one idea to take from a section.            |
+| Watch out     | Amber | Something that can go wrong or can't be undone. |
+| Tip           | Green | A quicker or better way.                        |
+| Note          | Gray  | Extra detail you can skip.                      |
+| Danger        | Red   | A step that can lose data or money.             |
 
 </TableFigure>
 

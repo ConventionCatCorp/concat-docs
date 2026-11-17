@@ -24,9 +24,9 @@ How hotel booking works, connecting a provider and opening hotels, dashboard and
 Hotel pages need `hotel:view`; changing settings, editing blocks and deleting entries need `hotel:manage`. The default **hotel** and **admin** roles have both.
 </Sidenote>
 
-Your convention has one *integration*: the link to your Passkey or MeetingMax event. ConCat reads hotels, room types and nightly availability from it.
+Your convention has one _integration_: the link to your Passkey or MeetingMax event. ConCat reads hotels, room types and nightly availability from it.
 
-You release rooms in *blocks*, which Housekeeping calls **Release Groups**. Each block has a type:
+You release rooms in _blocks_, which Housekeeping calls **Release Groups**. Each block has a type:
 
 - **Random Draw**: attendees enter during an entry period; ConCat then picks up to the number of winners you set and gives each a booking link.
 - **First Come First Serve**: attendees join a queue, and booking links go out in entry order.
@@ -35,13 +35,13 @@ A block's dates move it through the stages in Table 1.1.
 
 <TableFigure title="Block stages">
 
-| Stage | When |
-| --- | --- |
-| **Pre Entry** | Before **Entry Start At**. |
-| **Entry period** | **Entry Start At** to **Entry End At**. Random draws take entries only now. |
-| **Prerelease Ready** | After the entry period, before **Release Start At**. The draw runs now. |
-| **Release Period** | **Release Start At** to **Release End At**: selected attendees book; a first-come block also takes entries. |
-| **Finished** | After **Release End At**. Attendees no longer see the block. |
+| Stage                | When                                                                                                        |
+| -------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Pre Entry**        | Before **Entry Start At**.                                                                                  |
+| **Entry period**     | **Entry Start At** to **Entry End At**. Random draws take entries only now.                                 |
+| **Prerelease Ready** | After the entry period, before **Release Start At**. The draw runs now.                                     |
+| **Release Period**   | **Release Start At** to **Release End At**: selected attendees book; a first-come block also takes entries. |
+| **Finished**         | After **Release End At**. Attendees no longer see the block.                                                |
 
 </TableFigure>
 
@@ -71,19 +71,19 @@ The **Hotels** tab also needs `system:settings:update`.
 
    <Result>A **Hotel settings saved** message appears.</Result>
 
-If ConCat can't connect with your event details, **Save** in step 3 shows *Could not connect using the provided credentials. Please check them and try again.* Check the details with your provider and save again.
+If ConCat can't connect with your event details, **Save** in step 3 shows _Could not connect using the provided credentials. Please check them and try again._ Check the details with your provider and save again.
 
 **Open Hotels** opens or closes hotel booking as a whole, whatever the blocks' dates say. While it's off, attendees see a closed notice and your **Hotel Closed Message**, if you wrote one. That policy and the **Hotel Reservation Policy**, which attendees accept before entering a block, are on the **Terms** tab of **Housekeeping › System › Settings**.
 
 <TableFigure title="Sync statuses">
 
-| Status | Meaning |
-| --- | --- |
+| Status                  | Meaning                                              |
+| ----------------------- | ---------------------------------------------------- |
 | **Awaiting first sync** | Connected; ConCat hasn't read from the provider yet. |
-| **Syncing** | A sync is running. |
-| **Synchronized** | The last sync worked. |
-| **Sync error** | The last sync failed. Check the event details. |
-| **Disconnected** | ConCat can't reach the provider. |
+| **Syncing**             | A sync is running.                                   |
+| **Synchronized**        | The last sync worked.                                |
+| **Sync error**          | The last sync failed. Check the event details.       |
+| **Disconnected**        | ConCat can't reach the provider.                     |
 
 </TableFigure>
 
@@ -95,7 +95,7 @@ If ConCat can't connect with your event details, **Save** in step 3 shows *Could
 
 ## The dashboard and room inventory
 
-1. Go to **Housekeeping › Attendees › Hotel Management**, under *Module Management* in the sidebar.
+1. Go to **Housekeeping › Attendees › Hotel Management**, under _Module Management_ in the sidebar.
 
    <Result>**Hotel Management** opens on its **Home** tab, showing dashboard totals.</Result>
 
@@ -117,7 +117,7 @@ A day before **Release Start At**, ConCat draws the winners (Random Draw) or sta
 
 2. Click **Create Release Group**.
 
-   <Result>The **Create Release Group** form opens; **Hotel Integration** shows your connection's name, such as *<Sample>Riverside Hotel Passkey</Sample>*.</Result>
+   <Result>The **Create Release Group** form opens; **Hotel Integration** shows your connection's name, such as _<Sample>Riverside Hotel Passkey</Sample>_.</Result>
 
 3. Fill in the fields in Table 4.1, then click **Submit**.
 
@@ -131,25 +131,25 @@ Without a connection (section 2), the form shows a warning and **Submit** is gra
 
 <TableFigure title="Release group fields">
 
-| Field | What it does |
-| --- | --- |
-| **Release Group Name** | Required. Your name for the block. |
-| **Display Name** | The name attendees see; if empty, **Release Group Name**. |
-| **Description** | Shown on the block's card. |
-| **Status** | **Draft** (attendees never see it) or **Ready**. |
-| **Type** | **Random Draw** or **First Come First Serve**. <small>Fixed once created.</small> |
-| **Number of Winners** | Random Draw only. The most entrants picked; at or above the number of entries, everyone wins. |
-| **Entry Start At**, **Entry End At** | Random Draw only. When entries open and close. |
-| **Release Start At**, **Release End At** | The booking period. Selected attendees must book before **Release End At**. |
-| **Validity Period** | Required. Leave it at 0. |
-| **Require Registration** | **Required** (registered), **Required Paid** (registered and paid; the default) or **Hidden** (none needed). |
-| **Force Entry** | **By Product**, **By Role**, **By Role and Product** or **By Role or Product** enters everyone who matches, without opting in; **None** doesn't. <small>On a Random Draw, only eligible attendees during the entry period.</small> |
-| **Require Not Won** | Leaves out anyone already picked, with a booking, in another block. |
-| **Show Room Availability** | Adds a **View room availability** button for attendees. |
-| **Visibility** | **Hidden** (not on the hotel page), **Always Visible** (everyone) or **Eligible Only** (attendees who may enter). |
-| **Restrict to Roles**, **Restrict to Products** | Only people with one of these roles or products may enter. With both set, they need one of the roles and one of the products. Both empty: everyone. |
-| **Meeting Max Group Code** | MeetingMax only. The rooms' group; blank for a main block with no group code. |
-| **Passkey Attendee / Access Code** | Passkey only. Your rooms' access or attendee code, one per block. |
+| Field                                           | What it does                                                                                                                                                                                                                       |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Release Group Name**                          | Required. Your name for the block.                                                                                                                                                                                                 |
+| **Display Name**                                | The name attendees see; if empty, **Release Group Name**.                                                                                                                                                                          |
+| **Description**                                 | Shown on the block's card.                                                                                                                                                                                                         |
+| **Status**                                      | **Draft** (attendees never see it) or **Ready**.                                                                                                                                                                                   |
+| **Type**                                        | **Random Draw** or **First Come First Serve**. <small>Fixed once created.</small>                                                                                                                                                  |
+| **Number of Winners**                           | Random Draw only. The most entrants picked; at or above the number of entries, everyone wins.                                                                                                                                      |
+| **Entry Start At**, **Entry End At**            | Random Draw only. When entries open and close.                                                                                                                                                                                     |
+| **Release Start At**, **Release End At**        | The booking period. Selected attendees must book before **Release End At**.                                                                                                                                                        |
+| **Validity Period**                             | Required. Leave it at 0.                                                                                                                                                                                                           |
+| **Require Registration**                        | **Required** (registered), **Required Paid** (registered and paid; the default) or **Hidden** (none needed).                                                                                                                       |
+| **Force Entry**                                 | **By Product**, **By Role**, **By Role and Product** or **By Role or Product** enters everyone who matches, without opting in; **None** doesn't. <small>On a Random Draw, only eligible attendees during the entry period.</small> |
+| **Require Not Won**                             | Leaves out anyone already picked, with a booking, in another block.                                                                                                                                                                |
+| **Show Room Availability**                      | Adds a **View room availability** button for attendees.                                                                                                                                                                            |
+| **Visibility**                                  | **Hidden** (not on the hotel page), **Always Visible** (everyone) or **Eligible Only** (attendees who may enter).                                                                                                                  |
+| **Restrict to Roles**, **Restrict to Products** | Only people with one of these roles or products may enter. With both set, they need one of the roles and one of the products. Both empty: everyone.                                                                                |
+| **Meeting Max Group Code**                      | MeetingMax only. The rooms' group; blank for a main block with no group code.                                                                                                                                                      |
+| **Passkey Attendee / Access Code**              | Passkey only. Your rooms' access or attendee code, one per block.                                                                                                                                                                  |
 
 </TableFigure>
 
@@ -179,7 +179,7 @@ Moving **Release Start At** also moves the two scheduled tasks, if they haven't 
 
    <Result>Each row shows the **User ID**, **User**, **Selected?**, **Notified?** and **Reservation**. A search box filters the rows.</Result>
 
-3. *(Optional: remove an entry)* Click the delete button (<MaterialIcon name="delete" />) in the entry's **Actions** column, then **Delete** in the **Delete Entry** dialog.
+3. _(Optional: remove an entry)_ Click the delete button (<MaterialIcon name="delete" />) in the entry's **Actions** column, then **Delete** in the **Delete Entry** dialog.
 
    <Result>The entry is removed from the table.</Result>
 
@@ -199,16 +199,16 @@ A reservation made outside ConCat by someone with no account isn't a link. You c
 
 <TableFigure title="Reservation statuses">
 
-| Status | Meaning |
-| --- | --- |
-| **Creating** | ConCat is making the booking link with your provider. |
-| **Pending** | The link is ready; the attendee hasn't booked. |
-| **New** | Booked, not yet confirmed by the hotel. |
-| **Confirmed** | Booked and confirmed. |
-| **Canceled** | Canceled by the attendee or the event. |
-| **Expired** | The link wasn't used in time. |
-| **No show** | The guest didn't arrive. |
-| **Waitlisted** | On the hotel's waiting list. |
+| Status         | Meaning                                               |
+| -------------- | ----------------------------------------------------- |
+| **Creating**   | ConCat is making the booking link with your provider. |
+| **Pending**    | The link is ready; the attendee hasn't booked.        |
+| **New**        | Booked, not yet confirmed by the hotel.               |
+| **Confirmed**  | Booked and confirmed.                                 |
+| **Canceled**   | Canceled by the attendee or the event.                |
+| **Expired**    | The link wasn't used in time.                         |
+| **No show**    | The guest didn't arrive.                              |
+| **Waitlisted** | On the hotel's waiting list.                          |
 
 </TableFigure>
 
@@ -220,13 +220,13 @@ Both buttons need `hotel:manage`.
 
 An entry's card shows **Delete** while it has no reservation or only a **Pending** one, and **Reissue Link** when the attendee canceled in Passkey or MeetingMax.
 
-1. *(Optional: remove the entry)* Click **Delete**, then **Delete** in the **Delete Entry** dialog.
+1. _(Optional: remove the entry)_ Click **Delete**, then **Delete** in the **Delete Entry** dialog.
 
    <Result>An **Entry deleted** message appears and the card is gone.</Result>
 
-2. *(Optional: give a new booking link)* On a canceled reservation, click **Reissue Link**, then **Reissue Link** in the dialog.
+2. _(Optional: give a new booking link)_ On a canceled reservation, click **Reissue Link**, then **Reissue Link** in the dialog.
 
-   <Result>A message says *A new booking link is being generated. It may take a few minutes to appear.*</Result>
+   <Result>A message says _A new booking link is being generated. It may take a few minutes to appear._</Result>
 
 :::caution[Watch out]
 Deleting an entry also deletes its pending reservation and can't be undone. The attendee can enter again only while the block still takes entries.

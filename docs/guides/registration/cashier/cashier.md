@@ -80,27 +80,27 @@ Station settings and devices are saved in the browser, not in ConCat. Set up eac
 
    <Result>**Saved!** appears next to each change. There's no save button.</Result>
 
-3. *(Optional)* To limit the badge products this station checks in, turn on **Restrict Product Check-in** and select them in the list that appears (Ctrl-click, or Cmd-click on a Mac, for several).
+3. _(Optional)_ To limit the badge products this station checks in, turn on **Restrict Product Check-in** and select them in the list that appears (Ctrl-click, or Cmd-click on a Mac, for several).
 
-   <Result>The selected products are highlighted. Any other badge product gets *This registration station is not configured to print <Sample>General Admission</Sample> badges.*</Result>
+   <Result>The selected products are highlighted. Any other badge product gets _This registration station is not configured to print <Sample>General Admission</Sample> badges._</Result>
 
-4. *(Optional)* Under **Badge type printer preferences**, select a badge type and click the arrow toward the other list, **Primary Printer** or **Secondary Printer**.
+4. _(Optional)_ Under **Badge type printer preferences**, select a badge type and click the arrow toward the other list, **Primary Printer** or **Secondary Printer**.
 
    <Result>The badge type moves to that list, and **Saved!** appears.</Result>
 
 <TableFigure title="Station settings">
 
-| Setting | Default | What it does |
-| --- | --- | --- |
-| **Enable payment acceptance** | Off | Takes payment for a balance due (section 4.2). |
-| **No ID barcode has been scanned.** | Off | Requires an ID scan: check-in is blocked until the attendee's ID barcode is scanned (section 7). |
-| **Enable staff check-in** | On | Prints staff and volunteer badges, for anyone with an approved volunteer application. <small>Off: *This registration station is not configured to print staff / volunteer badges.*</small> |
-| **Restrict Product Check-in** | Off | Serves only the badge products you select (step 3). |
-| **Print separate staff badge** | Off | Two badges for staff and volunteers: one with their attendance type, one with STAFF. <small>Off: one badge with both, separated by a slash.</small> |
-| **Print separate dealer badge** | Off | The same for dealers, with DEALER. |
-| **Show reprint modal** | On | Reprints ask for a reason (section 5). <small>Off: **Re-print Badge** prints at once, with no reason or design override. Locked on if the event forces a reprint reason (section 3).</small> |
-| The list of badge designs after **Show reprint modal** | (Default) | Prints every badge here with the chosen design, whatever the attendance level. |
-| **Badge type printer preferences** | Minor badges on the secondary, the rest on the primary | Zebra printer for each badge type (step 4). With no secondary printer, all print on the primary. |
+| Setting                                                | Default                                                | What it does                                                                                                                                                                                 |
+| ------------------------------------------------------ | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Enable payment acceptance**                          | Off                                                    | Takes payment for a balance due (section 4.2).                                                                                                                                               |
+| **No ID barcode has been scanned.**                    | Off                                                    | Requires an ID scan: check-in is blocked until the attendee's ID barcode is scanned (section 7).                                                                                             |
+| **Enable staff check-in**                              | On                                                     | Prints staff and volunteer badges, for anyone with an approved volunteer application. <small>Off: _This registration station is not configured to print staff / volunteer badges._</small>   |
+| **Restrict Product Check-in**                          | Off                                                    | Serves only the badge products you select (step 3).                                                                                                                                          |
+| **Print separate staff badge**                         | Off                                                    | Two badges for staff and volunteers: one with their attendance type, one with STAFF. <small>Off: one badge with both, separated by a slash.</small>                                          |
+| **Print separate dealer badge**                        | Off                                                    | The same for dealers, with DEALER.                                                                                                                                                           |
+| **Show reprint modal**                                 | On                                                     | Reprints ask for a reason (section 5). <small>Off: **Re-print Badge** prints at once, with no reason or design override. Locked on if the event forces a reprint reason (section 3).</small> |
+| The list of badge designs after **Show reprint modal** | (Default)                                              | Prints every badge here with the chosen design, whatever the attendance level.                                                                                                               |
+| **Badge type printer preferences**                     | Minor badges on the secondary, the rest on the primary | Zebra printer for each badge type (step 4). With no secondary printer, all print on the primary.                                                                                             |
 
 </TableFigure>
 
@@ -124,14 +124,14 @@ Needs `system:settings:update`, which the *admin* role has.
 
 <TableFigure title="The Cashier UI card in Registration Settings">
 
-| Setting | What it does |
-| --- | --- |
-| **Disable badge prints and check-in users instead** | For fully pre-printed badges: stations check attendees in without printing (section 6). |
-| **Force Badge Re-Print reason** | Every reprint needs a reason (section 5), and stations can't turn off **Show reprint modal**. |
+| Setting                                             | What it does                                                                                  |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Disable badge prints and check-in users instead** | For fully pre-printed badges: stations check attendees in without printing (section 6).       |
+| **Force Badge Re-Print reason**                     | Every reprint needs a reason (section 5), and stations can't turn off **Show reprint modal**. |
 
 </TableFigure>
 
-With printing off, attendee pages show *Badge printing is disabled.* To print badges again, clear **Disable badge prints and check-in users instead**.
+With printing off, attendee pages show _Badge printing is disabled._ To print badges again, clear **Disable badge prints and check-in users instead**.
 
 ## Check an attendee in
 
@@ -141,24 +141,24 @@ The card on the left of an attendee's page shows a status (Table 4.1), the messa
 
 <TableFigure title="Check-in statuses">
 
-| Status | What it means |
-| --- | --- |
-| **Check-In OK** | *No concerns or issues were found. Badge is ready to print!* |
-| **Check-In Warning** | *One or more concerns may need to be addressed before the badge is printed.* Read the warnings before printing. |
-| **Check-In Blocked** | *One or more errors must be resolved before check-in can proceed.* The station won't print or check in. |
-| **Check-In Complete** | Badge printed or attendee checked in, with nothing else flagged. |
+| Status                | What it means                                                                                                   |
+| --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Check-In OK**       | _No concerns or issues were found. Badge is ready to print!_                                                    |
+| **Check-In Warning**  | _One or more concerns may need to be addressed before the badge is printed._ Read the warnings before printing. |
+| **Check-In Blocked**  | _One or more errors must be resolved before check-in can proceed._ The station won't print or check in.         |
+| **Check-In Complete** | Badge printed or attendee checked in, with nothing else flagged.                                                |
 
 </TableFigure>
 
 <TableFigure title="What the status card can list">
 
-| Heading | Messages |
-| --- | --- |
-| **Error(s)** | Not registered; no paid registration; an outstanding balance, with the items and fees still to pay; under review; banned from attending (a ban note with the **Registration** ban category); outside the age limits of their badge product; no ID barcode scanned at a station that requires one. |
-| **Warning(s)** | A minor (*Check for Parental Consent Form*); a parent or guardian; a volunteer; a banned word in the badge name or a text option; an unpaid dealer table; a name, date of birth or expiry problem with a scanned ID. |
-| **Info** | Returning attendee; vouchers already applied; **No barcode scanned.**; a dealer, with their area. |
-| **User Notes** | Notes in the **Cashier** note category. See [User Notes](../../usernotes/usernotes.md). |
-| **Role Messages** | The **Cashier message** of each of the attendee's roles. |
+| Heading           | Messages                                                                                                                                                                                                                                                                                          |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Error(s)**      | Not registered; no paid registration; an outstanding balance, with the items and fees still to pay; under review; banned from attending (a ban note with the **Registration** ban category); outside the age limits of their badge product; no ID barcode scanned at a station that requires one. |
+| **Warning(s)**    | A minor (_Check for Parental Consent Form_); a parent or guardian; a volunteer; a banned word in the badge name or a text option; an unpaid dealer table; a name, date of birth or expiry problem with a scanned ID.                                                                              |
+| **Info**          | Returning attendee; vouchers already applied; **No barcode scanned.**; a dealer, with their area.                                                                                                                                                                                                 |
+| **User Notes**    | Notes in the **Cashier** note category. See [User Notes](../../usernotes/usernotes.md).                                                                                                                                                                                                           |
+| **Role Messages** | The **Cashier message** of each of the attendee's roles.                                                                                                                                                                                                                                          |
 
 </TableFigure>
 
@@ -185,7 +185,7 @@ A balance due blocks check-in. Only a station with **Enable payment acceptance**
 ### Print the badge
 
 :::caution[Needs a default badge design]
-Printing needs a default badge design. Without one, the page says *Cannot check-in as no badge design is configured and check-in mode is disabled.* Create one in **Housekeeping › Registration › Badge Designer** and click **Set as default** ([Badge Designer](../badge_designer.md)).
+Printing needs a default badge design. Without one, the page says _Cannot check-in as no badge design is configured and check-in mode is disabled._ Create one in **Housekeeping › Registration › Badge Designer** and click **Set as default** ([Badge Designer](../badge_designer.md)).
 :::
 
 1. Open the attendee and check the **Badge Print Preview**.
@@ -218,7 +218,7 @@ Each reprint's reason is saved in the attendee's print log (section 8).
 
    <Result>Your reason is selected. A required reason must be other than **Unspecified** before **Print** is available.</Result>
 
-4. *(Optional)* Tick **Override badge design?** and choose a **Design**. If **Which badges to print?** is listed, untick badges you don't need again.
+4. _(Optional)_ Tick **Override badge design?** and choose a **Design**. If **Which badges to print?** is listed, untick badges you don't need again.
 
    <Result>The reprint will use that design and print only the ticked badges.</Result>
 
@@ -238,11 +238,11 @@ For fully pre-printed badges, turn on **Disable badge prints and check-in users 
 
    <Result>The status card shows **Check-In Complete** if nothing else is flagged, and the button reads **Remove Check-in**.</Result>
 
-3. *(Optional, to undo)* Click **Remove Check-in**.
+3. _(Optional, to undo)_ Click **Remove Check-in**.
 
    <Result>The button reads **Check-in Registration** again.</Result>
 
-An attendee with errors can't be checked in. If **Check-in Registration** shows for one, clicking it gives a message starting *Registration has issues:* that lists the errors.
+An attendee with errors can't be checked in. If **Check-in Registration** shows for one, clicking it gives a message starting _Registration has issues:_ that lists the errors.
 
 ## Verify an attendee's ID
 
@@ -262,23 +262,23 @@ Scanning a driver's license or ID card (PDF417 barcode) on the search page finds
 
 3. Click **Close**, or press ESC.
 
-   <Result>For a match or mismatch, the page reloads: **No barcode scanned.** is gone, and any mismatch is under **Warning(s)**, such as *Name does not match scanned ID.* An expired ID's scan is discarded.</Result>
+   <Result>For a match or mismatch, the page reloads: **No barcode scanned.** is gone, and any mismatch is under **Warning(s)**, such as _Name does not match scanned ID._ An expired ID's scan is discarded.</Result>
 
-4. *(Expired ID only)* To accept it, click **Mark ID as Valid** instead of **Close**, or press ENTER three times.
+4. _(Expired ID only)_ To accept it, click **Mark ID as Valid** instead of **Close**, or press ENTER three times.
 
-   <Result>The page reloads, and **Warning(s)** lists *Scanned ID has an expiration date in the past.*</Result>
+   <Result>The page reloads, and **Warning(s)** lists _Scanned ID has an expiration date in the past._</Result>
 
-5. *(Optional)* If the account's name is wrong, click **Update** next to *Name does not match scanned ID.*, check the details, and click **Update User**.
+5. _(Optional)_ If the account's name is wrong, click **Update** next to _Name does not match scanned ID._, check the details, and click **Update User**.
 
    <Result>The **Edit User** dialog closes and the name warning is gone.</Result>
 
 <TableFigure title="ID check results">
 
-| Result | What it means |
-| --- | --- |
-| **ID Matched!** | *The scanned ID matches the attendee record.* |
-| **ID Mismatch** | *There is a discrepancy between the ID and attendee record.* A table compares **Account** and **ID** for each field that differs. |
-| **Expired ID Matched** | *The scanned ID matches the attendee record, but the ID has expired.* **Mark ID as Valid** accepts it. |
+| Result                 | What it means                                                                                                                     |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **ID Matched!**        | _The scanned ID matches the attendee record._                                                                                     |
+| **ID Mismatch**        | _There is a discrepancy between the ID and attendee record._ A table compares **Account** and **ID** for each field that differs. |
+| **Expired ID Matched** | _The scanned ID matches the attendee record, but the ID has expired._ **Mark ID as Valid** accepts it.                            |
 
 </TableFigure>
 
@@ -292,18 +292,18 @@ A registration QR code doesn't prove identity, so the check refuses it: scan the
 
 <TableFigure title="The Actions menu">
 
-| Item | What it opens |
-| --- | --- |
-| **View user profile** | The attendee's profile in Housekeeping. |
+| Item                                                                             | What it opens                                                                                   |
+| -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **View user profile**                                                            | The attendee's profile in Housekeeping.                                                         |
 | **Update registration** <small>**Create registration** if they have none</small> | The **Edit Registration** dialog: **Badge Name**, **Attendance Type** and registration options. |
-| **Update personal details** | The **Edit User** dialog: names and date of birth. |
-| **View print logs** | The **Badge Print Logs for User** dialog. |
+| **Update personal details**                                                      | The **Edit User** dialog: names and date of birth.                                              |
+| **View print logs**                                                              | The **Badge Print Logs for User** dialog.                                                       |
 
 </TableFigure>
 
 1. On the attendee's page, click **Actions**, then **Update registration**.
 
-   <Result>An **Edit Registration** dialog opens. A badge name with a banned word is marked *Badge name contains a banned word.*</Result>
+   <Result>An **Edit Registration** dialog opens. A badge name with a banned word is marked _Badge name contains a banned word._</Result>
 
 2. Change the **Badge Name** and click **Update Registration**.
 
@@ -311,12 +311,12 @@ A registration QR code doesn't prove identity, so the check refuses it: scan the
 
 3. Click **Actions**, then **View print logs**.
 
-   <Result>A **Badge Print Logs for User** dialog lists each print with its **Cashier**, **Date**, **Product** and **Reason** (*Initial print* for the first), or says *This user does not have any print logs.*</Result>
+   <Result>A **Badge Print Logs for User** dialog lists each print with its **Cashier**, **Date**, **Product** and **Reason** (_Initial print_ for the first), or says _This user does not have any print logs._</Result>
 
 ## Child badges
 
 :::caution[Deprecated]
-Child badges are the older *Child registration* feature. They appear only if your event's **Max Child Registration** is above 0, and a new event can't turn it on. Use sub-accounts instead: see [Registration setup](../../quickstart/registration-setup.md), section 5.
+Child badges are the older _Child registration_ feature. They appear only if your event's **Max Child Registration** is above 0, and a new event can't turn it on. Use sub-accounts instead: see [Registration setup](../../quickstart/registration-setup.md), section 5.
 :::
 
 1. Open a registered attendee.

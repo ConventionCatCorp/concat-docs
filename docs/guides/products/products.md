@@ -30,7 +30,7 @@ Every store product belongs to a category, and attendees browse the store by cat
 
    <Result>A **New Category** form opens.</Result>
 
-2. Enter a **Name**. *(Optional)* Tick **Hide this category** to keep it from attendees for now. Click **Create Category**.
+2. Enter a **Name**. _(Optional)_ Tick **Hide this category** to keep it from attendees for now. Click **Create Category**.
 
    <Result>**New category has been created.** appears, and the category's page opens.</Result>
 
@@ -52,7 +52,7 @@ A category's products must be deleted with it or moved to another category.
 
 1. Click the category's more button (<MaterialIcon name="more_horiz" />) and choose **Delete Category**.
 
-   <Result>The card warns *Deleting a category is a PERMANENT action and cannot be undone.*, with **Delete all existing items** and **New Category**.</Result>
+   <Result>The card warns _Deleting a category is a PERMANENT action and cannot be undone._, with **Delete all existing items** and **New Category**.</Result>
 
 2. Tick **Delete all existing items**, or pick a **New Category** for the products, then click **Delete Category**.
 
@@ -72,30 +72,30 @@ Badges under each product's name show its status (Table 2.1).
 
    <Result>The category's page lists its products, with **Create New Product** and **Category Surcharges** above the table. An empty category shows **No Products Here!**</Result>
 
-2. Type part of a product's name or description in the search box (*Search...*).
+2. Type part of a product's name or description in the search box (_Search..._).
 
    <Result>Only matching products are listed.</Result>
 
-3. *(If the category has deleted products)* Click **Show Deleted Products** below the table.
+3. _(If the category has deleted products)_ Click **Show Deleted Products** below the table.
 
    <Result>Deleted products appear, marked **Deleted / Archived**.</Result>
 
 <TableFigure title="Product status badges">
 
-| Badge | What it means |
-| --- | --- |
-| **Public / Visible**, **Unlisted** or **Hidden** | The **Product visibility** (Table 3.1). |
-| **Deleted / Archived** | Deleted (section 6). |
-| **In Stock: <Sample>40/50</Sample> Available** | Limited stock left, out of the total. |
-| **Out of Stock** | Limited stock used up. <small>**Out of Stock - Exceeded by <Sample>2</Sample>**: <Sample noMarker>2</Sample> sold over the limit.</small> |
-| **Limit per user: <Sample>4</Sample>** | **Maximum purchases per user** is set. |
-| **Role Restriction**, **Product Role Blacklist** | A role whitelist or blacklist is set. |
-| **Grant Restriction** | **Restrict product to grants** is set. |
-| **Not Yet Available** | **Available From** is in the future. |
-| **Expired** | **Available Until** has passed. |
-| **Age Restricted: >= <Sample>18</Sample>** | A purchase age limit is set. |
-| **Addon Stock: <Sample>15/20</Sample> Available**, **Addon Out of Stock** | A complimentary addon has limited stock ([Addons](./addons.md)). |
-| **Unused Stock: <Sample>3</Sample>** | *Product is using stock, but has no active grant.* <small>Click it to see the orders.</small> |
+| Badge                                                                     | What it means                                                                                                                             |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Public / Visible**, **Unlisted** or **Hidden**                          | The **Product visibility** (Table 3.1).                                                                                                   |
+| **Deleted / Archived**                                                    | Deleted (section 6).                                                                                                                      |
+| **In Stock: <Sample>40/50</Sample> Available**                            | Limited stock left, out of the total.                                                                                                     |
+| **Out of Stock**                                                          | Limited stock used up. <small>**Out of Stock - Exceeded by <Sample>2</Sample>**: <Sample noMarker>2</Sample> sold over the limit.</small> |
+| **Limit per user: <Sample>4</Sample>**                                    | **Maximum purchases per user** is set.                                                                                                    |
+| **Role Restriction**, **Product Role Blacklist**                          | A role whitelist or blacklist is set.                                                                                                     |
+| **Grant Restriction**                                                     | **Restrict product to grants** is set.                                                                                                    |
+| **Not Yet Available**                                                     | **Available From** is in the future.                                                                                                      |
+| **Expired**                                                               | **Available Until** has passed.                                                                                                           |
+| **Age Restricted: >= <Sample>18</Sample>**                                | A purchase age limit is set.                                                                                                              |
+| **Addon Stock: <Sample>15/20</Sample> Available**, **Addon Out of Stock** | A complimentary addon has limited stock ([Addons](./addons.md)).                                                                          |
+| **Unused Stock: <Sample>3</Sample>**                                      | _Product is using stock, but has no active grant._ <small>Click it to see the orders.</small>                                             |
 
 </TableFigure>
 
@@ -115,24 +115,24 @@ Badges under each product's name show its status (Table 2.1).
 
 <TableFigure title="The New Product form for store products">
 
-| Field | What it does |
-| --- | --- |
-| **Name** | Shown in Housekeeping, and in the store unless there's a **Display Name**. |
-| **Display Name** (Optional) | A different name for attendees. |
-| **Description** | Shown in the store. <small>Markdown formatting is applied.</small> |
-| **Product visibility** | **Public**: listed in the store. **Unlisted**: not listed; bought through its link. **Hidden**: not for sale; only given automatically, such as a complimentary addon. |
-| **Base Price** | The price before discounts, options and surcharges. <small>**Pricing**. Change it later with **Change Price** (section 4.2).</small> |
-| **Pass Platform Fee to Customer** | Adds ConCat's platform fee on top of the price instead of taking it from what you receive. <small>**Pricing**. See [Surcharges](./surcharges.md), section 6.</small> |
-| **Maximum purchases per user** | The most one attendee can buy. <small>**Stock Control**.</small> |
-| **Limit Available Stock** | The total that can be sold. <small>**Stock Control**. *Maximum stock can only be decreased by the remaining stock available.*</small> |
-| **Product Label Print Design** | Prints a claim ticket for each one bought. <small>**Cashier**. See [Claim Tickets](./claimtickets.md).</small> |
-| **Deliverable** | On by default. For physical goods: the Cashier UI lists it so staff can mark it delivered. <small>**Cashier**.</small> |
-| **Available From** | When sales start. Defaults to the start of today. <small>**Restrictions**.</small> |
-| **Available Until** | When sales end. <small>**Restrictions**.</small> |
-| **Minimum Purchase Age**, **Maximum Purchase Age** (Optional) | Buyer ages allowed, on the convention's start date. <small>**Restrictions**.</small> |
-| **Product Role Whitelist** | Only people with one of these roles see it. <small>**Restrictions**. Needs `system:permission:read`.</small> |
-| **Product Role Blacklist** | People with any of these roles don't see it, even if whitelisted. <small>**Restrictions**. Needs `system:permission:read`.</small> |
-| **Restrict product to grants** | Only people who bought, or have in their cart, one of the chosen products can buy it. <small>**Restrictions**.</small> |
+| Field                                                         | What it does                                                                                                                                                           |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**                                                      | Shown in Housekeeping, and in the store unless there's a **Display Name**.                                                                                             |
+| **Display Name** (Optional)                                   | A different name for attendees.                                                                                                                                        |
+| **Description**                                               | Shown in the store. <small>Markdown formatting is applied.</small>                                                                                                     |
+| **Product visibility**                                        | **Public**: listed in the store. **Unlisted**: not listed; bought through its link. **Hidden**: not for sale; only given automatically, such as a complimentary addon. |
+| **Base Price**                                                | The price before discounts, options and surcharges. <small>**Pricing**. Change it later with **Change Price** (section 4.2).</small>                                   |
+| **Pass Platform Fee to Customer**                             | Adds ConCat's platform fee on top of the price instead of taking it from what you receive. <small>**Pricing**. See [Surcharges](./surcharges.md), section 6.</small>   |
+| **Maximum purchases per user**                                | The most one attendee can buy. <small>**Stock Control**.</small>                                                                                                       |
+| **Limit Available Stock**                                     | The total that can be sold. <small>**Stock Control**. _Maximum stock can only be decreased by the remaining stock available._</small>                                  |
+| **Product Label Print Design**                                | Prints a claim ticket for each one bought. <small>**Cashier**. See [Claim Tickets](./claimtickets.md).</small>                                                         |
+| **Deliverable**                                               | On by default. For physical goods: the Cashier UI lists it so staff can mark it delivered. <small>**Cashier**.</small>                                                 |
+| **Available From**                                            | When sales start. Defaults to the start of today. <small>**Restrictions**.</small>                                                                                     |
+| **Available Until**                                           | When sales end. <small>**Restrictions**.</small>                                                                                                                       |
+| **Minimum Purchase Age**, **Maximum Purchase Age** (Optional) | Buyer ages allowed, on the convention's start date. <small>**Restrictions**.</small>                                                                                   |
+| **Product Role Whitelist**                                    | Only people with one of these roles see it. <small>**Restrictions**. Needs `system:permission:read`.</small>                                                           |
+| **Product Role Blacklist**                                    | People with any of these roles don't see it, even if whitelisted. <small>**Restrictions**. Needs `system:permission:read`.</small>                                     |
+| **Restrict product to grants**                                | Only people who bought, or have in their cart, one of the chosen products can buy it. <small>**Restrictions**.</small>                                                 |
 
 </TableFigure>
 
@@ -144,16 +144,16 @@ Badges under each product's name show its status (Table 2.1).
 
 <TableFigure title="The cards on a product's page">
 
-| Card | What it's for |
-| --- | --- |
-| **Product Information** | Details, with the edit and delete buttons (sections 4.1 and 6). |
-| **Product Images** | Store pictures. See [Product Images](./productimages.md). |
-| **Addons** | Products that come with this one. See [Addons](./addons.md). |
-| **Discounts** | Lower prices for a period or for some roles. See [Discounts](./discounts.md). |
-| **Options** | Questions buyers answer, such as a size. See [Product Options](./options.md). |
-| **Surcharges** | Fees and taxes on top of the price. See [Surcharges](./surcharges.md). |
-| **Prices** | **Current Price** and **Change Price** (section 4.2). |
-| **Actions** | **Clear unpaid orders?** (section 5). <small>Needs `product:manage`.</small> |
+| Card                    | What it's for                                                                 |
+| ----------------------- | ----------------------------------------------------------------------------- |
+| **Product Information** | Details, with the edit and delete buttons (sections 4.1 and 6).               |
+| **Product Images**      | Store pictures. See [Product Images](./productimages.md).                     |
+| **Addons**              | Products that come with this one. See [Addons](./addons.md).                  |
+| **Discounts**           | Lower prices for a period or for some roles. See [Discounts](./discounts.md). |
+| **Options**             | Questions buyers answer, such as a size. See [Product Options](./options.md). |
+| **Surcharges**          | Fees and taxes on top of the price. See [Surcharges](./surcharges.md).        |
+| **Prices**              | **Current Price** and **Change Price** (section 4.2).                         |
+| **Actions**             | **Clear unpaid orders?** (section 5). <small>Needs `product:manage`.</small>  |
 
 </TableFigure>
 

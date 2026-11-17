@@ -27,20 +27,21 @@ ConCat sends the first that exists: **convention override, then organization ove
 
 <TableFigure title="Which version is sent">
 
-| Convention override | Organization override | What is sent |
-| --- | --- | --- |
-| None | None | The default template |
-| None | Exists, not disabled | The organization override |
-| Exists, not disabled | Either | The convention override |
-| Disabled | Either | Nothing |
-| None | Disabled | Nothing |
+| Convention override  | Organization override | What is sent              |
+| -------------------- | --------------------- | ------------------------- |
+| None                 | None                  | The default template      |
+| None                 | Exists, not disabled  | The organization override |
+| Exists, not disabled | Either                | The convention override   |
+| Disabled             | Either                | Nothing                   |
+| None                 | Disabled              | Nothing                   |
 
 </TableFigure>
 
 :::note[Templates you can't turn off or change]
+
 - Required templates, such as password resets and payment receipts, can't be disabled. [Emails ConCat sends](./system-emails.md) marks them.
-- The `register` template (new account confirmation) is locked: its card says *To modify this template, contact support.* ConCat can enable editing it for your organization.
-:::
+- The `register` template (new account confirmation) is locked: its card says _To modify this template, contact support._ ConCat can enable editing it for your organization.
+  :::
 
 ## Find a template
 
@@ -66,7 +67,7 @@ Templates are HTML with [Handlebars](https://handlebarsjs.com/) expressions in d
 
 3. To change the subject too, enter it in **Subject Override (optional)**. Click **Submit**.
 
-   <Result>*New override has been created.* appears. The **Level Convention Override** card shows your version, marked **Current**, with a blue pencil button and a red trash button. On **Email Settings**, the badge reads **Overridden**.</Result>
+   <Result>_New override has been created._ appears. The **Level Convention Override** card shows your version, marked **Current**, with a blue pencil button and a red trash button. On **Email Settings**, the badge reads **Overridden**.</Result>
 
 4. To change the override, click its pencil button.
 
@@ -74,21 +75,22 @@ Templates are HTML with [Handlebars](https://handlebarsjs.com/) expressions in d
 
 5. Change the text, then click **Submit**.
 
-   <Result>*Override has been modified.* appears, and the card's preview shows the change.</Result>
+   <Result>_Override has been modified._ appears, and the card's preview shows the change.</Result>
 
 6. To go back to the default, click the override's trash button.
 
-   <Result>A **Delete override?** dialog asks *Are you sure you want to delete this template override?*</Result>
+   <Result>A **Delete override?** dialog asks _Are you sure you want to delete this template override?_</Result>
 
 7. Click **Delete**.
 
-   <Result>*Override has been deleted.* appears. The card says *No convention level override exists for this template.* again, and **Default Template** is **Current**.</Result>
+   <Result>_Override has been deleted._ appears. The card says _No convention level override exists for this template._ again, and **Default Template** is **Current**.</Result>
 
 :::note[Subjects and testing]
+
 - Every subject starts with your **Notification Prefix** and a dash (**System › Settings › Convention**), except the hotel raffle results. A subject override needs at least 4 characters; leave it empty to keep the default.
 - There's no test send. The preview uses your convention's details, your account as the recipient, and sample values for the rest.
 - Emails aren't translated: each level holds one version, in the language you write it.
-:::
+  :::
 
 ## Disable or reactivate an email
 
@@ -104,11 +106,11 @@ An email that isn't required can be turned off for one convention or the organiz
 
 2. Click **Disable Template**.
 
-   <Result>A **Disable email template?** dialog says *This action will prevent the email template registrationQR from being sent at all.*</Result>
+   <Result>A **Disable email template?** dialog says _This action will prevent the email template registrationQR from being sent at all._</Result>
 
 3. Click **Disable**.
 
-   <Result>*New override has been created.* appears. The card says *This email will not be sent for this convention.* and has a **Reactivate Template** button. On **Email Settings**, the badge reads **Disabled**.</Result>
+   <Result>_New override has been created._ appears. The card says _This email will not be sent for this convention._ and has a **Reactivate Template** button. On **Email Settings**, the badge reads **Disabled**.</Result>
 
 4. Click **Reactivate Template**.
 
@@ -116,7 +118,7 @@ An email that isn't required can be turned off for one convention or the organiz
 
 5. Click **Reactivate Template**.
 
-   <Result>*Reactivation complete.* appears, and the card says *No convention level override exists for this template.* again.</Result>
+   <Result>_Reactivation complete._ appears, and the card says _No convention level override exists for this template._ again.</Result>
 
 :::caution[Watch out]
 A convention override wins over an organization override. If you disable an email for the organization, a convention with its own override still sends it.
@@ -126,30 +128,31 @@ A convention override wins over an organization override. If you disable an emai
 
 Variables are values ConCat fills in for each email, such as the recipient's name. Write them in double braces, with dots to reach values inside: `{{convention.name.long}}` is your convention's full name.
 
-The editor's **Available Variables** card lists the template's variables with example values. An arrow means the variable holds other values; *list, ex:* marks a list of values; **Complex List** marks a list of items with values of their own.
+The editor's **Available Variables** card lists the template's variables with example values. An arrow means the variable holds other values; _list, ex:_ marks a list of values; **Complex List** marks a list of items with values of their own.
 
 Every template can use `user` (the recipient) and `convention` (Table 5.1). Each template adds its own, such as `orderId` for refund emails or `department` for volunteer assignments.
 
 <TableFigure title="Variables in every template">
 
-| Variable | Holds |
-| --- | --- |
-| `user.name` | The name ConCat uses to address the person. |
-| `user.firstName`, `user.lastName`, `user.preferredName`, `user.username`, `user.email`, `user.id` | The person's account details. |
-| `user.address.line1`, `.line2`, `.city`, `.state`, `.zipcode`, `.country` | The person's address. |
-| `convention.name.long`, `convention.name.short` | Your convention's full and short names. |
-| `convention.notificationPrefix` | The text that starts every subject. |
-| `convention.publicUrl` | Your instance's web address. |
-| `convention.marketingUrl` | Your **Marketing URL**. |
-| `convention.emailDomain` | The domain your email is sent from. |
-| `convention.start.year` | The year your convention starts. |
+| Variable                                                                                          | Holds                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| `user.name`                                                                                       | The name ConCat uses to address the person. |
+| `user.firstName`, `user.lastName`, `user.preferredName`, `user.username`, `user.email`, `user.id` | The person's account details.               |
+| `user.address.line1`, `.line2`, `.city`, `.state`, `.zipcode`, `.country`                         | The person's address.                       |
+| `convention.name.long`, `convention.name.short`                                                   | Your convention's full and short names.     |
+| `convention.notificationPrefix`                                                                   | The text that starts every subject.         |
+| `convention.publicUrl`                                                                            | Your instance's web address.                |
+| `convention.marketingUrl`                                                                         | Your **Marketing URL**.                     |
+| `convention.emailDomain`                                                                          | The domain your email is sent from.         |
+| `convention.start.year`                                                                           | The year your convention starts.            |
 
 </TableFigure>
 
 :::tip[What to keep from the default]
+
 - Keep the building blocks starting with `{{>`, such as `{{>greeting user}}` and `{{>footer department="Human Resources"}}`: they write the greeting and signature.
 - Keep the triple braces around web addresses, such as `{{{convention.publicUrl}}}`, so HTML escaping doesn't change them.
-:::
+  :::
 
 ## Errors
 
@@ -157,14 +160,14 @@ The editor checks your template as you type. **Submit** can't be clicked while t
 
 1. In the editor, type `{{notAVariable}}` in the large box.
 
-   <Result>About a second later, a red badge beside the editor's title says *'notAVariable' is Invalid*.</Result>
+   <Result>About a second later, a red badge beside the editor's title says _'notAVariable' is Invalid_.</Result>
 
 2. Delete `{{notAVariable}}`, then type `{{` with no closing braces.
 
-   <Result>A red **Parse Error** badge appears. The **Preview** shows *Template was unable to be parsed.* and *A parsing error occurred. View the error below and remove or fix the offending expression.*, then the error, such as *Parse error on line <Sample>14</Sample>:* with a pointer to the problem.</Result>
+   <Result>A red **Parse Error** badge appears. The **Preview** shows _Template was unable to be parsed._ and _A parsing error occurred. View the error below and remove or fix the offending expression._, then the error, such as _Parse error on line <Sample>14</Sample>:_ with a pointer to the problem.</Result>
 
 3. Delete the `{{`.
 
    <Result>The badge disappears, the preview shows the email, and **Submit** can be clicked again.</Result>
 
-*Invalid* means the variable doesn't exist for this template: check its spelling against **Available Variables**. A **Parse Error** usually means unmatched braces.
+_Invalid_ means the variable doesn't exist for this template: check its spelling against **Available Variables**. A **Parse Error** usually means unmatched braces.

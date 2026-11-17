@@ -28,7 +28,7 @@ Use a test account without staff roles, in a private window, with the registrati
 
 2. Look under **My reservation** before the attendee has booked.
 
-   <Result>It says *You don't yet have a reservation.*</Result>
+   <Result>It says _You don't yet have a reservation._</Result>
 
 3. Look under **Active blocks**.
 
@@ -36,7 +36,7 @@ Use a test account without staff roles, in a private window, with the registrati
 
 A block is visible when its **Visibility** is **Always Visible**, or **Eligible Only** and the attendee may enter it or has one of its roles or products. Blocks they may enter come first.
 
-While **Open Hotels** is off ([Hotel management](./hotel-management.md), section 2), **Active blocks** is replaced by *Reservations are not being accepted at this time.* and your **Hotel Closed Message**, if you wrote one.
+While **Open Hotels** is off ([Hotel management](./hotel-management.md), section 2), **Active blocks** is replaced by _Reservations are not being accepted at this time._ and your **Hotel Closed Message**, if you wrote one.
 
 :::note[Automatic entry]
 Opening the hotel page enters the attendee into any block with **Force Entry** whose criteria they meet, without a confirmation email.
@@ -50,20 +50,20 @@ The **Status** badge shows where the attendee stands (Table 2.1).
 
 <TableFigure title="Block card states">
 
-| Badge | Text on the card | When |
-| --- | --- | --- |
-| **Not eligible** | *You are not eligible to enter this block.* | Doesn't meet the requirements and hasn't entered. |
-| **Not yet open** | **Entries not yet open**, then *Entries will open on <Sample>July 1, 2026</Sample>.* | Before the entry period; a first-come block until the booking period. |
-| **Entries open** | **Accepting entries**, with **Enter block**. | May enter now. |
-| **Entered** | **Entry received**, with **View my entry**. After a draw's entry period: **Entry period has ended**. | Has entered. |
-| **Ready for booking** (draw) or **Book now** (first come) | **You're ready to book!**, with **Book a room**. | Has a booking link (section 4). |
-| **Not selected** | *Sorry, but you were not randomly selected to be able to book in this block.* | The draw is over and the attendee wasn't picked. |
-| **Block closed** | **Entries are closed**. | Didn't enter in time. |
+| Badge                                                     | Text on the card                                                                                     | When                                                                  |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **Not eligible**                                          | _You are not eligible to enter this block._                                                          | Doesn't meet the requirements and hasn't entered.                     |
+| **Not yet open**                                          | **Entries not yet open**, then _Entries will open on <Sample>July 1, 2026</Sample>._                 | Before the entry period; a first-come block until the booking period. |
+| **Entries open**                                          | **Accepting entries**, with **Enter block**.                                                         | May enter now.                                                        |
+| **Entered**                                               | **Entry received**, with **View my entry**. After a draw's entry period: **Entry period has ended**. | Has entered.                                                          |
+| **Ready for booking** (draw) or **Book now** (first come) | **You're ready to book!**, with **Book a room**.                                                     | Has a booking link (section 4).                                       |
+| **Not selected**                                          | _Sorry, but you were not randomly selected to be able to book in this block._                        | The draw is over and the attendee wasn't picked.                      |
+| **Block closed**                                          | **Entries are closed**.                                                                              | Didn't enter in time.                                                 |
 
 </TableFigure>
 
 :::tip[Email subjects]
-Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
 :::
 
 ### Room availability
@@ -84,7 +84,7 @@ Attendees agree to your **Hotel Reservation Policy**, on the **Terms** tab of **
 
 1. On a card showing **Entries open**, click **Enter block**.
 
-   <Result>The block's page opens, titled with the block's name, such as **Hotel—<Sample>Riverside Main Block</Sample>**. It says *You are eligible to enter this block!* above an **Enter block** card with your hotel reservation policy.</Result>
+   <Result>The block's page opens, titled with the block's name, such as **Hotel—<Sample>Riverside Main Block</Sample>**. It says _You are eligible to enter this block!_ above an **Enter block** card with your hotel reservation policy.</Result>
 
 2. Tick **I have read and agree to the hotel reservation policy.**
 
@@ -92,15 +92,15 @@ Attendees agree to your **Hotel Reservation Policy**, on the **Terms** tab of **
 
 3. Click **Enter block**.
 
-   <Result>*You have successfully entered this block.* appears and the page shows **You've entered this block!** A confirmation email follows: *<Sample>ConCat</Sample> - Hotel Raffle Entry Confirmation* (draw) or *<Sample noMarker>ConCat</Sample> - Hotel Entry Confirmation* (first come).</Result>
+   <Result>_You have successfully entered this block._ appears and the page shows **You've entered this block!** A confirmation email follows: _<Sample>ConCat</Sample> - Hotel Raffle Entry Confirmation_ (draw) or _<Sample noMarker>ConCat</Sample> - Hotel Entry Confirmation_ (first come).</Result>
 
 A draw's page then shows **Entry received** and how long winners will have to book. A first-come block in its booking period refreshes every 30 seconds until the link is ready.
 
 ### Leave a block
 
-1. *(Optional)* On the block's page, under **Leave block**, click **Leave block**.
+1. _(Optional)_ On the block's page, under **Leave block**, click **Leave block**.
 
-   <Result>*You have successfully withdrawn your entry from this wave.* appears. There's no confirmation dialog.</Result>
+   <Result>_You have successfully withdrawn your entry from this wave._ appears. There's no confirmation dialog.</Result>
 
 **Leave block** shows only while the block still takes entries, and never on an automatic-entry block.
 
@@ -118,17 +118,17 @@ When an attendee is picked in a draw, or reaches the front of a first-come queue
 
    <Result>The badge reads **Ready for booking** (draw) or **Book now** (first come), with the booking deadline, **Book a room** and a copy button. While the link is being made, the card says **Processing reservation** and refreshes every 30 seconds.</Result>
 
-2. *(Optional)* Click the copy button.
+2. _(Optional)_ Click the copy button.
 
-   <Result>*Booking link copied to clipboard!* appears.</Result>
+   <Result>_Booking link copied to clipboard!_ appears.</Result>
 
 3. Open the block's page.
 
-   <Result>It says *Congratulations, you've been randomly selected to book a room!* (draw) or *Your entry has been processed and your unique reservation link is ready!* (first come), with **Proceed to booking platform**.</Result>
+   <Result>It says _Congratulations, you've been randomly selected to book a room!_ (draw) or _Your entry has been processed and your unique reservation link is ready!_ (first come), with **Proceed to booking platform**.</Result>
 
 4. Click **Proceed to booking platform** and book the room in Passkey or MeetingMax.
 
-   <Result>The provider's booking page opens with the attendee's details filled in. Once the booking reaches ConCat, the block's page says **Booking completed!** and *You've successfully reserved a room, and your reservation number is #<Sample>12</Sample>.*</Result>
+   <Result>The provider's booking page opens with the attendee's details filled in. Once the booking reaches ConCat, the block's page says **Booking completed!** and _You've successfully reserved a room, and your reservation number is #<Sample>12</Sample>._</Result>
 
 Afterwards the card says **Reservation link used**. If the reservation is canceled and the attendee is still eligible, the block's page offers **Re-enter block** for a new link; staff can also use **Reissue Link** ([Hotel management](./hotel-management.md), section 7).
 
@@ -150,7 +150,7 @@ A booking is listed under **My reservation** once it has synced.
 
    <Result>Passkey or MeetingMax opens to change or cancel the booking. Changes reach ConCat on the next sync.</Result>
 
-While **Open Hotels** is off, **Update / Cancel reservation** is grayed out and the page says *Modifications to existing reservations are no longer being accepted.* A canceled reservation says *This reservation has been canceled and cannot be modified.* Guests are added or removed with the provider, not in ConCat.
+While **Open Hotels** is off, **Update / Cancel reservation** is grayed out and the page says _Modifications to existing reservations are no longer being accepted._ A canceled reservation says _This reservation has been canceled and cannot be modified._ Guests are added or removed with the provider, not in ConCat.
 
 Your **Hotel Reservation Additional Info** text (**Terms** tab) shows at the top of the reservation page.
 
@@ -164,6 +164,6 @@ An attendee who booked directly with the hotel, or is an extra guest on someone 
 
 2. Enter the reservation number and click **Find reservation**.
 
-   <Result>*Your reservation has been found and linked to your account!* appears and the reservation is listed under **My reservation**. If it isn't found, or the guest details don't match: *We could not find a reservation matching the provided reservation ID.*</Result>
+   <Result>_Your reservation has been found and linked to your account!_ appears and the reservation is listed under **My reservation**. If it isn't found, or the guest details don't match: _We could not find a reservation matching the provided reservation ID._</Result>
 
-Name matching ignores capitals, not spelling: *<Sample>alex smith</Sample>* matches *<Sample noMarker>Alex Smith</Sample>*; *<Sample noMarker>Alexander Smith</Sample>* doesn't. If the reservation lists the guest's email address, it must also match the account's. Linking a reservation as its primary guest withdraws the attendee's other entries that haven't been picked.
+Name matching ignores capitals, not spelling: _<Sample>alex smith</Sample>_ matches _<Sample noMarker>Alex Smith</Sample>_; _<Sample noMarker>Alexander Smith</Sample>_ doesn't. If the reservation lists the guest's email address, it must also match the account's. Linking a reservation as its primary guest withdraws the attendee's other entries that haven't been picked.

@@ -26,23 +26,23 @@ Everything here needs `registration:stats`. Without it, both dashboards show **N
 
    <Result>The **Dashboard** page shows **Total Registrations**, **Total Paid Registrations**, the cards in Table 2.1 that apply, and a card per tier, such as **<Sample>General Admission</Sample> (Paid)**, counting its paid registrations.</Result>
 
-2. *(If the card is shown)* On **Accounts Pending Review**, click **View**.
+2. _(If the card is shown)_ On **Accounts Pending Review**, click **View**.
 
    <Result>An **Accounts Pending Review** dialog lists the accounts, each linked to its profile.</Result>
 
 <TableFigure title="Cards shown only when they apply">
 
-| Card | Shown when |
-| --- | --- |
-| **Badges Printed** | At least one badge has been printed. |
-| **Accounts Pending Review** | An account is waiting for review, and you have `user:note:delete`. |
-| **Pending Refund Requests** | A refund request is waiting, and you have `refund:create`. The title links to **Refund Requests**. |
-| **Identity Verifications Left**, and a card per status, such as **Identity: verified** or **Identity: requires_input** | ConCat Support has turned on identity verification for your event. |
+| Card                                                                                                                   | Shown when                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Badges Printed**                                                                                                     | At least one badge has been printed.                                                               |
+| **Accounts Pending Review**                                                                                            | An account is waiting for review, and you have `user:note:delete`.                                 |
+| **Pending Refund Requests**                                                                                            | A refund request is waiting, and you have `refund:create`. The title links to **Refund Requests**. |
+| **Identity Verifications Left**, and a card per status, such as **Identity: verified** or **Identity: requires_input** | ConCat Support has turned on identity verification for your event.                                 |
 
 </TableFigure>
 
 :::tip[Identity statuses]
-The identity cards show each identity verification status as ConCat stores it: *canceled*, *processing*, *processing_test*, *requires_input* or *verified*.
+The identity cards show each identity verification status as ConCat stores it: _canceled_, _processing_, _processing_test_, _requires_input_ or _verified_.
 :::
 
 ## The registration dashboard
@@ -113,7 +113,7 @@ Payouts are listed only when automatic Stripe payouts to your bank account are s
 
    <Result>The charts update to that option and those orders.</Result>
 
-3. *(Optional)* Under **Download**, click **CSV** or **JSON**.
+3. _(Optional)_ Under **Download**, click **CSV** or **JSON**.
 
    <Result>The browser downloads the option's answers in that format.</Result>
 

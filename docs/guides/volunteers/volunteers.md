@@ -22,29 +22,29 @@ Attendees apply from your homepage, saying how they relate to each department. D
 
 <TableFigure title="How a volunteer relates to a department">
 
-| Relation | Who sets it | Shown on the application as |
-| --- | --- | --- |
-| Interest | The volunteer. At most 5. | **Interested in** <small>Badge tooltip in the list: *Interested in <Sample>Art Show</Sample>*</small> |
-| Experience | The volunteer. | **Past experience** <small>Tooltip: *Has past experience with <Sample>Art Show</Sample>*</small> |
-| Avoid | The volunteer. | **Will not volunteer for** <small>Not shown in the list</small> |
-| Request | A lead, with **Recruit Request** or **Staff Request**. | **Requested by** <small>Tooltip: *Requested by <Sample>Art Show</Sample>*</small> |
-| Assignment | Your volunteer staff (section 4). | **Assigned to** <small>Tooltip: *Assigned to <Sample>Art Show</Sample>*</small> |
+| Relation   | Who sets it                                            | Shown on the application as                                                                           |
+| ---------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| Interest   | The volunteer. At most 5.                              | **Interested in** <small>Badge tooltip in the list: _Interested in <Sample>Art Show</Sample>_</small> |
+| Experience | The volunteer.                                         | **Past experience** <small>Tooltip: _Has past experience with <Sample>Art Show</Sample>_</small>      |
+| Avoid      | The volunteer.                                         | **Will not volunteer for** <small>Not shown in the list</small>                                       |
+| Request    | A lead, with **Recruit Request** or **Staff Request**. | **Requested by** <small>Tooltip: _Requested by <Sample>Art Show</Sample>_</small>                     |
+| Assignment | Your volunteer staff (section 4).                      | **Assigned to** <small>Tooltip: _Assigned to <Sample>Art Show</Sample>_</small>                       |
 
 </TableFigure>
 
 :::tip[Email subjects]
-Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
 :::
 
 <TableFigure title="Columns in the Applications list">
 
-| Column | Values |
-| --- | --- |
-| **Volunteer Type** | **Staff** (has the *staff* role), **Staff Alumni** (staff at your previous convention) or **Recruit**. |
-| **Registration Status** | **Paid**, **Unpaid** or **Not Registered**, for this convention's badge. |
-| **Status** | **Assigned** to at least one department, **Pending Request** from a lead, or **Unassigned**. |
-| **Restrictions** | **Yes** if the person has a note in the *Restriction* category. See [User Notes](../usernotes/usernotes.md). |
-| **Department(s)** | A colored badge per relation in Table 1.1, or **No Preferences / Assignments**. |
+| Column                  | Values                                                                                                       |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Volunteer Type**      | **Staff** (has the _staff_ role), **Staff Alumni** (staff at your previous convention) or **Recruit**.       |
+| **Registration Status** | **Paid**, **Unpaid** or **Not Registered**, for this convention's badge.                                     |
+| **Status**              | **Assigned** to at least one department, **Pending Request** from a lead, or **Unassigned**.                 |
+| **Restrictions**        | **Yes** if the person has a note in the _Restriction_ category. See [User Notes](../usernotes/usernotes.md). |
+| **Department(s)**       | A colored badge per relation in Table 1.1, or **No Preferences / Assignments**.                              |
 
 </TableFigure>
 
@@ -60,9 +60,9 @@ Email subjects start with your **Notification Prefix**, *ConCat* unless you've c
 
 3. Type part of a name, username, email address, contact detail or department name in **Search...**.
 
-   <Result>Only matching applications are listed, or *No results found.*</Result>
+   <Result>Only matching applications are listed, or _No results found._</Result>
 
-4. *(Optional)* Click the filter button in the **Status** column header (Figure 2.1), leave only **Unassigned** ticked, and click **Apply**.
+4. _(Optional)_ Click the filter button in the **Status** column header (Figure 2.1), leave only **Unassigned** ticked, and click **Apply**.
 
    <Result>Only volunteers with no assignment are listed, and the filter button is highlighted. To remove the filter, open it and click **Clear**.</Result>
 
@@ -84,7 +84,7 @@ Email subjects start with your **Notification Prefix**, *ConCat* unless you've c
 </Figure>
 
 :::note[Filtering by department and status together]
-The **Status** and **Department(s)** filters combine. **Assigned** plus *<Sample>Art Show</Sample>* lists volunteers assigned to <Sample noMarker>Art Show</Sample>, not volunteers assigned anywhere who are interested in it.
+The **Status** and **Department(s)** filters combine. **Assigned** plus _<Sample>Art Show</Sample>_ lists volunteers assigned to <Sample noMarker>Art Show</Sample>, not volunteers assigned anywhere who are interested in it.
 :::
 
 ## Review an application
@@ -93,7 +93,7 @@ The **Status** and **Department(s)** filters combine. **Assigned** plus *<Sample
 
    <Result>A dialog with their application opens. Its footer has **Profile**, **Assign**, **Make Staff** (or **Remove Staff**) and a **…** button. The address gains `?user=` and their user ID, so you can share a link to it.</Result>
 
-2. *(If the button is shown)* Click **Previous years**.
+2. _(If the button is shown)_ Click **Previous years**.
 
    <Result>Each earlier convention they applied to has a section with their choices, answers and dates. A **Staff** badge marks a year they were staff.</Result>
 
@@ -117,7 +117,7 @@ The **Status** and **Department(s)** filters combine. **Assigned** plus *<Sample
 With **Enable Volunteer Emails** on, an assignment emails the volunteer (*<Sample>ConCat</Sample> - Volunteer Assignment: <Sample noMarker>Art Show</Sample>*), and the department's address and leads (*<Sample noMarker>ConCat</Sample> - New Volunteer Assigned*).
 </Sidenote>
 
-Assigning approves the application for that department, and the volunteer sees *Your application has been approved!* A volunteer can have several departments.
+Assigning approves the application for that department, and the volunteer sees _Your application has been approved!_ A volunteer can have several departments.
 
 1. In the application dialog, click **Assign**.
 
@@ -127,7 +127,7 @@ Assigning approves the application for that department, and the volunteer sees *
 
    <Result>The button turns green. Any request for that department is replaced by the assignment.</Result>
 
-3. *(Optional: to unassign)* Click a green department button.
+3. _(Optional: to unassign)_ Click a green department button.
 
    <Result>The button turns gray with a **+** again.</Result>
 
@@ -141,11 +141,11 @@ Assigning approves the application for that department, and the volunteer sees *
 **Remove Staff** also needs `refund:create`, because it can take back a badge and issue a voucher. The default *admin* role has it; *hr* doesn't.
 </Sidenote>
 
-**Make Staff** gives the person the *staff* role for this convention. When you start next year's convention, they get the *staffAlumni* role and show as **Staff Alumni**.
+**Make Staff** gives the person the _staff_ role for this convention. When you start next year's convention, they get the _staffAlumni_ role and show as **Staff Alumni**.
 
 1. In the application dialog, click **Make Staff**.
 
-   <Result>A **Make Staff: <Sample>Alex Smith</Sample>** dialog asks *Are you sure you want to mark this user as staff?*</Result>
+   <Result>A **Make Staff: <Sample>Alex Smith</Sample>** dialog asks _Are you sure you want to mark this user as staff?_</Result>
 
 2. Click **Make Staff**.
 
@@ -153,17 +153,17 @@ Assigning approves the application for that department, and the volunteer sees *
 
 3. To undo it later, click **Remove Staff**.
 
-   <Result>A **Remove Staff: <Sample>Alex Smith</Sample>** dialog opens. If the person has a paid badge, it shows a ticked *Remove paid <Sample noMarker>General Admission</Sample> registration fromOrder #<Sample noMarker>13</Sample><Sample noMarker>$50.00</Sample>* box and a voucher amount set to what they paid.</Result>
+   <Result>A **Remove Staff: <Sample>Alex Smith</Sample>** dialog opens. If the person has a paid badge, it shows a ticked _Remove paid <Sample noMarker>General Admission</Sample> registration fromOrder #<Sample noMarker>13</Sample><Sample noMarker>$50.00</Sample>_ box and a voucher amount set to what they paid.</Result>
 
 4. Untick the registration box to let them keep their badge, correct the voucher amount if needed (`0` for no voucher), and click **Remove Staff**.
 
    <Result>The **Staff** badge is gone, and the button reads **Make Staff** again.</Result>
 
 :::caution[Watch out]
-With the registration box ticked, **Remove Staff** unlinks their paid badge and puts it back in their cart, unpaid. An amount above 0 issues a single-use voucher named *Remove staff Voucher*. With **Enable Volunteer Emails** on, they also get the email *<Sample>ConCat</Sample> - Staff status have been removed*.
+With the registration box ticked, **Remove Staff** unlinks their paid badge and puts it back in their cart, unpaid. An amount above 0 issues a single-use voucher named _Remove staff Voucher_. With **Enable Volunteer Emails** on, they also get the email _<Sample>ConCat</Sample> - Staff status have been removed_.
 :::
 
-To give staff a lower badge price, add a discount limited to the *staff* role. See [Discounts](../products/discounts.md).
+To give staff a lower badge price, add a discount limited to the _staff_ role. See [Discounts](../products/discounts.md).
 
 ## Clear requests or delete an application
 
@@ -173,24 +173,25 @@ To give staff a lower badge price, add a discount limited to the *staff* role. S
 
 1. In the application dialog, click the **…** button and choose **Clear requests**.
 
-   <Result>A **Clear department requests** dialog asks *Are you sure you want to clear all the department requests?*</Result>
+   <Result>A **Clear department requests** dialog asks _Are you sure you want to clear all the department requests?_</Result>
 
 2. Click **Clear**.
 
-   <Result>**Requested by** shows *None*.</Result>
+   <Result>**Requested by** shows _None_.</Result>
 
 3. Click the **…** button and choose **Delete Application**.
 
-   <Result>A **Delete Application** dialog asks *Are you sure you want to delete this volunteer application?*</Result>
+   <Result>A **Delete Application** dialog asks _Are you sure you want to delete this volunteer application?_</Result>
 
 4. Click **Delete**.
 
    <Result>The application is no longer listed on **Applications**.</Result>
 
 :::caution[Watch out]
-- An assigned volunteer's application can't be deleted: it fails with *You are currently assigned to a department.* Unassign every department first (section 4, step 3).
+
+- An assigned volunteer's application can't be deleted: it fails with _You are currently assigned to a department._ Unassign every department first (section 4, step 3).
 - Deleting removes the application, its answers, preferences and requests. It can't be undone.
-:::
+  :::
 
 ## From a user's profile
 
@@ -202,8 +203,8 @@ Staff with `volunteer:read` see a person's application on their profile; with `v
 
 2. Change the form, tick the Code of Conduct agreement if asked, and click **Submit**.
 
-   <Result>*Your volunteer application has been saved!* appears. If the form was empty, the person now has an application on **Applications**.</Result>
+   <Result>_Your volunteer application has been saved!_ appears. If the form was empty, the person now has an application on **Applications**.</Result>
 
 Sub-accounts have no **Volunteer** tab. Saving here sends the person no confirmation email.
 
-With **Allow Parents to Volunteer** off, the form still opens for a person with child registrations, but **Submit** shows *One or more errors occurred while trying to process your request.* and *Parents cannot volunteer - Your kids come first.*
+With **Allow Parents to Volunteer** off, the form still opens for a person with child registrations, but **Submit** shows _One or more errors occurred while trying to process your request._ and _Parents cannot volunteer - Your kids come first._

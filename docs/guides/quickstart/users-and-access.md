@@ -50,7 +50,7 @@ Most work on one attendee, such as notes, orders, refunds and roles, starts from
 A role can be given for this convention only, or globally, for every convention in your organization.
 </Sidenote>
 
-A permission allows one action, such as viewing orders. A role is a named set of permissions, such as *registration* or *finance*. You give people roles, not permissions, so everyone doing a job gets the same access.
+A permission allows one action, such as viewing orders. A role is a named set of permissions, such as _registration_ or _finance_. You give people roles, not permissions, so everyone doing a job gets the same access.
 
 1. Go to **Housekeeping › System › Roles**.
 
@@ -68,7 +68,7 @@ A permission allows one action, such as viewing orders. A role is a named set of
 
    <Result>The person is listed on the role's **Users** tab.</Result>
 
-5. *(Instead of step 4, for people who will sign up themselves)* Click **Invites**, then **Create Invite**. Set the **Amount** of codes, their **Max Uses** (`-1` for unlimited) and **Expires**, then click **Create Invite**.
+5. _(Instead of step 4, for people who will sign up themselves)_ Click **Invites**, then **Create Invite**. Set the **Amount** of codes, their **Max Uses** (`-1` for unlimited) and **Expires**, then click **Create Invite**.
 
    <Result>An **Invite(s) created!** message appears, and the invite is listed with its **Code**. **Copy Link** copies a link to send your team and shows **Invite link copied to clipboard**.</Result>
 
@@ -96,9 +96,10 @@ You can also give a role from a person's profile (section 2): on the **Roles** t
 :::
 
 :::tip[In more detail]
+
 - [Creating user accounts](../system/users.md)
 - [Finding attendees](../attendees/user-search.md)
 - [Roles and permissions](../system/roles.md)
-:::
+  :::
 
 You've finished the Quickstart. Before you open, read the [Checklist](../convention_checklist.md) and set a default badge design so the Cashier UI can print badges.

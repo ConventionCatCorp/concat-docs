@@ -24,12 +24,12 @@ Vouchers need `comp:create`, which the default *admin*, *finance* and *hr* roles
 
 <TableFigure title="Voucher statuses">
 
-| Status | Means |
-| --- | --- |
-| **Available** | The code can be used. |
-| **Fully Claimed** | **Max Uses** orders have used it. |
-| **Expired** | **Available Until** has passed. |
-| **Deleted / Archived** | Deleted (section 6). |
+| Status                 | Means                             |
+| ---------------------- | --------------------------------- |
+| **Available**          | The code can be used.             |
+| **Fully Claimed**      | **Max Uses** orders have used it. |
+| **Expired**            | **Available Until** has passed.   |
+| **Deleted / Archived** | Deleted (section 6).              |
 
 </TableFigure>
 
@@ -41,7 +41,7 @@ A voucher that allows stacking also shows **Can Be Stacked**.
 
    <Result>The **Vouchers** page (`/housekeeping/store/vouchers`) lists your vouchers with their code, value, uses and **Status**.</Result>
 
-2. Type part of a code or display name in the search box (*Search...*).
+2. Type part of a code or display name in the search box (_Search..._).
 
    <Result>Only matching vouchers are listed.</Result>
 
@@ -57,21 +57,21 @@ A voucher that allows stacking also shows **Can Be Stacked**.
 
 <TableFigure title="Voucher fields">
 
-| Field | What it holds |
-| --- | --- |
-| **Voucher Code** | What attendees type, up to 32 characters. Can't be changed later. <small>Not case-sensitive at checkout.</small> |
-| **Display Name** (Optional) | Shown with the code, such as in the order summary. |
-| **Amount** | Comes off the order's total. Can't be zero or changed later. |
-| **Max Uses** | How many orders may use it. `-1`, the default, is unlimited. |
-| **Available From** | When the code starts working. Defaults to now. |
-| **Available Until** | When it stops working. <small>Tick its checkbox to set it.</small> |
-| **Restrict voucher to products** | Only orders with one of these products can use it. <small>Search by product name or ID.</small> |
-| **Allow Voucher Stacking** | Lets it combine with other stackable vouchers. |
+| Field                            | What it holds                                                                                                    |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Voucher Code**                 | What attendees type, up to 32 characters. Can't be changed later. <small>Not case-sensitive at checkout.</small> |
+| **Display Name** (Optional)      | Shown with the code, such as in the order summary.                                                               |
+| **Amount**                       | Comes off the order's total. Can't be zero or changed later.                                                     |
+| **Max Uses**                     | How many orders may use it. `-1`, the default, is unlimited.                                                     |
+| **Available From**               | When the code starts working. Defaults to now.                                                                   |
+| **Available Until**              | When it stops working. <small>Tick its checkbox to set it.</small>                                               |
+| **Restrict voucher to products** | Only orders with one of these products can use it. <small>Search by product name or ID.</small>                  |
+| **Allow Voucher Stacking**       | Lets it combine with other stackable vouchers.                                                                   |
 
 </TableFigure>
 
 :::caution[Watch out]
-A code already used anywhere in your organization is refused with *The voucher code is already in use.*
+A code already used anywhere in your organization is refused with _The voucher code is already in use._
 :::
 
 ## A voucher's page
@@ -96,7 +96,7 @@ Issuing puts the voucher on each person's current unpaid order for this conventi
 
 2. Choose up to 250 people in **User(s)**. Tick **Attempt to fulfill associated orders automatically.** to complete the orders the voucher covers. Click **Issue Voucher**.
 
-   <Result>*Voucher #<Sample>3</Sample> has been issued to <Sample noMarker>2</Sample> user(s).* appears.</Result>
+   <Result>_Voucher #<Sample>3</Sample> has been issued to <Sample noMarker>2</Sample> user(s)._ appears.</Result>
 
 :::note[Completing orders automatically]
 With the checkbox ticked, ConCat tries to complete each person's latest order. It doesn't if something is left to pay or the cart is empty.
@@ -140,7 +140,7 @@ On an unpaid order, you can create a voucher only that order can use, for exampl
 
    <Result>A **Create voucher #<Sample>13</Sample>** dialog opens.</Result>
 
-3. Enter the **Amount** and, if you like, a **Display Name**, such as *<Sample>Comp from the registration desk</Sample>*, then click **Create**.
+3. Enter the **Amount** and, if you like, a **Display Name**, such as _<Sample>Comp from the registration desk</Sample>_, then click **Create**.
 
    <Result>The **Vouchers** card lists the voucher, with a **-** button.</Result>
 
@@ -164,18 +164,18 @@ On an unpaid order, you can create a voucher only that order can use, for exampl
 
    <Result>The **Order Summary** shows a **Discount:** line with the voucher and its amount. If the voucher covers everything left to pay, the order is completed.</Result>
 
-The first three messages in Table 8.1 appear in red under the code field. The others appear after *One or more errors occurred while trying to process your request.*
+The first three messages in Table 8.1 appear in red under the code field. The others appear after _One or more errors occurred while trying to process your request._
 
 <TableFigure title="When a code is refused">
 
-| Message | Why |
-| --- | --- |
-| *Invalid Voucher.* | No voucher has this code, or it has reached **Max Uses**, as a one-time order voucher (section 7) has once it's on the order. |
-| *This voucher cannot be used with other vouchers.* | The order already has a voucher, and one of them doesn't allow stacking. |
-| *Your balance is too low to redeem another voucher.* | Nothing is left to pay. |
-| *Voucher is expired.* | Before **Available From** or after **Available Until**. |
-| *Voucher is restricted to only specific products* | None of its products is in the order. |
-| *You already redeemed this voucher.* | The attendee used it on a paid order, or it's already on this order. |
+| Message                                              | Why                                                                                                                           |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| _Invalid Voucher._                                   | No voucher has this code, or it has reached **Max Uses**, as a one-time order voucher (section 7) has once it's on the order. |
+| _This voucher cannot be used with other vouchers._   | The order already has a voucher, and one of them doesn't allow stacking.                                                      |
+| _Your balance is too low to redeem another voucher._ | Nothing is left to pay.                                                                                                       |
+| _Voucher is expired._                                | Before **Available From** or after **Available Until**.                                                                       |
+| _Voucher is restricted to only specific products_    | None of its products is in the order.                                                                                         |
+| _You already redeemed this voucher._                 | The attendee used it on a paid order, or it's already on this order.                                                          |
 
 </TableFigure>
 

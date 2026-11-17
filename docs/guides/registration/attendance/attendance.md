@@ -6,7 +6,7 @@ textbook: true
 
 # Badge Products
 
-Create the registration tiers attendees choose from, such as *<Sample>General Admission</Sample>* or *<Sample noMarker>Sponsor</Sample>*, and let attendees upgrade between them.
+Create the registration tiers attendees choose from, such as _<Sample>General Admission</Sample>_ or _<Sample noMarker>Sponsor</Sample>_, and let attendees upgrade between them.
 
 :::info[In this guide]
 Badge products, the list, creating a tier, a tier's page, upgrade paths, and addons.
@@ -36,7 +36,7 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
    <Result>Each tier shows its visibility (**Public / Visible**, **Unlisted** or **Hidden**) and, when they apply, badges such as **In Stock: <Sample>40/50</Sample> Available**, **Not Yet Available**, **Expired** or **Age Restricted: >= <Sample noMarker>18</Sample>**.</Result>
 
-3. *(Optional)* If any tier is deleted, click **Show Deleted Products** below the table.
+3. _(Optional)_ If any tier is deleted, click **Show Deleted Products** below the table.
 
    <Result>Deleted tiers appear, marked **Deleted / Archived**.</Result>
 
@@ -54,13 +54,13 @@ All tiers share one registration form ([Registration form editor](../form-editor
 
 <TableFigure title="Sections of the New Product form for a badge tier">
 
-| Section | Fields |
-| --- | --- |
-| **Tier** | **Name**, **Display Name** (Optional: the name attendees see, if different.) <p>**Description**, **Product visibility**</p> |
-| **Pricing** | **Base Price** (At creation only; later, use the **Prices** card)<p>**Pass Platform Fee to Customer**</p> |
-| **Stock Control** | **Expires On**, **Limit Available Stock** |
-| **Cashier** | **Product Label Print Design** <small>Prints this tier's badges with the chosen design instead of the default. See [Badge Designer](../badge_designer.md).</small> |
-| **Restrictions** | **Available From**, **Available Until**, **Minimum Purchase Age**, **Maximum Purchase Age**, **Product Role Whitelist**, **Product Role Blacklist**, **Restrict product to grants** |
+| Section           | Fields                                                                                                                                                                              |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Tier**          | **Name**, **Display Name** (Optional: the name attendees see, if different.) <p>**Description**, **Product visibility**</p>                                                         |
+| **Pricing**       | **Base Price** (At creation only; later, use the **Prices** card)<p>**Pass Platform Fee to Customer**</p>                                                                           |
+| **Stock Control** | **Expires On**, **Limit Available Stock**                                                                                                                                           |
+| **Cashier**       | **Product Label Print Design** <small>Prints this tier's badges with the chosen design instead of the default. See [Badge Designer](../badge_designer.md).</small>                  |
+| **Restrictions**  | **Available From**, **Available Until**, **Minimum Purchase Age**, **Maximum Purchase Age**, **Product Role Whitelist**, **Product Role Blacklist**, **Restrict product to grants** |
 
 </TableFigure>
 
@@ -80,13 +80,13 @@ Ages are counted on the convention's start date. **Restrict product to grants** 
 
    <Result>**Product Information** shows the new values.</Result>
 
-4. *(Optional)* Click the **Orders** tab.
+4. _(Optional)_ Click the **Orders** tab.
 
    <Result>Orders containing this tier are listed, with filters such as **Paid**, **Unpaid**, **With grant** and **No grant**.</Result>
 
-5. *(Optional)* To delete the tier, click the **Product** tab, then the delete button (<MaterialIcon name="delete" />) in **Product Information**.
+5. _(Optional)_ To delete the tier, click the **Product** tab, then the delete button (<MaterialIcon name="delete" />) in **Product Information**.
 
-   <Result>A **Delete product?** dialog asks *Are you sure you want to delete? Data for this option from users will be erased. <Sample>General Admission</Sample>?*</Result>
+   <Result>A **Delete product?** dialog asks _Are you sure you want to delete? Data for this option from users will be erased. <Sample>General Admission</Sample>?_</Result>
 
 6. Click **Delete**.
 
@@ -104,13 +104,13 @@ The **Audit Logs** tab needs the `audit:read` permission. **Upgrade Paths** is o
 The new tier goes into the cart with an **Upgrade Discount** equal to what was paid for the old one, so the attendee pays the difference.
 </Sidenote>
 
-Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let *<Sample>General Admission</Sample>* attendees upgrade to *<Sample noMarker>Sponsor</Sample>*, add *<Sample noMarker>Sponsor</Sample>* on the *<Sample noMarker>General Admission</Sample>* page.
+Once a registration is paid, the **Registration Type** step offers only the paid tier and its upgrade paths. Paths go one way: to let _<Sample>General Admission</Sample>_ attendees upgrade to _<Sample noMarker>Sponsor</Sample>_, add _<Sample noMarker>Sponsor</Sample>_ on the _<Sample noMarker>General Admission</Sample>_ page.
 
-1. On the page of the tier attendees upgrade *from*, click the green add (+) button at the top right of **Upgrade Paths**.
+1. On the page of the tier attendees upgrade _from_, click the green add (+) button at the top right of **Upgrade Paths**.
 
    <Result>A **Product Search** field and a **Create Upgrades** button appear.</Result>
 
-2. In **Product Search**, select the tier or tiers attendees can upgrade *to*.
+2. In **Product Search**, select the tier or tiers attendees can upgrade _to_.
 
    <Result>Each selected tier appears under the field. Only badge products are offered.</Result>
 
@@ -118,7 +118,7 @@ Once a registration is paid, the **Registration Type** step offers only the paid
 
    <Result>Each tier is listed in **Upgrade Paths** with an **Upgrade** badge and a delete button.</Result>
 
-4. *(Optional)* To remove an upgrade path, click its delete button.
+4. _(Optional)_ To remove an upgrade path, click its delete button.
 
    <Result>The tier is no longer listed.</Result>
 

@@ -25,18 +25,18 @@ A refund does two separate things, both set when you approve it:
 
 <TableFigure title="Refund statuses">
 
-| Status | Meaning |
-| --- | --- |
-| **Pending** | Requested, not yet decided. <small>Attendees see **Pending approval**.</small> |
-| **Approved** | Approved by staff, or refunded directly (section 6). |
-| **Denied** | Rejected by staff. The attendee can ask again for the same items. |
+| Status       | Meaning                                                                        |
+| ------------ | ------------------------------------------------------------------------------ |
+| **Pending**  | Requested, not yet decided. <small>Attendees see **Pending approval**.</small> |
+| **Approved** | Approved by staff, or refunded directly (section 6).                           |
+| **Denied**   | Rejected by staff. The attendee can ask again for the same items.              |
 
 </TableFigure>
 
-ConCat emails the attendee at each step: *<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> - New Refund Request* (copied to your registration address), *<Sample noMarker>ConCat</Sample> - Refund Request Approved for Order #<Sample noMarker>13</Sample>* and *<Sample noMarker>ConCat</Sample> - Refund Request Denied for Order #<Sample noMarker>13</Sample>*.
+ConCat emails the attendee at each step: _<Sample>ConCat</Sample> - Order #<Sample noMarker>13</Sample> - New Refund Request_ (copied to your registration address), _<Sample noMarker>ConCat</Sample> - Refund Request Approved for Order #<Sample noMarker>13</Sample>_ and _<Sample noMarker>ConCat</Sample> - Refund Request Denied for Order #<Sample noMarker>13</Sample>_.
 
 :::tip[Email subjects]
-Email subjects start with your **Notification Prefix**, *ConCat* unless you've changed it.
+Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
 :::
 
 :::note[Chargebacks]
@@ -57,28 +57,28 @@ Use an attendee account that has a paid order.
 
 3. Choose a **Quantity** for each item to refund, pick a **Reason for Refund**, add any **Additional info**, and click **Request refund**.
 
-   <Result>A **The refund request has been submitted and is pending approval.** message appears, and the card shows *You have a pending refund request for this order.*</Result>
+   <Result>A **The refund request has been submitted and is pending approval.** message appears, and the card shows _You have a pending refund request for this order._</Result>
 
 4. After staff have decided, open the **⋯** menu again and click **View Refund History**.
 
    <Result>A **Refund History: Order #<Sample>13</Sample>** dialog lists each refund, such as **Refund #<Sample noMarker>2</Sample>**, with its status and the amount **Refunded**.</Result>
 
-The reasons offered are *I purchased this by accident.*, *I can no longer / don't want to attend.*, *I have changed my mind*, *Item is damaged or not as described.* and **Other**.
+The reasons offered are _I purchased this by accident._, _I can no longer / don't want to attend._, _I have changed my mind_, _Item is damaged or not as described._ and **Other**.
 
-An approved request shows a green banner on the card: *Your refund request has been approved. You should receive a refund of <Sample>$10.00</Sample>. Processing may take a few days.* A denied one shows a red banner.
+An approved request shows a green banner on the card: _Your refund request has been approved. You should receive a refund of <Sample>$10.00</Sample>. Processing may take a few days._ A denied one shows a red banner.
 
 What attendees can't request:
 
 - Anything on an order where nothing was paid: **Request refund** isn't offered.
 - Free addons, which go with their product.
-- Items already in a pending or approved request. With nothing left: *There are no further items eligible to refund on this order.*
-- An item now belonging to someone else, such as a transferred registration: *Product can not be refunded since the digital grant belongs to another user.*
+- Items already in a pending or approved request. With nothing left: _There are no further items eligible to refund on this order._
+- An item now belonging to someone else, such as a transferred registration: _Product can not be refunded since the digital grant belongs to another user._
 
 ## The refund request queue
 
 1. Go to **Housekeeping › Attendees › Refund Requests**.
 
-   <Result>The **Refund Requests** page lists this convention's refunds, newest first, with their **Reason for Request** and **Status**. With none, it says *There are currently no pending refund requests.*</Result>
+   <Result>The **Refund Requests** page lists this convention's refunds, newest first, with their **Reason for Request** and **Status**. With none, it says _There are currently no pending refund requests._</Result>
 
 2. Click a request.
 
@@ -98,37 +98,38 @@ The list includes decided refunds too; narrow it with **Search...** or the **Rea
 
 2. Check the fields in Table 4.1, write a **Reason for Approval** of at least 10 characters and, if you like, a **Message to Customer**, then click **Approve Refund**.
 
-   <Result>A **Refund request has been approved.** message appears, and the queue shows the request as **Approved**. The attendee gets the *<Sample>ConCat</Sample> - Refund Request Approved for Order #<Sample noMarker>13</Sample>* email with the amount and your message.</Result>
+   <Result>A **Refund request has been approved.** message appears, and the queue shows the request as **Approved**. The attendee gets the _<Sample>ConCat</Sample> - Refund Request Approved for Order #<Sample noMarker>13</Sample>_ email with the amount and your message.</Result>
 
 <TableFigure title="The approval dialog">
 
-| Field | What it does |
-| --- | --- |
-| **Quantity** (per product) | How many to take back. ConCat removes what they granted, such as a badge. <small>Help icon: *Revoke Digital Grants?* Grayed out for an item that grants nothing.</small> |
-| **Amount to Refund** (per product) | The value of the items taken back. *Currency being returned. For accounting purposes only.* <small>Filled in when you change the quantity.</small> |
-| **Return item to available stock?** | Ticked, the items go back into stock for someone else to buy. <small>Ticked by default. Shown only when a product has limited stock.</small> |
-| **Amount to Refund** (per payment) | The money to return through that payment, up to its **Available Amount**. <small>With one payment, it follows the product amounts.</small> |
-| **Reason for Approval** | Required. Kept in the audit log. |
-| **Message to Customer** | Optional. Added to the approval email. |
+| Field                               | What it does                                                                                                                                                             |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Quantity** (per product)          | How many to take back. ConCat removes what they granted, such as a badge. <small>Help icon: _Revoke Digital Grants?_ Grayed out for an item that grants nothing.</small> |
+| **Amount to Refund** (per product)  | The value of the items taken back. _Currency being returned. For accounting purposes only._ <small>Filled in when you change the quantity.</small>                       |
+| **Return item to available stock?** | Ticked, the items go back into stock for someone else to buy. <small>Ticked by default. Shown only when a product has limited stock.</small>                             |
+| **Amount to Refund** (per payment)  | The money to return through that payment, up to its **Available Amount**. <small>With one payment, it follows the product amounts.</small>                               |
+| **Reason for Approval**             | Required. Kept in the audit log.                                                                                                                                         |
+| **Message to Customer**             | Optional. Added to the approval email.                                                                                                                                   |
 
 </TableFigure>
 
 :::caution[Watch out]
+
 - **Amount to Refund** under **Related Payments** starts at each payment's full amount, not the price of the items asked for. Check it before you click **Approve Refund**.
 - A refund can't be undone. For cash, card-terminal, write-off and PagSeguro payments, ConCat only records it: you hand the money back yourself.
-:::
+  :::
 
-If a payment can't be refunded through its gateway, a warning stays until you close it: *Refund request was only partially refunded <Sample>$10.00</Sample> due to gateway errors. Please review the Related Payments tab for information.* If every payment fails, *The refund operation failed as all gateways returned an error.* appears and nothing is refunded.
+If a payment can't be refunded through its gateway, a warning stays until you close it: _Refund request was only partially refunded <Sample>$10.00</Sample> due to gateway errors. Please review the Related Payments tab for information._ If every payment fails, _The refund operation failed as all gateways returned an error._ appears and nothing is refunded.
 
 ## Reject a request
 
 1. In the request's dialog, click **Reject**.
 
-   <Result>A dialog titled **Refund #<Sample>2</Sample> — Reject**, with the request's number, says *Your reason for rejecting this refund request will be stored in the audit log and will not be shown to the user.*</Result>
+   <Result>A dialog titled **Refund #<Sample>2</Sample> — Reject**, with the request's number, says _Your reason for rejecting this refund request will be stored in the audit log and will not be shown to the user._</Result>
 
 2. Write a **Reason for Rejection** of at least 10 characters and, if you like, a **Message to Customer**, then click **Reject Refund**.
 
-   <Result>A **Refund request has been rejected.** message appears, and the request's **Status** is **Denied**. The attendee gets the *<Sample>ConCat</Sample> - Refund Request Denied for Order #<Sample noMarker>13</Sample>* email with your message, and a red banner on their order.</Result>
+   <Result>A **Refund request has been rejected.** message appears, and the request's **Status** is **Denied**. The attendee gets the _<Sample>ConCat</Sample> - Refund Request Denied for Order #<Sample noMarker>13</Sample>_ email with your message, and a red banner on their order.</Result>
 
 ## Refund an order without a request
 
@@ -166,10 +167,10 @@ Stop attendee requests, for example after your refund deadline. Staff can still 
 
 3. As an attendee, open **Transaction history** and click **⋯** on a paid order.
 
-   <Result>**Request refund** is struck through. Clicking it shows your message after *Refunds are disabled:*, such as *Refunds are disabled: <Sample>Refunds closed on September 15.</Sample>* No dialog opens.</Result>
+   <Result>**Request refund** is struck through. Clicking it shows your message after _Refunds are disabled:_, such as _Refunds are disabled: <Sample>Refunds closed on September 15.</Sample>_ No dialog opens.</Result>
 
 To allow requests again, untick **Disable refunds** and click **Save**.
 
 :::tip[Type a message]
-Always type a message. Ticked and empty, refunds are still disabled, but attendees see *Refunds are disabled:* with nothing after it.
+Always type a message. Ticked and empty, refunds are still disabled, but attendees see _Refunds are disabled:_ with nothing after it.
 :::

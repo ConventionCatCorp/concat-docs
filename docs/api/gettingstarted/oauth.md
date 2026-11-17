@@ -111,10 +111,10 @@ Abuse or misuse of sensitive scopes will result in your application being suspen
 
 #### The redirect back to your application
 
-| The user… | ConCat redirects to |
-| --- | --- |
-| Clicks **Authorize Application** | `<redirect_uri>?code=<code>&state=<state>` |
-| Clicks **Cancel** | `<redirect_uri>?error=access_denied&state=<state>` |
+| The user…                        | ConCat redirects to                                |
+| -------------------------------- | -------------------------------------------------- |
+| Clicks **Authorize Application** | `<redirect_uri>?code=<code>&state=<state>`         |
+| Clicks **Cancel**                | `<redirect_uri>?error=access_denied&state=<state>` |
 
 The authorization code expires after **10 minutes** and can be used only once.
 
@@ -180,15 +180,15 @@ The authorization code expires after **10 minutes** and can be used only once.
 
 #### When the exchange fails
 
-| Problem | Response |
-| --- | --- |
-| No client credentials | `403`, access error `1` (`MissingCredentials`) |
-| An `Authorization` header that isn't a valid Basic header | `403`, access error `2` (`InvalidAuthHeader`) |
-| Wrong client ID or secret | `403`, access error `3` (`InvalidCredentials`) |
-| The code is unknown, already used or expired, or the `code_verifier` is missing or doesn't match | `404`, resource error `OAuthToken` |
-| `redirect_uri` differs from the one used in step 1 | `400`, logic error `32` (`OAuthInvalidRedirectURI`) |
-| `scope` names a scope that isn't an OBO scope | `400`, logic error `31` (`OAuthInvalidScope`) |
-| `scope` asks for a scope the user didn't grant | `403`, access error `26` (`UnauthorizedOAuthScopes`) |
+| Problem                                                                                          | Response                                             |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| No client credentials                                                                            | `403`, access error `1` (`MissingCredentials`)       |
+| An `Authorization` header that isn't a valid Basic header                                        | `403`, access error `2` (`InvalidAuthHeader`)        |
+| Wrong client ID or secret                                                                        | `403`, access error `3` (`InvalidCredentials`)       |
+| The code is unknown, already used or expired, or the `code_verifier` is missing or doesn't match | `404`, resource error `OAuthToken`                   |
+| `redirect_uri` differs from the one used in step 1                                               | `400`, logic error `32` (`OAuthInvalidRedirectURI`)  |
+| `scope` names a scope that isn't an OBO scope                                                    | `400`, logic error `31` (`OAuthInvalidScope`)        |
+| `scope` asks for a scope the user didn't grant                                                   | `403`, access error `26` (`UnauthorizedOAuthScopes`) |
 
 See [Errors](/docs/api/errors) for the shape of each error.
 
@@ -250,11 +250,11 @@ The above header **should** always be included in your request, even if the requ
 
 To log the user out of ConCat from your application, send them to `/oauth/logout` on the instance, with these query parameters:
 
-| Parameter | Description |
-| --- | --- |
-| `client_id` | Your application's ID. |
-| `access_token` | A current, unexpired access token that your application holds for this user. |
-| `next` | Optional. Where to send the user afterwards: a path on the same instance, or a URL whose origin matches one of the application's callback URIs. |
+| Parameter      | Description                                                                                                                                     |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `client_id`    | Your application's ID.                                                                                                                          |
+| `access_token` | A current, unexpired access token that your application holds for this user.                                                                    |
+| `next`         | Optional. Where to send the user afterwards: a path on the same instance, or a URL whose origin matches one of the application's callback URIs. |
 
 <ExampleBox header="Example" codeBlockType="http">
   https://reg.mybigevent.org/oauth/logout?client_id=123&access_token=eyJ...&next=https%3A%2F%2Fexample.com%2Fsigned-out

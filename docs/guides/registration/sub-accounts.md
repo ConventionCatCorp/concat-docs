@@ -21,15 +21,15 @@ The **Sub-accounts** and **Minimum Age and Children** cards need `system:setting
 A **sub-account** is a person owned by another account, the account holder. It has no username or password: the account holder registers, edits and pays for them, and gets their email. There are two kinds:
 
 - **Named attendee**: a first and last name, date of birth, address and phone number, but no email or username.
-- **PII-free child**: no name, email, username or date of birth. Shown by its user ID, such as *Child#10*, with a **Child** badge, and treated as one year under the child age threshold.
+- **PII-free child**: no name, email, username or date of birth. Shown by its user ID, such as _Child#10_, with a **Child** badge, and treated as one year under the child age threshold.
 
 Two age thresholds, counted on the convention's start date, decide who is a child or a minor (Table 1.1).
 
 <TableFigure title="The two age thresholds">
 
-| Threshold | Below it | Policy attendees see |
-| --- | --- | --- |
-| **Child Age Threshold** | The person can't create an account and can attend only as a sub-account. Nobody under 13 can create an account, whatever this is set to. | **Child Registration Error** |
+| Threshold               | Below it                                                                                                                                                            | Policy attendees see           |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| **Child Age Threshold** | The person can't create an account and can attend only as a sub-account. Nobody under 13 can create an account, whatever this is set to.                            | **Child Registration Error**   |
 | **Minor Age Threshold** | The person is a minor: they need a parent's consent and must give an emergency contact. Can't be lower than **Child Age Threshold**; set it equal to turn this off. | **Minor Registration Warning** |
 
 </TableFigure>
@@ -44,11 +44,11 @@ Write these policies, and **Parent agreement for child registration**, on the **
 
 <TableFigure title="Settings in the Sub-accounts card">
 
-| Setting | What it does |
-| --- | --- |
-| **Max Sub-Accounts Registration** | How many attendees an account may register besides the account holder. **0** turns sub-accounts off. |
-| **Allow PII-free child registration** | Adds a **Register child (under 16)** button, for a child with no name, email, username or date of birth. |
-| **Only allow child sub-accounts** | Every additional attendee must be a PII-free child; the account holder still registers themselves. <small>Needs **Allow PII-free child registration** ticked.</small> |
+| Setting                               | What it does                                                                                                                                                          |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Max Sub-Accounts Registration**     | How many attendees an account may register besides the account holder. **0** turns sub-accounts off.                                                                  |
+| **Allow PII-free child registration** | Adds a **Register child (under 16)** button, for a child with no name, email, username or date of birth.                                                              |
+| **Only allow child sub-accounts**     | Every additional attendee must be a PII-free child; the account holder still registers themselves. <small>Needs **Allow PII-free child registration** ticked.</small> |
 
 </TableFigure>
 
@@ -72,13 +72,13 @@ The account holder must register themselves first; until then, the **Attendees**
 
 1. As an attendee who has registered, open **Attendance** in the homepage sidebar.
 
-   <Result>Under **Your registrations**, an **Attendees** box says *You can register 1 more attendee under your account.* (or the number left), with a **Register another attendee** button.</Result>
+   <Result>Under **Your registrations**, an **Attendees** box says _You can register 1 more attendee under your account._ (or the number left), with a **Register another attendee** button.</Result>
 
 2. Click **Register another attendee**.
 
    <Result>The **Event registration** page opens on a **New user** step, asking for the person's names and **Date of birth**.</Result>
 
-3. Fill in the details. *(Optional)* Tick **Use different mailing address** and enter the address and **Phone number**; otherwise the account holder's address is used. Click **Continue**.
+3. Fill in the details. _(Optional)_ Tick **Use different mailing address** and enter the address and **Phone number**; otherwise the account holder's address is used. Click **Continue**.
 
    <Result>**Registration Type** lists the tiers for this person's age.</Result>
 
@@ -86,30 +86,30 @@ The account holder must register themselves first; until then, the **Attendees**
 
    <Result>**Attendance** shows a second card, numbered 2, with the person's name, tier and **Unpaid**.</Result>
 
-5. *(If PII-free children are allowed)* Click **Register child (under 16)**.
+5. _(If PII-free children are allowed)_ Click **Register child (under 16)**.
 
    <Result>**Registration Type** opens directly. **Select** stays unavailable until the checkbox above the tiers, with your **Parent agreement for child registration** text, is ticked.</Result>
 
 6. Tick the checkbox, choose a tier, fill in the form including the emergency contact, and click **Register**.
 
-   <Result>**Attendance** shows a card named *Child#10*, with a **Child** badge and **Unpaid**.</Result>
+   <Result>**Attendance** shows a card named _Child#10_, with a **Child** badge and **Unpaid**.</Result>
 
 7. Click **Complete registration** at the top of **Attendance** and pay.
 
-   <Result>One checkout pays for every unpaid attendee. The status card says, for example, *All set! You and 1 others are ready to attend Starfall Con 2026:*</Result>
+   <Result>One checkout pays for every unpaid attendee. The status card says, for example, _All set! You and 1 others are ready to attend Starfall Con 2026:_</Result>
 
 :::tip[The values are examples]
-Values such as 16 in **Register child (under 16)**, 10 in *Child#10*, *Starfall Con 2026* and 13 in **View order (#13)** are examples. The app shows your own age thresholds, set in **Housekeeping › Registration › Settings**, dates counted from your convention's start, your convention's name, and each child's user ID and order number.
+Values such as 16 in **Register child (under 16)**, 10 in _Child#10_, _Starfall Con 2026_ and 13 in **View order (#13)** are examples. The app shows your own age thresholds, set in **Housekeeping › Registration › Settings**, dates counted from your convention's start, your convention's name, and each child's user ID and order number.
 :::
 
 <TableFigure title="Messages in the Attendees box and on Register">
 
-| Message | Why |
-| --- | --- |
-| *You have reached the maximum number of attendees under one account.* | The account has reached **Max Sub-Accounts Registration**. |
-| *This event does not allow that kind of sub-account.* | That kind isn't allowed, such as a named attendee when **Only allow child sub-accounts** is ticked. |
-| *Attendees under 16 cannot be registered with a name. Register them as a child instead.* | On **New user**, the date of birth is under the child threshold and PII-free children are allowed. A **Register child (under 16)** link follows. |
-| *No products available for this age range. Please contact the event organizers for more information.* | No tier allows this person's age. |
+| Message                                                                                               | Why                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| _You have reached the maximum number of attendees under one account._                                 | The account has reached **Max Sub-Accounts Registration**.                                                                                       |
+| _This event does not allow that kind of sub-account._                                                 | That kind isn't allowed, such as a named attendee when **Only allow child sub-accounts** is ticked.                                              |
+| _Attendees under 16 cannot be registered with a name. Register them as a child instead._              | On **New user**, the date of birth is under the child threshold and PII-free children are allowed. A **Register child (under 16)** link follows. |
+| _No products available for this age range. Please contact the event organizers for more information._ | No tier allows this person's age.                                                                                                                |
 
 </TableFigure>
 
@@ -150,12 +150,12 @@ It isn't possible for a PII-free child, anyone under 13 or under the child age t
 
 <TableFigure title="Messages when migration is refused">
 
-| Message | Why |
-| --- | --- |
-| *This user is not old enough to have an individual account for the convention.* | The dependent is under the child age threshold. |
-| *This user is under the age of 13 and therefore is unable to be migrated. Please wait until the user is 13 years of age.* | The dependent is under 13, or is a PII-free child. |
-| *Email already in use.* | Another account uses that email address. |
-| *Incorrect password.* | The account holder's password was wrong. |
+| Message                                                                                                                   | Why                                                |
+| ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| _This user is not old enough to have an individual account for the convention._                                           | The dependent is under the child age threshold.    |
+| _This user is under the age of 13 and therefore is unable to be migrated. Please wait until the user is 13 years of age._ | The dependent is under 13, or is a PII-free child. |
+| _Email already in use._                                                                                                   | Another account uses that email address.           |
+| _Incorrect password._                                                                                                     | The account holder's password was wrong.           |
 
 </TableFigure>
 
@@ -175,7 +175,7 @@ An approved dealer whose table type allows assistants can add their sub-accounts
 
 People between the child and minor thresholds can sign up themselves, as minors. If the child threshold is below the minor threshold, the sign-up age check offers three choices: over the minor age, between the two, or under the child age.
 
-1. In a private browser window, start creating an account, and at the age check choose the middle option, such as *I was born before October 1, 2010 (16 to 18 years old)*.
+1. In a private browser window, start creating an account, and at the age check choose the middle option, such as _I was born before October 1, 2010 (16 to 18 years old)_.
 
    <Result>Sign-up continues. On the **Convention Policies** step, your **Minor Registration Warning** appears below your terms and conditions.</Result>
 
@@ -183,8 +183,8 @@ The last option stops sign-up with **We're sorry**: a child under the child age 
 
 ## The old child registration
 
-The deprecated *Child registration* feature, on a **Child registration** page in the attendee sidebar, added badge-name-only child badges to a parent's registration.
+The deprecated _Child registration_ feature, on a **Child registration** page in the attendee sidebar, added badge-name-only child badges to a parent's registration.
 
 :::caution[Watch out]
-If the **Minimum Age and Children** card shows *Child Registrations are going away.* and a **Max Child Registration** field marked **Deprecated**, your event still uses the old feature. Move to sub-accounts: it won't be available for your next convention, and once **Max Child Registration** is 0 it can't be turned back on. New conventions start with it off.
+If the **Minimum Age and Children** card shows _Child Registrations are going away._ and a **Max Child Registration** field marked **Deprecated**, your event still uses the old feature. Move to sub-accounts: it won't be available for your next convention, and once **Max Child Registration** is 0 it can't be turned back on. New conventions start with it off.
 :::

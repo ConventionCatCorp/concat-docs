@@ -18,7 +18,7 @@ Organizations and conventions, Next Year or New Convention, creating next year's
 The **Conventions** tab needs `system:settings:update`, which the default **admin** role has.
 </Sidenote>
 
-Your *organization* is your ConCat account. Each *convention* is one event, with its own address, dates, settings, badges and products. People's accounts belong to the organization, so attendees keep one account every year.
+Your _organization_ is your ConCat account. Each _convention_ is one event, with its own address, dates, settings, badges and products. People's accounts belong to the organization, so attendees keep one account every year.
 
 Some things can be set for the whole organization or for one convention:
 
@@ -31,7 +31,7 @@ Some things can be set for the whole organization or for one convention:
 
    <Result>A table lists your conventions and their **Domain**, with a green **+** button in the header row and a blue eye button on each row.</Result>
 
-2. *(Optional)* Click the eye button on another convention's row.
+2. _(Optional)_ Click the eye button on another convention's row.
 
    <Result>That convention's **Conventions** tab opens at its own address.</Result>
 
@@ -61,15 +61,15 @@ A new convention has one of two types:
 
 <TableFigure title="What Next Year copies from the previous convention">
 
-| Copied | Not copied |
-| --- | --- |
-| Long and short names, legal name and type, notification prefix, marketing URL and logo | Badge and store products <small>The new convention starts with an empty *Registration* category.</small> |
-| Venue, time zone, and **start and end dates** <small>Change the dates afterwards (section 3, step 6).</small> | Registrations and orders |
-| Registration settings, including **Open Registration**, sub-account and age settings | The deprecated child registration and attendance limit <small>The dialog says if your convention uses them.</small> |
-| The registration form, registration flags, volunteer departments, and volunteer and dealer options | |
-| Email sending domain, maintenance mode, and event store settings | |
-| A Stripe connection made for the previous convention only | Convention-specific policies <small>Organization-wide policies apply until you add new ones.</small> |
-| Staff: everyone with the **staff** role in the previous convention gets **staffAlumni** in the new one | Roles given for the previous convention only <small>Global roles still apply.</small> |
+| Copied                                                                                                        | Not copied                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Long and short names, legal name and type, notification prefix, marketing URL and logo                        | Badge and store products <small>The new convention starts with an empty _Registration_ category.</small>            |
+| Venue, time zone, and **start and end dates** <small>Change the dates afterwards (section 3, step 6).</small> | Registrations and orders                                                                                            |
+| Registration settings, including **Open Registration**, sub-account and age settings                          | The deprecated child registration and attendance limit <small>The dialog says if your convention uses them.</small> |
+| The registration form, registration flags, volunteer departments, and volunteer and dealer options            |                                                                                                                     |
+| Email sending domain, maintenance mode, and event store settings                                              |                                                                                                                     |
+| A Stripe connection made for the previous convention only                                                     | Convention-specific policies <small>Organization-wide policies apply until you add new ones.</small>                |
+| Staff: everyone with the **staff** role in the previous convention gets **staffAlumni** in the new one        | Roles given for the previous convention only <small>Global roles still apply.</small>                               |
 
 </TableFigure>
 
@@ -98,19 +98,20 @@ The **Domain Action** decides which convention keeps your current address:
 
    <Result>The **Domain Action** texts show the full new address.</Result>
 
-5. *(Optional)* Tick **Request to Clear "nukeme" PII of this convention.** to clear the personal information of attendees who chose the *nukeme* flag, one day from now. Then click **Create**.
+5. _(Optional)_ Tick **Request to Clear "nukeme" PII of this convention.** to clear the personal information of attendees who chose the _nukeme_ flag, one day from now. Then click **Create**.
 
-   <Result>A **New convention created.** message appears and the convention is listed. With **Replace**, it adds *You have been pushed to the login screen, please refresh the page.*</Result>
+   <Result>A **New convention created.** message appears and the convention is listed. With **Replace**, it adds _You have been pushed to the login screen, please refresh the page._</Result>
 
 6. Open the new convention (its eye button, or your usual address after **Replace**). On the **Convention** tab of **Housekeeping › System › Settings**, update **Convention Start Date** and **Convention End Date** under **Venue & dates** and click **Save**.
 
    <Result>A **Venue & dates saved** message appears; the **Conventions** tab shows the new dates.</Result>
 
 :::caution[Watch out]
-- Each previous convention can have only one **Next Year** convention. A second try says *A convention was already created as a sequence of the previous convention.*
+
+- Each previous convention can have only one **Next Year** convention. A second try says _A convention was already created as a sequence of the previous convention._
 - The PII clear can be requested only after the convention you're working in has ended, and doesn't clear dealers or volunteers. To cancel it, see [Convention settings](./settings.md), section 5.
-- An address in use gives *That domain is already in use.*
-:::
+- An address in use gives _That domain is already in use._
+  :::
 
 ## Create a separate new convention
 
@@ -129,5 +130,5 @@ Use **New Convention** for an event that shouldn't inherit anything, such as a s
    <Result>The new convention's **Conventions** tab opens at its own address.</Result>
 
 :::caution[Watch out]
-An organization can hold a limited number of conventions. Past the limit, creating one says *Convention is at or over capacity and cannot create more resources. Contact support to change this limit.*
+An organization can hold a limited number of conventions. Past the limit, creating one says _Convention is at or over capacity and cannot create more resources. Contact support to change this limit._
 :::
