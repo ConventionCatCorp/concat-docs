@@ -32,7 +32,7 @@ Needs `user:update` (default *admin* and *registration* roles). Without it, ther
   title="A profile's Name tab"
   markers={[
     { n: 1, x: 0.8, y: 11.5, w: 98.4, h: 6.8 },
-    { n: 2, x: 39.3, y: 20.6, w: 8.8, h: 4.6 },
+    { n: 2, x: 39.3, y: 20.9, w: 8.8, h: 4.6 },
     { n: 3, x: 94.2, y: 28, w: 4.9, h: 6.3 },
     { n: 4, x: 51.6, y: 63.5, w: 48.4, h: 34 },
   ]}

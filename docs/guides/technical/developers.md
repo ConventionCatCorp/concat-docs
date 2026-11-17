@@ -95,10 +95,10 @@ The **Fires** column shows a green tick when the webhook fires for the conventio
   alt="The Webhooks tab: a View Verification Key button, then a table with one example webhook, Volunteer sync, its URL and two events, a green tick under Fires, and Delete and Test buttons."
   title="The Webhooks tab"
   markers={[
-    { n: 1, x: 0.2, y: 2.6, w: 14.4, h: 19.8 },
-    { n: 2, x: 66.8, y: 47.8, w: 2.3, h: 15 },
-    { n: 3, x: 83.4, y: 47.8, w: 6, h: 19.8 },
-    { n: 4, x: 89.2, y: 47.8, w: 4.6, h: 19.8 },
+    { n: 1, x: 0.2, y:-1, w: 14.6, h: 19.8 },
+    { n: 2, x: 66.8, y: 43.8, w: 4, h: 15 },
+    { n: 3, x: 83.2, y: 42.8, w: 6, h: 20.8 },
+    { n: 4, x: 89.2, y: 42.8, w: 4.6, h: 19.8 },
   ]}
 >
 

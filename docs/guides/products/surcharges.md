@@ -137,8 +137,8 @@ A surcharge's page shows where it's used, and lets you assign it to several prod
   title="Unassigning a product"
   width="481px"
   markers={[
-    { n: 1, x: 84.8, y: 49.1, w: 11, h: 17.3 },
-    { n: 2, x: 50.9, y: 63.9, w: 44.9, h: 32.5 },
+    { n: 1, x: 84.8, y: 45.1, w: 11, h: 17.3 },
+    { n: 2, x: 50.9, y: 60.9, w: 44.9, h: 32.5 },
   ]}
 >
 

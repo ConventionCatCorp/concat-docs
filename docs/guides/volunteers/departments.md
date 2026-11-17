@@ -72,9 +72,9 @@ A new convention starts with common departments, such as _Art Show_ and _Gophers
   alt="The Department(s) card: a green add button, a search box, and a table of departments with Name, Email, Leads, Show on public application form and Actions, each row with a blue pencil and a red trash button."
   title="The Department(s) card"
   markers={[
-    { n: 1, x: 94.5, y: 5.8, w: 3.4, h: 12.3 },
-    { n: 2, x: 85.7, y: 60.5, w: 5.5, h: 15.5 },
-    { n: 3, x: 90.9, y: 60.5, w: 5.5, h: 15.5 },
+    { n: 1, x: 95.7, y: 3.5, w: 3.7, h: 12.5 },
+    { n: 2, x: 87, y: 59.5, w: 5.7, h: 15.9 },
+    { n: 3, x: 92.4, y: 59.5, w: 5.7, h: 15.9 },
   ]}
 >
 

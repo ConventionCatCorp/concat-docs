@@ -107,7 +107,7 @@ A new role has every permission on **Default**, so it grants nothing until you a
   title="A role's Permissions tab"
   markers={[
     { n: 1, x: 7.8, y: 15.1, w: 13.2, h: 11 },
-    { n: 2, x: 68.2, y: 60.1, w: 29.7, h: 11.5 },
+    { n: 2, x: 69.7, y: 60.1, w: 29.7, h: 11.5 },
   ]}
 >
 

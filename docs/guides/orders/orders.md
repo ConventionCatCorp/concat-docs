@@ -230,8 +230,8 @@ Items can have a **⋯** button at their right, with a menu of corrections for t
   title="An item's menu"
   width="481px"
   markers={[
-    { n: 1, x: 90.1, y: 46.5, w: 6.2, h: 11.3 },
-    { n: 2, x: 51.4, y: 54.4, w: 44.9, h: 41.3 },
+    { n: 1, x: 90.1, y: 37.5, w: 6.2, h: 11.3 },
+    { n: 2, x: 51.4, y: 50.4, w: 44.9, h: 41.3 },
   ]}
 >
 

@@ -40,8 +40,8 @@ Some things can be set for the whole organization or for one convention:
   alt="The Conventions tab: a table with Long Name, Short Name, Dates and Domain columns, a green add button in the header row, and an eye button on the convention's row."
   title="The Conventions tab"
   markers={[
-    { n: 1, x: 79.8, y: 11, w: 5.4, h: 32.5 },
-    { n: 2, x: 0.7, y: 44.7, w: 98.6, h: 49.4 },
+    { n: 1, x: 79.7, y: 8, w: 5.5, h: 32.5 },
+    { n: 2, x: 0.7, y: 42.7, w: 98.6, h: 49.4 },
   ]}
 >
 

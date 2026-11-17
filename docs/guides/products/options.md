@@ -62,10 +62,10 @@ An option's **Type** sets what the attendee fills in. Three types also have a **
   alt="The Creating Option form: Name filled in with Pronouns; Type set to Free text Field with Style set to Text and a Display on cashier interface checkbox; Description; Min Length and Max Length; and a Create button."
   title="The Creating Option form"
   markers={[
-    { n: 1, x: 2.7, y: 14.8, w: 46.3, h: 15.8 },
-    { n: 2, x: 51, y: 14.8, w: 46.3, h: 32.9 },
-    { n: 3, x: 2.7, y: 63, w: 94.6, h: 15.8 },
-    { n: 4, x: 2.7, y: 86.7, w: 94.6, h: 9.4 },
+    { n: 1, x: 3.5, y: 14., w: 46.3, h: 14.8 },
+    { n: 2, x: 52.5, y: 14, w: 46.3, h: 31.9 },
+    { n: 3, x: 3.5, y: 61.8, w: 95.4, h: 15 },
+    { n: 4, x: 3.5, y: 84.7, w: 95.4, h: 9.4 },
   ]}
 >
 
@@ -105,10 +105,10 @@ Each assigned option has a lock button that turns **Prevent changes to this opti
   alt="The Options card on a product page: Option Search with Species selected, the two checkboxes Mark selected options as required and Prevent changes to this option after purchase is complete, and an Assign Options button."
   title="Assigning options on a product's page"
   markers={[
-    { n: 1, x: 2.7, y: 23.2, w: 94.6, h: 34.2 },
-    { n: 2, x: 3.8, y: 60.5, w: 93.5, h: 9 },
-    { n: 3, x: 3.8, y: 70.8, w: 93.5, h: 9 },
-    { n: 4, x: 2.7, y: 81.7, w: 94.6, h: 12.9 },
+    { n: 1, x: 2.7, y: 21.2, w: 96, h: 34.2 },
+    { n: 2, x: 3.8, y: 57.5, w: 93.5, h: 9 },
+    { n: 3, x: 3.8, y: 67.8, w: 93.5, h: 9 },
+    { n: 4, x: 2.7, y: 78.7, w: 96.2, h: 12.9 },
   ]}
 >
 

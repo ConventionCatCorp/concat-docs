@@ -109,7 +109,7 @@ The registration form is the page attendees fill in after choosing a tier. Its s
   alt="The Express Mode Editor: the Toolbox of elements on the left, the Badge Info section with three elements on the right, and View Preview and Save Changes buttons at the top right."
   title="The registration form editor"
   markers={[
-    { n: 1, x: 0.4, y: 12, w: 19.2, h: 86 },
+    { n: 1, x: 0.4, y: 12, w: 19.2, h: 88 },
     { n: 2, x: 20.9, y: 25.1, w: 78.2, h: 71.7 },
     { n: 3, x: 82.9, y: 12, w: 8.5, h: 9.2 },
     { n: 4, x: 91.2, y: 12, w: 8.7, h: 9.2 },

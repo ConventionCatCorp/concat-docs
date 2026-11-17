@@ -82,9 +82,9 @@ Staff pick a mass email's **From Address** from this list of mailbox names, shar
   alt="The Email Senders for Mass Email card: an Enter a new sender box with a green tick button, and the names bazaar, registration, events, hr, dealers, artshow and noreply, each with a red trash button."
   title="Email Senders for Mass Email"
   markers={[
-    { n: 1, x: 36, y: 7.1, w: 54.2, h: 10.6 },
-    { n: 2, x: 91.8, y: 8.1, w: 4.9, h: 8.6 },
-    { n: 3, x: 92, y: 20.5, w: 4.7, h: 8 },
+    { n: 1, x: 36, y: 5.1, w: 54.2, h: 10.6 },
+    { n: 2, x: 93.2, y: 6, w: 4.9, h: 8.6 },
+    { n: 3, x: 93.5, y: 18.5, w: 4.7, h: 8 },
   ]}
 >
 

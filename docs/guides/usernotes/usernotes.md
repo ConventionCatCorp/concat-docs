@@ -64,9 +64,9 @@ A role can also grant reading chosen categories: tick them under **User Note Cat
   title="The Add Note card"
   width="309px"
   markers={[
-    { n: 1, x: 5.2, y: 15.1, w: 89.6, h: 17.2 },
-    { n: 2, x: 5.2, y: 50.4, w: 89.6, h: 6.9 },
-    { n: 3, x: 5.2, y: 82.2, w: 89.6, h: 10.1 },
+    { n: 1, x: 8.2, y: 13.1, w: 91.6, h: 17.2 },
+    { n: 2, x: 8.2, y: 48, w: 89.6, h: 6.9 },
+    { n: 3, x: 8.2, y: 79.5, w: 91.6, h: 10.1 },
   ]}
 >
 

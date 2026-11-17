@@ -72,9 +72,9 @@ The form's **Registration flags** element ([Registration form editor](./form-edi
   alt="The Registration Flags card: a green add button, a search box, and a table of flags. The nukeme row's actions are List users, Clear nukeme PII and Edit; the picrelease row's are List users, Edit and Delete."
   title="The Registration Flags table"
   markers={[
-    { n: 1, x: 96.2, y: 3.6, w: 2.3, h: 8.1 },
-    { n: 2, x: 90.1, y: 55.2, w: 3.9, h: 10.8 },
-    { n: 3, x: 86.5, y: 84.6, w: 11.2, h: 10.8 },
+    { n: 1, x: 96.9, y: 1.6, w: 4.3, h: 8.6 },
+    { n: 2, x: 91, y: 53.2, w: 4.2, h: 11.2 },
+    { n: 3, x: 87.3, y: 82.6, w: 11.4, h: 11.2 },
   ]}
 >
 
