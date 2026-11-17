@@ -77,15 +77,3 @@ Tags describe an entry: **admin** for admin activity, **create**, **edit** or **
 2. Choose a date, then click **Update**.
 
    <Result>The log lists entries from before that date, newest first (it can start with a few from just after it), and the date between the arrows changes.</Result>
-
-<Figure
-  src="/img/guides/system/audit-date.webp"
-  alt="The page controls below the log: first and previous arrows, the date Thu, November 12, 2026, and next and last arrows."
-  title="The date between the arrows"
-  width="336px"
-  markers={[{ n: 1, x: 21.3, y: 13, w: 59, h: 73.1 }]}
->
-
-1. The date, which opens **Pick a time to browse from**. The arrows page through newer and older entries.
-
-</Figure>
