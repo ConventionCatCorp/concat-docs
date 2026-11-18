@@ -3,6 +3,8 @@
 @use '@site/src/css/tokens';
 // Textbook article styling, scoped to pages with `textbook: true` in front matter.
 @use '@site/src/css/textbook';
+// Generated API reference pages: the method and path box under each title.
+@use '@site/src/css/api-reference';
 
 /**
  * Any CSS included here will be global. The classic template
