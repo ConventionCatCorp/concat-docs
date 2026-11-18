@@ -55,7 +55,7 @@ Follow the pattern in `docs/api/endpoints/v0/*.mdx` (e.g. `dealers.mdx`):
 - Frontmatter: `displayed_sidebar: apiSidebar` and `hide_table_of_contents: true`.
 - The page opens with a `<SplitColumn>`: a description on the left and a `<RestList>` of `<RestElement method path anchor>` on the right. Each `anchor` must match the slug of a `###` heading further down.
 - Each endpoint is a `###` heading under `## Endpoints`, written as plain prose with no `<SplitColumn>`: a short description, a bullet list of error cases (logic-error code and name) where it helps, and a closing scope and link, such as ``Scope: `order:manage`. [Full reference](/docs/api/endpoints/v0/reference/remove-order-item)``. Request and response fields and JSON examples aren't repeated, because the generated reference page has them. `<Attribute>`/`<ParentAttribute>` and `<EndpointRequest>`/`<EndpointResponse>` are now used only on hand-written pages outside v0: the OAuth guide, webhook events, errors and the legacy users page.
-- `Attribute` `id`s must be unique within the page, so they use a short per-endpoint prefix (e.g. `su-`, `su-resp-`).
+- `Attribute` `id`s must be unique within the page, so they start with a short prefix for the page (e.g. `oauth-`, `wh-`, `user-`), usually extended by the endpoint or section, as in `oauth-req-client_id` or `user-current-retrieve-resp-id`.
 - There are no shared model partials. Each v0 page describes its object once, in a `## The <name> object` section (e.g. "The dealer object"), and each endpoint links to its generated page for the full request and response schemas: `[Full reference](/docs/api/endpoints/v0/reference/<operation>)`.
 
 ## Trial signup page
