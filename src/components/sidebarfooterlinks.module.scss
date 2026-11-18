@@ -1,0 +1,36 @@
+// The service links under the docs sidebar's menu. On wide screens the sidebar is a flex column whose menu grows
+// and scrolls (theme-classic's DocSidebar/Desktop), so this sits at its bottom while the list scrolls above it.
+.footer {
+  flex-shrink: 0;
+  padding: var(--cc-space-2);
+  border-top: 1px solid var(--cc-color-rule);
+}
+
+@media (min-width: 997px) {
+  // With the preview announcement bar showing, the theme gives the menu a bottom margin so its end stays on
+  // screen. Move that margin under the links instead, so they stay on screen too.
+  nav[class*='menuWithAnnouncementBar']:has(+ .footer) {
+    margin-bottom: 0;
+  }
+
+  nav[class*='menuWithAnnouncementBar'] + .footer {
+    margin-bottom: var(--docusaurus-announcement-bar-height);
+  }
+}
+
+// In the mobile drawer, the docs menu's panel scrolls as a whole. Make it a column so the links sit at its foot,
+// and keep them there while the list scrolls.
+:global(.navbar-sidebar__item):has(> .footer) {
+  display: flex;
+  flex-direction: column;
+}
+
+// The panel has a bottom padding the list would scroll through below the links, so the links reach into it.
+:global(.navbar-sidebar) .footer {
+  position: sticky;
+  bottom: calc(-1 * var(--cc-space-2));
+  margin-top: auto;
+  margin-bottom: calc(-1 * var(--cc-space-2));
+  padding-bottom: calc(2 * var(--cc-space-2));
+  background-color: var(--ifm-navbar-background-color);
+}
