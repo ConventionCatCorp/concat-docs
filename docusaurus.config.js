@@ -32,7 +32,44 @@ const config = {
       (process.env['NODE_ENV'] === 'production' ? '' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'),
   },
 
-  plugins: [require.resolve('docusaurus-plugin-sass')],
+  plugins: [
+    require.resolve('docusaurus-plugin-sass'),
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: 'openapi',
+        docsPluginId: 'classic',
+        config: {
+          // The v0 API reference, generated from a ConCat instance's Swagger spec (scripts/gen-api-docs.mjs).
+          concat: {
+            specPath: 'static/openapi/concat.json',
+            outputDir: 'docs/api/endpoints/v0/reference',
+            hideSendButton: true,
+            sidebarOptions: { groupPathsBy: 'tag' },
+          },
+        },
+      },
+    ],
+  ],
+  themes: [
+    'docusaurus-theme-openapi-docs',
+    [
+      // Offline search: the build generates a local index of the docs (no search service needed).
+      // The search bar is the navbar's `search` item, on the right (styles in src/css/_search.scss).
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        docsRouteBasePath: '/docs',
+        indexBlog: false,
+        indexPages: false,
+        searchBarPosition: 'right', // the results open under the bar, aligned to its right edge
+        searchResultLimits: 8,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -41,7 +78,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/ConventionCatCorp/concat-docs/tree/main/',
+          docItemComponent: '@theme/ApiItem',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.scss')],
@@ -50,7 +87,11 @@ const config = {
     ],
   ],
 
-  stylesheets: ['https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0'],
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0',
+    // The ConCat platform's typefaces: Armata for text, Krona One for display (see src/css/_tokens.scss).
+    'https://fonts.googleapis.com/css2?family=Armata&family=Krona+One&display=swap',
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -83,6 +124,11 @@ const config = {
             label: 'Get a Trial Instance',
             position: 'left',
             to: '/trial',
+          },
+          // Right side, in this order: search, GitHub, then the theme's dark mode toggle.
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             href: 'https://github.com/ConventionCatCorp/concat-docs',

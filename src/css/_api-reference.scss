@@ -1,0 +1,37 @@
+// Generated API reference pages (docusaurus-theme-openapi-docs): the method and path box under each title.
+// The theme renders `<pre class="openapi__method-endpoint"><span class="badge">PUT</span> <h2 …>path</h2></pre>`,
+// so the site-wide `h2` rule in custom.scss (a bottom rule and an `!important` top margin) and `pre`'s
+// preserved whitespace reach it. This makes it one compact row: the badge and the path side by side and
+// vertically centered, in a box no wider than both, with a long path wrapping at its slashes.
+// The selectors are more specific than the theme's own and than the site-wide `h2` rule, so load order
+// doesn't matter.
+pre.openapi__method-endpoint {
+  display: flex;
+  align-items: center;
+  gap: var(--cc-space-2);
+  width: fit-content;
+  max-width: 100%;
+  padding: var(--cc-space-1) var(--cc-space-2);
+  border: 1px solid var(--cc-color-rule);
+  border-radius: var(--cc-radius);
+  overflow: visible;
+  // Collapses the space between the badge and the path (white space alone between flex items isn't drawn).
+  white-space: normal;
+
+  .badge {
+    flex-shrink: 0;
+  }
+
+  .openapi__method-endpoint-path {
+    min-width: 0;
+    // !important beats the site-wide `h2, h3` top margin in custom.scss, which also uses it.
+    margin: 0 !important;
+    padding: 0;
+    border-bottom: 0;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    // Wraps at the slashes (each has a <wbr> before it, from src/theme/ApiExplorer/MethodEndpoint), and inside
+    // a segment only when one alone is too long.
+    overflow-wrap: anywhere;
+  }
+}

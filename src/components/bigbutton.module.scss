@@ -1,29 +1,35 @@
 @use '@site/src/css/variables' as *;
 
+// Card-shaped link, using the platform's card shape: thin rule, 6px corners, raised on hover.
 .big-button {
   display: inline-flex;
   width: 100%;
+  // Fills its cell when cards sit side by side in a SplitColumn, so a row's cards match in height.
+  height: calc(100% - 1rem);
   margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 0.75rem;
   position: relative;
-  border: 2px solid transparent;
-  border-radius: var(--ifm-pagination-nav-border-radius);
-  transition: all 250ms ease-in-out;
+  border: 1px solid var(--cc-color-rule);
+  border-radius: var(--cc-radius);
+  transition:
+    border-color 200ms ease-in-out,
+    box-shadow 200ms ease-in-out,
+    transform 200ms ease-in-out;
 
   &:hover {
-    border: 2px solid $brand-primary;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
-    transform: translateY(-3px);
+    border-color: var(--ifm-color-primary);
+    box-shadow: var(--cc-shadow);
+    transform: translateY(-2px);
   }
 }
 
 .big-button :global(.material-symbols-outlined) {
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
   font-size: 36px;
+  color: var(--ifm-color-primary);
 }
 
 .big-button-link {
-  font-weight: bold;
   text-decoration: none !important;
 }
 
@@ -39,4 +45,5 @@
 
 .big-button-subtext {
   font-size: 14px;
+  color: var(--cc-color-text-muted);
 }

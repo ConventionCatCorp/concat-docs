@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
+hide_table_of_contents: true
+textbook: true
 ---
 
 # Tickets
 
-Attendees can enter specific time slots of when they are allowed to enter the dealer’s location, and acquire QR codes from ConCat before the convention.
-
-The QR codes can then be scanned by volunteers, and allow the attendee to enter the dealer’s den at the specified time slot, or later. 
+The Dealers module has no tickets of its own. For timed entry with QR codes, such as entry to a dealers' den at a set time, use ticketed products, which work the same way for any part of your event: see [Ticketed products](../products/tickets.md).

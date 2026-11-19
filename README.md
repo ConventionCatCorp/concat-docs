@@ -22,10 +22,10 @@ Guides live in `docs/guides/`, the API reference in `docs/api/`, and standalone 
 
 The trial signup page (`/trial`) reads two environment variables at build time:
 
-| Variable | Default | Purpose |
-|---|---|---|
-| `ONBOARDING_API_ORIGIN` | `https://onboarding.concat.app` | The form POSTs to `<origin>/api/signups` |
-| `RECAPTCHA_SITE_KEY` | Google's test key in development; **none** in production builds | reCAPTCHA v2 checkbox site key |
+| Variable                | Default                                                         | Purpose                                  |
+| ----------------------- | --------------------------------------------------------------- | ---------------------------------------- |
+| `ONBOARDING_API_ORIGIN` | `https://onboarding.concat.app`                                 | The form POSTs to `<origin>/api/signups` |
+| `RECAPTCHA_SITE_KEY`    | Google's test key in development; **none** in production builds | reCAPTCHA v2 checkbox site key           |
 
 A production build without `RECAPTCHA_SITE_KEY` replaces the form with a "temporarily unavailable" notice.
 
@@ -34,7 +34,7 @@ A production build without `RECAPTCHA_SITE_KEY` replaces the form with a "tempor
 CI runs these on every pull request:
 
 ```sh
-npm run format:check   # Prettier (code, styles, JSON, YAML; not docs/)
+npm run format:check   # ESLint (MDX JSX) + Prettier (code, styles, JSON, YAML, Markdown/MDX)
 npm run typecheck      # TypeScript
 npm run build          # production build; fails on broken links
 ```

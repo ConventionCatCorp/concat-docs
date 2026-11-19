@@ -1,0 +1,99 @@
+// An example value, marked inline: a light brand tint, a dotted underline and a small "e.g."
+// It inherits the weight, style and font of its context (bold labels, italic messages, code).
+.sample {
+  padding: 0 0.1em;
+  border-radius: 0.2em;
+  background-color: var(--cc-color-sample);
+  cursor: help;
+  box-decoration-break: clone;
+}
+
+.value {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--cc-color-sample-rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.marker {
+  margin-right: 0.2em;
+  font-family: var(--cc-font-display);
+  font-size: 0.55em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  vertical-align: 0.35em;
+  color: var(--cc-color-label);
+  user-select: none;
+}
+
+// The marker on its own, right after a web address or code.
+.after {
+  margin-right: 0;
+  margin-left: 0.25em;
+  cursor: help;
+}
+
+// Keyboard focus: the sample is a tab stop so its tooltip can be read without a mouse.
+.sample:focus-visible,
+.after:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+}
+
+.sample:focus:not(:focus-visible),
+.after:focus:not(:focus-visible) {
+  outline: none;
+}
+
+// The tooltip bubble. Fixed positioning (Sample.tsx places it) keeps it out of the line, so it never shifts the
+// layout, and past tables and scroll boxes, which don't clip it. It can't be selected, so it isn't copied.
+.tooltip {
+  position: fixed;
+  z-index: calc(var(--ifm-z-index-overlay) + 1); // above the navbar and the pinned search bar
+  width: max-content;
+  max-width: min(18rem, calc(100vw - 16px));
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--cc-radius);
+  background-color: var(--cc-color-tooltip);
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 25%);
+  font-family: var(--cc-font-text);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.35;
+  color: var(--cc-color-on-tooltip);
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  pointer-events: auto;
+  user-select: none;
+}
+
+// The arrow points down at the value, or up when the bubble sits below it.
+.arrow {
+  position: absolute;
+  top: 100%;
+  left: var(--sample-arrow-x);
+  border: 6px solid transparent;
+  border-top-color: var(--cc-color-tooltip);
+  transform: translateX(-50%);
+}
+
+.below .arrow {
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
+  border-bottom-color: var(--cc-color-tooltip);
+}
+
+// A faint edge so the bubble stands out on the dark page. `html[...]` keeps the minifier from merging this
+// into an earlier `[data-theme='dark']` rule.
+:global(html[data-theme='dark']) .tooltip {
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 18%),
+    0 0.25rem 0.75rem rgb(0 0 0 / 50%);
+}

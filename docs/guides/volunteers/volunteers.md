@@ -1,37 +1,210 @@
 ---
 sidebar_position: 1
+hide_table_of_contents: true
+textbook: true
 ---
 
 # Volunteers
 
-Attendees have the option to fill out a volunteer application form, listing out their availability, their preferred contacts methods, and what departments they are interested in helping.
+Find and review volunteer applications, assign volunteers to departments, make them staff, and clean up.
 
-:::info Note
-The volunteer form can be modified. Contact support for assistance.
+:::info[In this guide]
+How volunteering works, finding applications, reviewing one, assigning departments, staff, clearing requests and deleting, and the profile's **Volunteer** tab.
 :::
 
-An application can have these distinct states to a department: 
-* __Interested__: User is interested in participating in this department.
-* __Previous Experience__: User has previously helped in a department.
-* __Avoid__: User does not want to be part of this department.
-* __Requested (Internal)__: A department lead has requested this user to be assigned to their department.
-* __Assigned (Internal)__: The volunteer has been assigned by an admin to the department.
+## How volunteering works
 
-## Human Resources
-Adminstators with the `hr` role can manage the volunteer settings, manage departments, and assign volunteers to departments.
+<Sidenote title="Who can do this">
+Viewing applications needs `volunteer:read`. Assigning, staff changes and editing answers need `volunteer:update`; deleting needs `volunteer:delete`. The default *admin* and *hr* roles have all three.
+</Sidenote>
 
-## Departments
-Each department can be assigned leads, look at un-approved volunteer applications, and request applications to be assigned to their department. 
+Attendees apply from your homepage, saying how they relate to each department. Department leads request volunteers; your volunteer staff assign them.
 
-Departments leads must also be assigned the `user` role to have access to their housekeeping pages.
+<TableFigure title="How a volunteer relates to a department">
 
-### Department Leads
+| Relation   | Who sets it                                            | Shown on the application as                                                                           |
+| ---------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| Interest   | The volunteer. At most 5.                              | **Interested in** <small>Badge tooltip in the list: _Interested in <Sample>Art Show</Sample>_</small> |
+| Experience | The volunteer.                                         | **Past experience** <small>Tooltip: _Has past experience with <Sample>Art Show</Sample>_</small>      |
+| Avoid      | The volunteer.                                         | **Will not volunteer for** <small>Not shown in the list</small>                                       |
+| Request    | A lead, with **Recruit Request** or **Staff Request**. | **Requested by** <small>Tooltip: _Requested by <Sample>Art Show</Sample>_</small>                     |
+| Assignment | Your volunteer staff (section 4).                      | **Assigned to** <small>Tooltip: _Assigned to <Sample>Art Show</Sample>_</small>                       |
 
-These leads can use a mass email system to contact all of their assigned volunteers easily and reliably.
+</TableFigure>
 
-## Staff 
-Adminstators can also assign volunteers as staff if they require particular permissions. This can be customized to your needs with Roles.
+:::tip[Email subjects]
+Email subjects start with your **Notification Prefix**, _ConCat_ unless you've changed it.
+:::
 
-## Compensation
+<TableFigure title="Columns in the Applications list">
 
-If you would like, Registration can be set up a [Product Discount](/docs/guides/products/discounts) for volunteers on particular attendance tiers.
+| Column                  | Values                                                                                                       |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Volunteer Type**      | **Staff** (has the _staff_ role), **Staff Alumni** (staff at your previous convention) or **Recruit**.       |
+| **Registration Status** | **Paid**, **Unpaid** or **Not Registered**, for this convention's badge.                                     |
+| **Status**              | **Assigned** to at least one department, **Pending Request** from a lead, or **Unassigned**.                 |
+| **Restrictions**        | **Yes** if the person has a note in the _Restriction_ category. See [User Notes](../usernotes/usernotes.md). |
+| **Department(s)**       | A colored badge per relation in Table 1.1, or **No Preferences / Assignments**.                              |
+
+</TableFigure>
+
+## Find applications
+
+1. Go to **Housekeeping › Volunteers › Dashboard**.
+
+   <Result>Cards show the number of **Volunteer Applications**, **Department(s)** and **Pending Applications** (not yet assigned).</Result>
+
+2. Click **Applications** in the sidebar.
+
+   <Result>The **Volunteer Applications** page lists every application, with the columns in Table 1.2.</Result>
+
+3. Type part of a name, username, email address, contact detail or department name in **Search...**.
+
+   <Result>Only matching applications are listed, or _No results found._</Result>
+
+4. _(Optional)_ Click the filter button in the **Status** column header (Figure 2.1), leave only **Unassigned** ticked, and click **Apply**.
+
+   <Result>Only volunteers with no assignment are listed, and the filter button is highlighted. To remove the filter, open it and click **Clear**.</Result>
+
+<Figure
+  src="/img/guides/volunteers/status-filter.webp"
+  alt="The Applications table header with the Status column's filter open: a search box, (Select all), Assigned, Pending Request and Unassigned, all ticked, and Clear and Apply buttons."
+  title="A column filter"
+  markers={[
+    { n: 1, x: 55.6, y: 8.3, w: 2.9, h: 11.5 },
+    { n: 2, x: 55.6, y: 18.9, w: 27.4, h: 77.5 },
+    { n: 3, x: 68.4, y: 79.5, w: 13.5, h: 12 },
+  ]}
+>
+
+1. The **Status** column's filter button. It's highlighted while a filter is active.
+2. The values to keep. Untick **(Select all)** to start from none.
+3. **Clear** removes the filter; **Apply** applies it.
+
+</Figure>
+
+:::note[Filtering by department and status together]
+The **Status** and **Department(s)** filters combine. **Assigned** plus _<Sample>Art Show</Sample>_ lists volunteers assigned to <Sample noMarker>Art Show</Sample>, not volunteers assigned anywhere who are interested in it.
+:::
+
+## Review an application
+
+1. On **Applications**, click a volunteer's name.
+
+   <Result>A dialog with their application opens. Its footer has **Profile**, **Assign**, **Make Staff** (or **Remove Staff**) and a **…** button. The address gains `?user=` and their user ID, so you can share a link to it.</Result>
+
+2. _(If the button is shown)_ Click **Previous years**.
+
+   <Result>Each earlier convention they applied to has a section with their choices, answers and dates. A **Staff** badge marks a year they were staff.</Result>
+
+3. Click **Go back**.
+
+   <Result>The application is shown again.</Result>
+
+4. Under **Application Answers**, click the pencil next to a question.
+
+   <Result>The answer becomes an input, with **Save** and **Cancel**.</Result>
+
+5. Change the answer and click **Save**.
+
+   <Result>The new answer is shown under the question.</Result>
+
+**Previous years** only appears for people who applied to an earlier convention in your organization; **Application Answers** only when your form has questions.
+
+## Assign departments
+
+<Sidenote title="Emails on assignment">
+With **Enable Volunteer Emails** on, an assignment emails the volunteer (*<Sample>ConCat</Sample> - Volunteer Assignment: <Sample noMarker>Art Show</Sample>*), and the department's address and leads (*<Sample noMarker>ConCat</Sample> - New Volunteer Assigned*).
+</Sidenote>
+
+Assigning approves the application for that department, and the volunteer sees _Your application has been approved!_ A volunteer can have several departments.
+
+1. In the application dialog, click **Assign**.
+
+   <Result>A button appears for each department: gray with a **+** for not assigned, green for assigned, a yellow outline for requested by a lead, and red and disabled for avoided.</Result>
+
+2. Click a gray or yellow department button.
+
+   <Result>The button turns green. Any request for that department is replaced by the assignment.</Result>
+
+3. _(Optional: to unassign)_ Click a green department button.
+
+   <Result>The button turns gray with a **+** again.</Result>
+
+4. Click **Go back**.
+
+   <Result>**Assigned to** lists the department, and **Status** reads **Assigned**.</Result>
+
+## Staff
+
+<Sidenote title="Remove Staff needs more">
+**Remove Staff** also needs `refund:create`, because it can take back a badge and issue a voucher. The default *admin* role has it; *hr* doesn't.
+</Sidenote>
+
+**Make Staff** gives the person the _staff_ role for this convention. When you start next year's convention, they get the _staffAlumni_ role and show as **Staff Alumni**.
+
+1. In the application dialog, click **Make Staff**.
+
+   <Result>A **Make Staff: <Sample>Alex Smith</Sample>** dialog asks _Are you sure you want to mark this user as staff?_</Result>
+
+2. Click **Make Staff**.
+
+   <Result>**Volunteer Type** shows a **Staff** badge, and the button now reads **Remove Staff**.</Result>
+
+3. To undo it later, click **Remove Staff**.
+
+   <Result>A **Remove Staff: <Sample>Alex Smith</Sample>** dialog opens. If the person has a paid badge, it shows a ticked _Remove paid <Sample noMarker>General Admission</Sample> registration fromOrder #<Sample noMarker>13</Sample><Sample noMarker>$50.00</Sample>_ box and a voucher amount set to what they paid.</Result>
+
+4. Untick the registration box to let them keep their badge, correct the voucher amount if needed (`0` for no voucher), and click **Remove Staff**.
+
+   <Result>The **Staff** badge is gone, and the button reads **Make Staff** again.</Result>
+
+:::caution[Watch out]
+With the registration box ticked, **Remove Staff** unlinks their paid badge and puts it back in their cart, unpaid. An amount above 0 issues a single-use voucher named _Remove staff Voucher_. With **Enable Volunteer Emails** on, they also get the email _<Sample>ConCat</Sample> - Staff status have been removed_.
+:::
+
+To give staff a lower badge price, add a discount limited to the _staff_ role. See [Discounts](../products/discounts.md).
+
+## Clear requests or delete an application
+
+<Sidenote title="Delete needs its own permission">
+**Delete Application** only appears in the **…** menu for people with `volunteer:delete`.
+</Sidenote>
+
+1. In the application dialog, click the **…** button and choose **Clear requests**.
+
+   <Result>A **Clear department requests** dialog asks _Are you sure you want to clear all the department requests?_</Result>
+
+2. Click **Clear**.
+
+   <Result>**Requested by** shows _None_.</Result>
+
+3. Click the **…** button and choose **Delete Application**.
+
+   <Result>A **Delete Application** dialog asks _Are you sure you want to delete this volunteer application?_</Result>
+
+4. Click **Delete**.
+
+   <Result>The application is no longer listed on **Applications**.</Result>
+
+:::caution[Watch out]
+
+- An assigned volunteer's application can't be deleted: it fails with _You are currently assigned to a department._ Unassign every department first (section 4, step 3).
+- Deleting removes the application, its answers, preferences and requests. It can't be undone.
+  :::
+
+## From a user's profile
+
+Staff with `volunteer:read` see a person's application on their profile; with `volunteer:update` they can fill it in or change it for them.
+
+1. Open the person's profile, as in [Users and access](../quickstart/users-and-access.md), section 2, and click the **Volunteer** tab.
+
+   <Result>The volunteer form shows the person's status and answers, or is empty if they haven't applied.</Result>
+
+2. Change the form, tick the Code of Conduct agreement if asked, and click **Submit**.
+
+   <Result>_Your volunteer application has been saved!_ appears. If the form was empty, the person now has an application on **Applications**.</Result>
+
+Sub-accounts have no **Volunteer** tab. Saving here sends the person no confirmation email.
+
+With **Allow Parents to Volunteer** off, the form still opens for a person with child registrations, but **Submit** shows _One or more errors occurred while trying to process your request._ and _Parents cannot volunteer - Your kids come first._

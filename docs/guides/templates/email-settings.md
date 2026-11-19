@@ -1,0 +1,127 @@
+---
+sidebar_position: 2
+hide_table_of_contents: true
+textbook: true
+---
+
+# Sending domain, senders and contact addresses
+
+Set the domain your email is sent from, the senders staff can pick for a mass email, and the contact addresses automated emails use.
+
+:::info[In this guide]
+The sending domain, senders for mass email, and contact addresses.
+:::
+
+## Sending domain
+
+<Sidenote title="Who can do this">
+**System › Settings** needs `system:settings:update`, and its **Email Settings** tab also needs `email:templates`. The default *admin* role has both.
+</Sidenote>
+
+ConCat sends all your email, so there's no mail server to set up. Every address is a mailbox name, such as `registration`, followed by your sending domain, `concat.app` by default. To use your own domain, such as `example.com`<Sample />, you prove you own it with DNS records.
+
+A domain can be set for the organization, covering every convention, or for one convention, which then uses it instead.
+
+1. Go to **Housekeeping › System › Settings** and click the **Email Settings** tab.
+
+   <Result>The **Email Sending Domain** card says _The domain is currently set to the default,_ `concat.app`, with a **Configure a Domain** button.</Result>
+
+2. Click **Configure a Domain**.
+
+   <Result>A **Configure a Domain** dialog opens with **Domain** and **Scope**.</Result>
+
+3. Enter your **Domain**, choose the **Scope**, and click **Submit**.
+
+   <Result>A notice says _There is a pending domain validation request for this organization._ (or _convention_) and lists CNAME records: each **Name** ends in `._domainkey.example.com`<Sample />, and each **Value** in `.dkim.amazonses.com`.</Result>
+
+4. _(Optional)_ Click **Download CSV**.
+
+   <Result>A CSV file downloads, with one `CNAME` row per record.</Result>
+
+5. Add each record at your domain's DNS provider, as [CNAME Records](../technical/cname.md#custom-email-domain) explains, then click **Verify**.
+
+   <Result>_Your domain was successfully validated._ appears, and the card says _This organization's email domain is:_ `example.com`<Sample /> (or _convention's_). If DNS hasn't updated yet, _Your domain was not able to be validated yet._ appears instead; wait, then click **Verify** again.</Result>
+
+6. _(Optional: a domain for the other scope)_ Click **Set for Convention** (or **Set for Organization**).
+
+   <Result>The **Configure a Domain** dialog opens with the other **Scope** fixed. Continue from step 3.</Result>
+
+7. _(Optional: to go back to `concat.app`)_ Click **Clear**.
+
+   <Result>A **Clear Email Domain** dialog asks _Are you sure you want to clear the email domain for this Organization?_ (or _Convention_).</Result>
+
+8. Click **Confirm**.
+
+   <Result>The card says _The domain is currently set to the default,_ `concat.app` again, or shows the other scope's domain if it has one.</Result>
+
+:::note[Canceling or failing]
+
+- To abandon an unverified request, click **Cancel** next to **Verify**, then **Confirm**. _Request was successfully canceled._ appears. A new request needs new DNS records.
+- _An error has occurred. Cancel this attempt and try again, or contact support._ means verification failed. Cancel and start again from step 2.
+- If verification takes more than 24 hours, contact ConCat Support.
+  :::
+
+## Senders for mass email
+
+<Sidenote title="Mass email only">
+These senders don't change automated emails, which come from the contact addresses in section 3.
+</Sidenote>
+
+Staff pick a mass email's **From Address** from this list of mailbox names, shared by every convention in your organization. It starts as `bazaar`, `registration`, `events`, `hr`, `dealers`, `artshow` and `noreply`.
+
+1. Under **Email Senders for Mass Email**, type a mailbox name (the part before the @), such as `info`<Sample />, in **Enter a new sender...**, and click the green tick button next to it (Figure 2.1).
+
+   <Result>An _Added "<Sample>info</Sample>" to the senders list._ message appears, and the name is listed.</Result>
+
+2. _(Optional)_ Click the red trash button next to a name.
+
+   <Result>A _Removed "<Sample>info</Sample>" from the senders list._ message appears, and the name is no longer listed.</Result>
+
+<Figure
+  src="/img/guides/templates/email-senders.webp"
+  alt="The Email Senders for Mass Email card: an Enter a new sender box with a green tick button, and the names bazaar, registration, events, hr, dealers, artshow and noreply, each with a red trash button."
+  title="Email Senders for Mass Email"
+  markers={[
+    { n: 1, x: 36, y: 5.1, w: 54.2, h: 10.6 },
+    { n: 2, x: 93.2, y: 6, w: 4.9, h: 8.6 },
+    { n: 3, x: 93.5, y: 18.5, w: 4.7, h: 8 },
+  ]}
+>
+
+1. **Enter a new sender...**
+2. The green tick button.
+3. A name's red trash button.
+
+</Figure>
+
+The list holds up to 16 names and can't be emptied. Each name, followed by your domain, must form a valid email address.
+
+## Contact addresses
+
+Each convention has three contact addresses. Automated emails are sent from them, and your site and emails tell people to write to them.
+
+<TableFigure title="Contact addresses">
+
+| Field                  | Default name   | Used for                                                                                                                           |
+| ---------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Registration Email** | `registration` | Sends account, order, ticket and refund emails. Receives refund requests and accounts that need review.                            |
+| **HR Email**           | `hr`           | Sends volunteer and data-export emails. Volunteers are told to contact it.                                                         |
+| **Dealers Email**      | `dealers`      | Sends dealer assistant emails; the contact for dealer applications. <small>Also editable in **Dealers › Dealer Settings**.</small> |
+
+</TableFigure>
+
+1. Click the **Contact** tab.
+
+   <Result>The **Dealers Email**, **HR Email** and **Registration Email** fields are shown.</Result>
+
+2. Enter the mailbox name (the part before the @) for each, then click **Save**.
+
+   <Result>The fields keep your names after the page refreshes.</Result>
+
+Names can use letters, digits, dots and dashes. An empty field uses the default name shown in it. Hotel emails come from `hotel`, which can't be renamed.
+
+:::caution[Watch out]
+
+- ConCat only sends email. Make sure each contact address at your own domain is a mailbox someone reads: attendees write to it, and replies go to it.
+- Until you set a sending domain, email comes from `concat.app` addresses, but your site shows contact addresses at your site's own address. Set your sending domain (section 1) before you open, so they match.
+  :::
