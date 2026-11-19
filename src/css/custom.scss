@@ -5,6 +5,8 @@
 @use '@site/src/css/textbook';
 // Generated API reference pages: the method and path box under each title.
 @use '@site/src/css/api-reference';
+// The navbar's search bar and its results dropdown.
+@use '@site/src/css/search';
 
 /**
  * Any CSS included here will be global. The classic template

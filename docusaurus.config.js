@@ -55,7 +55,7 @@ const config = {
     'docusaurus-theme-openapi-docs',
     [
       // Offline search: the build generates a local index of the docs (no search service needed).
-      // The search bar sits at the top of the docs view (src/theme/DocRoot/Layout/Main).
+      // The search bar is the navbar's `search` item, on the right (styles in src/css/_search.scss).
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
@@ -63,7 +63,7 @@ const config = {
         docsRouteBasePath: '/docs',
         indexBlog: false,
         indexPages: false,
-        searchBarPosition: 'left',
+        searchBarPosition: 'right', // the results open under the bar, aligned to its right edge
         searchResultLimits: 8,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
@@ -124,6 +124,11 @@ const config = {
             label: 'Get a Trial Instance',
             position: 'left',
             to: '/trial',
+          },
+          // Right side, in this order: search, GitHub, then the theme's dark mode toggle.
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             href: 'https://github.com/ConventionCatCorp/concat-docs',

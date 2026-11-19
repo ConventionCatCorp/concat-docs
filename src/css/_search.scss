@@ -1,0 +1,67 @@
+// The search bar in the navbar: the `search` item in docusaurus.config.js, drawn by
+// @easyops-cn/docusaurus-search-local. Where it sits is the theme's layout: on wide screens it's on the right,
+// just left of GitHub and the dark mode toggle; under 997px it stays at the navbar's right edge next to the menu
+// button, and under 577px the plugin folds it to an icon until it's focused.
+
+.navbar .navbar__search-input {
+  border: 1px solid var(--cc-color-rule-soft);
+  border-radius: var(--cc-radius);
+  background-color: var(--ifm-color-white);
+  font-family: var(--cc-font-text);
+  font-size: 0.875rem;
+  color: var(--cc-color-text);
+}
+
+.navbar .navbar__search-input:focus {
+  border-color: var(--ifm-color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--cc-color-sample);
+}
+
+html[data-theme='dark'] .navbar .navbar__search-input {
+  background-color: var(--ifm-background-color);
+}
+
+// Typed text stops short of the plugin's clear (×) button.
+.navbar .navbar__search-input:not(:placeholder-shown) {
+  padding-right: 1.75rem;
+}
+
+// The theme's item padding already spaces the bar from the links, so drop the plugin's extra 16px before it.
+.navbar .navbar__search {
+  margin-left: 0;
+}
+
+// From 997px to 1119px the full-width bar would push the links onto two lines and cut the ConCat title short,
+// so it's narrower there and leaves out the ⌘K hint (the shortcut still works). The width leaves room for a
+// classic (non-overlay) scrollbar, which takes about 17px from the page at the same window width.
+@media (min-width: 997px) and (max-width: 1119px) {
+  .navbar .navbar__search-input {
+    width: 6rem;
+  }
+
+  .navbar [class*='searchHintContainer'] {
+    display: none;
+  }
+}
+
+// The results dropdown, through the plugin's own variables, so it follows the theme in light and dark.
+// It opens under the bar, aligned to its right edge, and never wider than the screen.
+:root {
+  --search-local-modal-width: min(40rem, calc(100vw - 2 * var(--ifm-navbar-padding-horizontal)));
+  --search-local-modal-background: var(--cc-color-surface-tint);
+  --search-local-modal-shadow: var(--cc-shadow);
+  --search-local-hit-background: var(--ifm-color-white);
+  --search-local-hit-shadow: 0 0 0 1px var(--cc-color-rule);
+  --search-local-hit-color: var(--cc-color-text);
+  --search-local-highlight-color: var(--ifm-color-primary);
+  --search-local-muted-color: var(--cc-color-text-muted);
+  --search-local-input-active-border-color: var(--ifm-color-primary);
+}
+
+// `html[...]`, not `[data-theme]`: the minifier merges a plain `[data-theme='dark']` rule into an earlier one,
+// ahead of the `:root` rule above, which would then win.
+html[data-theme='dark'] {
+  --search-local-modal-background: var(--ifm-background-color);
+  --search-local-hit-background: var(--ifm-background-surface-color);
+}
